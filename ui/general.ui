@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
+  <template class="BBM_General" parent="AdwPreferencesPage">
+    <property name="name">General</property>
+    <property name="title" translatable="yes">General</property>
+    <property name="icon-name">computer-symbolic</property>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Indicator Settings</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Enable Bluetooth device battery indicators</property>
+            <property name="subtitle" translatable="yes">Show icon in system tray with device battery level</property>
+            <property name="activatable-widget">enable_battery_indicator</property>
+            <child>
+              <object class="GtkSwitch" id="enable_battery_indicator">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Quick Menu Settings</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Show Bluetooth device battery level icon</property>
+            <property name="subtitle" translatable="yes">Displays icon in popup menu showing Bluetooth device battery level</property>
+            <property name="activatable-widget">enable_battery_level_icon</property>
+            <child>
+              <object class="GtkSwitch" id="enable_battery_level_icon">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Show Bluetooth device battery percentage</property>
+            <property name="subtitle" translatable="yes">Displays Bluetooth device battery level percentage in text</property>
+            <property name="activatable-widget">enable_battery_level_text</property>
+            <child>
+              <object class="GtkSwitch" id="enable_battery_level_text">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="swap_icon_text_row">
+            <property name="title" translatable="yes">Display battery level icon before text</property>
+            <property name="subtitle" translatable="yes">Swaps position of battery level icon and percentage text</property>
+            <property name="activatable-widget">swap_icon_text</property>
+            <child>
+              <object class="GtkSwitch" id="swap_icon_text">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Note!</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="subtitle" translatable="yes">Certain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check Readme for details.</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
