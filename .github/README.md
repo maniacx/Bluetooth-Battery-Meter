@@ -7,10 +7,7 @@
 <br>
 <br>
 
-##### An extension featuring indicator icons in the system tray, serving as a meter for Bluetooth device battery levels. It also enhances the Bluetooth menu in the quick settings, providing detailed battery levels (via icon/text).
-
-##### Note: To enable battery level reporting from Bluetooth devices, the Experimental features for Bluez must be activated, as they are disabled by default in most Linux distributions. Please check the Read Me for more details.
-
+<p><img src="./images/bbm-logo.png" width="8%" align="left"> An extension featuring indicator icons in system tray, serving as meter for Bluetooth device battery levels and providing detailed battery levels via icon/text in the quick settings Bluetooth menu</p>
 <br>
 
 [<img src="./images/get-it-on-gnome-extension.png" width="35%">](https://extensions.gnome.org/extension/5724/bluetooth-battery-level/)
@@ -19,10 +16,16 @@
 
 ## Installation
 
-* Extension is available on Gnome Extension website name "Bluetooth Battery".
-* Certain Bluetooth devices may not report battery level, and may work only when bluez experimental features are enabled.
-* Most Linux distributions ship with bluez experimental features are disabled, but there are some like Fedora 39 ship with it enabled.
-* If your bluetooth device doesn't show battery level, check this post and enable bluez experimental feature https://askubuntu.com/a/1420501
+Extension is available on Gnome Extension website name "Bluetooth Battery Meter".
+https://extensions.gnome.org/extension/6670/bluetooth-battery-meter/
+
+> [!IMPORTANT]
+> * Certain Bluetooth devices may not report battery level, and may work only when bluez experimental features are enabled.
+> * Most Linux distributions ship with bluez experimental features are disabled, but there are some like Fedora 39 ship with it enabled.
+> * If your bluetooth device doesn't show battery level, check this post and enable bluez experimental feature https://askubuntu.com/a/1420501
+
+> [!NOTE]  
+> Different Bluetooth devices report battery levels in varying increments. While you might expect a continuous discharge reading like 100, 99, 98, 97... down to 0, manufacturers often design devices to report in specific increments. For example, some devices may report battery levels in increments of 5 (e.g., 100, 95, 90, 85... to 0), others in increments of 10 (e.g., 100, 90, 80, 70... to 0), and some in increments of 20 (e.g., 100, 80, 60, 40, 20, 0). Therefore, the quick settings percentage displayed in text (when enabled), if the bluetooth device is designed for reporting battery levels in huge increments  example 20%, you may observe battery level stuck at one percentage for a while example 100% and later suddenly drop down to 80%.
 
 ## Supported Bluetooth Battery Meter Icons
 * Icon are designed by me by editing icons provided by Gnome.
@@ -89,3 +92,7 @@ If still need to request a new feature [Raise an issue](https://github.com/mania
 
 ## Credits
 [List of credits](https://maniacx.github.io/Battery-Health-Charging/credits)
+
+## Explore My Other GNOME Extensions
+<p><img src="./images/bhc-logo.png" width="8%" align="left"><b>Battery Health Charging</b> for setting Charging threshold for batteries on laptops.
+https://extensions.gnome.org/extension/5724/battery-health-charging/</p>
