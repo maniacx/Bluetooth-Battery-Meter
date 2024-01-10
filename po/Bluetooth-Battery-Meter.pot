@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-04 18:41-0800\n"
+"POT-Creation-Date: 2024-01-10 12:37-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,35 +18,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: lib/blutoothPopupMenu.js:79
+#: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
 msgstr ""
 
-#: lib/blutoothPopupMenu.js:79
+#: lib/blutoothPopupMenu.js:80
 msgid "Connect"
 msgstr ""
 
-#: lib/blutoothToggle.js:113
+#: lib/blutoothToggle.js:131
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] ""
 msgstr[1] ""
 
-#: preferences/about.js:34
+#: preferences/about.js:39
 msgid "2024"
 msgstr ""
 
-#: preferences/about.js:35
+#: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
 msgstr ""
 
-#: preferences/about.js:42
+#: preferences/about.js:47
 #, javascript-format
 msgid "© %s %s"
 msgstr ""
 
-#: preferences/about.js:43
+#: preferences/about.js:48
 #, javascript-format
 msgid ""
 "This application comes with absolutely no warranty. See the <a "
@@ -75,6 +75,14 @@ msgstr ""
 
 #: ui/about.ui:153
 msgid "Legal"
+msgstr ""
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr ""
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
 msgstr ""
 
 #: ui/general.ui:5

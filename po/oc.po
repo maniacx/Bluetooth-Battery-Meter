@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-04 18:41-0800\n"
+"POT-Creation-Date: 2024-01-10 12:37-0800\n"
 "PO-Revision-Date: 2024-01-10 19:20+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -19,39 +19,39 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: lib/blutoothPopupMenu.js:79
+#: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
 msgstr "Desconnectar"
 
-#: lib/blutoothPopupMenu.js:79
+#: lib/blutoothPopupMenu.js:80
 msgid "Connect"
 msgstr "Connectar"
 
-#: lib/blutoothToggle.js:113
+#: lib/blutoothToggle.js:131
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d connectat"
 msgstr[1] "%d connectats"
 
-#: preferences/about.js:34
+#: preferences/about.js:39
 msgid "2024"
 msgstr "2024"
 
-#: preferences/about.js:35
+#: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
 msgstr "Licéncia publica generala GNU, version 3 o ulteriora"
 
-#: preferences/about.js:42
+#: preferences/about.js:47
 #, javascript-format
 msgid "© %s %s"
 msgstr "© %s %s"
 
-#: preferences/about.js:43
+#: preferences/about.js:48
 #, javascript-format
 msgid ""
-"This application comes with absolutely no warranty. See the <a href=\"%s\">"
-"%s</a> for details."
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
 msgstr ""
 "Aquesta aplicacion es provesida sens cap de garantida. Consultatz la <a "
 "href=\"%s\">%s</a> per mai de detalhs."
@@ -79,6 +79,14 @@ msgstr "Còdi font sus Github"
 #: ui/about.ui:153
 msgid "Legal"
 msgstr "Avís legal"
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr ""
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr ""
 
 #: ui/general.ui:5
 msgid "General"
@@ -109,8 +117,8 @@ msgstr "Mostrar l’icòna de nivèl de batariá de periferic Bluetooth"
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
 msgstr ""
-"Aficha una icòna dins un menú surgissent en mostrant lo nivèl de batariá "
-"de periferics Bluetooth"
+"Aficha una icòna dins un menú surgissent en mostrant lo nivèl de batariá de "
+"periferics Bluetooth"
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
