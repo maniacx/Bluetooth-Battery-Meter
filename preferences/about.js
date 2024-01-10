@@ -21,8 +21,13 @@ export const About = GObject.registerClass({
         'row_translation',
         'row_sources',
         'row_license',
+        'row_crowdin',
+        'row_translation_guide',
+        'button_back_translation',
         'button_back_legal',
         'box_legal',
+        'box_translation',
+        'label_translation',
         'label_legal',
     ],
 }, class About extends Adw.PreferencesPage {
@@ -42,13 +47,16 @@ export const About = GObject.registerClass({
         this._copyright_content.label = _('© %s %s').format(copyrightYear, developerName);
         this._license_content.label = _('This application comes with absolutely no warranty. See the <a href="%s">%s</a> for details.').format(licenseLink, licenseName);
 
+        this._linkPage('activated', this._row_translation, 'page_translation');
         this._linkPage('activated', this._row_license, 'page_legal');
+        this._linkPage('clicked', this._button_back_translation, 'page_main');
         this._linkPage('clicked', this._button_back_legal, 'page_main');
 
-        this._assignURL(this._row_readme, 'https://github.com/maniacx/Bluetooth-Battery-Meter#bluetooth-battery-meter-extension-for-gnome-shell');
+        this._assignURL(this._row_readme, 'https://maniacx.github.io/Bluetooth-Battery-Meter');
         this._assignURL(this._row_bug_report, 'https://github.com/maniacx/Bluetooth-Battery-Meter/issues');
-        this._assignURL(this._row_sources, 'https://github.com/maniacx/Bluetooth-Battery-Meter');
-        this._assignURL(this._row_translation, 'https://github.com/maniacx/Bluetooth-Battery-Meter#translation');
+        this._assignURL(this._row_sources, 'https://github.com/maniacx/Bluetooth-Battery-Meter/');
+        this._assignURL(this._row_crowdin, 'https://crowdin.com/project/bluetooth-battery-meter');
+        this._assignURL(this._row_translation_guide, 'https://maniacx.github.io/Bluetooth-Battery-Meter/translation');
     }
 
     _linkPage(signal, widget, page) {

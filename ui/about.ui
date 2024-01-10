@@ -115,7 +115,7 @@
                                 <property name="activatable">true</property>
                                 <child>
                                   <object class="GtkImage">
-                                    <property name="icon-name">adw-external-link-symbolic</property>
+                                    <property name="icon-name">go-next-symbolic</property>
                                     <property name="valign">center</property>
                                   </object>
                                 </child>
@@ -155,6 +155,82 @@
                                 <child>
                                   <object class="GtkImage">
                                     <property name="icon-name">go-next-symbolic</property>
+                                    <property name="valign">center</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkStackPage">
+                    <property name="name">page_translation</property>
+                    <property name="child">
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkBox" id="box_translation">
+                            <property name="margin_start">2</property>
+                            <property name="margin_end">2</property>
+                            <property name="margin_top">2</property>
+                            <property name="orientation">horizontal</property>
+                            <property name="homogeneous">False</property>
+                            <child>
+                              <object class="GtkButton" id="button_back_translation">
+                                <property name="halign">start</property>
+                                <property name="css-classes">flat</property>
+                                <child>
+                                  <object class="GtkImage">
+                                    <property name="icon-name">go-previous-symbolic</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkLabel" id="label_translation">
+                                <property name="hexpand">True</property>
+                                <property name="halign">center</property>
+                                <property name="label">Translation</property>
+                                <property name="css-classes">heading</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkButton">
+                                <property name="sensitive">False</property>
+                                <property name="halign">end</property>
+                                <property name="css-classes">flat</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwPreferencesGroup">
+                            <property name="margin_top">12</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <child>
+                              <object class="AdwActionRow" id="row_crowdin">
+                                <property name="title" translatable="yes">Crowdin</property>
+                                <property name="activatable">true</property>
+                                <child>
+                                  <object class="GtkImage">
+                                    <property name="icon-name">adw-external-link-symbolic</property>
+                                    <property name="valign">center</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="AdwActionRow" id="row_translation_guide">
+                                <property name="title" translatable="yes">Online Tutorials</property>
+                                <property name="activatable">true</property>
+                                <child>
+                                  <object class="GtkImage">
+                                    <property name="icon-name">adw-external-link-symbolic</property>
                                     <property name="valign">center</property>
                                   </object>
                                 </child>
