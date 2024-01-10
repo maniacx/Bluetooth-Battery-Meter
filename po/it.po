@@ -1,0 +1,143 @@
+# ITALIAN TRANSLATION.
+# Copyright (C) YEAR maniacx@github.com
+# This file is distributed under the same license as the Bluetooth Battery Meter package.
+# ALBANO BATTISTELLA <ALBANOATTISTELLA@GMAIL.COM>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bluetooth Battery Meter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-10 12:37-0800\n"
+"PO-Revision-Date: 2024-01-10 22:07+0100\n"
+"Last-Translator:  Albano Battistella <albanobattistella@gmail.com>\n"
+"Language-Team: Italian <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: lib/blutoothPopupMenu.js:80
+msgid "Disconnect"
+msgstr "Dsconnetti"
+
+#: lib/blutoothPopupMenu.js:80
+msgid "Connect"
+msgstr "Connetti"
+
+#: lib/blutoothToggle.js:131
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "%d Connesso"
+msgstr[1] "%d Connessi"
+
+#: preferences/about.js:39
+msgid "2024"
+msgstr "2024"
+
+#: preferences/about.js:40
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, versione 3 o successiva"
+
+#: preferences/about.js:47
+#, javascript-format
+msgid "© %s %s"
+msgstr "© %s %s"
+
+#: preferences/about.js:48
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Questa applicazione non è assolutamente coperta da garanzia. Vedi <a "
+"href=\"%s\">%s</a> per i dettagli."
+
+#: ui/about.ui:5
+msgid "About"
+msgstr "Informazioni"
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr "Leggimi"
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr "Segnala un problema"
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr "Traduzioni"
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr "Visualizza sorgenti su Github"
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr "Legale"
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr "Crowdin"
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr "Tutorial on-line"
+
+#: ui/general.ui:5
+msgid "General"
+msgstr "Generale"
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr "Impostazioni dell'indicatore"
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr "Abilita gli indicatori della batteria del dispositivo Bluetooth"
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr "Mostra l'icona nella barra delle applicazioni con il livello della batteria del dispositivo"
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr "Impostazioni del menu rapido"
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr "Mostra l'icona del livello della batteria del dispositivo Bluetooth"
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr "Visualizza l'icona nel menu a comparsa che mostra il livello della batteria del dispositivo Bluetooth"
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr "Mostra la percentuale della batteria del dispositivo Bluetooth"
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr "Visualizza la percentuale del livello della batteria del dispositivo Bluetooth nel testo"
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr "Visualizza l'icona del livello della batteria prima del testo"
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr "Scambia la posizione dell'icona del livello della batteria e del testo percentuale"
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr "Nota!"
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""
+"Alcuni dispositivi Bluetooth non segnalano il livello della batteria a Bluez fino a che "
+"le funzionalità sperimentali sono abilitate nel sistema. Controlla il file Leggimi per i dettagli."
