@@ -1,0 +1,143 @@
+# Occitan translation file.
+# Copyright (C) YEAR maniacx@github.com
+# This file is distributed under the same license as the Bluetooth Battery Meter package.
+# Quentin PAGÈS, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bluetooth Battery Meter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-04 18:41-0800\n"
+"PO-Revision-Date: 2024-01-10 19:20+0100\n"
+"Last-Translator: Quentin PAGÈS\n"
+"Language-Team: \n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: lib/blutoothPopupMenu.js:79
+msgid "Disconnect"
+msgstr "Desconnectar"
+
+#: lib/blutoothPopupMenu.js:79
+msgid "Connect"
+msgstr "Connectar"
+
+#: lib/blutoothToggle.js:113
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "%d connectat"
+msgstr[1] "%d connectats"
+
+#: preferences/about.js:34
+msgid "2024"
+msgstr "2024"
+
+#: preferences/about.js:35
+msgid "GNU General Public License, version 3 or later"
+msgstr "Licéncia publica generala GNU, version 3 o ulteriora"
+
+#: preferences/about.js:42
+#, javascript-format
+msgid "© %s %s"
+msgstr "© %s %s"
+
+#: preferences/about.js:43
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a href=\"%s\">"
+"%s</a> for details."
+msgstr ""
+"Aquesta aplicacion es provesida sens cap de garantida. Consultatz la <a "
+"href=\"%s\">%s</a> per mai de detalhs."
+
+#: ui/about.ui:5
+msgid "About"
+msgstr "A prepaus"
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr "Me legir"
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr "Senhalar un problèma"
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr "Traduccions"
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr "Còdi font sus Github"
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr "Avís legal"
+
+#: ui/general.ui:5
+msgid "General"
+msgstr "General"
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr "Paramètres de l'indicator"
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr "Activar los indicators de batariá de periferics Bluetooth"
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr ""
+"Mostrar una icòna dins la barra sistèma amb lo nivèl de batariá dels "
+"periferics"
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr "Sortir del menú Paramètres"
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr "Mostrar l’icòna de nivèl de batariá de periferic Bluetooth"
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr ""
+"Aficha una icòna dins un menú surgissent en mostrant lo nivèl de batariá "
+"de periferics Bluetooth"
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr "Mostrar lo percentatge de batariá de periferics Bluetooth"
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr "Aficha lo nivèl de batariá de periferics Bluetooth en percentatge"
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr "Mostrar lo percentatge avant l'icòna de batariá"
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr ""
+"Escàmbia la posicion de l’icòna de nivèl de batariá amb çò del percentatge"
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr "Nòta !"
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""
+"D’unes periferics Bluetooth senhalan pas lo nivèl de batariá sens que las "
+"foncionalitats experimentalas de Bluez sián activadas. Vejatz Me legir per "
+"mai de detalhs."
