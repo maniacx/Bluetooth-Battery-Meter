@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR maniacx@github.com
-# This file is distributed under the same license as the Bluetooth Battery Meter package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Bluetooth Battery Meter\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 14:20-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"PO-Revision-Date: 2021-10-16 15:32+0100\n"
+"Last-Translator: Slimane Selyan Amiri <selyan.kab@protonmail.com>\n"
+"Language-Team: \n"
+"Language: kab_DZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0\n"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
@@ -24,14 +24,14 @@ msgstr ""
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Connect"
-msgstr ""
+msgstr "Qqen"
 
 #: lib/blutoothToggle.js:131
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d yettwaqqen"
+msgstr[1] "%d ttwaqqnen"
 
 #: preferences/about.js:39
 msgid "2024"
@@ -138,3 +138,4 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
+

@@ -1,37 +1,36 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR maniacx@github.com
-# This file is distributed under the same license as the Bluetooth Battery Meter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Kazakh translation for gnome-shell.
+# Copyright (C) 2015 The gnome-shell authors.
+# This file is distributed under the same license as the gnome-shell package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2012-2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Bluetooth Battery Meter\n"
+"Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 14:20-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"PO-Revision-Date: 2023-09-03 09:19+0600\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
+"Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
-msgstr ""
+msgstr "Байланысты үзу"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Connect"
-msgstr ""
+msgstr "Байланысу"
 
 #: lib/blutoothToggle.js:131
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d байланысқан"
 
 #: preferences/about.js:39
 msgid "2024"
@@ -138,3 +137,5 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
+
+

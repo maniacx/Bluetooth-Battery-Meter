@@ -1,37 +1,47 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR maniacx@github.com
-# This file is distributed under the same license as the Bluetooth Battery Meter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Danish translation of gnome-shell
+# Copyright (C) 2010-2011, 2014-2016, 2018 gnome-shell
+# This file is distributed under the same license as the gnome-shell package.
 #
-#, fuzzy
+# Kenneth Nielsen <k.nielsen81@gmail.com>, 2012.
+# Kris Thomsen <mail@kristhomsen.dk>, 2009-2014, 2016-2017.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2014-2016, 2018.
+# Alan Mortensen <alanmortensen.am@gmail.com>, 2018-2023.
+# scootergrisen, 2019-2020.
+#
+# Konventioner:
+#
+# dash => favoritområde
+# overview => overblik
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Bluetooth Battery Meter\n"
+"Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 14:20-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"PO-Revision-Date: 2023-09-01 08:41+0200\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
-msgstr ""
+msgstr "Afbryd"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Connect"
-msgstr ""
+msgstr "Forbind"
 
 #: lib/blutoothToggle.js:131
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d forbundet"
+msgstr[1] "%d forbundet"
 
 #: preferences/about.js:39
 msgid "2024"
@@ -138,3 +148,4 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
+

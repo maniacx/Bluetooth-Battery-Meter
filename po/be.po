@@ -1,0 +1,844 @@
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2011, 2013, 2014.
+# Kasia Bondarava <kasia.bondarava@gmail.com>, 2012.
+# Yuras Shumovich <shumovichy@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"PO-Revision-Date: 2023-08-27 18:57+0300\n"
+"Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
+"Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Project-Style: gnome\n"
+
+#: lib/blutoothPopupMenu.js:80
+msgid "Disconnect"
+msgstr "Адлучыцца"
+
+#: lib/blutoothPopupMenu.js:80
+msgid "Connect"
+msgstr "Злучыцца"
+
+#: lib/blutoothToggle.js:131
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "Падлучана %d"
+msgstr[1] "Падлучана %d"
+msgstr[2] "Падлучана %d"
+
+#: preferences/about.js:39
+msgid "2024"
+msgstr ""
+
+#: preferences/about.js:40
+msgid "GNU General Public License, version 3 or later"
+msgstr ""
+
+#: preferences/about.js:47
+#, javascript-format
+msgid "© %s %s"
+msgstr ""
+
+#: preferences/about.js:48
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+
+#: ui/about.ui:5
+msgid "About"
+msgstr ""
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr ""
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr ""
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr ""
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr ""
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr ""
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr ""
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr ""
+
+#: ui/general.ui:5
+msgid "General"
+msgstr ""
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr ""
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr ""
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr ""
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr ""
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr ""
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr ""
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr ""
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr ""
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr ""
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr ""
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr ""
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+#, javascript-format
+
+#, javascript-format
+
+
+#, javascript-format
+
+#, javascript-format
+
+#, javascript-format
+
+#, javascript-format
+
+
+#, no-c-format
+
+#, no-c-format
+
+#, no-c-format
+
+#, no-c-format
+
+
+#, no-c-format
+
+#, no-c-format
+
+#, no-c-format
+
+#, no-c-format
+
+
+
+
+
+
+
+#, javascript-format
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, no-javascript-format
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+#, javascript-format
+
+#, javascript-format
+
+
+
+
+#, javascript-format
+
+
+
+
+
+#, javascript-format
+
+
+
+#, javascript-format
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+#, javascript-format
+
+#, javascript-format
+
+
+
+#, javascript-format
+
+
+
+
+#, javascript-format
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, no-c-format
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+#, javascript-format
+
+#, javascript-format
+
+
+
+#, javascript-format
+
+#, javascript-format
+
+#, javascript-format
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+#, javascript-format
+
+
+
+
+#, javascript-format
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, c-format
+
+
+
+
+#, c-format
+
+
+
+
+
+
+
+#, javascript-format
+
+
+
+
+#, javascript-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, c-format
+
+#, c-format
+
+
+#, c-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, c-format
+
+
+
+
+
+
+#, c-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, c-format
+
+#, c-format
+
+
+
+
+#, c-format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#, c-format
+
+
+
+
+
+
+
+#, c-format
+
+#, c-format
+
+
+
+
+
+
+
+
+
+#, javascript-format
+
+#, javascript-format

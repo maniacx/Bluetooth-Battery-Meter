@@ -1,22 +1,31 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR maniacx@github.com
-# This file is distributed under the same license as the Bluetooth Battery Meter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Japanese translation of gnome-shell package.
+# Copyright (C) 2010-2017, 2019-2020, 2022 the gnome-shell copyright holder.
+# This file is distributed under the same license as the gnome-shell package.
+# Nishio Futoshi <fut_nis@d3.dion.ne.jp>, 2010.
+# Kiyotaka NISHIBORI <ml.nishibori.kiyotaka@gmail.com>, 2011.
+# Hideki Yamane <henrich@debian.org>, 2011.
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2011, 2012.
+# Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2011-2017.
+# Takanori MATSUURA <t.matsuu@gmail.com>, 2012.
+# Yoji TOYODA <bsyamato@sea.plala.or.jp>, 2013.
+# Ikuya Awashiro <ikuya@fruitsbasket.info>, 2014.
+# IWAI, Masaharu <iwaim.sub@gmail.com>, 2015.
+# sicklylife <translation@sicklylife.jp>, 2019-2020, 2022.
+# 小山田 純 <oyamadajun@outlook.jp>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Bluetooth Battery Meter\n"
+"Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 14:20-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"PO-Revision-Date: 2022-03-12 19:00+0900\n"
+"Last-Translator: sicklylife <translation@sicklylife.jp>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
@@ -24,14 +33,13 @@ msgstr ""
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Connect"
-msgstr ""
+msgstr "接続"
 
 #: lib/blutoothToggle.js:131
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d 台接続"
 
 #: preferences/about.js:39
 msgid "2024"
@@ -138,3 +146,4 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
+

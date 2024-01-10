@@ -1,37 +1,53 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR maniacx@github.com
-# This file is distributed under the same license as the Bluetooth Battery Meter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
-#, fuzzy
+#
+#
+#
+# Andrey Korzinev <fellrond@gmail.com>, 2009.
+# Sergey V. Kovylov <serejka@gmail.com>, 2009.
+# Marina Zhurakhinskaya <marinaz@redhat.com>, 2009, 2010.
+# Sergey Davidoff <shnatsel@gmail.com>, 2010.
+# Yuri Kozlov <yuray@komyakino.ru>, 2011, 2012.
+# JDronova <juliette.tux@gmail.com>, 2013, 2023.
+# Valery Kirichenko <valera5505@gmail.com>, 2014.
+# Yuri Myasoedov <ymyasoedov@yandex.ru>, 2012, 2013, 2014.
+# Ivan Komaritsyn <vantu5z@mail.ru>, 2015.
+# Stas Solovey <whats_up@tut.by>, 2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
+# Konstantin Nezhbert <zhbert@yandex.ru>, 2021.
+# Ivan Molodetskikh <yalterz@gmail.com>, 2020-2022.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Bluetooth Battery Meter\n"
+"Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 14:20-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"PO-Revision-Date: 2024-01-08 15:00+0300\n"
+"Last-Translator: Artur So <arturios2005@mail.ru>\n"
+"Language-Team: RU\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
-msgstr ""
+msgstr "Отключить"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Connect"
-msgstr ""
+msgstr "Подключить"
 
 #: lib/blutoothToggle.js:131
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d подключено"
+msgstr[1] "%d подключено"
+msgstr[2] "%d подключено"
 
 #: preferences/about.js:39
 msgid "2024"
@@ -138,3 +154,4 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
+

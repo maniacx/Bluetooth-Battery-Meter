@@ -1,37 +1,43 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR maniacx@github.com
-# This file is distributed under the same license as the Bluetooth Battery Meter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Lithuanian translation for gnome-shell.
+# Copyright © 2010-2012 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-shell package.
+# Žygimantas Beručka <zygis@gnome.org>, 2010, 2011, 2012.
+# Algimantas Margevičius <gymka@mail.ru>, 2011.
+# Mantas Kriaučiūnas <mantas@akl.lt>, 2012, 2013.
+# Aurimas Černius <aurisc4@gmail.com>, 2013-2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Bluetooth Battery Meter\n"
+"Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 14:20-0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"PO-Revision-Date: 2023-08-31 23:08+0300\n"
+"Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
+"Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Project-Style: gnome\n"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
-msgstr ""
+msgstr "Atsijungti"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Connect"
-msgstr ""
+msgstr "Prisijungti"
 
 #: lib/blutoothToggle.js:131
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d prijungtas"
+msgstr[1] "%d prijungti"
+msgstr[2] "%d prijungta"
 
 #: preferences/about.js:39
 msgid "2024"
@@ -138,3 +144,4 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
+
