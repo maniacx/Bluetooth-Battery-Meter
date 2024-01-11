@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 12:37-0800\n"
-"PO-Revision-Date: 2024-01-10 19:20+0100\n"
+"POT-Creation-Date: 2024-01-10 14:20-0800\n"
+"PO-Revision-Date: 2024-01-11 18:47+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
@@ -50,11 +50,11 @@ msgstr "© %s %s"
 #: preferences/about.js:48
 #, javascript-format
 msgid ""
-"This application comes with absolutely no warranty. See the <a "
-"href=\"%s\">%s</a> for details."
+"This application comes with absolutely no warranty. See the <a href=\"%s\">"
+"%s</a> for details."
 msgstr ""
-"Aquesta aplicacion es provesida sens cap de garantida. Consultatz la <a "
-"href=\"%s\">%s</a> per mai de detalhs."
+"Aquesta aplicacion es provesida sens cap de garantida. Consultatz la <a href="
+"\"%s\">%s</a> per mai de detalhs."
 
 #: ui/about.ui:5
 msgid "About"
@@ -82,11 +82,11 @@ msgstr "Avís legal"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "Tutorials en linha"
 
 #: ui/general.ui:5
 msgid "General"
@@ -139,7 +139,7 @@ msgstr ""
 
 #: ui/general.ui:67
 msgid "Note!"
-msgstr "Nòta !"
+msgstr "Nòta !"
 
 #: ui/general.ui:70
 msgid ""
