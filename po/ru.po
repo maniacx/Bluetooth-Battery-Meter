@@ -16,13 +16,14 @@
 # Stas Solovey <whats_up@tut.by>, 2011, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 # Konstantin Nezhbert <zhbert@yandex.ru>, 2021.
 # Ivan Molodetskikh <yalterz@gmail.com>, 2020-2022.
+# Anton Palgunov <toxblh@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-10 13:33-0800\n"
-"PO-Revision-Date: 2024-01-08 15:00+0300\n"
+"PO-Revision-Date: 2024-01-11 16:33+0000\n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: RU\n"
 "Language: ru\n"
@@ -55,7 +56,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "GNU General Public License, версии 3 или позже"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -68,30 +69,31 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"Это приложение не имеет никакой гарантии. Подробнее <a href=“%s”>%s</a>."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "О приложении"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "Инструкция"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "Сообщить об ошибке"
 
 #: ui/about.ui:114
 msgid "Translations"
-msgstr ""
+msgstr "Переводы"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "Посмотреть исходный код на Github"
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "Правовой статус"
 
 #: ui/about.ui:217
 msgid "Crowdin"
@@ -99,59 +101,65 @@ msgstr ""
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "Онлайн уроки"
 
 #: ui/general.ui:5
 msgid "General"
-msgstr ""
+msgstr "Общие"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Настройки иконок системной панели"
 
 #: ui/general.ui:12
 msgid "Enable Bluetooth device battery indicators"
-msgstr ""
+msgstr "Отображать уровнь заряда Bluetooth устройств"
 
 #: ui/general.ui:13
 msgid "Show icon in system tray with device battery level"
-msgstr ""
+msgstr "Покажет уровень заряда батареи устройства в системном трее"
 
 #: ui/general.ui:26
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "Настройки быстрого меню"
 
 #: ui/general.ui:29
 msgid "Show Bluetooth device battery level icon"
-msgstr ""
+msgstr "Показать значок батареи Bluetooth устройств"
 
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
 msgstr ""
+"Отображение во всплывающем меню значка, показывающего уровень заряда "
+"батареи устройства Bluetooth"
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Показать процент заряда батареи Bluetooth устройств"
 
 #: ui/general.ui:42
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr ""
+"Отображение процентного уровня заряда батареи устройства Bluetooth в "
+"текстовом виде"
 
 #: ui/general.ui:53
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "Показать иконку заряда батареи перед процентами"
 
 #: ui/general.ui:54
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "Поменяет местами отображение иконки батареи и проценты"
 
 #: ui/general.ui:67
 msgid "Note!"
-msgstr ""
+msgstr "Внимание!"
 
 #: ui/general.ui:70
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
-
+"Некоторые Bluetooth-устройства не сообщают об уровне заряда батареи до "
+"тех пор, пока в системе не будут включены экспериментальные функции "
+"Bluez. Подробности смотрите в инструкции."
