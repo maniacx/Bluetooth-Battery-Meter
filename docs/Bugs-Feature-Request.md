@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bugs / Feature Request
-nav_order: 3
+nav_order: 4
 permalink: /bugs-feature-request
 ---
 
