@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: gnome-shell.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-10 13:33-0800\n"
-"PO-Revision-Date: 2023-08-28 09:04+0200\n"
-"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"PO-Revision-Date: 2024-01-11 20:20+0100\n"
+"Last-Translator: Jose Luis Tirado <joseluis.tirado@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 45.alpha0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
@@ -38,16 +38,16 @@ msgstr[1] "%d conectados"
 
 #: preferences/about.js:39
 msgid "2024"
-msgstr ""
+msgstr "2024"
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "Licencia Pública General de GNU, versión 3 o posterior"
 
 #: preferences/about.js:47
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "© %s %s"
 
 #: preferences/about.js:48
 #, javascript-format
@@ -55,91 +55,101 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"Esta aplicación viene sin garantía de ningún tipo. Consulte  <a "
+"href=\"%s\">%s</a> para más información."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "Léame"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "Informar de un problema"
 
 #: ui/about.ui:114
 msgid "Translations"
-msgstr ""
+msgstr "Traducciones"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "Ver código fuente en Github"
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "Legal"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "Tutoriales en línea"
 
 #: ui/general.ui:5
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Configuración de los indicadores"
 
 #: ui/general.ui:12
 msgid "Enable Bluetooth device battery indicators"
-msgstr ""
+msgstr "Activar los indicadores de batería de los dispositivos Bluetooth"
 
 #: ui/general.ui:13
 msgid "Show icon in system tray with device battery level"
-msgstr ""
+msgstr "Mostrar icono en la bandeja del sistema con el nivel de batería"
 
 #: ui/general.ui:26
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "Configuración del menú rápido"
 
 #: ui/general.ui:29
 msgid "Show Bluetooth device battery level icon"
 msgstr ""
+"Mostrar el icono de nivel de batería de los dispositivos Bluetooth"
 
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
 msgstr ""
+"Muestra el icono en el menú emergente indicando el nivel de batería del "
+"dispositivo Bluetooth"
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Mostrar el porcentaje de batería de los dispositivos Bluetooth"
 
 #: ui/general.ui:42
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr ""
+"Muestra el porcentaje de batería de los dispositivos Bluetooth como "
+"texto"
 
 #: ui/general.ui:53
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "Mostrar el icono de nivel de batería antes del texto"
 
 #: ui/general.ui:54
 msgid "Swaps position of battery level icon and percentage text"
 msgstr ""
+"Intercambia la posición del icono de nivel de batería y el texto con el "
+"porcentaje"
 
 #: ui/general.ui:67
 msgid "Note!"
-msgstr ""
+msgstr "¡Aviso!"
 
 #: ui/general.ui:70
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
-
-
+"Algunos dispositivos Bluetooth no informan del nivel de batería hasta "
+"que las funciones experimentales de Bluez se activan en el sistema. "
+"Revise Léame para más detalles."
