@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Changelogs
-nav_order: 6
+nav_order: 5
 permalink: /changelogs
 ---
 

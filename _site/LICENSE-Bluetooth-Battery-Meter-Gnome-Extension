@@ -1,38 +1,14 @@
----
-layout: default
-title: License
-nav_order: 6
-permalink: /license
----
-<style>
-.txt-horizantal-align {
-   text-align: center;
-}
-</style>
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
 
-```text
-
-GNU GENERAL PUBLIC LICENSE
-Version 3, 29 June 2007
-
-```
-{: .fs-6 .txt-horizantal-align }
-
-<br><br>
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
-```text
-
-Preamble
-
-```
-{: .fs-5 .txt-horizantal-align }
+                            Preamble
 
   The GNU General Public License is a free, copyleft license for
 software and other kinds of works.
-
 
   The licenses for most software and other practical works are designed
 to take away your freedom to share and change the works.  By contrast,
@@ -92,12 +68,7 @@ patents cannot be used to render the program non-free.
   The precise terms and conditions for copying, distribution and
 modification follow.
 
-```text
-
-TERMS AND CONDITIONS
-
-```
-{: .fs-5 .txt-horizantal-align }
+                       TERMS AND CONDITIONS
 
   0. Definitions.
 
@@ -647,15 +618,9 @@ an absolute waiver of all civil liability in connection with the
 Program, unless a warranty or assumption of liability accompanies a
 copy of the Program in return for a fee.
 
-```text
-END OF TERMS AND CONDITIONS
-```
-{:  .fs-5 .txt-horizantal-align }
+                     END OF TERMS AND CONDITIONS
 
-```text
-How to Apply These Terms to Your New Programs
-```
-{:  .fs-4 .txt-horizantal-align }
+            How to Apply These Terms to Your New Programs
 
   If you develop a new program, and you want it to be of the greatest
 possible use to the public, the best way to achieve this is to make it
@@ -689,11 +654,13 @@ notice like this when it starts in an interactive mode:
 
     BLUETOOTH BATTERY METER GNOME Shell Extension
     Copyright (C) 2024  maniacx@github.com
-    
-    This program comes with ABSOLUTELY NO WARRANTY.
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
     This is free software, and you are welcome to redistribute it
-    under certain conditions.
+    under certain conditions; type `show c' for details.
 
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, your program's commands
+might be different; for a GUI interface, you would use an "about box".
 
   You should also get your employer (if you work as a programmer) or school,
 if any, to sign a "copyright disclaimer" for the program, if necessary.
