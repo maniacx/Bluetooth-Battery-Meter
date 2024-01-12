@@ -41,7 +41,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "Общ публичен лиценз на GNU (GNU GPL), версия 3 или по-нова"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -54,10 +54,12 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"Тази програма идва без всякаква гаранция. За повече информация вижте <a "
+"href='%s'>%s</a>."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "Относно"
 
 #: ui/about.ui:75
 msgid "Read me"
@@ -77,7 +79,7 @@ msgstr ""
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "Правна информация"
 
 #: ui/about.ui:217
 msgid "Crowdin"

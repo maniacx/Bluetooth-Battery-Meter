@@ -54,7 +54,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "Загальна громадська ліцензія GNU (GNU GPL), версія 3 або новіша"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -67,30 +67,32 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"Ця програма постачається БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ. Щоб дізнатися більше, "
+"відвідайте <a href=\"%s\">%s</a>."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "Про програму"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "Прочитай мене"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "Повідомити про ваду"
 
 #: ui/about.ui:114
 msgid "Translations"
-msgstr ""
+msgstr "Переклади"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "Переглянути вихідний код"
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "Юридичні відомості"
 
 #: ui/about.ui:217
 msgid "Crowdin"
@@ -98,11 +100,11 @@ msgstr ""
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "Підручники в інтернеті"
 
 #: ui/general.ui:5
 msgid "General"
-msgstr ""
+msgstr "Загальне"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"

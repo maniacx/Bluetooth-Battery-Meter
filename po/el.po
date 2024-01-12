@@ -42,7 +42,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "Γενική δημόσια άδεια GNU, έκδοση 3 ή νεότερη"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -55,10 +55,12 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"Αυτή η εφαρμογή έρχεται με καμία απολύτως εγγύηση. Δείτε το <a "
+"href=\"%s\">%s</a> για λεπτομέρειες."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "Περί"
 
 #: ui/about.ui:75
 msgid "Read me"
@@ -78,7 +80,7 @@ msgstr ""
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "Νομικά"
 
 #: ui/about.ui:217
 msgid "Crowdin"

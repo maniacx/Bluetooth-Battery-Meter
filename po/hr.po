@@ -41,7 +41,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "GNU Opća Javna Licenca, inačice 3 ili novija"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -54,10 +54,12 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"Ova aplikacija dolazi bez ikakvog jamstva. Pogledajte <a href=\"%s\">%s</a> "
+"za više pojedinosti."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "O programu"
 
 #: ui/about.ui:75
 msgid "Read me"
@@ -77,7 +79,7 @@ msgstr ""
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "Pravilnik"
 
 #: ui/about.ui:217
 msgid "Crowdin"

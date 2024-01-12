@@ -43,7 +43,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "نگارش ۳ یا بالاتر پروانهٔ جامع همگانی گنو"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -56,10 +56,11 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"این برنامه بی هیچ ضمانتی می‌آید. برای جزییات <a href=\"%s\">%s</a> را ببینید."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "درباره"
 
 #: ui/about.ui:75
 msgid "Read me"
@@ -79,7 +80,7 @@ msgstr ""
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "حقوقی"
 
 #: ui/about.ui:217
 msgid "Crowdin"

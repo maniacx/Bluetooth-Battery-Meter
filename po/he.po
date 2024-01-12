@@ -45,7 +45,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "הרישיון הציבורי הכללי של גנו, גרסה 3 או כל גרסה מאוחרת יותר"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -58,10 +58,11 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"תכנית זו מופצת ללא שום אחריות. ניתן לבקר בכתובת <a href=\"%s\">%s</a> לפרטים."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "אודות"
 
 #: ui/about.ui:75
 msgid "Read me"
@@ -81,7 +82,7 @@ msgstr ""
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "משפטי"
 
 #: ui/about.ui:217
 msgid "Crowdin"

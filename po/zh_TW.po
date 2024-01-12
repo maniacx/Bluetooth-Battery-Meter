@@ -41,7 +41,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "《GNU 通用公眾授權條款 3.0》或更新版本"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -53,11 +53,11 @@ msgstr ""
 msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
-msgstr ""
+msgstr "這個程式沒有任何擔保責任。如需更多資訊，請參閱<a href=\"%s\">%s</a>。"
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: ui/about.ui:75
 msgid "Read me"
@@ -77,7 +77,7 @@ msgstr ""
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "法律聲明"
 
 #: ui/about.ui:217
 msgid "Crowdin"

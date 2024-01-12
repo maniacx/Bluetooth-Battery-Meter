@@ -62,55 +62,55 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "GNU 通用公共许可证，第 3 版及以上"
 
 #: preferences/about.js:47
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "© %s %s"
 
 #: preferences/about.js:48
 #, javascript-format
 msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
-msgstr ""
+msgstr "本程序不作任何担保。详情请见 <a href=\"%s\">%s</a>。"
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "说明文档"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "报告问题"
 
 #: ui/about.ui:114
 msgid "Translations"
-msgstr ""
+msgstr "翻译"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "查看源代码"
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "法律信息"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "在线教程"
 
 #: ui/general.ui:5
 msgid "General"
-msgstr ""
+msgstr "常规"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"

@@ -44,7 +44,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "Llicència pública general de GNU, versió 3 o posterior"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -57,10 +57,12 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"Aquesta aplicació no té absolutament cap garantia. Vegeu el <a "
+"href=\"%s\">%s</a> per a més detalls."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "Quant a"
 
 #: ui/about.ui:75
 msgid "Read me"
@@ -80,7 +82,7 @@ msgstr ""
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "Legal"
 
 #: ui/about.ui:217
 msgid "Crowdin"

@@ -57,12 +57,12 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "GNU General Public License, Version 3 oder neuer"
 
 #: preferences/about.js:47
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "© %s %s"
 
 #: preferences/about.js:48
 #, javascript-format
@@ -70,42 +70,44 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"Dieses Programm kommt OHNE JEDWEDE GARANTIE.\n"
+"Besuchen Sie <a href=\"%s\">%s</a> für weitere Informationen."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "Lies mich"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "Ein Problem melden"
 
 #: ui/about.ui:114
 msgid "Translations"
-msgstr ""
+msgstr "Übersetzungen"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "Quellcode anzeigen"
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "Rechtshinweis"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "Anleitungen im Netz"
 
 #: ui/general.ui:5
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"

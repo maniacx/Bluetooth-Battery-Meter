@@ -42,7 +42,7 @@ msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
+msgstr "GNU General Public License, 3-as vagy későbbi verzió"
 
 #: preferences/about.js:47
 #, javascript-format
@@ -55,42 +55,44 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
+"Erre az alkalmazásra egyáltalán nem vonatkozik garancia. További részletek "
+"a(z) <a href=\"%s\">%s</a> szövegében."
 
 #: ui/about.ui:5
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "Olvass el"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "Hiba jelentése"
 
 #: ui/about.ui:114
 msgid "Translations"
-msgstr ""
+msgstr "Fordítások"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "Forrás megtekintése"
 
 #: ui/about.ui:153
 msgid "Legal"
-msgstr ""
+msgstr "Jogi információk"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin fordítás"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "Segédlet"
 
 #: ui/general.ui:5
 msgid "General"
-msgstr ""
+msgstr "Általános"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"
