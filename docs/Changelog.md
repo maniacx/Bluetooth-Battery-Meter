@@ -7,6 +7,16 @@ permalink: /changelogs
 
 # Changelogs
 
+
+{: .important-title }
+> GN-45_Version 03 &emsp;&emsp; Jan 13, 2024 
+> * Minor icon modification
+> * Updated Occitan translation Credits:Mejans
+> * Updated Italian translation Credits:albanobattistella
+> * Updated Russian translation Credits:Toxblh
+> * Updated Spanish translation Credits:txelu
+
+
 {: .important-title }
 > GN-45_Version 02 &emsp;&emsp; Jan 10, 2024 
 > * Fixed device not getting removed from Popupmenu when unpaired

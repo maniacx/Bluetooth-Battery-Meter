@@ -109,8 +109,7 @@ permalink: /credits
 > * luna-duclos
 > * pramodhrachuri
 > * MasinAD
-> * andyholmes
 > * Mejans
- 
-
+> * Toxblh
+> * txelu
 
