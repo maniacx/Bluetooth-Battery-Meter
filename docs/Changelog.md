@@ -7,6 +7,10 @@ permalink: /changelogs
 
 # Changelogs
 
+{: .important-title }
+> GN-45_Version 04 &emsp;&emsp; Jan 14, 2024 
+> * Another attempt to fix alignment with battery percentage text
+> * With upcoming bug fix in gnome-shell, destroy indicators when device is removed
 
 {: .important-title }
 > GN-45_Version 03 &emsp;&emsp; Jan 13, 2024 
