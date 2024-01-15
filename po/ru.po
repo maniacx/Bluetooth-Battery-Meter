@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"POT-Creation-Date: 2024-01-14 19:45-0800\n"
 "PO-Revision-Date: 2024-01-11 16:33+0000\n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: RU\n"
@@ -42,7 +42,7 @@ msgstr "Отключить"
 msgid "Connect"
 msgstr "Подключить"
 
-#: lib/blutoothToggle.js:131
+#: lib/blutoothToggle.js:142
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -130,8 +130,8 @@ msgstr "Показать значок батареи Bluetooth устройст�
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
 msgstr ""
-"Отображение во всплывающем меню значка, показывающего уровень заряда "
-"батареи устройства Bluetooth"
+"Отображение во всплывающем меню значка, показывающего уровень заряда батареи "
+"устройства Bluetooth"
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
@@ -160,6 +160,6 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
-"Некоторые Bluetooth-устройства не сообщают об уровне заряда батареи до "
-"тех пор, пока в системе не будут включены экспериментальные функции "
-"Bluez. Подробности смотрите в инструкции."
+"Некоторые Bluetooth-устройства не сообщают об уровне заряда батареи до тех "
+"пор, пока в системе не будут включены экспериментальные функции Bluez. "
+"Подробности смотрите в инструкции."

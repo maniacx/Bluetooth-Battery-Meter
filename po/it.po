@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 12:37-0800\n"
+"POT-Creation-Date: 2024-01-14 19:45-0800\n"
 "PO-Revision-Date: 2024-01-12 12:07+0100\n"
 "Last-Translator:  Albano Battistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "Disconnetti"
 msgid "Connect"
 msgstr "Connetti"
 
-#: lib/blutoothToggle.js:131
+#: lib/blutoothToggle.js:142
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -100,7 +100,9 @@ msgstr "Abilita gli indicatori della batteria del dispositivo Bluetooth"
 
 #: ui/general.ui:13
 msgid "Show icon in system tray with device battery level"
-msgstr "Mostra l'icona nella barra delle applicazioni con il livello della batteria del dispositivo"
+msgstr ""
+"Mostra l'icona nella barra delle applicazioni con il livello della batteria "
+"del dispositivo"
 
 #: ui/general.ui:26
 msgid "Quick Menu Settings"
@@ -112,7 +114,9 @@ msgstr "Mostra l'icona del livello della batteria del dispositivo Bluetooth"
 
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
-msgstr "Visualizza l'icona nel menu a comparsa che mostra il livello della batteria del dispositivo Bluetooth"
+msgstr ""
+"Visualizza l'icona nel menu a comparsa che mostra il livello della batteria "
+"del dispositivo Bluetooth"
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
@@ -120,7 +124,9 @@ msgstr "Mostra la percentuale della batteria del dispositivo Bluetooth"
 
 #: ui/general.ui:42
 msgid "Displays Bluetooth device battery level percentage in text"
-msgstr "Visualizza la percentuale del livello della batteria del dispositivo Bluetooth nel testo"
+msgstr ""
+"Visualizza la percentuale del livello della batteria del dispositivo "
+"Bluetooth nel testo"
 
 #: ui/general.ui:53
 msgid "Display battery level icon before text"
@@ -128,7 +134,9 @@ msgstr "Visualizza l'icona del livello della batteria prima del testo"
 
 #: ui/general.ui:54
 msgid "Swaps position of battery level icon and percentage text"
-msgstr "Scambia la posizione dell'icona del livello della batteria e del testo percentuale"
+msgstr ""
+"Scambia la posizione dell'icona del livello della batteria e del testo "
+"percentuale"
 
 #: ui/general.ui:67
 msgid "Note!"
@@ -139,5 +147,6 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
-"Alcuni dispositivi Bluetooth non segnalano il livello della batteria a Bluez fino a che "
-"le funzionalità sperimentali sono abilitate nel sistema. Controlla il file Leggimi per i dettagli."
+"Alcuni dispositivi Bluetooth non segnalano il livello della batteria a Bluez "
+"fino a che le funzionalità sperimentali sono abilitate nel sistema. "
+"Controlla il file Leggimi per i dettagli."

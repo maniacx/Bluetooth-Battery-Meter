@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 14:20-0800\n"
+"POT-Creation-Date: 2024-01-14 19:45-0800\n"
 "PO-Revision-Date: 2024-01-11 18:47+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -27,7 +27,7 @@ msgstr "Desconnectar"
 msgid "Connect"
 msgstr "Connectar"
 
-#: lib/blutoothToggle.js:131
+#: lib/blutoothToggle.js:142
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -50,11 +50,11 @@ msgstr "© %s %s"
 #: preferences/about.js:48
 #, javascript-format
 msgid ""
-"This application comes with absolutely no warranty. See the <a href=\"%s\">"
-"%s</a> for details."
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
 msgstr ""
-"Aquesta aplicacion es provesida sens cap de garantida. Consultatz la <a href="
-"\"%s\">%s</a> per mai de detalhs."
+"Aquesta aplicacion es provesida sens cap de garantida. Consultatz la <a "
+"href=\"%s\">%s</a> per mai de detalhs."
 
 #: ui/about.ui:5
 msgid "About"

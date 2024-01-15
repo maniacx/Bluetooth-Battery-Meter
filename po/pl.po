@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"POT-Creation-Date: 2024-01-14 19:45-0800\n"
 "PO-Revision-Date: 2023-08-27 16:35+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -29,7 +29,7 @@ msgstr "Rozłącz"
 msgid "Connect"
 msgstr "Połącz"
 
-#: lib/blutoothToggle.js:131
+#: lib/blutoothToggle.js:142
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -144,5 +144,3 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
-
-

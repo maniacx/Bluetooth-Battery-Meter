@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 13:33-0800\n"
+"POT-Creation-Date: 2024-01-14 19:45-0800\n"
 "PO-Revision-Date: 2024-01-11 20:20+0100\n"
 "Last-Translator: Jose Luis Tirado <joseluis.tirado@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
@@ -29,7 +29,7 @@ msgstr "Desconectar"
 msgid "Connect"
 msgstr "Conectar"
 
-#: lib/blutoothToggle.js:131
+#: lib/blutoothToggle.js:142
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -112,8 +112,7 @@ msgstr "Configuración del menú rápido"
 
 #: ui/general.ui:29
 msgid "Show Bluetooth device battery level icon"
-msgstr ""
-"Mostrar el icono de nivel de batería de los dispositivos Bluetooth"
+msgstr "Mostrar el icono de nivel de batería de los dispositivos Bluetooth"
 
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
@@ -128,8 +127,7 @@ msgstr "Mostrar el porcentaje de batería de los dispositivos Bluetooth"
 #: ui/general.ui:42
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr ""
-"Muestra el porcentaje de batería de los dispositivos Bluetooth como "
-"texto"
+"Muestra el porcentaje de batería de los dispositivos Bluetooth como texto"
 
 #: ui/general.ui:53
 msgid "Display battery level icon before text"
@@ -150,6 +148,6 @@ msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
-"Algunos dispositivos Bluetooth no informan del nivel de batería hasta "
-"que las funciones experimentales de Bluez se activan en el sistema. "
-"Revise Léame para más detalles."
+"Algunos dispositivos Bluetooth no informan del nivel de batería hasta que "
+"las funciones experimentales de Bluez se activan en el sistema. Revise Léame "
+"para más detalles."
