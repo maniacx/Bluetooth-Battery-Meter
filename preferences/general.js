@@ -49,7 +49,9 @@ export const  General = GObject.registerClass({
     }
 
     _setRowSensitivity() {
-        this._swap_icon_text_row.sensitive = this._settings.get_boolean('enable-battery-level-text') &&
-            this._settings.get_boolean('enable-battery-level-icon');
+        const status = this._settings.get_boolean('enable-battery-level-text') && this._settings.get_boolean('enable-battery-level-icon');
+        this._swap_icon_text_row.sensitive = status;
+        if(!status)
+            this._settings.set_boolean('swap-icon-text', false)
     }
 });
