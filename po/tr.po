@@ -1,24 +1,15 @@
-# Turkish translation of gnome-shell
-# Copyright (C) 2009, 2011 the Free Software Foundation, Inc.
-# Copyright (C) 2012-2023 gnome-shell'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-shell package.
+# Turkish translation of Bluetooth Battery Meter
+# Copyright (C) 2024 Bluetooth Battery Meter'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Bluetooth Battery Meter package.
 #
-# Baris Cicek <baris@teamforce.name.tr>, 2009.
-# ercin <ercin@linux.org.tr>, 2011.
-# Osman Karagöz <osmank3@gmail.com>, 2013.
-# Bayram Güçlü <byrmgcl@yandex.com.tr>, 2014.
-# Gökhan Gurbetoğlu <ggurbet@gmail.com>, 2014.
-# Muhammet Kara <muhammetk@gmail.com>, 2011-2017.
-# Furkan Ahmet Kara <furkanahmetkara.fk@gmail.com>, 2017, 2018.
-# Sabri Ünal <libreajans@gmail.com>, 2014, 2019, 2022, 2023.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2017-2023.
+# Sabri Ünal <libreajans@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-shell\n"
+"Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 19:45-0800\n"
-"PO-Revision-Date: 2023-12-18 02:43+0300\n"
+"POT-Creation-Date: 2024-01-17 06:25-0800\n"
+"PO-Revision-Date: 2024-01-18 09:13+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
 "Language: tr\n"
@@ -26,13 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.1\n"
-"X-Project-Style: gnome\n"
-"X-DL-Team: tr\n"
-"X-DL-Module: gnome-shell\n"
-"X-DL-Branch: main\n"
-"X-DL-Domain: po\n"
-"X-DL-State: Translating\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: lib/blutoothPopupMenu.js:80
 msgid "Disconnect"
@@ -50,7 +35,7 @@ msgstr[0] "%d Bağlı"
 
 #: preferences/about.js:39
 msgid "2024"
-msgstr ""
+msgstr "2024"
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
@@ -64,11 +49,11 @@ msgstr "© %s %s"
 #: preferences/about.js:48
 #, javascript-format
 msgid ""
-"This application comes with absolutely no warranty. See the <a "
-"href=\"%s\">%s</a> for details."
+"This application comes with absolutely no warranty. See the <a href=\"%s\">"
+"%s</a> for details."
 msgstr ""
-"Bu program kesinlikle hiçbir garanti vermiyor. Ayrıntılar için <a "
-"href=\"%s\">%s</a> bağlantısına bakın."
+"Bu program kesinlikle hiçbir garanti vermiyor. Ayrıntılar için <a href=\"%s"
+"\">%s</a> bağlantısına bakın."
 
 #: ui/about.ui:5
 msgid "About"
@@ -76,7 +61,7 @@ msgstr "Hakkında"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr "Beni oku"
+msgstr "Beni Oku"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
@@ -88,7 +73,7 @@ msgstr "Çeviriler"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr "Kaynakları görüntüle"
+msgstr "Github'da kaynak kodunu görüntüle"
 
 #: ui/about.ui:153
 msgid "Legal"
@@ -100,7 +85,7 @@ msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr "Çevrimiçi eğitimler"
+msgstr "Çevrimiçi Eğitimler"
 
 #: ui/general.ui:5
 msgid "General"
@@ -108,50 +93,52 @@ msgstr "Genel"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Gösterge Ayarları"
 
 #: ui/general.ui:12
 msgid "Enable Bluetooth device battery indicators"
-msgstr ""
+msgstr "Bluetooth aygıt pil göstergelerini etkinleştir"
 
 #: ui/general.ui:13
 msgid "Show icon in system tray with device battery level"
-msgstr ""
+msgstr "Sistem tepsisinde aygıt pil düzeyi ile birlikte simge göster"
 
 #: ui/general.ui:26
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "Hızlı Menü Ayarları"
 
 #: ui/general.ui:29
 msgid "Show Bluetooth device battery level icon"
-msgstr ""
+msgstr "Bluetooth aygıtının pil düzeyi simgesini göster"
 
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
-msgstr ""
+msgstr "Bluetooth aygıtının pil düzeyini gösteren açılır menüde simge gösterir"
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Bluetooth aygıtının pil yüzdesini göster"
 
 #: ui/general.ui:42
 msgid "Displays Bluetooth device battery level percentage in text"
-msgstr ""
+msgstr "Bluetooth aygıtının pil düzeyi yüzdesini metin olarak gösterir"
 
 #: ui/general.ui:53
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "Pil düzeyi simgesini metinden önce göster"
 
 #: ui/general.ui:54
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "Pil düzeyi simgesi ile yüzde metninin konumunu değiştirir"
 
 #: ui/general.ui:67
 msgid "Note!"
-msgstr ""
+msgstr "Not!"
 
 #: ui/general.ui:70
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
+"Bluez deneysel özellikleri sistemde etkinleştirilene kadar kimi Bluetooth "
+"aygıtlarının pil düzeyi görüntülenemez. Ayrıntılar için Beni Oku'ya bakınız."
