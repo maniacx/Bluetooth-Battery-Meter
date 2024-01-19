@@ -7,10 +7,20 @@ permalink: /changelogs
 
 # Changelogs
 
+
 {: .important-title }
-> GN-45_Version 04 &emsp;&emsp; Jan 14, 2024 
+> GN-45_Version 06 &emsp;&emsp; Upcoming 
+> * i18n: Add Turkish translation. Credits: sabriunal
+
+
+{: .important-title }
+> GN-45_Version 05 &emsp;&emsp; Jan 14, 2024 
+> * Popupmenu: Better fix for .get_width() warnings. Credits:GdH
+> * Prefs: General, when bat level text or icon is disabled, force disable swap text icon
+> * Toggle: Rebuild Popupmenu on large text accessiblity settings change
 > * Another attempt to fix alignment with battery percentage text
 > * With upcoming bug fix in gnome-shell, destroy indicators when device is removed
+
 
 {: .important-title }
 > GN-45_Version 03 &emsp;&emsp; Jan 13, 2024 
@@ -30,7 +40,6 @@ permalink: /changelogs
 > * Updated Occitan translation Credits:Mejans
 > * Updated Italian translation Credits:albanobattistella
 
-<br>
 
 {: .important-title }
 > GN-45_Version 01 &emsp;&emsp; Jan 06, 2024 
