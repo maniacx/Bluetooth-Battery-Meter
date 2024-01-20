@@ -8,6 +8,7 @@
 # Vojtěch Perník <translations@pervoj.cz>, 2022.
 # Marek Černocký <marek@manet.cz>, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # Kryštof Černý <cleerline1mc@gmail.com>, 2023.
+# Petr Balvín <petrbalvin@petalmail.com, petrbalvin@yandex.com>, 2024.
 #
 msgid ""
 msgstr ""
@@ -43,7 +44,7 @@ msgstr[2] "%d připojených"
 
 #: preferences/about.js:39
 msgid "2024"
-msgstr ""
+msgstr "2024"
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
@@ -105,46 +106,46 @@ msgstr ""
 
 #: ui/general.ui:12
 msgid "Enable Bluetooth device battery indicators"
-msgstr ""
+msgstr "Povolit indikátor baterie zařízení Bluetooth"
 
 #: ui/general.ui:13
 msgid "Show icon in system tray with device battery level"
-msgstr ""
+msgstr "Zobrazit ikonu v systémové liště s úrovní nabití baterie"
 
 #: ui/general.ui:26
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "Panel rychlého nastavení"
 
 #: ui/general.ui:29
 msgid "Show Bluetooth device battery level icon"
-msgstr ""
+msgstr "Zobrazit ikonu baterie zařízení Bluetooth"
 
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
-msgstr ""
+msgstr "Zobrazí ikonu ve vyskakovací nabídce zobrazující úroveň baterie zařízení Bluetooth"
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Zobrazit procento nabití baterie zařízení Bluetooth"
 
 #: ui/general.ui:42
 msgid "Displays Bluetooth device battery level percentage in text"
-msgstr ""
+msgstr "Zobrazí procento nabití baterie zařízení Bluetooth v textu"
 
 #: ui/general.ui:53
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "Zobrazit ikonu stavu baterie před textem"
 
 #: ui/general.ui:54
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "Prohodit pozici ikony baterie a textu v procentech"
 
 #: ui/general.ui:67
 msgid "Note!"
-msgstr ""
+msgstr "Poznámka"
 
 #: ui/general.ui:70
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
-msgstr ""
+msgstr "Některá zařízení Bluetooth nehlásí stav baterie, dokud nejsou v systému povoleny experimentální funkce. Pro podrobnosti zkontrolujte Čti mě."
