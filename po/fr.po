@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 19:45-0800\n"
+"POT-Creation-Date: 2024-01-20 14:57-0800\n"
 "PO-Revision-Date: 2023-09-07 21:39+0200\n"
 "Last-Translator: Irénée Thirion <irenee.thirion@e.email>\n"
 "Language-Team: French - France <gnomefr@traduc.org>\n"
@@ -50,10 +50,6 @@ msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d connecté"
 msgstr[1] "%d connectés"
-
-#: preferences/about.js:39
-msgid "2024"
-msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"

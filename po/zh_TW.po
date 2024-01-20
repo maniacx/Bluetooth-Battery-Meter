@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell 3.3.90\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 19:45-0800\n"
+"POT-Creation-Date: 2024-01-20 14:57-0800\n"
 "PO-Revision-Date: 2023-10-05 15:33+0800\n"
 "Last-Translator: Cheng-Chia Tseng <zerngjia@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://darkbear.mercusysddns.com/"
@@ -34,10 +34,6 @@ msgstr "連接"
 msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d 個裝置已連接"
-
-#: preferences/about.js:39
-msgid "2024"
-msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"

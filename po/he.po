@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 19:45-0800\n"
+"POT-Creation-Date: 2024-01-20 14:57-0800\n"
 "PO-Revision-Date: 2023-08-26 20:57+0300\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: Hebrew <yoseforb@gmail.com>\n"
@@ -38,10 +38,6 @@ msgstr[0] "אחד מחובר"
 msgstr[1] "שניים מחוברים"
 msgstr[2] "%d מחוברים"
 msgstr[3] "%d מחוברים"
-
-#: preferences/about.js:39
-msgid "2024"
-msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"

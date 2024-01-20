@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 19:45-0800\n"
+"POT-Creation-Date: 2024-01-20 14:57-0800\n"
 "PO-Revision-Date: 2023-10-24 06:04+0200\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnome-sr@googlegroups.org>\n"
@@ -42,10 +42,6 @@ msgstr[0] "%d повезан"
 msgstr[1] "%d повезана"
 msgstr[2] "%d повезано"
 msgstr[3] "%d повезан"
-
-#: preferences/about.js:39
-msgid "2024"
-msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"

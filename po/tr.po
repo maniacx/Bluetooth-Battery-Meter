@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-17 06:25-0800\n"
+"POT-Creation-Date: 2024-01-20 14:57-0800\n"
 "PO-Revision-Date: 2024-01-18 09:13+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -33,10 +33,6 @@ msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d Bağlı"
 
-#: preferences/about.js:39
-msgid "2024"
-msgstr "2024"
-
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
 msgstr "GNU Genel Kamu Lisansı, sürüm 3 ya da sonrası"
@@ -49,11 +45,11 @@ msgstr "© %s %s"
 #: preferences/about.js:48
 #, javascript-format
 msgid ""
-"This application comes with absolutely no warranty. See the <a href=\"%s\">"
-"%s</a> for details."
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
 msgstr ""
-"Bu program kesinlikle hiçbir garanti vermiyor. Ayrıntılar için <a href=\"%s"
-"\">%s</a> bağlantısına bakın."
+"Bu program kesinlikle hiçbir garanti vermiyor. Ayrıntılar için <a "
+"href=\"%s\">%s</a> bağlantısına bakın."
 
 #: ui/about.ui:5
 msgid "About"
@@ -142,3 +138,6 @@ msgid ""
 msgstr ""
 "Bluez deneysel özellikleri sistemde etkinleştirilene kadar kimi Bluetooth "
 "aygıtlarının pil düzeyi görüntülenemez. Ayrıntılar için Beni Oku'ya bakınız."
+
+#~ msgid "2024"
+#~ msgstr "2024"

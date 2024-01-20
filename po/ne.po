@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nepali Translation Gnome 3.26 dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 19:45-0800\n"
+"POT-Creation-Date: 2024-01-20 14:57-0800\n"
 "PO-Revision-Date: 2022-09-19 10:55+0545\n"
 "Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
 "Language-Team: Nepali Translation Team <chautari@gmail.com>\n"
@@ -33,10 +33,6 @@ msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d जडान गरियो"
 msgstr[1] "%d जडान गरियो"
-
-#: preferences/about.js:39
-msgid "2024"
-msgstr ""
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 19:45-0800\n"
+"POT-Creation-Date: 2024-01-20 14:57-0800\n"
 "PO-Revision-Date: 2024-01-11 18:47+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -33,10 +33,6 @@ msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d connectat"
 msgstr[1] "%d connectats"
-
-#: preferences/about.js:39
-msgid "2024"
-msgstr "2024"
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
@@ -149,3 +145,6 @@ msgstr ""
 "D’unes periferics Bluetooth senhalan pas lo nivèl de batariá sens que las "
 "foncionalitats experimentalas de Bluez sián activadas. Vejatz Me legir per "
 "mai de detalhs."
+
+#~ msgid "2024"
+#~ msgstr "2024"
