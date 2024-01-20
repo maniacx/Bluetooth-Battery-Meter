@@ -14,7 +14,7 @@ export const  General = GObject.registerClass({
         'swap_icon_text',
         'swap_icon_text_row',
     ],
-}, class Apple extends Adw.PreferencesPage {
+}, class General extends Adw.PreferencesPage {
     constructor(settings) {
         super({});
         this._settings = settings;
