@@ -9,8 +9,13 @@ permalink: /changelogs
 
 
 {: .important-title }
-> GN-45_Version 06 &emsp;&emsp; Upcoming 
-> * i18n: Add Turkish translation. Credits: sabriunal
+> GN-45_Version 06 &emsp;&emsp; Jan 20, 2024
+> * Add Gnome 46 to supported shell version. Tested on GNOME46.Alpha
+> * Solve bug related to desktopSetting error when extension rebasing of extension, percentange label
+> * Use idle timers with PRIORITY_LOW
+> * Added Hungarian translation. Credits: ViBE-HU
+> * Added Czech translation. Credits: PetrBalvin
+> * Added Turkish translation. Credits: sabriunal
 
 
 {: .important-title }
