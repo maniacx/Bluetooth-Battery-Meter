@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-22 21:24-0800\n"
 "PO-Revision-Date: 2023-08-31 02:08+0200\n"
-"Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
+"Last-Translator: Petr Balvín <petrbalvin@petalmail.com, petrbalvin@yandex.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -115,7 +115,7 @@ msgstr "Obecné"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Nastavení indikátoru"
 
 #: ui/general.ui:12
 msgid "Enable Bluetooth device battery indicators"
