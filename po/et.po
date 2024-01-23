@@ -1,0 +1,159 @@
+# GNOME kesta eesti keele tõlge.
+# Estonian translation for gnome-shell.
+#
+# Copyright (C) 2010, 2011 The Gnome Project
+#
+# This file is distributed under the same license as the gnome-shell package.
+#
+# Ivar Smolin <okul linux ee>, 2011.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2010, 2011, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell MASTER\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"PO-Revision-Date: 2019-03-10 18:49+0200\n"
+"Last-Translator: Mart Raudsepp <leio@gentoo.org>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Poedit 2.2\n"
+"X-DamnedLies-Scope: partial\n"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Disconnect"
+msgstr ""
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Connect"
+msgstr "Ühendu"
+
+#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+msgid "No available or connected devices"
+msgstr ""
+
+#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+msgid "Turn on Bluetooth to connect to devices"
+msgstr ""
+
+#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
+#: lib/bluetoothToggle.js:94
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: lib/bluetoothToggle.js:115
+msgid "Bluetooth Settings"
+msgstr "Bluetoothi sätted"
+
+#: lib/bluetoothToggle.js:321
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "%d ühendatud"
+msgstr[1] "%d ühendatud"
+
+#: preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr ""
+
+#: preferences/about.js:49
+#, javascript-format
+msgid "© %s %s"
+msgstr ""
+
+#: preferences/about.js:50
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+
+#: ui/about.ui:5
+msgid "About"
+msgstr ""
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr ""
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr ""
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr ""
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr ""
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr ""
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr ""
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr ""
+
+#: ui/general.ui:5
+msgid "General"
+msgstr ""
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr ""
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr ""
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr ""
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr ""
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr ""
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr ""
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr ""
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr ""
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr ""
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr ""
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr ""
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""

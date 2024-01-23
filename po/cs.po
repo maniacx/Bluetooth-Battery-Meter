@@ -1,0 +1,171 @@
+# Czech translation of gnome-shell.
+# Copyright (C) 2009, 2010, 2011 the author(s) of gnome-shell.
+# This file is distributed under the same license as the gnome-shell package.
+#
+# Andre Klapper <ak-47@gmx.net>, 2009.
+# Petr Kovar <pknbe@volny.cz>, 2009, 2010, 2011, 2012, 2014, 2015, 2020.
+# Adam Matoušek <adamatousek@gmail.com>, 2012, 2013.
+# Vojtěch Perník <translations@pervoj.cz>, 2022.
+# Marek Černocký <marek@manet.cz>, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Kryštof Černý <cleerline1mc@gmail.com>, 2023.
+# Petr Balvín <petrbalvin@petalmail.com, petrbalvin@yandex.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"PO-Revision-Date: 2023-08-31 02:08+0200\n"
+"Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Project-Style: gnome\n"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Disconnect"
+msgstr "Odpojit"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Connect"
+msgstr "Připojit"
+
+#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+msgid "No available or connected devices"
+msgstr "Žádné dostupné nebo připojené zařízení"
+
+#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+msgid "Turn on Bluetooth to connect to devices"
+msgstr "Pro připojení k zařízení zapněte Bluetooth"
+
+#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
+#: lib/bluetoothToggle.js:94
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: lib/bluetoothToggle.js:115
+msgid "Bluetooth Settings"
+msgstr "Nastavení Bluetooth"
+
+#: lib/bluetoothToggle.js:321
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "%d připojené"
+msgstr[1] "%d připojené"
+msgstr[2] "%d připojených"
+
+#: preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, verze 3 nebo novější"
+
+#: preferences/about.js:49
+#, javascript-format
+msgid "© %s %s"
+msgstr "© %s %s"
+
+#: preferences/about.js:50
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Tato aplikace je šířena bez jakýchkoliv záruk. Podrobnosti viz <a "
+"href=\"%s\">%s</a>."
+
+#: ui/about.ui:5
+msgid "About"
+msgstr "O aplikaci"
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr "Čti mě"
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr "Nahlásit problém"
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr "Překlady"
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr "Zobrazit zdrojový kód"
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr "Právní ustanovení"
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr "Crowdin"
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr "Online návody"
+
+#: ui/general.ui:5
+msgid "General"
+msgstr "Obecné"
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr ""
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr "Povolit indikátor baterie zařízení Bluetooth"
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr "Zobrazit ikonu v systémové liště s úrovní nabití baterie"
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr "Panel rychlého nastavení"
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr "Zobrazit ikonu baterie zařízení Bluetooth"
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr ""
+"Zobrazí ikonu ve vyskakovací nabídce zobrazující úroveň baterie zařízení "
+"Bluetooth"
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr "Zobrazit procento nabití baterie zařízení Bluetooth"
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr "Zobrazí procento nabití baterie zařízení Bluetooth v textu"
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr "Zobrazit ikonu stavu baterie před textem"
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr "Prohodit pozici ikony baterie a textu v procentech"
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr "Poznámka"
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""
+"Některá zařízení Bluetooth nehlásí stav baterie, dokud nejsou v systému "
+"povoleny experimentální funkce. Pro podrobnosti zkontrolujte Čti mě."
+
+#~ msgid "2024"
+#~ msgstr "2024"

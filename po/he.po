@@ -1,0 +1,160 @@
+# Hebrew translation for gnome-shell.
+# Copyright (C) 2009 gnome-shell's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-shell package.
+# liel <lielft@gmail.com>, 2009.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2010.
+# Yosef Or Boczko <yoseforb@gmail.com>, 2013-2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"PO-Revision-Date: 2023-08-26 20:57+0300\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"Language-Team: Hebrew <yoseforb@gmail.com>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3)\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Gtranslator 42.0\n"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Disconnect"
+msgstr "ניתוק"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Connect"
+msgstr "התחברות"
+
+#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+msgid "No available or connected devices"
+msgstr "אין התקנים זמינים או מחוברים"
+
+#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+msgid "Turn on Bluetooth to connect to devices"
+msgstr "הפעלת Bluetooth כדי להתחבר להתקנים"
+
+#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
+#: lib/bluetoothToggle.js:94
+msgid "Bluetooth"
+msgstr "בלוטות'"
+
+#: lib/bluetoothToggle.js:115
+msgid "Bluetooth Settings"
+msgstr "הגדרות בלוטות׳"
+
+#: lib/bluetoothToggle.js:321
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "אחד מחובר"
+msgstr[1] "שניים מחוברים"
+msgstr[2] "%d מחוברים"
+msgstr[3] "%d מחוברים"
+
+#: preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr "הרישיון הציבורי הכללי של גנו, גרסה 3 או כל גרסה מאוחרת יותר"
+
+#: preferences/about.js:49
+#, javascript-format
+msgid "© %s %s"
+msgstr ""
+
+#: preferences/about.js:50
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"תכנית זו מופצת ללא שום אחריות. ניתן לבקר בכתובת <a href=\"%s\">%s</a> לפרטים."
+
+#: ui/about.ui:5
+msgid "About"
+msgstr "אודות"
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr ""
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr ""
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr ""
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr ""
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr "משפטי"
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr ""
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr ""
+
+#: ui/general.ui:5
+msgid "General"
+msgstr ""
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr ""
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr ""
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr ""
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr ""
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr ""
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr ""
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr ""
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr ""
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr ""
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr ""
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr ""
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""

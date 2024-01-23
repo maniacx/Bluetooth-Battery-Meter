@@ -1,0 +1,11 @@
+{
+  "uuid": "Bluetooth-Battery-Meter@maniacx.github.com",
+  "name": "Bluetooth Battery Meter",
+  "description": "A Gnome extension featuring indicator icons in system tray, serving as meter for Bluetooth device battery levels and providing detailed battery levels via icon/text in the Bluetooth quick settings menu.\n\nNote:\nCertain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check Readme for details.",
+  "url": "https://github.com/maniacx/Bluetooth-Battery-Meter",
+  "shell-version": [ "42", "43", "44" ],
+  "session-modes": ["user", "unlock-dialog"],
+  "version": 6,
+  "settings-schema": "org.gnome.shell.extensions.Bluetooth-Battery-Meter",
+  "gettext-domain": "Bluetooth-Battery-Meter@maniacx.github.com"
+}

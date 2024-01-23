@@ -1,0 +1,173 @@
+# French translations for gnome-shell package.
+# Copyright (C) 2009-2020 Listed translators
+# This file is distributed under the same license as the gnome-shell package.
+#
+# Mathieu Bridon <bochecha@fedoraproject.org>, 2009.
+# Pablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2010.
+# Bruno Brouard <annoa.b@gmail.com>, 2011-2012.
+# Cyril Arnaud <cyril dot arnaud at gmail dot com>, 2011.
+# Luc Guillemin <luc.guillemin@gmail.com>, 2011.
+# Luc Pionchon <pionchon.luc@gmail.com>, 2011.
+# Pierre Henry <pierrehenry73@yahoo.fr>, 2012.
+# Mathieu Stumpf <psychoslave@culture-libre.org>, 2013.
+# Alain Lojewski <allomervan@gmail.com>, 2014-2018.
+# Erwan Georget <egeorget@opmbx.org>, 2016.
+# Julien Humbert <julroy67@gmail.com>, 2019.
+# Claude Paroz <claude@2xlibre.net>, 2010-2020.
+# Thibault Martin <mail@thibaultmart.in>, 2020.
+# Guillaume Bernard <associations@guillaume-bernard.fr>, 2021.
+# Charles Monzat <charles.monzat@free.fr>, 2016-2022.
+# Irénée THIRION <irenee.thirion@e.email>, 2022.
+# Alexandre Franke <afranke@gnome.org>, 2012-2022.
+# Jean-Marc Tissières <jmetissieres@gmail.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell master fr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"PO-Revision-Date: 2023-09-07 21:39+0200\n"
+"Last-Translator: Irénée Thirion <irenee.thirion@e.email>\n"
+"Language-Team: French - France <gnomefr@traduc.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Disconnect"
+msgstr "Déconnecter"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Connect"
+msgstr "Se connecter"
+
+#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+msgid "No available or connected devices"
+msgstr "Aucun périphérique disponible ou connecté"
+
+#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+msgid "Turn on Bluetooth to connect to devices"
+msgstr "Activer le Bluetooth pour se connecter aux périphériques"
+
+#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
+#: lib/bluetoothToggle.js:94
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: lib/bluetoothToggle.js:115
+msgid "Bluetooth Settings"
+msgstr "Paramètres Bluetooth"
+
+#: lib/bluetoothToggle.js:321
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "%d connecté"
+msgstr[1] "%d connectés"
+
+#: preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr "Licence publique générale GNU, version 3 ou ultérieure"
+
+#: preferences/about.js:49
+#, javascript-format
+msgid "© %s %s"
+msgstr "© %s %s"
+
+#: preferences/about.js:50
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Ce programme est fourni sans aucune garantie. Pour plus de détails, visitez "
+"<a href=\"%s\">%s</a>."
+
+#: ui/about.ui:5
+msgid "About"
+msgstr "À propos"
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr "Lisez moi"
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr "Signaler un problème"
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr "Traductions"
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr "Accéder au code source"
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr "Mentions légales"
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr "Crowdin"
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr "Tutoriels en ligne"
+
+#: ui/general.ui:5
+msgid "General"
+msgstr "Général"
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr ""
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr ""
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr ""
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr ""
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr ""
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr ""
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr ""
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr ""
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr ""
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr ""
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr ""
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""

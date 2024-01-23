@@ -1,0 +1,176 @@
+# Chinese (China) translation for gnome-shell.
+# Copyright (C) 2010-2021 gnome-shell's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-shell package.
+# jiero <lililjlj@gmail.com>, 2010.
+# Jessica Ban <bancage@gmail.com>, 2010.
+# zhang ping <zhangping159@gmail.com>, 2010.
+# 指冷玉笙寒 (dhyang) <dhyang555@gmail.com>, 2010
+# Ray Wang <raywang@gnome.org>, 2009, 2011.
+# 李炜 <lw124124@gmail.com>, 2011.
+# chiachen <luojiazhen@gmail.com>, 2011.
+# StarBrilliant <m13253@hotmail.com>, 2011
+# YunQiang Su <wzssyqa@gmail.com>, 2010, 2011, 2012.
+# Wylmer Wang <wantinghard@gmail.com>, 2013, 2014.
+# hui <www.eternalhui@gmail.com>, 2013, 2014.
+# mosquito <sensor.wen@gmail.com>, 2014.
+# Tong Hui <tonghuix@gmail.com>, 2013, 2014, 2015.
+# Aron Xu <aronxu@gnome.org>, 2010, 2011, 2012, 2013, 2015, 2016.
+# liushuyu <liushuyu_011@126.com>, 2015, 2016.
+# Mingcong Bai <jeffbai@aosc.xyz>, 2015, 2016, 2017.
+# Dingzhong Chen <wsxy162@gmail.com>, 2018-2021.
+# Liu Tao <lyuutau@outlook.com>, 2021.
+# Nanling <neithern@outlook.com>, 2023.
+# lumingzh <lumingzh@qq.com>, 2022-2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"PO-Revision-Date: 2023-08-27 19:16+0800\n"
+"Last-Translator: lumingzh <lumingzh@qq.com>\n"
+"Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: Gtranslator 42.0\n"
+"X-DL-Team: zh_CN\n"
+"X-DL-Module: gnome-shell\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-State: Translating\n"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Disconnect"
+msgstr "断开连接"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Connect"
+msgstr "连接"
+
+#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+msgid "No available or connected devices"
+msgstr "没有可连接或已连接的设备"
+
+#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+msgid "Turn on Bluetooth to connect to devices"
+msgstr "打开蓝牙以连接到设备"
+
+#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
+#: lib/bluetoothToggle.js:94
+msgid "Bluetooth"
+msgstr "蓝牙"
+
+#: lib/bluetoothToggle.js:115
+msgid "Bluetooth Settings"
+msgstr "蓝牙设置"
+
+#: lib/bluetoothToggle.js:321
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "%d 台设备已连接"
+
+#: preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU 通用公共许可证，第 3 版及以上"
+
+#: preferences/about.js:49
+#, javascript-format
+msgid "© %s %s"
+msgstr "© %s %s"
+
+#: preferences/about.js:50
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr "本程序不作任何担保。详情请见 <a href=\"%s\">%s</a>。"
+
+#: ui/about.ui:5
+msgid "About"
+msgstr "关于"
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr "说明文档"
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr "报告问题"
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr "翻译"
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr "查看源代码"
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr "法律信息"
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr "Crowdin"
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr "在线教程"
+
+#: ui/general.ui:5
+msgid "General"
+msgstr "常规"
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr ""
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr ""
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr ""
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr ""
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr ""
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr ""
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr ""
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr ""
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr ""
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr ""
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr ""
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""

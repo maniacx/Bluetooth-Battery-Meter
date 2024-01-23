@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extensions">
+    <schema path="/org/gnome/shell/extensions/Bluetooth-Battery-Meter/" id="org.gnome.shell.extensions.Bluetooth-Battery-Meter">
+        <key name="enable-battery-indicator" type="b">
+            <default>true</default>
+            <summary>Show icon in system tray with device battery level</summary>
+        </key>
+        <key name="enable-battery-level-icon" type="b">
+            <default>true</default>
+            <summary>Displays an icon  showing bluetooth device battery level in bluetooth quickmenu</summary>
+        </key>
+        <key name="enable-battery-level-text" type="b">
+            <default>false</default>
+            <summary>Displays a text the percentage of bluetooth device battery level in bluetooth quickmenu</summary>
+        </key>
+        <key name="swap-icon-text" type="b">
+            <default>false</default>
+            <summary>Display battery level icon before level percentage text in quick menu</summary>
+        </key>
+    </schema>
+</schemalist>

@@ -1,0 +1,16 @@
+.bbm-bt-menu-placeholder {
+  text-align: center;
+  padding: 2em 4em;
+}
+.bbm-bt42-menu-placeholder {
+  text-align: center;
+  padding: 2em 2em;
+  height: 3em
+}
+.bbm-bt-menu-placeholder-label {
+  font-size: 1em;
+  font-weight: bold;
+}
+.bbm-bt-percentage-label {
+  text-align: center;
+}

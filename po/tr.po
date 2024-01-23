@@ -1,0 +1,160 @@
+# Turkish translation of Bluetooth Battery Meter
+# Copyright (C) 2024 Bluetooth Battery Meter'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Bluetooth Battery Meter package.
+#
+# Sabri Ünal <libreajans@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bluetooth Battery Meter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"PO-Revision-Date: 2024-01-18 09:13+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Turkish <takim@gnome.org.tr>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Disconnect"
+msgstr "Bağlantıyı Kes"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Connect"
+msgstr "Bağlan"
+
+#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+msgid "No available or connected devices"
+msgstr "Kullanılabilir ya da bağlı aygıt yok"
+
+#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+msgid "Turn on Bluetooth to connect to devices"
+msgstr "Aygıtlara bağlanmak için Bluetooth’u aç"
+
+#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
+#: lib/bluetoothToggle.js:94
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: lib/bluetoothToggle.js:115
+msgid "Bluetooth Settings"
+msgstr "Bluetooth Ayarları"
+
+#: lib/bluetoothToggle.js:321
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "%d Bağlı"
+
+#: preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU Genel Kamu Lisansı, sürüm 3 ya da sonrası"
+
+#: preferences/about.js:49
+#, javascript-format
+msgid "© %s %s"
+msgstr "© %s %s"
+
+#: preferences/about.js:50
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Bu program kesinlikle hiçbir garanti vermiyor. Ayrıntılar için <a "
+"href=\"%s\">%s</a> bağlantısına bakın."
+
+#: ui/about.ui:5
+msgid "About"
+msgstr "Hakkında"
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr "Beni Oku"
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr "Sorun Bildir"
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr "Çeviriler"
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr "Github'da kaynak kodunu görüntüle"
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr "Yasal"
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr "Crowdin"
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr "Çevrimiçi Eğitimler"
+
+#: ui/general.ui:5
+msgid "General"
+msgstr "Genel"
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr "Gösterge Ayarları"
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr "Bluetooth aygıt pil göstergelerini etkinleştir"
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr "Sistem tepsisinde aygıt pil düzeyi ile birlikte simge göster"
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr "Hızlı Menü Ayarları"
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr "Bluetooth aygıtının pil düzeyi simgesini göster"
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr "Bluetooth aygıtının pil düzeyini gösteren açılır menüde simge gösterir"
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr "Bluetooth aygıtının pil yüzdesini göster"
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr "Bluetooth aygıtının pil düzeyi yüzdesini metin olarak gösterir"
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr "Pil düzeyi simgesini metinden önce göster"
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr "Pil düzeyi simgesi ile yüzde metninin konumunu değiştirir"
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr "Not!"
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""
+"Bluez deneysel özellikleri sistemde etkinleştirilene kadar kimi Bluetooth "
+"aygıtlarının pil düzeyi görüntülenemez. Ayrıntılar için Beni Oku'ya bakınız."
+
+#~ msgid "2024"
+#~ msgstr "2024"

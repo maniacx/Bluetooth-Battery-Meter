@@ -1,0 +1,160 @@
+# Hungarian translation for Bluetooth Battery Meter.
+# Copyright (C) 2024 maniacx@github.com
+# This file is distributed under the same license as the Bluetooth Battery Meter package.
+# ViBE <vibe@protonmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bluetooth Battery Meter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"PO-Revision-Date: 2024-01-20 13:32+0100\n"
+"Last-Translator: ViBE <vibe@protonmail.com>\n"
+"Language-Team: Hungarian <vibe@protonmail.com>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Disconnect"
+msgstr "Leválasztás"
+
+#: lib/bluetoothPopupMenu.js:82
+msgid "Connect"
+msgstr "Kapcsolódás"
+
+#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+msgid "No available or connected devices"
+msgstr "Nincsenek elérhető vagy csatlakoztatott eszközök"
+
+#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+msgid "Turn on Bluetooth to connect to devices"
+msgstr "Kapcsolja be a Bluetooth-t az eszközökhöz való kapcsolódáshoz"
+
+#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
+#: lib/bluetoothToggle.js:94
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: lib/bluetoothToggle.js:115
+msgid "Bluetooth Settings"
+msgstr "Bluetooth beállítások"
+
+#: lib/bluetoothToggle.js:321
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] "%d kapcsolódva"
+msgstr[1] "%d kapcsolódva"
+
+#: preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, 3-as vagy későbbi verzió"
+
+#: preferences/about.js:49
+#, javascript-format
+msgid "© %s %s"
+msgstr "© %s %s"
+
+#: preferences/about.js:50
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Erre az alkalmazásra egyáltalán nem vonatkozik garancia. További részletek "
+"a(z) <a href=\"%s\">%s</a> szövegében."
+
+#: ui/about.ui:5
+msgid "About"
+msgstr "Névjegy"
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr "Olvass el"
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr "Hiba jelentése"
+
+#: ui/about.ui:114
+msgid "Translations"
+msgstr "Fordítások"
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr "Forrás megtekintése"
+
+#: ui/about.ui:153
+msgid "Legal"
+msgstr "Jogi információk"
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr "Crowdin fordítás"
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr "Segédlet"
+
+#: ui/general.ui:5
+msgid "General"
+msgstr "Általános"
+
+#: ui/general.ui:9
+msgid "Indicator Settings"
+msgstr "Indikátor beállítások"
+
+#: ui/general.ui:12
+msgid "Enable Bluetooth device battery indicators"
+msgstr "Megjelenítés az értesítési panelen"
+
+#: ui/general.ui:13
+msgid "Show icon in system tray with device battery level"
+msgstr "Eszközök töltöttségének megjelenítése az értesítési panelen"
+
+#: ui/general.ui:26
+msgid "Quick Menu Settings"
+msgstr "Rendszermenü beállítások"
+
+#: ui/general.ui:29
+msgid "Show Bluetooth device battery level icon"
+msgstr "Állapotjelző ikonok"
+
+#: ui/general.ui:30
+msgid "Displays icon in popup menu showing Bluetooth device battery level"
+msgstr "Eszközök töltöttségi ikonjának megjelenítése a rendszermenüben"
+
+#: ui/general.ui:41
+msgid "Show Bluetooth device battery percentage"
+msgstr "Töltöttségi szint"
+
+#: ui/general.ui:42
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr "Szövegesen is megjeleníti a töltöttségi szintet"
+
+#: ui/general.ui:53
+msgid "Display battery level icon before text"
+msgstr "Sorrend megfordítása"
+
+#: ui/general.ui:54
+msgid "Swaps position of battery level icon and percentage text"
+msgstr "Felcseréli a töltöttségi szint és ikon elhelyezkedését"
+
+#: ui/general.ui:67
+msgid "Note!"
+msgstr "Megjegyzés"
+
+#: ui/general.ui:70
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check Readme for details."
+msgstr ""
+"Egyes bluetooth eszközök mindaddig nem jelzik az akkumulátor töltöttségi "
+"szintjét, míg a Bluez kísérleti funkciói nincsenek engedélyezve. "
+"Részletekért tekintse meg a dokumentációt!"
+
+#~ msgid "2024"
+#~ msgstr "2024"
