@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 14:57-0800\n"
+"POT-Creation-Date: 2024-01-23 21:10-0800\n"
 "PO-Revision-Date: 2011-04-04 11:04+0600\n"
 "Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Language: bn_BD\n"
 "X-DamnedLies-Scope: partial\n"
 
-#: lib/blutoothPopupMenu.js:80
+#: lib/bluetoothPopupMenu.js:70
 msgid "Disconnect"
 msgstr ""
 
-#: lib/blutoothPopupMenu.js:80
+#: lib/bluetoothPopupMenu.js:70
 msgid "Connect"
 msgstr ""
 
-#: lib/blutoothToggle.js:142
+#: lib/bluetoothToggle.js:142
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 14:57-0800\n"
+"POT-Creation-Date: 2024-01-23 21:10-0800\n"
 "PO-Revision-Date: 2024-01-08 09:48+0100\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <(nothing)>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: lib/blutoothPopupMenu.js:80
+#: lib/bluetoothPopupMenu.js:70
 msgid "Disconnect"
 msgstr "გათიშვა"
 
-#: lib/blutoothPopupMenu.js:80
+#: lib/bluetoothPopupMenu.js:70
 msgid "Connect"
 msgstr "დაკავშირება"
 
-#: lib/blutoothToggle.js:142
+#: lib/bluetoothToggle.js:142
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

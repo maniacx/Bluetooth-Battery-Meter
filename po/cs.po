@@ -14,9 +14,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 14:57-0800\n"
+"POT-Creation-Date: 2024-01-23 21:10-0800\n"
 "PO-Revision-Date: 2023-08-31 02:08+0200\n"
-"Last-Translator: Petr Balvín <petrbalvin@petalmail.com, petrbalvin@yandex.com>\n"
+"Last-Translator: Petr Balvín <petrbalvin@petalmail.com, petrbalvin@yandex."
+"com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -26,15 +27,15 @@ msgstr ""
 "X-Generator: Poedit 3.3.2\n"
 "X-Project-Style: gnome\n"
 
-#: lib/blutoothPopupMenu.js:80
+#: lib/bluetoothPopupMenu.js:70
 msgid "Disconnect"
 msgstr "Odpojit"
 
-#: lib/blutoothPopupMenu.js:80
+#: lib/bluetoothPopupMenu.js:70
 msgid "Connect"
 msgstr "Připojit"
 
-#: lib/blutoothToggle.js:142
+#: lib/bluetoothToggle.js:142
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
