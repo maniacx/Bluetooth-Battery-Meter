@@ -7,6 +7,16 @@ permalink: /changelogs
 
 # Changelogs
 
+{: .important-title }
+> GN-45_Version 08 &emsp;&emsp; Jan 23, 2024
+> * Align precentage text to the center when swapped with icon before text
+> * Update Czech translation. Credits: PetrBalvin
+
+
+{: .note-title }
+> GN-44_Version 07 &emsp;&emsp; Jan 23, 2024 
+> * Ported extension to GNOME 42, 43 and 44.
+
 
 {: .important-title }
 > GN-45_Version 06 &emsp;&emsp; Jan 20, 2024
@@ -19,7 +29,7 @@ permalink: /changelogs
 
 
 {: .important-title }
-> GN-45_Version 05 &emsp;&emsp; Jan 14, 2024 
+> GN-45_Version 05 &emsp;&emsp; Jan 14, 2024
 > * Popupmenu: Better fix for .get_width() warnings. Credits:GdH
 > * Prefs: General, when bat level text or icon is disabled, force disable swap text icon
 > * Toggle: Rebuild Popupmenu on large text accessiblity settings change
@@ -28,7 +38,7 @@ permalink: /changelogs
 
 
 {: .important-title }
-> GN-45_Version 03 &emsp;&emsp; Jan 13, 2024 
+> GN-45_Version 03 &emsp;&emsp; Jan 13, 2024
 > * Minor icon modification
 > * Updated Occitan translation Credits:Mejans
 > * Updated Italian translation Credits:albanobattistella
@@ -37,7 +47,7 @@ permalink: /changelogs
 
 
 {: .important-title }
-> GN-45_Version 02 &emsp;&emsp; Jan 10, 2024 
+> GN-45_Version 02 &emsp;&emsp; Jan 10, 2024
 > * Fixed device not getting removed from Popupmenu when unpaired
 > * Fixed alignment with battery percentage text
 > * Updated About page
