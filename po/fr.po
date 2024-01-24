@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"POT-Creation-Date: 2024-01-23 21:11-0800\n"
 "PO-Revision-Date: 2023-09-07 21:39+0200\n"
 "Last-Translator: Irénée Thirion <irenee.thirion@e.email>\n"
 "Language-Team: French - France <gnomefr@traduc.org>\n"
@@ -36,11 +36,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Disconnect"
 msgstr "Déconnecter"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Connect"
 msgstr "Se connecter"
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"POT-Creation-Date: 2024-01-23 21:11-0800\n"
 "PO-Revision-Date: 2022-11-30 09:47+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 21.12.3\n"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Disconnect"
 msgstr ""
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Connect"
 msgstr "Tengjast"
 

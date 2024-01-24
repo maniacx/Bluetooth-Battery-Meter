@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: video-subtitles master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"POT-Creation-Date: 2024-01-23 21:11-0800\n"
 "PO-Revision-Date: 2023-09-26 11:22+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "X-Editor: HaiPO 1.4 beta\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Disconnect"
 msgstr "Disconet"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Connect"
 msgstr "Conet"
 

@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"POT-Creation-Date: 2024-01-23 21:11-0800\n"
 "PO-Revision-Date: 2023-09-11 11:35-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>\n"
@@ -43,11 +43,11 @@ msgstr ""
 "X-DL-Domain: po\n"
 "X-DL-State: Translating\n"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Disconnect"
 msgstr "Desconectar"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Connect"
 msgstr "Conectar"
 

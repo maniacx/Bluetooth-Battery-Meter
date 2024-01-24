@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"POT-Creation-Date: 2024-01-23 21:11-0800\n"
 "PO-Revision-Date: 2023-10-26 23:08+0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Português <https://l10n.gnome.org/teams/pt/>\n"
@@ -30,11 +30,11 @@ msgstr ""
 "X-Language: pt_PT\n"
 "X-Source-Language: C\n"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Disconnect"
 msgstr "Desligar"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Connect"
 msgstr "Ligar"
 

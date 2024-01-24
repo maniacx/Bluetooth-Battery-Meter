@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 21:24-0800\n"
+"POT-Creation-Date: 2024-01-23 21:11-0800\n"
 "PO-Revision-Date: 2021-08-05 14:34+0200\n"
 "Last-Translator: Tjipke van der Heide <tjipke@tutanota.com>\n"
 "Language-Team: Western Frisian <tjipke@tutanota.com>\n"
@@ -25,11 +25,11 @@ msgstr ""
 "X-DL-State: None\n"
 "X-Generator: Gtranslator 40.0\n"
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Disconnect"
 msgstr ""
 
-#: lib/bluetoothPopupMenu.js:82
+#: lib/bluetoothPopupMenu.js:78
 msgid "Connect"
 msgstr "Ferbine"
 
