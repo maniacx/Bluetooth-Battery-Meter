@@ -20,6 +20,15 @@ This guide covers the use of Crowdin for translating the Bluetooth-Battery-Meter
 
 [Bluetooth-Battery-Meter](https://crowdin.com/project/bluetooth-battery-meter){: .btn .btn-green .v-align-bottom .fs-2 .button1-fixed-width}
 
+{: .note }
+>
+> **Translation for GNOME42-44 branch**
+> * Due to limitation of free crowdin subscription plan, GNOME42-44 branch is not available on crowdin.
+> * GNOME45 and GNOME42-44 have the same strings, but GNOME42-44  have 4 additional string and they are already translated (taken from Gnome-shell).
+> * To submit translation fro GNOME42-44 branch, 
+>   * Translate the strings on crowdin and  submit a Pull Request to  GNOME45 branch and I will cherry-pick it to GNOME42-44 branch
+>   * Or use Poedit guide, update the string using POT and submit a pull request on GNOME42-44 branch
+
 ## Start Translating
 
 ### Example: Translating to French
