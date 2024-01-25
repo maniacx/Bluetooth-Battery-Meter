@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 21:11-0800\n"
+"POT-Creation-Date: 2024-01-25 10:45-0800\n"
 "PO-Revision-Date: 2023-08-27 19:16+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
@@ -101,7 +101,7 @@ msgstr "说明文档"
 msgid "Report an Issue"
 msgstr "报告问题"
 
-#: ui/about.ui:114
+#: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
 msgstr "翻译"
 
@@ -109,7 +109,7 @@ msgstr "翻译"
 msgid "View sources on Github"
 msgstr "查看源代码"
 
-#: ui/about.ui:153
+#: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
 msgstr "法律信息"
 

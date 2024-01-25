@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 21:11-0800\n"
+"POT-Creation-Date: 2024-01-25 10:45-0800\n"
 "PO-Revision-Date: 2023-08-31 02:08+0200\n"
 "Last-Translator: Petr Balvín <petrbalvin@petalmail.com, petrbalvin@yandex."
 "com>\n"
@@ -90,7 +90,7 @@ msgstr "Čti mě"
 msgid "Report an Issue"
 msgstr "Nahlásit problém"
 
-#: ui/about.ui:114
+#: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
 msgstr "Překlady"
 
@@ -98,7 +98,7 @@ msgstr "Překlady"
 msgid "View sources on Github"
 msgstr "Zobrazit zdrojový kód"
 
-#: ui/about.ui:153
+#: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
 msgstr "Právní ustanovení"
 
