@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 21:10-0800\n"
+"POT-Creation-Date: 2024-01-25 10:25-0800\n"
 "PO-Revision-Date: 2017-08-23 09:48+0200\n"
 "Last-Translator: Xavi Ivars <xavi.ivars@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Report an Issue"
 msgstr ""
 
-#: ui/about.ui:114
+#: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
 msgstr ""
 
@@ -72,7 +72,7 @@ msgstr ""
 msgid "View sources on Github"
 msgstr ""
 
-#: ui/about.ui:153
+#: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
 msgstr ""
 

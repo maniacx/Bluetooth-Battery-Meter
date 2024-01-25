@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 21:10-0800\n"
+"POT-Creation-Date: 2024-01-25 10:25-0800\n"
 "PO-Revision-Date: 2023-09-07 21:39+0200\n"
 "Last-Translator: Irénée Thirion <irenee.thirion@e.email>\n"
 "Language-Team: French - France <gnomefr@traduc.org>\n"
@@ -81,7 +81,7 @@ msgstr "Lisez moi"
 msgid "Report an Issue"
 msgstr "Signaler un problème"
 
-#: ui/about.ui:114
+#: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
 msgstr "Traductions"
 
@@ -89,7 +89,7 @@ msgstr "Traductions"
 msgid "View sources on Github"
 msgstr "Accéder au code source"
 
-#: ui/about.ui:153
+#: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
 msgstr "Mentions légales"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 21:10-0800\n"
+"POT-Creation-Date: 2024-01-25 10:25-0800\n"
 "PO-Revision-Date: 2024-01-11 18:47+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -64,7 +64,7 @@ msgstr "Me legir"
 msgid "Report an Issue"
 msgstr "Senhalar un problèma"
 
-#: ui/about.ui:114
+#: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
 msgstr "Traduccions"
 
@@ -72,7 +72,7 @@ msgstr "Traduccions"
 msgid "View sources on Github"
 msgstr "Còdi font sus Github"
 
-#: ui/about.ui:153
+#: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
 msgstr "Avís legal"
 

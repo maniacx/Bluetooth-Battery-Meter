@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 21:10-0800\n"
+"POT-Creation-Date: 2024-01-25 10:25-0800\n"
 "PO-Revision-Date: 2023-09-03 15:42+0200\n"
 "Last-Translator: Nathan Follens <nfollens@gnome.org>\n"
 "Language-Team: GNOME-NL https://matrix.to/#/#nl:gnome.org\n"
@@ -74,7 +74,7 @@ msgstr "Lees mij"
 msgid "Report an Issue"
 msgstr "Probleem melden"
 
-#: ui/about.ui:114
+#: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
 msgstr "Vertalingen"
 
@@ -82,7 +82,7 @@ msgstr "Vertalingen"
 msgid "View sources on Github"
 msgstr "Bekijk de broncode"
 
-#: ui/about.ui:153
+#: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
 msgstr "Juridisch"
 
