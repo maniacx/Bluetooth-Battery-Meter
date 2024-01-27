@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-25 10:45-0800\n"
+"POT-Creation-Date: 2024-01-26 20:07-0800\n"
 "PO-Revision-Date: 2020-02-22 21:44+0530\n"
 "Last-Translator: Jor Teron <jor.teron@gmail.com>\n"
 "Language-Team: Karbi <karbi.translation@gmail.com>\n"
@@ -26,24 +26,24 @@ msgstr ""
 msgid "Connect"
 msgstr "Pa-chepho"
 
-#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+#: lib/bluetoothToggle42.js:157 lib/bluetoothToggle.js:229
 msgid "No available or connected devices"
 msgstr ""
 
-#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+#: lib/bluetoothToggle42.js:158 lib/bluetoothToggle.js:230
 msgid "Turn on Bluetooth to connect to devices"
 msgstr ""
 
-#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
-#: lib/bluetoothToggle.js:94
+#: lib/bluetoothToggle.js:86 lib/bluetoothToggle.js:88
+#: lib/bluetoothToggle.js:96
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: lib/bluetoothToggle.js:115
+#: lib/bluetoothToggle.js:117
 msgid "Bluetooth Settings"
 msgstr "Bluwtooth amokha"
 
-#: lib/bluetoothToggle.js:321
+#: lib/bluetoothToggle.js:323
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

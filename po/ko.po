@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-25 10:45-0800\n"
+"POT-Creation-Date: 2024-01-26 20:07-0800\n"
 "PO-Revision-Date: 2023-10-07 22:10+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
@@ -27,24 +27,24 @@ msgstr "연결 해제"
 msgid "Connect"
 msgstr "연결"
 
-#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+#: lib/bluetoothToggle42.js:157 lib/bluetoothToggle.js:229
 msgid "No available or connected devices"
 msgstr "사용할 수 있거나 연결된 장치가 없습니다"
 
-#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+#: lib/bluetoothToggle42.js:158 lib/bluetoothToggle.js:230
 msgid "Turn on Bluetooth to connect to devices"
 msgstr "장치에 연결하려면 블루투스를 켜십시오"
 
-#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
-#: lib/bluetoothToggle.js:94
+#: lib/bluetoothToggle.js:86 lib/bluetoothToggle.js:88
+#: lib/bluetoothToggle.js:96
 msgid "Bluetooth"
 msgstr "블루투스"
 
-#: lib/bluetoothToggle.js:115
+#: lib/bluetoothToggle.js:117
 msgid "Bluetooth Settings"
 msgstr "블루투스 설정"
 
-#: lib/bluetoothToggle.js:321
+#: lib/bluetoothToggle.js:323
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

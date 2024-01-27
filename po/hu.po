@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-25 10:45-0800\n"
+"POT-Creation-Date: 2024-01-26 20:07-0800\n"
 "PO-Revision-Date: 2024-01-20 13:32+0100\n"
 "Last-Translator: ViBE <vibe@protonmail.com>\n"
 "Language-Team: Hungarian <vibe@protonmail.com>\n"
@@ -25,24 +25,24 @@ msgstr "Leválasztás"
 msgid "Connect"
 msgstr "Kapcsolódás"
 
-#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+#: lib/bluetoothToggle42.js:157 lib/bluetoothToggle.js:229
 msgid "No available or connected devices"
 msgstr "Nincsenek elérhető vagy csatlakoztatott eszközök"
 
-#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+#: lib/bluetoothToggle42.js:158 lib/bluetoothToggle.js:230
 msgid "Turn on Bluetooth to connect to devices"
 msgstr "Kapcsolja be a Bluetooth-t az eszközökhöz való kapcsolódáshoz"
 
-#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
-#: lib/bluetoothToggle.js:94
+#: lib/bluetoothToggle.js:86 lib/bluetoothToggle.js:88
+#: lib/bluetoothToggle.js:96
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: lib/bluetoothToggle.js:115
+#: lib/bluetoothToggle.js:117
 msgid "Bluetooth Settings"
 msgstr "Bluetooth beállítások"
 
-#: lib/bluetoothToggle.js:321
+#: lib/bluetoothToggle.js:323
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

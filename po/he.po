@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-25 10:45-0800\n"
+"POT-Creation-Date: 2024-01-26 20:07-0800\n"
 "PO-Revision-Date: 2023-08-26 20:57+0300\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: Hebrew <yoseforb@gmail.com>\n"
@@ -30,24 +30,24 @@ msgstr "ניתוק"
 msgid "Connect"
 msgstr "התחברות"
 
-#: lib/bluetoothToggle42.js:159 lib/bluetoothToggle.js:227
+#: lib/bluetoothToggle42.js:157 lib/bluetoothToggle.js:229
 msgid "No available or connected devices"
 msgstr "אין התקנים זמינים או מחוברים"
 
-#: lib/bluetoothToggle42.js:160 lib/bluetoothToggle.js:228
+#: lib/bluetoothToggle42.js:158 lib/bluetoothToggle.js:230
 msgid "Turn on Bluetooth to connect to devices"
 msgstr "הפעלת Bluetooth כדי להתחבר להתקנים"
 
-#: lib/bluetoothToggle.js:84 lib/bluetoothToggle.js:86
-#: lib/bluetoothToggle.js:94
+#: lib/bluetoothToggle.js:86 lib/bluetoothToggle.js:88
+#: lib/bluetoothToggle.js:96
 msgid "Bluetooth"
 msgstr "בלוטות'"
 
-#: lib/bluetoothToggle.js:115
+#: lib/bluetoothToggle.js:117
 msgid "Bluetooth Settings"
 msgstr "הגדרות בלוטות׳"
 
-#: lib/bluetoothToggle.js:321
+#: lib/bluetoothToggle.js:323
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
