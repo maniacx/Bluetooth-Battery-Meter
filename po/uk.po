@@ -68,7 +68,7 @@ msgstr ""
 
 #: ui/about.ui:5
 msgid "About"
-msgstr "Про програму"
+msgstr "Про застосунок"
 
 #: ui/about.ui:75
 msgid "Read me"
@@ -76,7 +76,7 @@ msgstr "Прочитай мене"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr "Повідомити про ваду"
+msgstr "Повідомити про проблему"
 
 #: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
@@ -84,7 +84,7 @@ msgstr "Переклади"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr "Переглянути вихідний код"
+msgstr "Переглянути вихідні коди на Github"
 
 #: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
@@ -92,11 +92,11 @@ msgstr "Юридичні відомості"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr "Підручники в інтернеті"
+msgstr "Онлайн Довідка"
 
 #: ui/general.ui:5
 msgid "General"
@@ -104,47 +104,50 @@ msgstr "Загальне"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Параметри індикатора"
 
 #: ui/general.ui:12
 msgid "Enable Bluetooth device battery indicators"
-msgstr ""
+msgstr "Увімкнути індикатор батареї пристрою Bluetooth"
 
 #: ui/general.ui:13
 msgid "Show icon in system tray with device battery level"
 msgstr ""
+"Показувати піктограму в системному треї з рівнем заряду акумулятора пристрою"
 
 #: ui/general.ui:26
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "Налаштування швидкого меню"
 
 #: ui/general.ui:29
 msgid "Show Bluetooth device battery level icon"
-msgstr ""
+msgstr "Показувати піктограму акумулятора пристрою Bluetooth"
 
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
 msgstr ""
+"Відображувати піктограму заряду акумулятора пристрою Bluetooth у випадаючому "
+"меню "
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Показувати відсоток заряду батареї пристрою Bluetooth"
 
 #: ui/general.ui:42
 msgid "Displays Bluetooth device battery level percentage in text"
-msgstr ""
+msgstr "Показувати відсоток заряду батареї пристрою Bluetooth як текст"
 
 #: ui/general.ui:53
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "Відображувати піктограму заряду акумулятора перед текстом"
 
 #: ui/general.ui:54
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "Міняє положення піктограми заряду батареї та відсотків"
 
 #: ui/general.ui:67
 msgid "Note!"
-msgstr ""
+msgstr "Примітка!"
 
 #: ui/general.ui:70
 msgid ""
