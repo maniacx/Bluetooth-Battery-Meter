@@ -8,6 +8,19 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-45_Version 08 &emsp;&emsp; Jan 30, 2024
+> * disable: disconnected signal before restoring original functions
+> * corrected string in prefs about section
+> * translation: Add Ukrainian translation. Credits: Bohdan Shkliarenko @crowdin
+
+
+{: .note-title }
+> GN-44_Version 07 &emsp;&emsp; Jan 30, 2024 
+> * disable: disconnected signal before restoring original functions
+> * corrected string in prefs about section
+> * translation: Add Ukrainian translation. Credits: Bohdan Shkliarenko @crowdin
+
+{: .important-title }
 > GN-45_Version 08 &emsp;&emsp; Jan 23, 2024
 > * Align precentage text to the center when swapped with icon before text
 > * Update Czech translation. Credits: PetrBalvin
