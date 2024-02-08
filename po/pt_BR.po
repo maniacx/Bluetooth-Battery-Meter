@@ -1,47 +1,23 @@
-# Portuguese translations for gnome-shell package.
-# Copyright (C) 2023 THE gnome-shell'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-shell package.
-# Og Maciel <ogmaciel@gnome.org>, 2009.
-# Rodrigo Flores <mail@rodrigoflores.org>, 2009.
-# Felipe Borges <felipe10borges@gmail.com>, 2010.
-# Henrique P. Machado <hpmachado@gnome.org>, 2010, 2011.
-# Jonh Wendell <wendell@bani.com.br>, 2010.
-# Rodrigo Padula <contato@rodrigopadula.com>, 2011.
-# Gabriel F. Vilar <cogumm@gmail.com>, 2011.
-# Adorilson Bezerra <adorilson@gmail.com>, 2011, 2014.
-# Djavan Fagundes <djavan@comum.org>, 2012.
-# Juan Diego Martins da Costa Cruz <juan.martins@ifrn.edu.br>, 2013.
-# Fábio Nogueira <fnogueira@gnome.org>, 2014.
-# Georges Basile Stavracas Neto <georges.stavracas@gmail.com>, 2014.
-# Felipe Braga <fbobraga@gmail.com>, 2015.
-# Artur de Aquino Morais <artur.morais93@outlook.com>, 2016.
-# Ricardo Silva Veloso <ricvelozo@gmail.com>, 2019.
-# Bruno Lopes <brunolopesdsilv@gmail.com>, 2018, 2021.
-# Enrico Nicoletto <hiko@duck.com>, 2013-2019, 2021-2022.
-# Matheus Barbosa <mdpb.matheus@gmail.com>, 2022.
-# Leônidas Araújo <leorusvellt@hotmail.com>, 2022-2023.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2013-2023.
-#
+# Brazilian Portuguese translations for bluetooth-battery-meter package.
+# Tiago Lucas Flach <tiagolucas9830@gmail.com>, 2024.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-shell\n"
+"Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-26 20:07-0800\n"
-"PO-Revision-Date: 2023-09-11 11:35-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>\n"
+"POT-Creation-Date: 2024-02-15 23:28-0800\n"
+"PO-Revision-Date: 2024-02-08 06:08\n"
+"Last-Translator: Tiago Lucas FLach\n"
+"Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 45.alpha0\n"
-"X-Project-Style: gnome\n"
-"X-DL-Team: pt_BR\n"
-"X-DL-Module: gnome-shell\n"
-"X-DL-Branch: main\n"
-"X-DL-Domain: po\n"
-"X-DL-State: Translating\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: bluetooth-battery-meter\n"
+"X-Crowdin-Project-ID: 639464\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: /po/Bluetooth-Battery-Meter.pot\n"
+"X-Crowdin-File-ID: 78\n"
 
 #: lib/bluetoothPopupMenu.js:78
 msgid "Disconnect"
@@ -73,7 +49,7 @@ msgstr "Configurações de Bluetooth"
 msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d conectado"
-msgstr[1] "%d conectados"
+msgstr[1] "%d Conectados"
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
@@ -82,7 +58,7 @@ msgstr "Licença Pública Geral GNU, versão 3 ou posterior"
 #: preferences/about.js:49
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "© %s %s"
 
 #: preferences/about.js:50
 #, javascript-format
@@ -131,50 +107,57 @@ msgstr "Geral"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Configurações do indicador"
 
 #: ui/general.ui:12
 msgid "Enable Bluetooth device battery indicators"
-msgstr ""
+msgstr "Ativar indicadores de bateria do dispositivo Bluetooth"
 
 #: ui/general.ui:13
 msgid "Show icon in system tray with device battery level"
 msgstr ""
+"Mostrar ícone na bandeja do sistema com o nível da bateria do dispositivo"
 
 #: ui/general.ui:26
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "Configurações do Menu Rápido"
 
 #: ui/general.ui:29
 msgid "Show Bluetooth device battery level icon"
-msgstr ""
+msgstr "Mostrar ícone de nível de bateria do dispositivo Bluetooth"
 
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
 msgstr ""
+"Exibe o ícone no menu pop-up mostrando o nível da bateria do dispositivo "
+"Bluetooth"
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Mostrar porcentagem de bateria do dispositivo Bluetooth"
 
 #: ui/general.ui:42
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr ""
+"Exibe a porcentagem do nível da bateria do dispositivo Bluetooth em texto"
 
 #: ui/general.ui:53
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "Exibir ícone de nível de bateria antes do texto"
 
 #: ui/general.ui:54
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "Troca a posição do ícone do nível da bateria e do texto percentual"
 
 #: ui/general.ui:67
 msgid "Note!"
-msgstr ""
+msgstr "Observação!"
 
 #: ui/general.ui:70
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
 msgstr ""
+"Certos dispositivos Bluetooth não informam o nível da bateria até que os "
+"recursos experimentais do Bluez sejam ativados no sistema. Verifique o "
+"Leiame para obter detalhes."
