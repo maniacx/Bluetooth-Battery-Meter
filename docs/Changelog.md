@@ -7,18 +7,30 @@ permalink: /changelogs
 
 # Changelogs
 
+
 {: .important-title }
-> GN-45_Version 08 &emsp;&emsp; Jan 30, 2024
+> GN-45_Version 12 &emsp;&emsp; Feb 15, 2024
+> * translation: Update pt_BR translation. Credits: tiagoFlach
+
+
+{: .note-title }
+> GN-44_Version 11 &emsp;&emsp; Feb 15, 2024 
+> * translation: Update pt_BR translation. Credits: tiagoFlach
+
+
+{: .important-title }
+> GN-45_Version 10 &emsp;&emsp; Jan 30, 2024
 > * disable: disconnected signal before restoring original functions
 > * corrected string in prefs about section
 > * translation: Add Ukrainian translation. Credits: Bohdan Shkliarenko @crowdin
 
 
 {: .note-title }
-> GN-44_Version 07 &emsp;&emsp; Jan 30, 2024 
+> GN-44_Version 09 &emsp;&emsp; Jan 30, 2024 
 > * disable: disconnected signal before restoring original functions
 > * corrected string in prefs about section
 > * translation: Add Ukrainian translation. Credits: Bohdan Shkliarenko @crowdin
+
 
 {: .important-title }
 > GN-45_Version 08 &emsp;&emsp; Jan 23, 2024

@@ -30,6 +30,10 @@ This extension may conflict with other Bluetooth related Gnome Extensions. It's 
 * Installation from sources is not recommended but can be done for debugging or testing new updates not yet submitted to Gnome Extension.
 * A prerequisite is that gettext needs to be installed.
 * Run `./install.sh` from terminal to install.
+* Open terminal and
+```
+
+
 
 
 ## Uninstallation
