@@ -12,7 +12,7 @@ permalink: /
 {: .important-title }
 > Currently supported on Gnome Versions:
 > 
-> `45`
+> `42, 43, 44, 45`
 
 **Bluetooth Battery Meter is a Gnome Extension featuring indicator icons in system tray, serving as meter for Bluetooth device battery levels and providing detailed battery levels via icon/text in the Bluetooth quick settings menu.**
 <br>
