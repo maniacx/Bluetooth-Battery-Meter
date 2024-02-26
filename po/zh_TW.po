@@ -37,12 +37,12 @@ msgstr[0] "%d 個裝置已連接"
 
 #: preferences/about.js:40
 msgid "GNU General Public License, version 3 or later"
-msgstr "《GNU 通用公眾授權條款 3.0》或更新版本"
+msgstr "《GNU 通用公眾授權條款》3.0 版或更新的版本"
 
 #: preferences/about.js:47
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "© %s %s"
 
 #: preferences/about.js:48
 #, javascript-format
@@ -57,19 +57,19 @@ msgstr "關於"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "讀我"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "回報問題"
 
 #: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
-msgstr ""
+msgstr "翻譯"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "在 GitHub 上查看原始碼"
 
 #: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
@@ -77,62 +77,62 @@ msgstr "法律聲明"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "線上教學"
 
 #: ui/general.ui:5
 msgid "General"
-msgstr ""
+msgstr "一般設定"
 
 #: ui/general.ui:9
 msgid "Indicator Settings"
-msgstr ""
+msgstr "指示器設定"
 
 #: ui/general.ui:12
 msgid "Enable Bluetooth device battery indicators"
-msgstr ""
+msgstr "啟用藍牙裝置電池指示器"
 
 #: ui/general.ui:13
 msgid "Show icon in system tray with device battery level"
-msgstr ""
+msgstr "在系統工具列上顯示裝置電池電量圖示"
 
 #: ui/general.ui:26
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "快速選單設定"
 
 #: ui/general.ui:29
 msgid "Show Bluetooth device battery level icon"
-msgstr ""
+msgstr "顯示藍牙裝置電池電量圖示"
 
 #: ui/general.ui:30
 msgid "Displays icon in popup menu showing Bluetooth device battery level"
-msgstr ""
+msgstr "在彈出選單中顯示藍牙裝置電池電量圖示"
 
 #: ui/general.ui:41
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "顯示藍牙裝置電池百分比"
 
 #: ui/general.ui:42
 msgid "Displays Bluetooth device battery level percentage in text"
-msgstr ""
+msgstr "以文字顯示藍牙裝置電池電量百分比"
 
 #: ui/general.ui:53
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "在文字前顯示電池電量圖示"
 
 #: ui/general.ui:54
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "交換電池電量圖示與百分比文字的位置"
 
 #: ui/general.ui:67
 msgid "Note!"
-msgstr ""
+msgstr "注意！"
 
 #: ui/general.ui:70
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check Readme for details."
-msgstr ""
+msgstr "某些藍牙裝置在系統啟用 Bluez 的實驗功能前不會回傳電池電量。詳細資訊請查閱 Readme。"
