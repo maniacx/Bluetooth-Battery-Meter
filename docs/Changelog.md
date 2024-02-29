@@ -7,15 +7,24 @@ permalink: /changelogs
 
 # Changelogs
 
+{: .important-title }
+> GN-45_Version 12 &emsp;&emsp; Feb 28, 2024
+> * translation: Update Traditional Chinese translation. Credits: PeterDaveHello
+
+
+{: .note-title }
+> GN-44_Version 11 &emsp;&emsp; Feb 28, 2024 
+> * translation: Update Traditional Chinese translation. Credits: PeterDaveHello
+
 
 {: .important-title }
 > GN-45_Version 12 &emsp;&emsp; Feb 15, 2024
-> * translation: Update pt_BR translation. Credits: tiagoFlach
+> * translation: Update Brazilian (Portuguese) translation. Credits: tiagoFlach
 
 
 {: .note-title }
 > GN-44_Version 11 &emsp;&emsp; Feb 15, 2024 
-> * translation: Update pt_BR translation. Credits: tiagoFlach
+> * translation: Update Brazilian (Portuguese) translation. Credits: tiagoFlach
 
 
 {: .important-title }
