@@ -3,7 +3,7 @@
   <template class="BBM_About" parent="AdwPreferencesPage">
     <property name="name">about</property>
     <property name="title" translatable="yes">About</property>
-    <property name="icon-name">help-about-symbolic</property>
+    <property name="icon-name">bbm-help-about-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
         <property name="margin_start">90</property>

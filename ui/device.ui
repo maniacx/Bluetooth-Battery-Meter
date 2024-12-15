@@ -3,11 +3,11 @@
   <template class="BBM_Device" parent="AdwPreferencesPage">
     <property name="name">Device</property>
     <property name="title" translatable="yes">Device</property>
-    <property name="icon-name">bluetooth-symbolic</property>
+    <property name="icon-name">bbm-bluetooth-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup" id="device_group">
-        <property name="title" translatable="yes">Show / hide battery information per device</property>
-        <property name="description" translatable="yes">Note: General Setting overrides per device settings</property>
+        <property name="title" translatable="yes">Configuration by device</property>
+        <property name="description" translatable="yes">Note: General settings override device-specific settings</property>
         <child>
           <object class="AdwActionRow" id="no_paired_row">
             <property name="title" translatable="yes">No battery reporting capable device paired!</property>

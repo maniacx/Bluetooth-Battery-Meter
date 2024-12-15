@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
+  <template class="BBM_QuickSettings" parent="AdwPreferencesPage">
+    <property name="name">Quick Menu</property>
+    <property name="title" translatable="yes">Quick Menu</property>
+    <property name="icon-name">bbm-quick-settings-symbolic</property>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Quick Menu Settings</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Show battery icon for Bluetooth devices</property>
+            <property name="subtitle" translatable="yes">Displays an icon in the popup menu for Bluetooth device battery level"</property>
+            <property name="activatable-widget">enable_battery_level_icon</property>
+            <child>
+              <object class="GtkSwitch" id="enable_battery_level_icon">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Show Bluetooth device battery percentage</property>
+            <property name="subtitle" translatable="yes">Displays Bluetooth device battery level percentage in text</property>
+            <property name="activatable-widget">enable_battery_level_text</property>
+            <child>
+              <object class="GtkSwitch" id="enable_battery_level_text">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="swap_icon_text_row">
+            <property name="title" translatable="yes">Display battery level icon before text</property>
+            <property name="subtitle" translatable="yes">Swaps position of battery level icon and percentage text</property>
+            <property name="activatable-widget">swap_icon_text</property>
+            <child>
+              <object class="GtkSwitch" id="swap_icon_text">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Sort devices by connection history</property>
+            <property name="subtitle" translatable="yes">Enable to sort devices by connection history, or disable to sort by connection status and alias</property>
+            <property name="activatable-widget">sort_devices_by_history</property>
+            <child>
+              <object class="GtkSwitch" id="sort_devices_by_history">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Note!</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="subtitle" translatable="yes">Certain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check Readme for details.</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
