@@ -12,7 +12,10 @@ permalink: /
 {: .important-title }
 > Currently supported on Gnome Versions:
 > 
-> `42, 43, 44, 45`
+> Supported: `43, 44, 45, 46, 47`
+>
+> Deprecated: `42`
+
 
 **Bluetooth Battery Meter is a Gnome Extension featuring indicator icons in system tray, serving as meter for Bluetooth device battery levels and providing detailed battery levels via icon/text in the Bluetooth quick settings menu.**
 <br>
@@ -90,51 +93,7 @@ KernelExperimental = true
 
 ---
 
-## **Battery Level vs Icon**
-
-| Icon Meter Level | Battery Level |
-|:-:|:-:|
-| <img src="./assets/images/features/100-mouse.png" width="15%"> | Approx. Fully Charge<br>Battery level: 100 - 85%  |
-| <img src="./assets/images/features/75-mouse.png" width="15%"> | Approx. 75%<br>Battery level: 85-65% |
-| <img src="./assets/images/features/50-mouse.png" width="15%"> | Approx. 50%<br>Battery level: 65-35% |
-| <img src="./assets/images/features/25-mouse.png" width="15%"> | Approx. 25%<br>Battery level: 35-20% |
-| <img src="./assets/images/features/20-mouse.png" width="15%"> | Warning! Below 20%<br>Battery level: 20-10% |
-| <img src="./assets/images/features/10-mouse.png" width="15%"> | Warning! Below 10%<br>Battery level: 10-0%|
-
----
-
-## **Supported Device Type and Icon**
-
-| Icons Types | Reported by BT Client |
-|:-:|:-:|
-| <img src="./assets/images/features/input-mouse.png" width="15%"> | <b>input-mouse</b> |
-| <img src="./assets/images/features/input-keyboard.png" width="15%"> | <b>input-keyboard</b> |
-| <img src="./assets/images/features/input-gaming.png" width="15%"> | <b>input-gaming</b> |
-| <img src="./assets/images/features/input-tablet.png" width="15%"> | <b>input-tablet</b> |
-| <img src="./assets/images/features/audio-headphone.png" width="15%"> | <b>audio-headphone</b> |
-| <img src="./assets/images/features/audio-headphone.png" width="15%"> | <b>audio-headset</b> |
-| <img src="./assets/images/features/audio-speakers.png" width="15%"> | <b>audio-speakers</b> |
-
----
-
-## **System Tray Indicators**
-This extension provide information by displaying battery Levels of Bluetooth device as a Meter. This help taking minimum space on the system panel without being very intrusive.
-<br>
-These indicator icon can also be disabled in Extension Preferences
-<br>
-<br>
-**Extension Preferences**
-<br>
-<img src="./assets/images/features/settings-indicators.png" width="100%">
-<br>
-<br>
-**System Tray Indicators**
-<br>
-<img src="./assets/images/features/system-tray.png" width="50%">
-
----
-
-## **Display Battery Level Icon In Bluetooth Quick Settings Menu**
+## **Quick Settings: Display Battery Level Icon In Bluetooth Quick Settings Menu**
 An option to add/remove Battery Level icon in Bluetooth quick settings menu. 
 <br>
 <br>
@@ -149,7 +108,7 @@ An option to add/remove Battery Level icon in Bluetooth quick settings menu.
 
 ---
 
-## **Display Battery Percentage In Text In Bluetooth Quick Settings Menu**
+## **Quick Settings: Display Battery Percentage In Text In Bluetooth Quick Settings Menu**
 An option to add/remove Battery Percentage in text in Bluetooth quick settings menu. 
 <br>
 <br>
@@ -164,7 +123,7 @@ An option to add/remove Battery Percentage in text in Bluetooth quick settings m
 
 ---
 
-## **Swap Battery Percentage Text With Icon In Bluetooth Quick Settings Menu**
+## **Quick Settings: Swap Battery Percentage Text With Icon In Bluetooth Quick Settings Menu**
 When both, Battery Percentage Text and Battery Level Icon are enabled, Setting this feature to enabled with display Text after Icon, and vice versa
 <br>
 <br>
@@ -184,27 +143,238 @@ When both, Battery Percentage Text and Battery Level Icon are enabled, Setting t
 <br>
 <br>
 
-## **Bluetooth Indicator Show Percentage in text**
+---
+
+## **Quick Settings: Sort Devices by Connection Recency**
+<br>
+<br>
+**Extension Preferences**
+<br>
+<img src="./assets/images/features/settings-qs-recency.png" width="100%">
+<br>
+<br>
+This setting sorts Bluetooth devices based on their connection history.
+
+- **When disabled:** 
+  Devices follow GNOME's default behavior: connected devices are displayed at the top, and paired (disconnected) devices are at the bottom. Both groups are sorted alphabetically.
+
+- **When enabled:** 
+  - **Connected devices** are shown at the top, sorted by the most recent connection time. 
+  - **Paired devices** are displayed at the bottom, sorted by the most recent disconnection time. 
+
+> **Note:** BlueZ does not provide connection/disconnection times. The extension records these times only when enabled. Initially, all devices will appear unsorted until connection and disconnection events occur.
+
+---
+
+## **Indicators: System Tray Indicators**
+This extension provide information by displaying battery Levels of Bluetooth device as a Meter. This help taking minimum space on the system panel without being very intrusive.
+<br>
+These indicator icon can also be disabled in Extension Preferences
+<br>
+<br>
+**Extension Preferences**
+<br>
+<img src="./assets/images/features/settings-indicators.png" width="100%">
+<br>
+<br>
+**System Tray Indicators**
+<br>
+<img src="./assets/images/features/system-tray.png" width="50%">
+
+---
+
+## **Indicator: Bluetooth Indicator Show Percentage in text**
 Display battery percentage in text next to the indicator icon. 
 <br>
+<br>
+**Extension Preferences**
+<br>
+<br>
 <img src="./assets/images/features/settings-indicator-text.png" width="100%">
+<br>
+<br>
+**System Tray Indicators**
 <br>
 <br>
 <img src="./assets/images/features/qc-indicator-text.png" width="40%">
 <br>
 <br>
 
-## **Per Device Settings**
-<img src="./assets/images/features/settings-device.png" width="100%">
-* Users have the option to disable the display of battery levels in the quick settings and the indicator. This is particularly useful if an unsupported Bluetooth device (not yet supported by BlueZ) reports incorrect battery levels, allowing users to hide it from the quick settings and the indicator.
-* Additionally, users can opt to disable the indicator if they prefer not to show a Bluetooth device's indicator icon in the system tray.
+---
 
-### Settings Description
-* **Enable All**: Display the battery level in both quick settings and the indicator.
-* **Disable All**: Hide the battery level in both quick settings and the indicator.
-* **Hide Indicator**: Do not display an indicator for the Bluetooth device, but show the battery information in quick settings.
+## **Indicator: Bluetooth Connection Status Indicator**
+<br>
+<br>
+**System Tray Indicators**
+<br>
+<br>
+<img src="./assets/images/features/qc-indicator-status.png" width="40%">
+<br>
+**Default GNOME behavior:** When one or more Bluetooth devices are connected, the Bluetooth Connection Status Indicator will be displayed.
+<br>
+<br>
+**Extension Preferences**
+<br>
+<br>
+<img src="./assets/images/features/settings-indicator-status.png" width="100%">
+<br>
 
-When a Bluetooth device capable of reporting its battery level is detected, it is automatically added to the preferences, and the setting is saved in GSettings. This ensures that the user does not need to configure per-device settings again when the device reconnects.
+This setting provides three options:
+- **Default Behavior:** The icon will follow its original behavior as intended by GNOME.
+- **Hide Always:** The Bluetooth Connection Status Indicator icon will always be hidden.
+- **Hide Conditionally:** The Bluetooth Connection Status Indicator icon will remain hidden if a Bluetooth device indicator is displayed. If no individual Bluetooth device indicator is shown in the system tray, the Bluetooth Connection Status Indicator icon will be displayed.
 
-A Bluetooth device can only be deleted from the device preference page when it is unpaired. If the user no longer wishes to connect the Bluetooth device in the future, it can be removed from this list.
+<br>
+
+---
+
+## **Indicator: Battery Level Type**
+<br>
+<br>
+**Extension Preferences**
+<br>
+<br>
+<img src="./assets/images/features/settings-indicator-level-type.png" width="100%">
+<br>
+
+Available levels types are Battery Level Bar and Battery Level Bar.
+- **Battery Level Bar:** display a battery bar below the device icon.
+- **Battery Level Dots:** displays dots representing level of battery.
+
+
+**Battery Level Bar Mode**
+
+<img src="./assets/images/features/level-bar.png" width="10%">
+
+
+**Battery Level Dots Mode**
+
+<img src="./assets/images/features/level-50-dot.png" width="10%">
+
+| Symbolic | Battery Level |
+|:-:|:-:|
+| <img src="./assets/images/features/level-100-dot.png" width="15%"> | Approx. Fully Charge<br>Battery level: 100 - 76%  |
+| <img src="./assets/images/features/level-75-dot.png" width="15%"> | Battery level: 75-51% |
+| <img src="./assets/images/features/level-50-dot.png" width="15%"> | Battery level: 50-26% |
+| <img src="./assets/images/features/level-25-dot.png" width="15%"> | Battery level: 25-20% |
+| <img src="./assets/images/features/level-20-dot.png" width="15%"> | Warning! Below 20%<br>Battery level: 20-0% |
+
+---
+## **Indicator: Battery Level Color Scheme**
+<br>
+<img src="./assets/images/features/settings-indicator-level-scheme.png" width="100%">
+<br>
+
+This setting provides three options to customize the color scheme:
+
+- **Symbolic Color:** 
+  The color of the bar/dot will match the system indicator's foreground color (typically black or white, depending on the theme) when the battery percentage is greater than 20%.  
+  If the battery percentage falls below 20%, the bar/dot will use the system's warning color (usually orange, depending on the theme).
+
+<img src="./assets/images/features/level-bar.png" width="10%">
+<img src="./assets/images/features/color-20-bar.png" width="10%">
+<img src="./assets/images/features/level-50-dot.png" width="10%">
+<img src="./assets/images/features/level-20-dot.png" width="10%">
+
+- **Color:** 
+  The color of the bar/dot will be **green** when the battery percentage is above 20%, and **orange** when it is 20% or lower.
+
+<img src="./assets/images/features/color-50-bar.png" width="10%">
+<img src="./assets/images/features/color-20-bar.png" width="10%">
+<img src="./assets/images/features/color-50-dot.png" width="10%">
+<img src="./assets/images/features/level-20-dot.png" width="10%">
+
+- **Customize:**
+  Allows you to define custom colors for different battery level ranges.
+  
+<img src="./assets/images/features/settings-indicator-level-customize.png" width="100%">
+
+---
+
+## **Configuration By Device**
+<img src="./assets/images/features/settings-configure-device.png" width="100%">
+
+This window allows users to customize device-specific configurations. These settings are stored in **gsettings** and are restored automatically if the Bluetooth device is re-paired.
+
+- **Configure Button:**
+  Allows users to customize the icon type (e.g., headphones, earbuds), toggle indicator visibility, and enable/disable quick settings battery level reporting.
+
+- **Delete Button:** 
+  If a Bluetooth device is no longer paired or used, the stored configuration can be deleted. This ensures no unnecessary settings remain in **gsettings**.
+
+---
+## **Configuration By Device: Configure**
+
+This window provides options to customize device settings and indicates whether **battery reporting** is supported. The available options differ based on the device's battery reporting capabilities.
+
+- **For devices with battery reporting:** 
+  <img src="./assets/images/features/settings-configure-battery.png" width="100%">
+
+- **For devices without battery reporting:** 
+  <img src="./assets/images/features/settings-configure-non-battery.png" width="100%">
+
+---
+
+## **Configuration By Device: Select Icon**
+
+This setting allows users to customize the device icon displayed in both the quick settings menu and the indicator. A wide range of icons is available to choose from.
+
+<img src="./assets/images/features/settings-icon-selection.png" width="100%">
+
+In the example below, the icon is set to **earbuds**, and the changes are applied to both the **indicator** and the **quick settings** icon.
+
+- **Indicator Icon:** 
+  <img src="./assets/images/features/qc-indicator-icon-changes.png" width="30%">
+
+- **Quick Settings Icon:** 
+  <img src="./assets/images/features/qc-panel-icon-changes.png" width="40%">
+
+---
+
+## **Configuration By Device: Quick Menu: Display Battery Level**
+
+<img src="./assets/images/features/settings-qs-hide-battery.png" width="100%">
+
+This setting provides option to hide battery information display in quick menu.
+This is particularly useful if an unsupported Bluetooth device (not yet supported by BlueZ) reports incorrect battery levels, allowing users to hide it from the quick settings and the indicator.
+
+---
+
+## **Configuration By Device: Quick Menu: Display Battery Level**
+
+This setting allows users to hide the battery level display in the quick settings menu.
+
+<img src="./assets/images/features/settings-qs-hide-battery.png" width="100%">
+
+It is particularly useful for unsupported Bluetooth devices (not fully supported by BlueZ) that may report incorrect battery levels, helping users avoid misleading information.
+
+---
+
+## **Configuration By Device: Indicator - Customize Display**
+
+<img src="./assets/images/features/settings-indicator-hide-show-battery.png" width="100%">
+
+This setting allows users to customize how the indicator is displayed, particularly for devices with inaccurate or missing battery level reporting.
+
+### Available Options:
+- **Do not show icon:** 
+  Completely hides the indicator.
+
+- **Show icon without battery level:** 
+  Displays the indicator without battery information, showing only the icon with two triangles at the bottom. 
+  Useful for devices that don’t report battery levels or report them incorrectly but still indicate a connection. 
+  For example, a connected externally powered Bluetooth speaker will show a speaker icon in the system tray. 
+
+  <img src="./assets/images/features/indicator-no-battery-level.png" width="30%">
+
+- **Show icon with battery level:**
+  Displays the indicator with battery level information, including a bar or dots if the battery level is reported. 
+
+  <img src="./assets/images/features/indicator-battery-level.png" width="30%">
+
+
+
+
+
+
 
