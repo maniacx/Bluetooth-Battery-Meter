@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-15 18:43-0700\n"
+"POT-Creation-Date: 2024-12-17 21:13-0800\n"
 "PO-Revision-Date: 2024-01-11 16:33+0000\n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: RU\n"
@@ -34,32 +34,32 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: lib/bluetoothPopupMenu.js:79
+#: lib/bluetoothPopupMenu.js:69
 msgid "Disconnect"
 msgstr "Отключить"
 
-#: lib/bluetoothPopupMenu.js:79
+#: lib/bluetoothPopupMenu.js:69
 msgid "Connect"
 msgstr "Подключить"
 
-#: lib/bluetoothToggle42.js:163 lib/bluetoothToggle.js:267
-msgid "No available or connected devices"
-msgstr "Нет доступных или подключенных устройств"
-
-#: lib/bluetoothToggle42.js:164 lib/bluetoothToggle.js:268
-msgid "Turn on Bluetooth to connect to devices"
-msgstr "Включите Bluetooth для подключения к устройствам"
-
-#: lib/bluetoothToggle.js:98 lib/bluetoothToggle.js:100
-#: lib/bluetoothToggle.js:121
+#: lib/bluetoothToggle.js:89 lib/bluetoothToggle.js:91
+#: lib/bluetoothToggle.js:134
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: lib/bluetoothToggle.js:144
+#: lib/bluetoothToggle.js:152
 msgid "Bluetooth Settings"
 msgstr "Настройки Bluetooth"
 
-#: lib/bluetoothToggle.js:456
+#: lib/bluetoothToggle.js:337
+msgid "No available or connected devices"
+msgstr "Нет доступных или подключенных устройств"
+
+#: lib/bluetoothToggle.js:338
+msgid "Turn on Bluetooth to connect to devices"
+msgstr "Включите Bluetooth для подключения к устройствам"
+
+#: lib/bluetoothToggle.js:569
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -84,51 +84,109 @@ msgid ""
 msgstr ""
 "Это приложение не имеет никакой гарантии. Подробнее <a href=“%s”>%s</a>."
 
-#: preferences/device.js:36
-msgid "Show all"
-msgstr "Показать все"
-
-#: preferences/device.js:37
-msgid "Hide all"
-msgstr "Скрыть все"
-
-#: preferences/device.js:38
-msgid "Hide indicator"
-msgstr "Скрыть индикатор"
-
-#: preferences/device.js:43
-msgid ""
-"Show all:\n"
-"Shows Indicator icon and battery information in QuickSetting.\n"
-"\n"
-"Hide all:\n"
-"Hide battery information and Indicator icon in QuickSetting.\n"
-"\n"
-"Hide indicator:\n"
-"Hide only Indicator icon, Show battery information in QuickSetting."
+#: preferences/device.js:40
+msgid "Battery Status:"
 msgstr ""
-"Показать все:\n"
-"Показывает значок в трее и информацию о батарее в Быстрых Настройках.\n"
-"\n"
-"Скрыть все:\n"
-"Скрывает значок в трее и информацию о батарее в Быстрых Настройках.\n"
-"\n"
-"Скрыть значок:\n"
-"Скрывает значок в трее, показывает информацию и батарее в Быстрых Настройках."
 
-#: preferences/device.js:69
+#: preferences/device.js:41
+msgid "Reported"
+msgstr ""
+
+#: preferences/device.js:41
+msgid "Not Available"
+msgstr ""
+
+#: preferences/device.js:46
+msgid "Icon"
+msgstr ""
+
+#: preferences/device.js:50
+msgid "Select Icon"
+msgstr ""
+
+#: preferences/device.js:51
+msgid "Select the icon used for the indicator and quick menu"
+msgstr ""
+
+#: preferences/device.js:102 ui/quickSettings.ui:5
+msgid "Quick Menu"
+msgstr ""
+
+#: preferences/device.js:106
+msgid "Display Battery Level"
+msgstr ""
+
+#: preferences/device.js:107
+msgid "Display battery level in the Bluetooth panel quick menu"
+msgstr ""
+
+#: preferences/device.js:131 ui/indicator.ui:5
+msgid "Indicator"
+msgstr ""
+
+#: preferences/device.js:135
+msgid "Configure Indicator"
+msgstr ""
+
+#: preferences/device.js:136
+msgid "Choose how the indicator should behave"
+msgstr ""
+
+#: preferences/device.js:141
+msgid "Do not show Icon"
+msgstr ""
+
+#: preferences/device.js:142
+msgid "Show Icon without Battery level"
+msgstr ""
+
+#: preferences/device.js:143
+msgid "Show Icon with Battery Level"
+msgstr ""
+
+#: preferences/device.js:146
+msgid "Hide Icon"
+msgstr ""
+
+#: preferences/device.js:147
+msgid "Show Icon"
+msgstr ""
+
+#: preferences/device.js:192
+msgid "Configure device."
+msgstr ""
+
+#: preferences/device.js:204
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
 "Удалить устройство: кнопка доступна после разрыва сопряжения с устройством"
 
-#: preferences/device.js:110
+#: preferences/device.js:235
 msgid "(Removed)"
 msgstr "(Удалено)"
 
-#: preferences/device.js:111
+#: preferences/device.js:236
 msgid "(Paired)"
 msgstr "(Сопряжено)"
+
+#: preferences/indicator.js:14
+#, javascript-format
+msgid "Assign color for %d – %d%%"
+msgstr ""
+
+#: preferences/indicator.js:15
+#, javascript-format
+msgid "Set color for the battery level range of %d – %d%%"
+msgstr ""
+
+#: preferences/quickSettings.js:55
+#, javascript-format
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
+"for details."
+msgstr ""
 
 #: ui/about.ui:5
 msgid "About"
@@ -167,83 +225,211 @@ msgid "Device"
 msgstr "Устройство"
 
 #: ui/device.ui:9
-msgid "Show / hide battery information per device"
-msgstr "Показать / скрыть информацию о батарее устройства"
+msgid "Configuration by device"
+msgstr ""
 
 #: ui/device.ui:10
-msgid "Note: General Setting overrides per device settings"
+msgid "Note: General settings override device-specific settings"
 msgstr ""
-"Примечание: индивидуальные настройки устройства имеют приоритет перед Общими"
 
 #: ui/device.ui:13
-msgid "No battery reporting capable device paired!"
-msgstr "Не сопряжено ни одного устройства, передающего информацию о батарее!"
+msgid "No Bluetooth device paired!"
+msgstr ""
 
-#: ui/general.ui:5
-msgid "General"
-msgstr "Общие"
-
-#: ui/general.ui:9
+#: ui/indicator.ui:9
 msgid "Indicator Settings"
 msgstr "Настройки иконок системной панели"
 
-#: ui/general.ui:12
-msgid "Enable Bluetooth device battery indicators"
-msgstr "Отображать уровнь заряда Bluetooth устройств"
+#: ui/indicator.ui:12
+msgid "Enable battery indicators for Bluetooth devices"
+msgstr ""
 
-#: ui/general.ui:13
-msgid "Show icon in system tray with device battery level"
-msgstr "Покажет уровень заряда батареи устройства в системном трее"
+#: ui/indicator.ui:13
+msgid "Displays Bluetooth device icon with battery level in system tray"
+msgstr ""
 
-#: ui/general.ui:24
-msgid "Show percentage in text"
-msgstr "Печатать процент заряда"
+#: ui/indicator.ui:24
+msgid "Display battery percentage as text"
+msgstr ""
 
-#: ui/general.ui:25
-msgid "Add text in percentage next to battery indicators icon"
-msgstr "Добавить процент заряда рядом со значком батареи"
+#: ui/indicator.ui:25
+msgid "Displays battery percentage beside the Bluetooth device icon"
+msgstr ""
 
-#: ui/general.ui:39
+#: ui/indicator.ui:37
+msgid "Bluetooth Connection Status Indicator"
+msgstr ""
+
+#: ui/indicator.ui:38
+msgid ""
+"Hide conditionally: Displayed only when no other bluetooth related "
+"indicators are present"
+msgstr ""
+
+#: ui/indicator.ui:52
+msgid "Indicator Widget Settings"
+msgstr ""
+
+#: ui/indicator.ui:56
+msgid "Battery Level Indicator Type"
+msgstr ""
+
+#: ui/indicator.ui:57
+msgid "Dots offer better visibility"
+msgstr ""
+
+#: ui/indicator.ui:69
+msgid "Battery Indicator Color Scheme"
+msgstr ""
+
+#: ui/indicator.ui:70
+msgid "Choose color scheme for level bar/dots"
+msgstr ""
+
+#: ui/indicator.ui:90
+msgid "Default Behaviour"
+msgstr ""
+
+#: ui/indicator.ui:91
+msgid "Hide Always"
+msgstr ""
+
+#: ui/indicator.ui:92
+msgid "Hide Conditionally"
+msgstr ""
+
+#: ui/indicator.ui:97
+msgid "Battery Level Bar"
+msgstr ""
+
+#: ui/indicator.ui:98
+msgid "Battery Level Dot"
+msgstr ""
+
+#: ui/indicator.ui:103
+msgid "Symbolic"
+msgstr ""
+
+#: ui/indicator.ui:104
+msgid "Colored"
+msgstr ""
+
+#: ui/indicator.ui:105
+msgid "Customized"
+msgstr ""
+
+#: ui/quickSettings.ui:9
 msgid "Quick Menu Settings"
 msgstr "Настройки быстрого меню"
 
-#: ui/general.ui:42
-msgid "Show Bluetooth device battery level icon"
-msgstr "Показать значок батареи Bluetooth устройств"
-
-#: ui/general.ui:43
-msgid "Displays icon in popup menu showing Bluetooth device battery level"
+#: ui/quickSettings.ui:12
+msgid "Show battery icon for Bluetooth devices"
 msgstr ""
-"Отображение во всплывающем меню значка, показывающего уровень заряда батареи "
-"устройства Bluetooth"
 
-#: ui/general.ui:54
+#: ui/quickSettings.ui:13
+msgid "Displays an icon in the popup menu for Bluetooth device battery level\""
+msgstr ""
+
+#: ui/quickSettings.ui:24
 msgid "Show Bluetooth device battery percentage"
 msgstr "Показать процент заряда батареи Bluetooth устройств"
 
-#: ui/general.ui:55
+#: ui/quickSettings.ui:25
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr ""
 "Отображение процентного уровня заряда батареи устройства Bluetooth в "
 "текстовом виде"
 
-#: ui/general.ui:66
+#: ui/quickSettings.ui:36
 msgid "Display battery level icon before text"
 msgstr "Показать иконку заряда батареи перед процентами"
 
-#: ui/general.ui:67
+#: ui/quickSettings.ui:37
 msgid "Swaps position of battery level icon and percentage text"
 msgstr "Поменяет местами отображение иконки батареи и проценты"
 
-#: ui/general.ui:80
+#: ui/quickSettings.ui:48
+msgid "Sort devices by connection history"
+msgstr ""
+
+#: ui/quickSettings.ui:49
+msgid ""
+"Enable to sort devices by connection history, or disable to sort by "
+"connection status and alias"
+msgstr ""
+
+#: ui/quickSettings.ui:62
 msgid "Note!"
 msgstr "Внимание!"
 
-#: ui/general.ui:83
-msgid ""
-"Certain Bluetooth devices do not report battery level until Bluez's "
-"experimental features are enabled in system. Check Readme for details."
-msgstr ""
-"Некоторые Bluetooth-устройства не сообщают об уровне заряда батареи до тех "
-"пор, пока в системе не будут включены экспериментальные функции Bluez. "
-"Подробности смотрите в инструкции."
+#~ msgid "Show all"
+#~ msgstr "Показать все"
+
+#~ msgid "Hide all"
+#~ msgstr "Скрыть все"
+
+#~ msgid "Hide indicator"
+#~ msgstr "Скрыть индикатор"
+
+#~ msgid ""
+#~ "Show all:\n"
+#~ "Shows Indicator icon and battery information in QuickSetting.\n"
+#~ "\n"
+#~ "Hide all:\n"
+#~ "Hide battery information and Indicator icon in QuickSetting.\n"
+#~ "\n"
+#~ "Hide indicator:\n"
+#~ "Hide only Indicator icon, Show battery information in QuickSetting."
+#~ msgstr ""
+#~ "Показать все:\n"
+#~ "Показывает значок в трее и информацию о батарее в Быстрых Настройках.\n"
+#~ "\n"
+#~ "Скрыть все:\n"
+#~ "Скрывает значок в трее и информацию о батарее в Быстрых Настройках.\n"
+#~ "\n"
+#~ "Скрыть значок:\n"
+#~ "Скрывает значок в трее, показывает информацию и батарее в Быстрых "
+#~ "Настройках."
+
+#~ msgid "Show / hide battery information per device"
+#~ msgstr "Показать / скрыть информацию о батарее устройства"
+
+#~ msgid "Note: General Setting overrides per device settings"
+#~ msgstr ""
+#~ "Примечание: индивидуальные настройки устройства имеют приоритет перед "
+#~ "Общими"
+
+#~ msgid "No battery reporting capable device paired!"
+#~ msgstr ""
+#~ "Не сопряжено ни одного устройства, передающего информацию о батарее!"
+
+#~ msgid "General"
+#~ msgstr "Общие"
+
+#~ msgid "Enable Bluetooth device battery indicators"
+#~ msgstr "Отображать уровнь заряда Bluetooth устройств"
+
+#~ msgid "Show icon in system tray with device battery level"
+#~ msgstr "Покажет уровень заряда батареи устройства в системном трее"
+
+#~ msgid "Show percentage in text"
+#~ msgstr "Печатать процент заряда"
+
+#~ msgid "Add text in percentage next to battery indicators icon"
+#~ msgstr "Добавить процент заряда рядом со значком батареи"
+
+#~ msgid "Show Bluetooth device battery level icon"
+#~ msgstr "Показать значок батареи Bluetooth устройств"
+
+#~ msgid "Displays icon in popup menu showing Bluetooth device battery level"
+#~ msgstr ""
+#~ "Отображение во всплывающем меню значка, показывающего уровень заряда "
+#~ "батареи устройства Bluetooth"
+
+#~ msgid ""
+#~ "Certain Bluetooth devices do not report battery level until Bluez's "
+#~ "experimental features are enabled in system. Check Readme for details."
+#~ msgstr ""
+#~ "Некоторые Bluetooth-устройства не сообщают об уровне заряда батареи до "
+#~ "тех пор, пока в системе не будут включены экспериментальные функции "
+#~ "Bluez. Подробности смотрите в инструкции."
