@@ -61,9 +61,7 @@
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Note!</property>
         <child>
-          <object class="AdwActionRow">
-            <property name="subtitle" translatable="yes">Certain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check Readme for details.</property>
-          </object>
+          <object class="AdwActionRow" id="row_note_experimental_features"/>
         </child>
       </object>
     </child>

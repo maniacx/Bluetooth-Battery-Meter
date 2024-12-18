@@ -10,7 +10,7 @@
         <property name="description" translatable="yes">Note: General settings override device-specific settings</property>
         <child>
           <object class="AdwActionRow" id="no_paired_row">
-            <property name="title" translatable="yes">No battery reporting capable device paired!</property>
+            <property name="title" translatable="yes">No Bluetooth device paired!</property>
           </object>
         </child>
       </object>
