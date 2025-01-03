@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 21:13-0800\n"
+"POT-Creation-Date: 2025-01-02 18:45-0800\n"
 "PO-Revision-Date: 2023-09-02 08:55-0700\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <punjabi-users@list.sf.net>\n"
@@ -34,15 +34,15 @@ msgstr "ਬਲੂਟੁੱਥ"
 msgid "Bluetooth Settings"
 msgstr "ਬਲੂਟੁੱਥ ਸੈਟਿੰਗਾਂ"
 
-#: lib/bluetoothToggle.js:337
+#: lib/bluetoothToggle.js:345
 msgid "No available or connected devices"
 msgstr "ਮੌਜੂਦ ਨਹੀਂ ਜਾਂ ਡਿਵਾਈਸ ਕਨੈਕਟ ਨਹੀਂ ਹਨ"
 
-#: lib/bluetoothToggle.js:338
+#: lib/bluetoothToggle.js:346
 msgid "Turn on Bluetooth to connect to devices"
 msgstr "ਡਿਵਾਈਸਾਂ ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਲਈ ਬਲੂਟੁੱਥ ਸਮਰੱਥ ਕਰੋ"
 
-#: lib/bluetoothToggle.js:569
+#: lib/bluetoothToggle.js:580
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -307,7 +307,7 @@ msgid "Show battery icon for Bluetooth devices"
 msgstr ""
 
 #: ui/quickSettings.ui:13
-msgid "Displays an icon in the popup menu for Bluetooth device battery level\""
+msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
 
 #: ui/quickSettings.ui:24

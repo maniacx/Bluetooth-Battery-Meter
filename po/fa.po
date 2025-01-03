@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 21:13-0800\n"
+"POT-Creation-Date: 2025-01-02 18:45-0800\n"
 "PO-Revision-Date: 2023-08-27 13:29+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <>\n"
@@ -39,15 +39,15 @@ msgstr "بلوتوث"
 msgid "Bluetooth Settings"
 msgstr "تنظیمات بلوتوث"
 
-#: lib/bluetoothToggle.js:337
+#: lib/bluetoothToggle.js:345
 msgid "No available or connected devices"
 msgstr "بدون افزارهٔ وصل شده یا موجود"
 
-#: lib/bluetoothToggle.js:338
+#: lib/bluetoothToggle.js:346
 msgid "Turn on Bluetooth to connect to devices"
 msgstr "برای وصل شدن به افزاره‌ها بلوتوث را روشن کنید"
 
-#: lib/bluetoothToggle.js:569
+#: lib/bluetoothToggle.js:580
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -61,7 +61,7 @@ msgstr "نگارش ۳ یا بالاتر پروانهٔ جامع همگانی گ�
 #: preferences/about.js:49
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "کپی رایت %s %s"
 
 #: preferences/about.js:50
 #, javascript-format
@@ -69,102 +69,102 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
-"این برنامه بی هیچ ضمانتی می‌آید. برای جزییات <a href=\"%s\">%s</a> را ببینید."
+"این برنامه بی هیچ ضمانتی می‌آید. برای جزيیات <a href=\"%s\">%s</a> را ببینید."
 
 #: preferences/device.js:40
 msgid "Battery Status:"
-msgstr ""
+msgstr "وضعیت باتری:"
 
 #: preferences/device.js:41
 msgid "Reported"
-msgstr ""
+msgstr "گزارش شده"
 
 #: preferences/device.js:41
 msgid "Not Available"
-msgstr ""
+msgstr "در دسترس نیست"
 
 #: preferences/device.js:46
 msgid "Icon"
-msgstr ""
+msgstr "نماد"
 
 #: preferences/device.js:50
 msgid "Select Icon"
-msgstr ""
+msgstr "نماد را انتخاب کنید"
 
 #: preferences/device.js:51
 msgid "Select the icon used for the indicator and quick menu"
-msgstr ""
+msgstr "نماد را برای منوی سریع انتخاب کنید"
 
 #: preferences/device.js:102 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "فهرست سریع"
 
 #: preferences/device.js:106
 msgid "Display Battery Level"
-msgstr ""
+msgstr "نمایش مقدار باتری"
 
 #: preferences/device.js:107
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
+msgstr "نمایش مقدار باتری در پنل منوی سریع"
 
 #: preferences/device.js:131 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "شاخص"
 
 #: preferences/device.js:135
 msgid "Configure Indicator"
-msgstr ""
+msgstr "پیکربندی شاخص"
 
 #: preferences/device.js:136
 msgid "Choose how the indicator should behave"
-msgstr ""
+msgstr "چگونگی عملکرد شاخص را انتخاب کنید"
 
 #: preferences/device.js:141
 msgid "Do not show Icon"
-msgstr ""
+msgstr "نماد را نشان نده"
 
 #: preferences/device.js:142
 msgid "Show Icon without Battery level"
-msgstr ""
+msgstr "نمایش نماد بدون نمایش مقدار باتری"
 
 #: preferences/device.js:143
 msgid "Show Icon with Battery Level"
-msgstr ""
+msgstr "نمایش نماد با مقدار باتری"
 
 #: preferences/device.js:146
 msgid "Hide Icon"
-msgstr ""
+msgstr "پنهان کردن نماد"
 
 #: preferences/device.js:147
 msgid "Show Icon"
-msgstr ""
+msgstr "نمایش نماد"
 
 #: preferences/device.js:192
 msgid "Configure device."
-msgstr ""
+msgstr "پیکربندی دستگاه ها."
 
 #: preferences/device.js:204
 msgid ""
 "Delete device information: The button is available after unpairing device"
-msgstr ""
+msgstr "حذف اطلاعات دستگاه ها: دکمه بعد از قطع شدن جفت سازی دستگاه"
 
 #: preferences/device.js:235
 msgid "(Removed)"
-msgstr ""
+msgstr "(حذف کردن)"
 
 #: preferences/device.js:236
 msgid "(Paired)"
-msgstr ""
+msgstr "(جفت شده)"
 
 #: preferences/indicator.js:14
 #, javascript-format
 msgid "Assign color for %d – %d%%"
-msgstr ""
+msgstr "انتخاب رنگ برای %d - %d"
 
 #: preferences/indicator.js:15
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
+msgstr "انتخاب رنگ برای مقدار درصد باتری %d - %d"
 
 #: preferences/quickSettings.js:55
 #, javascript-format
@@ -173,6 +173,9 @@ msgid ""
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"بعضی از دستگاه های بلوتوثی نمیتوانند مقدار باتری را برای ما ارسال کنند تا "
+"وقتی که حالت آزمایشی Bluez در سیستمشان فعال نباشد. برای اطلاعات بیشتر <a "
+"href=\"%s\"> کلیک </a> کنید."
 
 #: ui/about.ui:5
 msgid "About"
@@ -180,19 +183,19 @@ msgstr "درباره"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "مرا بخوان"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "گزارش مشکل"
 
 #: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
-msgstr ""
+msgstr "ترجمه ها"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "منابع را در گیت هاب ببینید"
 
 #: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
@@ -200,148 +203,151 @@ msgstr "حقوقی"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "دوره های آنلاین"
 
 #: ui/device.ui:5
 msgid "Device"
-msgstr ""
+msgstr "دستگاه"
 
 #: ui/device.ui:9
 msgid "Configuration by device"
-msgstr ""
+msgstr "پیکربندی شده توسط دستگاه"
 
 #: ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
-msgstr ""
+msgstr "نکته: تنظیمات عمومی ، تنظیمات منحصر به دستگاه را تغییر می دهد"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
-msgstr ""
+msgstr "هیچ دستگاه بلوتوثی جفت نشده!"
 
 #: ui/indicator.ui:9
 msgid "Indicator Settings"
-msgstr ""
+msgstr "تنظیمات شاخص"
 
 #: ui/indicator.ui:12
 msgid "Enable battery indicators for Bluetooth devices"
-msgstr ""
+msgstr "فعال سازی شاخص باتری برای دستگاه های بلوتوثی"
 
 #: ui/indicator.ui:13
 msgid "Displays Bluetooth device icon with battery level in system tray"
-msgstr ""
+msgstr "نشان دادن نماد دستگاه بلوتوثی با مقدار باتری در system tray"
 
 #: ui/indicator.ui:24
 msgid "Display battery percentage as text"
-msgstr ""
+msgstr "نمایش درصد مقدار باتری به صورت متنی"
 
 #: ui/indicator.ui:25
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
+msgstr "نمایش درصد باتری بعد از نماد دستگاه بلوتوثی"
 
 #: ui/indicator.ui:37
 msgid "Bluetooth Connection Status Indicator"
-msgstr ""
+msgstr "شاخص وضعیت اتصال بلوتوث"
 
 #: ui/indicator.ui:38
 msgid ""
 "Hide conditionally: Displayed only when no other bluetooth related "
 "indicators are present"
 msgstr ""
+"مخفی کردن شرطی: فقط وقتی نشان بده که هیچ شاخص بلوتوثی مربوط وجود نداشته باشد"
 
 #: ui/indicator.ui:52
 msgid "Indicator Widget Settings"
-msgstr ""
+msgstr "تنظیمات ویجت شاخص"
 
 #: ui/indicator.ui:56
 msgid "Battery Level Indicator Type"
-msgstr ""
+msgstr "نوع شاخص مقدار باتری"
 
 #: ui/indicator.ui:57
 msgid "Dots offer better visibility"
-msgstr ""
+msgstr "نقطه ها بهتر دیده میشوند"
 
 #: ui/indicator.ui:69
 msgid "Battery Indicator Color Scheme"
-msgstr ""
+msgstr "رنگ شاخص باتری"
 
 #: ui/indicator.ui:70
 msgid "Choose color scheme for level bar/dots"
-msgstr ""
+msgstr "رنگی را برای مقدار باتری انتخاب کنید"
 
 #: ui/indicator.ui:90
 msgid "Default Behaviour"
-msgstr ""
+msgstr "رفتار پیش فرض"
 
 #: ui/indicator.ui:91
 msgid "Hide Always"
-msgstr ""
+msgstr "همیشه مخفی"
 
 #: ui/indicator.ui:92
 msgid "Hide Conditionally"
-msgstr ""
+msgstr "مخفی کردن شرطی"
 
 #: ui/indicator.ui:97
 msgid "Battery Level Bar"
-msgstr ""
+msgstr "درصد باتری نواری"
 
 #: ui/indicator.ui:98
 msgid "Battery Level Dot"
-msgstr ""
+msgstr "درصد باتری نقطه ای"
 
 #: ui/indicator.ui:103
 msgid "Symbolic"
-msgstr ""
+msgstr "دارای نماد"
 
 #: ui/indicator.ui:104
 msgid "Colored"
-msgstr ""
+msgstr "رنگی"
 
 #: ui/indicator.ui:105
 msgid "Customized"
-msgstr ""
+msgstr "سفارشی کردن"
 
 #: ui/quickSettings.ui:9
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "تنظیمات منوی سریع"
 
 #: ui/quickSettings.ui:12
 msgid "Show battery icon for Bluetooth devices"
-msgstr ""
+msgstr "نمایش نماد باتری برای دستگاه های بلوتوثی"
 
 #: ui/quickSettings.ui:13
-msgid "Displays an icon in the popup menu for Bluetooth device battery level\""
-msgstr ""
+msgid "Displays an icon in the popup menu for Bluetooth device battery level"
+msgstr "نمایش نماد در منو آبشاری برای مقدار باتری دستگاه بلوتوثی"
 
 #: ui/quickSettings.ui:24
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "نمایش درصد باتری دستگاه بلوتوثی"
 
 #: ui/quickSettings.ui:25
 msgid "Displays Bluetooth device battery level percentage in text"
-msgstr ""
+msgstr "نمایش مقدار باتری دستگاه بلوتوثی به صورت درصد متنی"
 
 #: ui/quickSettings.ui:36
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "نمایش نماد مقدار باتری قبل از متن"
 
 #: ui/quickSettings.ui:37
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "جابه جایی موقعیت نماد مقدار باتری و درصد متنی"
 
 #: ui/quickSettings.ui:48
 msgid "Sort devices by connection history"
-msgstr ""
+msgstr "مرتب کردن برا اساس تاریخچه اتصال"
 
 #: ui/quickSettings.ui:49
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"
 msgstr ""
+"فعالسازی مرتب کردن دستگاه ها بر اساس تاریخچه اتصال یا غیر فعال سازی مرتب "
+"کردن بر اساس وضعیت و الیاس"
 
 #: ui/quickSettings.ui:62
 msgid "Note!"
-msgstr ""
+msgstr "یادداشت!"

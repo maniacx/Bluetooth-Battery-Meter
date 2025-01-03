@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 21:13-0800\n"
+"POT-Creation-Date: 2025-01-02 18:45-0800\n"
 "PO-Revision-Date: 2023-10-24 06:04+0200\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnome-sr@googlegroups.org>\n"
@@ -43,15 +43,15 @@ msgstr "Блутут"
 msgid "Bluetooth Settings"
 msgstr "Подешавања Блутута"
 
-#: lib/bluetoothToggle.js:337
+#: lib/bluetoothToggle.js:345
 msgid "No available or connected devices"
 msgstr "Нема доступних или прикључених уређаја"
 
-#: lib/bluetoothToggle.js:338
+#: lib/bluetoothToggle.js:346
 msgid "Turn on Bluetooth to connect to devices"
 msgstr "Укључите блутут да бисте се повезали на уређаје"
 
-#: lib/bluetoothToggle.js:569
+#: lib/bluetoothToggle.js:580
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -320,7 +320,7 @@ msgid "Show battery icon for Bluetooth devices"
 msgstr ""
 
 #: ui/quickSettings.ui:13
-msgid "Displays an icon in the popup menu for Bluetooth device battery level\""
+msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
 
 #: ui/quickSettings.ui:24

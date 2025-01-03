@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 21:13-0800\n"
+"POT-Creation-Date: 2025-01-02 18:45-0800\n"
 "PO-Revision-Date: 2011-04-04 11:04+0600\n"
 "Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -32,15 +32,15 @@ msgstr "ব্লুটুথ"
 msgid "Bluetooth Settings"
 msgstr "ব্লুটুথ সেটিং"
 
-#: lib/bluetoothToggle.js:337
+#: lib/bluetoothToggle.js:345
 msgid "No available or connected devices"
 msgstr ""
 
-#: lib/bluetoothToggle.js:338
+#: lib/bluetoothToggle.js:346
 msgid "Turn on Bluetooth to connect to devices"
 msgstr ""
 
-#: lib/bluetoothToggle.js:569
+#: lib/bluetoothToggle.js:580
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -305,7 +305,7 @@ msgid "Show battery icon for Bluetooth devices"
 msgstr ""
 
 #: ui/quickSettings.ui:13
-msgid "Displays an icon in the popup menu for Bluetooth device battery level\""
+msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
 
 #: ui/quickSettings.ui:24

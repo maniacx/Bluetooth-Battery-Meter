@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: video-subtitles master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 21:13-0800\n"
+"POT-Creation-Date: 2025-01-02 18:45-0800\n"
 "PO-Revision-Date: 2023-09-26 11:22+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
@@ -36,15 +36,15 @@ msgstr "Bluetooth"
 msgid "Bluetooth Settings"
 msgstr "Impostazions Bluetooth"
 
-#: lib/bluetoothToggle.js:337
+#: lib/bluetoothToggle.js:345
 msgid "No available or connected devices"
 msgstr "Nissun dispositîf disponibil o colegât"
 
-#: lib/bluetoothToggle.js:338
+#: lib/bluetoothToggle.js:346
 msgid "Turn on Bluetooth to connect to devices"
 msgstr "Ative il Bluetooth par colegâti ai dispositîfs"
 
-#: lib/bluetoothToggle.js:569
+#: lib/bluetoothToggle.js:580
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -311,7 +311,7 @@ msgid "Show battery icon for Bluetooth devices"
 msgstr ""
 
 #: ui/quickSettings.ui:13
-msgid "Displays an icon in the popup menu for Bluetooth device battery level\""
+msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
 
 #: ui/quickSettings.ui:24

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell 3.3.90\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 21:13-0800\n"
+"POT-Creation-Date: 2025-01-02 18:45-0800\n"
 "PO-Revision-Date: 2023-10-05 15:33+0800\n"
 "Last-Translator: Cheng-Chia Tseng <zerngjia@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://darkbear.mercusysddns.com/"
@@ -38,15 +38,15 @@ msgstr "藍牙"
 msgid "Bluetooth Settings"
 msgstr "藍牙設定值"
 
-#: lib/bluetoothToggle.js:337
+#: lib/bluetoothToggle.js:345
 msgid "No available or connected devices"
 msgstr "沒有可用或連接的裝置"
 
-#: lib/bluetoothToggle.js:338
+#: lib/bluetoothToggle.js:346
 msgid "Turn on Bluetooth to connect to devices"
 msgstr "開啟藍牙以連接到裝置"
 
-#: lib/bluetoothToggle.js:569
+#: lib/bluetoothToggle.js:580
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -66,102 +66,103 @@ msgstr "© %s %s"
 msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
-msgstr "這個程式沒有任何擔保責任。如需更多資訊，請參閱<a href=\"%s\">%s</a>。"
+msgstr ""
+"本應用程式完全不提供任何擔保責任。如需更多資訊，請參閱<a href=\"%s\">%s</a>。"
 
 #: preferences/device.js:40
 msgid "Battery Status:"
-msgstr ""
+msgstr "電池狀態："
 
 #: preferences/device.js:41
 msgid "Reported"
-msgstr ""
+msgstr "已回報"
 
 #: preferences/device.js:41
 msgid "Not Available"
-msgstr ""
+msgstr "無法使用"
 
 #: preferences/device.js:46
 msgid "Icon"
-msgstr ""
+msgstr "圖示"
 
 #: preferences/device.js:50
 msgid "Select Icon"
-msgstr ""
+msgstr "選擇圖示"
 
 #: preferences/device.js:51
 msgid "Select the icon used for the indicator and quick menu"
-msgstr ""
+msgstr "選擇用於指示器和快速選單的圖示"
 
 #: preferences/device.js:102 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "快速選單"
 
 #: preferences/device.js:106
 msgid "Display Battery Level"
-msgstr ""
+msgstr "顯示電池電量"
 
 #: preferences/device.js:107
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
+msgstr "在藍牙面板快速選單中顯示電池電量"
 
 #: preferences/device.js:131 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "指示器"
 
 #: preferences/device.js:135
 msgid "Configure Indicator"
-msgstr ""
+msgstr "設定指示器"
 
 #: preferences/device.js:136
 msgid "Choose how the indicator should behave"
-msgstr ""
+msgstr "選擇指示器的顯示方式"
 
 #: preferences/device.js:141
 msgid "Do not show Icon"
-msgstr ""
+msgstr "不顯示圖示"
 
 #: preferences/device.js:142
 msgid "Show Icon without Battery level"
-msgstr ""
+msgstr "顯示圖示但不顯示電量"
 
 #: preferences/device.js:143
 msgid "Show Icon with Battery Level"
-msgstr ""
+msgstr "顯示圖示並顯示電量"
 
 #: preferences/device.js:146
 msgid "Hide Icon"
-msgstr ""
+msgstr "隱藏圖示"
 
 #: preferences/device.js:147
 msgid "Show Icon"
-msgstr ""
+msgstr "顯示圖示"
 
 #: preferences/device.js:192
 msgid "Configure device."
-msgstr ""
+msgstr "設定裝置。"
 
 #: preferences/device.js:204
 msgid ""
 "Delete device information: The button is available after unpairing device"
-msgstr ""
+msgstr "刪除裝置資訊：取消配對裝置後此按鈕即可使用"
 
 #: preferences/device.js:235
 msgid "(Removed)"
-msgstr ""
+msgstr "（已移除）"
 
 #: preferences/device.js:236
 msgid "(Paired)"
-msgstr ""
+msgstr "（已配對）"
 
 #: preferences/indicator.js:14
 #, javascript-format
 msgid "Assign color for %d – %d%%"
-msgstr ""
+msgstr "指定 %d – %d%% 的顏色"
 
 #: preferences/indicator.js:15
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
+msgstr "設定電池電量範圍 %d – %d%% 的顏色"
 
 #: preferences/quickSettings.js:55
 #, javascript-format
@@ -170,6 +171,8 @@ msgid ""
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"某些藍牙裝置需要啟用系統中的 Bluez 實驗性功能才能回報電池電量。請參閱<a "
+"href=\"%s\">說明文件</a>瞭解詳情。"
 
 #: ui/about.ui:5
 msgid "About"
@@ -189,7 +192,7 @@ msgstr "翻譯"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr "在 GitHub 上查看原始碼"
+msgstr "在 GitHub 上檢視原始碼"
 
 #: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
@@ -205,19 +208,19 @@ msgstr "線上教學"
 
 #: ui/device.ui:5
 msgid "Device"
-msgstr ""
+msgstr "裝置"
 
 #: ui/device.ui:9
 msgid "Configuration by device"
-msgstr ""
+msgstr "依裝置設定"
 
 #: ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
-msgstr ""
+msgstr "注意：一般設定會覆寫個別裝置設定"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
-msgstr ""
+msgstr "尚未配對藍牙裝置！"
 
 #: ui/indicator.ui:9
 msgid "Indicator Settings"
@@ -225,81 +228,81 @@ msgstr "指示器設定"
 
 #: ui/indicator.ui:12
 msgid "Enable battery indicators for Bluetooth devices"
-msgstr ""
+msgstr "啟用藍牙裝置的電池指示器"
 
 #: ui/indicator.ui:13
 msgid "Displays Bluetooth device icon with battery level in system tray"
-msgstr ""
+msgstr "在系統匣中顯示藍牙裝置圖示與電池電量"
 
 #: ui/indicator.ui:24
 msgid "Display battery percentage as text"
-msgstr ""
+msgstr "以文字顯示電池電量百分比"
 
 #: ui/indicator.ui:25
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
+msgstr "在藍牙裝置圖示旁顯示電池電量百分比"
 
 #: ui/indicator.ui:37
 msgid "Bluetooth Connection Status Indicator"
-msgstr ""
+msgstr "藍牙連線狀態指示器"
 
 #: ui/indicator.ui:38
 msgid ""
 "Hide conditionally: Displayed only when no other bluetooth related "
 "indicators are present"
-msgstr ""
+msgstr "條件式隱藏：僅在沒有其他藍牙相關指示器時才顯示"
 
 #: ui/indicator.ui:52
 msgid "Indicator Widget Settings"
-msgstr ""
+msgstr "指示器小工具設定"
 
 #: ui/indicator.ui:56
 msgid "Battery Level Indicator Type"
-msgstr ""
+msgstr "電池電量指示器類型"
 
 #: ui/indicator.ui:57
 msgid "Dots offer better visibility"
-msgstr ""
+msgstr "圓點提供較佳的可見度"
 
 #: ui/indicator.ui:69
 msgid "Battery Indicator Color Scheme"
-msgstr ""
+msgstr "電池指示器配色方案"
 
 #: ui/indicator.ui:70
 msgid "Choose color scheme for level bar/dots"
-msgstr ""
+msgstr "選擇電量條/圓點的配色方案"
 
 #: ui/indicator.ui:90
 msgid "Default Behaviour"
-msgstr ""
+msgstr "預設行為"
 
 #: ui/indicator.ui:91
 msgid "Hide Always"
-msgstr ""
+msgstr "永遠隱藏"
 
 #: ui/indicator.ui:92
 msgid "Hide Conditionally"
-msgstr ""
+msgstr "條件式隱藏"
 
 #: ui/indicator.ui:97
 msgid "Battery Level Bar"
-msgstr ""
+msgstr "電池電量條"
 
 #: ui/indicator.ui:98
 msgid "Battery Level Dot"
-msgstr ""
+msgstr "電池電量圓點"
 
 #: ui/indicator.ui:103
 msgid "Symbolic"
-msgstr ""
+msgstr "符號"
 
 #: ui/indicator.ui:104
 msgid "Colored"
-msgstr ""
+msgstr "彩色"
 
 #: ui/indicator.ui:105
 msgid "Customized"
-msgstr ""
+msgstr "自訂"
 
 #: ui/quickSettings.ui:9
 msgid "Quick Menu Settings"
@@ -307,11 +310,11 @@ msgstr "快速選單設定"
 
 #: ui/quickSettings.ui:12
 msgid "Show battery icon for Bluetooth devices"
-msgstr ""
+msgstr "顯示藍牙裝置的電池圖示"
 
 #: ui/quickSettings.ui:13
-msgid "Displays an icon in the popup menu for Bluetooth device battery level\""
-msgstr ""
+msgid "Displays an icon in the popup menu for Bluetooth device battery level"
+msgstr "在彈出式選單中顯示藍牙裝置的電池電量圖示"
 
 #: ui/quickSettings.ui:24
 msgid "Show Bluetooth device battery percentage"
@@ -331,17 +334,54 @@ msgstr "交換電池電量圖示與百分比文字的位置"
 
 #: ui/quickSettings.ui:48
 msgid "Sort devices by connection history"
-msgstr ""
+msgstr "依連線歷史記錄排序裝置"
 
 #: ui/quickSettings.ui:49
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"
-msgstr ""
+msgstr "啟用此選項可依連線歷史記錄排序裝置，停用則依連線狀態和別名排序"
 
 #: ui/quickSettings.ui:62
 msgid "Note!"
 msgstr "注意！"
+
+#~ msgid "Show all"
+#~ msgstr "顯示全部"
+
+#~ msgid "Hide all"
+#~ msgstr "隱藏全部"
+
+#~ msgid "Hide indicator"
+#~ msgstr "隱藏指示器"
+
+#~ msgid ""
+#~ "Show all:\n"
+#~ "Shows Indicator icon and battery information in QuickSetting.\n"
+#~ "\n"
+#~ "Hide all:\n"
+#~ "Hide battery information and Indicator icon in QuickSetting.\n"
+#~ "\n"
+#~ "Hide indicator:\n"
+#~ "Hide only Indicator icon, Show battery information in QuickSetting."
+#~ msgstr ""
+#~ "顯示全部：\n"
+#~ "在快速設定中顯示指示器圖示與電池資訊。\n"
+#~ "\n"
+#~ "隱藏全部：\n"
+#~ "在快速設定中隱藏電池資訊與指示器圖示。\n"
+#~ "\n"
+#~ "隱藏指示器：\n"
+#~ "僅隱藏指示器圖示，在快速設定中仍顯示電池資訊。"
+
+#~ msgid "Show / hide battery information per device"
+#~ msgstr "依裝置顯示／隱藏電池資訊"
+
+#~ msgid "Note: General Setting overrides per device settings"
+#~ msgstr "注意：一般設定會覆蓋個別裝置設定"
+
+#~ msgid "No battery reporting capable device paired!"
+#~ msgstr "尚未配對任何可回報電池資訊的裝置！"
 
 #~ msgid "General"
 #~ msgstr "一般設定"
@@ -351,6 +391,12 @@ msgstr "注意！"
 
 #~ msgid "Show icon in system tray with device battery level"
 #~ msgstr "在系統工具列上顯示裝置電池電量圖示"
+
+#~ msgid "Show percentage in text"
+#~ msgstr "以文字顯示百分比"
+
+#~ msgid "Add text in percentage next to battery indicators icon"
+#~ msgstr "在電池指示器圖示旁加入百分比文字"
 
 #~ msgid "Show Bluetooth device battery level icon"
 #~ msgstr "顯示藍牙裝置電池電量圖示"
@@ -362,5 +408,5 @@ msgstr "注意！"
 #~ "Certain Bluetooth devices do not report battery level until Bluez's "
 #~ "experimental features are enabled in system. Check Readme for details."
 #~ msgstr ""
-#~ "某些藍牙裝置在系統啟用 Bluez 的實驗功能前不會回傳電池電量。詳細資訊請查閱 "
-#~ "Readme。"
+#~ "某些藍牙裝置在系統啟用 Bluez 的實驗性功能前不會回傳電池電量。詳細資訊請查"
+#~ "閱 Readme。"
