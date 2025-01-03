@@ -7,6 +7,31 @@ permalink: /changelogs
 
 # Changelogs
 
+
+{: .important-title }
+> GN-45_Version 24 &emsp;&emsp; Jan 03, 2025
+> * Added option to use battery bar as level meter
+> * Added option for to change device icons
+> * Added option to hide / show indicator for bluetooth non battery device
+> * Added option to hide bluetooth connection status indicator icon
+> * Added option to sort by recency
+> * translation: Update Brazilian Portuguese translation. Credits: gabriel.fwittaker@crowdin
+> * translation: Update Russian translation. Credits: Toxblh
+> * translation: Update Spanish translation. Credits: txelu
+> * translation: Update Chinese (Traditional) translation. PeterDaveHello
+
+{: .note-title }
+> GN-44_Version 23 &emsp;&emsp; Jan 03, 2025
+> * Added option to use battery bar as level meter
+> * Added option for to change device icons
+> * Added option to hide / show indicator for bluetooth non battery device
+> * Added option to hide bluetooth connection status indicator icon
+> * Added option to sort by recency
+> * translation: Update Brazilian Portuguese translation. Credits: gabriel.fwittaker@crowdin
+> * translation: Update Russian translation. Credits: Toxblh
+> * translation: Update Spanish translation. Credits: txelu
+> * translation: Update Chinese (Traditional) translation. PeterDaveHello
+
 {: .important-title }
 > GN-45_Version 22 &emsp;&emsp; Sep 15, 2024
 > * Add support for Gnome-shell 47
