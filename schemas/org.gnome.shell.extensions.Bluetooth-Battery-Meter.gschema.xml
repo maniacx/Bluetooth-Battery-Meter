@@ -38,7 +38,7 @@
             <summary>"Level type"</summary>
         </key>
         <key name="level-indicator-color" type="i">
-            <default>0</default>
+            <default>1</default>
             <summary>"Level Color"</summary>
         </key>
         <key name="color-100" type="s">
