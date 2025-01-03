@@ -10,7 +10,7 @@
         <child>
           <object class="AdwActionRow">
             <property name="title" translatable="yes">Show battery icon for Bluetooth devices</property>
-            <property name="subtitle" translatable="yes">Displays an icon in the popup menu for Bluetooth device battery level"</property>
+            <property name="subtitle" translatable="yes">Displays an icon in the popup menu for Bluetooth device battery level</property>
             <property name="activatable-widget">enable_battery_level_icon</property>
             <child>
               <object class="GtkSwitch" id="enable_battery_level_icon">
