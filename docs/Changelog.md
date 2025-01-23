@@ -9,7 +9,16 @@ permalink: /changelogs
 
 
 {: .important-title }
-> GN-45_Version 24 &emsp;&emsp; Jan 03, 2025
+> GN-45_Version 28 &emsp;&emsp; Jan 22, 2025
+> * Fix bug with color of indicator icon in light-style.
+> * translation: Update Italian translation. Credits: AlexFalappa
+
+{: .note-title }
+> GN-44_Version 27 &emsp;&emsp; Jan 22, 2025
+> * Fix bug with color of indicator icon in light-style.
+> * translation: Update Italian translation. Credits: AlexFalappa
+
+> GN-45_Version 26 &emsp;&emsp; Jan 03, 2025
 > * Added option to use battery bar as level meter
 > * Added option for to change device icons
 > * Added option to hide / show indicator for bluetooth non battery device
@@ -21,7 +30,7 @@ permalink: /changelogs
 > * translation: Update Chinese (Traditional) translation. PeterDaveHello
 
 {: .note-title }
-> GN-44_Version 23 &emsp;&emsp; Jan 03, 2025
+> GN-44_Version 25 &emsp;&emsp; Jan 03, 2025
 > * Added option to use battery bar as level meter
 > * Added option for to change device icons
 > * Added option to hide / show indicator for bluetooth non battery device
