@@ -51,7 +51,7 @@ var QuickSettings = GObject.registerClass({
         this._settings.connect('changed::enable-battery-level-text', () => this._setRowSensitivity());
         this._setRowSensitivity();
         const link = 'https://maniacx.github.io/Bluetooth-Battery-Meter/#enable-experimental-bluez';
-        this._row_note_experimental_features.set_title(
+        this._row_note_experimental_features.set_subtitle(
             _('Certain Bluetooth devices do not report battery level until Bluez\'s experimental features are enabled in system. Check <a href="%s">Readme</a> for details.')
     .format(link)
         );
