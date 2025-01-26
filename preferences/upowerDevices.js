@@ -1,5 +1,6 @@
 'use strict';
 import Adw from 'gi://Adw';
+import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
 import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
@@ -9,9 +10,9 @@ import {supportedIcons} from '../lib/vectorImages.js';
 
 const  ConfigureWindow = GObject.registerClass({
 }, class ConfigureWindow extends Adw.Window {
-    _init(settings, mac, deviceItem, pathInfo, parentWindow) {
+    _init(settings, deviceItem, pathInfo, parentWindow) {
         super._init({
-            title: pathInfo.alias,
+            title: pathInfo.model,
             default_width: 580,
             default_height: 600,
             modal: true,
@@ -31,14 +32,14 @@ const  ConfigureWindow = GObject.registerClass({
         toolViewBar.set_content(page);
         this.set_content(toolViewBar);
 
-        const aliasGroup = new Adw.PreferencesGroup({
-            title: `MAC: ${mac}`,
+        const modelGroup = new Adw.PreferencesGroup({
+            title: `Model: ${pathInfo.model}`,
         });
 
         const status = _('Battery Status:');
         const batteryStatus = pathInfo.batteryReported  ? _('Reported') : _('Not Available');
-        aliasGroup.set_description(`${status} ${batteryStatus}`);
-        page.add(aliasGroup);
+        modelGroup.set_description(`${status} ${batteryStatus}`);
+        page.add(modelGroup);
 
         const iconGroup = new Adw.PreferencesGroup({
             title: _('Icon'),
@@ -72,12 +73,12 @@ const  ConfigureWindow = GObject.registerClass({
             grid.attach(button, index % 4, Math.floor(index / 4), 1, 1);
             button.connect('clicked', () => {
                 popover.hide();
-                const pairedDevice = settings.get_strv('device-list');
-                const existingPathIndex = pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
-                const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
+                const onlineDevice = settings.get_strv('upower-device-list');
+                const existingPathIndex = onlineDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
+                const existingItem = JSON.parse(onlineDevice[existingPathIndex]);
                 existingItem['icon'] = deviceType;
-                pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
-                settings.set_strv('device-list', pairedDevice);
+                onlineDevice[existingPathIndex] = JSON.stringify(existingItem);
+                settings.set_strv('upower-device-list', onlineDevice);
                 iconSplitButton.icon_name = `bbm-${deviceType}-symbolic`;
             });
         });
@@ -88,35 +89,6 @@ const  ConfigureWindow = GObject.registerClass({
         iconGroup.add(iconRow);
         page.add(iconGroup);
 
-        const quickSettingsGroup = new Adw.PreferencesGroup({
-            title: _('Quick Menu'),
-        });
-
-        const quickSettingsRow = new Adw.ActionRow({
-            title: _('Display Battery Level'),
-            subtitle: _('Display battery level in the Bluetooth panel quick menu'),
-        });
-
-        const quickSettingSwitch = new Gtk.Switch({
-            valign: Gtk.Align.CENTER,
-        });
-
-        quickSettingSwitch.active = pathInfo.qsLevelEnabled;
-        quickSettingSwitch.connect('notify::active', () => {
-            const pairedDevice = settings.get_strv('device-list');
-            const existingPathIndex = pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
-            if (existingPathIndex !== -1) {
-                const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
-                existingItem['qs-level'] = quickSettingSwitch.active;
-                pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
-                settings.set_strv('device-list', pairedDevice);
-            }
-        });
-        quickSettingsGroup.visible =  pathInfo.batteryReported;
-        quickSettingsRow.add_suffix(quickSettingSwitch);
-        quickSettingsGroup.add(quickSettingsRow);
-        page.add(quickSettingsGroup);
-
         const indicatorGroup = new Adw.PreferencesGroup({
             title: _('Indicator'),
         });
@@ -126,35 +98,29 @@ const  ConfigureWindow = GObject.registerClass({
             subtitle: _('Choose how the indicator should behave'),
         });
 
-        const indicatorOptions = pathInfo.batteryReported
-            ? [
-                {id: 0, label: _('Do not show Icon')},
-                {id: 1, label: _('Show Icon without Battery level')},
-                {id: 2, label: _('Show Icon with Battery Level')},
-            ]
-            : [
-                {id: 0, label: _('Hide Icon')},
-                {id: 1, label: _('Show Icon')},
-            ];
+        const indicatorOptions = [
+            {id: false, label: _('Hide Icon')},
+            {id: true, label: _('Show Icon')},
+        ];
 
         const dropDown = new Gtk.DropDown({
             valign: Gtk.Align.CENTER,
             model: Gtk.StringList.new(indicatorOptions.map(option => option.label)),
-            selected: indicatorOptions.findIndex(option => option.id === pathInfo.indicatorMode) >= 0
-                ? indicatorOptions.findIndex(option => option.id === pathInfo.indicatorMode)
-                : 0,
+            selected: indicatorOptions.findIndex(option => option.id === pathInfo.indicatorMode),
         });
 
         dropDown.connect('notify::selected', () => {
             const index = dropDown.get_selected();
             const selectedId = indicatorOptions[index].id;
-            const pairedDevice = settings.get_strv('device-list');
-            const existingPathIndex = pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
+
+            const onlineDevice = settings.get_strv('upower-device-list');
+            const existingPathIndex = onlineDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
+
             if (existingPathIndex !== -1) {
-                const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
+                const existingItem = JSON.parse(onlineDevice[existingPathIndex]);
                 existingItem['indicator-mode'] = selectedId;
-                pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
-                settings.set_strv('device-list', pairedDevice);
+                onlineDevice[existingPathIndex] = JSON.stringify(existingItem);
+                settings.set_strv('upower-device-list', onlineDevice);
             }
         });
 
@@ -171,7 +137,6 @@ const  DeviceItem = GObject.registerClass({
     constructor(settings, deviceItem, pathInfo) {
         super({});
         this._pathInfo = pathInfo;
-        this._macAddress = this._pathToMacAddress(pathInfo.path);
 
         this._icon = new Gtk.Image({
             icon_name: `bbm-${this._pathInfo.icon}-symbolic`,
@@ -185,27 +150,27 @@ const  DeviceItem = GObject.registerClass({
 
         this._customiseButton.connect('clicked', () => {
             const parentWindow = this._customiseButton.get_ancestor(Gtk.Window);
-            const configureWindow = new ConfigureWindow(settings, this._macAddress, deviceItem, this._pathInfo, parentWindow);
+            const configureWindow = new ConfigureWindow(settings, deviceItem, this._pathInfo, parentWindow);
             configureWindow.present();
         });
 
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
-            tooltip_text: _('Delete device information: The button is available after unpairing device'),
+            tooltip_text: _('Delete device information: The button is available after upower device are removed'),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
         });
 
         this._deleteButton.connect('clicked', () => {
-            const pairedDevices = settings.get_strv('device-list');
-            const existingPathIndex = pairedDevices.findIndex(entry => {
+            const upowerDevices = settings.get_strv('upower-device-list');
+            const existingPathIndex = upowerDevices.findIndex(entry => {
                 const parsedEntry = JSON.parse(entry);
                 return parsedEntry.path === pathInfo.path;
             });
 
             if (existingPathIndex !== -1) {
-                pairedDevices.splice(existingPathIndex, 1);
-                settings.set_strv('device-list', pairedDevices);
+                upowerDevices.splice(existingPathIndex, 1);
+                settings.set_strv('upower-device-list', upowerDevices);
             }
             this.get_parent().remove(this);
             deviceItem.delete(pathInfo.path);
@@ -223,57 +188,68 @@ const  DeviceItem = GObject.registerClass({
     updateProperites(pathInfo) {
         this._pathInfo = pathInfo;
         const removedLabel = _('(Removed)');
-        const pairedLabel = _('(Paired)');
-        this.title = pathInfo.alias;
-        this.subtitle = pathInfo.paired ? `${this._macAddress} ${pairedLabel}` : `${this._macAddress} ${removedLabel}`;
-        this._deleteButton.sensitive = !pathInfo.paired;
+        const onlineLabel = _('(Online)');
+        this.title = pathInfo.model;
+        this.subtitle = pathInfo.isPresent ? `${pathInfo.path} ${onlineLabel}` : `${pathInfo.path} ${removedLabel}`;
+        this._deleteButton.sensitive = !pathInfo.isPresent;
         this._icon.icon_name = `bbm-${pathInfo.icon}-symbolic`;
-    }
-
-    _pathToMacAddress(path) {
-        const indexMacAddress = path.indexOf('dev_') + 4;
-        const macAddress = path.substring(indexMacAddress);
-        return macAddress.replace(/_/g, ':');
     }
 });
 
 
-export const  Device = GObject.registerClass({
-    GTypeName: 'BBM_Device',
-    Template: GLib.Uri.resolve_relative(import.meta.url, '../ui/device.ui', GLib.UriFlags.NONE),
+export const  UpowerDevices = GObject.registerClass({
+    GTypeName: 'BBM_UpowerDevice',
+    Template: GLib.Uri.resolve_relative(import.meta.url, '../ui/upowerDevices.ui', GLib.UriFlags.NONE),
     InternalChildren: [
-        'device_group',
-        'no_paired_row',
+        'enable_upower_level_icon',
+        'upower_device_group',
+        'no_online_row',
     ],
-}, class Device extends Adw.PreferencesPage {
+}, class UpowerDevices extends Adw.PreferencesPage {
     constructor(settings) {
         super({});
         this._settings = settings;
         this._deviceItems = new Map();
-        this._createDevices();
-        this._settings.connect('changed::device-list', () => this._createDevices());
+        this._settings.bind(
+            'enable-upower-level-icon',
+            this._enable_upower_level_icon,
+            'active',
+            Gio.SettingsBindFlags.DEFAULT
+        );
+        this._settings.connect('changed::enable-upower-level-icon', () => this._upowerEnabler());
+        this._upowerEnabler();
+    }
+
+    _upowerEnabler() {
+        const upowerDeviceEnabled = this._settings.get_boolean('enable-upower-level-icon');
+        this._upower_device_group.visible = upowerDeviceEnabled;
+        if (upowerDeviceEnabled) {
+            this._createDevices();
+            this._signalId = this._settings.connect('changed::upower-device-list', () => this._createDevices());
+        } else {
+            if (this._signalId)
+                this._settings.disconnect(this._signalId);
+            this._signalId = null;
+            if (this._deviceItems.size > 0) {
+                this._deviceItems.forEach(item => this._upower_device_group.remove(item));
+                this._deviceItems.clear();
+            }
+        }
     }
 
     _createDevices() {
-        const pathsString = this._settings.get_strv('device-list').map(JSON.parse);
-        if (!pathsString || pathsString.length === 0) {
-            this._no_paired_row.visible  = true;
+        const devices = this._settings.get_strv('upower-device-list').map(JSON.parse);
+        if (!devices || devices.length === 0) {
+            this._no_online_row.visible  = true;
             return;
         }
-        this._no_paired_row.visible  = false;
-        const pairedDevices = pathsString.filter(device => device.paired);
-        const unpairedDevices = pathsString.filter(device => !device.paired);
-        pairedDevices.sort((a, b) => b['connected-time'] - a['connected-time']);
-        unpairedDevices.sort((a, b) => b['disconnected-time'] - a['disconnected-time']);
-        const sortedDevices = [...pairedDevices, ...unpairedDevices];
-        for (const info of sortedDevices) {
+        this._no_online_row.visible  = false;
+        for (const info of devices) {
             const pathInfo = {
-                path: info.path,
-                icon: info.icon,
-                alias: info.alias,
-                paired: info.paired,
-                batteryReported: info['battery-reported'],
-                qsLevelEnabled: info['qs-level'],
+                path: info['path'],
+                icon: info['icon'],
+                model: info['model'],
+                isPresent: info['is-present'],
                 indicatorMode: info['indicator-mode'],
             };
             if (this._deviceItems.has(pathInfo.path)) {
@@ -282,7 +258,7 @@ export const  Device = GObject.registerClass({
             } else {
                 const deviceItem = new DeviceItem(this._settings, this._deviceItems, pathInfo);
                 this._deviceItems.set(pathInfo.path, deviceItem);
-                this._device_group.add(deviceItem);
+                this._upower_device_group.add(deviceItem);
             }
         }
     }

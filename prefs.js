@@ -5,6 +5,7 @@ import {ExtensionPreferences} from 'resource:///org/gnome/Shell/Extensions/js/ex
 import {QuickSettings} from './preferences/quickSettings.js';
 import {Indicator} from './preferences/indicator.js';
 import {Device} from './preferences/device.js';
+import {UpowerDevices} from './preferences/upowerDevices.js';
 import {About} from './preferences/about.js';
 
 export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
@@ -18,6 +19,7 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         window.add(new QuickSettings(settings));
         window.add(new Indicator(settings));
         window.add(new Device(settings));
+        window.add(new UpowerDevices(settings));
         window.add(new About(this));
     }
 }

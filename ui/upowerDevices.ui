@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
+  <template class="BBM_UpowerDevice" parent="AdwPreferencesPage">
+    <property name="name">Upower</property>
+    <property name="title" translatable="yes">Upower</property>
+    <property name="icon-name">bbm-upower-devices-symbolic</property>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Enable upower devices</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Enable indicator for upower devices</property>
+            <property name="subtitle" translatable="yes">Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can report battery levels if supported by the kernel or third-party drivers. Enable this option to display their battery status in the GNOME system tray.</property>
+            <property name="activatable-widget">enable_upower_level_icon</property>
+            <child>
+              <object class="GtkSwitch" id="enable_upower_level_icon">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>        
+    <child>
+      <object class="AdwPreferencesGroup" id="upower_device_group">
+        <property name="title" translatable="yes">Configuration by device</property>
+        <property name="description" translatable="yes">Note: General settings override device-specific settings</property>
+        <child>
+          <object class="AdwActionRow" id="no_online_row">
+            <property name="title" translatable="yes">No compatible device found!</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
