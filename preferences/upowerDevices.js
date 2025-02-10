@@ -7,6 +7,7 @@ import Gtk from 'gi://Gtk';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 import {supportedIcons} from '../lib/vectorImages.js';
+import * as Helper from '../lib/upowerHelper.js';
 
 const  ConfigureWindow = GObject.registerClass({
 }, class ConfigureWindow extends Adw.Window {
@@ -134,7 +135,7 @@ const  ConfigureWindow = GObject.registerClass({
 
 const  DeviceItem = GObject.registerClass({
 }, class DeviceItem extends Adw.ActionRow {
-    constructor(settings, deviceItem, pathInfo) {
+    constructor(settings, deviceItem, pathInfo, presentDevices) {
         super({});
         this._pathInfo = pathInfo;
 
@@ -182,16 +183,17 @@ const  DeviceItem = GObject.registerClass({
         this.add_prefix(this._icon);
         this.add_suffix(box);
 
-        this.updateProperites(pathInfo);
+        this.updateProperites(pathInfo, presentDevices);
     }
 
-    updateProperites(pathInfo) {
+    updateProperites(pathInfo, presentDevices) {
         this._pathInfo = pathInfo;
+        const devicePresent = presentDevices.includes(pathInfo.path);
         const removedLabel = _('(Removed)');
-        const onlineLabel = _('(Online)');
+        const onlineLabel = _('(Added)');
         this.title = pathInfo.model;
-        this.subtitle = pathInfo.isPresent ? `${pathInfo.path} ${onlineLabel}` : `${pathInfo.path} ${removedLabel}`;
-        this._deleteButton.sensitive = !pathInfo.isPresent;
+        this.subtitle = devicePresent ? `${pathInfo.path} ${onlineLabel}` : `${pathInfo.path} ${removedLabel}`;
+        this._deleteButton.sensitive = !devicePresent;
         this._icon.icon_name = `bbm-${pathInfo.icon}-symbolic`;
     }
 });
@@ -209,6 +211,8 @@ export const  UpowerDevices = GObject.registerClass({
     constructor(settings) {
         super({});
         this._settings = settings;
+        this._requestedProps = ['PowerSupply', 'NativePath'];
+        this._presentDevices = [];
         this._deviceItems = new Map();
         this._settings.bind(
             'enable-upower-level-icon',
@@ -216,25 +220,48 @@ export const  UpowerDevices = GObject.registerClass({
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );
-        this._settings.connect('changed::enable-upower-level-icon', () => this._upowerEnabler());
-        this._upowerEnabler();
+        this._settings.connect('changed::enable-upower-level-icon', () => this._upowerManager());
+        this._upowerManager();
     }
 
-    _upowerEnabler() {
-        const upowerDeviceEnabled = this._settings.get_boolean('enable-upower-level-icon');
-        this._upower_device_group.visible = upowerDeviceEnabled;
-        if (upowerDeviceEnabled) {
+    async _upowerManager() {
+        const enableUpowerIndicator = this._settings.get_boolean('enable-upower-level-icon');
+        this._upower_device_group.visible = enableUpowerIndicator;
+        if (enableUpowerIndicator) {
+            await this._initializeUpower();
             this._createDevices();
             this._signalId = this._settings.connect('changed::upower-device-list', () => this._createDevices());
         } else {
             if (this._signalId)
                 this._settings.disconnect(this._signalId);
             this._signalId = null;
+            if (this._dbusSignalId && this._dbusProxy)
+                this._dbusProxy.disconnect(this._dbusSignalId);
+            this._dbusSignalId = null;
+            this._dbusProxy = null;
+            if (this._cancellable) {
+                this._cancellable.cancel();
+                this._cancellable = null;
+            }
             if (this._deviceItems.size > 0) {
                 this._deviceItems.forEach(item => this._upower_device_group.remove(item));
                 this._deviceItems.clear();
             }
         }
+    }
+
+    async _initializeUpower() {
+        this._cancellable = new Gio.Cancellable();
+        this._dbusProxy = await Helper.initProxy(this._cancellable);
+        if (!this._dbusProxy)
+            return;
+
+        const devices = await Helper.getDevices(this._dbusProxy, this._cancellable, this._requestedProps);
+        if (!this._cancellable || this._cancellable.is_cancelled())
+            return;
+        this._dbusSignalId = Helper.watchDevices(this._dbusProxy, this._refreshDevices.bind(this));
+        for (const dev of devices)
+            this._addDevice(dev);
     }
 
     _createDevices() {
@@ -249,17 +276,36 @@ export const  UpowerDevices = GObject.registerClass({
                 path: info['path'],
                 icon: info['icon'],
                 model: info['model'],
-                isPresent: info['is-present'],
                 indicatorMode: info['indicator-mode'],
             };
             if (this._deviceItems.has(pathInfo.path)) {
                 const row = this._deviceItems.get(pathInfo.path);
-                row.updateProperites(pathInfo);
+                row.updateProperites(pathInfo, this._presentDevices);
             } else {
-                const deviceItem = new DeviceItem(this._settings, this._deviceItems, pathInfo);
+                const deviceItem = new DeviceItem(this._settings, this._deviceItems, pathInfo, this._presentDevices);
                 this._deviceItems.set(pathInfo.path, deviceItem);
                 this._upower_device_group.add(deviceItem);
             }
+        }
+    }
+
+    _addDevice(dev) {
+        const path = dev.path;
+        const isPowerSupply = dev.properties['PowerSupply'];
+        const nativePath = dev.properties['NativePath'];
+        if (!isPowerSupply && !nativePath.startsWith('/org/bluez/') && !this._presentDevices.includes(path))
+            this._presentDevices.push(path);
+    }
+
+    async _refreshDevices(path, action) {
+        if (action === 'add') {
+            const device = await Helper.getDeviceProps(path, null, this._requestedProps);
+            this._addDevice(device);
+        } else if (action === 'remove') {
+            const index = this._presentDevices.indexOf(path);
+            if (index !== -1)
+                this._presentDevices.splice(index, 1);
+            this._createDevices(path);
         }
     }
 });
