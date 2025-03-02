@@ -7,6 +7,14 @@ permalink: /changelogs
 
 # Changelogs
 
+{: .important-title }
+> GN-45_Version 30 &emsp;&emsp; Mar 02, 2025
+> * metadata.json: Now compatible with GNOME48
+> * Added feature to display Upower devices, such as non bluetooth mouse/keyboard
+
+{: .note-title }
+> GN-44_Version 29 &emsp;&emsp; Mar 02, 2025
+> * Added feature to display Upower devices, such as non bluetooth mouse/keyboard
 
 {: .important-title }
 > GN-45_Version 28 &emsp;&emsp; Jan 22, 2025
