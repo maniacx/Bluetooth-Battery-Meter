@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 18:45-0800\n"
+"POT-Creation-Date: 2025-03-01 18:08-0800\n"
 "PO-Revision-Date: 2024-01-11 16:33+0000\n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: RU\n"
@@ -34,32 +34,32 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: lib/bluetoothPopupMenu.js:69
+#: lib/bluetoothPopupMenu.js:68
 msgid "Disconnect"
 msgstr "Отключить"
 
-#: lib/bluetoothPopupMenu.js:69
+#: lib/bluetoothPopupMenu.js:68
 msgid "Connect"
 msgstr "Подключить"
 
-#: lib/bluetoothToggle.js:89 lib/bluetoothToggle.js:91
-#: lib/bluetoothToggle.js:134
+#: lib/bluetoothToggle.js:91 lib/bluetoothToggle.js:93
+#: lib/bluetoothToggle.js:136
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: lib/bluetoothToggle.js:152
+#: lib/bluetoothToggle.js:154
 msgid "Bluetooth Settings"
 msgstr "Настройки Bluetooth"
 
-#: lib/bluetoothToggle.js:345
+#: lib/bluetoothToggle.js:379
 msgid "No available or connected devices"
 msgstr "Нет доступных или подключенных устройств"
 
-#: lib/bluetoothToggle.js:346
+#: lib/bluetoothToggle.js:380
 msgid "Turn on Bluetooth to connect to devices"
 msgstr "Включите Bluetooth для подключения к устройствам"
 
-#: lib/bluetoothToggle.js:580
+#: lib/bluetoothToggle.js:614
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -84,27 +84,27 @@ msgid ""
 msgstr ""
 "Это приложение не имеет никакой гарантии. Подробнее <a href=“%s”>%s</a>."
 
-#: preferences/device.js:40
+#: preferences/device.js:40 preferences/upowerDevices.js:43
 msgid "Battery Status:"
 msgstr "Статус батареи:"
 
-#: preferences/device.js:41
+#: preferences/device.js:41 preferences/upowerDevices.js:44
 msgid "Reported"
 msgstr "Отправленно"
 
-#: preferences/device.js:41
+#: preferences/device.js:41 preferences/upowerDevices.js:44
 msgid "Not Available"
 msgstr "Недоступно"
 
-#: preferences/device.js:46
+#: preferences/device.js:46 preferences/upowerDevices.js:49
 msgid "Icon"
 msgstr "Икона"
 
-#: preferences/device.js:50
+#: preferences/device.js:50 preferences/upowerDevices.js:53
 msgid "Select Icon"
 msgstr "Выбрать иконку"
 
-#: preferences/device.js:51
+#: preferences/device.js:51 preferences/upowerDevices.js:54
 msgid "Select the icon used for the indicator and quick menu"
 msgstr "Выбрать используемую иконку для индикатора и быстрого меню"
 
@@ -120,15 +120,15 @@ msgstr "Показать процент заряда"
 msgid "Display battery level in the Bluetooth panel quick menu"
 msgstr "Отображение уровня заряда батареи в быстром меню панели Bluetooth"
 
-#: preferences/device.js:131 ui/indicator.ui:5
+#: preferences/device.js:131 preferences/upowerDevices.js:97 ui/indicator.ui:5
 msgid "Indicator"
 msgstr "Индикатор"
 
-#: preferences/device.js:135
+#: preferences/device.js:135 preferences/upowerDevices.js:101
 msgid "Configure Indicator"
 msgstr "Настроить индикатор"
 
-#: preferences/device.js:136
+#: preferences/device.js:136 preferences/upowerDevices.js:102
 msgid "Choose how the indicator should behave"
 msgstr "Выберите, как должен себя вести индикатор"
 
@@ -144,15 +144,15 @@ msgstr "Показывать значок без уровня заряда ба�
 msgid "Show Icon with Battery Level"
 msgstr "Показывать значок с уровнем заряда батареи"
 
-#: preferences/device.js:146
+#: preferences/device.js:146 preferences/upowerDevices.js:106
 msgid "Hide Icon"
 msgstr "Скрыть индикатор"
 
-#: preferences/device.js:147
+#: preferences/device.js:147 preferences/upowerDevices.js:107
 msgid "Show Icon"
 msgstr "Показать иконку"
 
-#: preferences/device.js:192
+#: preferences/device.js:192 preferences/upowerDevices.js:151
 msgid "Configure device."
 msgstr "Настроить устройство."
 
@@ -162,7 +162,7 @@ msgid ""
 msgstr ""
 "Удалить устройство: кнопка доступна после разрыва сопряжения с устройством"
 
-#: preferences/device.js:235
+#: preferences/device.js:235 preferences/upowerDevices.js:195
 msgid "(Removed)"
 msgstr "(Удалено)"
 
@@ -190,6 +190,16 @@ msgstr ""
 "Некоторые устройства Bluetooth не сообщают об уровне заряда батареи, пока в "
 "системе не будут включены экспериментальные функции Bluez. Подробности "
 "смотрите в <a href=\"%s\">Readme</a>."
+
+#: preferences/upowerDevices.js:163
+msgid ""
+"Delete device information: The button is available after upower device are "
+"removed"
+msgstr ""
+
+#: preferences/upowerDevices.js:196
+msgid "(Added)"
+msgstr ""
 
 #: ui/about.ui:5
 msgid "About"
@@ -227,11 +237,11 @@ msgstr "Онлайн уроки"
 msgid "Device"
 msgstr "Устройство"
 
-#: ui/device.ui:9
+#: ui/device.ui:9 ui/upowerDevices.ui:26
 msgid "Configuration by device"
 msgstr "Конфигурация для устройства"
 
-#: ui/device.ui:10
+#: ui/device.ui:10 ui/upowerDevices.ui:27
 msgid "Note: General settings override device-specific settings"
 msgstr ""
 "Примечание: Общие настройки переопределяют настройки, специфичные для "
@@ -377,6 +387,29 @@ msgstr ""
 #: ui/quickSettings.ui:62
 msgid "Note!"
 msgstr "Внимание!"
+
+#: ui/upowerDevices.ui:5
+msgid "Upower"
+msgstr ""
+
+#: ui/upowerDevices.ui:9
+msgid "Enable upower devices"
+msgstr ""
+
+#: ui/upowerDevices.ui:12
+msgid "Enable indicator for upower devices"
+msgstr ""
+
+#: ui/upowerDevices.ui:13
+msgid ""
+"Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
+"report battery levels if supported by the kernel or third-party drivers. "
+"Enable this option to display their battery status in the GNOME system tray."
+msgstr ""
+
+#: ui/upowerDevices.ui:30
+msgid "No compatible device found!"
+msgstr ""
 
 #~ msgid "Show all"
 #~ msgstr "Показать все"
