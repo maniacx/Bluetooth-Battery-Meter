@@ -29,9 +29,17 @@
             <default>[]</default>
             <summary>List of paired devices that reports battery level</summary>
         </key>
+        <key name="upower-device-list" type="as">
+            <default>[]</default>
+            <summary>List of upower devices that reports battery level</summary>
+        </key>
         <key name="sort-devices-by-history" type="b">
             <default>false</default>
             <summary>"Sort devices by connection history"</summary>
+        </key>
+        <key name="enable-upower-level-icon" type="b">
+            <default>false</default>
+            <summary>"enable indicator for upower devices"</summary>
         </key>
         <key name="level-indicator-type" type="i">
             <default>0</default>

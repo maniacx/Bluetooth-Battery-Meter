@@ -6,6 +6,7 @@ const Me = ExtensionUtils.getCurrentExtension();
 const {QuickSettings} = Me.imports.preferences.quickSettings;
 const {Indicator} = Me.imports.preferences.indicator;
 const {Device} = Me.imports.preferences.device;
+const {UpowerDevices} = Me.imports.preferences.upowerDevices;
 const {About} = Me.imports.preferences.about;
 
 
@@ -19,6 +20,7 @@ function fillPreferencesWindow(window) {
     window.add(new QuickSettings(settings));
     window.add(new Indicator(settings));
     window.add(new Device(settings));
+    window.add(new UpowerDevices(settings));
     window.add(new About(Me));
 }
 
