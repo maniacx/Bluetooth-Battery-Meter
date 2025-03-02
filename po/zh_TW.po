@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell 3.3.90\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-02 18:42-0800\n"
+"POT-Creation-Date: 2025-03-01 18:11-0800\n"
 "PO-Revision-Date: 2023-10-05 15:33+0800\n"
 "Last-Translator: Cheng-Chia Tseng <zerngjia@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://darkbear.mercusysddns.com/"
@@ -21,15 +21,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: lib/bluetoothPopupMenu.js:68
+#: lib/bluetoothPopupMenu.js:67
 msgid "Disconnect"
 msgstr "中斷連線"
 
-#: lib/bluetoothPopupMenu.js:68
+#: lib/bluetoothPopupMenu.js:67
 msgid "Connect"
 msgstr "連線"
 
-#: lib/bluetoothToggle.js:422
+#: lib/bluetoothToggle.js:457
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -52,88 +52,88 @@ msgid ""
 msgstr ""
 "本應用程式完全不提供任何擔保責任。如需更多資訊，請參閱<a href=\"%s\">%s</a>。"
 
-#: preferences/device.js:36
+#: preferences/device.js:38 preferences/upowerDevices.js:40
 msgid "Battery Status:"
 msgstr "電池狀態："
 
-#: preferences/device.js:37
+#: preferences/device.js:39 preferences/upowerDevices.js:41
 msgid "Reported"
 msgstr "已回報"
 
-#: preferences/device.js:37
+#: preferences/device.js:39 preferences/upowerDevices.js:41
 msgid "Not Available"
 msgstr "無法使用"
 
-#: preferences/device.js:42
+#: preferences/device.js:44 preferences/upowerDevices.js:46
 msgid "Icon"
 msgstr "圖示"
 
-#: preferences/device.js:46
+#: preferences/device.js:48 preferences/upowerDevices.js:50
 msgid "Select Icon"
 msgstr "選擇圖示"
 
-#: preferences/device.js:47
+#: preferences/device.js:49 preferences/upowerDevices.js:51
 msgid "Select the icon used for the indicator and quick menu"
 msgstr "選擇用於指示器和快速選單的圖示"
 
-#: preferences/device.js:98 ui/quickSettings.ui:5
+#: preferences/device.js:92 ui/quickSettings.ui:5
 msgid "Quick Menu"
 msgstr "快速選單"
 
-#: preferences/device.js:102
+#: preferences/device.js:96
 msgid "Display Battery Level"
 msgstr "顯示電池電量"
 
-#: preferences/device.js:103
+#: preferences/device.js:97
 msgid "Display battery level in the Bluetooth panel quick menu"
 msgstr "在藍牙面板快速選單中顯示電池電量"
 
-#: preferences/device.js:127 ui/indicator.ui:5
+#: preferences/device.js:121 preferences/upowerDevices.js:94 ui/indicator.ui:5
 msgid "Indicator"
 msgstr "指示器"
 
-#: preferences/device.js:131
+#: preferences/device.js:125 preferences/upowerDevices.js:98
 msgid "Configure Indicator"
 msgstr "設定指示器"
 
-#: preferences/device.js:132
+#: preferences/device.js:126 preferences/upowerDevices.js:99
 msgid "Choose how the indicator should behave"
 msgstr "選擇指示器的顯示方式"
 
-#: preferences/device.js:137
+#: preferences/device.js:131
 msgid "Do not show Icon"
 msgstr "不顯示圖示"
 
-#: preferences/device.js:138
+#: preferences/device.js:132
 msgid "Show Icon without Battery level"
 msgstr "顯示圖示但不顯示電量"
 
-#: preferences/device.js:139
+#: preferences/device.js:133
 msgid "Show Icon with Battery Level"
 msgstr "顯示圖示並顯示電量"
 
-#: preferences/device.js:142
+#: preferences/device.js:136 preferences/upowerDevices.js:103
 msgid "Hide Icon"
 msgstr "隱藏圖示"
 
-#: preferences/device.js:143
+#: preferences/device.js:137 preferences/upowerDevices.js:104
 msgid "Show Icon"
 msgstr "顯示圖示"
 
-#: preferences/device.js:188
+#: preferences/device.js:182 preferences/upowerDevices.js:148
 msgid "Configure device."
 msgstr "設定裝置。"
 
-#: preferences/device.js:200
+#: preferences/device.js:194
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr "刪除裝置資訊：取消配對裝置後此按鈕即可使用"
 
-#: preferences/device.js:231
+#: preferences/device.js:225 preferences/upowerDevices.js:192
 msgid "(Removed)"
 msgstr "（已移除）"
 
-#: preferences/device.js:232
+#: preferences/device.js:226
 msgid "(Paired)"
 msgstr "（已配對）"
 
@@ -156,6 +156,16 @@ msgid ""
 msgstr ""
 "某些藍牙裝置需要啟用系統中的 Bluez 實驗性功能才能回報電池電量。請參閱<a "
 "href=\"%s\">說明文件</a>瞭解詳情。"
+
+#: preferences/upowerDevices.js:160
+msgid ""
+"Delete device information: The button is available after upower device are "
+"removed"
+msgstr ""
+
+#: preferences/upowerDevices.js:193
+msgid "(Added)"
+msgstr ""
 
 #: ui/about.ui:5
 msgid "About"
@@ -193,11 +203,11 @@ msgstr "線上教學"
 msgid "Device"
 msgstr "裝置"
 
-#: ui/device.ui:9
+#: ui/device.ui:9 ui/upowerDevices.ui:26
 msgid "Configuration by device"
 msgstr "依裝置設定"
 
-#: ui/device.ui:10
+#: ui/device.ui:10 ui/upowerDevices.ui:27
 msgid "Note: General settings override device-specific settings"
 msgstr "注意：一般設定會覆寫個別裝置設定"
 
@@ -328,6 +338,29 @@ msgstr "啟用此選項可依連線歷史記錄排序裝置，停用則依連線
 #: ui/quickSettings.ui:62
 msgid "Note!"
 msgstr "注意！"
+
+#: ui/upowerDevices.ui:5
+msgid "Upower"
+msgstr ""
+
+#: ui/upowerDevices.ui:9
+msgid "Enable upower devices"
+msgstr ""
+
+#: ui/upowerDevices.ui:12
+msgid "Enable indicator for upower devices"
+msgstr ""
+
+#: ui/upowerDevices.ui:13
+msgid ""
+"Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
+"report battery levels if supported by the kernel or third-party drivers. "
+"Enable this option to display their battery status in the GNOME system tray."
+msgstr ""
+
+#: ui/upowerDevices.ui:30
+msgid "No compatible device found!"
+msgstr ""
 
 #~ msgid "Show all"
 #~ msgstr "顯示全部"
