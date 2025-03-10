@@ -70,98 +70,99 @@ msgstr ""
 
 #: preferences/device.js:40 preferences/upowerDevices.js:43
 msgid "Battery Status:"
-msgstr ""
+msgstr "Batarya Durumu:"
 
 #: preferences/device.js:41 preferences/upowerDevices.js:44
 msgid "Reported"
-msgstr ""
+msgstr "Raporlandı"
 
 #: preferences/device.js:41 preferences/upowerDevices.js:44
 msgid "Not Available"
-msgstr ""
+msgstr "Erişilebilir Değil"
 
 #: preferences/device.js:46 preferences/upowerDevices.js:49
 msgid "Icon"
-msgstr ""
+msgstr "Simge"
 
 #: preferences/device.js:50 preferences/upowerDevices.js:53
 msgid "Select Icon"
-msgstr ""
+msgstr "Simge Seç"
 
 #: preferences/device.js:51 preferences/upowerDevices.js:54
 msgid "Select the icon used for the indicator and quick menu"
-msgstr ""
+msgstr "Hızlı menü ve panel simgesi için simge seçin"
 
 #: preferences/device.js:102 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "Hızlı Menü"
 
 #: preferences/device.js:106
 msgid "Display Battery Level"
-msgstr ""
+msgstr "Batarya Seviyesini Göster"
 
 #: preferences/device.js:107
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
+msgstr "Batarya seviyesini paneldeki Bluetooth hızlı menüsünde göster "
 
 #: preferences/device.js:131 preferences/upowerDevices.js:97 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "Gösterge"
 
 #: preferences/device.js:135 preferences/upowerDevices.js:101
 msgid "Configure Indicator"
-msgstr ""
+msgstr "Göstergeyi Ayarla"
 
 #: preferences/device.js:136 preferences/upowerDevices.js:102
 msgid "Choose how the indicator should behave"
-msgstr ""
+msgstr "Göstergenin nasıl davranacağını seç"
 
 #: preferences/device.js:141
 msgid "Do not show Icon"
-msgstr ""
+msgstr "Simge gösterme"
 
 #: preferences/device.js:142
 msgid "Show Icon without Battery level"
-msgstr ""
+msgstr "Simgeyi Batarya Seviyesi Olmadan Göster"
 
 #: preferences/device.js:143
 msgid "Show Icon with Battery Level"
-msgstr ""
+msgstr "Simgeyi Batarya Seviyesi İle Göster"
 
 #: preferences/device.js:146 preferences/upowerDevices.js:106
 msgid "Hide Icon"
-msgstr ""
+msgstr "Simgeyi Gizle"
 
 #: preferences/device.js:147 preferences/upowerDevices.js:107
 msgid "Show Icon"
-msgstr ""
+msgstr "Simgeyi göster"
 
 #: preferences/device.js:192 preferences/upowerDevices.js:151
 msgid "Configure device."
-msgstr ""
+msgstr "Aygıt ayarla."
 
 #: preferences/device.js:204
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
+"Aygıt bilgisini sil: Buton aygıt eşleşmesi kaldırıldıktan sonra aktif olacaktır"
 
 #: preferences/device.js:235 preferences/upowerDevices.js:195
 msgid "(Removed)"
-msgstr ""
+msgstr "(Kaldırıldı)"
 
 #: preferences/device.js:236
 msgid "(Paired)"
-msgstr ""
+msgstr "(Eşleşti)"
 
 #: preferences/indicator.js:14
 #, javascript-format
 msgid "Assign color for %d – %d%%"
-msgstr ""
+msgstr "%d – %d%% İçin renk belirle"
 
 #: preferences/indicator.js:15
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
+msgstr "%d – %d%% Batarya seviyesi için renk belirle"
 
 #: preferences/quickSettings.js:55
 #, javascript-format
@@ -170,16 +171,21 @@ msgid ""
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"Bazı Bluetooth aygıtları pil seviyesini bildirmez. "
+"Sistemde BlueZ'in deneysel özellikleri etkinleştirilmelidir. "
+"Detaylar için <a href="%s">Readme</a>'yi kontrol edin."
 
 #: preferences/upowerDevices.js:163
 msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
 msgstr ""
+"Aygıt bilgilerini silin: "
+"Buton, upower aygıtları kaldırıldıktan sonra kullanılabilir."
 
 #: preferences/upowerDevices.js:196
 msgid "(Added)"
-msgstr ""
+msgstr "(Eklendi)"
 
 #: ui/about.ui:5
 msgid "About"
@@ -215,19 +221,19 @@ msgstr "Çevrimiçi Eğitimler"
 
 #: ui/device.ui:5
 msgid "Device"
-msgstr ""
+msgstr "Aygıt"
 
 #: ui/device.ui:9 ui/upowerDevices.ui:26
 msgid "Configuration by device"
-msgstr ""
+msgstr "Aygıt tarafından ayarlar"
 
 #: ui/device.ui:10 ui/upowerDevices.ui:27
 msgid "Note: General settings override device-specific settings"
-msgstr ""
+msgstr "Not: Genel ayarlar, cihaza özel ayarların üzerine yazılır."
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
-msgstr ""
+msgstr "Eşleşen Bluetooth aygıtı yok!"
 
 #: ui/indicator.ui:9
 msgid "Indicator Settings"
@@ -235,81 +241,84 @@ msgstr "Gösterge Ayarları"
 
 #: ui/indicator.ui:12
 msgid "Enable battery indicators for Bluetooth devices"
-msgstr ""
+msgstr "Bluetooth aygıtları için batarya göstergelerini aktif et"
 
 #: ui/indicator.ui:13
 msgid "Displays Bluetooth device icon with battery level in system tray"
-msgstr ""
+msgstr "Sistem tepsisinde batarya seviyesini Bluetooth aygıtlarıyla birlikte göster"
 
 #: ui/indicator.ui:24
 msgid "Display battery percentage as text"
-msgstr ""
+msgstr "Batarya yüzdesini yazı olarak göster"
 
 #: ui/indicator.ui:25
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
+msgstr "Bluetooth cihazı simgesinin yanında pil yüzdesini gösterir."
 
 #: ui/indicator.ui:37
 msgid "Bluetooth Connection Status Indicator"
-msgstr ""
+msgstr "Bluetooth Bağlantısı" Durum Simgesi
 
 #: ui/indicator.ui:38
 msgid ""
 "Hide conditionally: Displayed only when no other bluetooth related "
 "indicators are present"
 msgstr ""
+"Koşullu olarak gizle: Yalnızca başka Bluetooth "
+"ile ilgili göstergeler olmadığında görüntülenir."
+
 
 #: ui/indicator.ui:52
 msgid "Indicator Widget Settings"
-msgstr ""
+msgstr "Gösterge Bileşeni Ayarları"
 
 #: ui/indicator.ui:56
 msgid "Battery Level Indicator Type"
-msgstr ""
+msgstr "Batarya Seviyesi Gösterge Tipi"
 
 #: ui/indicator.ui:57
 msgid "Dots offer better visibility"
-msgstr ""
+msgstr "Noktalar daha iyi görünürlük sağlar"
 
 #: ui/indicator.ui:69
 msgid "Battery Indicator Color Scheme"
-msgstr ""
+msgstr "Batarya Göstergesi Renk Şeması"
 
 #: ui/indicator.ui:70
 msgid "Choose color scheme for level bar/dots"
-msgstr ""
+msgstr "Seviye çubuğu/noktası için renk şeması seç"
 
 #: ui/indicator.ui:90
 msgid "Default Behaviour"
-msgstr ""
+msgstr "Varsayılan Davranış"
 
 #: ui/indicator.ui:91
 msgid "Hide Always"
-msgstr ""
+msgstr "Sürekli Sakla"
 
 #: ui/indicator.ui:92
 msgid "Hide Conditionally"
-msgstr ""
+msgstr "Duruma Göre Sakla"
 
 #: ui/indicator.ui:97
 msgid "Battery Level Bar"
-msgstr ""
+msgstr "Batarya Seviyesi Çubuğu"
 
 #: ui/indicator.ui:98
 msgid "Battery Level Dot"
-msgstr ""
+msgstr "Batarya Seviyesi Noktası"
 
 #: ui/indicator.ui:103
 msgid "Symbolic"
-msgstr ""
+msgstr "Sembolik"
 
 #: ui/indicator.ui:104
 msgid "Colored"
-msgstr ""
+msgstr "Renklendirilmiş"
 
 #: ui/indicator.ui:105
 msgid "Customized"
-msgstr ""
+msgstr "Özelleştirilmiş"
 
 #: ui/quickSettings.ui:9
 msgid "Quick Menu Settings"
@@ -317,11 +326,11 @@ msgstr "Hızlı Menü Ayarları"
 
 #: ui/quickSettings.ui:12
 msgid "Show battery icon for Bluetooth devices"
-msgstr ""
+msgstr "Bluetooth aygıtları için batarya simgesini göster"
 
 #: ui/quickSettings.ui:13
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
-msgstr ""
+msgstr "Açılır menüde Bluetooth cihazı pil seviyesi için bir simge görüntüler."
 
 #: ui/quickSettings.ui:24
 msgid "Show Bluetooth device battery percentage"
@@ -341,13 +350,15 @@ msgstr "Pil düzeyi simgesi ile yüzde metninin konumunu değiştirir"
 
 #: ui/quickSettings.ui:48
 msgid "Sort devices by connection history"
-msgstr ""
+msgstr "Aygıtları bağlantı geçmişine göre sırala"
 
 #: ui/quickSettings.ui:49
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"
 msgstr ""
+"Bağlantı geçmişine göre cihazları sıralamak için etkinleştirin veya"
+"bağlantı durumu ve takma adına göre sıralamak için devre dışı bırakın."
 
 #: ui/quickSettings.ui:62
 msgid "Note!"
@@ -355,15 +366,15 @@ msgstr "Not!"
 
 #: ui/upowerDevices.ui:5
 msgid "Upower"
-msgstr ""
+msgstr "Upower"
 
 #: ui/upowerDevices.ui:9
 msgid "Enable upower devices"
-msgstr ""
+msgstr "Upower aygıtlarını etkinleştir"
 
 #: ui/upowerDevices.ui:12
 msgid "Enable indicator for upower devices"
-msgstr ""
+msgstr "Upower aygıtları için göstergeleri etkinleştir"
 
 #: ui/upowerDevices.ui:13
 msgid ""
@@ -371,10 +382,13 @@ msgid ""
 "report battery levels if supported by the kernel or third-party drivers. "
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
+"Belirli UPower cihazları, örneğin 2.4GHz kablosuz fare, klavye vb., "
+"eğer çekirdek veya üçüncü taraf sürücüler tarafından destekleniyorsa pil seviyelerini bildirebilir. "
+"Bu seçeneği etkinleştirerek, GNOME sistem tepsisinde pil durumlarını görüntüleyebilirsiniz."
 
 #: ui/upowerDevices.ui:30
 msgid "No compatible device found!"
-msgstr ""
+msgstr "Uyumlu cihaz bulunamadı!"
 
 #~ msgid "General"
 #~ msgstr "Genel"
