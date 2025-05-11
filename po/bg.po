@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:11-0800\n"
+"POT-Creation-Date: 2025-05-11 09:06-0700\n"
 "PO-Revision-Date: 2023-04-07 19:46+0300\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -28,7 +28,7 @@ msgstr "Прекъсване на връзката"
 msgid "Connect"
 msgstr "Свързване"
 
-#: lib/bluetoothToggle.js:457
+#: lib/bluetoothToggle.js:461
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

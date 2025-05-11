@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:11-0800\n"
+"POT-Creation-Date: 2025-05-11 09:06-0700\n"
 "PO-Revision-Date: 2023-09-11 15:53+0200\n"
 "Last-Translator: Matej Urbančič <mateju@src.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
@@ -29,7 +29,7 @@ msgstr "Prekini povezavo"
 msgid "Connect"
 msgstr "Poveži"
 
-#: lib/bluetoothToggle.js:457
+#: lib/bluetoothToggle.js:461
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

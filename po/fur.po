@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: video-subtitles master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:11-0800\n"
+"POT-Creation-Date: 2025-05-11 09:06-0700\n"
 "PO-Revision-Date: 2023-09-26 11:22+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
@@ -27,7 +27,7 @@ msgstr "Disconet"
 msgid "Connect"
 msgstr "Conet"
 
-#: lib/bluetoothToggle.js:457
+#: lib/bluetoothToggle.js:461
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

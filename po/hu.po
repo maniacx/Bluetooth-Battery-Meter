@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:11-0800\n"
+"POT-Creation-Date: 2025-05-11 09:06-0700\n"
 "PO-Revision-Date: 2024-05-22 23:59+0200\n"
 "Last-Translator: ViBE <vibe@protonmail.com>\n"
 "Language-Team: Hungarian <vibe@protonmail.com>\n"
@@ -25,7 +25,7 @@ msgstr "Leválasztás"
 msgid "Connect"
 msgstr "Kapcsolódás"
 
-#: lib/bluetoothToggle.js:457
+#: lib/bluetoothToggle.js:461
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

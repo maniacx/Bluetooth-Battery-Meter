@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:11-0800\n"
+"POT-Creation-Date: 2025-05-11 09:06-0700\n"
 "PO-Revision-Date: 2025-05-11 15:30\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
@@ -25,7 +25,7 @@ msgstr "Déconnecter"
 msgid "Connect"
 msgstr "Connecter"
 
-#: lib/bluetoothToggle.js:457
+#: lib/bluetoothToggle.js:461
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -43,8 +43,12 @@ msgstr "© %s %s"
 
 #: preferences/about.js:48
 #, javascript-format
-msgid "This application comes with absolutely no warranty. See the <a href=\"%s\">%s</a> for details."
-msgstr "Ce programme est fourni sans aucune garantie. Pour plus de détails, consultez <a href=\"%s\">%s</a>."
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Ce programme est fourni sans aucune garantie. Pour plus de détails, "
+"consultez <a href=\"%s\">%s</a>."
 
 #: preferences/device.js:38 preferences/upowerDevices.js:40
 msgid "Battery Status:"
@@ -80,7 +84,8 @@ msgstr "Afficher le niveau de la batterie"
 
 #: preferences/device.js:97
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr "Afficher le niveau de la batterie dans le menu rapide du panneau Bluetooth"
+msgstr ""
+"Afficher le niveau de la batterie dans le menu rapide du panneau Bluetooth"
 
 #: preferences/device.js:121 preferences/upowerDevices.js:94 ui/indicator.ui:5
 msgid "Indicator"
@@ -119,8 +124,11 @@ msgid "Configure device."
 msgstr "Configurer l'appareil."
 
 #: preferences/device.js:194
-msgid "Delete device information: The button is available after unpairing device"
-msgstr "Supprimer les informations du périphérique : le bouton est disponible après avoir désappairé l'appareil"
+msgid ""
+"Delete device information: The button is available after unpairing device"
+msgstr ""
+"Supprimer les informations du périphérique : le bouton est disponible après "
+"avoir désappairé l'appareil"
 
 #: preferences/device.js:225 preferences/upowerDevices.js:192
 msgid "(Removed)"
@@ -142,12 +150,22 @@ msgstr "Définir la couleur pour la plage de niveau de batterie de %d – %d%%"
 
 #: preferences/quickSettings.js:53
 #, javascript-format
-msgid "Certain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check <a href=\"%s\">Readme</a> for details."
-msgstr "Certains périphériques Bluetooth ne signalent pas le niveau de batterie tant que les fonctionnalités expérimentales de Bluez ne sont pas activées dans le système. Vérifiez <a href=\"%s\">Readme</a> pour plus de détails."
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
+"for details."
+msgstr ""
+"Certains périphériques Bluetooth ne signalent pas le niveau de batterie tant "
+"que les fonctionnalités expérimentales de Bluez ne sont pas activées dans le "
+"système. Vérifiez <a href=\"%s\">Readme</a> pour plus de détails."
 
 #: preferences/upowerDevices.js:160
-msgid "Delete device information: The button is available after upower device are removed"
-msgstr "Supprimer les informations du périphérique : le bouton est disponible après avoir désappairé l'appareil"
+msgid ""
+"Delete device information: The button is available after upower device are "
+"removed"
+msgstr ""
+"Supprimer les informations du périphérique : le bouton est disponible après "
+"avoir désappairé l'appareil"
 
 #: preferences/upowerDevices.js:193
 msgid "(Added)"
@@ -195,7 +213,9 @@ msgstr "Configuration par périphérique"
 
 #: ui/device.ui:10 ui/upowerDevices.ui:27
 msgid "Note: General settings override device-specific settings"
-msgstr "Note: Les paramètres généraux remplacent les paramètres spécifiques à l'appareil"
+msgstr ""
+"Note: Les paramètres généraux remplacent les paramètres spécifiques à "
+"l'appareil"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
@@ -211,7 +231,9 @@ msgstr "Activer les indicateurs de batterie pour les appareils Bluetooth"
 
 #: ui/indicator.ui:13
 msgid "Displays Bluetooth device icon with battery level in system tray"
-msgstr "Affiche l'icône du périphérique Bluetooth avec le niveau de batterie dans la barre d'état système"
+msgstr ""
+"Affiche l'icône du périphérique Bluetooth avec le niveau de batterie dans la "
+"barre d'état système"
 
 #: ui/indicator.ui:24
 msgid "Display battery percentage as text"
@@ -219,15 +241,21 @@ msgstr "Afficher le pourcentage de batterie sous forme de texte"
 
 #: ui/indicator.ui:25
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr "Affiche le pourcentage de la batterie à côté de l'icône du périphérique Bluetooth"
+msgstr ""
+"Affiche le pourcentage de la batterie à côté de l'icône du périphérique "
+"Bluetooth"
 
 #: ui/indicator.ui:37
 msgid "Bluetooth Connection Status Indicator"
 msgstr "Indicateur d'état de la connexion Bluetooth"
 
 #: ui/indicator.ui:38
-msgid "Hide conditionally: Displayed only when no other bluetooth related indicators are present"
-msgstr "Masquer conditionnellement: Affiché uniquement quand aucun autre indicateur Bluetooth n'est présent"
+msgid ""
+"Hide conditionally: Displayed only when no other bluetooth related "
+"indicators are present"
+msgstr ""
+"Masquer conditionnellement: Affiché uniquement quand aucun autre indicateur "
+"Bluetooth n'est présent"
 
 #: ui/indicator.ui:52
 msgid "Indicator Widget Settings"
@@ -291,7 +319,9 @@ msgstr "Activer les indicateurs de batterie pour les appareils Bluetooth"
 
 #: ui/quickSettings.ui:13
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
-msgstr "Affiche une icône dans le menu contextuel pour le niveau de batterie de l'appareil Bluetooth"
+msgstr ""
+"Affiche une icône dans le menu contextuel pour le niveau de batterie de "
+"l'appareil Bluetooth"
 
 #: ui/quickSettings.ui:24
 msgid "Show Bluetooth device battery percentage"
@@ -307,15 +337,21 @@ msgstr "Afficher l'icône du niveau de batterie avant le texte"
 
 #: ui/quickSettings.ui:37
 msgid "Swaps position of battery level icon and percentage text"
-msgstr "Interverti la position de l'icône du niveau de batterie et du texte en pourcentage"
+msgstr ""
+"Interverti la position de l'icône du niveau de batterie et du texte en "
+"pourcentage"
 
 #: ui/quickSettings.ui:48
 msgid "Sort devices by connection history"
 msgstr "Trier les périphériques par historique de connexion"
 
 #: ui/quickSettings.ui:49
-msgid "Enable to sort devices by connection history, or disable to sort by connection status and alias"
-msgstr "Activer pour trier les appareils par historique de connexion, ou désactiver pour trier par statut de connexion et alias"
+msgid ""
+"Enable to sort devices by connection history, or disable to sort by "
+"connection status and alias"
+msgstr ""
+"Activer pour trier les appareils par historique de connexion, ou désactiver "
+"pour trier par statut de connexion et alias"
 
 #: ui/quickSettings.ui:62
 msgid "Note!"
@@ -334,10 +370,16 @@ msgid "Enable indicator for upower devices"
 msgstr "Activer l'indicateur pour les périphériques de puissance"
 
 #: ui/upowerDevices.ui:13
-msgid "Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can report battery levels if supported by the kernel or third-party drivers. Enable this option to display their battery status in the GNOME system tray."
-msgstr "Certains périphériques UPower, tels que la souris sans fil 2.4GHz, le clavier, etc, peuvent signaler les niveaux de batterie si pris en charge par le noyau ou par des pilotes tiers. Activez cette option pour afficher leur état de batterie dans la barre d'état système GNOME."
+msgid ""
+"Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
+"report battery levels if supported by the kernel or third-party drivers. "
+"Enable this option to display their battery status in the GNOME system tray."
+msgstr ""
+"Certains périphériques UPower, tels que la souris sans fil 2.4GHz, le "
+"clavier, etc, peuvent signaler les niveaux de batterie si pris en charge par "
+"le noyau ou par des pilotes tiers. Activez cette option pour afficher leur "
+"état de batterie dans la barre d'état système GNOME."
 
 #: ui/upowerDevices.ui:30
 msgid "No compatible device found!"
 msgstr "Aucun appareil compatible détecté!"
-

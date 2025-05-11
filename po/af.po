@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:11-0800\n"
+"POT-Creation-Date: 2025-05-11 09:06-0700\n"
 "PO-Revision-Date: 2018-02-10 11:12+0200\n"
 "Last-Translator: Pieter Schalk Schoeman <pieter@sonbesie.co.za>\n"
 "Language-Team: Afrikaans <pieter@sonbesie.co.za>\n"
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Connect"
 msgstr "Verbind"
 
-#: lib/bluetoothToggle.js:457
+#: lib/bluetoothToggle.js:461
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

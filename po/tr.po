@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:11-0800\n"
+"POT-Creation-Date: 2025-05-11 09:06-0700\n"
 "PO-Revision-Date: 2024-01-18 09:13+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -27,7 +27,7 @@ msgstr "Bağlantıyı Kes"
 msgid "Connect"
 msgstr "Bağlan"
 
-#: lib/bluetoothToggle.js:457
+#: lib/bluetoothToggle.js:461
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"

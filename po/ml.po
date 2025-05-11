@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 18:11-0800\n"
+"POT-Creation-Date: 2025-05-11 09:06-0700\n"
 "PO-Revision-Date: 2018-10-26 13:50+0530\n"
 "Last-Translator: Ranjith Siji <ranjith.sajeev@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "Connect"
 msgstr "കണക്ട് ചെയ്യുക"
 
-#: lib/bluetoothToggle.js:457
+#: lib/bluetoothToggle.js:461
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
