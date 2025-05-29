@@ -19,7 +19,7 @@ from device_gattbas import GattBasDevice
 from helpers import PrintLogHandler, ShutdownHandler, MonitorExtensionState, unwrap
 
 
-SCRIPT_VERSION = "BBM0.002"
+SCRIPT_VERSION = "BBM0.003"
 
 # Automatically shut down the script 3 seconds after the GNOME extension
 # {UUID} is disabled.
