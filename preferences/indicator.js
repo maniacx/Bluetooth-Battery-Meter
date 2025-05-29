@@ -12,7 +12,8 @@ const  CustomizeRow = GObject.registerClass({
     constructor(settings, level) {
         super({});
         this.title = _('Assign color for %d – %d%%').format(level - 10, level);
-        this.subtitle = _('Set color for the battery level range of %d – %d%%').format(level - 10, level);
+        this.subtitle = _('Set color for the battery level range of %d – %d%%')
+            .format(level - 10, level);
 
         const major = Gtk.get_major_version();
         const minor = Gtk.get_minor_version();
@@ -92,12 +93,14 @@ const  CustomizeRow = GObject.registerClass({
 
 export const  Indicator = GObject.registerClass({
     GTypeName: 'BBM_Indicator',
-    Template: GLib.Uri.resolve_relative(import.meta.url, '../ui/indicator.ui', GLib.UriFlags.NONE),
+    Template: GLib.Uri.resolve_relative(
+        import.meta.url, '../ui/indicator.ui', GLib.UriFlags.NONE
+    ),
     InternalChildren: [
-        'indicator_widget_settings_group',
         'enable_battery_indicator',
         'enable_battery_indicator_text',
         'hide_bluetooth_indicator',
+        'indicator_size',
         'level_indicator_type',
         'level_indicator_color',
         'customize_color_group',
@@ -122,6 +125,12 @@ export const  Indicator = GObject.registerClass({
             'hide-bluetooth-indicator',
             this._hide_bluetooth_indicator,
             'selected',
+            Gio.SettingsBindFlags.DEFAULT
+        );
+        settings.bind(
+            'indicator-size',
+            this._indicator_size,
+            'value',
             Gio.SettingsBindFlags.DEFAULT
         );
         settings.bind(

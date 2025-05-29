@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="512px"
+   viewBox="0 0 32 32"
+   width="512px"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="audio-speakers.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.265625"
+     inkscape:cx="255.77931"
+     inkscape:cy="256"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 15.150215,7.5266574 L 10.025108,12.369352 H 6.176047 C 6.176047,12.369352 4.8999998,13.449822 4.8999998,16.001371 C 4.8999998,18.552919 6.176047,19.630651 6.176047,19.630651 H 10.025108 L 15.150215,24.473343 Z"
+     id="path1"
+     style="stroke-width:1.34432;fill:#ffffff" />
+  <path
+     d="M 22.178498,9.079142 C 21.867453,9.222701 21.665786,9.533747 21.665786,9.875555 V 14.51047 L 19.614938,12.719397 C 19.252622,12.401515 18.702311,12.435696 18.38443,12.798013 C 18.066549,13.163746 18.100729,13.714058 18.466464,14.031939 L 20.712142,16.000753 L 18.466464,17.969566 C 18.100729,18.287448 18.066549,18.837759 18.38443,19.200074 C 18.702311,19.565809 19.252622,19.59999 19.614938,19.282108 L 21.665786,17.491035 V 22.12595 C 21.665786,22.467758 21.867453,22.778804 22.178498,22.922363 C 22.492961,23.062504 22.858695,23.011233 23.115052,22.782222 L 26.615165,19.719623 C 26.806577,19.555555 26.915956,19.316289 26.915956,19.063351 C 26.915956,18.810414 26.806577,18.571148 26.615165,18.407081 L 23.867029,16.000753 L 26.615165,13.594425 C 26.806577,13.430357 26.915956,13.191091 26.915956,12.938154 C 26.915956,12.685216 26.806577,12.44595 26.615165,12.281882 L 23.115052,9.219283 C 22.858695,8.990272 22.492961,8.935583 22.178498,9.079142 Z M 23.415843,11.803351 L 24.714713,12.938154 L 23.415843,14.072956 Z M 23.415843,17.928549 L 24.714713,19.063351 L 23.415843,20.198154 Z M 23.415843,17.928549"
+     fill="#ffffff"
+     id="path1-5"
+     style="fill:#4c4cff;fill-opacity:1" />
+</svg>

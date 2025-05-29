@@ -1,3 +1,108 @@
 .bbm-bt-percentage-label {
   text-align: center;
 }
+.bbm-panel-title-label {
+  font-weight: bold;
+  text-align: center;
+}
+.bbm-panel-popup-menu {
+  min-width: 15em;
+}
+.bbm-panel-label-model {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+.bbm-panel-icon-check {
+  padding: 0.5em;
+}
+.bbm-panel-hbox {
+  padding-top: 2px;
+  padding-bottom: 2px;
+} 
+.bbm-panel-start-bin {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.bbm-message-box:ltr {
+  padding-left: 2px;
+  padding-right: 18px;
+}
+.bbm-message-box:rtl {
+  padding-left: 18px;
+  padding-right: 2px;
+}
+.bbm-message-45-box:ltr {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 2px;
+  padding-right: 18px;
+}
+.bbm-message-45-box:rtl {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
+  padding-right: 2px;
+}
+.bbm-message-title {
+  padding-left: 2px;
+  padding-right: 2px;
+  font-weight: bold;
+}
+.bbm-panel-button-box {
+  min-height: 30px;
+  padding: 1px;
+}
+.bbm-battery-horizontal-widget-label {
+  width: 3.1em;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 0.75em;
+} 
+.bbm-battery-veritcal-widget-label{
+  padding-top: 4px;
+  font-size: 0.75em;
+  text-align: center;
+}
+.bbm-battery-horizontal-widget-box {
+  min-width: 15.2em;
+}
+.bbm-battery-vertical-widget-box {
+  min-width: 5em;
+}
+.bbm-battery-vertical-space-bin {
+  min-width: 20px
+}
+.bbm-popup {
+  background-color: rgba(128, 128, 128, 0);
+}
+.bbm-popup:hover {
+  background-color: rgba(128, 128, 128, 0);
+}
+.bbm-toggle-bin {
+  padding: 1px;
+}
+.bbm-toggle-button {
+  margin: 0.5px;
+  min-height: 1.5em;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.bbm-toggle-button:hover {
+  background-color: rgba(128, 128, 128, 0.4);
+}
+.bbm-toggle-button:checked {
+  background-color: rgba(128, 128, 128, 0.9);
+}
+.bbm-toggle-button-start {
+  border-radius: 4px 0 0 4px;
+}
+.bbm-toggle-button-middle {
+  border-radius: 0;
+}
+.bbm-toggle-button-end {
+  border-radius: 0 4px 4px 0;
+}
+
+

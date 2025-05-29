@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   sodipodi:docname="multimedia-player"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5654521"
+     inkscape:cx="230.92371"
+     inkscape:cy="370.5"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <path
+       id="rect1"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0"
+       d="M 182.58984 106.03906 C 171.32311 106.03906 162.25391 115.11022 162.25391 126.37695 L 162.25391 384.6582 C 162.25391 395.92494 171.32311 404.99414 182.58984 404.99414 L 327.80469 404.99414 C 339.07142 404.99414 348.14258 395.92494 348.14258 384.6582 L 348.14258 126.37695 C 348.14258 115.11022 339.07142 106.03906 327.80469 106.03906 L 182.58984 106.03906 z M 193.13086 123.92578 L 317.26562 123.92578 C 323.93177 123.92578 329.29688 129.29284 329.29688 135.95898 L 329.29688 223.04297 C 329.29688 229.70912 323.93177 235.07617 317.26562 235.07617 L 193.13086 235.07617 C 186.46471 235.07617 181.09766 229.70912 181.09766 223.04297 L 181.09766 135.95898 C 181.09766 129.29284 186.46471 123.92578 193.13086 123.92578 z M 254.49805 268.93555 A 54.936207 54.936207 0 0 1 310.12695 322.93359 L 310.13477 323.86719 A 54.936207 54.936207 0 0 1 255.43164 378.80469 A 54.936207 54.936207 0 0 1 200.26367 324.33398 A 54.936207 54.936207 0 0 1 254.49805 268.93555 z M 254.91016 300.87305 A 22.677155 22.677155 0 0 0 232.52148 323.74219 A 22.677155 22.677155 0 0 0 255.29492 346.22656 A 22.677155 22.677155 0 0 0 277.875 323.54883 L 277.87305 323.16406 A 22.677155 22.677155 0 0 0 254.91016 300.87305 z " />
+  </g>
+</svg>

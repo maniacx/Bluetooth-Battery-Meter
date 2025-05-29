@@ -6,8 +6,8 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
-import {supportedIcons} from '../lib/vectorImages.js';
-import * as Helper from '../lib/upowerHelper.js';
+import {supportedIcons} from '../lib/widgets/indicatorVectorImages.js';
+import * as Helper from '../lib/upower/upowerHelper.js';
 
 const  ConfigureWindow = GObject.registerClass({
 }, class ConfigureWindow extends Adw.Window {
@@ -66,16 +66,22 @@ const  ConfigureWindow = GObject.registerClass({
             row_spacing: 10,
         });
 
+        const maxRows = 7;
+        const totalIcons = supportedIcons.length;
+        const columns = Math.ceil(totalIcons / maxRows);
         supportedIcons.forEach((deviceType, index) => {
             const button = new Gtk.Button({
                 icon_name: `bbm-${deviceType}-symbolic`,
                 valign: Gtk.Align.CENTER,
             });
-            grid.attach(button, index % 4, Math.floor(index / 4), 1, 1);
+            const column = index % columns;
+            const row = Math.floor(index / columns);
+            grid.attach(button, column, row, 1, 1);
             button.connect('clicked', () => {
                 popover.hide();
                 const onlineDevice = settings.get_strv('upower-device-list');
-                const existingPathIndex = onlineDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
+                const existingPathIndex =
+                    onlineDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
                 const existingItem = JSON.parse(onlineDevice[existingPathIndex]);
                 existingItem['icon'] = deviceType;
                 onlineDevice[existingPathIndex] = JSON.stringify(existingItem);
@@ -115,7 +121,8 @@ const  ConfigureWindow = GObject.registerClass({
             const selectedId = indicatorOptions[index].id;
 
             const onlineDevice = settings.get_strv('upower-device-list');
-            const existingPathIndex = onlineDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
+            const existingPathIndex =
+                onlineDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
 
             if (existingPathIndex !== -1) {
                 const existingItem = JSON.parse(onlineDevice[existingPathIndex]);
@@ -151,13 +158,15 @@ const  DeviceItem = GObject.registerClass({
 
         this._customiseButton.connect('clicked', () => {
             const parentWindow = this._customiseButton.get_ancestor(Gtk.Window);
-            const configureWindow = new ConfigureWindow(settings, deviceItem, this._pathInfo, parentWindow);
+            const configureWindow =
+                new ConfigureWindow(settings, deviceItem, this._pathInfo, parentWindow);
             configureWindow.present();
         });
 
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
-            tooltip_text: _('Delete device information: The button is available after upower device are removed'),
+            tooltip_text: _('Delete device information: ' +
+                'The button is available after upower device are removed'),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
         });
@@ -192,7 +201,9 @@ const  DeviceItem = GObject.registerClass({
         const removedLabel = _('(Removed)');
         const onlineLabel = _('(Added)');
         this.title = pathInfo.model;
-        this.subtitle = devicePresent ? `${pathInfo.path} ${onlineLabel}` : `${pathInfo.path} ${removedLabel}`;
+        this.subtitle =
+            devicePresent ? `${pathInfo.path} ${onlineLabel}`
+                : `${pathInfo.path} ${removedLabel}`;
         this._deleteButton.sensitive = !devicePresent;
         this._icon.icon_name = `bbm-${pathInfo.icon}-symbolic`;
     }
@@ -201,7 +212,9 @@ const  DeviceItem = GObject.registerClass({
 
 export const  UpowerDevices = GObject.registerClass({
     GTypeName: 'BBM_UpowerDevice',
-    Template: GLib.Uri.resolve_relative(import.meta.url, '../ui/upowerDevices.ui', GLib.UriFlags.NONE),
+    Template: GLib.Uri.resolve_relative(
+        import.meta.url, '../ui/upowerDevices.ui', GLib.UriFlags.NONE
+    ),
     InternalChildren: [
         'enable_upower_level_icon',
         'upower_device_group',
@@ -230,7 +243,8 @@ export const  UpowerDevices = GObject.registerClass({
         if (enableUpowerIndicator) {
             await this._initializeUpower();
             this._createDevices();
-            this._signalId = this._settings.connect('changed::upower-device-list', () => this._createDevices());
+            this._signalId =
+                this._settings.connect('changed::upower-device-list', () => this._createDevices());
         } else {
             if (this._signalId)
                 this._settings.disconnect(this._signalId);
@@ -256,10 +270,12 @@ export const  UpowerDevices = GObject.registerClass({
         if (!this._dbusProxy)
             return;
 
-        const devices = await Helper.getDevices(this._dbusProxy, this._cancellable, this._requestedProps);
+        const devices =
+            await Helper.getDevices(this._dbusProxy, this._cancellable, this._requestedProps);
         if (!this._cancellable || this._cancellable.is_cancelled())
             return;
-        this._dbusSignalId = Helper.watchDevices(this._dbusProxy, this._refreshDevices.bind(this));
+        this._dbusSignalId =
+            Helper.watchDevices(this._dbusProxy, this._refreshDevices.bind(this));
         for (const dev of devices)
             this._addDevice(dev);
     }
@@ -282,7 +298,9 @@ export const  UpowerDevices = GObject.registerClass({
                 const row = this._deviceItems.get(pathInfo.path);
                 row.updateProperites(pathInfo, this._presentDevices);
             } else {
-                const deviceItem = new DeviceItem(this._settings, this._deviceItems, pathInfo, this._presentDevices);
+                const deviceItem =
+                    new DeviceItem(this._settings, this._deviceItems,
+                        pathInfo, this._presentDevices);
                 this._deviceItems.set(pathInfo.path, deviceItem);
                 this._upower_device_group.add(deviceItem);
             }
@@ -293,7 +311,8 @@ export const  UpowerDevices = GObject.registerClass({
         const path = dev.path;
         const isPowerSupply = dev.properties['PowerSupply'];
         const nativePath = dev.properties['NativePath'];
-        if (!isPowerSupply && !nativePath.startsWith('/org/bluez/') && !this._presentDevices.includes(path))
+        if (!isPowerSupply && !nativePath.startsWith('/org/bluez/') &&
+            !this._presentDevices.includes(path))
             this._presentDevices.push(path);
     }
 

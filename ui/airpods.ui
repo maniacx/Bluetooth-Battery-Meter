@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
+  <template class="BBM_Airpods" parent="AdwPreferencesPage">
+    <property name="name">Airpods</property>
+    <property name="title" translatable="yes">Airpods/Beats</property>
+    <property name="icon-name">bbm-earbuds-stem-symbolic</property>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Airpods / Beats Settings</property>
+        <child>
+          <object class="AdwActionRow" id="row_airpods_device">
+            <property name="title" translatable="yes">Enable AirPods and Beats Support</property>
+            <property name="subtitle" translatable="yes">Enables battery status monitoring and, if supported, control of Noise Cancellation and Conversation Awareness modes.</property>
+            <property name="activatable-widget">enable_airpods_device</property>
+            <child>
+              <object class="GtkSwitch" id="enable_airpods_device">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup" id="airpods_group">
+        <property name="title" translatable="yes">Configuration by device</property>
+        <child>
+          <object class="AdwActionRow" id="no_airpods_paired_row">
+            <property name="title" translatable="yes">No Airpods device paired!</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

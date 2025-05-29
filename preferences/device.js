@@ -5,7 +5,7 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
-import {supportedIcons} from '../lib/vectorImages.js';
+import {supportedIcons} from '../lib/widgets/indicatorVectorImages.js';
 
 const  ConfigureWindow = GObject.registerClass({
 }, class ConfigureWindow extends Adw.Window {
@@ -18,6 +18,17 @@ const  ConfigureWindow = GObject.registerClass({
             transient_for: parentWindow,
         });
 
+        const enhandedModeEnabled = settings.get_boolean('enable-enhanced-device-mode');
+        const isAirpodsEnabled = settings.get_boolean('enable-airpods-device');
+        const isGattBasEnabled = settings.get_boolean('enable-gattbas-device');
+        let isEnhancedDevice = false;
+
+        if (enhandedModeEnabled) {
+            if (pathInfo.isEnhancedDevice === 'airpods')
+                isEnhancedDevice = isAirpodsEnabled;
+            else if (pathInfo.isEnhancedDevice === 'gatt-bas')
+                isEnhancedDevice = isGattBasEnabled;
+        }
         const toolViewBar = new Adw.ToolbarView();
 
         const headerBar = new Adw.HeaderBar({
@@ -36,7 +47,10 @@ const  ConfigureWindow = GObject.registerClass({
         });
 
         const status = _('Battery Status:');
-        const batteryStatus = pathInfo.batteryReported  ? _('Reported') : _('Not Available');
+        let batteryStatus = pathInfo.batteryReported  ? _('Reported') : _('Not Available');
+        batteryStatus = isEnhancedDevice ?  _('Reported from enhanced device service')
+            : batteryStatus;
+
         aliasGroup.set_description(`${status} ${batteryStatus}`);
         page.add(aliasGroup);
 
@@ -48,6 +62,12 @@ const  ConfigureWindow = GObject.registerClass({
             title: _('Select Icon'),
             subtitle: _('Select the icon used for the indicator and quick menu'),
         });
+        const iconRowEnhanced = new Adw.ActionRow({
+            title: _('This is an enhanced device'),
+            subtitle: _('Icon selection if available are in Enhanced device per device settings'),
+        });
+        iconRow.visible = !isEnhancedDevice;
+        iconRowEnhanced.visible = isEnhancedDevice;
 
         const iconSplitButton = new Adw.SplitButton({
             icon_name: `bbm-${pathInfo.icon}-symbolic`,
@@ -64,16 +84,22 @@ const  ConfigureWindow = GObject.registerClass({
             row_spacing: 10,
         });
 
+        const maxRows = 7;
+        const totalIcons = supportedIcons.length;
+        const columns = Math.ceil(totalIcons / maxRows);
         supportedIcons.forEach((deviceType, index) => {
             const button = new Gtk.Button({
                 icon_name: `bbm-${deviceType}-symbolic`,
                 valign: Gtk.Align.CENTER,
             });
-            grid.attach(button, index % 4, Math.floor(index / 4), 1, 1);
+            const column = index % columns;
+            const row = Math.floor(index / columns);
+            grid.attach(button, column, row, 1, 1);
             button.connect('clicked', () => {
                 popover.hide();
                 const pairedDevice = settings.get_strv('device-list');
-                const existingPathIndex = pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
+                const existingPathIndex =
+                    pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
                 const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
                 existingItem['icon'] = deviceType;
                 pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
@@ -86,6 +112,7 @@ const  ConfigureWindow = GObject.registerClass({
         iconSplitButton.set_popover(popover);
         iconRow.add_suffix(iconSplitButton);
         iconGroup.add(iconRow);
+        iconGroup.add(iconRowEnhanced);
         page.add(iconGroup);
 
         const quickSettingsGroup = new Adw.PreferencesGroup({
@@ -104,7 +131,8 @@ const  ConfigureWindow = GObject.registerClass({
         quickSettingSwitch.active = pathInfo.qsLevelEnabled;
         quickSettingSwitch.connect('notify::active', () => {
             const pairedDevice = settings.get_strv('device-list');
-            const existingPathIndex = pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
+            const existingPathIndex =
+                pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
             if (existingPathIndex !== -1) {
                 const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
                 existingItem['qs-level'] = quickSettingSwitch.active;
@@ -112,7 +140,7 @@ const  ConfigureWindow = GObject.registerClass({
                 settings.set_strv('device-list', pairedDevice);
             }
         });
-        quickSettingsGroup.visible =  pathInfo.batteryReported;
+        quickSettingsGroup.visible =  pathInfo.batteryReported || isEnhancedDevice;
         quickSettingsRow.add_suffix(quickSettingSwitch);
         quickSettingsGroup.add(quickSettingsRow);
         page.add(quickSettingsGroup);
@@ -125,8 +153,7 @@ const  ConfigureWindow = GObject.registerClass({
             title: _('Configure Indicator'),
             subtitle: _('Choose how the indicator should behave'),
         });
-
-        const indicatorOptions = pathInfo.batteryReported
+        const indicatorOptions = pathInfo.batteryReported || isEnhancedDevice
             ? [
                 {id: 0, label: _('Do not show Icon')},
                 {id: 1, label: _('Show Icon without Battery level')},
@@ -140,7 +167,8 @@ const  ConfigureWindow = GObject.registerClass({
         const dropDown = new Gtk.DropDown({
             valign: Gtk.Align.CENTER,
             model: Gtk.StringList.new(indicatorOptions.map(option => option.label)),
-            selected: indicatorOptions.findIndex(option => option.id === pathInfo.indicatorMode) >= 0
+            selected: indicatorOptions.findIndex(
+                option => option.id === pathInfo.indicatorMode) >= 0
                 ? indicatorOptions.findIndex(option => option.id === pathInfo.indicatorMode)
                 : 0,
         });
@@ -149,7 +177,8 @@ const  ConfigureWindow = GObject.registerClass({
             const index = dropDown.get_selected();
             const selectedId = indicatorOptions[index].id;
             const pairedDevice = settings.get_strv('device-list');
-            const existingPathIndex = pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
+            const existingPathIndex =
+                pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
             if (existingPathIndex !== -1) {
                 const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
                 existingItem['indicator-mode'] = selectedId;
@@ -185,13 +214,16 @@ const  DeviceItem = GObject.registerClass({
 
         this._customiseButton.connect('clicked', () => {
             const parentWindow = this._customiseButton.get_ancestor(Gtk.Window);
-            const configureWindow = new ConfigureWindow(settings, this._macAddress, deviceItem, this._pathInfo, parentWindow);
+            const configureWindow =
+                new ConfigureWindow(settings, this._macAddress,
+                    deviceItem, this._pathInfo, parentWindow);
             configureWindow.present();
         });
 
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
-            tooltip_text: _('Delete device information: The button is available after unpairing device'),
+            tooltip_text: _('Delete device information: ' +
+            'The button is available after unpairing device'),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
         });
@@ -225,7 +257,8 @@ const  DeviceItem = GObject.registerClass({
         const removedLabel = _('(Removed)');
         const pairedLabel = _('(Paired)');
         this.title = pathInfo.alias;
-        this.subtitle = pathInfo.paired ? `${this._macAddress} ${pairedLabel}` : `${this._macAddress} ${removedLabel}`;
+        this.subtitle = pathInfo.paired ? `${this._macAddress} ${pairedLabel}`
+            : `${this._macAddress} ${removedLabel}`;
         this._deleteButton.sensitive = !pathInfo.paired;
         this._icon.icon_name = `bbm-${pathInfo.icon}-symbolic`;
     }
@@ -240,7 +273,9 @@ const  DeviceItem = GObject.registerClass({
 
 export const  Device = GObject.registerClass({
     GTypeName: 'BBM_Device',
-    Template: GLib.Uri.resolve_relative(import.meta.url, '../ui/device.ui', GLib.UriFlags.NONE),
+    Template: GLib.Uri.resolve_relative(
+        import.meta.url, '../ui/device.ui', GLib.UriFlags.NONE
+    ),
     InternalChildren: [
         'device_group',
         'no_paired_row',
@@ -275,6 +310,7 @@ export const  Device = GObject.registerClass({
                 batteryReported: info['battery-reported'],
                 qsLevelEnabled: info['qs-level'],
                 indicatorMode: info['indicator-mode'],
+                isEnhancedDevice: info['enhanced-device'],
             };
             if (this._deviceItems.has(pathInfo.path)) {
                 const row = this._deviceItems.get(pathInfo.path);

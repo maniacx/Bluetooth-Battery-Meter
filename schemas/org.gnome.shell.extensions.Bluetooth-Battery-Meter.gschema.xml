@@ -9,6 +9,10 @@
             <default>false</default>
             <summary>Show text next to icon in system tray with device battery level</summary>
         </key>
+        <key name="indicator-size" type="i">
+            <default>100</default>
+            <summary>Change size of icon widget</summary>
+        </key>
         <key name="enable-battery-level-icon" type="b">
             <default>true</default>
             <summary>Displays an icon  showing bluetooth device battery level in bluetooth quickmenu</summary>
@@ -41,6 +45,50 @@
             <default>false</default>
             <summary>"enable indicator for upower devices"</summary>
         </key>
+        <key name="enable-enhanced-device-mode" type="b">
+            <default>false</default>
+            <summary>"enable display of multiple battery"</summary>
+        </key>
+        <key name="enable-message-tray" type="b">
+            <default>false</default>
+            <summary>"enable display of message tray"</summary>
+        </key>
+        <key name="enable-panel-button-mode" type="b">
+            <default>false</default>
+            <summary>"enable display of panel button"</summary>
+        </key>
+        <key name="enable-multi-indicator-mode" type="b">
+            <default>false</default>
+            <summary>"For one device display each Bat level as seperate indicator"</summary>
+        </key>
+        <key name="enable-on-hover-mode" type="b">
+            <default>false</default>
+            <summary>"enable use of on hover mode"</summary>
+        </key>
+        <key name="on-hover-delay" type="i">
+            <default>1000</default>
+            <summary>"onhover delay time in milliseconds"</summary>
+        </key>
+        <key name="default-selected-path" type="s">
+            <default>''</default>
+            <summary>"Store path if activated"</summary>
+        </key>
+        <key name="enable-airpods-device" type="b">
+            <default>false</default>
+            <summary>"enable Airpods / Beats devices"</summary>
+        </key>
+        <key name="airpods-list" type="as">
+            <default>[]</default>
+            <summary>List of airpods devices</summary>
+        </key>
+        <key name="enable-gattbas-device" type="b">
+            <default>false</default>
+            <summary>"enable gattbas devices"</summary>
+        </key>
+        <key name="gattbas-list" type="as">
+            <default>[]</default>
+            <summary>List of gattbas devices</summary>
+        </key>
         <key name="level-indicator-type" type="i">
             <default>0</default>
             <summary>"Level type"</summary>
@@ -48,6 +96,10 @@
         <key name="level-indicator-color" type="i">
             <default>1</default>
             <summary>"Level Color"</summary>
+        </key>
+        <key name="circle-widget-color" type="i">
+            <default>1</default>
+            <summary>"Circle widget Color"</summary>
         </key>
         <key name="color-100" type="s">
             <default>"#15c931"</default>
