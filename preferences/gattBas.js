@@ -176,10 +176,10 @@ const  DeviceItem = GObject.registerClass({
             configureWindow.present();
         });
 
-        const modeName = 'BAS';
+        const basLabel = _('Battery Service (BAS)');
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
-            tooltip_text: _('The button is available after disabling %s mode').format(modeName),
+            tooltip_text: _('The button is available after disabling %s mode').format(basLabel),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
         });

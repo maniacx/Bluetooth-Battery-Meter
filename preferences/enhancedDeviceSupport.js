@@ -15,6 +15,7 @@ export const  EnhancedDeviceSupport = GObject.registerClass({
     InternalChildren: [
         'group_incompatible',
         'group_enhanced_device_support',
+        'row_enhanced_device_support',
         'enable_enhanced_device_mode',
         'enable_message_tray',
         'enable_panel_button_mode',
@@ -69,6 +70,14 @@ export const  EnhancedDeviceSupport = GObject.registerClass({
             Gio.SettingsBindFlags.DEFAULT
         );
 
+        const airpodsLabel = _('Airpods/Beats');
+        const basLabel = _('Battery Service (BAS)');
+
+        this._row_enhanced_device_support.subtitle =
+            `${_('Enables advanced features via a Python script and custom UI elements:')
+            }\n- ${airpodsLabel
+            }\n- ${basLabel}`;
+
         this._enable_enhanced_device_mode.connect('notify::active', () => {
             this._updateHoverDelaySensitivity();
         });
@@ -101,8 +110,12 @@ export const  EnhancedDeviceSupport = GObject.registerClass({
         if (!pythonInstalled) {
             this._group_incompatible.visible = true;
             this._group_enhanced_device_support.visible = false;
-            this._group_incompatible.title = _('Python 3 is not installed.');
-            this._group_incompatible.description = _('Please install Python 3.11 or later');
+            const incompatibleTitle = _('Python 3 is not installed or not found in PATH.');
+            const incompatibleSubtitle = _('Please install Python 3.11 or ' +
+                'ensure it is accessible from the command line.');
+
+            this._group_incompatible.title = incompatibleTitle;
+            this._group_incompatible.description = incompatibleSubtitle;
             return;
         }
         const resourceDir = `${this._extensionPath}/resources`;
@@ -115,25 +128,17 @@ export const  EnhancedDeviceSupport = GObject.registerClass({
             const messages = [];
 
             if (isPythonComaptible.includes('version-incompatible'))
-                messages.push(_('-Python version is below 3.11'));
+                messages.push(`- ${_('Python version is below 3.11')}`);
 
             if (isPythonComaptible.includes('socket-missing'))
-                messages.push(_('-Python Bluetooth socket not available'));
+                messages.push(`- ${_('Python Bluetooth socket not available')}`);
 
             if (isPythonComaptible.includes('pyobject-missing'))
-                messages.push(_('-PyGObject (gi.repository) is not available.'));
-
+                messages.push(`- ${_('PyGObject (gi.repository) is not available.')}`);
 
             const joined = messages.join('\n');
             this._group_incompatible.title =
                     _('Python environment issues:\n\n%s').format(joined);
-
-            this._group_incompatible.description = _(
-                '\nMinimum Requirements:\n' +
-                    '- Python 3.11 or later\n' +
-                    '- A full Python installation with Bluetooth socket support\n' +
-                    '- PyGObject (gi.repository) must be available'
-            );
         }
     }
 });

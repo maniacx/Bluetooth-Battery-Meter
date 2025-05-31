@@ -6,7 +6,7 @@
     <property name="icon-name">bbm-gatt-bas-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Battery service settings</property>
+        <property name="title" translatable="yes">Battery Service (BAS) Settings</property>
         <child>
           <object class="AdwActionRow">
             <property name="title" translatable="yes">Enable GATT Battery Service Reporting</property>
@@ -23,10 +23,10 @@
     </child>
     <child>
       <object class="AdwPreferencesGroup" id="gattbas_group">
-        <property name="title" translatable="yes">Configuration by device</property>
+        <property name="title" translatable="yes">Configuration by Device</property>
         <child>
           <object class="AdwActionRow" id="no_gattbas_paired_row">
-            <property name="title" translatable="yes">No paired devices with GATT Battery Service detected</property>
+            <property name="title" translatable="yes">No compatible device paired!</property>
           </object>
         </child>
       </object>

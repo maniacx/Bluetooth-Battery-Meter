@@ -2,19 +2,17 @@
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
   <template class="BBM_EnhancedDeviceSupport" parent="AdwPreferencesPage">
     <property name="name">EnhancedDeviceSupport</property>
-    <property name="title" translatable="yes">Extended Device Support</property>
+    <property name="title" translatable="yes">Enhanced Device Support</property>
     <property name="icon-name">bbm-enhanced-device-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup" id="group_incompatible" />
     </child>
     <child>
       <object class="AdwPreferencesGroup" id="group_enhanced_device_support">
-        <property name="title" translatable="yes">Extended Device Support</property>
+        <property name="title" translatable="yes">Enhanced Device Support</property>
         <child>
-          <object class="AdwActionRow">
-            <property name="title" translatable="yes">Enable Extended Device Support</property>
-            <property name="subtitle" translatable="yes">Enables advanced features via a Python script and custom UI elements:&#xA;- AirPods: Battery and noise cancellation.&#xA;- GATT Battery Service (BAS): Battery reporting.</property> 
-
+          <object class="AdwActionRow" id="row_enhanced_device_support">
+            <property name="title" translatable="yes">Enable Enhanced Device Support</property>
             <property name="activatable-widget">enable_enhanced_device_mode</property>
             <child>
               <object class="GtkSwitch" id="enable_enhanced_device_mode">
@@ -27,11 +25,11 @@
     </child>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Message tray</property>
+        <property name="title" translatable="yes">Message Tray</property>
         <property name="visible" bind-source="group_enhanced_device_support" bind-property="visible" bind-flags="sync-create" />
         <child>
           <object class="AdwActionRow">
-            <property name="title" translatable="yes">Show Message tray Widget</property>
+            <property name="title" translatable="yes">Show Message Tray Widget</property>
             <property name="subtitle" translatable="yes">Display battery status and controls in the message tray.</property>
             <property name="activatable-widget">enable_message_tray</property>
             <property name="sensitive" bind-source="enable_enhanced_device_mode" bind-property="active" bind-flags="sync-create" />
@@ -46,7 +44,7 @@
     </child>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Panel button with menu</property>
+        <property name="title" translatable="yes">Panel button with Menu</property>
         <property name="visible" bind-source="group_enhanced_device_support" bind-property="visible" bind-flags="sync-create" />
         <child>
           <object class="AdwActionRow">
@@ -65,12 +63,12 @@
     </child>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">On pointer hover menu popup</property>
+        <property name="title" translatable="yes">Show Popup on Hover</property>
         <property name="visible" bind-source="group_enhanced_device_support" bind-property="visible" bind-flags="sync-create" />
         <child>
           <object class="AdwActionRow">
             <property name="title" translatable="yes">Show Detailed Info on Hover</property>
-            <property name="subtitle" translatable="yes">Displays a popup with battery info and controls when the mouse hovers over the indicator for a custom delay</property>
+            <property name="subtitle" translatable="yes">Displays a popup with battery info and controls when the mouse pointer hovers over the indicator for a custom delay</property>
             <property name="activatable-widget">enable_hover_on_mode</property>
             <property name="sensitive" bind-source="enable_enhanced_device_mode" bind-property="active" bind-flags="sync-create" />
             <child>
@@ -102,7 +100,7 @@
     </child>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Multiple battery indicator</property>
+        <property name="title" translatable="yes">Multiple Battery Indicator</property>
         <property name="visible" bind-source="group_enhanced_device_support" bind-property="visible" bind-flags="sync-create" />
         <child>
           <object class="AdwActionRow">
@@ -125,7 +123,7 @@
         <property name="visible" bind-source="group_enhanced_device_support" bind-property="visible" bind-flags="sync-create" />
         <child>
           <object class="AdwActionRow">
-            <property name="title" translatable="yes">Battery circle widget color Scheme</property>
+            <property name="title" translatable="yes">Battery Circle Widget Color Scheme</property>
             <property name="subtitle" translatable="yes">Choose color scheme for battery circle widget</property>
             <property name="activatable-widget">circle_widget_color</property>
             <property name="sensitive" bind-source="enable_enhanced_device_mode" bind-property="active" bind-flags="sync-create" />

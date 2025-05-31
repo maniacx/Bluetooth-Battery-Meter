@@ -41,9 +41,8 @@ const  ConfigureWindow = GObject.registerClass({
         });
 
         const inEarSettingsRow = new Adw.ActionRow({
-            title: _('Pause when buds not in ear'),
-            subtitle: _('Pause playback when an buds is removed,' +
-                ' resume playback when buds worn again'),
+            title: _('Pause when device is not worn'),
+            subtitle: _('Pause playback when the device is removed, resume when it is put back on'),
         });
 
         const inEarSettingsSwitch = new Gtk.Switch({
@@ -131,10 +130,10 @@ const  DeviceItem = GObject.registerClass({
             configureWindow.present();
         });
 
-        const modeName = 'Airpods';
+        const airpodsLabel = _('Airpods/Beats');
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
-            tooltip_text: _('The button is available after disabling %s mode').format(modeName),
+            tooltip_text: _('The button is available after disabling %s mode').format(airpodsLabel),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
         });
