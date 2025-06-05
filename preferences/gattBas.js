@@ -38,18 +38,22 @@ const  ConfigureWindow = GObject.registerClass({
 
         page.add(aliasGroup);
 
-
-        const iconGroup = new Adw.PreferencesGroup({
+        const iconGroup1 = new Adw.PreferencesGroup({
             title: _('Select Icon'),
+            description: _('Single Indicator, Panel Button, Quick Menu, Album Art'),
+        });
+
+        const iconGroup2 = new Adw.PreferencesGroup({
+            title: _('Select Icon'),
+            description: _('Multiple Indicators, Circular Battery Widgets'),
         });
 
         const pairedDevice = settings.get_strv('gattbas-list');
         const deviceData = JSON.parse(
             pairedDevice.find(item => JSON.parse(item).path === pathInfo.path) || '{}');
 
-        iconGroup.add(this._createIconRow({
-            title: _('Common Icon '),
-            subtitle: _('Used for the indicator, quick menu and panel button'),
+        iconGroup1.add(this._createIconRow({
+            title: _('Icon '),
             propertyKey: 'icon',
             currentValue: deviceData['icon'] || pathInfo.icon,
             pathInfo,
@@ -57,9 +61,8 @@ const  ConfigureWindow = GObject.registerClass({
             iconsSupported: supportedCommonIcons,
         }));
 
-        iconGroup.add(this._createIconRow({
+        iconGroup2.add(this._createIconRow({
             title: _('Battery 1 Icon'),
-            subtitle: _('Used for first battery'),
             propertyKey: 'icon-batt1',
             currentValue: deviceData['icon-batt1'],
             pathInfo,
@@ -67,9 +70,8 @@ const  ConfigureWindow = GObject.registerClass({
             iconsSupported: supportedCircularWidgetIcons,
         }));
 
-        iconGroup.add(this._createIconRow({
+        iconGroup2.add(this._createIconRow({
             title: _('Battery 2 Icon'),
-            subtitle: _('Used for second battery, if available'),
             propertyKey: 'icon-batt2',
             currentValue: deviceData['icon-batt2'],
             pathInfo,
@@ -77,25 +79,24 @@ const  ConfigureWindow = GObject.registerClass({
             iconsSupported: supportedCircularWidgetIcons,
         }));
 
-        iconGroup.add(this._createIconRow({
+        iconGroup2.add(this._createIconRow({
             title: _('Battery 3 Icon'),
-            subtitle: _('Used for third battery, if available'),
             propertyKey: 'icon-batt3',
             currentValue: deviceData['icon-batt3'],
             pathInfo,
             settings,
             iconsSupported: supportedCircularWidgetIcons,
         }));
-        page.add(iconGroup);
+        page.add(iconGroup1);
+        page.add(iconGroup2);
     }
 
     _createIconRow({
-        title, subtitle, propertyKey, currentValue,
+        title, propertyKey, currentValue,
         pathInfo, settings, iconsSupported,
     }) {
         const row = new Adw.ActionRow({
             title,
-            subtitle,
         });
 
         const splitButton = new Adw.SplitButton({
