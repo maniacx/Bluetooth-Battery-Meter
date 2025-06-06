@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-31 00:44-0700\n"
+"POT-Creation-Date: 2025-06-05 19:05-0700\n"
 "PO-Revision-Date: 2023-10-26 23:08+0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Português <https://l10n.gnome.org/teams/pt/>\n"
@@ -120,16 +120,16 @@ msgid ""
 msgstr ""
 
 #: preferences/airpods.js:121 preferences/device.js:211
-#: preferences/gattBas.js:167 preferences/upowerDevices.js:155
+#: preferences/gattBas.js:168 preferences/upowerDevices.js:155
 msgid "Configure device."
 msgstr ""
 
 #: preferences/airpods.js:133 preferences/enhancedDeviceSupport.js:73
 #: ui/airpods.ui:5
-msgid "Airpods/Beats"
+msgid "AirPods/Beats"
 msgstr ""
 
-#: preferences/airpods.js:136 preferences/gattBas.js:182
+#: preferences/airpods.js:136 preferences/gattBas.js:183
 #, javascript-format
 msgid "The button is available after disabling %s mode"
 msgstr ""
@@ -154,7 +154,7 @@ msgstr ""
 msgid "Icon"
 msgstr ""
 
-#: preferences/device.js:62 preferences/gattBas.js:43
+#: preferences/device.js:62 preferences/gattBas.js:42 preferences/gattBas.js:47
 #: preferences/upowerDevices.js:50
 msgid "Select Icon"
 msgstr ""
@@ -228,7 +228,7 @@ msgstr ""
 msgid "(Paired)"
 msgstr ""
 
-#: preferences/enhancedDeviceSupport.js:74 preferences/gattBas.js:179
+#: preferences/enhancedDeviceSupport.js:74 preferences/gattBas.js:180
 #: ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
 msgstr ""
@@ -237,36 +237,28 @@ msgstr ""
 msgid "Enables advanced features via a Python script and custom UI elements:"
 msgstr ""
 
-#: preferences/gattBas.js:51
-msgid "Common Icon "
+#: preferences/gattBas.js:43
+msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
 msgstr ""
 
-#: preferences/gattBas.js:52
-msgid "Used for the indicator, quick menu and panel button"
+#: preferences/gattBas.js:48
+msgid "Multiple Indicators, Circular Battery Widgets"
 msgstr ""
 
-#: preferences/gattBas.js:61
+#: preferences/gattBas.js:56
+msgid "Icon "
+msgstr ""
+
+#: preferences/gattBas.js:65
 msgid "Battery 1 Icon"
 msgstr ""
 
-#: preferences/gattBas.js:62
-msgid "Used for first battery"
-msgstr ""
-
-#: preferences/gattBas.js:71
+#: preferences/gattBas.js:74
 msgid "Battery 2 Icon"
 msgstr ""
 
-#: preferences/gattBas.js:72
-msgid "Used for second battery, if available"
-msgstr ""
-
-#: preferences/gattBas.js:81
+#: preferences/gattBas.js:83
 msgid "Battery 3 Icon"
-msgstr ""
-
-#: preferences/gattBas.js:82
-msgid "Used for third battery, if available"
 msgstr ""
 
 #: preferences/indicator.js:14
@@ -329,25 +321,39 @@ msgstr "Crowdin"
 msgid "Online Tutorials"
 msgstr "Tutoriais Online"
 
-#: ui/airpods.ui:9
-msgid "Airpods / Beats Settings"
+#: ui/airpods.ui:9 ui/quickSettings.ui:62
+msgid "Note!"
 msgstr ""
 
 #: ui/airpods.ui:12
-msgid "Enable AirPods / Beats Support"
+msgid "Conversation Awareness (if supported) works only with the A2DP profile."
 msgstr ""
 
-#: ui/airpods.ui:13
+#: ui/airpods.ui:17
+msgid ""
+"ANC and Conversation Awareness buttons are hidden when the earbuds are not "
+"in-ear."
+msgstr ""
+
+#: ui/airpods.ui:24
+msgid "AirPods/Beats Settings"
+msgstr ""
+
+#: ui/airpods.ui:27
+msgid "Enable AirPods/Beats Support"
+msgstr ""
+
+#: ui/airpods.ui:28
 msgid ""
 "Enables battery status monitoring and, if supported, control of Noise "
 "Cancellation and Conversation Awareness modes."
 msgstr ""
 
-#: ui/airpods.ui:26 ui/device.ui:9 ui/gattBas.ui:26 ui/upowerDevices.ui:26
+#: ui/airpods.ui:41 ui/device.ui:9 ui/gattBas.ui:26 ui/upowerDevices.ui:26
 msgid "Configuration by Device"
 msgstr ""
 
-#: ui/airpods.ui:29 ui/gattBas.ui:29
+#: ui/airpods.ui:44 ui/gattBas.ui:29
 msgid "No compatible device paired!"
 msgstr ""
 
@@ -589,12 +595,8 @@ msgid ""
 "connection status and alias"
 msgstr ""
 
-#: ui/quickSettings.ui:62
-msgid "Note!"
-msgstr ""
-
 #: ui/upowerDevices.ui:5
-msgid "Upower"
+msgid "UPower"
 msgstr ""
 
 #: ui/upowerDevices.ui:9
