@@ -1,7 +1,7 @@
 {
   "uuid": "Bluetooth-Battery-Meter@maniacx.github.com",
   "name": "Bluetooth Battery Meter",
-  "description": "A Gnome extension featuring indicator icons in system tray, serving as meter for Bluetooth device battery levels and providing detailed battery levels via icon/text in the Bluetooth quick settings menu.\n\nNote:\nCertain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check Readme for details.",
+  "description": "A Gnome extension featuring indicator icons in system tray, serving as meter for Bluetooth device battery levels and providing detailed battery levels via icon/text in the Bluetooth quick settings menu.\n\nNote:\nCertain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check Readme for details.\n\nNow supports Enhanced Mode.\nWhen enabled, it reports multiple battery levels and provides control using various widgets.\n\nCurrently supports:\nAirPods / Beats: Battery level, ANC (Active Noise Cancellation), Conversation Awareness, and in-ear detection for media pause/playback.\nGATT Battery Service: Multiple battery levels.",
   "url": "https://github.com/maniacx/Bluetooth-Battery-Meter",
   "shell-version": [ "45", "46", "47", "48" ],
   "session-modes": ["user", "unlock-dialog"],
