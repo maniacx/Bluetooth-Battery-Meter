@@ -2,7 +2,7 @@
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
   <template class="BBM_Airpods" parent="AdwPreferencesPage">
     <property name="name">Airpods</property>
-    <property name="title" translatable="yes">Airpods/Beats</property>
+    <property name="title" translatable="yes">AirPods/Beats</property>
     <property name="icon-name">bbm-earbuds-stem-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
@@ -21,10 +21,10 @@
     </child>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Airpods / Beats Settings</property>
+        <property name="title" translatable="yes">AirPods/Beats Settings</property>
         <child>
           <object class="AdwActionRow" id="row_airpods_device">
-            <property name="title" translatable="yes">Enable AirPods / Beats Support</property>
+            <property name="title" translatable="yes">Enable AirPods/Beats Support</property>
             <property name="subtitle" translatable="yes">Enables battery status monitoring and, if supported, control of Noise Cancellation and Conversation Awareness modes.</property>
             <property name="activatable-widget">enable_airpods_device</property>
             <child>

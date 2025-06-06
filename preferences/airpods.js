@@ -130,7 +130,7 @@ const  DeviceItem = GObject.registerClass({
             configureWindow.present();
         });
 
-        const airpodsLabel = _('Airpods/Beats');
+        const airpodsLabel = _('AirPods/Beats');
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
             tooltip_text: _('The button is available after disabling %s mode').format(airpodsLabel),

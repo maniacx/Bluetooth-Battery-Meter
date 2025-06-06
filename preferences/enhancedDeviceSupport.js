@@ -70,7 +70,7 @@ export const  EnhancedDeviceSupport = GObject.registerClass({
             Gio.SettingsBindFlags.DEFAULT
         );
 
-        const airpodsLabel = _('Airpods/Beats');
+        const airpodsLabel = _('AirPods/Beats');
         const basLabel = _('Battery Service (BAS)');
 
         this._row_enhanced_device_support.subtitle =
