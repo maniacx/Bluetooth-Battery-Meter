@@ -18,7 +18,7 @@ permalink: /preferences/airpods
 
 **Airpods / Beats Preferences**
 <br>
-<img src="../../assets/images/preferences/airpods/airpods-prefs.png" width="100%">
+<img src="{{ 'assets/images/preferences/airpods/airpods-prefs.png' | relative_url }}" width="100%">
 
 When enabled, the system can detect AirPods and Beats devices among connected Bluetooth devices. It uses a built-in Python script that communicates over L2CAP sockets to support features such as:
 
@@ -36,7 +36,7 @@ When enabled, the system can detect AirPods and Beats devices among connected Bl
 
 Configure per device settings if supported
 
-<img src="../../assets/images/preferences/airpods/airpods-device.png" width="80%">
+<img src="{{ 'assets/images/preferences/airpods/airpods-device.png' | relative_url }}" width="80%">
 
 
 ## Pause when device is not worn

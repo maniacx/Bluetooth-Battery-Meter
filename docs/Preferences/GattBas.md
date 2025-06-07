@@ -17,7 +17,7 @@ permalink: /preferences/gattbass
 
 **Battery Service (BAS) Preferences**
 <br>
-<img src="../../assets/images/preferences/gattbas/gattbas-prefs.png" width="100%">
+<img src="{{ 'assets/images/preferences/gattbas/gattbas-prefs.png' | relative_url }}" width="100%">
 
 When enabled, the built-in Python script retrieves one or more battery levels reported by the GATT Battery Service for each device.
 
@@ -27,7 +27,7 @@ If your device supports the Battery Service (UUID = 0000180f-0000-1000-8000-0080
 
 Configure per device settings if supported
 
-<img src="../../assets/images/preferences/gattbas/gattbas-device.png" width="80%">
+<img src="{{ 'assets/images/preferences/gattbas/gattbas-device.png' | relative_url }}" width="80%">
 
 ## Icon Preferences
 
@@ -44,19 +44,19 @@ This section defines a single icon used across various GNOME Shell interface loc
 
 * **Single Indicator**: Indicator displayed with Multiple Battery Indicator mode disabled.
 
-<img src="../../assets/images/preferences/gattbas/indicator-single.png" width="30%">
+<img src="{{ 'assets/images/preferences/gattbas/indicator-single.png' | relative_url }}" width="30%">
 
 * **Panel Button**: The icon shown in the GNOME top panel.
 
-<img src="../../assets/images/preferences/gattbas/panel-button.png" width="30%">
+<img src="{{ 'assets/images/preferences/gattbas/panel-button.png' | relative_url }}" width="30%">
 
 * **Quick Menu**: The icon shown in the quick settings dropdown.
 
-<img src="../../assets/images/preferences/gattbas/qs.png" width="60%">
+<img src="{{ 'assets/images/preferences/gattbas/qs.png' | relative_url }}" width="60%">
 
 * **Album Art**: For media devices, this may appear as a symbolic representation.
 
-<img src="../../assets/images/preferences/gattbas/album-art.png" width="20%">
+<img src="{{ 'assets/images/preferences/gattbas/album-art.png' | relative_url }}" width="20%">
 
 
 
@@ -71,11 +71,11 @@ Example: Battery1 icon: left earbud, Battery2 icon: right earbud, and Battery3 i
 
 * Multiple Battery Indicator mode,
 
-<img src="../../assets/images/preferences/gattbas/indicator-multiple.png" width="30%">
+<img src="{{ 'assets/images/preferences/gattbas/indicator-multiple.png' | relative_url }}" width="30%">
 
 * Circular battery widget.
 
-<img src="../../assets/images/preferences/gattbas/circular.png" width="25%">
+<img src="{{ 'assets/images/preferences/gattbas/circular.png' | relative_url }}" width="25%">
 
 
 ---

@@ -13,7 +13,7 @@ permalink: /preferences/upower
 
 **UPower Preferences**
 <br>
-<img src="../../assets/images/preferences/upower/upower-prefs.png" width="100%">
+<img src="{{ 'assets/images/preferences/upower/upower-prefs.png' | relative_url }}" width="100%">
 
 
 Enabling this feature will display a battery level indicator for UPower devices. This feature was introduced to show the battery status of non-Bluetooth devices, such as Lightspeed keyboards/mice or other peripherals that reports battery levels via UPower.
