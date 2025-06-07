@@ -7,9 +7,8 @@ permalink: /preferences
 ---
 
 ## Extension Preferences
-
 <br>
-<img src="../../assets/images/preferences/preferences.png" width="100%">
+<img src="{{ 'assets/images/preferences/preferences.png' | relative_url }}" width="100%">
 <br>
 <br>
 
