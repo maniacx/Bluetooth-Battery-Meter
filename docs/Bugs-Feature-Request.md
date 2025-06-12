@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bugs / Feature Request
-nav_order: 4
+nav_order: 3
 permalink: /bugs-feature-request
 ---
 
@@ -80,12 +80,15 @@ sudo reboot -f
 ```
 This can be helpful if gnome shell freezes (GUI stops). You can always move to terminal session using keys `CTRL+ALT+F3`, login, disable extension (if you know extension causing the problem) or disable all extension, kill gnome shell. Use `CTRL+ALT+F1` to login to display session.
 
+# Feature Request
 
-## Python script
-Logs for python script when using Enhanced Device Mode available at `/tmp/bluetooth_battery_meter.log`
+I have build this extension for me according to my requirements, so the features are limited.
+If you want certain feature, please try other extensions that report Bluetooth Battery Level that may fulfill your requirements.
+Here are few extensions
+* [UPower Battery](https://extensions.gnome.org/extension/5165/upower-battery/) by codilia
+* [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/) by Extensions Valhalla
+* [Bluetooth battery indicator](https://extensions.gnome.org/extension/3991/bluetooth-battery/) by michalwanat
 
-use the command below to monitor logs
-```
-tail -f /tmp/bluetooth_battery_meter.log
-```
+If still need to request a new feature [Raise an issue on Github](https://github.com/maniacx/Bluetooth-Battery-Meter/issues){: .btn .btn-purple .v-align-bottom .fs-2}.
+
 
