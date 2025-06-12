@@ -146,7 +146,7 @@ class AirpodsDevice(SocketHandler):
             self.check_model(modalias)
 
     def check_modalias(self):
-        """Check if discovery services are resolved. Need for GATT devices"""
+        """Return Modalias if available, may be missing initially."""
         modalias_raw = self.device_bluez_proxy.get_cached_property("Modalias")
         modalias = unwrap(modalias_raw)
         self.logger.debug("Modalias : %s", modalias)
@@ -154,6 +154,7 @@ class AirpodsDevice(SocketHandler):
 
     # pylint: disable=unused-argument
     def _on_bluez_properties_changed(self, interface, changed, invalidated_properties):
+        """Watch for Modalias appearing after initial connection."""
         props = unwrap(changed)
         self.logger.debug("PropertiesChanged: %s", props)
 
@@ -165,6 +166,7 @@ class AirpodsDevice(SocketHandler):
                 self.check_model(modalias)
 
     def check_model(self, modalias):
+        """Check if model supported"""
         self.model_init = True
 
         if self.bluez_signal_sub_id and self.device_bluez_proxy:
@@ -182,6 +184,7 @@ class AirpodsDevice(SocketHandler):
         self.start(SOCKET_PROTOCOL, PSM)
 
     def extract_model(self, modalias):
+        """Extract Model (PID) from Modalias"""
         prefix = "v004Cp"
         suffix = "d"
         try:

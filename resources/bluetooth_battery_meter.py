@@ -157,8 +157,9 @@ class Device(GObject.Object):
 
     # pylint: disable=unused-argument
     def _on_bluez_properties_changed(self, interface, changed, invalidated_properties):
+        """Handle device disconnection and trigger cleanup."""
         props = unwrap(changed)
-        self.logger.debug("PropertiesChanged %s", props)
+        self.logger.debug("PropertiesChanged: %s", props)
 
         if "Connected" in props:
             connected = props["Connected"]

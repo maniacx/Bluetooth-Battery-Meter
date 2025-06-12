@@ -59,6 +59,7 @@ class GattBasDevice:
 
     # pylint: disable=unused-argument
     def _on_bluez_properties_changed(self, interface, changed, invalidated_properties):
+        """Wait for service discovery to complete after connection."""
         props = unwrap(changed)
         self.logger.debug("PropertiesChanged: %s", props)
 
