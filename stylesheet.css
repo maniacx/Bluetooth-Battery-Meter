@@ -53,19 +53,10 @@
   min-height: 30px;
   padding: 1px;
 }
-.bbm-battery-horizontal-widget-label {
-  width: 3.1em;
-  padding-left: 4px;
-  padding-right: 4px;
-  font-size: 0.75em;
-} 
 .bbm-battery-veritcal-widget-label{
   padding-top: 4px;
   font-size: 0.75em;
   text-align: center;
-}
-.bbm-battery-horizontal-widget-box {
-  min-width: 15.2em;
 }
 .bbm-battery-vertical-widget-box {
   min-width: 5em;
