@@ -51,7 +51,8 @@
 }
 .bbm-panel-button-box {
   min-height: 30px;
-  padding: 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .bbm-battery-veritcal-widget-label{
   padding-top: 4px;
