@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-05 19:05-0700\n"
+"POT-Creation-Date: 2025-06-11 20:14-0700\n"
 "PO-Revision-Date: 2024-01-08 09:48+0100\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <(nothing)>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: lib/bluetoothToggle.js:519
+#: lib/bluetoothToggle.js:510
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -32,28 +32,28 @@ msgstr ""
 msgid "Bluetooth Battery Meter Error"
 msgstr ""
 
-#: lib/notifier.js:51 preferences/enhancedDeviceSupport.js:113
+#: lib/notifier.js:51 preferences/enhancedDeviceSupport.js:107
 msgid "Python 3 is not installed or not found in PATH."
 msgstr ""
 
-#: lib/notifier.js:52 preferences/enhancedDeviceSupport.js:114
+#: lib/notifier.js:52 preferences/enhancedDeviceSupport.js:108
 msgid ""
 "Please install Python 3.11 or ensure it is accessible from the command line."
 msgstr ""
 
-#: lib/notifier.js:61 preferences/enhancedDeviceSupport.js:131
+#: lib/notifier.js:61 preferences/enhancedDeviceSupport.js:125
 msgid "Python version is below 3.11"
 msgstr ""
 
-#: lib/notifier.js:64 preferences/enhancedDeviceSupport.js:134
+#: lib/notifier.js:64 preferences/enhancedDeviceSupport.js:128
 msgid "Python Bluetooth socket not available"
 msgstr ""
 
-#: lib/notifier.js:67 preferences/enhancedDeviceSupport.js:137
+#: lib/notifier.js:67 preferences/enhancedDeviceSupport.js:131
 msgid "PyGObject (gi.repository) is not available."
 msgstr ""
 
-#: lib/notifier.js:70 preferences/enhancedDeviceSupport.js:141
+#: lib/notifier.js:70 preferences/enhancedDeviceSupport.js:135
 #, javascript-format
 msgid ""
 "Python environment issues:\n"
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Configure device."
 msgstr ""
 
-#: preferences/airpods.js:133 preferences/enhancedDeviceSupport.js:73
+#: preferences/airpods.js:133 preferences/enhancedDeviceSupport.js:67
 #: ui/airpods.ui:5
 msgid "AirPods/Beats"
 msgstr ""
@@ -215,12 +215,12 @@ msgstr ""
 msgid "(Paired)"
 msgstr ""
 
-#: preferences/enhancedDeviceSupport.js:74 preferences/gattBas.js:180
+#: preferences/enhancedDeviceSupport.js:68 preferences/gattBas.js:180
 #: ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
 msgstr ""
 
-#: preferences/enhancedDeviceSupport.js:77
+#: preferences/enhancedDeviceSupport.js:71
 msgid "Enables advanced features via a Python script and custom UI elements:"
 msgstr ""
 
@@ -365,88 +365,76 @@ msgid "Enable Enhanced Device Support"
 msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:28
-msgid "Message Tray"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:32
-msgid "Show Message Tray Widget"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:33
-msgid "Display battery status and controls in the message tray."
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:47
 msgid "Panel button with Menu"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:51
+#: ui/enhancedDeviceSupport.ui:32
 msgid "Displays Panel Button"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:52
+#: ui/enhancedDeviceSupport.ui:33
 msgid "Adds a button to the panel with battery info and controls"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:66
+#: ui/enhancedDeviceSupport.ui:47
 msgid "Show Popup on Hover"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:70
+#: ui/enhancedDeviceSupport.ui:51
 msgid "Show Detailed Info on Hover"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:71
+#: ui/enhancedDeviceSupport.ui:52
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:83
+#: ui/enhancedDeviceSupport.ui:64
 msgid "Hover Activation Delay"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:84
+#: ui/enhancedDeviceSupport.ui:65
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:103
+#: ui/enhancedDeviceSupport.ui:84
 msgid "Multiple Battery Indicator"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:107
+#: ui/enhancedDeviceSupport.ui:88
 msgid "Show Separate Battery Indicators"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:108
+#: ui/enhancedDeviceSupport.ui:89
 msgid ""
 "When enabled, display one indicator per battery. When disabled, show a "
 "single indicator with the most critical (lowest) battery level."
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:122
+#: ui/enhancedDeviceSupport.ui:103
 msgid "Color Scheme"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:126
+#: ui/enhancedDeviceSupport.ui:107
 msgid "Battery Circle Widget Color Scheme"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:127
+#: ui/enhancedDeviceSupport.ui:108
 msgid "Choose color scheme for battery circle widget"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:143 ui/indicator.ui:118
+#: ui/enhancedDeviceSupport.ui:124 ui/indicator.ui:118
 msgid "Symbolic"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:144 ui/indicator.ui:119
+#: ui/enhancedDeviceSupport.ui:125 ui/indicator.ui:119
 msgid "Colored"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:145 ui/indicator.ui:120
+#: ui/enhancedDeviceSupport.ui:126 ui/indicator.ui:120
 msgid "Customized"
 msgstr ""
 
