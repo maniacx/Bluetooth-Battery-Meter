@@ -25,25 +25,6 @@
     </child>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Message Tray</property>
-        <property name="visible" bind-source="group_enhanced_device_support" bind-property="visible" bind-flags="sync-create" />
-        <child>
-          <object class="AdwActionRow">
-            <property name="title" translatable="yes">Show Message Tray Widget</property>
-            <property name="subtitle" translatable="yes">Display battery status and controls in the message tray.</property>
-            <property name="activatable-widget">enable_message_tray</property>
-            <property name="sensitive" bind-source="enable_enhanced_device_mode" bind-property="active" bind-flags="sync-create" />
-            <child>
-              <object class="GtkSwitch" id="enable_message_tray">
-                <property name="valign">center</property>
-              </object>
-            </child>
-          </object>
-        </child>
-      </object>
-    </child>
-    <child>
-      <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Panel button with Menu</property>
         <property name="visible" bind-source="group_enhanced_device_support" bind-property="visible" bind-flags="sync-create" />
         <child>

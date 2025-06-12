@@ -17,7 +17,6 @@ export const  EnhancedDeviceSupport = GObject.registerClass({
         'group_enhanced_device_support',
         'row_enhanced_device_support',
         'enable_enhanced_device_mode',
-        'enable_message_tray',
         'enable_panel_button_mode',
         'enable_hover_on_mode',
         'enable_multi_indicator_mode',
@@ -29,15 +28,10 @@ export const  EnhancedDeviceSupport = GObject.registerClass({
         super({});
         this._extensionPath = extensionPath;
         this._group_incompatible.visible = false;
+
         settings.bind(
             'enable-enhanced-device-mode',
             this._enable_enhanced_device_mode,
-            'active',
-            Gio.SettingsBindFlags.DEFAULT
-        );
-        settings.bind(
-            'enable-message-tray',
-            this._enable_message_tray,
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );

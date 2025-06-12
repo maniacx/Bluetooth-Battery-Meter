@@ -49,10 +49,6 @@
             <default>false</default>
             <summary>"enable display of multiple battery"</summary>
         </key>
-        <key name="enable-message-tray" type="b">
-            <default>false</default>
-            <summary>"enable display of message tray"</summary>
-        </key>
         <key name="enable-panel-button-mode" type="b">
             <default>false</default>
             <summary>"enable display of panel button"</summary>
