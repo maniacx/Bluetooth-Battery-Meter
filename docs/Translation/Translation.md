@@ -22,7 +22,7 @@ Thank you for your interest in contributing to this project. There are two strai
 
 ## Translation on Crowdin
 
-[<img src="{{ 'assets/images/translation/crowdin-logo.png' | relative_url }}" width="40%" target="_blank">](https://accounts.crowdin.com/register)
+[<img src="./assets/images/translation/crowdin-logo.png" width="40%" target="_blank">](https://accounts.crowdin.com/register)
 
 * Registering a free account on the Crowdin website is required.
 * Once your account registration is completed, Crowdin becomes easier to use as it provides several suggestions.
@@ -32,18 +32,18 @@ Thank you for your interest in contributing to this project. There are two strai
 > * This repository's GitHub cannot import translations from Crowdin. Consequently, upon completing the translation, contributors will need to manually upload files using a GitHub pull request.
 > * I do not receive notifications from Crowdin, so please communicate any queries using GitHub issues.
 
-<img src="{{ 'assets/images/translation/crowdin.png' | relative_url }}" width="100%">
+<img src="./assets/images/translation/crowdin.png" width="100%">
 
 ---
 
 ## Translation Using Poedit
 
-[<img src="{{ 'assets/images/translation/poedit-logo.png' | relative_url }}" width="40%">](https://flathub.org/apps/net.poedit.Poedit)
+[<img src="./assets/images/translation/poedit-logo.png" width="40%">](https://flathub.org/apps/net.poedit.Poedit)
 
 * Downloading and installing the Poedit software on your computer is required.
 * It's fast and easy to interact with.
 
-<img src="{{ 'assets/images/translation/poedit.png' | relative_url }}" width="100%">
+<img src="./assets/images/translation/poedit.png" width="100%">
 
 ---
 

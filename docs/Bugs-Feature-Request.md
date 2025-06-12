@@ -17,7 +17,7 @@ Encountering issues with this extension? Please follow the steps below for troub
 5. **Extension-Specific Issue**: If the battery level appears correctly in Gnome Control Center but not in this extension, please [Raise an issue on GitHub](https://github.com/maniacx/Bluetooth-Battery-Meter/issues){: .btn .btn-purple .v-align-bottom .fs-2}.
 
 **Gnome Control Center**
-<img src="{{ 'assets/images/bugs/power.png' | relative_url }}" width="100%">
+<img src="./assets/images/bugs/power.png" width="100%">
 
 ### Battery Level Inaccuracies or Stuck Readings
 * **Understanding Battery Reporting Increments**:

@@ -6,8 +6,8 @@ description: "Bluetooth Battery Meter"
 permalink: /
 ---
 # Bluetooth Battery Meter
-[<img src="{{ 'assets/images/home/get-it-on-gnome-extension.png' | relative_url }}" width="45%">](https://extensions.gnome.org/extension/6670/bluetooth-battery-meter/)
-[<img src="{{ 'assets/images/home/view-sources-on-github.png' | relative_url }}" width="45%" class="float-right">](https://github.com/maniacx/Bluetooth-Battery-Meter)
+[<img src="./assets/images/home/get-it-on-gnome-extension.png" width="45%">](https://extensions.gnome.org/extension/6670/bluetooth-battery-meter/)
+[<img src="./assets/images/home/view-sources-on-github.png" width="45%" class="float-right">](https://github.com/maniacx/Bluetooth-Battery-Meter)
 
 {: .important-title }
 > Currently supported on Gnome Versions:
@@ -21,7 +21,7 @@ permalink: /
 <br>
 <br>
 
-<img src="{{ 'assets/images/home/main.png' | relative_url }}" width="100%">
+<img src="./assets/images/home/main.png" width="100%">
 
 # Important Notes
 

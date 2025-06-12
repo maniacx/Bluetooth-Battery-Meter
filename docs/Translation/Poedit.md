@@ -36,26 +36,26 @@ Begin by choosing one of the following methods:
 
 ---
 ### 1. Click `Create new...`
-<img src="{{ 'assets/images/translation/poedit-guide/create-new.png' | relative_url }}" width="40%">
+<img src="./assets/images/translation/poedit-guide/create-new.png" width="40%">
 
 ---
 ### 2. Select `Bluetooth Battery Meter.pot` and Click `Open`
-<img src="{{ 'assets/images/translation/poedit-guide/create-open-dialog.png' | relative_url }}" width="80%">
+<img src="./assets/images/translation/poedit-guide/create-open-dialog.png" width="80%">
 
 ---
 ### 3. Select language and Click `Ok`
-<img src="{{ 'assets/images/translation/poedit-guide/create-select-language.png' | relative_url }}" width="40%">
+<img src="./assets/images/translation/poedit-guide/create-select-language.png" width="40%">
 
 ---
 ### 4. Select the string to translate.
 ### 5. Enter the translation for the selected string.
 ### 6. Repeat for other strings.
 ### 7. Once complete, click `Save`.
-<img src="{{ 'assets/images/translation/poedit-guide/create-translation.png' | relative_url }}" width="100%">
+<img src="./assets/images/translation/poedit-guide/create-translation.png" width="100%">
 
 ---
 ### 8. Save the file with a `.po` extension.
-<img src="{{ 'assets/images/translation/poedit-guide/create-save.png' | relative_url }}" width="80%">
+<img src="./assets/images/translation/poedit-guide/create-save.png" width="80%">
 
 ---
 ### 9. Once the file is saved (e.g., `pt_BR.po` for Brazilian Portuguese), create a Pull Request on GitHub.
@@ -68,26 +68,26 @@ Begin by choosing one of the following methods:
 
 ---
 ### 1. Click `Browse files...`
-<img src="{{ 'assets/images/translation/poedit-guide/update-new.png' | relative_url }}" width="40%">
+<img src="./assets/images/translation/poedit-guide/update-new.png" width="40%">
 
 ---
 ### 2. Select `pt_BR.po` and Click `Open`
-<img src="{{ 'assets/images/translation/poedit-guide/update-open-dialog.png' | relative_url }}" width="80%">
+<img src="./assets/images/translation/poedit-guide/update-open-dialog.png" width="80%">
 
 ---
 ### 3. Click `Translation` and `Update from POT File`
-<img src="{{ 'assets/images/translation/poedit-guide/update-pot-file.png' | relative_url }}" width="100%">
+<img src="./assets/images/translation/poedit-guide/update-pot-file.png" width="100%">
 
 ---
 ### 4. Select the pot file and Click `Open`
-<img src="{{ 'assets/images/translation/poedit-guide/update-pot.png' | relative_url }}" width="100%">
+<img src="./assets/images/translation/poedit-guide/update-pot.png" width="100%">
 
 ---
 ### 5. Select the string to translate.
 ### 6. Enter the translation for the selected string.
 ### 7. Repeat for other strings.
 ### 8. Once complete, click `Save`.
-<img src="{{ 'assets/images/translation/poedit-guide/update-translation.png' | relative_url }}" width="100%">
+<img src="./assets/images/translation/poedit-guide/update-translation.png" width="100%">
 
 ---
 ### 9. Once the file is saved (e.g., `pt_BR.po` for Brazilian Portuguese), create a Pull Request on GitHub.
