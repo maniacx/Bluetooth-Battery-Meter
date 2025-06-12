@@ -7,9 +7,6 @@ permalink: /development
 
 ## Reference
 
-Python standard
-<https://docs.python.org/3/library/>
-
 Socket
 <https://docs.python.org/3/library/socket.html#module-socket>
 
@@ -21,6 +18,7 @@ PyGobject Gio
 
 Dbus service
 <https://github.com/tuhiproject/tuhi/blob/master/tuhi/dbusserver.py>
+
 
 
 ### Airpods
