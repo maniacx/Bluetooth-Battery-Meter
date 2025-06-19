@@ -20,7 +20,7 @@ gnome-extensions pack ./ \
     --extra-source=icons/ \
     --extra-source=lib/ \
     --extra-source=preferences/ \
-    --extra-source=resources/ \
+    --extra-source=service/ \
     --extra-source=ui/ \
     --podir=po \
     --force \

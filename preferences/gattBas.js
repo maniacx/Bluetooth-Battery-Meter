@@ -6,7 +6,7 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
-import {supportedCommonIcons, supportedCircularWidgetIcons} from '../lib/gattBas/gattBasHelper.js';
+import {supportedCommonIcons, supportedCircularWidgetIcons} from '../lib/gattBas/gattBasConfig.js';
 
 const  ConfigureWindow = GObject.registerClass({
 }, class ConfigureWindow extends Adw.Window {

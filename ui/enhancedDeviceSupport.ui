@@ -5,9 +5,6 @@
     <property name="title" translatable="yes">Enhanced Device Support</property>
     <property name="icon-name">bbm-enhanced-device-symbolic</property>
     <child>
-      <object class="AdwPreferencesGroup" id="group_incompatible" />
-    </child>
-    <child>
       <object class="AdwPreferencesGroup" id="group_enhanced_device_support">
         <property name="title" translatable="yes">Enhanced Device Support</property>
         <child>
