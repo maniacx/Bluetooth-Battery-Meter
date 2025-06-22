@@ -24,31 +24,6 @@
   padding-left: 4px;
   padding-right: 4px;
 }
-.bbm-message-box:ltr {
-  padding-left: 2px;
-  padding-right: 18px;
-}
-.bbm-message-box:rtl {
-  padding-left: 18px;
-  padding-right: 2px;
-}
-.bbm-message-45-box:ltr {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 2px;
-  padding-right: 18px;
-}
-.bbm-message-45-box:rtl {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 18px;
-  padding-right: 2px;
-}
-.bbm-message-title {
-  padding-left: 2px;
-  padding-right: 2px;
-  font-weight: bold;
-}
 .bbm-panel-button-box {
   min-height: 30px;
   padding-top: 8px;
