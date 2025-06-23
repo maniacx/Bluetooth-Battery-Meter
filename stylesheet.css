@@ -4,12 +4,20 @@
 .bbm-panel-title-label {
   font-weight: bold;
   text-align: center;
+  padding: 4px;
 }
-.bbm-panel-popup-menu {
-  min-width: 15em;
+.bbm-popup-menu {
+  min-width: 14em;
+  background-color: rgba(128, 128, 128, 0);
+}
+.bbm-popup-menu:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.bbm-popup-menu:focus {
+  background-color: rgba(128, 128, 128, 0.1);
 }
 .bbm-panel-label-model {
-  padding-top: 8px;
+  padding-top: 2px;
   padding-bottom: 8px;
   font-weight: bold;
 }
@@ -27,7 +35,7 @@
 .bbm-panel-button-box {
   min-height: 30px;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
 }
 .bbm-battery-veritcal-widget-label{
   padding-top: 4px;
@@ -39,12 +47,6 @@
 }
 .bbm-battery-vertical-space-bin {
   min-width: 20px
-}
-.bbm-popup {
-  background-color: rgba(128, 128, 128, 0);
-}
-.bbm-popup:hover {
-  background-color: rgba(128, 128, 128, 0);
 }
 .bbm-toggle-bin {
   padding: 1px;
