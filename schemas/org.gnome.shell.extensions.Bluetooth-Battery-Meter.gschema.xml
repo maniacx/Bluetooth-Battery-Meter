@@ -65,6 +65,10 @@
             <default>1000</default>
             <summary>"onhover delay time in milliseconds"</summary>
         </key>
+        <key name="attenuated-on-destroy-info" type="as">
+            <default>[]</default>
+            <summary>On destroy attenuated info</summary>
+        </key>
         <key name="default-selected-path" type="s">
             <default>''</default>
             <summary>"Store path if activated"</summary>
