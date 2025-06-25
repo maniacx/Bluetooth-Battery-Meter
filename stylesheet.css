@@ -7,7 +7,7 @@
   padding: 4px;
 }
 .bbm-popup-menu {
-  min-width: 14em;
+  min-width: 15em;
   background-color: rgba(128, 128, 128, 0);
 }
 .bbm-popup-menu:hover {
@@ -33,7 +33,6 @@
   padding-right: 4px;
 }
 .bbm-panel-button-box {
-  min-height: 30px;
   padding-top: 8px;
   padding-bottom: 2px;
 }
@@ -49,29 +48,27 @@
   min-width: 20px
 }
 .bbm-toggle-bin {
-  padding: 1px;
-}
-.bbm-toggle-button {
-  margin: 0.5px;
-  min-height: 1.5em;
-  padding-left: 4px;
-  padding-right: 4px;
+  border-radius: 4px;
   background-color: rgba(128, 128, 128, 0.3);
 }
+.bbm-toggle-button {
+  min-height: 28px;
+  min-width: 25px
+}
 .bbm-toggle-button:hover {
+  border-radius: 4px;
   background-color: rgba(128, 128, 128, 0.4);
 }
 .bbm-toggle-button:checked {
+  border-radius: 4px;
   background-color: rgba(128, 128, 128, 0.9);
 }
-.bbm-toggle-button-start {
-  border-radius: 4px 0 0 4px;
+.bbm-separator {
+  min-width: 0.5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
-.bbm-toggle-button-middle {
-  border-radius: 0;
-}
-.bbm-toggle-button-end {
-  border-radius: 0 4px 4px 0;
-}
+
+
 
 
