@@ -36,37 +36,37 @@ const  ConfigureWindow = GObject.registerClass({
 
         page.add(aliasGroup);
 
-        if (pathInfo.caSupported) {
-            const inEarSettingsGroup = new Adw.PreferencesGroup({
-                title: _('Playback Behavior'),
-            });
+        const inEarSettingsGroup = new Adw.PreferencesGroup({
+            title: _('Playback Behavior'),
+        });
 
-            const inEarSettingsRow = new Adw.ActionRow({
-                title: _('Pause when device is not worn'),
-                subtitle: _('Pause playback when the device is removed,' +
+        const inEarSettingsRow = new Adw.ActionRow({
+            title: _('Pause when device is not worn'),
+            subtitle: _('Pause playback when the device is removed,' +
                     'resume when it is put back on'),
-            });
+        });
 
-            const inEarSettingsSwitch = new Gtk.Switch({
-                valign: Gtk.Align.CENTER,
-            });
+        const inEarSettingsSwitch = new Gtk.Switch({
+            valign: Gtk.Align.CENTER,
+        });
 
-            inEarSettingsSwitch.active = pathInfo.inEarControl;
-            inEarSettingsSwitch.connect('notify::active', () => {
-                const pairedDevice = settings.get_strv('airpods-list');
-                const existingPathIndex =
+        inEarSettingsSwitch.active = pathInfo.inEarControl;
+        inEarSettingsSwitch.connect('notify::active', () => {
+            const pairedDevice = settings.get_strv('airpods-list');
+            const existingPathIndex =
                 pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
-                if (existingPathIndex !== -1) {
-                    const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
-                    existingItem['in-ear-control-enabled'] = inEarSettingsSwitch.active;
-                    pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
-                    settings.set_strv('airpods-list', pairedDevice);
-                }
-            });
-            inEarSettingsRow.add_suffix(inEarSettingsSwitch);
-            inEarSettingsGroup.add(inEarSettingsRow);
-            page.add(inEarSettingsGroup);
+            if (existingPathIndex !== -1) {
+                const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
+                existingItem['in-ear-control-enabled'] = inEarSettingsSwitch.active;
+                pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
+                settings.set_strv('airpods-list', pairedDevice);
+            }
+        });
+        inEarSettingsRow.add_suffix(inEarSettingsSwitch);
+        inEarSettingsGroup.add(inEarSettingsRow);
+        page.add(inEarSettingsGroup);
 
+        if (pathInfo.caSupported) {
             const awarnessVolumeGroup = new Adw.PreferencesGroup({
                 title: _('Volume Level'),
             });
