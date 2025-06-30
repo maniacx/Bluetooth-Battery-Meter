@@ -6,6 +6,8 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
+import {AirpodsModelList} from '../lib/devices/airpods/airpodsConfig.js';
+
 const  ConfigureWindow = GObject.registerClass({
 }, class ConfigureWindow extends Adw.Window {
     _init(settings, mac, deviceItem, pathInfo, parentWindow) {
@@ -16,6 +18,8 @@ const  ConfigureWindow = GObject.registerClass({
             modal: true,
             transient_for: parentWindow,
         });
+
+        const modelData = AirpodsModelList.find(m => m.key === pathInfo.model);
 
         const toolViewBar = new Adw.ToolbarView();
 
@@ -66,7 +70,7 @@ const  ConfigureWindow = GObject.registerClass({
         inEarSettingsGroup.add(inEarSettingsRow);
         page.add(inEarSettingsGroup);
 
-        if (pathInfo.caSupported) {
+        if (modelData.awarenessSupported) {
             const awarnessVolumeGroup = new Adw.PreferencesGroup({
                 title: _('Volume Level'),
             });
@@ -103,7 +107,7 @@ const  ConfigureWindow = GObject.registerClass({
             page.add(awarnessVolumeGroup);
         }
 
-        if (pathInfo.adaptiveSupported) {
+        if (modelData.adaptiveSupported) {
             const adaptiveLevelGroup = new Adw.PreferencesGroup({
                 title: _('Customize Adaptive Audio'),
             });
@@ -264,10 +268,9 @@ export const  Airpods = GObject.registerClass({
         for (const info of pathsString) {
             const pathInfo = {
                 path: info['path'],
+                model: info['model'],
                 icon: info['icon'],
                 alias: info['alias'],
-                adaptiveSupported: info['adaptive-supported'],
-                caSupported: info['ca-supported'],
                 inEarControl: info['in-ear-control-enabled'],
                 caVolume: info['ca-volume'],
                 adaptiveLevel: info['adaptive-level'],
