@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-11 20:14-0700\n"
+"POT-Creation-Date: 2025-06-29 21:49-0700\n"
 "PO-Revision-Date: 2023-04-07 19:46+0300\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -20,48 +20,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/bluetoothToggle.js:510
+#: lib/bluetoothToggle.js:511
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d свързано"
 msgstr[1] "%d свързани"
 
-#: lib/notifier.js:16 lib/panelButton.js:15 lib/panelButton.js:27
+#: lib/panelButton.js:15 lib/panelButton.js:27
 msgid "Bluetooth Battery Meter"
-msgstr ""
-
-#: lib/notifier.js:21
-msgid "Bluetooth Battery Meter Error"
-msgstr ""
-
-#: lib/notifier.js:51 preferences/enhancedDeviceSupport.js:107
-msgid "Python 3 is not installed or not found in PATH."
-msgstr ""
-
-#: lib/notifier.js:52 preferences/enhancedDeviceSupport.js:108
-msgid ""
-"Please install Python 3.11 or ensure it is accessible from the command line."
-msgstr ""
-
-#: lib/notifier.js:61 preferences/enhancedDeviceSupport.js:125
-msgid "Python version is below 3.11"
-msgstr ""
-
-#: lib/notifier.js:64 preferences/enhancedDeviceSupport.js:128
-msgid "Python Bluetooth socket not available"
-msgstr ""
-
-#: lib/notifier.js:67 preferences/enhancedDeviceSupport.js:131
-msgid "PyGObject (gi.repository) is not available."
-msgstr ""
-
-#: lib/notifier.js:70 preferences/enhancedDeviceSupport.js:135
-#, javascript-format
-msgid ""
-"Python environment issues:\n"
-"\n"
-"%s"
 msgstr ""
 
 #: preferences/about.js:42
@@ -82,44 +49,63 @@ msgstr ""
 "Тази програма идва без всякаква гаранция. За повече информация вижте <a "
 "href='%s'>%s</a>."
 
-#: preferences/airpods.js:40
+#: preferences/airpods.js:44
 msgid "Playback Behavior"
 msgstr ""
 
-#: preferences/airpods.js:44
+#: preferences/airpods.js:48
 msgid "Pause when device is not worn"
 msgstr ""
 
-#: preferences/airpods.js:45
-msgid ""
-"Pause playback when the device is removed, resume when it is put back on"
+#: preferences/airpods.js:49
+msgid "Pause playback when the device is removed,resume when it is put back on"
 msgstr ""
 
-#: preferences/airpods.js:69
+#: preferences/airpods.js:75
 msgid "Volume Level"
 msgstr ""
 
-#: preferences/airpods.js:83
-msgid "Conversation awareness volume Limit"
+#: preferences/airpods.js:87
+msgid "Conversation awareness volume limit"
 msgstr ""
 
-#: preferences/airpods.js:84
+#: preferences/airpods.js:88
 msgid ""
 "Limits media volume to this percentage during conversation. Note: No change "
 "if current volume is below this level."
 msgstr ""
 
-#: preferences/airpods.js:121 preferences/device.js:211
-#: preferences/gattBas.js:168 preferences/upowerDevices.js:155
+#: preferences/airpods.js:112 preferences/airpods.js:116
+msgid "Customize Adaptive Audio"
+msgstr ""
+
+#: preferences/airpods.js:117
+msgid "Customize Adaptive Audio to allow more or less noise"
+msgstr ""
+
+#: preferences/airpods.js:125
+msgid "Less"
+msgstr ""
+
+#: preferences/airpods.js:126
+msgid "Default"
+msgstr ""
+
+#: preferences/airpods.js:127
+msgid "More"
+msgstr ""
+
+#: preferences/airpods.js:172 preferences/device.js:211
+#: preferences/gattBas.js:171 preferences/upowerDevices.js:155
 msgid "Configure device."
 msgstr ""
 
-#: preferences/airpods.js:133 preferences/enhancedDeviceSupport.js:67
+#: preferences/airpods.js:184 preferences/enhancedDeviceSupport.js:61
 #: ui/airpods.ui:5
 msgid "AirPods/Beats"
 msgstr ""
 
-#: preferences/airpods.js:136 preferences/gattBas.js:183
+#: preferences/airpods.js:187 preferences/gattBas.js:186
 #, javascript-format
 msgid "The button is available after disabling %s mode"
 msgstr ""
@@ -144,7 +130,7 @@ msgstr ""
 msgid "Icon"
 msgstr ""
 
-#: preferences/device.js:62 preferences/gattBas.js:42 preferences/gattBas.js:47
+#: preferences/device.js:62 preferences/gattBas.js:45 preferences/gattBas.js:50
 #: preferences/upowerDevices.js:50
 msgid "Select Icon"
 msgstr ""
@@ -218,36 +204,36 @@ msgstr ""
 msgid "(Paired)"
 msgstr ""
 
-#: preferences/enhancedDeviceSupport.js:68 preferences/gattBas.js:180
+#: preferences/enhancedDeviceSupport.js:62 preferences/gattBas.js:183
 #: ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
 msgstr ""
 
-#: preferences/enhancedDeviceSupport.js:71
-msgid "Enables advanced features via a Python script and custom UI elements:"
+#: preferences/enhancedDeviceSupport.js:65
+msgid "Enables advanced features and custom UI elements:"
 msgstr ""
 
-#: preferences/gattBas.js:43
+#: preferences/gattBas.js:46
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
 msgstr ""
 
-#: preferences/gattBas.js:48
+#: preferences/gattBas.js:51
 msgid "Multiple Indicators, Circular Battery Widgets"
 msgstr ""
 
-#: preferences/gattBas.js:56
+#: preferences/gattBas.js:59
 msgid "Icon "
 msgstr ""
 
-#: preferences/gattBas.js:65
+#: preferences/gattBas.js:68
 msgid "Battery 1 Icon"
 msgstr ""
 
-#: preferences/gattBas.js:74
+#: preferences/gattBas.js:77
 msgid "Battery 2 Icon"
 msgstr ""
 
-#: preferences/gattBas.js:83
+#: preferences/gattBas.js:86
 msgid "Battery 3 Icon"
 msgstr ""
 
@@ -315,35 +301,44 @@ msgstr ""
 msgid "Note!"
 msgstr ""
 
-#: ui/airpods.ui:12
+#: ui/airpods.ui:16 ui/gattBas.ui:15
+msgid "Experimental"
+msgstr ""
+
+#: ui/airpods.ui:21
+msgid ""
+"Some models/features are not fully tested. Please share feedback on GitHub."
+msgstr ""
+
+#: ui/airpods.ui:26
 msgid "Conversation Awareness (if supported) works only with the A2DP profile."
 msgstr ""
 
-#: ui/airpods.ui:17
+#: ui/airpods.ui:31
 msgid ""
 "ANC and Conversation Awareness buttons are hidden when the earbuds are not "
 "in-ear."
 msgstr ""
 
-#: ui/airpods.ui:24
+#: ui/airpods.ui:38
 msgid "AirPods/Beats Settings"
 msgstr ""
 
-#: ui/airpods.ui:27
+#: ui/airpods.ui:41
 msgid "Enable AirPods/Beats Support"
 msgstr ""
 
-#: ui/airpods.ui:28
+#: ui/airpods.ui:42
 msgid ""
 "Enables battery status monitoring and, if supported, control of Noise "
 "Cancellation and Conversation Awareness modes."
 msgstr ""
 
-#: ui/airpods.ui:41 ui/device.ui:9 ui/gattBas.ui:26 ui/upowerDevices.ui:26
+#: ui/airpods.ui:55 ui/device.ui:9 ui/gattBas.ui:35 ui/upowerDevices.ui:26
 msgid "Configuration by Device"
 msgstr ""
 
-#: ui/airpods.ui:44 ui/gattBas.ui:29
+#: ui/airpods.ui:58 ui/gattBas.ui:38
 msgid "No compatible device paired!"
 msgstr ""
 
@@ -359,97 +354,97 @@ msgstr ""
 msgid "No Bluetooth device paired!"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:5 ui/enhancedDeviceSupport.ui:12
+#: ui/enhancedDeviceSupport.ui:5 ui/enhancedDeviceSupport.ui:9
 msgid "Enhanced Device Support"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:15
+#: ui/enhancedDeviceSupport.ui:12
 msgid "Enable Enhanced Device Support"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:28
+#: ui/enhancedDeviceSupport.ui:25
 msgid "Panel button with Menu"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:32
+#: ui/enhancedDeviceSupport.ui:29
 msgid "Displays Panel Button"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:33
+#: ui/enhancedDeviceSupport.ui:30
 msgid "Adds a button to the panel with battery info and controls"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:47
+#: ui/enhancedDeviceSupport.ui:44
 msgid "Show Popup on Hover"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:51
+#: ui/enhancedDeviceSupport.ui:48
 msgid "Show Detailed Info on Hover"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:52
+#: ui/enhancedDeviceSupport.ui:49
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:64
+#: ui/enhancedDeviceSupport.ui:61
 msgid "Hover Activation Delay"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:65
+#: ui/enhancedDeviceSupport.ui:62
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:84
+#: ui/enhancedDeviceSupport.ui:81
 msgid "Multiple Battery Indicator"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:88
+#: ui/enhancedDeviceSupport.ui:85
 msgid "Show Separate Battery Indicators"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:89
+#: ui/enhancedDeviceSupport.ui:86
 msgid ""
 "When enabled, display one indicator per battery. When disabled, show a "
 "single indicator with the most critical (lowest) battery level."
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:103
+#: ui/enhancedDeviceSupport.ui:100
 msgid "Color Scheme"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:107
+#: ui/enhancedDeviceSupport.ui:104
 msgid "Battery Circle Widget Color Scheme"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:108
+#: ui/enhancedDeviceSupport.ui:105
 msgid "Choose color scheme for battery circle widget"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:124 ui/indicator.ui:118
+#: ui/enhancedDeviceSupport.ui:121 ui/indicator.ui:118
 msgid "Symbolic"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:125 ui/indicator.ui:119
+#: ui/enhancedDeviceSupport.ui:122 ui/indicator.ui:119
 msgid "Colored"
 msgstr ""
 
-#: ui/enhancedDeviceSupport.ui:126 ui/indicator.ui:120
+#: ui/enhancedDeviceSupport.ui:123 ui/indicator.ui:120
 msgid "Customized"
 msgstr ""
 
-#: ui/gattBas.ui:9
+#: ui/gattBas.ui:18
 msgid "Battery Service (BAS) Settings"
 msgstr ""
 
-#: ui/gattBas.ui:12
+#: ui/gattBas.ui:21
 msgid "Enable GATT Battery Service Reporting"
 msgstr ""
 
-#: ui/gattBas.ui:13
+#: ui/gattBas.ui:22
 msgid ""
 "Display battery levels for Bluetooth devices using the GATT Battery Service "
 "(BAS)."
