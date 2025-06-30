@@ -6,6 +6,15 @@
     <property name="icon-name">bbm-gatt-bas-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
+        <property name="header-suffix">
+          <object class="GtkButton">
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="margin-start">6</property>
+            <property name="css-classes">error</property>
+            <property name="label" translatable="yes">Experimental</property>
+          </object>
+        </property>
         <property name="title" translatable="yes">Battery Service (BAS) Settings</property>
         <child>
           <object class="AdwActionRow">

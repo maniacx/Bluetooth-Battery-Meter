@@ -7,6 +7,20 @@
     <child>
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Note!</property>
+        <property name="header-suffix">
+          <object class="GtkButton">
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="margin-start">6</property>
+            <property name="css-classes">error</property>
+            <property name="label" translatable="yes">Experimental</property>
+          </object>
+        </property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="subtitle" translatable="yes">Some models/features are not fully tested. Please share feedback on GitHub.</property>
+          </object>
+        </child>
         <child>
           <object class="AdwActionRow">
             <property name="subtitle" translatable="yes">Conversation Awareness (if supported) works only with the A2DP profile.</property>
