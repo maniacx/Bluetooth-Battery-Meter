@@ -66,22 +66,23 @@ permalink: /
 
 * Customizable battery bar and dot colors.
 
-## Enhanced Device Mode (Optional Mode - Requires Python Script)
+## Enhanced Device Mode (Optional Mode)
 
-* The extension uses a built-in Python script to enhance battery reporting and device control. It communicates with supported devices using:
+* In Enhanced Device Mode, the extension uses additional communication methods to retrieve detailed battery information and control features such as Active Noise Cancellation (ANC):
 
-   - Socket-based interface for devices like AirPods/Beats to retrieve battery levels and control features such as ANC.
+   - AirPods/Beats: Socket-based interface for devices like AirPods/Beats to fetch battery levels and control features such as ANC.
 
-   - D-Bus GATT Battery Service (BAS) for standard Bluetooth devices that expose battery information via the GATT protocol.
-
+   - D-Bus GATT Battery Service (BAS):  for standard Bluetooth devices that expose battery information via the GATT protocol.
 
 * Provides additional UI widgets to display battery levels and control features such as ANC:
-
-   - Message Tray notifications
 
    - Panel Button
 
    - On-hover details
 
    - Multiple indicator mode
+
+
+
+
    

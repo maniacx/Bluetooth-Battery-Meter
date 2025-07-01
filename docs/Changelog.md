@@ -7,8 +7,18 @@ permalink: /changelogs
 
 # Changelogs
 
+
 {: .important-title }
-> GN-45_Version 33 &emsp;&emsp; Jun 06, 2025
+> * GN-45_Version 35 &emsp;&emsp; Jun 30, 2025
+> * Removed the dependency on the Python script by using BlueZ's ProfileManager1 to handle socket communication directly within the GNOME Shell extension.
+> * Added support for Adaptive Audio customization.
+
+{: .important-title }
+> GN-45_Version 34 &emsp;&emsp; Jun 07, 2025 (Rejected by Gnome reviewer)
+> * Removed Message Tray Feature
+
+{: .important-title }
+> GN-45_Version 33 &emsp;&emsp; Jun 06, 2025 (Rejected by Gnome reviewer)
 > * Added support Enhanced Devices for Airpods and GATT Battery Service (BAS) devices using python scripy
 > * Added message tray, panel button, onHover, Multple Indicator widget for battery reportinh and control
 > * French translation update

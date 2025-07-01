@@ -23,13 +23,10 @@ permalink: /preferences/airpods
 When enabled, the system can detect AirPods and Beats devices among connected Bluetooth devices. It uses a built-in Python script that communicates over L2CAP sockets to support features such as:
 
 * Battery level reporting
+* In-ear detection for automatic pause/play of media
 * Control of ANC (Active Noise Cancellation) mode (if supported)
 * Conversation Awareness mode (if supported)
-* In-ear detection for automatic pause/play of media
-
-
-
-
+* Adaptive noise level customization (if supported)
 
  
 ## Configuration by Device
@@ -48,7 +45,8 @@ When this option is enabled, the system intelligently controls media playback ba
 This feature relies on in-ear detection supported by compatible devices (e.g., certain AirPods or Beats models) and helps conserve battery and avoid missed content.
 
 ## Conversation awareness volume Limit
-This setting limits media volume during active conversations to enhance awareness of your surroundings and reduce distractions.
+
+If supported by device, this setting limits media volume during active conversations to enhance awareness of your surroundings and reduce distractions.
 
 * When conversation mode is triggered (based on supported device capabilities), the system automatically reduces media volume to a user-defined percentage of the maximum volume.
 
@@ -59,3 +57,8 @@ Adjustable Range
 * You can set the volume limit to any value between 0 and 50.
 * Values are interpreted as a percentage of the device's maximum volume.
 * Note: If the current playback volume is already below the specified limit, no adjustment will be made.
+
+## Customize Adaptive Audio
+If supported by device, Adaptive Audio is customizable. Moving the slider adjusts the level of external noise that is permitted to pass through in Adaptive mode.
+
+

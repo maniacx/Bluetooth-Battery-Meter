@@ -5,34 +5,13 @@ nav_order: 2
 permalink: /installation
 ---
 
-# Modes and Requirements
-
-## 1. Normal Mode
-
-**Requirement: Enable Experimental BlueZ**
-
-This is the default mode. The extension needs BlueZ's experimental feature enabled so it can access and display battery levels for supported Bluetooth devices.
+# Requirements
 
 ---
 
-## 2. Enhanced Mode *(Disabled by default)*
 
-**Requirement: Python Environment**
+## Enable Experimental Bluez
 
-Enhanced Mode runs an external Python script to provide:
-
-- Multiple battery readings (e.g., left, right, and case for earbuds, or main/backup for keyboards)
-- Advanced features like ANC control (for supported devices)
-
-**Dependencies:**
-
-- Python **3.11** with **Bluetooth socket** support (available on most distributions)
-- **PyGObject** (usually pre-installed on GNOME-based distributions)
-
-
-# Enable Experimental Bluez
-
----
 
 If bluetooth device is not reporting battery level, it could be that it needs Bluez Experimental.
 Note: Some bluetooth devices may also require to enable Bluez kernel experimental feature.
@@ -79,6 +58,11 @@ KernelExperimental = true
 
 {: .warning }
 This extension may conflict with other Bluetooth related Gnome Extensions. It's better to disable or remove them before using this extension.
+
+
+{: .warning }
+If you enable Enhanced Mode, make sure to disable other apps, extensions, or scripts accessing the same device (e.g., AirPods) to avoid conflicts when communicating over the socket.
+
 
 ## Gnome Extension Website
 

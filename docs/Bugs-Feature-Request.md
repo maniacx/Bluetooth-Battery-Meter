@@ -47,6 +47,11 @@ For Gnome Shell - logs related to the extension:
 journalctl -f -o cat /usr/bin/gnome-shell
 ```
 
+Enhanced Device Socket Handler logs are logged in a seperate file.
+```bash
+tail -f /tmp/bluetooth_battery_meter/service.log
+```
+
 For GJS - logs related to extension preferences:
 ```bash
 journalctl -f -o cat /usr/bin/gjs
@@ -80,12 +85,4 @@ sudo reboot -f
 ```
 This can be helpful if gnome shell freezes (GUI stops). You can always move to terminal session using keys `CTRL+ALT+F3`, login, disable extension (if you know extension causing the problem) or disable all extension, kill gnome shell. Use `CTRL+ALT+F1` to login to display session.
 
-
-## Python script
-Logs for python script when using Enhanced Device Mode available at `/tmp/bluetooth_battery_meter.log`
-
-use the command below to monitor logs
-```
-tail -f /tmp/bluetooth_battery_meter.log
-```
 

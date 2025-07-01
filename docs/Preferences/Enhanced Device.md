@@ -16,7 +16,7 @@ permalink: /preferences/enhanced-device
 <img src="{{ 'assets/images/preferences/enhanced/enhanced-prefs.png' | relative_url }}" width="100%">
 
 
-When enabled, a built-in Python script is used for battery reporting and device control. It communicates with supported devices using:
+When enabled, the extension communicates with supported devices using:
 
    - Socket-based interface for devices like AirPods/Beats to retrieve battery levels and control features such as ANC.
 
@@ -25,8 +25,6 @@ When enabled, a built-in Python script is used for battery reporting and device 
 
 * Provides additional UI widgets to display battery levels and control features such as ANC:
 
-   - Message Tray notifications
-
    - Panel Button
 
    - On-hover details
@@ -34,13 +32,6 @@ When enabled, a built-in Python script is used for battery reporting and device 
    - Multiple indicator mode
 
  
-## Message Tray
-
-Display battery status and controls in the message tray widget.
-
-<img src="{{ 'assets/images/preferences/enhanced/message-tray.png' | relative_url }}" width="100%">
-
-
 ## Panel button with Menu
 
 * Adds a button to the top panel displaying the battery percentage as text.
