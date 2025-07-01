@@ -16,6 +16,44 @@ permalink: /preferences/airpods
 > This preference is available only when Enhanced Devices is enabled.
 
 
+**Airpods / Beats Popup**
+<br>
+<img src="{{ 'assets/images/preferences/airpods/airpods-popup.png' | relative_url }}" width="35%">
+
+* Popup is shown in either On-Hover Mode or Panel Button Mode.
+* Displays a circular widget indicating battery level and status for either a single battery (headset) or for Left, Right, and Case separately.
+* Case battery is displayed only when AirPods report it — typically when the case is charging or when one or more AirPods are placed inside the case.
+
+**Airpods / Beats ANC and Conversation Awareness**
+
+* Only certain AirPods models support ANC mode.
+* Some models support ANC but not Ambient mode.
+* Some models also support Conversation Mode.
+
+### Button Visibility
+
+* The ANC option (if supported) is only shown when one or both earbuds are in the ears.
+* The Conversation Mode (if supported) option is only shown when both earbuds are in the ears.
+
+
+### Icons:
+
+Anti-Noise Cancellation (ANC)
+
+|:-:|:-:|
+| <img src="{{ 'assets/images/preferences/airpods/anc-off.png' | relative_url }}" width="15%"> | Anti-Noise Cancellation Off  |
+| <img src="{{ 'assets/images/preferences/airpods/anc-on.png' | relative_url }}" width="15%"> | Anti-Noise Cancellation On |
+| <img src="{{ 'assets/images/preferences/airpods/transperancy.png' | relative_url }}" width="15%"> | Transperancy |
+| <img src="{{ 'assets/images/preferences/airpods/adaptive.png' | relative_url }}" width="15%"> | Adaptive |
+
+
+Conversation Awareness
+
+|:-:|:-:|
+| <img src="{{ 'assets/images/preferences/airpods/ca-on.png' | relative_url }}" width="15%"> | Conversation Awareness On |
+| <img src="{{ 'assets/images/preferences/airpods/ca-off.png' | relative_url }}" width="15%"> | Conversation Awareness Off |
+
+
 **Airpods / Beats Preferences**
 <br>
 <img src="{{ 'assets/images/preferences/airpods/airpods-prefs.png' | relative_url }}" width="100%">
