@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Airpods
+title: AirPods
 parent: Preferences
 nav_order: 6
 permalink: /preferences/airpods
 ---
 
 
-## Airpods / Beats
+## AirPods / Beats
 <br>
 <br>
 
@@ -16,7 +16,7 @@ permalink: /preferences/airpods
 > This preference is available only when Enhanced Devices is enabled.
 
 
-**Airpods / Beats Popup**
+**AirPods / Beats Popup**
 <br>
 <img src="{{ 'assets/images/preferences/airpods/airpods-popup.png' | relative_url }}" width="35%">
 
@@ -24,7 +24,7 @@ permalink: /preferences/airpods
 * Displays a circular widget indicating battery level and status for either a single battery (headset) or for Left, Right, and Case separately.
 * Case battery is displayed only when AirPods report it — typically when the case is charging or when one or more AirPods are placed inside the case.
 
-**Airpods / Beats ANC and Conversation Awareness**
+**AirPods / Beats ANC and Conversation Awareness**
 
 * Only certain AirPods models support ANC mode.
 * Some models support ANC but not Ambient mode.
@@ -54,7 +54,7 @@ Conversation Awareness
 | <img src="{{ 'assets/images/preferences/airpods/ca-off.png' | relative_url }}" width="15%"> | Conversation Awareness Off |
 
 
-**Airpods / Beats Preferences**
+**AirPods / Beats Preferences**
 <br>
 <img src="{{ 'assets/images/preferences/airpods/airpods-prefs.png' | relative_url }}" width="100%">
 

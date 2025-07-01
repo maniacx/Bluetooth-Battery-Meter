@@ -19,7 +19,7 @@ permalink: /changelogs
 
 {: .important-title }
 > GN-45_Version 33 &emsp;&emsp; Jun 06, 2025 (Rejected by Gnome reviewer)
-> * Added support Enhanced Devices for Airpods and GATT Battery Service (BAS) devices using python scripy
+> * Added support Enhanced Devices for AirPods and GATT Battery Service (BAS) devices using python scripy
 > * Added message tray, panel button, onHover, Multple Indicator widget for battery reportinh and control
 > * French translation update
 
