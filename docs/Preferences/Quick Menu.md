@@ -12,24 +12,24 @@ permalink: /preferences/quick-menu
 
 **Bluetooth Quick Menu**
 <br>
-<img src="../../assets/images/preferences/quick-menu/qc-battery-text-icon.png" width="50%">
+<img src="{{ 'assets/images/preferences/quick-menu/qc-battery-text-icon.png' | relative_url }}" width="50%">
 
 
 **Quick Menu Preferences**
 <br>
-<img src="../../assets/images/preferences/quick-menu/qc-prefs.png" width="100%">
+<img src="{{ 'assets/images/preferences/quick-menu/qc-prefs.png' | relative_url }}" width="100%">
 
 ---
 
 ## Show battery icon for Bluetooth devices
 <br>
-<img src="../../assets/images/preferences/quick-menu/qc-battery-icon.png" width="50%">
+<img src="{{ 'assets/images/preferences/quick-menu/qc-battery-icon.png' | relative_url }}" width="50%">
 
 ---
 
 ## Show Bluetooth device battery percentage
 <br>
-<img src="../../assets/images/preferences/quick-menu/qc-battery-text.png" width="50%">
+<img src="{{ 'assets/images/preferences/quick-menu/qc-battery-text.png' | relative_url }}" width="50%">
 
 ## Display battery level icon before text
 When both, Battery Percentage Text and Battery Level Icon are enabled, Setting this feature to enabled with display Text after Icon, and vice versa
@@ -38,12 +38,12 @@ When both, Battery Percentage Text and Battery Level Icon are enabled, Setting t
 
 ### **Disabled**
 <br>
-<img src="../../assets/images/preferences/quick-menu/qc-battery-icon-text.png" width="50%">
+<img src="{{ 'assets/images/preferences/quick-menu/qc-battery-icon-text.png' | relative_url }}" width="50%">
 <br>
 <br>
 ### **Enabled**
 <br>
-<img src="../../assets/images/preferences/quick-menu/qc-battery-text-icon.png" width="50%">
+<img src="{{ 'assets/images/preferences/quick-menu/qc-battery-text-icon.png' | relative_url }}" width="50%">
 <br>
 <br>
 
@@ -64,7 +64,7 @@ In the example below, the devices are sorted alphabetically:
  * J - Jabra Elite 75t
  * S - Selfie
 <br>
-<img src="../../assets/images/preferences/quick-menu/qc-sort-disabled.png" width="50%">
+<img src="{{ 'assets/images/preferences/quick-menu/qc-sort-disabled.png' | relative_url }}" width="50%">
 <br>
 
 ### **When enabled:** 
@@ -79,7 +79,7 @@ In the example below, devices are listed from most recently to least recently us
     
 
 <br>
-<img src="../../assets/images/preferences/quick-menu/qc-sort-enabled.png" width="50%">
+<img src="{{ 'assets/images/preferences/quick-menu/qc-sort-enabled.png' | relative_url }}" width="50%">
 <br>
 
 > **Note:** BlueZ does not provide connection/disconnection times. The extension records these times only when enabled. Initially, all devices will appear unsorted until connection and disconnection events occur.

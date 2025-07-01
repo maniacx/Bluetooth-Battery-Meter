@@ -13,11 +13,11 @@ permalink: /preferences/device
 
 **Device Preferences**
 <br>
-<img src="../../assets/images/preferences/device/device-prefs.png" width="100%">
+<img src="{{ 'assets/images/preferences/device/device-prefs.png' | relative_url }}" width="100%">
 
 ## Configuration By Device
 
-<img src="../../assets/images/preferences/device/configure-device.png" width="80%">
+<img src="{{ 'assets/images/preferences/device/configure-device.png' | relative_url }}" width="80%">
 
 This window allows users to customize device-specific configurations. These settings are stored in **gsettings** and are restored automatically if the Bluetooth device is re-paired.
 
@@ -34,11 +34,11 @@ This window provides options to customize device settings and indicates whether 
 
 - **For devices with battery reporting:** 
 
-  <img src="../../assets/images/preferences/device/configure-battery.png" width="80%">
+  <img src="{{ 'assets/images/preferences/device/configure-battery.png' | relative_url }}" width="80%">
 
 - **For devices without battery reporting:** 
 
-  <img src="../../assets/images/preferences/device/configure-non-battery.png" width="80%">
+  <img src="{{ 'assets/images/preferences/device/configure-non-battery.png' | relative_url }}" width="80%">
 
 ---
 
@@ -46,23 +46,23 @@ This window provides options to customize device settings and indicates whether 
 
 This setting allows users to customize the device icon displayed in both the quick settings menu and the indicator. A wide range of icons is available to choose from.
 
-<img src="../../assets/images/preferences/device/configure-icon.png" width="80%">
+<img src="{{ 'assets/images/preferences/device/configure-icon.png' | relative_url }}" width="80%">
 
 In the example below, the icon is set to **earbuds**, and the changes are applied to both the **indicator** and the **quick settings** icon.
 
 - **Indicator Icon:** 
 
-  <img src="../../assets/images/preferences/device/indicator.png" width="20%">
+  <img src="{{ 'assets/images/preferences/device/indicator.png' | relative_url }}" width="20%">
 
 - **Quick Settings Icon:** 
 
-  <img src="../../assets/images/preferences/device/qs.png" width="60%">
+  <img src="{{ 'assets/images/preferences/device/qs.png' | relative_url }}" width="60%">
 
 ---
 
 ## Quick Menu: Display Battery Level
 
-<img src="../../assets/images/preferences/device/qs-no-level.png" width="60%">
+<img src="{{ 'assets/images/preferences/device/qs-no-level.png' | relative_url }}" width="60%">
 
 This setting provides option to hide battery information display in quick menu.
 This is particularly useful if an unsupported Bluetooth device (not yet supported by BlueZ) reports incorrect battery levels, allowing users to hide it from the quick settings and the indicator.
@@ -75,7 +75,7 @@ It is particularly useful for unsupported Bluetooth devices (not fully supported
 
 ## Indicator: Configure Indicator
 
-<img src="../../assets/images/preferences/device/configure-hide-indicator.png" width="80%">
+<img src="{{ 'assets/images/preferences/device/configure-hide-indicator.png' | relative_url }}" width="80%">
 
 This setting allows users to customize how the indicator is displayed, particularly for devices with inaccurate or missing battery level reporting.
 
@@ -88,10 +88,10 @@ This setting allows users to customize how the indicator is displayed, particula
   Useful for devices that don’t report battery levels or report them incorrectly but still indicate a connection. 
   For example, a connected externally powered Bluetooth speaker will show a speaker icon in the system tray. 
 
-  <img src="../../assets/images/preferences/device/indicator-fixed.png" width="25%">
+  <img src="{{ 'assets/images/preferences/device/indicator-fixed.png' | relative_url }}" width="25%">
 
 - **Show icon with battery level:**
   Displays the indicator with battery level information, including a bar or dots if the battery level is reported. 
 
-  <img src="../../assets/images/preferences/device/indicator.png" width="25%">
+  <img src="{{ 'assets/images/preferences/device/indicator.png' | relative_url }}" width="25%">
 

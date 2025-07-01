@@ -60,7 +60,7 @@ systemctl restart bluetooth
 ```
 Once done check if device displays battery level under `Power` in `Gnome Control Center (Settings)`
 <br>
-<img src="./assets/images/installation/power.png" width="100%">
+<img src="{{ 'assets/images/installation/power.png' | relative_url }}" width="100%">
 
 ### Enable kernel experimental feature
 Users have reported that some devices will not report battery level until the **kernel experimatal** flag is enabled. If the battery level is still not reported. Try to enable bluez kernel experimental feaures
@@ -82,14 +82,14 @@ This extension may conflict with other Bluetooth related Gnome Extensions. It's 
 
 ## Gnome Extension Website
 
-[<img src="./assets/images/home/get-it-on-gnome-extension.png" width="45%">](https://extensions.gnome.org/extension/6670/bluetooth-battery-meter/)
+[<img src="{{ 'assets/images/home/get-it-on-gnome-extension.png' | relative_url }}" width="45%">](https://extensions.gnome.org/extension/6670/bluetooth-battery-meter/)
 
 * The extension is available on the Gnome Extension Website https://extensions.gnome.org/, where it undergoes a review process upon submission.
 * Therefore, it's recommended to install this extension from the website.
 
 ### Using Apps
 
-[<img src="./assets/images/installation/extension.png" width="45%">](https://flathub.org/apps/org.gnome.Extensions)[<img src="./assets/images/installation/extension-manager.png" width="45%" class="float-right">](https://flathub.org/apps/com.mattjakeman.ExtensionManager)
+[<img src="{{ 'assets/images/installation/extension.png' | relative_url }}" width="45%">](https://flathub.org/apps/org.gnome.Extensions)[<img src="{{ 'assets/images/installation/extension-manager.png' | relative_url }}" width="45%" class="float-right">](https://flathub.org/apps/com.mattjakeman.ExtensionManager)
 
 * This will require installing an Extensions or Extension Manager app to manage the Gnome extension.
 * Either search for the extension by its name, "Bluetooth Battery Meter" or use the website link below<br><https://extensions.gnome.org/extension/6670/bluetooth-battery-meter/>
@@ -103,7 +103,7 @@ busctl --user call org.gnome.Shell.Extensions /org/gnome/Shell/Extensions org.gn
 
 ## From Github
 
-[<img src="./assets/images/home/view-sources-on-github.png" width="45%">](https://github.com/maniacx/Bluetooth-Battery-Meter)
+[<img src="{{ 'assets/images/home/view-sources-on-github.png' | relative_url }}" width="45%">](https://github.com/maniacx/Bluetooth-Battery-Meter)
 
 * Installation from sources is not recommended but can be done for debugging or testing new updates not yet submitted to Gnome Extension.
 * A prerequisite is that gettext needs to be installed.
