@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Credits
-nav_order: 7
+nav_order: 8
 permalink: /credits
 ---
 
@@ -81,6 +81,27 @@ permalink: /credits
 >
 > <https://gitlab.com/justperfection.channel/how-to-create-a-gnome-extension-documentation/-/tree/master/Examples>
 
+{: .important-title }
+> tuhiproject for for dbus service code
+>
+> <https://github.com/tuhiproject/tuhi/blob/master/tuhi/dbusserver.py>
+
+{: .important-title }
+> steam3d for MagicCore core for reverse battery reporting , ANC control and docs which made this project possible.
+>
+> <https://github.com/steam3d/MagicPodsCore>
+
+{: .important-title }
+> kavishdevar for librepod (ALN) for details of conversation mode and in ear detection. Great documentation AAP Definations.
+>
+> <https://github.com/kavishdevar/librepods>
+
+{: .important-title }
+> Genteure for GATT Battery Service Script and information
+>
+> <https://github.com/Genteure>
+
+
 
 {: .important-title }
 > Also Thanks to Github users support / feedback / testing on Github:
@@ -119,4 +140,14 @@ permalink: /credits
 > * jnsson
 > * PeterDaveHello
 > * Bohdan Shkliarenko
+> * micuit cuit@crowdin.com
+> * AlexFalappa
+> * gabriel.fwittaker@crowdin
+> * 资深小白程序猿 (ZSXB2468)@crowdin
+> * Surfoo
+> * snoyer
+> * valentingregoire
+> * SeungheonOh
+> * Svilen88
+> * Genteure
 
