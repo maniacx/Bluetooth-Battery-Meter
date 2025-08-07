@@ -9,7 +9,6 @@ import {Indicator} from './preferences/indicator.js';
 import {BatteryWidgetSettings} from './preferences/batteryWidgetSettings.js';
 import {Device} from './preferences/device.js';
 import {UpowerDevices} from './preferences/upowerDevices.js';
-import {EnhancedDeviceSupport} from './preferences/enhancedDeviceSupport.js';
 import {Airpods} from './preferences/airpods.js';
 import {GattBas} from './preferences/gattBas.js';
 import {About} from './preferences/about.js';
@@ -36,18 +35,9 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         this._addPage(BatteryWidgetSettings, settings);
         this._addPage(Device, settings);
         this._addPage(UpowerDevices, settings);
-        this._addPage(EnhancedDeviceSupport, settings, this.path);
         this._addPage(Airpods, settings);
         this._addPage(GattBas, settings);
         this._addPage(About, this);
-
-        this._enhancedDeviceModeEnabled = settings.get_boolean('enable-enhanced-device-mode');
-        this._hideOnEnhancedDeviceMode();
-
-        settings.connect('changed::enable-enhanced-device-mode', () => {
-            this._enhancedDeviceModeEnabled = settings.get_boolean('enable-enhanced-device-mode');
-            this._hideOnEnhancedDeviceMode();
-        });
     }
 
     _switchToNavigationSplitViews(window) {
@@ -127,17 +117,5 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
             splitViewContent.set_title(row._title);
             stack.set_visible_child_name(row._id);
         });
-    }
-
-    _hideRowById(id, hide) {
-        for (const row of this._sidebarListBox) {
-            if (row._id === id)
-                row.visible = !hide;
-        }
-    }
-
-    _hideOnEnhancedDeviceMode() {
-        this._hideRowById('airpods', !this._enhancedDeviceModeEnabled);
-        this._hideRowById('gattbas', !this._enhancedDeviceModeEnabled);
     }
 }

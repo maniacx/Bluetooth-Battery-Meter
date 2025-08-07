@@ -91,10 +91,6 @@
             <default>[]</default>
             <summary>List of upower devices that reports battery level</summary>
         </key>
-        <key name="enable-enhanced-device-mode" type="b">
-            <default>false</default>
-            <summary>"enable display of multiple battery"</summary>
-        </key>
         <key name="attenuated-on-destroy-info" type="as">
             <default>[]</default>
             <summary>On destroy attenuated info</summary>
