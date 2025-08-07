@@ -106,51 +106,6 @@ const  ConfigureWindow = GObject.registerClass({
             awarnessVolumeGroup.add(awarnessVolumeRow);
             page.add(awarnessVolumeGroup);
         }
-
-        if (modelData.adaptiveSupported) {
-            const adaptiveLevelGroup = new Adw.PreferencesGroup({
-                title: _('Customize Adaptive Audio'),
-            });
-
-            const adaptiveLevelRow = new Adw.ActionRow({
-                title: _('Customize Adaptive Audio'),
-                subtitle: _('Customize Adaptive Audio to allow more or less noise'),
-            });
-
-            const slider = Gtk.Scale.new_with_range(Gtk.Orientation.HORIZONTAL, 0, 100, 5);
-            slider.margin_start = 50;
-            slider.margin_end = 50;
-            slider.margin_top = 4;
-            slider.margin_bottom = 4;
-            slider.add_mark(0, Gtk.PositionType.BOTTOM, _('Less'));
-            slider.add_mark(50, Gtk.PositionType.BOTTOM, _('Default'));
-            slider.add_mark(100, Gtk.PositionType.BOTTOM, _('More'));
-
-            const adaptiveLevelSliderRow = new Adw.ActionRow();
-            adaptiveLevelSliderRow.child = slider;
-
-            slider.set_value(pathInfo.adaptiveLevel);
-
-            slider.connect('value-changed', () => {
-                const roundedValue = Math.round(slider.get_value() / 5) * 5;
-                log(` emit value ${roundedValue}`);
-                const pairedDevice = settings.get_strv('airpods-list');
-                const existingPathIndex =
-                pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
-                if (existingPathIndex !== -1) {
-                    const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
-                    if (existingItem['adaptive-level'] !== roundedValue) {
-                        existingItem['adaptive-level'] = roundedValue;
-                        pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
-                        settings.set_strv('airpods-list', pairedDevice);
-                    }
-                }
-            });
-
-            adaptiveLevelGroup.add(adaptiveLevelRow);
-            adaptiveLevelGroup.add(adaptiveLevelSliderRow);
-            page.add(adaptiveLevelGroup);
-        }
     }
 }
 );
@@ -273,7 +228,6 @@ export const  Airpods = GObject.registerClass({
                 alias: info['alias'],
                 inEarControl: info['in-ear-control-enabled'],
                 caVolume: info['ca-volume'],
-                adaptiveLevel: info['adaptive-level'],
             };
             if (!pathInfo.alias && this._attemptOnce > 0) {
                 const pathsDeviceString = this._settings.get_strv('device-list').map(JSON.parse);

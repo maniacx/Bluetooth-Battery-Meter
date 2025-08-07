@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="gnome-shell-extensions">
     <schema path="/org/gnome/shell/extensions/Bluetooth-Battery-Meter/" id="org.gnome.shell.extensions.Bluetooth-Battery-Meter">
-        <key name="enable-battery-indicator" type="b">
-            <default>true</default>
-            <summary>Show icon in system tray with device battery level</summary>
-        </key>
-        <key name="enable-battery-indicator-text" type="b">
+        <key name="popup-in-quick-settings" type="b">
             <default>false</default>
-            <summary>Show text next to icon in system tray with device battery level</summary>
-        </key>
-        <key name="indicator-size" type="i">
-            <default>100</default>
-            <summary>Change size of icon widget</summary>
+            <summary>Displays an icon  showing bluetooth device battery level in bluetooth quickmenu</summary>
         </key>
         <key name="enable-battery-level-icon" type="b">
             <default>true</default>
@@ -21,37 +13,29 @@
             <default>false</default>
             <summary>Displays a text the percentage of bluetooth device battery level in bluetooth quickmenu</summary>
         </key>
-        <key name="hide-bluetooth-indicator" type="i">
-            <default>0</default>
-            <summary>Hide bluetooth indicator when device indicators are displayed</summary>
-        </key>
         <key name="swap-icon-text" type="b">
             <default>false</default>
             <summary>Display battery level icon before level percentage text in quick menu</summary>
-        </key>
-        <key name="device-list" type="as">
-            <default>[]</default>
-            <summary>List of paired devices that reports battery level</summary>
-        </key>
-        <key name="upower-device-list" type="as">
-            <default>[]</default>
-            <summary>List of upower devices that reports battery level</summary>
         </key>
         <key name="sort-devices-by-history" type="b">
             <default>false</default>
             <summary>"Sort devices by connection history"</summary>
         </key>
-        <key name="enable-upower-level-icon" type="b">
-            <default>false</default>
-            <summary>"enable indicator for upower devices"</summary>
+        <key name="hide-bluetooth-indicator" type="i">
+            <default>0</default>
+            <summary>Hide bluetooth indicator when device indicators are displayed</summary>
         </key>
-        <key name="enable-enhanced-device-mode" type="b">
-            <default>false</default>
-            <summary>"enable display of multiple battery"</summary>
+        <key name="indicator-type" type="i">
+            <default>0</default>
+            <summary>0: System Tray, 1: Panel Button</summary>
         </key>
-        <key name="enable-panel-button-mode" type="b">
+        <key name="panel-button-single-indicator" type="b">
+            <default>true</default>
+            <summary>"enable single device indicator"</summary>
+        </key>
+        <key name="enable-battery-indicator-text" type="b">
             <default>false</default>
-            <summary>"enable display of panel button"</summary>
+            <summary>Show text next to icon in system tray with device battery level</summary>
         </key>
         <key name="enable-multi-indicator-mode" type="b">
             <default>false</default>
@@ -65,13 +49,55 @@
             <default>1000</default>
             <summary>"onhover delay time in milliseconds"</summary>
         </key>
-        <key name="attenuated-on-destroy-info" type="as">
-            <default>[]</default>
-            <summary>On destroy attenuated info</summary>
-        </key>
         <key name="default-selected-path" type="s">
             <default>''</default>
             <summary>"Store path if activated"</summary>
+        </key>
+        <key name="indicator-size" type="i">
+            <default>100</default>
+            <summary>Change size of icon widget</summary>
+        </key>
+        <key name="level-indicator-type" type="i">
+            <default>0</default>
+            <summary>"Level type"</summary>
+        </key>
+        <key name="level-indicator-color" type="i">
+            <default>1</default>
+            <summary>"Level Color"</summary>
+        </key>
+        <key name="level-indicator-custom-colors" type="as">
+            <default>['#ff7800', '#ff7800', '#15c931', '#15c931', '#15c931',
+              '#15c931', '#15c931', '#15c931', '#15c931', '#15c931']</default>
+            <summary>"Custom colors for each 10% battery-level bucket (100→10)"</summary>
+        </key>
+        <key name="circle-widget-color" type="i">
+            <default>1</default>
+            <summary>"Circle widget Color"</summary>
+        </key>
+        <key name="circle-widget-custom-colors" type="as">
+            <default>['#ff7800', '#ff7800', '#15c931', '#15c931', '#15c931',
+              '#15c931', '#15c931', '#15c931', '#15c931', '#15c931']</default>
+            <summary>"Custom colors for each 10% battery-level bucket (100→10)"</summary>
+        </key>
+        <key name="device-list" type="as">
+            <default>[]</default>
+            <summary>List of paired devices that reports battery level</summary>
+        </key>
+        <key name="enable-upower-level-icon" type="b">
+            <default>false</default>
+            <summary>"enable indicator for upower devices"</summary>
+        </key>
+        <key name="upower-device-list" type="as">
+            <default>[]</default>
+            <summary>List of upower devices that reports battery level</summary>
+        </key>
+        <key name="enable-enhanced-device-mode" type="b">
+            <default>false</default>
+            <summary>"enable display of multiple battery"</summary>
+        </key>
+        <key name="attenuated-on-destroy-info" type="as">
+            <default>[]</default>
+            <summary>On destroy attenuated info</summary>
         </key>
         <key name="enable-airpods-device" type="b">
             <default>false</default>
@@ -88,58 +114,6 @@
         <key name="gattbas-list" type="as">
             <default>[]</default>
             <summary>List of gattbas devices</summary>
-        </key>
-        <key name="level-indicator-type" type="i">
-            <default>0</default>
-            <summary>"Level type"</summary>
-        </key>
-        <key name="level-indicator-color" type="i">
-            <default>1</default>
-            <summary>"Level Color"</summary>
-        </key>
-        <key name="circle-widget-color" type="i">
-            <default>1</default>
-            <summary>"Circle widget Color"</summary>
-        </key>
-        <key name="color-100" type="s">
-            <default>"#15c931"</default>
-            <summary>"Level Color for 90 - 100"</summary>
-        </key>
-        <key name="color-90" type="s">
-            <default>"#15c931"</default>
-            <summary>"Level Color for 90 - 100"</summary>
-        </key>
-        <key name="color-80" type="s">
-            <default>"#15c931"</default>
-            <summary>"Level Color for 80 - 90"</summary>
-        </key>
-        <key name="color-70" type="s">
-            <default>"#15c931"</default>
-            <summary>"Level Color for 70 - 80"</summary>
-        </key>
-        <key name="color-60" type="s">
-            <default>"#15c931"</default>
-            <summary>"Level Color for 60 - 70"</summary>
-        </key>
-        <key name="color-50" type="s">
-            <default>"#15c931"</default>
-            <summary>"Level Color for 50 - 60"</summary>
-        </key>
-        <key name="color-40" type="s">
-            <default>"#15c931"</default>
-            <summary>"Level Color for 40 - 50"</summary>
-        </key>
-        <key name="color-30" type="s">
-            <default>"#15c931"</default>
-            <summary>"Level Color for 30 - 40"</summary>
-        </key>
-        <key name="color-20" type="s">
-            <default>"#ff7800"</default>
-            <summary>"Level Color for 20 - 30"</summary>
-        </key>
-        <key name="color-10" type="s">
-            <default>"#ff7800"</default>
-            <summary>"Level Color for 10 - 20"</summary>
         </key>
     </schema>
 </schemalist>

@@ -12,17 +12,26 @@ export const  QuickSettings = GObject.registerClass({
         import.meta.url, '../ui/quickSettings.ui', GLib.UriFlags.NONE
     ),
     InternalChildren: [
-        'enable_battery_level_icon',
-        'enable_battery_level_text',
-        'swap_icon_text',
-        'swap_icon_text_row',
-        'sort_devices_by_history',
         'row_note_experimental_features',
+        'use_popup_in_quicksettings',
+        'enable_battery_level_icon_row',
+        'enable_battery_level_icon',
+        'enable_battery_level_text_row',
+        'enable_battery_level_text',
+        'swap_icon_text_row',
+        'swap_icon_text',
+        'sort_devices_by_history',
     ],
 }, class QuickSettings extends Adw.PreferencesPage {
     constructor(settings) {
         super({});
         this._settings = settings;
+        this._settings.bind(
+            'popup-in-quick-settings',
+            this._use_popup_in_quicksettings,
+            'active',
+            Gio.SettingsBindFlags.DEFAULT
+        );
         this._settings.bind(
             'enable-battery-level-icon',
             this._enable_battery_level_icon,
@@ -58,9 +67,19 @@ export const  QuickSettings = GObject.registerClass({
             ' Bluez\'s experimental features are enabled in system. ' +
             'Check <a href="%s">Readme</a> for details.').format(link)
         );
+
+        this._settings.connect('changed::popup-in-quick-settings', () => {
+            const state = this._settings.get_boolean('popup-in-quick-settings');
+            this._enable_battery_level_icon_row.visible = !state;
+            this._enable_battery_level_text_row.visible = !state;
+            this._swap_icon_text_row.visible = !state;
+        });
     }
 
     _setRowSensitivity() {
+        const state = this._settings.get_boolean('popup-in-quick-settings');
+        if (state)
+            return;
         const status =
             this._settings.get_boolean('enable-battery-level-text') &&
             this._settings.get_boolean('enable-battery-level-icon');

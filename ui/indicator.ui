@@ -6,32 +6,7 @@
     <property name="icon-name">bbm-panel-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Indicator Settings</property>
-        <child>
-          <object class="AdwActionRow">
-            <property name="title" translatable="yes">Enable battery indicators for Bluetooth devices</property>
-            <property name="subtitle" translatable="yes">Displays Bluetooth device icon with battery level in system tray</property>
-            <property name="activatable-widget">enable_battery_indicator</property>
-            <child>
-              <object class="GtkSwitch" id="enable_battery_indicator">
-                <property name="valign">center</property>
-              </object>
-            </child>
-          </object>
-        </child>
-        <child>
-          <object class="AdwActionRow">
-            <property name="title" translatable="yes">Display battery percentage as text</property>
-            <property name="subtitle" translatable="yes">Displays battery percentage beside the Bluetooth device icon</property>
-            <property name="activatable-widget">enable_battery_indicator_text</property>
-            <property name="sensitive" bind-source="enable_battery_indicator" bind-property="active" bind-flags="sync-create" />
-            <child>
-              <object class="GtkSwitch" id="enable_battery_indicator_text">
-                <property name="valign">center</property>
-              </object>
-            </child>
-          </object>
-        </child>
+        <property name="title" translatable="yes">Bluetooth System Indicator Settings</property>
         <child>
           <object class="AdwActionRow">
             <property name="title" translatable="yes">Bluetooth Connection Status Indicator</property>
@@ -49,45 +24,16 @@
     </child>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Indicator Widget Settings</property>
-        <child>
-          <object class="AdwSpinRow" id="indicator_size">
-            <property name="title" translatable="yes">Device Icon Size</property>
-            <property name="subtitle" translatable="yes">Adjust the size of the device icon displayed above the battery level indicator</property>
-            <property name="digits">1</property>
-            <property name="adjustment">
-              <object class="GtkAdjustment">
-                <property name="lower">50</property>
-                <property name="upper">100</property>
-                <property name="value">100</property>
-                <property name="page-increment">5</property>
-                <property name="step-increment">1</property>
-              </object>
-            </property>
-          </object>
-        </child>
+        <property name="title" translatable="yes">Battery Indicator Settings</property>
         <child>
           <object class="AdwActionRow">
-            <property name="title" translatable="yes">Battery Level Indicator Type</property>
-            <property name="subtitle" translatable="yes">Dots offer better visibility</property>
-            <property name="activatable-widget">level_indicator_type</property>
+            <property name="title" translatable="yes">Choose Indicator mode</property>
+            <property name="subtitle" translatable="yes">Off: No battery indicator.&#xA;&lt;b&gt;System Indicator:&lt;/b&gt; Battery icon in top bar.&#xA;&lt;b&gt;Panel Button:&lt;/b&gt; Battery icon with menu.</property>
+            <property name="activatable-widget">indicator_type</property>
             <child>
-              <object class="GtkDropDown" id="level_indicator_type">
+              <object class="GtkDropDown" id="indicator_type">
                 <property name="valign">center</property>
-                <property name="model">level_indicator_type_model</property>
-              </object>
-            </child>
-          </object>
-        </child>
-        <child>
-          <object class="AdwActionRow">
-            <property name="title" translatable="yes">Battery Indicator Color Scheme</property>
-            <property name="subtitle" translatable="yes">Choose color scheme for level bar/dots</property>
-            <property name="activatable-widget">level_indicator_color</property>
-            <child>
-              <object class="GtkDropDown" id="level_indicator_color">
-                <property name="valign">center</property>
-                <property name="model">level_indicator_color_model</property>
+                <property name="model">indicator_type_model</property>
               </object>
             </child>
           </object>
@@ -95,8 +41,83 @@
       </object>
     </child>
     <child>
-      <object class="AdwPreferencesGroup" id="customize_color_group">
-        <property name="sensitive" bind-source="enable_battery_indicator" bind-property="active" bind-flags="default" />
+      <object class="AdwPreferencesGroup" id="panel_indicator_mode_group">
+        <property name="title" translatable="yes">Panel Button Mode</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Panel button indicator mode.</property>
+            <property name="subtitle" translatable="yes">On: Show one selected device. Off: Show all devices</property>
+            <property name="activatable-widget">panel_button_indicator_mode</property>
+            <child>
+              <object class="GtkSwitch" id="panel_button_indicator_mode">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup" id="indicator_settings_group">
+        <property name="title" translatable="yes">Indicator Settings</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Display battery percentage as text</property>
+            <property name="subtitle" translatable="yes">Displays battery percentage beside the Bluetooth device icon</property>
+            <property name="activatable-widget">enable_battery_indicator_text</property>
+            <child>
+              <object class="GtkSwitch" id="enable_battery_indicator_text">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Show Separate Battery Indicators</property>
+            <property name="subtitle" translatable="yes">When enabled, display one indicator per battery. When disabled, show a single indicator with the most critical (lowest) battery level.</property>
+            <property name="activatable-widget">enable_multi_indicator_mode</property>
+            <child>
+              <object class="GtkSwitch" id="enable_multi_indicator_mode">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup" id="on_hover_group">
+        <property name="title" translatable="yes">Show Popup on Hover</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Show Detailed Info on Hover</property>
+            <property name="subtitle" translatable="yes">Displays a popup with battery info and controls when the mouse pointer hovers over the indicator for a custom delay</property>
+            <property name="activatable-widget">enable_hover_on_mode</property>
+            <child>
+              <object class="GtkSwitch" id="enable_hover_on_mode">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwSpinRow" id="hover_delay_spinrow">
+            <property name="title" translatable="yes">Hover Activation Delay</property>
+            <property name="subtitle" translatable="yes">Specify the number of seconds the mouse must hover over the indicator before detailed information is displayed.</property>
+            <property name="sensitive" bind-source="enable_hover_on_mode" bind-property="active" bind-flags="sync-create" />
+            <property name="digits">1</property>
+            <property name="adjustment">
+              <object class="GtkAdjustment">
+                <property name="lower">0.2</property>
+                <property name="upper">5</property>
+                <property name="value">1</property>
+                <property name="page-increment">0.5</property>
+                <property name="step-increment">0.1</property>
+              </object>
+            </property>
+          </object>
+        </child>
       </object>
     </child>
   </template>
@@ -107,17 +128,11 @@
       <item translatable="yes">Hide Conditionally</item>
     </items>
   </object>
-  <object class="GtkStringList" id="level_indicator_type_model">
+  <object class="GtkStringList" id="indicator_type_model">
     <items>
-      <item translatable="yes">Battery Level Bar</item>
-      <item translatable="yes">Battery Level Dot</item>
-    </items>
-  </object>
-  <object class="GtkStringList" id="level_indicator_color_model">
-    <items>
-      <item translatable="yes">Symbolic</item>
-      <item translatable="yes">Colored</item>
-      <item translatable="yes">Customized</item>
+      <item translatable="yes">Off</item>
+      <item translatable="yes">System Tray</item>
+      <item translatable="yes">Panel Button</item>
     </items>
   </object>
 </interface>

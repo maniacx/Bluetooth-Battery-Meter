@@ -6,6 +6,7 @@ import {gettext as _, ExtensionPreferences}
 
 import {QuickSettings} from './preferences/quickSettings.js';
 import {Indicator} from './preferences/indicator.js';
+import {BatteryWidgetSettings} from './preferences/batteryWidgetSettings.js';
 import {Device} from './preferences/device.js';
 import {UpowerDevices} from './preferences/upowerDevices.js';
 import {EnhancedDeviceSupport} from './preferences/enhancedDeviceSupport.js';
@@ -32,6 +33,7 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         const settings = this.getSettings();
         this._addPage(QuickSettings, settings);
         this._addPage(Indicator, settings);
+        this._addPage(BatteryWidgetSettings, settings);
         this._addPage(Device, settings);
         this._addPage(UpowerDevices, settings);
         this._addPage(EnhancedDeviceSupport, settings, this.path);
