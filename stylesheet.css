@@ -1,10 +1,19 @@
-.popup-sub-menu{
-  margin-bottom: 0;
+.bbm-submenu {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: margin-top 200ms ease-out, margin-bottom 200ms ease-out;
 }
-.bbm-bt-menu-button {
-  height: 22px;
-  width: 22px;
-  border-radius: 6px;
+.bbm-submenu.open {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.bbm-bt-widget {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.bbm-bt-open-menu {
+    border-radius: 18px;
 }
 .bbm-bt-percentage-label {
   text-align: center;
@@ -23,18 +32,28 @@
   min-width: 15em;
   background-color: transparent;
 }
-.bbm-pin-icon {
-  icon-size: 14px;
+.bbm-popup-titlebox {
+  margin-top: 2px;
+  margin-bottom: 8px;
 }
-.bbm-pin-button {
-  height: 20px;
-  width: 20px;
-  border-radius: 6px;
-}
-.bbm-panel-label-model {
-  padding-top: 2px;
-  padding-bottom: 8px;
+.bbm-popup-title {
   font-weight: bold;
+}
+.bbm-header-icon {
+  icon-size: 12px;
+}
+.bbm-header-button {
+  height: 18px;
+  width: 18px;
+  border-radius: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.bbm-panel-button-open-menu {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.bbm-panel-button-open-menu:hover {
+  background-color: rgba(128, 128, 128, 0.2);
 }
 .bbm-panel-icon-check {
   padding: 0.5em;

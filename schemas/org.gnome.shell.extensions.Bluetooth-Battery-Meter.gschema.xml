@@ -61,6 +61,10 @@
             <default>0</default>
             <summary>"Level type"</summary>
         </key>
+        <key name="level-bar-position" type="i">
+            <default>1</default>
+            <summary>"Bar position"</summary>
+        </key>
         <key name="level-indicator-color" type="i">
             <default>1</default>
             <summary>"Level Color"</summary>

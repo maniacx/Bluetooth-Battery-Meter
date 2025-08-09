@@ -18,9 +18,10 @@ const  ConfigureWindow = GObject.registerClass({
             transient_for: parentWindow,
         });
 
-        const enhandedModeEnabled = settings.get_boolean('enable-enhanced-device-mode');
         const isAirpodsEnabled = settings.get_boolean('enable-airpods-device');
         const isGattBasEnabled = settings.get_boolean('enable-gattbas-device');
+        const enhandedModeEnabled = isAirpodsEnabled || isGattBasEnabled;
+
         let isEnhancedDevice = false;
 
         if (enhandedModeEnabled) {

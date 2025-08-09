@@ -68,12 +68,18 @@ export const  QuickSettings = GObject.registerClass({
             'Check <a href="%s">Readme</a> for details.').format(link)
         );
 
+        this._popupEnableRowVisibility();
+
         this._settings.connect('changed::popup-in-quick-settings', () => {
-            const state = this._settings.get_boolean('popup-in-quick-settings');
-            this._enable_battery_level_icon_row.visible = !state;
-            this._enable_battery_level_text_row.visible = !state;
-            this._swap_icon_text_row.visible = !state;
+            this._popupEnableRowVisibility();
         });
+    }
+
+    _popupEnableRowVisibility() {
+        const state = this._settings.get_boolean('popup-in-quick-settings');
+        this._enable_battery_level_icon_row.visible = !state;
+        this._enable_battery_level_text_row.visible = !state;
+        this._swap_icon_text_row.visible = !state;
     }
 
     _setRowSensitivity() {

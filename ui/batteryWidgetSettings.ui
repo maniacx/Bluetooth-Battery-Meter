@@ -8,22 +8,6 @@
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Indicator Widget Settings</property>
         <child>
-          <object class="AdwSpinRow" id="indicator_size">
-            <property name="title" translatable="yes">Device Icon Size</property>
-            <property name="subtitle" translatable="yes">Adjust the size of the device icon displayed above the battery level indicator</property>
-            <property name="digits">1</property>
-            <property name="adjustment">
-              <object class="GtkAdjustment">
-                <property name="lower">50</property>
-                <property name="upper">100</property>
-                <property name="value">100</property>
-                <property name="page-increment">5</property>
-                <property name="step-increment">1</property>
-              </object>
-            </property>
-          </object>
-        </child>
-        <child>
           <object class="AdwActionRow">
             <property name="title" translatable="yes">Battery Level Indicator Type</property>
             <property name="subtitle" translatable="yes">Dots offer better visibility</property>
@@ -34,6 +18,35 @@
                 <property name="model">level_indicator_type_model</property>
               </object>
             </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="level_bar_position_row">
+            <property name="title" translatable="yes">Battery Bar Position</property>
+            <property name="subtitle" translatable="yes">Choose where to display the battery bar relative to the device icon</property>
+            <property name="activatable-widget">level_bar_position</property>
+            <child>
+              <object class="GtkDropDown" id="level_bar_position">
+                <property name="valign">center</property>
+                <property name="model">level_bar_position_model</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwSpinRow" id="indicator_size">
+            <property name="title" translatable="yes">Device Icon Size</property>
+            <property name="subtitle" translatable="yes">Adjust the size of the device icon displayed above the battery level indicator</property>
+            <property name="digits">0</property>
+            <property name="adjustment">
+              <object class="GtkAdjustment">
+                <property name="lower">50</property>
+                <property name="upper">100</property>
+                <property name="value">100</property>
+                <property name="page-increment">5</property>
+                <property name="step-increment">1</property>
+              </object>
+            </property>
           </object>
         </child>
         <child>
@@ -80,6 +93,13 @@
     <items>
       <item translatable="yes">Battery Level Bar</item>
       <item translatable="yes">Battery Level Dot</item>
+    </items>
+  </object>
+  <object class="GtkStringList" id="level_bar_position_model">
+    <items>
+      <item translatable="yes">Left</item>
+      <item translatable="yes">Right</item>
+      <item translatable="yes">Below</item>
     </items>
   </object>
   <object class="GtkStringList" id="level_indicator_color_model">

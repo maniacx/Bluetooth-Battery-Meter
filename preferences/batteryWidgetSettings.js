@@ -96,8 +96,10 @@ export const  BatteryWidgetSettings = GObject.registerClass({
         import.meta.url, '../ui/batteryWidgetSettings.ui', GLib.UriFlags.NONE
     ),
     InternalChildren: [
-        'indicator_size',
         'level_indicator_type',
+        'level_bar_position_row',
+        'level_bar_position',
+        'indicator_size',
         'level_indicator_color',
         'customize_indicator_color_group',
         'circle_widget_color',
@@ -120,6 +122,12 @@ export const  BatteryWidgetSettings = GObject.registerClass({
             Gio.SettingsBindFlags.DEFAULT
         );
         settings.bind(
+            'level-bar-position',
+            this._level_bar_position,
+            'selected',
+            Gio.SettingsBindFlags.DEFAULT
+        );
+        settings.bind(
             'level-indicator-color',
             this._level_indicator_color,
             'selected',
@@ -133,6 +141,23 @@ export const  BatteryWidgetSettings = GObject.registerClass({
             Gio.SettingsBindFlags.DEFAULT
         );
 
+        settings.connect('changed::level-indicator-type', () => {
+            this._level_bar_position_row.visible =
+                        settings.get_int('level-indicator-type') === 0;
+
+            this._indicator_size.visible =
+                        settings.get_int('level-indicator-type') === 1 ||
+                        settings.get_int('level-indicator-type') === 0 &&
+                        settings.get_int('level-bar-position') === 2;
+        });
+
+        settings.connect('changed::level-bar-position', () => {
+            this._indicator_size.visible =
+                        settings.get_int('level-indicator-type') === 1 ||
+                        settings.get_int('level-indicator-type') === 0 &&
+                        settings.get_int('level-bar-position') === 2;
+        });
+
         settings.connect('changed::level-indicator-color', () => {
             this._customize_indicator_color_group.visible =
                         settings.get_int('level-indicator-color') === 2;
@@ -142,6 +167,15 @@ export const  BatteryWidgetSettings = GObject.registerClass({
             this._customize_circle_widget_color_group.visible =
                         settings.get_int('circle-widget-color') === 2;
         });
+
+        this._level_bar_position_row.visible =
+                    settings.get_int('level-indicator-type') === 0;
+
+        this._indicator_size.visible =
+                    settings.get_int('level-indicator-type') === 1 ||
+                    settings.get_int('level-indicator-type') === 0 &&
+                    settings.get_int('level-bar-position') === 2;
+
 
         this._customize_indicator_color_group.visible =
                 settings.get_int('level-indicator-color') === 2;
