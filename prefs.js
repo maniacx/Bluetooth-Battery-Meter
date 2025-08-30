@@ -1,5 +1,6 @@
 'use strict';
 import Adw from 'gi://Adw';
+import Gio from 'gi://Gio';
 import Gtk from 'gi://Gtk';
 import {gettext as _, ExtensionPreferences}
     from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
@@ -12,6 +13,11 @@ import {UpowerDevices} from './preferences/upowerDevices.js';
 import {Airpods} from './preferences/airpods.js';
 import {GattBas} from './preferences/gattBas.js';
 import {About} from './preferences/about.js';
+
+Gio._promisify(Gio.DBusProxy, 'new');
+Gio._promisify(Gio.DBusProxy, 'new_for_bus');
+Gio._promisify(Gio.DBusProxy.prototype, 'call');
+Gio._promisify(Gio.DBusConnection.prototype, 'call');
 
 export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
     fillPreferencesWindow(window) {
