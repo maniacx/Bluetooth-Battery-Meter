@@ -2,7 +2,7 @@
 <schemalist gettext-domain="gnome-shell-extensions">
     <schema path="/org/gnome/shell/extensions/Bluetooth-Battery-Meter/" id="org.gnome.shell.extensions.Bluetooth-Battery-Meter">
         <key name="popup-in-quick-settings" type="b">
-            <default>false</default>
+            <default>true</default>
             <summary>Displays an icon  showing bluetooth device battery level in bluetooth quickmenu</summary>
         </key>
         <key name="enable-battery-level-icon" type="b">
@@ -26,11 +26,11 @@
             <summary>Hide bluetooth indicator when device indicators are displayed</summary>
         </key>
         <key name="indicator-type" type="i">
-            <default>0</default>
+            <default>1</default>
             <summary>0: System Tray, 1: Panel Button</summary>
         </key>
         <key name="panel-button-single-indicator" type="b">
-            <default>true</default>
+            <default>false</default>
             <summary>"enable single device indicator"</summary>
         </key>
         <key name="enable-battery-indicator-text" type="b">
@@ -42,7 +42,7 @@
             <summary>"For one device display each Bat level as seperate indicator"</summary>
         </key>
         <key name="enable-on-hover-mode" type="b">
-            <default>false</default>
+            <default>true</default>
             <summary>"enable use of on hover mode"</summary>
         </key>
         <key name="on-hover-delay" type="i">
