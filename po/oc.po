@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-29 21:49-0700\n"
+"POT-Creation-Date: 2025-08-30 15:12-0700\n"
 "PO-Revision-Date: 2024-08-28 15:34+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -19,14 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.4.3\n"
 
-#: lib/bluetoothToggle.js:511
+#: lib/bluetoothToggle.js:499
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d connectat"
 msgstr[1] "%d connectats"
 
-#: lib/panelButton.js:15 lib/panelButton.js:27
+#: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
+#: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 msgid "Bluetooth Battery Meter"
 msgstr ""
 
@@ -48,171 +49,281 @@ msgstr ""
 "Aquesta aplicacion es provesida sens cap de garantida. Consultatz la <a "
 "href=\"%s\">%s</a> per mai de detalhs."
 
-#: preferences/airpods.js:44
+#: preferences/airpodsConfigureWindow.js:46
 msgid "Playback Behavior"
 msgstr ""
 
-#: preferences/airpods.js:48
+#: preferences/airpodsConfigureWindow.js:50
 msgid "Pause when device is not worn"
 msgstr ""
 
-#: preferences/airpods.js:49
+#: preferences/airpodsConfigureWindow.js:51
 msgid "Pause playback when the device is removed,resume when it is put back on"
 msgstr ""
 
-#: preferences/airpods.js:75
+#: preferences/airpodsConfigureWindow.js:70
 msgid "Volume Level"
 msgstr ""
 
-#: preferences/airpods.js:87
+#: preferences/airpodsConfigureWindow.js:82
 msgid "Conversation awareness volume limit"
 msgstr ""
 
-#: preferences/airpods.js:88
+#: preferences/airpodsConfigureWindow.js:83
 msgid ""
 "Limits media volume to this percentage during conversation. Note: No change "
 "if current volume is below this level."
 msgstr ""
 
-#: preferences/airpods.js:112 preferences/airpods.js:116
-msgid "Customize Adaptive Audio"
+#: preferences/airpodsConfigureWindow.js:99
+msgid "Press and Hold Cycle"
 msgstr ""
 
-#: preferences/airpods.js:117
-msgid "Customize Adaptive Audio to allow more or less noise"
+#: preferences/airpodsConfigureWindow.js:103
+msgid "Apply"
 msgstr ""
 
-#: preferences/airpods.js:125
-msgid "Less"
+#: preferences/airpodsConfigureWindow.js:117
+msgid "Press and hold cycles between"
 msgstr ""
 
-#: preferences/airpods.js:126
+#: preferences/airpodsConfigureWindow.js:118
+msgid "Settings don’t reflect current state, press Apply to save"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:163
+msgid "ANC Off"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:166
+msgid "Transparency"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:170
+msgid "Adaptive"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:174
+msgid "ANC On"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:227
+msgid "Notification Volume"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:231
+msgid "Tone Volume"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:232
+msgid "Adjust the tone volume of sound effects played by Airpods"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:240
+msgid "15%"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:241
+msgid "100%"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:242
+msgid "125%"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:259
+msgid "Volume Control"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:263
+msgid "Volume Swipe"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:264
+msgid "Enable or disable volume adjustment by swiping on earbud stems"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:279
+msgid "Swipe Duration"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:280
+msgid ""
+"To prevent unintended adjustments, select the preferred wait time between "
+"swipes"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:284
+#: preferences/airpodsConfigureWindow.js:318
+#: preferences/airpodsConfigureWindow.js:335
 msgid "Default"
 msgstr ""
 
-#: preferences/airpods.js:127
-msgid "More"
+#: preferences/airpodsConfigureWindow.js:284
+msgid "Longer"
 msgstr ""
 
-#: preferences/airpods.js:172 preferences/device.js:211
-#: preferences/gattBas.js:171 preferences/upowerDevices.js:155
+#: preferences/airpodsConfigureWindow.js:284
+msgid "Longest"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:309
+msgid "Stem and Crown Response"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:313
+msgid "Press Speed"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:314
+msgid ""
+"Adjust how quickly you must double or triple-press the stem or Digital Crown "
+"before an action occurs"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:318
+msgid "Slower"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:318
+msgid "Slowest"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:331
+msgid "Press and Hold Duration"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:332
+msgid "Set how long you need to press and hold before an action occurs"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:335
+msgid "Shorter"
+msgstr ""
+
+#: preferences/airpodsConfigureWindow.js:335
+msgid "Shortest"
+msgstr ""
+
+#: preferences/airpods.js:25 preferences/device.js:212
+#: preferences/gattBas.js:171 preferences/upowerDevices.js:184
 msgid "Configure device."
 msgstr ""
 
-#: preferences/airpods.js:184 preferences/enhancedDeviceSupport.js:61
-#: ui/airpods.ui:5
+#: preferences/airpods.js:37 ui/airpods.ui:5
 msgid "AirPods/Beats"
 msgstr ""
 
-#: preferences/airpods.js:187 preferences/gattBas.js:186
+#: preferences/airpods.js:40 preferences/gattBas.js:186
 #, javascript-format
 msgid "The button is available after disabling %s mode"
 msgstr ""
 
-#: preferences/device.js:49 preferences/upowerDevices.js:40
+#: preferences/batteryWidgetSettings.js:16
+#, javascript-format
+msgid "Assign color for %d – %d%%"
+msgstr ""
+
+#: preferences/batteryWidgetSettings.js:17
+#, javascript-format
+msgid "Set color for the battery level range of %d – %d%%"
+msgstr ""
+
+#: preferences/device.js:50 preferences/upowerDevices.js:40
 msgid "Battery Status:"
 msgstr ""
 
-#: preferences/device.js:50 preferences/upowerDevices.js:41
+#: preferences/device.js:51 preferences/upowerDevices.js:41
 msgid "Reported"
 msgstr ""
 
-#: preferences/device.js:50 preferences/upowerDevices.js:41
+#: preferences/device.js:51 preferences/upowerDevices.js:41
 msgid "Not Available"
 msgstr ""
 
-#: preferences/device.js:51
+#: preferences/device.js:52
 msgid "Reported from enhanced device service"
 msgstr ""
 
-#: preferences/device.js:58 preferences/upowerDevices.js:46
+#: preferences/device.js:59 preferences/upowerDevices.js:46
 msgid "Icon"
 msgstr ""
 
-#: preferences/device.js:62 preferences/gattBas.js:45 preferences/gattBas.js:50
+#: preferences/device.js:63 preferences/gattBas.js:45 preferences/gattBas.js:50
 #: preferences/upowerDevices.js:50
 msgid "Select Icon"
 msgstr ""
 
-#: preferences/device.js:63 preferences/upowerDevices.js:51
+#: preferences/device.js:64 preferences/upowerDevices.js:51
 msgid "Select the icon used for the indicator and quick menu"
 msgstr ""
 
-#: preferences/device.js:66
+#: preferences/device.js:67
 msgid "This is an enhanced device"
 msgstr ""
 
-#: preferences/device.js:67
+#: preferences/device.js:68
 msgid "Icon selection if available are in Enhanced device per device settings"
 msgstr ""
 
-#: preferences/device.js:119 ui/quickSettings.ui:5
+#: preferences/device.js:120 ui/quickSettings.ui:5
 msgid "Quick Menu"
 msgstr ""
 
-#: preferences/device.js:123
+#: preferences/device.js:124
 msgid "Display Battery Level"
 msgstr ""
 
-#: preferences/device.js:124
+#: preferences/device.js:125
 msgid "Display battery level in the Bluetooth panel quick menu"
 msgstr ""
 
-#: preferences/device.js:149 preferences/upowerDevices.js:100 ui/indicator.ui:5
+#: preferences/device.js:150 preferences/upowerDevices.js:128 ui/indicator.ui:5
 msgid "Indicator"
 msgstr ""
 
-#: preferences/device.js:153 preferences/upowerDevices.js:104
+#: preferences/device.js:154 preferences/upowerDevices.js:132
 msgid "Configure Indicator"
 msgstr ""
 
-#: preferences/device.js:154 preferences/upowerDevices.js:105
+#: preferences/device.js:155 preferences/upowerDevices.js:133
 msgid "Choose how the indicator should behave"
 msgstr ""
 
-#: preferences/device.js:158
+#: preferences/device.js:159
 msgid "Do not show Icon"
 msgstr ""
 
-#: preferences/device.js:159
+#: preferences/device.js:160
 msgid "Show Icon without Battery level"
 msgstr ""
 
-#: preferences/device.js:160
+#: preferences/device.js:161
 msgid "Show Icon with Battery Level"
 msgstr ""
 
-#: preferences/device.js:163 preferences/upowerDevices.js:109
+#: preferences/device.js:164 preferences/upowerDevices.js:137
 msgid "Hide Icon"
 msgstr ""
 
-#: preferences/device.js:164 preferences/upowerDevices.js:110
+#: preferences/device.js:165 preferences/upowerDevices.js:138
 msgid "Show Icon"
 msgstr ""
 
-#: preferences/device.js:225
+#: preferences/device.js:226
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
 "Informacions de supression de periferic : lo boton es disponible après aver "
 "copat l’associacion del periferic"
 
-#: preferences/device.js:257 preferences/upowerDevices.js:201
+#: preferences/device.js:258
 msgid "(Removed)"
 msgstr "(Levat)"
 
-#: preferences/device.js:258
+#: preferences/device.js:259
 msgid "(Paired)"
 msgstr "(Apariat)"
-
-#: preferences/enhancedDeviceSupport.js:62 preferences/gattBas.js:183
-#: ui/gattBas.ui:5
-msgid "Battery Service (BAS)"
-msgstr ""
-
-#: preferences/enhancedDeviceSupport.js:65
-msgid "Enables advanced features and custom UI elements:"
-msgstr ""
 
 #: preferences/gattBas.js:46
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
@@ -238,17 +349,11 @@ msgstr ""
 msgid "Battery 3 Icon"
 msgstr ""
 
-#: preferences/indicator.js:14
-#, javascript-format
-msgid "Assign color for %d – %d%%"
+#: preferences/gattBas.js:183 ui/gattBas.ui:5
+msgid "Battery Service (BAS)"
 msgstr ""
 
-#: preferences/indicator.js:15
-#, javascript-format
-msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
-
-#: preferences/quickSettings.js:57
+#: preferences/quickSettings.js:66
 #, javascript-format
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
@@ -256,14 +361,26 @@ msgid ""
 "for details."
 msgstr ""
 
-#: preferences/upowerDevices.js:168
+#: preferences/upowerDevices.js:100
+msgid "Alias"
+msgstr ""
+
+#: preferences/upowerDevices.js:104
+msgid "Device Alias"
+msgstr ""
+
+#: preferences/upowerDevices.js:197
 msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
 msgstr ""
 
-#: preferences/upowerDevices.js:202
-msgid "(Added)"
+#: preferences/upowerDevices.js:230
+msgid "(Offline)"
+msgstr ""
+
+#: preferences/upowerDevices.js:231
+msgid "(Online)"
 msgstr ""
 
 #: ui/about.ui:5
@@ -298,7 +415,7 @@ msgstr "Crowdin"
 msgid "Online Tutorials"
 msgstr "Tutorials en linha"
 
-#: ui/airpods.ui:9 ui/quickSettings.ui:62
+#: ui/airpods.ui:9 ui/quickSettings.ui:9
 msgid "Note!"
 msgstr "Nòta !"
 
@@ -343,6 +460,92 @@ msgstr ""
 msgid "No compatible device paired!"
 msgstr ""
 
+#: ui/batteryWidgetSettings.ui:5
+msgid "Battery Widget Settings"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:9
+msgid "Indicator Widget Settings"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:12
+msgid "Battery Level Indicator Type"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:13
+msgid "Dots offer better visibility"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:25
+msgid "Battery Bar Position"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:26
+msgid "Choose where to display the battery bar relative to the device icon"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:38
+msgid "Device Icon Size"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:39
+msgid ""
+"Adjust the size of the device icon displayed above the battery level "
+"indicator"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:54
+msgid "Battery Indicator Color Scheme"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:55
+msgid "Choose color scheme for level bar/dots"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:72
+msgid "Circle Widget Settings"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:75
+msgid "Circle Widget Color Scheme"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:76
+msgid "Choose color scheme for battery circle widget"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:94
+msgid "Battery Level Bar"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:95
+msgid "Battery Level Dot"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:100
+msgid "Left"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:101
+msgid "Right"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:102
+msgid "Below"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:107 ui/batteryWidgetSettings.ui:114
+msgid "Symbolic"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:108 ui/batteryWidgetSettings.ui:115
+msgid "Colored"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:109 ui/batteryWidgetSettings.ui:116
+msgid "Customized"
+msgstr ""
+
 #: ui/device.ui:5
 msgid "Device"
 msgstr "Periferic"
@@ -353,88 +556,6 @@ msgstr ""
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:5 ui/enhancedDeviceSupport.ui:9
-msgid "Enhanced Device Support"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:12
-msgid "Enable Enhanced Device Support"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:25
-msgid "Panel button with Menu"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:29
-msgid "Displays Panel Button"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:30
-msgid "Adds a button to the panel with battery info and controls"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:44
-msgid "Show Popup on Hover"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:48
-msgid "Show Detailed Info on Hover"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:49
-msgid ""
-"Displays a popup with battery info and controls when the mouse pointer "
-"hovers over the indicator for a custom delay"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:61
-msgid "Hover Activation Delay"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:62
-msgid ""
-"Specify the number of seconds the mouse must hover over the indicator before "
-"detailed information is displayed."
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:81
-msgid "Multiple Battery Indicator"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:85
-msgid "Show Separate Battery Indicators"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:86
-msgid ""
-"When enabled, display one indicator per battery. When disabled, show a "
-"single indicator with the most critical (lowest) battery level."
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:100
-msgid "Color Scheme"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:104
-msgid "Battery Circle Widget Color Scheme"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:105
-msgid "Choose color scheme for battery circle widget"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:121 ui/indicator.ui:118
-msgid "Symbolic"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:122 ui/indicator.ui:119
-msgid "Colored"
-msgstr ""
-
-#: ui/enhancedDeviceSupport.ui:123 ui/indicator.ui:120
-msgid "Customized"
 msgstr ""
 
 #: ui/gattBas.ui:18
@@ -452,119 +573,164 @@ msgid ""
 msgstr ""
 
 #: ui/indicator.ui:9
-msgid "Indicator Settings"
-msgstr "Paramètres de l'indicator"
+msgid "Bluetooth System Indicator Settings"
+msgstr ""
 
 #: ui/indicator.ui:12
-msgid "Enable battery indicators for Bluetooth devices"
-msgstr ""
-
-#: ui/indicator.ui:13
-msgid "Displays Bluetooth device icon with battery level in system tray"
-msgstr ""
-
-#: ui/indicator.ui:24
-msgid "Display battery percentage as text"
-msgstr ""
-
-#: ui/indicator.ui:25
-msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
-
-#: ui/indicator.ui:37
 msgid "Bluetooth Connection Status Indicator"
 msgstr ""
 
-#: ui/indicator.ui:38
+#: ui/indicator.ui:13
 msgid ""
 "Hide conditionally: Displayed only when no other bluetooth related "
 "indicators are present"
 msgstr ""
 
-#: ui/indicator.ui:52
-msgid "Indicator Widget Settings"
+#: ui/indicator.ui:27
+msgid "Battery Indicator Settings"
 msgstr ""
 
-#: ui/indicator.ui:55
-msgid "Device Icon Size"
+#: ui/indicator.ui:30
+msgid "Choose Indicator mode"
 msgstr ""
 
-#: ui/indicator.ui:56
+#: ui/indicator.ui:31
 msgid ""
-"Adjust the size of the device icon displayed above the battery level "
-"indicator"
+"Off: No battery indicator.\n"
+"System Indicator: Battery icon in top bar.\n"
+"Panel Button: Battery icon with menu."
 msgstr ""
 
-#: ui/indicator.ui:71
-msgid "Battery Level Indicator Type"
+#: ui/indicator.ui:45
+msgid "Panel Button Mode"
 msgstr ""
 
-#: ui/indicator.ui:72
-msgid "Dots offer better visibility"
+#: ui/indicator.ui:48
+msgid "Panel button indicator mode."
 msgstr ""
 
-#: ui/indicator.ui:84
-msgid "Battery Indicator Color Scheme"
+#: ui/indicator.ui:49
+msgid "On: Show one selected device. Off: Show all devices"
 msgstr ""
 
-#: ui/indicator.ui:85
-msgid "Choose color scheme for level bar/dots"
+#: ui/indicator.ui:62
+msgid "Indicator Settings"
+msgstr "Paramètres de l'indicator"
+
+#: ui/indicator.ui:65
+msgid "Display battery percentage as text"
 msgstr ""
 
-#: ui/indicator.ui:105
-msgid "Default Behaviour"
+#: ui/indicator.ui:66
+msgid "Displays battery percentage beside the Bluetooth device icon"
+msgstr ""
+
+#: ui/indicator.ui:77
+msgid "Show Separate Battery Indicators"
+msgstr ""
+
+#: ui/indicator.ui:78
+msgid ""
+"When enabled, display one indicator per battery. When disabled, show a "
+"single indicator with the most critical (lowest) battery level."
+msgstr ""
+
+#: ui/indicator.ui:91
+msgid "Show Popup on Hover"
+msgstr ""
+
+#: ui/indicator.ui:94
+msgid "Show Detailed Info on Hover"
+msgstr ""
+
+#: ui/indicator.ui:95
+msgid ""
+"Displays a popup with battery info and controls when the mouse pointer "
+"hovers over the indicator for a custom delay"
 msgstr ""
 
 #: ui/indicator.ui:106
-msgid "Hide Always"
+msgid "Hover Activation Delay"
 msgstr ""
 
 #: ui/indicator.ui:107
+msgid ""
+"Specify the number of seconds the mouse must hover over the indicator before "
+"detailed information is displayed."
+msgstr ""
+
+#: ui/indicator.ui:126
+msgid "Default Behaviour"
+msgstr ""
+
+#: ui/indicator.ui:127
+msgid "Hide Always"
+msgstr ""
+
+#: ui/indicator.ui:128
 msgid "Hide Conditionally"
 msgstr ""
 
-#: ui/indicator.ui:112
-msgid "Battery Level Bar"
+#: ui/indicator.ui:133
+msgid "Off"
 msgstr ""
 
-#: ui/indicator.ui:113
-msgid "Battery Level Dot"
+#: ui/indicator.ui:134
+msgid "System Tray"
 msgstr ""
 
-#: ui/quickSettings.ui:9
+#: ui/indicator.ui:135
+msgid "Panel Button"
+msgstr ""
+
+#: ui/quickSettings.ui:17
 msgid "Quick Menu Settings"
 msgstr "Sortir del menú Paramètres"
 
-#: ui/quickSettings.ui:12
+#: ui/quickSettings.ui:20
+msgid "Enable popup submenu widget mode"
+msgstr ""
+
+#: ui/quickSettings.ui:21
+msgid ""
+"Adds a submenu that displays battery levels and other controls (ANC) if "
+"available"
+msgstr ""
+
+#: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
 msgstr ""
 
-#: ui/quickSettings.ui:13
+#: ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
 
-#: ui/quickSettings.ui:24
+#: ui/quickSettings.ui:44
 msgid "Show Bluetooth device battery percentage"
 msgstr "Mostrar lo percentatge de batariá de periferics Bluetooth"
 
-#: ui/quickSettings.ui:25
+#: ui/quickSettings.ui:45
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr "Aficha lo nivèl de batariá de periferics Bluetooth en percentatge"
 
-#: ui/quickSettings.ui:36
+#: ui/quickSettings.ui:56
 msgid "Display battery level icon before text"
 msgstr "Mostrar lo percentatge avant l'icòna de batariá"
 
-#: ui/quickSettings.ui:37
+#: ui/quickSettings.ui:57
 msgid "Swaps position of battery level icon and percentage text"
 msgstr ""
 "Escàmbia la posicion de l’icòna de nivèl de batariá amb çò del percentatge"
 
-#: ui/quickSettings.ui:48
+#: ui/quickSettings.ui:70
+msgid "Sort By History"
+msgstr ""
+
+#: ui/quickSettings.ui:73
 msgid "Sort devices by connection history"
 msgstr ""
 
-#: ui/quickSettings.ui:49
+#: ui/quickSettings.ui:74
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"
