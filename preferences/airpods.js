@@ -121,11 +121,8 @@ export const  Airpods = GObject.registerClass({
         for (const info of pathsString) {
             const pathInfo = {
                 path: info['path'],
-                model: info['model'],
                 icon: info['icon'],
                 alias: info['alias'],
-                inEarControl: info['in-ear-control-enabled'],
-                caVolume: info['ca-volume'],
             };
 
             if (this._deviceItems.has(pathInfo.path)) {
