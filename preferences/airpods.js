@@ -6,109 +6,7 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
-import {AirpodsModelList} from '../lib/devices/airpods/airpodsConfig.js';
-
-const  ConfigureWindow = GObject.registerClass({
-}, class ConfigureWindow extends Adw.Window {
-    _init(settings, mac, deviceItem, pathInfo, parentWindow) {
-        super._init({
-            title: pathInfo.alias,
-            default_width: 580,
-            default_height: 600,
-            modal: true,
-            transient_for: parentWindow,
-        });
-
-        const modelData = AirpodsModelList.find(m => m.key === pathInfo.model);
-
-        const toolViewBar = new Adw.ToolbarView();
-
-        const headerBar = new Adw.HeaderBar({
-            decoration_layout: 'icon:close',
-            show_end_title_buttons: true,
-        });
-
-        const page = new Adw.PreferencesPage();
-
-        toolViewBar.add_top_bar(headerBar);
-        toolViewBar.set_content(page);
-        this.set_content(toolViewBar);
-
-        const aliasGroup = new Adw.PreferencesGroup({
-            title: `MAC: ${mac}`,
-        });
-
-        page.add(aliasGroup);
-
-        const inEarSettingsGroup = new Adw.PreferencesGroup({
-            title: _('Playback Behavior'),
-        });
-
-        const inEarSettingsRow = new Adw.ActionRow({
-            title: _('Pause when device is not worn'),
-            subtitle: _('Pause playback when the device is removed,' +
-                    'resume when it is put back on'),
-        });
-
-        const inEarSettingsSwitch = new Gtk.Switch({
-            valign: Gtk.Align.CENTER,
-        });
-
-        inEarSettingsSwitch.active = pathInfo.inEarControl;
-        inEarSettingsSwitch.connect('notify::active', () => {
-            const pairedDevice = settings.get_strv('airpods-list');
-            const existingPathIndex =
-                pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
-            if (existingPathIndex !== -1) {
-                const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
-                existingItem['in-ear-control-enabled'] = inEarSettingsSwitch.active;
-                pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
-                settings.set_strv('airpods-list', pairedDevice);
-            }
-        });
-        inEarSettingsRow.add_suffix(inEarSettingsSwitch);
-        inEarSettingsGroup.add(inEarSettingsRow);
-        page.add(inEarSettingsGroup);
-
-        if (modelData.awarenessSupported) {
-            const awarnessVolumeGroup = new Adw.PreferencesGroup({
-                title: _('Volume Level'),
-            });
-
-            const adjustment = new Gtk.Adjustment({
-                lower: 0,
-                upper: 50,
-                step_increment: 1,
-                page_increment: 10,
-                value: pathInfo.caVolume,
-            });
-
-            const awarnessVolumeRow = new Adw.SpinRow({
-                title: _('Conversation awareness volume limit'),
-                subtitle: _('Limits media volume to this percentage during conversation.' +
-            ' Note: No change if current volume is below this level.'),
-                adjustment,
-                numeric: true,
-            });
-
-            awarnessVolumeRow.connect('notify::value', () => {
-                const pairedDevice = settings.get_strv('airpods-list');
-                const existingPathIndex =
-                pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
-                if (existingPathIndex !== -1) {
-                    const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
-                    existingItem['ca-volume'] = awarnessVolumeRow.value;
-                    pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
-                    settings.set_strv('airpods-list', pairedDevice);
-                }
-            });
-
-            awarnessVolumeGroup.add(awarnessVolumeRow);
-            page.add(awarnessVolumeGroup);
-        }
-    }
-}
-);
+import {ConfigureWindow} from './airpodsConfigureWindow.js';
 
 const  DeviceItem = GObject.registerClass({
 }, class DeviceItem extends Adw.ActionRow {
@@ -130,9 +28,9 @@ const  DeviceItem = GObject.registerClass({
 
         this._customiseButton.connect('clicked', () => {
             const parentWindow = this._customiseButton.get_ancestor(Gtk.Window);
-            const configureWindow =
-                new ConfigureWindow(settings, this._macAddress, deviceItem,
-                    this._pathInfo, parentWindow);
+            const configureWindow = new ConfigureWindow(settings, this._macAddress,
+                this._pathInfo.path, parentWindow, _);
+
             configureWindow.present();
         });
 
@@ -229,24 +127,7 @@ export const  Airpods = GObject.registerClass({
                 inEarControl: info['in-ear-control-enabled'],
                 caVolume: info['ca-volume'],
             };
-            if (!pathInfo.alias && this._attemptOnce > 0) {
-                const pathsDeviceString = this._settings.get_strv('device-list').map(JSON.parse);
-                if (!pathsDeviceString || pathsDeviceString.length === 0) {
-                    return;
-                } else {
-                    const existingPathIndex =
-                    pathsDeviceString.findIndex(item => item.path === pathInfo.path);
-                    if (existingPathIndex !== -1) {
-                        const existingItem = pathsDeviceString[existingPathIndex];
-                        pathInfo.alias = existingItem.alias;
-                        const currentItem = pathsString.find(item => item.path === pathInfo.path);
-                        currentItem.alias = pathInfo.alias;
-                        this._settings.set_strv('airpods-list',
-                            pathsString.map(obj => JSON.stringify(obj)));
-                        this._attemptOnce--;
-                    }
-                }
-            }
+
             if (this._deviceItems.has(pathInfo.path)) {
                 const row = this._deviceItems.get(pathInfo.path);
                 row.updateProperites(pathInfo);

@@ -44,8 +44,15 @@
   font-weight: bold;
   font-size: 0.9em;
 }
+.bbm-popupmenu-expander {
+  min-width: 6px;
+}
 .bbm-header-icon {
   icon-size: 12px;
+}
+.bbm-panel-icon {
+  margin-left: 4px;
+  margin-right: 4px;
 }
 .bbm-panel-expand-icon {
   icon-size: 12px;
