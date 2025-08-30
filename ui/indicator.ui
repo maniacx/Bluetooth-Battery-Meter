@@ -28,7 +28,7 @@
         <child>
           <object class="AdwActionRow">
             <property name="title" translatable="yes">Choose Indicator mode</property>
-            <property name="subtitle" translatable="yes">Off: No battery indicator.&#xA;&lt;b&gt;System Indicator:&lt;/b&gt; Battery icon in top bar.&#xA;&lt;b&gt;Panel Button:&lt;/b&gt; Battery icon with menu.</property>
+            <property name="subtitle" translatable="yes">Off: No battery indicator.&#xA;System Indicator: Battery icon in top bar.&#xA;Panel Button: Battery icon with menu.</property>
             <property name="activatable-widget">indicator_type</property>
             <child>
               <object class="GtkDropDown" id="indicator_type">
