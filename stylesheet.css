@@ -6,14 +6,19 @@
 .bbm-submenu.open {
   margin-top: 6px;
   margin-bottom: 6px;
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(128, 128, 128, 0.2) !important;
+  color: inherit !important;
+}
+.bbm-submenu.open:hover {
+  background-color: rgba(128, 128, 128, 0.2) !important;
+  color: inherit !important;
 }
 .bbm-bt-widget {
   margin-left: 4px;
   margin-right: 4px;
 }
 .bbm-bt-open-menu {
-    border-radius: 18px;
+  border-radius: 18px;
 }
 .bbm-bt-percentage-label {
   text-align: center;
@@ -24,11 +29,10 @@
   padding: 4px;
   min-width: 16.2em;
 }
-.bbm-panel-indicator-box {
-  padding-left: 2px;
-  padding-right: 2px;
-}
 .bbm-popup-menu {
+  background-color: transparent;
+}
+.bbm-popup-menu-box {
   min-width: 15em;
   background-color: transparent;
 }
@@ -38,9 +42,15 @@
 }
 .bbm-popup-title {
   font-weight: bold;
+  font-size: 0.9em;
 }
 .bbm-header-icon {
   icon-size: 12px;
+}
+.bbm-panel-expand-icon {
+  icon-size: 12px;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 .bbm-header-button {
   height: 18px;
@@ -49,26 +59,9 @@
   margin-left: 2px;
   margin-right: 2px;
 }
-.bbm-panel-button-open-menu {
-  background-color: rgba(128, 128, 128, 0.1);
-}
-.bbm-panel-button-open-menu:hover {
-  background-color: rgba(128, 128, 128, 0.2);
-}
-.bbm-panel-icon-check {
-  padding: 0.5em;
-}
-.bbm-panel-hbox {
-  padding-top: 2px;
-  padding-bottom: 2px;
-} 
 .bbm-panel-start-bin {
   padding-left: 4px;
   padding-right: 4px;
-}
-.bbm-panel-button-box {
-  padding-top: 8px;
-  padding-bottom: 2px;
 }
 .bbm-battery-veritcal-widget-label{
   padding-top: 4px;
@@ -108,7 +101,7 @@
   margin-bottom: 2px;
   border-radius: 4px;
 }
-.bbm-button-separator {
+.bbm-toggle-button-separator {
   min-width: 0.5px;
   margin-top: 3px;
   margin-bottom: 3px;
@@ -145,7 +138,7 @@
   icon-size: 12px;
   padding: 0.5px;
 }
-.bbm-radio-separator {
+.bbm-button-separator {
   min-width: 1px;
   margin-left: 3px;
   margin-right: 3px;
@@ -171,6 +164,9 @@
 }
 .bbm-radio3btn-box {
   width: 4.5em;
+}
+.bbm-radio4btn-box {
+  width: 3.4em;
 }
 .bbm-radiobtn-icon {
   icon-size: 10px;
