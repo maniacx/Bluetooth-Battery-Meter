@@ -1,25 +1,21 @@
-# Kostas Papadimas <pkst@gnome.org>, 2012.
-# Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013, 2014, 2015.
-# Vangelis Skarmoutsos <skarmoutsosv@gmail.com>, 2013.
-# Efstathios Iosifidis <iosifidis@opensuse.org>, 2013-2019.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-shell.po.master\n"
+"Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-29 21:49-0700\n"
-"PO-Revision-Date: 2023-10-16 21:58+0300\n"
-"Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
-"Language-Team: Greek, Modern (1453-) <gnome-el-list@gnome.org>\n"
-"Language: el\n"
+"PO-Revision-Date: 2025-08-30 07:36\n"
+"Last-Translator: \n"
+"Language-Team: Greek\n"
+"Language: el_GR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4\n"
-"X-DamnedLies-Scope: partial\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Project-Style: gnome\n"
+"X-Crowdin-Project: bluetooth-battery-meter\n"
+"X-Crowdin-Project-ID: 639464\n"
+"X-Crowdin-Language: el\n"
+"X-Crowdin-File: /po/Bluetooth-Battery-Meter.pot\n"
+"X-Crowdin-File-ID: 78\n"
 
 #: lib/bluetoothToggle.js:511
 #, javascript-format
@@ -34,51 +30,45 @@ msgstr ""
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
-msgstr "Γενική δημόσια άδεια GNU, έκδοση 3 ή νεότερη"
+msgstr "Γενική δημόσια άδεια GNU (έκδοση 3 ή νεότερη)"
 
 #: preferences/about.js:49
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "© %s %s"
 
 #: preferences/about.js:50
 #, javascript-format
-msgid ""
-"This application comes with absolutely no warranty. See the <a "
-"href=\"%s\">%s</a> for details."
-msgstr ""
-"Αυτή η εφαρμογή έρχεται με καμία απολύτως εγγύηση. Δείτε το <a "
-"href=\"%s\">%s</a> για λεπτομέρειες."
+msgid "This application comes with absolutely no warranty. See the <a href=\"%s\">%s</a> for details."
+msgstr "Αυτή η εφαρμογή δεν συνοδεύεται από καμία απολύτως εγγύηση. Δείτε τη <a href=\"%s\">%s</a> για λεπτομέρειες."
 
 #: preferences/airpods.js:44
 msgid "Playback Behavior"
-msgstr ""
+msgstr "Συμπεριφορά αναπαραγωγής"
 
 #: preferences/airpods.js:48
 msgid "Pause when device is not worn"
-msgstr ""
+msgstr "Παύση όταν η συσκευή δεν φοριέται"
 
 #: preferences/airpods.js:49
 msgid "Pause playback when the device is removed,resume when it is put back on"
-msgstr ""
+msgstr "Παύση της αναπαραγωγής κατά την αφαίρεση της συσκευής, συνέχιση όταν τη φορέσετε ξανά"
 
 #: preferences/airpods.js:75
 msgid "Volume Level"
-msgstr ""
+msgstr "Επίπεδο έντασης"
 
 #: preferences/airpods.js:87
 msgid "Conversation awareness volume limit"
 msgstr ""
 
 #: preferences/airpods.js:88
-msgid ""
-"Limits media volume to this percentage during conversation. Note: No change "
-"if current volume is below this level."
+msgid "Limits media volume to this percentage during conversation. Note: No change if current volume is below this level."
 msgstr ""
 
 #: preferences/airpods.js:112 preferences/airpods.js:116
 msgid "Customize Adaptive Audio"
-msgstr ""
+msgstr "Προσαρμογή προσαρμοστικού ήχου"
 
 #: preferences/airpods.js:117
 msgid "Customize Adaptive Audio to allow more or less noise"
@@ -86,25 +76,25 @@ msgstr ""
 
 #: preferences/airpods.js:125
 msgid "Less"
-msgstr ""
+msgstr "Λιγότερα"
 
 #: preferences/airpods.js:126
 msgid "Default"
-msgstr ""
+msgstr "Προεπιλογή"
 
 #: preferences/airpods.js:127
 msgid "More"
-msgstr ""
+msgstr "Περισσότερα"
 
 #: preferences/airpods.js:172 preferences/device.js:211
 #: preferences/gattBas.js:171 preferences/upowerDevices.js:155
 msgid "Configure device."
-msgstr ""
+msgstr "Διαμόρφωση συσκευής"
 
 #: preferences/airpods.js:184 preferences/enhancedDeviceSupport.js:61
 #: ui/airpods.ui:5
 msgid "AirPods/Beats"
-msgstr ""
+msgstr "AirPods/Beats"
 
 #: preferences/airpods.js:187 preferences/gattBas.js:186
 #, javascript-format
@@ -113,15 +103,15 @@ msgstr ""
 
 #: preferences/device.js:49 preferences/upowerDevices.js:40
 msgid "Battery Status:"
-msgstr ""
+msgstr "Κατάσταση μπαταρίας:"
 
 #: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Reported"
-msgstr ""
+msgstr "Αναφέρεται"
 
 #: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Not Available"
-msgstr ""
+msgstr "Μη διαθέσιμη"
 
 #: preferences/device.js:51
 msgid "Reported from enhanced device service"
@@ -129,12 +119,12 @@ msgstr ""
 
 #: preferences/device.js:58 preferences/upowerDevices.js:46
 msgid "Icon"
-msgstr ""
+msgstr "Εικονίδιο"
 
 #: preferences/device.js:62 preferences/gattBas.js:45 preferences/gattBas.js:50
 #: preferences/upowerDevices.js:50
 msgid "Select Icon"
-msgstr ""
+msgstr "Επιλογή εικονιδίου"
 
 #: preferences/device.js:63 preferences/upowerDevices.js:51
 msgid "Select the icon used for the indicator and quick menu"
@@ -142,7 +132,7 @@ msgstr ""
 
 #: preferences/device.js:66
 msgid "This is an enhanced device"
-msgstr ""
+msgstr "Αυτή είναι μια ενισχυμένη συσκευή"
 
 #: preferences/device.js:67
 msgid "Icon selection if available are in Enhanced device per device settings"
@@ -150,11 +140,11 @@ msgstr ""
 
 #: preferences/device.js:119 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "Γρήγορο μενού"
 
 #: preferences/device.js:123
 msgid "Display Battery Level"
-msgstr ""
+msgstr "Εμφάνιση επιπέδου μπαταρίας"
 
 #: preferences/device.js:124
 msgid "Display battery level in the Bluetooth panel quick menu"
@@ -162,11 +152,11 @@ msgstr ""
 
 #: preferences/device.js:149 preferences/upowerDevices.js:100 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "Ένδειξη"
 
 #: preferences/device.js:153 preferences/upowerDevices.js:104
 msgid "Configure Indicator"
-msgstr ""
+msgstr "Ρύθμιση ένδειξης"
 
 #: preferences/device.js:154 preferences/upowerDevices.js:105
 msgid "Choose how the indicator should behave"
@@ -174,41 +164,40 @@ msgstr ""
 
 #: preferences/device.js:158
 msgid "Do not show Icon"
-msgstr ""
+msgstr "Να μην εμφανίζεται εικονίδιο"
 
 #: preferences/device.js:159
 msgid "Show Icon without Battery level"
-msgstr ""
+msgstr "Εμφάνιση εικονιδίου χωρίς επίπεδο μπαταρίας"
 
 #: preferences/device.js:160
 msgid "Show Icon with Battery Level"
-msgstr ""
+msgstr "Εμφάνιση εικονιδίου με επίπεδο μπαταρίας"
 
 #: preferences/device.js:163 preferences/upowerDevices.js:109
 msgid "Hide Icon"
-msgstr ""
+msgstr "Απόκρυψη εικονιδίου"
 
 #: preferences/device.js:164 preferences/upowerDevices.js:110
 msgid "Show Icon"
-msgstr ""
+msgstr "Εμφάνιση εικονιδίου"
 
 #: preferences/device.js:225
-msgid ""
-"Delete device information: The button is available after unpairing device"
-msgstr ""
+msgid "Delete device information: The button is available after unpairing device"
+msgstr "Διαγραφή πληροφοριών συσκευής: Το κουμπί είναι διαθέσιμο μετά την απόζευξη της συσκευής"
 
 #: preferences/device.js:257 preferences/upowerDevices.js:201
 msgid "(Removed)"
-msgstr ""
+msgstr "(Αφαιρέθηκε)"
 
 #: preferences/device.js:258
 msgid "(Paired)"
-msgstr ""
+msgstr "(Συζεύχθηκε)"
 
 #: preferences/enhancedDeviceSupport.js:62 preferences/gattBas.js:183
 #: ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
-msgstr ""
+msgstr "Υπηρεσία μπαταρίας (BAS)"
 
 #: preferences/enhancedDeviceSupport.js:65
 msgid "Enables advanced features and custom UI elements:"
@@ -224,19 +213,19 @@ msgstr ""
 
 #: preferences/gattBas.js:59
 msgid "Icon "
-msgstr ""
+msgstr "Εικονίδιο "
 
 #: preferences/gattBas.js:68
 msgid "Battery 1 Icon"
-msgstr ""
+msgstr "Εικονίδιο μπαταρίας 1"
 
 #: preferences/gattBas.js:77
 msgid "Battery 2 Icon"
-msgstr ""
+msgstr "Εικονίδιο μπαταρίας 2"
 
 #: preferences/gattBas.js:86
 msgid "Battery 3 Icon"
-msgstr ""
+msgstr "Εικονίδιο μπαταρίας 3"
 
 #: preferences/indicator.js:14
 #, javascript-format
@@ -250,41 +239,36 @@ msgstr ""
 
 #: preferences/quickSettings.js:57
 #, javascript-format
-msgid ""
-"Certain Bluetooth devices do not report battery level until Bluez's "
-"experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
-"for details."
-msgstr ""
+msgid "Certain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check <a href=\"%s\">Readme</a> for details."
+msgstr "Ορισμένες συσκευές Bluetooth δεν αναφέρουν το επίπεδο μπαταρίας τους μέχρι να ενεργοποιηθούν οι πειραματικές λειτουργίες του Bluez στο σύστημα. Δείτε το <a href=\"%s\">αρχείο Readme</a> για λεπτομέρειες."
 
 #: preferences/upowerDevices.js:168
-msgid ""
-"Delete device information: The button is available after upower device are "
-"removed"
-msgstr ""
+msgid "Delete device information: The button is available after upower device are removed"
+msgstr "Διαγραφή πληροφοριών συσκευής: Το κουμπί είναι διαθέσιμο μετά την αφαίρεση συσκευών UPower"
 
 #: preferences/upowerDevices.js:202
 msgid "(Added)"
-msgstr ""
+msgstr "(Προστέθηκε)"
 
 #: ui/about.ui:5
 msgid "About"
-msgstr "Περί"
+msgstr "Πληροφορίες"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "Αρχείο Readme"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "Αναφορά προβλήματος"
 
 #: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
-msgstr ""
+msgstr "Μεταφράσεις"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "Προβολή πηγών στο Github"
 
 #: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
@@ -292,23 +276,22 @@ msgstr "Νομικά"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "Διαδικτυακοί οδηγοί"
 
 #: ui/airpods.ui:9 ui/quickSettings.ui:62
 msgid "Note!"
-msgstr ""
+msgstr "Σημείωση!"
 
 #: ui/airpods.ui:16 ui/gattBas.ui:15
 msgid "Experimental"
-msgstr ""
+msgstr "Πειραματικό"
 
 #: ui/airpods.ui:21
-msgid ""
-"Some models/features are not fully tested. Please share feedback on GitHub."
+msgid "Some models/features are not fully tested. Please share feedback on GitHub."
 msgstr ""
 
 #: ui/airpods.ui:26
@@ -316,23 +299,19 @@ msgid "Conversation Awareness (if supported) works only with the A2DP profile."
 msgstr ""
 
 #: ui/airpods.ui:31
-msgid ""
-"ANC and Conversation Awareness buttons are hidden when the earbuds are not "
-"in-ear."
+msgid "ANC and Conversation Awareness buttons are hidden when the earbuds are not in-ear."
 msgstr ""
 
 #: ui/airpods.ui:38
 msgid "AirPods/Beats Settings"
-msgstr ""
+msgstr "Ρυθμίσεις AirPods/Beats"
 
 #: ui/airpods.ui:41
 msgid "Enable AirPods/Beats Support"
-msgstr ""
+msgstr "Ενεργοποίηση υποστήριξης AirPods/Beats"
 
 #: ui/airpods.ui:42
-msgid ""
-"Enables battery status monitoring and, if supported, control of Noise "
-"Cancellation and Conversation Awareness modes."
+msgid "Enables battery status monitoring and, if supported, control of Noise Cancellation and Conversation Awareness modes."
 msgstr ""
 
 #: ui/airpods.ui:55 ui/device.ui:9 ui/gattBas.ui:35 ui/upowerDevices.ui:26
@@ -341,15 +320,15 @@ msgstr ""
 
 #: ui/airpods.ui:58 ui/gattBas.ui:38
 msgid "No compatible device paired!"
-msgstr ""
+msgstr "Δεν έχει συζευχθεί συμβατή συσκευή!"
 
 #: ui/device.ui:5
 msgid "Device"
-msgstr ""
+msgstr "Συσκευή"
 
 #: ui/device.ui:10 ui/upowerDevices.ui:27
 msgid "Note: General settings override device-specific settings"
-msgstr ""
+msgstr "Σημείωση: Οι γενικές ρυθμίσεις παρακάμπτουν τις ρυθμίσεις της εκάστοτε συσκευής"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
@@ -357,7 +336,7 @@ msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:5 ui/enhancedDeviceSupport.ui:9
 msgid "Enhanced Device Support"
-msgstr ""
+msgstr "Βελτιωμένη υποστήριξη συσκευών"
 
 #: ui/enhancedDeviceSupport.ui:12
 msgid "Enable Enhanced Device Support"
@@ -365,7 +344,7 @@ msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:25
 msgid "Panel button with Menu"
-msgstr ""
+msgstr "Κουμπί πίνακα με μενού"
 
 #: ui/enhancedDeviceSupport.ui:29
 msgid "Displays Panel Button"
@@ -373,20 +352,18 @@ msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:30
 msgid "Adds a button to the panel with battery info and controls"
-msgstr ""
+msgstr "Προσθέτει ένα κουμπί στον πίνακα με πληροφορίες για την μπαταρία και στοιχεία ελέγχου"
 
 #: ui/enhancedDeviceSupport.ui:44
 msgid "Show Popup on Hover"
-msgstr ""
+msgstr "Εμφάνιση αναδυόμενου παραθύρου με πέρασμα του κέρσορα"
 
 #: ui/enhancedDeviceSupport.ui:48
 msgid "Show Detailed Info on Hover"
 msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:49
-msgid ""
-"Displays a popup with battery info and controls when the mouse pointer "
-"hovers over the indicator for a custom delay"
+msgid "Displays a popup with battery info and controls when the mouse pointer hovers over the indicator for a custom delay"
 msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:61
@@ -394,9 +371,7 @@ msgid "Hover Activation Delay"
 msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:62
-msgid ""
-"Specify the number of seconds the mouse must hover over the indicator before "
-"detailed information is displayed."
+msgid "Specify the number of seconds the mouse must hover over the indicator before detailed information is displayed."
 msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:81
@@ -405,17 +380,15 @@ msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:85
 msgid "Show Separate Battery Indicators"
-msgstr ""
+msgstr "Εμφάνιση ξεχωριστών ενδείξεων μπαταρίας"
 
 #: ui/enhancedDeviceSupport.ui:86
-msgid ""
-"When enabled, display one indicator per battery. When disabled, show a "
-"single indicator with the most critical (lowest) battery level."
+msgid "When enabled, display one indicator per battery. When disabled, show a single indicator with the most critical (lowest) battery level."
 msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:100
 msgid "Color Scheme"
-msgstr ""
+msgstr "Σύνολο χρωμάτων"
 
 #: ui/enhancedDeviceSupport.ui:104
 msgid "Battery Circle Widget Color Scheme"
@@ -427,15 +400,15 @@ msgstr ""
 
 #: ui/enhancedDeviceSupport.ui:121 ui/indicator.ui:118
 msgid "Symbolic"
-msgstr ""
+msgstr "Συμβολικό"
 
 #: ui/enhancedDeviceSupport.ui:122 ui/indicator.ui:119
 msgid "Colored"
-msgstr ""
+msgstr "Έγχρωμο"
 
 #: ui/enhancedDeviceSupport.ui:123 ui/indicator.ui:120
 msgid "Customized"
-msgstr ""
+msgstr "Προσαρμοσμένο"
 
 #: ui/gattBas.ui:18
 msgid "Battery Service (BAS) Settings"
@@ -446,14 +419,12 @@ msgid "Enable GATT Battery Service Reporting"
 msgstr ""
 
 #: ui/gattBas.ui:22
-msgid ""
-"Display battery levels for Bluetooth devices using the GATT Battery Service "
-"(BAS)."
+msgid "Display battery levels for Bluetooth devices using the GATT Battery Service (BAS)."
 msgstr ""
 
 #: ui/indicator.ui:9
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Ρυθμίσεις ένδειξης"
 
 #: ui/indicator.ui:12
 msgid "Enable battery indicators for Bluetooth devices"
@@ -465,7 +436,7 @@ msgstr ""
 
 #: ui/indicator.ui:24
 msgid "Display battery percentage as text"
-msgstr ""
+msgstr "Εμφάνιση ποσοστού μπαταρίας ως κειμένου"
 
 #: ui/indicator.ui:25
 msgid "Displays battery percentage beside the Bluetooth device icon"
@@ -473,12 +444,10 @@ msgstr ""
 
 #: ui/indicator.ui:37
 msgid "Bluetooth Connection Status Indicator"
-msgstr ""
+msgstr "Ένδειξη κατάστασης σύνδεσης Bluetooth"
 
 #: ui/indicator.ui:38
-msgid ""
-"Hide conditionally: Displayed only when no other bluetooth related "
-"indicators are present"
+msgid "Hide conditionally: Displayed only when no other bluetooth related indicators are present"
 msgstr ""
 
 #: ui/indicator.ui:52
@@ -487,21 +456,19 @@ msgstr ""
 
 #: ui/indicator.ui:55
 msgid "Device Icon Size"
-msgstr ""
+msgstr "Μέγεθος εικονιδίου συσκευής"
 
 #: ui/indicator.ui:56
-msgid ""
-"Adjust the size of the device icon displayed above the battery level "
-"indicator"
+msgid "Adjust the size of the device icon displayed above the battery level indicator"
 msgstr ""
 
 #: ui/indicator.ui:71
 msgid "Battery Level Indicator Type"
-msgstr ""
+msgstr "Τύπος ένδειξης επιπέδου μπαταρίας"
 
 #: ui/indicator.ui:72
 msgid "Dots offer better visibility"
-msgstr ""
+msgstr "Οι κουκκίδες προσφέρουν καλύτερη ορατότητα"
 
 #: ui/indicator.ui:84
 msgid "Battery Indicator Color Scheme"
@@ -513,31 +480,31 @@ msgstr ""
 
 #: ui/indicator.ui:105
 msgid "Default Behaviour"
-msgstr ""
+msgstr "Προεπιλεγμένη συμπεριφορά"
 
 #: ui/indicator.ui:106
 msgid "Hide Always"
-msgstr ""
+msgstr "Απόκρυψη πάντα"
 
 #: ui/indicator.ui:107
 msgid "Hide Conditionally"
-msgstr ""
+msgstr "Απόκρυψη υπό προϋποθέσεις"
 
 #: ui/indicator.ui:112
 msgid "Battery Level Bar"
-msgstr ""
+msgstr "Γραμμή επιπέδου μπαταρίας"
 
 #: ui/indicator.ui:113
 msgid "Battery Level Dot"
-msgstr ""
+msgstr "Κουκκίδα επιπέδου μπαταρίας"
 
 #: ui/quickSettings.ui:9
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "Ρυθμίσεις γρήγορου μενού"
 
 #: ui/quickSettings.ui:12
 msgid "Show battery icon for Bluetooth devices"
-msgstr ""
+msgstr "Εμφάνιση εικονιδίου μπαταρίας για συσκευές Bluetooth"
 
 #: ui/quickSettings.ui:13
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
@@ -545,11 +512,11 @@ msgstr ""
 
 #: ui/quickSettings.ui:24
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Εμφάνιση ποσοστού μπαταρίας συσκευής Bluetooth"
 
 #: ui/quickSettings.ui:25
 msgid "Displays Bluetooth device battery level percentage in text"
-msgstr ""
+msgstr "Εμφανίζει το ποσοστό του επιπέδου μπαταρίας Bluetooth με κείμενο"
 
 #: ui/quickSettings.ui:36
 msgid "Display battery level icon before text"
@@ -557,43 +524,33 @@ msgstr ""
 
 #: ui/quickSettings.ui:37
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "Εναλλάσσει τη θέση του εικονιδίου του επιπέδου μπαταρίας και του κειμένου του ποσοστού"
 
 #: ui/quickSettings.ui:48
 msgid "Sort devices by connection history"
-msgstr ""
+msgstr "Ταξινόμηση συσκευών κατά ιστορικό σύνδεσης"
 
 #: ui/quickSettings.ui:49
-msgid ""
-"Enable to sort devices by connection history, or disable to sort by "
-"connection status and alias"
+msgid "Enable to sort devices by connection history, or disable to sort by connection status and alias"
 msgstr ""
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
-msgstr ""
+msgstr "UPower"
 
 #: ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
-msgstr ""
+msgstr "Ενεργοποίηση συσκευών UPower"
 
 #: ui/upowerDevices.ui:12
 msgid "Enable indicator for UPower devices"
-msgstr ""
+msgstr "Ενεργοποίηση ένδειξης για συσκευές UPower"
 
 #: ui/upowerDevices.ui:13
-msgid ""
-"Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
-"report battery levels if supported by the kernel or third-party drivers. "
-"Enable this option to display their battery status in the GNOME system tray."
-msgstr ""
+msgid "Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can report battery levels if supported by the kernel or third-party drivers. Enable this option to display their battery status in the GNOME system tray."
+msgstr "Ορισμένες συσκευές UPower, όπως ασύρματα ποντίκια 2.4GHz, πληκτρολόγια κ.λπ., μπορούν να αναφέρουν τα επίπεδα μπαταρίας τους μόνο αν υποστηρίζονται από τον πυρήνα ή διαθέτουν τρίτα προγράμματα οδήγησης. Ενεργοποιήστε αυτήν την επιλογή για να εμφανίζεται η κατάσταση της μπαταρίας τους στην περιοχή εικονιδίων συστήματος του GNOME."
 
 #: ui/upowerDevices.ui:30
 msgid "No compatible device found!"
-msgstr ""
+msgstr "Δεν βρέθηκε συμβατή συσκευή!"
 
-#~ msgid "Disconnect"
-#~ msgstr "Αποσύνδεση"
-
-#~ msgid "Connect"
-#~ msgstr "Σύνδεση"
