@@ -3,7 +3,7 @@
   "name": "Bluetooth Battery Meter",
   "description": "A GNOME extension that displays indicator icons in the system tray, acting as a meter for Bluetooth device battery levels. It also provides detailed battery information via icons and text in the Bluetooth quick settings menu\n\nNote:\nCertain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check Readme for details.\n\nNow supports Enhanced Mode: When enabled, it reports multiple battery levels and provides control using various widgets. Currently supports:\n\nUPower: Devices such as Lightspeed keyboards/mice that report battery levels via UPower.\n\nAirPods / Beats: Battery level, ANC (Active Noise Cancellation), Conversation Awareness, and in-ear detection for media pause/playback.\n\nGATT Battery Service: Multiple battery levels using the Battery Service (BAS), such as ZMK Split keyboards.",
   "url": "https://github.com/maniacx/Bluetooth-Battery-Meter",
-  "shell-version": [ "45", "46", "47", "48" ],
+  "shell-version": [ "45", "46", "47", "48", "49" ],
   "session-modes": ["user", "unlock-dialog"],
   "version": 36,
   "settings-schema": "org.gnome.shell.extensions.Bluetooth-Battery-Meter",
