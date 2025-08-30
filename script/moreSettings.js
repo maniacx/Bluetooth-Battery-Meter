@@ -1,4 +1,15 @@
 #!/usr/bin/env -S gjs -m
+
+/*
+    Opens the AirPods Settings (Configure) window, the same one available
+    in extension preferences. Normally this window would be launched through
+    the prefs system, but GNOME only allows one extension prefs window at a time.
+    If another extension’s prefs window is already open, this settings window
+    cannot be opened from the popup menu. To avoid that conflict, it is launched
+    here as a standalone script.
+*/
+
+
 import Gtk from 'gi://Gtk?version=4.0';
 import Gdk from 'gi://Gdk?version=4.0';
 import Adw from 'gi://Adw?version=1';
