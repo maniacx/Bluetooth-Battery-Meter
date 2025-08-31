@@ -7,9 +7,27 @@ permalink: /changelogs
 
 # Changelogs
 
+{: .important-title }
+> GN-45_Version 37 &emsp;&emsp; Aug 30, 2025
+> * Used TextureCache to render device icons
+> * Introduced Vertical Bar feature
+> * Introduced Bluetooth Popup Menu feature
+> * Enabled Panel Menu, OnHover Menu, and Bluetooth Popup Menu for all battery devices
+> * Removed partial enable option for Panel Button and Indicator. Now either the Panel Button or the System Indicator can be used, not both at the same time
+> * Improved UI for Popup Menu
+> * Enhanced Preferences Menu
+> * Added Settings button to launch the AirPods Preferences window via script
+> * Added more AirPods control features: Long-press cycle configuration, press speed, long-press duration, notification tone volume, and volume swipe toggle/duration
+> * Greek translations: credits Jim Spentzos dspentzos@crowdin.com
+> * Ukrainian: Translation, credits Klymentii S (Mynt) myntus@crowdin.com
 
 {: .important-title }
-> * GN-45_Version 35 &emsp;&emsp; Jun 30, 2025
+> GN-45_Version 36 &emsp;&emsp; Jul 26, 2025
+> * ProfileManager: Registration: rely on UUID, skip manual Channel/PSM within the GNOME Shell extension.
+> * Bug Fixes
+
+{: .important-title }
+> GN-45_Version 35 &emsp;&emsp; Jun 30, 2025
 > * Removed the dependency on the Python script by using BlueZ's ProfileManager1 to handle socket communication directly within the GNOME Shell extension.
 > * Added support for Adaptive Audio customization.
 
