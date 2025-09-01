@@ -7,22 +7,6 @@ permalink: /development
 
 ## Reference
 
-Python standard
-<https://docs.python.org/3/library/>
-
-Socket
-<https://docs.python.org/3/library/socket.html#module-socket>
-
-Python AsyncIO
-<https://docs.python.org/3/library/asyncio.html>
-
-PyGobject Gio
-<https://api.pygobject.gnome.org/Gio-2.0/classes.html>
-
-Dbus service
-<https://github.com/tuhiproject/tuhi/blob/master/tuhi/dbusserver.py>
-
-
 ### Airpods
 steam3d for reverse battery reporting , ANC control
 <https://github.com/steam3d/MagicPodsCore>
