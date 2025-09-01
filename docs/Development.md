@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Development (Python script)
+title: Development
 nav_order: 7
 permalink: /development
 ---
