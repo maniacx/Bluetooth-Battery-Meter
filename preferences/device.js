@@ -8,6 +8,7 @@ import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions
 import {supportedIcons} from '../lib/widgets/indicatorVectorImages.js';
 
 const  ConfigureWindow = GObject.registerClass({
+    GTypeName: 'BluetoothBatteryMeter_DeviceConfigureWindow',
 }, class ConfigureWindow extends Adw.Window {
     _init(settings, mac, deviceItem, pathInfo, parentWindow) {
         super._init({
@@ -197,6 +198,7 @@ const  ConfigureWindow = GObject.registerClass({
 );
 
 const  DeviceItem = GObject.registerClass({
+    GTypeName: 'BluetoothBatteryMeter_DeviceItem',
 }, class DeviceItem extends Adw.ActionRow {
     constructor(settings, deviceItem, pathInfo) {
         super({});
@@ -273,7 +275,7 @@ const  DeviceItem = GObject.registerClass({
 
 
 export const  Device = GObject.registerClass({
-    GTypeName: 'BBM_Device',
+    GTypeName: 'BluetoothBatteryMeter_DeviceUI',
     Template: GLib.Uri.resolve_relative(
         import.meta.url, '../ui/device.ui', GLib.UriFlags.NONE
     ),

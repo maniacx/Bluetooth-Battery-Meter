@@ -6,7 +6,7 @@ import GObject from 'gi://GObject';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 export const  Indicator = GObject.registerClass({
-    GTypeName: 'BBM_Indicator',
+    GTypeName: 'BluetoothBatteryMeter_Indicator',
     Template: GLib.Uri.resolve_relative(
         import.meta.url, '../ui/indicator.ui', GLib.UriFlags.NONE
     ),

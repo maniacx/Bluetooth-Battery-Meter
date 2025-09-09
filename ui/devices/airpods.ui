@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
-  <template class="BBM_Airpods" parent="AdwPreferencesPage">
+  <template class="BluetoothBatteryMeter_AirpodsUI" parent="AdwPreferencesPage">
     <property name="name">Airpods</property>
     <property name="title" translatable="yes">AirPods/Beats</property>
     <property name="icon-name">bbm-earbuds-stem-symbolic</property>

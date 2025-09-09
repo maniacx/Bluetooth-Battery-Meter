@@ -6,18 +6,18 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
-import {ConfigureWindow} from './airpodsConfigureWindow.js';
+import {ConfigureWindow} from './configureWindow.js';
 
 const  DeviceItem = GObject.registerClass({
+    GTypeName: 'BluetoothBatteryMeter_AirpodsDeviceItem',
 }, class DeviceItem extends Adw.ActionRow {
     constructor(settings, deviceItem, pathInfo) {
         super({});
         this._settings = settings;
-        this._pathInfo = pathInfo;
         this._macAddress = this._pathToMacAddress(pathInfo.path);
 
         this._icon = new Gtk.Image({
-            icon_name: `bbm-${this._pathInfo.icon}-symbolic`,
+            icon_name: `bbm-${pathInfo.icon}-symbolic`,
         });
 
         this._customiseButton = new Gtk.Button({
@@ -29,7 +29,7 @@ const  DeviceItem = GObject.registerClass({
         this._customiseButton.connect('clicked', () => {
             const parentWindow = this._customiseButton.get_ancestor(Gtk.Window);
             const configureWindow = new ConfigureWindow(settings, this._macAddress,
-                this._pathInfo.path, parentWindow, _);
+                pathInfo.path, parentWindow, _);
 
             configureWindow.present();
         });
@@ -67,7 +67,6 @@ const  DeviceItem = GObject.registerClass({
     }
 
     updateProperites(pathInfo) {
-        this._pathInfo = pathInfo;
         this.title = pathInfo.alias;
         this.subtitle = this._macAddress;
         this._deleteButton.sensitive = !this._settings.get_boolean('enable-airpods-device');
@@ -82,9 +81,9 @@ const  DeviceItem = GObject.registerClass({
 
 
 export const  Airpods = GObject.registerClass({
-    GTypeName: 'BBM_Airpods',
+    GTypeName: 'BluetoothBatteryMeter_AirpodsUI',
     Template: GLib.Uri.resolve_relative(
-        import.meta.url, '../ui/airpods.ui', GLib.UriFlags.NONE
+        import.meta.url, '../../../ui/devices/airpods.ui', GLib.UriFlags.NONE
     ),
     InternalChildren: [
         'row_airpods_device',

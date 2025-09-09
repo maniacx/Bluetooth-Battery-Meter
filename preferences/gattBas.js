@@ -12,6 +12,7 @@ import {
 } from '../lib/devices/gattBas/gattBasConfig.js';
 
 const  ConfigureWindow = GObject.registerClass({
+    GTypeName: 'BluetoothBatteryMeter_GattBasConfigureWindow',
 }, class ConfigureWindow extends Adw.Window {
     _init(settings, mac, deviceItem, pathInfo, parentWindow) {
         super._init({
@@ -155,6 +156,7 @@ const  ConfigureWindow = GObject.registerClass({
 );
 
 const  DeviceItem = GObject.registerClass({
+    GTypeName: 'BluetoothBatteryMeter_GattBasDeviceItem',
 }, class DeviceItem extends Adw.ActionRow {
     constructor(settings, deviceItem, pathInfo) {
         super({});
@@ -227,9 +229,8 @@ const  DeviceItem = GObject.registerClass({
     }
 });
 
-
 export const  GattBas = GObject.registerClass({
-    GTypeName: 'BBM_GattBas',
+    GTypeName: 'BluetoothBatteryMeter_GattBasUI',
     Template: GLib.Uri.resolve_relative(
         import.meta.url, '../ui/gattBas.ui', GLib.UriFlags.NONE
     ),

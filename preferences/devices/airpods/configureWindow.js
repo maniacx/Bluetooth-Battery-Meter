@@ -3,9 +3,10 @@ import Adw from 'gi://Adw';
 import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 
-import {AirpodsModelList} from '../lib/devices/airpods/airpodsConfig.js';
+import {AirpodsModelList} from '../../../lib/devices/airpods/airpodsConfig.js';
 
 export const  ConfigureWindow = GObject.registerClass({
+    GTypeName: 'BluetoothBatteryMeter_AirpodsConfigureWindow',
 }, class ConfigureWindow extends Adw.Window {
     _init(settings, mac, devicePath, parentWindow, _) {
         super._init({
@@ -347,7 +348,7 @@ export const  ConfigureWindow = GObject.registerClass({
             page.add(pressHoldGroup);
         }
 
-        this._settingsSignal = settings.connect('changed::airpods-list', () => {
+        settings.connect('changed::airpods-list', () => {
             const updatedList = settings.get_strv('airpods-list').map(JSON.parse);
             this._pathInfo = updatedList.find(info => info.path === devicePath);
 

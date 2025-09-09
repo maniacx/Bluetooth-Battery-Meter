@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
-  <template class="BBM_UpowerDevice" parent="AdwPreferencesPage">
+  <template class="BluetoothBatteryMeter_UpowerDeviceUI" parent="AdwPreferencesPage">
     <property name="name">UPower</property>
     <property name="title" translatable="yes">UPower</property>
     <property name="icon-name">bbm-upower-devices-symbolic</property>

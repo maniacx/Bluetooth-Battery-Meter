@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
-  <template class="BBM_Device" parent="AdwPreferencesPage">
+  <template class="BluetoothBatteryMeter_DeviceUI" parent="AdwPreferencesPage">
     <property name="name">Device</property>
     <property name="title" translatable="yes">Device</property>
     <property name="icon-name">bbm-bluetooth-symbolic</property>

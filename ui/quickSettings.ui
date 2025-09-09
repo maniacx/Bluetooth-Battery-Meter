@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
-  <template class="BBM_QuickSettings" parent="AdwPreferencesPage">
+  <template class="BluetoothBatteryMeter_QuickSettings" parent="AdwPreferencesPage">
     <property name="name">Quick Menu</property>
     <property name="title" translatable="yes">Quick Menu</property>
     <property name="icon-name">bbm-quick-settings-symbolic</property>

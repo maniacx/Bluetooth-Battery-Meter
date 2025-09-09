@@ -1,14 +1,13 @@
 #!/usr/bin/env -S gjs -m
 
 /*
-    Opens the AirPods Settings (Configure) window, the same one available
-    in extension preferences. Normally this window would be launched through
-    the prefs system, but GNOME only allows one extension prefs window at a time.
+    Opens the Enhanced Devices (Airpdos / Sony etc)) Settings (Configure) window,
+    the same one available in extension preferences. Normally this window would be launched
+    through the prefs system, but GNOME only allows one extension prefs window at a time.
     If another extension’s prefs window is already open, this settings window
     cannot be opened from the popup menu. To avoid that conflict, it is launched
     here as a standalone script.
 */
-
 
 import Gtk from 'gi://Gtk?version=4.0';
 import Gdk from 'gi://Gdk?version=4.0';
@@ -16,7 +15,8 @@ import Adw from 'gi://Adw?version=1';
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
 import Gettext from 'gettext';
-import * as Airpods from '../preferences/airpodsConfigureWindow.js';
+
+import * as Airpods from '../preferences/devices/airpods/configureWindow.js';
 
 Gio._promisify(Gio.DBusProxy, 'new');
 Gio._promisify(Gio.DBusProxy.prototype, 'call');
@@ -34,9 +34,12 @@ class MoreSettingsLauncher {
     constructor(argv) {
         this._devicePath = null;
         this._deviceType = null;
+        this._prefsType = null;
+        this._schemaKey = null;
         this._proxy = null;
         this._win = null;
         this._app = null;
+        this._settings = null;
         this._loop = new GLib.MainLoop(null, false);
         this._parseArgs(argv);
         this._initMonitor();
@@ -50,8 +53,10 @@ class MoreSettingsLauncher {
         if (typeIndex !== -1 && argv[typeIndex + 1])
             this._deviceType = argv[typeIndex + 1];
 
-        if (this._deviceType === 'airpods')
+        if (this._deviceType === 'airpods') {
             this._prefsType = Airpods;
+            this._schemaKey = 'airpods-list';
+        }
     }
 
     async _initMonitor() {
@@ -81,10 +86,33 @@ class MoreSettingsLauncher {
             null
         );
         const [info] = result.recursiveUnpack();
-        if (info.state === 1)
-            this._initApp();
-        else
+        if (info.state !== 1) {
             this._quit();
+            return;
+        }
+
+        if (!this._devicePath || !this._prefsType || !this._schemaKey) {
+            this._quit();
+            return;
+        }
+
+        const scriptDir = GLib.path_get_dirname(import.meta.url.replace('file://', ''));
+        const extDir = GLib.path_get_dirname(scriptDir);
+        const settings = this._loadSettings(extDir);
+        if (!settings) {
+            this._quit();
+            return;
+        }
+        const deviceListRaw = settings.get_strv(this._schemaKey);
+        const deviceList = deviceListRaw.map(str => JSON.parse(str));
+        const pathInfo = deviceList.find(entry => entry.path === this._devicePath);
+        if (!pathInfo) {
+            this._quit();
+            return;
+        }
+
+        this._settings = settings;
+        this._initApp();
     }
 
     _onExtensionSignal(proxy, senderName, signalName, parameters) {
@@ -137,25 +165,15 @@ class MoreSettingsLauncher {
     }
 
     _onActivate() {
-        if (!this._devicePath || this._deviceType !== 'airpods')
-            return;
-
         const scriptDir = GLib.path_get_dirname(import.meta.url.replace('file://', ''));
         const extDir = GLib.path_get_dirname(scriptDir);
 
         this._loadIconDir(extDir);
         const _ = this._setupGettext(extDir);
-        const settings = this._loadSettings(extDir);
-        if (!settings)
-            return;
-        const airpodsListRaw = settings.get_strv('airpods-list');
-        const airpodsList = airpodsListRaw.map(str => JSON.parse(str));
-        const pathInfo = airpodsList.find(entry => entry.path === this._devicePath);
-        if (!pathInfo)
-            return;
+
         const indexMacAddress = this._devicePath.indexOf('dev_') + 4;
         const macAddress = this._devicePath.substring(indexMacAddress);
-        this._win = new this._prefsType.ConfigureWindow(settings, macAddress,
+        this._win = new this._prefsType.ConfigureWindow(this._settings, macAddress,
             this._devicePath, null, _);
         this._win.set_application(this._app);
         this._win.present();
@@ -164,7 +182,6 @@ class MoreSettingsLauncher {
     run() {
         this._loop.run();
     }
-
 
     _quit() {
         this._win?.destroy();

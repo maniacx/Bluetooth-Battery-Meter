@@ -10,7 +10,7 @@ import {Indicator} from './preferences/indicator.js';
 import {BatteryWidgetSettings} from './preferences/batteryWidgetSettings.js';
 import {Device} from './preferences/device.js';
 import {UpowerDevices} from './preferences/upowerDevices.js';
-import {Airpods} from './preferences/airpods.js';
+import {Airpods} from './preferences/devices/airpods/devicePrefs.js';
 import {GattBas} from './preferences/gattBas.js';
 import {About} from './preferences/about.js';
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
-  <template class="BBM_GattBas" parent="AdwPreferencesPage">
+  <template class="BluetoothBatteryMeter_GattBasUI" parent="AdwPreferencesPage">
     <property name="name">GattBas</property>
     <property name="title" translatable="yes">Battery Service (BAS)</property>
     <property name="icon-name">bbm-gatt-bas-symbolic</property>
