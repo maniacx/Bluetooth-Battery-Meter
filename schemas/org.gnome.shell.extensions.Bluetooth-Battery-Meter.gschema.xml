@@ -33,10 +33,6 @@
             <default>false</default>
             <summary>"enable single device indicator"</summary>
         </key>
-        <key name="enable-battery-indicator-text" type="b">
-            <default>false</default>
-            <summary>Show text next to icon in system tray with device battery level</summary>
-        </key>
         <key name="enable-multi-indicator-mode" type="b">
             <default>false</default>
             <summary>"For one device display each Bat level as seperate indicator"</summary>
@@ -52,6 +48,14 @@
         <key name="default-selected-path" type="s">
             <default>''</default>
             <summary>"Store path if activated"</summary>
+        </key>
+        <key name="disable-level-in-icon" type="b">
+            <default>false</default>
+            <summary>Removes level indicator from icon </summary>
+        </key>
+        <key name="enable-battery-indicator-text" type="b">
+            <default>false</default>
+            <summary>Show text next to icon in system tray with device battery level</summary>
         </key>
         <key name="indicator-size" type="i">
             <default>100</default>

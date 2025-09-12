@@ -13,7 +13,6 @@ export const  Indicator = GObject.registerClass({
     InternalChildren: [
         'hide_bluetooth_indicator',
         'indicator_type',
-        'enable_battery_indicator_text',
         'panel_indicator_mode_group',
         'panel_button_indicator_mode',
         'indicator_settings_group',
@@ -42,13 +41,6 @@ export const  Indicator = GObject.registerClass({
         settings.bind(
             'panel-button-single-indicator',
             this._panel_button_indicator_mode,
-            'active',
-            Gio.SettingsBindFlags.DEFAULT
-        );
-
-        settings.bind(
-            'enable-battery-indicator-text',
-            this._enable_battery_indicator_text,
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );

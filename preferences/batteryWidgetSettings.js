@@ -97,10 +97,17 @@ export const  BatteryWidgetSettings = GObject.registerClass({
         import.meta.url, '../ui/batteryWidgetSettings.ui', GLib.UriFlags.NONE
     ),
     InternalChildren: [
+        'indicator_widget_note_row',
+        'disable_level_in_icon_row',
+        'disable_level_in_icon',
+        'enable_battery_indicator_text_row',
+        'enable_battery_indicator_text',
+        'level_indicator_type_row',
         'level_indicator_type',
         'level_bar_position_row',
         'level_bar_position',
         'indicator_size',
+        'level_indicator_color_row',
         'level_indicator_color',
         'customize_indicator_color_group',
         'circle_widget_color',
@@ -109,7 +116,19 @@ export const  BatteryWidgetSettings = GObject.registerClass({
 }, class BatteryWidgetSettings extends Adw.PreferencesPage {
     constructor(settings) {
         super({});
-
+        this._settings = settings;
+        settings.bind(
+            'disable-level-in-icon',
+            this._disable_level_in_icon,
+            'active',
+            Gio.SettingsBindFlags.DEFAULT
+        );
+        settings.bind(
+            'enable-battery-indicator-text',
+            this._enable_battery_indicator_text,
+            'active',
+            Gio.SettingsBindFlags.DEFAULT
+        );
         settings.bind(
             'indicator-size',
             this._indicator_size,
@@ -142,44 +161,35 @@ export const  BatteryWidgetSettings = GObject.registerClass({
             Gio.SettingsBindFlags.DEFAULT
         );
 
-        settings.connect('changed::level-indicator-type', () => {
-            this._level_bar_position_row.visible =
-                        settings.get_int('level-indicator-type') === 0;
+        settings.connect('changed::indicator-type', () => {
+            this._updateIndicatorRowVisibility();
+        });
 
-            this._indicator_size.visible =
-                        settings.get_int('level-indicator-type') === 1 ||
-                        settings.get_int('level-indicator-type') === 0 &&
-                        settings.get_int('level-bar-position') === 2;
+        settings.connect('changed::panel-button-single-indicator', () => {
+            this._updateIndicatorRowVisibility();
+        });
+
+        settings.connect('changed::disable-level-in-icon', () => {
+            this._updateIndicatorRowVisibility();
+            this._iconOnlyChanged();
+        });
+
+        settings.connect('changed::level-indicator-type', () => {
+            this._updateIndicatorRowVisibility();
         });
 
         settings.connect('changed::level-bar-position', () => {
-            this._indicator_size.visible =
-                        settings.get_int('level-indicator-type') === 1 ||
-                        settings.get_int('level-indicator-type') === 0 &&
-                        settings.get_int('level-bar-position') === 2;
+            this._updateIndicatorRowVisibility();
         });
 
         settings.connect('changed::level-indicator-color', () => {
-            this._customize_indicator_color_group.visible =
-                        settings.get_int('level-indicator-color') === 2;
+            this._updateIndicatorRowVisibility();
         });
 
         settings.connect('changed::circle-widget-color', () => {
             this._customize_circle_widget_color_group.visible =
                         settings.get_int('circle-widget-color') === 2;
         });
-
-        this._level_bar_position_row.visible =
-                    settings.get_int('level-indicator-type') === 0;
-
-        this._indicator_size.visible =
-                    settings.get_int('level-indicator-type') === 1 ||
-                    settings.get_int('level-indicator-type') === 0 &&
-                    settings.get_int('level-bar-position') === 2;
-
-
-        this._customize_indicator_color_group.visible =
-                settings.get_int('level-indicator-color') === 2;
 
         this._customize_circle_widget_color_group.visible =
                         settings.get_int('circle-widget-color') === 2;
@@ -197,6 +207,53 @@ export const  BatteryWidgetSettings = GObject.registerClass({
             const idx = Math.ceil(level / 10) - 1;
             const row = new CustomizeRow(settings, level, idx, circleWidgetColorKey);
             this._customize_circle_widget_color_group.add(row);
+        }
+
+        this._updateIndicatorRowVisibility();
+        this._iconOnlyChanged();
+    }
+
+    _iconOnlyChanged() {
+        const disableLevelInIcon = this._settings.get_boolean('disable-level-in-icon');
+        this._level_indicator_type_row.sensitive = !disableLevelInIcon;
+        this._level_bar_position_row.sensitive = !disableLevelInIcon;
+        this._indicator_size.sensitive = !disableLevelInIcon;
+        this._level_indicator_color_row.sensitive = !disableLevelInIcon;
+    }
+
+    _updateIndicatorRowVisibility() {
+        const indicatorType = this._settings.get_int('indicator-type');
+        const panelSingleIndicator = this._settings.get_boolean('panel-button-single-indicator');
+        const settingsVisible = indicatorType === 1 ||
+                        indicatorType === 2 && !panelSingleIndicator;
+
+        if (settingsVisible) {
+            this._indicator_widget_note_row.visible = false;
+            this._disable_level_in_icon_row.visible = true;
+            this._enable_battery_indicator_text_row.visible = true;
+            this._level_indicator_type_row.visible = true;
+
+            this._level_bar_position_row.visible =
+                        this._settings.get_int('level-indicator-type') === 0;
+
+            this._indicator_size.visible =
+                        this._settings.get_int('level-indicator-type') === 1 ||
+                        this._settings.get_int('level-indicator-type') === 0 &&
+                        this._settings.get_int('level-bar-position') === 2;
+
+            this._level_indicator_color_row.visible = true;
+
+            this._customize_indicator_color_group.visible =
+                this._settings.get_int('level-indicator-color') === 2;
+        } else {
+            this._indicator_widget_note_row.visible = true;
+            this._disable_level_in_icon_row.visible = false;
+            this._enable_battery_indicator_text_row.visible = false;
+            this._level_indicator_type_row.visible = false;
+            this._level_bar_position_row.visible = false;
+            this._indicator_size.visible = false;
+            this._level_indicator_color_row.visible = false;
+            this._customize_indicator_color_group.visible = false;
         }
     }
 });

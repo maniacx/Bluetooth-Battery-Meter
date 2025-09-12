@@ -8,7 +8,36 @@
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Indicator Widget Settings</property>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwActionRow" id="indicator_widget_note_row">
+            <property name="subtitle" translatable="yes">Indicator Battery Widget Settings available only for System Tray mode or Panel Button mode with multiple indicators</property>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="disable_level_in_icon_row">
+            <property name="title" translatable="yes">Show icon only (Hide Bar/Dots)</property>
+            <property name="subtitle" translatable="yes">Hides the battery level indicator on the icon. Pair with text percentage for battery information</property>
+            <property name="activatable-widget">disable_level_in_icon</property>
+            <child>
+              <object class="GtkSwitch" id="disable_level_in_icon">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="enable_battery_indicator_text_row">
+            <property name="title" translatable="yes">Display battery percentage as text</property>
+            <property name="subtitle" translatable="yes">Displays battery percentage beside the Bluetooth device icon</property>
+            <property name="activatable-widget">enable_battery_indicator_text</property>
+            <child>
+              <object class="GtkSwitch" id="enable_battery_indicator_text">
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="level_indicator_type_row">
             <property name="title" translatable="yes">Battery Level Indicator Type</property>
             <property name="subtitle" translatable="yes">Dots offer better visibility</property>
             <property name="activatable-widget">level_indicator_type</property>
@@ -50,7 +79,7 @@
           </object>
         </child>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwActionRow" id="level_indicator_color_row">
             <property name="title" translatable="yes">Battery Indicator Color Scheme</property>
             <property name="subtitle" translatable="yes">Choose color scheme for level bar/dots</property>
             <property name="activatable-widget">level_indicator_color</property>
