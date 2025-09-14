@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-30 15:12-0700\n"
+"POT-Creation-Date: 2025-09-14 15:05-0700\n"
 "PO-Revision-Date: 2025-09-14 17:54+0200\n"
 "Last-Translator: Adam Lewicki <a.lewicki95@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 3.7\n"
 
-#: lib/bluetoothToggle.js:499
+#: lib/bluetoothToggle.js:511
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -54,323 +54,151 @@ msgstr ""
 "Niniejszy program rozpowszechniany jest bez jakiejkolwiek gwarancji. Więcej "
 "informacji: <a href=\"%s\">%s</a>."
 
-#: preferences/airpodsConfigureWindow.js:46
-msgid "Playback Behavior"
-msgstr "Zachowanie odtwarzania"
-
-#: preferences/airpodsConfigureWindow.js:50
-msgid "Pause when device is not worn"
-msgstr "Wstrzymaj, gdy urządzenie nie jest noszone"
-
-#: preferences/airpodsConfigureWindow.js:51
-msgid "Pause playback when the device is removed,resume when it is put back on"
-msgstr ""
-"Wstrzymaj odtwarzanie, gdy urządzenie zostanie zdjęte, wznow, gdy zostanie "
-"ponownie założone"
-
-#: preferences/airpodsConfigureWindow.js:70
-msgid "Volume Level"
-msgstr "Poziom głośności"
-
-#: preferences/airpodsConfigureWindow.js:82
-msgid "Conversation awareness volume limit"
-msgstr "Limit głośności w trybie rozmowy"
-
-#: preferences/airpodsConfigureWindow.js:83
-msgid ""
-"Limits media volume to this percentage during conversation. Note: No change "
-"if current volume is below this level."
-msgstr ""
-"Ogranicza głośność multimediów do tego poziomu procentowego w trakcie "
-"rozmowy. Uwaga: Brak zmian, jeśli obecna głośność jest niższa niż ten poziom."
-
-#: preferences/airpodsConfigureWindow.js:99
-msgid "Press and Hold Cycle"
-msgstr "Przełączanie po przytrzymaniu"
-
-#: preferences/airpodsConfigureWindow.js:103
-msgid "Apply"
-msgstr "Zatwierdź"
-
-#: preferences/airpodsConfigureWindow.js:117
-msgid "Press and hold cycles between"
-msgstr "Przytrzymanie przełącza między"
-
-#: preferences/airpodsConfigureWindow.js:118
-msgid "Settings don’t reflect current state, press Apply to save"
-msgstr ""
-"Ustawienia nie odzwierciedlają bieżącego stanu, naciśnij 'Zastosuj', aby "
-"zapisać"
-
-#: preferences/airpodsConfigureWindow.js:163
-msgid "ANC Off"
-msgstr "ANC wyłączone"
-
-#: preferences/airpodsConfigureWindow.js:166
-msgid "Transparency"
-msgstr "Transparentny"
-
-#: preferences/airpodsConfigureWindow.js:170
-msgid "Adaptive"
-msgstr "Adaptacyjny"
-
-#: preferences/airpodsConfigureWindow.js:174
-msgid "ANC On"
-msgstr "ANC włączone"
-
-#: preferences/airpodsConfigureWindow.js:227
-msgid "Notification Volume"
-msgstr "Powiadomienie głośności"
-
-#: preferences/airpodsConfigureWindow.js:231
-msgid "Tone Volume"
-msgstr "Ton głośności"
-
-#: preferences/airpodsConfigureWindow.js:232
-msgid "Adjust the tone volume of sound effects played by Airpods"
-msgstr "Dostosuj głośność sygnałów dźwiękowych odtwarzanych przez AirPods"
-
-#: preferences/airpodsConfigureWindow.js:240
-msgid "15%"
-msgstr "15%"
-
-#: preferences/airpodsConfigureWindow.js:241
-msgid "100%"
-msgstr "100%"
-
-#: preferences/airpodsConfigureWindow.js:242
-msgid "125%"
-msgstr "125%"
-
-#: preferences/airpodsConfigureWindow.js:259
-msgid "Volume Control"
-msgstr "Regulacja głośności"
-
-#: preferences/airpodsConfigureWindow.js:263
-msgid "Volume Swipe"
-msgstr "Przesunięcie do regulacji głośności"
-
-#: preferences/airpodsConfigureWindow.js:264
-msgid "Enable or disable volume adjustment by swiping on earbud stems"
-msgstr ""
-"Włącz lub wyłącz regulację głośności poprzez przesuwanie palcem po 'nóżkach' "
-"słuchawek dousznych"
-
-#: preferences/airpodsConfigureWindow.js:279
-msgid "Swipe Duration"
-msgstr "Czas przesunięcia"
-
-#: preferences/airpodsConfigureWindow.js:280
-msgid ""
-"To prevent unintended adjustments, select the preferred wait time between "
-"swipes"
-msgstr ""
-"Aby zapobiec niezamierzonym regulacjom, wybierz preferowany czas oczekiwania "
-"między przesunięciami"
-
-#: preferences/airpodsConfigureWindow.js:284
-#: preferences/airpodsConfigureWindow.js:318
-#: preferences/airpodsConfigureWindow.js:335
-msgid "Default"
-msgstr "Domyślny"
-
-#: preferences/airpodsConfigureWindow.js:284
-msgid "Longer"
-msgstr "Dłuższy"
-
-#: preferences/airpodsConfigureWindow.js:284
-msgid "Longest"
-msgstr "Najdłuższy"
-
-#: preferences/airpodsConfigureWindow.js:309
-msgid "Stem and Crown Response"
-msgstr "Reakcja 'nóżki' i 'korony'"
-
-#: preferences/airpodsConfigureWindow.js:313
-msgid "Press Speed"
-msgstr "Szybkość naciśnięcia"
-
-#: preferences/airpodsConfigureWindow.js:314
-msgid ""
-"Adjust how quickly you must double or triple-press the stem or Digital Crown "
-"before an action occurs"
-msgstr ""
-"Dostosuj, jak szybko musisz dwu- lub trzykrotnie nacisnąć 'nóżkę' lub "
-"'cyfrową koronkę', aby wywołać akcję"
-
-#: preferences/airpodsConfigureWindow.js:318
-msgid "Slower"
-msgstr "Wolniej"
-
-#: preferences/airpodsConfigureWindow.js:318
-msgid "Slowest"
-msgstr "Najwolniej"
-
-#: preferences/airpodsConfigureWindow.js:331
-msgid "Press and Hold Duration"
-msgstr "Czas przyciśnięcia i przytrzymania"
-
-#: preferences/airpodsConfigureWindow.js:332
-msgid "Set how long you need to press and hold before an action occurs"
-msgstr "Ustaw, jak długo musisz naciskać i przytrzymywać, aby wywołać akcję"
-
-#: preferences/airpodsConfigureWindow.js:335
-msgid "Shorter"
-msgstr "Krócej"
-
-#: preferences/airpodsConfigureWindow.js:335
-msgid "Shortest"
-msgstr "Najkrócej"
-
-#: preferences/airpods.js:25 preferences/device.js:212
-#: preferences/gattBas.js:171 preferences/upowerDevices.js:184
-msgid "Configure device."
-msgstr "Konfiguruj urządzenie."
-
-#: preferences/airpods.js:37 ui/airpods.ui:5
-msgid "AirPods/Beats"
-msgstr "AirPods/Beats"
-
-#: preferences/airpods.js:40 preferences/gattBas.js:186
-#, javascript-format
-msgid "The button is available after disabling %s mode"
-msgstr "Przycisk jest dostępny po wyłączeniu trybu '%s'"
-
-#: preferences/batteryWidgetSettings.js:16
+#: preferences/batteryWidgetSettings.js:17
 #, javascript-format
 msgid "Assign color for %d – %d%%"
 msgstr "Przypisz kolor dla %d – %d%%"
 
-#: preferences/batteryWidgetSettings.js:17
+#: preferences/batteryWidgetSettings.js:18
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
 msgstr "Ustaw kolor dla zakresu poziomu baterii %d – %d%%"
 
-#: preferences/device.js:50 preferences/upowerDevices.js:40
+#: preferences/device.js:51 preferences/upowerDevices.js:41
 msgid "Battery Status:"
 msgstr "Status baterii:"
 
-#: preferences/device.js:51 preferences/upowerDevices.js:41
+#: preferences/device.js:52 preferences/upowerDevices.js:42
 msgid "Reported"
 msgstr "Zgłoszono"
 
-#: preferences/device.js:51 preferences/upowerDevices.js:41
+#: preferences/device.js:52 preferences/upowerDevices.js:42
 msgid "Not Available"
 msgstr "Niedostępne"
 
-#: preferences/device.js:52
+#: preferences/device.js:53
 msgid "Reported from enhanced device service"
 msgstr "Zgłoszono z usługi ulepszonej obsługi urządzenia"
 
-#: preferences/device.js:59 preferences/upowerDevices.js:46
+#: preferences/device.js:60 preferences/upowerDevices.js:47
 msgid "Icon"
 msgstr "Ikona"
 
-#: preferences/device.js:63 preferences/gattBas.js:45 preferences/gattBas.js:50
-#: preferences/upowerDevices.js:50
+#: preferences/device.js:64 preferences/gattBas.js:46 preferences/gattBas.js:51
+#: preferences/upowerDevices.js:51
 msgid "Select Icon"
 msgstr "Wybierz ikonę"
 
-#: preferences/device.js:64 preferences/upowerDevices.js:51
+#: preferences/device.js:65 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
 msgstr "Wybierz ikonę używaną dla wskaźnika i szybkiego menu"
 
-#: preferences/device.js:67
+#: preferences/device.js:68
 msgid "This is an enhanced device"
 msgstr "To jest urządzenie o zwiększonych możliwościach"
 
-#: preferences/device.js:68
+#: preferences/device.js:69
 msgid "Icon selection if available are in Enhanced device per device settings"
 msgstr ""
 "'Wybór ikony, jeśli jest dostępny, znajduje się w ustawieniach "
 "poszczególnych urządzeń w sekcji 'Ulepszone urządzenie'"
 
-#: preferences/device.js:120 ui/quickSettings.ui:5
+#: preferences/device.js:121 ui/quickSettings.ui:5
 msgid "Quick Menu"
 msgstr "Szybkie menu"
 
-#: preferences/device.js:124
+#: preferences/device.js:125
 msgid "Display Battery Level"
 msgstr "Wyświetl poziom baterii"
 
-#: preferences/device.js:125
+#: preferences/device.js:126
 msgid "Display battery level in the Bluetooth panel quick menu"
 msgstr "Wyświetl poziom baterii w szybkim menu panelu Bluetooth"
 
-#: preferences/device.js:150 preferences/upowerDevices.js:128 ui/indicator.ui:5
+#: preferences/device.js:151 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
 msgstr "Wskaźnik"
 
-#: preferences/device.js:154 preferences/upowerDevices.js:132
+#: preferences/device.js:155 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
 msgstr "Konfiguracja wskaźnika"
 
-#: preferences/device.js:155 preferences/upowerDevices.js:133
+#: preferences/device.js:156 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
 msgstr "Wybierz, jak ma zachowywać się wskaźnik"
 
-#: preferences/device.js:159
+#: preferences/device.js:160
 msgid "Do not show Icon"
 msgstr "Nie pokazuj ikony"
 
-#: preferences/device.js:160
+#: preferences/device.js:161
 msgid "Show Icon without Battery level"
 msgstr "Pokazuj ikonę bez poziomu baterii"
 
-#: preferences/device.js:161
+#: preferences/device.js:162
 msgid "Show Icon with Battery Level"
 msgstr "Pokazuj ikonę z poziomem baterii"
 
-#: preferences/device.js:164 preferences/upowerDevices.js:137
+#: preferences/device.js:165 preferences/upowerDevices.js:138
 msgid "Hide Icon"
 msgstr "Ukryj ikonę"
 
-#: preferences/device.js:165 preferences/upowerDevices.js:138
+#: preferences/device.js:166 preferences/upowerDevices.js:139
 msgid "Show Icon"
 msgstr "Pokaż ikonę"
 
-#: preferences/device.js:226
+#: preferences/device.js:214 preferences/gattBas.js:173
+#: preferences/upowerDevices.js:186
+msgid "Configure device."
+msgstr "Konfiguruj urządzenie."
+
+#: preferences/device.js:228
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
 "Usuń informacje o urządzeniu: Przycisk jest dostępny po rozparowaniu "
 "urządzenia"
 
-#: preferences/device.js:258
+#: preferences/device.js:260
 msgid "(Removed)"
 msgstr "(Usunięto)"
 
-#: preferences/device.js:259
+#: preferences/device.js:261
 msgid "(Paired)"
 msgstr "(Sparowano)"
 
-#: preferences/gattBas.js:46
+#: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
 msgstr "Pojedynczy wskaźnik, Przycisk panelu, Szybkie menu, Okładka albumu"
 
-#: preferences/gattBas.js:51
+#: preferences/gattBas.js:52
 msgid "Multiple Indicators, Circular Battery Widgets"
 msgstr "Wiele wskaźników, Widżety baterii w kształcie koła"
 
-#: preferences/gattBas.js:59
+#: preferences/gattBas.js:60
 msgid "Icon "
 msgstr "Ikona "
 
-#: preferences/gattBas.js:68
+#: preferences/gattBas.js:69
 msgid "Battery 1 Icon"
 msgstr "1. ikona baterii"
 
-#: preferences/gattBas.js:77
+#: preferences/gattBas.js:78
 msgid "Battery 2 Icon"
 msgstr "2. ikona baterii"
 
-#: preferences/gattBas.js:86
+#: preferences/gattBas.js:87
 msgid "Battery 3 Icon"
 msgstr "3. ikona baterii"
 
-#: preferences/gattBas.js:183 ui/gattBas.ui:5
+#: preferences/gattBas.js:185 ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
 msgstr "Usługa Baterii (BAS)"
+
+#: preferences/gattBas.js:188
+#, javascript-format
+msgid "The button is available after disabling %s mode"
+msgstr "Przycisk jest dostępny po wyłączeniu trybu '%s'"
 
 #: preferences/quickSettings.js:66
 #, javascript-format
@@ -383,15 +211,15 @@ msgstr ""
 "włączy się eksperymentalnych funkcji Bluez w systemie. Sprawdź plik <a "
 "href=\"%s\">Przeczytaj mnie</a>, aby uzyskać więcej informacji."
 
-#: preferences/upowerDevices.js:100
+#: preferences/upowerDevices.js:101
 msgid "Alias"
 msgstr "Pseudonim"
 
-#: preferences/upowerDevices.js:104
+#: preferences/upowerDevices.js:105
 msgid "Device Alias"
 msgstr "Pseudonim urządzenia"
 
-#: preferences/upowerDevices.js:197
+#: preferences/upowerDevices.js:199
 msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
@@ -399,11 +227,11 @@ msgstr ""
 "Usuń informacje o urządzeniu: Przycisk jest dostępny po usunięciu urządzenia "
 "upower"
 
-#: preferences/upowerDevices.js:230
+#: preferences/upowerDevices.js:232
 msgid "(Offline)"
 msgstr "(Offline)"
 
-#: preferences/upowerDevices.js:231
+#: preferences/upowerDevices.js:233
 msgid "(Online)"
 msgstr "(Online)"
 
@@ -439,58 +267,6 @@ msgstr "Crowdin"
 msgid "Online Tutorials"
 msgstr "Poradniki online"
 
-#: ui/airpods.ui:9 ui/quickSettings.ui:9
-msgid "Note!"
-msgstr "Uwaga!"
-
-#: ui/airpods.ui:16 ui/gattBas.ui:15
-msgid "Experimental"
-msgstr "Funkcja eksperymentalna"
-
-#: ui/airpods.ui:21
-msgid ""
-"Some models/features are not fully tested. Please share feedback on GitHub."
-msgstr ""
-"Niektóre modele/funkcje nie zostały w pełni przetestowane. Prześlij opinię "
-"na GitHub."
-
-#: ui/airpods.ui:26
-msgid "Conversation Awareness (if supported) works only with the A2DP profile."
-msgstr ""
-"Wykrywanie rozmowy (jeśli jest obsługiwane) działa tylko z profilem A2DP."
-
-#: ui/airpods.ui:31
-msgid ""
-"ANC and Conversation Awareness buttons are hidden when the earbuds are not "
-"in-ear."
-msgstr ""
-"Przyciski ANC i Wykrywanie rozmowy są ukryte, gdy słuchawki douszne nie "
-"znajdują się w uszach."
-
-#: ui/airpods.ui:38
-msgid "AirPods/Beats Settings"
-msgstr "Ustawienia AirPods/Beats"
-
-#: ui/airpods.ui:41
-msgid "Enable AirPods/Beats Support"
-msgstr "Włącz obsługę AirPods/Beats"
-
-#: ui/airpods.ui:42
-msgid ""
-"Enables battery status monitoring and, if supported, control of Noise "
-"Cancellation and Conversation Awareness modes."
-msgstr ""
-"Włącza monitorowanie stanu baterii oraz, jeśli jest to obsługiwane, "
-"sterowanie trybami redukcji szumów i wykrywania rozmowy."
-
-#: ui/airpods.ui:55 ui/device.ui:9 ui/gattBas.ui:35 ui/upowerDevices.ui:26
-msgid "Configuration by Device"
-msgstr "Konfiguracja według urządzenia"
-
-#: ui/airpods.ui:58 ui/gattBas.ui:38
-msgid "No compatible device paired!"
-msgstr "Brak sparowanego, kompatybilnego urządzenia!"
-
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
 msgstr "Ustawienia widżetu baterii"
@@ -500,27 +276,51 @@ msgid "Indicator Widget Settings"
 msgstr "Ustawienia widżetu wskaźnika"
 
 #: ui/batteryWidgetSettings.ui:12
+msgid ""
+"Indicator Battery Widget Settings available only for System Tray mode or "
+"Panel Button mode with multiple indicators"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:17
+msgid "Show icon only (Hide Bar/Dots)"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:18
+msgid ""
+"Hides the battery level indicator on the icon. Pair with text percentage for "
+"battery information"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:29
+msgid "Display battery percentage as text"
+msgstr "Wyświetlaj procent baterii jako tekst"
+
+#: ui/batteryWidgetSettings.ui:30
+msgid "Displays battery percentage beside the Bluetooth device icon"
+msgstr "Wyświetla procent baterii obok ikony urządzenia Bluetooth"
+
+#: ui/batteryWidgetSettings.ui:41
 msgid "Battery Level Indicator Type"
 msgstr "Typ wskaźnika poziomu baterii"
 
-#: ui/batteryWidgetSettings.ui:13
+#: ui/batteryWidgetSettings.ui:42
 msgid "Dots offer better visibility"
 msgstr "Kropki zapewniają lepszą widoczność"
 
-#: ui/batteryWidgetSettings.ui:25
+#: ui/batteryWidgetSettings.ui:54
 msgid "Battery Bar Position"
 msgstr "Pozycja paska baterii"
 
-#: ui/batteryWidgetSettings.ui:26
+#: ui/batteryWidgetSettings.ui:55
 msgid "Choose where to display the battery bar relative to the device icon"
 msgstr ""
 "Wybierz, gdzie ma być wyświetlany pasek baterii względem ikony urządzenia"
 
-#: ui/batteryWidgetSettings.ui:38
+#: ui/batteryWidgetSettings.ui:67
 msgid "Device Icon Size"
 msgstr "Rozmiar ikony urządzenia"
 
-#: ui/batteryWidgetSettings.ui:39
+#: ui/batteryWidgetSettings.ui:68
 msgid ""
 "Adjust the size of the device icon displayed above the battery level "
 "indicator"
@@ -528,61 +328,65 @@ msgstr ""
 "Dostosuj rozmiar ikony urządzenia wyświetlanej nad wskaźnikiem poziomu "
 "baterii"
 
-#: ui/batteryWidgetSettings.ui:54
+#: ui/batteryWidgetSettings.ui:83
 msgid "Battery Indicator Color Scheme"
 msgstr "Schemat kolorów wskaźnika baterii"
 
-#: ui/batteryWidgetSettings.ui:55
+#: ui/batteryWidgetSettings.ui:84
 msgid "Choose color scheme for level bar/dots"
 msgstr "Wybierz schemat kolorów dla paska/kropek poziomu"
 
-#: ui/batteryWidgetSettings.ui:72
+#: ui/batteryWidgetSettings.ui:101
 msgid "Circle Widget Settings"
 msgstr "Ustawienia widżetu koła"
 
-#: ui/batteryWidgetSettings.ui:75
+#: ui/batteryWidgetSettings.ui:104
 msgid "Circle Widget Color Scheme"
 msgstr "Schemat kolorów widżetu koła"
 
-#: ui/batteryWidgetSettings.ui:76
+#: ui/batteryWidgetSettings.ui:105
 msgid "Choose color scheme for battery circle widget"
 msgstr "Wybierz schemat kolorów dla widżetu koła baterii"
 
-#: ui/batteryWidgetSettings.ui:94
+#: ui/batteryWidgetSettings.ui:123
 msgid "Battery Level Bar"
 msgstr "Pasek poziomu baterii"
 
-#: ui/batteryWidgetSettings.ui:95
+#: ui/batteryWidgetSettings.ui:124
 msgid "Battery Level Dot"
 msgstr "Kropka poziomu baterii"
 
-#: ui/batteryWidgetSettings.ui:100
+#: ui/batteryWidgetSettings.ui:129
 msgid "Left"
 msgstr "Po lewej"
 
-#: ui/batteryWidgetSettings.ui:101
+#: ui/batteryWidgetSettings.ui:130
 msgid "Right"
 msgstr "Po prawej"
 
-#: ui/batteryWidgetSettings.ui:102
+#: ui/batteryWidgetSettings.ui:131
 msgid "Below"
 msgstr "Poniżej"
 
-#: ui/batteryWidgetSettings.ui:107 ui/batteryWidgetSettings.ui:114
+#: ui/batteryWidgetSettings.ui:136 ui/batteryWidgetSettings.ui:143
 msgid "Symbolic"
 msgstr "Symboliczna"
 
-#: ui/batteryWidgetSettings.ui:108 ui/batteryWidgetSettings.ui:115
+#: ui/batteryWidgetSettings.ui:137 ui/batteryWidgetSettings.ui:144
 msgid "Colored"
 msgstr "Kolorowa"
 
-#: ui/batteryWidgetSettings.ui:109 ui/batteryWidgetSettings.ui:116
+#: ui/batteryWidgetSettings.ui:138 ui/batteryWidgetSettings.ui:145
 msgid "Customized"
 msgstr "Spersonalizowana"
 
 #: ui/device.ui:5
 msgid "Device"
 msgstr "Urządzenie"
+
+#: ui/device.ui:9 ui/gattBas.ui:35 ui/upowerDevices.ui:26
+msgid "Configuration by Device"
+msgstr "Konfiguracja według urządzenia"
 
 #: ui/device.ui:10 ui/upowerDevices.ui:27
 msgid "Note: General settings override device-specific settings"
@@ -592,6 +396,10 @@ msgstr ""
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
 msgstr "Brak sparowanego urządzenia!"
+
+#: ui/gattBas.ui:15
+msgid "Experimental"
+msgstr "Funkcja eksperymentalna"
 
 #: ui/gattBas.ui:18
 msgid "Battery Service (BAS) Settings"
@@ -608,6 +416,10 @@ msgid ""
 msgstr ""
 "Wyświetlaj poziom naładowania baterii urządzeń Bluetooth, używając usługi "
 "baterii GATT (BAS)"
+
+#: ui/gattBas.ui:38
+msgid "No compatible device paired!"
+msgstr "Brak sparowanego, kompatybilnego urządzenia!"
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
@@ -662,18 +474,10 @@ msgid "Indicator Settings"
 msgstr "Ustawienia wskaźnika"
 
 #: ui/indicator.ui:65
-msgid "Display battery percentage as text"
-msgstr "Wyświetlaj procent baterii jako tekst"
-
-#: ui/indicator.ui:66
-msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr "Wyświetla procent baterii obok ikony urządzenia Bluetooth"
-
-#: ui/indicator.ui:77
 msgid "Show Separate Battery Indicators"
 msgstr "Pokaż oddzielne wskaźniki baterii"
 
-#: ui/indicator.ui:78
+#: ui/indicator.ui:66
 msgid ""
 "When enabled, display one indicator per battery. When disabled, show a "
 "single indicator with the most critical (lowest) battery level."
@@ -682,15 +486,15 @@ msgstr ""
 "wyświetlaj jeden wskaźnik z najbardziej krytycznym (najniższym) poziomem "
 "naładowania baterii."
 
-#: ui/indicator.ui:91
+#: ui/indicator.ui:79
 msgid "Show Popup on Hover"
 msgstr "Pokaż wyskakujące okienko po najechaniu"
 
-#: ui/indicator.ui:94
+#: ui/indicator.ui:82
 msgid "Show Detailed Info on Hover"
 msgstr "Pokaż szczegółowe informacje po najechaniu"
 
-#: ui/indicator.ui:95
+#: ui/indicator.ui:83
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
@@ -698,11 +502,11 @@ msgstr ""
 "Wyświetla wyskakujące okienko z informacjami o baterii i opcjami sterowania, "
 "gdy kursor myszy najedzie na wskaźnik po niestandardowym opóźnieniu"
 
-#: ui/indicator.ui:106
+#: ui/indicator.ui:94
 msgid "Hover Activation Delay"
 msgstr "Opóźnienie aktywacji po najechaniu"
 
-#: ui/indicator.ui:107
+#: ui/indicator.ui:95
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
@@ -710,29 +514,33 @@ msgstr ""
 "Określ, ile sekund kursor myszy musi znajdować się nad wskaźnikiem, zanim "
 "zostaną wyświetlone szczegółowe informacje."
 
-#: ui/indicator.ui:126
+#: ui/indicator.ui:114
 msgid "Default Behaviour"
 msgstr "Domyślne zachowanie"
 
-#: ui/indicator.ui:127
+#: ui/indicator.ui:115
 msgid "Hide Always"
 msgstr "Zawsze ukrywaj"
 
-#: ui/indicator.ui:128
+#: ui/indicator.ui:116
 msgid "Hide Conditionally"
 msgstr "Ukryj warunkowo"
 
-#: ui/indicator.ui:133
+#: ui/indicator.ui:121
 msgid "Off"
 msgstr "Wył"
 
-#: ui/indicator.ui:134
+#: ui/indicator.ui:122
 msgid "System Tray"
 msgstr "Zasobnik systemowy"
 
-#: ui/indicator.ui:135
+#: ui/indicator.ui:123
 msgid "Panel Button"
 msgstr "Przycisk panelu"
+
+#: ui/quickSettings.ui:9
+msgid "Note!"
+msgstr "Uwaga!"
 
 #: ui/quickSettings.ui:17
 msgid "Quick Menu Settings"
@@ -820,6 +628,172 @@ msgstr ""
 #: ui/upowerDevices.ui:30
 msgid "No compatible device found!"
 msgstr "Nie znaleziono kompatybilnego urządzenia!"
+
+#~ msgid "Playback Behavior"
+#~ msgstr "Zachowanie odtwarzania"
+
+#~ msgid "Pause when device is not worn"
+#~ msgstr "Wstrzymaj, gdy urządzenie nie jest noszone"
+
+#~ msgid ""
+#~ "Pause playback when the device is removed,resume when it is put back on"
+#~ msgstr ""
+#~ "Wstrzymaj odtwarzanie, gdy urządzenie zostanie zdjęte, wznow, gdy "
+#~ "zostanie ponownie założone"
+
+#~ msgid "Volume Level"
+#~ msgstr "Poziom głośności"
+
+#~ msgid "Conversation awareness volume limit"
+#~ msgstr "Limit głośności w trybie rozmowy"
+
+#~ msgid ""
+#~ "Limits media volume to this percentage during conversation. Note: No "
+#~ "change if current volume is below this level."
+#~ msgstr ""
+#~ "Ogranicza głośność multimediów do tego poziomu procentowego w trakcie "
+#~ "rozmowy. Uwaga: Brak zmian, jeśli obecna głośność jest niższa niż ten "
+#~ "poziom."
+
+#~ msgid "Press and Hold Cycle"
+#~ msgstr "Przełączanie po przytrzymaniu"
+
+#~ msgid "Apply"
+#~ msgstr "Zatwierdź"
+
+#~ msgid "Press and hold cycles between"
+#~ msgstr "Przytrzymanie przełącza między"
+
+#~ msgid "Settings don’t reflect current state, press Apply to save"
+#~ msgstr ""
+#~ "Ustawienia nie odzwierciedlają bieżącego stanu, naciśnij 'Zastosuj', aby "
+#~ "zapisać"
+
+#~ msgid "ANC Off"
+#~ msgstr "ANC wyłączone"
+
+#~ msgid "Transparency"
+#~ msgstr "Transparentny"
+
+#~ msgid "Adaptive"
+#~ msgstr "Adaptacyjny"
+
+#~ msgid "ANC On"
+#~ msgstr "ANC włączone"
+
+#~ msgid "Notification Volume"
+#~ msgstr "Powiadomienie głośności"
+
+#~ msgid "Tone Volume"
+#~ msgstr "Ton głośności"
+
+#~ msgid "Adjust the tone volume of sound effects played by Airpods"
+#~ msgstr "Dostosuj głośność sygnałów dźwiękowych odtwarzanych przez AirPods"
+
+#~ msgid "15%"
+#~ msgstr "15%"
+
+#~ msgid "100%"
+#~ msgstr "100%"
+
+#~ msgid "125%"
+#~ msgstr "125%"
+
+#~ msgid "Volume Control"
+#~ msgstr "Regulacja głośności"
+
+#~ msgid "Volume Swipe"
+#~ msgstr "Przesunięcie do regulacji głośności"
+
+#~ msgid "Enable or disable volume adjustment by swiping on earbud stems"
+#~ msgstr ""
+#~ "Włącz lub wyłącz regulację głośności poprzez przesuwanie palcem po "
+#~ "'nóżkach' słuchawek dousznych"
+
+#~ msgid "Swipe Duration"
+#~ msgstr "Czas przesunięcia"
+
+#~ msgid ""
+#~ "To prevent unintended adjustments, select the preferred wait time between "
+#~ "swipes"
+#~ msgstr ""
+#~ "Aby zapobiec niezamierzonym regulacjom, wybierz preferowany czas "
+#~ "oczekiwania między przesunięciami"
+
+#~ msgid "Default"
+#~ msgstr "Domyślny"
+
+#~ msgid "Longer"
+#~ msgstr "Dłuższy"
+
+#~ msgid "Longest"
+#~ msgstr "Najdłuższy"
+
+#~ msgid "Stem and Crown Response"
+#~ msgstr "Reakcja 'nóżki' i 'korony'"
+
+#~ msgid "Press Speed"
+#~ msgstr "Szybkość naciśnięcia"
+
+#~ msgid ""
+#~ "Adjust how quickly you must double or triple-press the stem or Digital "
+#~ "Crown before an action occurs"
+#~ msgstr ""
+#~ "Dostosuj, jak szybko musisz dwu- lub trzykrotnie nacisnąć 'nóżkę' lub "
+#~ "'cyfrową koronkę', aby wywołać akcję"
+
+#~ msgid "Slower"
+#~ msgstr "Wolniej"
+
+#~ msgid "Slowest"
+#~ msgstr "Najwolniej"
+
+#~ msgid "Press and Hold Duration"
+#~ msgstr "Czas przyciśnięcia i przytrzymania"
+
+#~ msgid "Set how long you need to press and hold before an action occurs"
+#~ msgstr "Ustaw, jak długo musisz naciskać i przytrzymywać, aby wywołać akcję"
+
+#~ msgid "Shorter"
+#~ msgstr "Krócej"
+
+#~ msgid "Shortest"
+#~ msgstr "Najkrócej"
+
+#~ msgid "AirPods/Beats"
+#~ msgstr "AirPods/Beats"
+
+#~ msgid ""
+#~ "Some models/features are not fully tested. Please share feedback on "
+#~ "GitHub."
+#~ msgstr ""
+#~ "Niektóre modele/funkcje nie zostały w pełni przetestowane. Prześlij "
+#~ "opinię na GitHub."
+
+#~ msgid ""
+#~ "Conversation Awareness (if supported) works only with the A2DP profile."
+#~ msgstr ""
+#~ "Wykrywanie rozmowy (jeśli jest obsługiwane) działa tylko z profilem A2DP."
+
+#~ msgid ""
+#~ "ANC and Conversation Awareness buttons are hidden when the earbuds are "
+#~ "not in-ear."
+#~ msgstr ""
+#~ "Przyciski ANC i Wykrywanie rozmowy są ukryte, gdy słuchawki douszne nie "
+#~ "znajdują się w uszach."
+
+#~ msgid "AirPods/Beats Settings"
+#~ msgstr "Ustawienia AirPods/Beats"
+
+#~ msgid "Enable AirPods/Beats Support"
+#~ msgstr "Włącz obsługę AirPods/Beats"
+
+#~ msgid ""
+#~ "Enables battery status monitoring and, if supported, control of Noise "
+#~ "Cancellation and Conversation Awareness modes."
+#~ msgstr ""
+#~ "Włącza monitorowanie stanu baterii oraz, jeśli jest to obsługiwane, "
+#~ "sterowanie trybami redukcji szumów i wykrywania rozmowy."
 
 #~ msgid "Disconnect"
 #~ msgstr "Rozłącz"
