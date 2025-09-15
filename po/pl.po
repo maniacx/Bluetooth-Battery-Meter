@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-14 15:05-0700\n"
-"PO-Revision-Date: 2025-09-14 17:54+0200\n"
+"PO-Revision-Date: 2025-09-15 18:57+0200\n"
 "Last-Translator: Adam Lewicki <a.lewicki95@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -280,16 +280,20 @@ msgid ""
 "Indicator Battery Widget Settings available only for System Tray mode or "
 "Panel Button mode with multiple indicators"
 msgstr ""
+"Ustawienia widżetu wskaźnika baterii są dostępne tylko dla trybu 'Zasobnika "
+"systemowego' lub 'Przycisku panelu' z wieloma wskaźnikami"
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
-msgstr ""
+msgstr "Pokaż tylko ikonę (ukryj pasek/kropki)"
 
 #: ui/batteryWidgetSettings.ui:18
 msgid ""
 "Hides the battery level indicator on the icon. Pair with text percentage for "
 "battery information"
 msgstr ""
+"Ukrywa wskaźnik poziomu naładowania baterii na ikonie. Połącz z tekstem, aby "
+"wyświetlić informację o stanie baterii w procentach"
 
 #: ui/batteryWidgetSettings.ui:29
 msgid "Display battery percentage as text"
