@@ -102,7 +102,7 @@ export const  ConfigureWindow = GObject.registerClass({
 
             const pressCycleButtonContent = new Adw.ButtonContent({
                 label: _('Apply'),
-                icon_name: 'emblem-ok-symbolic',
+                icon_name: 'bbm-check-symbolic',
             });
 
             this._pressCycleButton = new Gtk.Button({

@@ -116,6 +116,8 @@
   background-color: transparent;
   border-radius: 5px;
   padding: 2px;
+  min-height: 1.75em;
+  min-width: 3.4em;
   height: 1.75em;
   width: 3.4em;
 }
@@ -225,6 +227,7 @@
   margin-bottom: 2px;
 }
 .bbm-radiobtn-box {
+  margin: 0;
   padding: 0;
   border-radius: 999px;
 }
@@ -239,6 +242,7 @@
 }
 .bbm-radiobtn-icon {
   icon-size: 12px;
-  padding: 0.5px;
+  padding: 1px;
+  margin: 0;
 }
 
