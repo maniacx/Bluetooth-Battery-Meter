@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-14 15:05-0700\n"
-"PO-Revision-Date: 2024-06-25 20:07+0200\n"
+"PO-Revision-Date: 2025-09-20 10:03+0200\n"
 "Last-Translator:  Alessandro Falappa <alex.falappa@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
 "Language: it\n"
@@ -207,11 +207,11 @@ msgstr ""
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 #: preferences/upowerDevices.js:105
 msgid "Device Alias"
-msgstr ""
+msgstr "Alias dispositivo"
 
 #: preferences/upowerDevices.js:199
 msgid ""
@@ -223,11 +223,11 @@ msgstr ""
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
-msgstr ""
+msgstr "(Disconnesso)"
 
 #: preferences/upowerDevices.js:233
 msgid "(Online)"
-msgstr ""
+msgstr "(Connesso)"
 
 #: ui/about.ui:5
 msgid "About"
@@ -263,7 +263,7 @@ msgstr "Tutorial on-line"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
-msgstr ""
+msgstr "Impostazioni del widget della batteria"
 
 #: ui/batteryWidgetSettings.ui:9
 msgid "Indicator Widget Settings"
@@ -274,20 +274,25 @@ msgid ""
 "Indicator Battery Widget Settings available only for System Tray mode or "
 "Panel Button mode with multiple indicators"
 msgstr ""
+"Le impostazioni del widget della batteria dell'indicatore sono disponibili "
+"solo per la modalità barra di sistema o la modalità pulsante nel pannello con "
+"indicatori multipli"
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
-msgstr ""
+msgstr "Mostra solo l'icona (Nascondi barra/punti)"
 
 #: ui/batteryWidgetSettings.ui:18
 msgid ""
 "Hides the battery level indicator on the icon. Pair with text percentage for "
 "battery information"
 msgstr ""
+"Nasconde l'indicatore del livello della batteria sull'icona. Si abbina con la "
+"percentuale di testo per le informazioni sulla batteria"
 
 #: ui/batteryWidgetSettings.ui:29
 msgid "Display battery percentage as text"
-msgstr "Mosta la percentuale della batteria come testo"
+msgstr "Mostra la percentuale della batteria come testo"
 
 #: ui/batteryWidgetSettings.ui:30
 msgid "Displays battery percentage beside the Bluetooth device icon"
@@ -305,11 +310,11 @@ msgstr "I puntini offrono una migliore visibilità"
 
 #: ui/batteryWidgetSettings.ui:54
 msgid "Battery Bar Position"
-msgstr ""
+msgstr "Posizione barra batteria"
 
 #: ui/batteryWidgetSettings.ui:55
 msgid "Choose where to display the battery bar relative to the device icon"
-msgstr ""
+msgstr "Scegli dove visualizzare la barra della batteria rispetto all'icona del dispositivo"
 
 #: ui/batteryWidgetSettings.ui:67
 msgid "Device Icon Size"
@@ -333,15 +338,15 @@ msgstr "Scegli lo schema di colori per la barra/i punti del livello"
 
 #: ui/batteryWidgetSettings.ui:101
 msgid "Circle Widget Settings"
-msgstr ""
+msgstr "Impostazioni del widget circolare"
 
 #: ui/batteryWidgetSettings.ui:104
 msgid "Circle Widget Color Scheme"
-msgstr ""
+msgstr "Schema colori del widget circolare"
 
 #: ui/batteryWidgetSettings.ui:105
 msgid "Choose color scheme for battery circle widget"
-msgstr "Scegli lo schema di colori per il widget del cerchio della batteria"
+msgstr "Scegli lo schema di colori per il widget circolare della batteria"
 
 #: ui/batteryWidgetSettings.ui:123
 msgid "Battery Level Bar"
@@ -353,15 +358,15 @@ msgstr "Livello batteria a punti"
 
 #: ui/batteryWidgetSettings.ui:129
 msgid "Left"
-msgstr ""
+msgstr "Sinistra"
 
 #: ui/batteryWidgetSettings.ui:130
 msgid "Right"
-msgstr ""
+msgstr "Destra"
 
 #: ui/batteryWidgetSettings.ui:131
 msgid "Below"
-msgstr ""
+msgstr "Sotto"
 
 #: ui/batteryWidgetSettings.ui:136 ui/batteryWidgetSettings.ui:143
 msgid "Symbolic"
@@ -418,7 +423,7 @@ msgstr "Nessun dispositivo compatibile accoppiato!"
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
-msgstr ""
+msgstr "Impostazioni dell'indicatore di sistema Bluetooth"
 
 #: ui/indicator.ui:12
 msgid "Bluetooth Connection Status Indicator"
@@ -434,11 +439,11 @@ msgstr ""
 
 #: ui/indicator.ui:27
 msgid "Battery Indicator Settings"
-msgstr ""
+msgstr "Impostazioni dell'indicatore della batteria"
 
 #: ui/indicator.ui:30
 msgid "Choose Indicator mode"
-msgstr ""
+msgstr "Scegli la modalità dell'indicatore"
 
 #: ui/indicator.ui:31
 msgid ""
@@ -446,18 +451,21 @@ msgid ""
 "System Indicator: Battery icon in top bar.\n"
 "Panel Button: Battery icon with menu."
 msgstr ""
+"Disattivato: Nessun indicatore della batteria.\n"
+"Area di notifica: icona della batteria nella barra superiore.\n"
+"Pulsante nel pannello: icona della batteria nel menu."
 
 #: ui/indicator.ui:45
 msgid "Panel Button Mode"
-msgstr ""
+msgstr "Modalità pulsante nel pannello"
 
 #: ui/indicator.ui:48
 msgid "Panel button indicator mode."
-msgstr ""
+msgstr "Modalità indicatore pulsante nel pannello."
 
 #: ui/indicator.ui:49
 msgid "On: Show one selected device. Off: Show all devices"
-msgstr ""
+msgstr "Attivo: Mostra un dispositivo selezionato. Disattivato: Mostra tutti i dispositivi."
 
 #: ui/indicator.ui:62
 msgid "Indicator Settings"
@@ -518,15 +526,15 @@ msgstr "Nascondi condizionalmente"
 
 #: ui/indicator.ui:121
 msgid "Off"
-msgstr ""
+msgstr "Disattivato"
 
 #: ui/indicator.ui:122
 msgid "System Tray"
-msgstr ""
+msgstr "Area di notifica"
 
 #: ui/indicator.ui:123
 msgid "Panel Button"
-msgstr ""
+msgstr "Pulsante nel pannello"
 
 #: ui/quickSettings.ui:9
 msgid "Note!"
@@ -538,13 +546,15 @@ msgstr "Impostazioni del menu rapido"
 
 #: ui/quickSettings.ui:20
 msgid "Enable popup submenu widget mode"
-msgstr ""
+msgstr "Abilita la modalità widget del sottomenu a comparsa"
 
 #: ui/quickSettings.ui:21
 msgid ""
 "Adds a submenu that displays battery levels and other controls (ANC) if "
 "available"
 msgstr ""
+"Aggiunge un sottomenu che visualizza i livelli della batteria e altri "
+"controlli (ANC) se disponibili"
 
 #: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
@@ -574,7 +584,7 @@ msgstr "Scambia la posizione dell'icona del livello e delle cifre percentuali"
 
 #: ui/quickSettings.ui:70
 msgid "Sort By History"
-msgstr ""
+msgstr "Ordina per cronologia"
 
 #: ui/quickSettings.ui:73
 msgid "Sort devices by connection history"
