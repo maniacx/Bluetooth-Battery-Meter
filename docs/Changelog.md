@@ -6,6 +6,23 @@ permalink: /changelogs
 ---
 
 # Changelogs
+{: .important-title }
+> GN-45_Version 40 &emsp;&emsp; Sep 28, 2025
+> * Added support for Airpods Pro 3
+> * Fix bug, that would not display Airpods/Beats single device in GUI.
+> * Italian translations: credits AlexFalappa
+
+{: .important-title }
+> GN-45_Version 39 &emsp;&emsp; Sep 15, 2025
+> * Bug Fixes
+> * Add option to display indicator without Battery Level dot/bar
+> * Improved theme compatibility
+> * Corrected screen reader prompts
+> * Polish translations: credits alewicki95
+
+{: .important-title }
+> GN-45_Version 38 &emsp;&emsp; Sep 04, 2025
+> * WidgetManager: disconnect signal / remove timeout before initiating new ones. There could be multiple instance this is called, so disconnect previous signals or remove timeout before creating new once. :Credits JustPerfection
 
 {: .important-title }
 > GN-45_Version 37 &emsp;&emsp; Aug 30, 2025
