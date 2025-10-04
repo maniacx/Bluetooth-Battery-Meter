@@ -12,7 +12,7 @@ permalink: /
 {: .important-title }
 > Currently supported on Gnome Versions:
 > 
-> Supported: `43, 44, 45, 46, 47, 48`
+> Supported: `43, 44, 45, 46, 47, 48, 49`
 >
 > Deprecated: `42`
 
