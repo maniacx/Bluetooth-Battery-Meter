@@ -6,6 +6,7 @@ permalink: /changelogs
 ---
 
 # Changelogs
+
 {: .important-title }
 > GN-45_Version 40 &emsp;&emsp; Sep 28, 2025
 > * Added support for Airpods Pro 3

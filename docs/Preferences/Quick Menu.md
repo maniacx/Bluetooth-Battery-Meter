@@ -20,8 +20,40 @@ permalink: /preferences/quick-menu
 <img src="{{ 'assets/images/preferences/quick-menu/qc-prefs.png' | relative_url }}" width="100%">
 
 ---
+## Enable popup submenu widget mode
+
+{: .important-title }
+> Introduced in Version 40
+
+<br>
+<img src="{{ 'assets/images/preferences/quick-menu/qc-submenu-prefs.png' | relative_url }}" width="100%">
+
+When enabled, the Bluetooth quick menu replaces the inline battery display with a dedicated popup submenu. This submenu provides a richer interface, featuring circular battery indicators, device icons, and advanced controls such as ANC and other supported headphone features.
+
+Pros: Ideal for advanced Bluetooth devices (like AirPods) that support additional controls, providing a cleaner and more informative layout.
+
+Cons: With this mode enabled, the connect/disconnect action is moved to a dedicated button, since the submenu adds an “expand” button to open the detailed view. This design prevents accidental disconnects when users try to expand the submenu but click near the edge of the device entry.
+
+
+### **Disabled**
+<br>
+<img src="{{ 'assets/images/preferences/quick-menu/qc-battery-icon-text.png' | relative_url }}" width="50%">
+<br>
+<br>
+### **Enabled**
+<br>
+<img src="{{ 'assets/images/preferences/quick-menu/qc-submenu.png' | relative_url }}" width="50%">
+<br>
+<br>
+
+---
 
 ## Show battery icon for Bluetooth devices
+<br>
+<img src="{{ 'assets/images/preferences/quick-menu/qc-show-battery-icon-prefs.png' | relative_url }}" width="100%">
+
+Shows a battery icon indicating the charge level of supported Bluetooth devices in the Bluetooth quick menu.
+
 <br>
 <img src="{{ 'assets/images/preferences/quick-menu/qc-battery-icon.png' | relative_url }}" width="50%">
 
@@ -29,10 +61,19 @@ permalink: /preferences/quick-menu
 
 ## Show Bluetooth device battery percentage
 <br>
+<img src="{{ 'assets/images/preferences/quick-menu/qc-show-battery-text-prefs.png' | relative_url }}" width="100%">
+
+Shows the battery percentage of supported Bluetooth devices as text in the Bluetooth quick menu.
+<br>
 <img src="{{ 'assets/images/preferences/quick-menu/qc-battery-text.png' | relative_url }}" width="50%">
 
+---
+
 ## Display battery level icon before text
-When both, Battery Percentage Text and Battery Level Icon are enabled, Setting this feature to enabled with display Text after Icon, and vice versa
+<br>
+<img src="{{ 'assets/images/preferences/quick-menu/qc-swap-icon-text-prefs.png' | relative_url }}" width="100%">
+
+When both Battery Percentage Text and Battery Level Icon are enabled, this setting controls their display order. When disabled, the battery icon appears before the text (icon on the left, text on the right). When enabled, their positions are swapped, showing the text before the icon.
 <br>
 <br>
 
@@ -50,6 +91,8 @@ When both, Battery Percentage Text and Battery Level Icon are enabled, Setting t
 ---
 
 ## Sort devices by connection history
+<br>
+<img src="{{ 'assets/images/preferences/quick-menu/qc-sort.png' | relative_url }}" width="100%">
 <br>
  This setting allows you to sort Bluetooth devices based on their recent connection activity.
 
