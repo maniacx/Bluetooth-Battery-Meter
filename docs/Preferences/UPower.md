@@ -2,7 +2,7 @@
 layout: default
 title: UPower
 parent: Preferences
-nav_order: 4
+nav_order: 5
 permalink: /preferences/upower
 ---
 

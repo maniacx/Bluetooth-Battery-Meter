@@ -2,7 +2,7 @@
 layout: default
 title: Device
 parent: Preferences
-nav_order: 3
+nav_order: 4
 permalink: /preferences/device
 ---
 
