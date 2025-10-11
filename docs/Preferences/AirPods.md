@@ -96,7 +96,8 @@ Adjustable Range
 * Values are interpreted as a percentage of the device's maximum volume.
 * Note: If the current playback volume is already below the specified limit, no adjustment will be made.
 
-## Customize Adaptive Audio
-If supported by device, Adaptive Audio is customizable. Moving the slider adjusts the level of external noise that is permitted to pass through in Adaptive mode.
+## Other settings:
+Other settings are self explanatory similar to settings available in iPhone / iPads / Macs
+
 
 
