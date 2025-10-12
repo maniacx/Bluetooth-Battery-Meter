@@ -62,8 +62,8 @@
         <property name="title" translatable="yes">Indicator Settings</property>
         <child>
           <object class="AdwActionRow">
-            <property name="title" translatable="yes">Show Separate Battery Indicators</property>
-            <property name="subtitle" translatable="yes">When enabled, display one indicator per battery. When disabled, show a single indicator with the most critical (lowest) battery level.</property>
+            <property name="title" translatable="yes">Show Multiple Battery Indicators per Device</property>
+            <property name="subtitle" translatable="yes">For devices with multiple batteries, when enabled, shows a separate indicator for each battery. When disabled, shows a single indicator representing the most critical (lowest) battery level of the device.</property>
             <property name="activatable-widget">enable_multi_indicator_mode</property>
             <child>
               <object class="GtkSwitch" id="enable_multi_indicator_mode">
