@@ -44,15 +44,9 @@
       <object class="AdwPreferencesGroup" id="panel_indicator_mode_group">
         <property name="title" translatable="yes">Panel Button Mode</property>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwSwitchRow" id="panel_button_indicator_mode">
             <property name="title" translatable="yes">Panel button indicator mode.</property>
             <property name="subtitle" translatable="yes">On: Show one selected device. Off: Show all devices</property>
-            <property name="activatable-widget">panel_button_indicator_mode</property>
-            <child>
-              <object class="GtkSwitch" id="panel_button_indicator_mode">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
       </object>
@@ -61,15 +55,9 @@
       <object class="AdwPreferencesGroup" id="indicator_settings_group">
         <property name="title" translatable="yes">Indicator Settings</property>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwSwitchRow" id="enable_multi_indicator_mode">
             <property name="title" translatable="yes">Show Multiple Battery Indicators per Device</property>
             <property name="subtitle" translatable="yes">For devices with multiple batteries, when enabled, shows a separate indicator for each battery. When disabled, shows a single indicator representing the most critical (lowest) battery level of the device.</property>
-            <property name="activatable-widget">enable_multi_indicator_mode</property>
-            <child>
-              <object class="GtkSwitch" id="enable_multi_indicator_mode">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
       </object>
@@ -78,15 +66,9 @@
       <object class="AdwPreferencesGroup" id="on_hover_group">
         <property name="title" translatable="yes">Show Popup on Hover</property>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwSwitchRow" id="enable_hover_on_mode">
             <property name="title" translatable="yes">Show Detailed Info on Hover</property>
             <property name="subtitle" translatable="yes">Displays a popup with battery info and controls when the mouse pointer hovers over the indicator for a custom delay</property>
-            <property name="activatable-widget">enable_hover_on_mode</property>
-            <child>
-              <object class="GtkSwitch" id="enable_hover_on_mode">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
         <child>

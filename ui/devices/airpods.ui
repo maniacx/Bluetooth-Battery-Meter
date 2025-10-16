@@ -13,6 +13,7 @@
             <property name="valign">center</property>
             <property name="margin-start">6</property>
             <property name="css-classes">error</property>
+            <property name="can-focus">False</property>
             <property name="label" translatable="yes">Experimental</property>
           </object>
         </property>
@@ -37,15 +38,9 @@
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">AirPods/Beats Settings</property>
         <child>
-          <object class="AdwActionRow" id="row_airpods_device">
+          <object class="AdwSwitchRow" id="enable_airpods_device">
             <property name="title" translatable="yes">Enable AirPods/Beats Support</property>
             <property name="subtitle" translatable="yes">Enables battery status monitoring and, if supported, control of Noise Cancellation and Conversation Awareness modes.</property>
-            <property name="activatable-widget">enable_airpods_device</property>
-            <child>
-              <object class="GtkSwitch" id="enable_airpods_device">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
       </object>

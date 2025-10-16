@@ -16,51 +16,27 @@
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Quick Menu Settings</property>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwSwitchRow" id="use_popup_in_quicksettings">
             <property name="title" translatable="yes">Enable popup submenu widget mode</property>
             <property name="subtitle" translatable="yes">Adds a submenu that displays battery levels and other controls (ANC) if available</property>
-            <property name="activatable-widget">use_popup_in_quicksettings</property>
-            <child>
-              <object class="GtkSwitch" id="use_popup_in_quicksettings">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
         <child>
-          <object class="AdwActionRow" id="enable_battery_level_icon_row">
+          <object class="AdwSwitchRow" id="enable_battery_level_icon">
             <property name="title" translatable="yes">Show battery icon for Bluetooth devices</property>
             <property name="subtitle" translatable="yes">Displays an icon in the popup menu for Bluetooth device battery level</property>
-            <property name="activatable-widget">enable_battery_level_icon</property>
-            <child>
-              <object class="GtkSwitch" id="enable_battery_level_icon">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
         <child>
-          <object class="AdwActionRow" id="enable_battery_level_text_row">
+          <object class="AdwSwitchRow" id="enable_battery_level_text">
             <property name="title" translatable="yes">Show Bluetooth device battery percentage</property>
             <property name="subtitle" translatable="yes">Displays Bluetooth device battery level percentage in text</property>
-            <property name="activatable-widget">enable_battery_level_text</property>
-            <child>
-              <object class="GtkSwitch" id="enable_battery_level_text">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
         <child>
-          <object class="AdwActionRow" id="swap_icon_text_row">
+          <object class="AdwSwitchRow" id="swap_icon_text">
             <property name="title" translatable="yes">Display battery level icon before text</property>
             <property name="subtitle" translatable="yes">Swaps position of battery level icon and percentage text</property>
-            <property name="activatable-widget">swap_icon_text</property>
-            <child>
-              <object class="GtkSwitch" id="swap_icon_text">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
       </object>
@@ -69,15 +45,9 @@
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Sort By History</property>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwSwitchRow"  id="sort_devices_by_history">
             <property name="title" translatable="yes">Sort devices by connection history</property>
             <property name="subtitle" translatable="yes">Enable to sort devices by connection history, or disable to sort by connection status and alias</property>
-            <property name="activatable-widget">sort_devices_by_history</property>
-            <child>
-              <object class="GtkSwitch" id="sort_devices_by_history">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
       </object>

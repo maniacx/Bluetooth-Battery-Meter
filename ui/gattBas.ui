@@ -12,20 +12,15 @@
             <property name="valign">center</property>
             <property name="margin-start">6</property>
             <property name="css-classes">error</property>
+            <property name="can-focus">False</property>
             <property name="label" translatable="yes">Experimental</property>
           </object>
         </property>
         <property name="title" translatable="yes">Battery Service (BAS) Settings</property>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwSwitchRow" id="enable_gatt_bass">
             <property name="title" translatable="yes">Enable GATT Battery Service Reporting</property>
             <property name="subtitle" translatable="yes">Display battery levels for Bluetooth devices using the GATT Battery Service (BAS).</property>
-            <property name="activatable-widget">enable_gatt_bass</property>
-            <child>
-              <object class="GtkSwitch" id="enable_gatt_bass">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
       </object>

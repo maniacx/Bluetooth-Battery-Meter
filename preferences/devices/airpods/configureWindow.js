@@ -4,6 +4,7 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 
 import {AirpodsModelList} from '../../../lib/devices/airpods/airpodsConfig.js';
+import * as PrefsWidget from './../../prefsWidget.js';
 
 export const  ConfigureWindow = GObject.registerClass({
     GTypeName: 'BluetoothBatteryMeter_AirpodsConfigureWindow',
@@ -47,22 +48,17 @@ export const  ConfigureWindow = GObject.registerClass({
             title: _('Playback Behavior'),
         });
 
-        const inEarSettingsRow = new Adw.ActionRow({
+        const inEarSettingsSwitchRow = new Adw.SwitchRow({
             title: _('Pause when device is not worn'),
             subtitle: _('Pause playback when the device is removed,' +
                     'resume when it is put back on'),
         });
 
-        const inEarSettingsSwitch = new Gtk.Switch({
-            valign: Gtk.Align.CENTER,
+        inEarSettingsSwitchRow.active = this._pathInfo['in-ear-control-enabled'];
+        inEarSettingsSwitchRow.connect('notify::active', () => {
+            this._updateGsettings('in-ear-control-enabled', inEarSettingsSwitchRow.active);
         });
-
-        inEarSettingsSwitch.active = this._pathInfo['in-ear-control-enabled'];
-        inEarSettingsSwitch.connect('notify::active', () => {
-            this._updateGsettings('in-ear-control-enabled', inEarSettingsSwitch.active);
-        });
-        inEarSettingsRow.add_suffix(inEarSettingsSwitch);
-        inEarSettingsGroup.add(inEarSettingsRow);
+        inEarSettingsGroup.add(inEarSettingsSwitchRow);
 
         page.add(inEarSettingsGroup);
 
@@ -96,163 +92,49 @@ export const  ConfigureWindow = GObject.registerClass({
         }
 
         if (modelData.longPressCycleSupported) {
-            const pressCycleGroup = new Adw.PreferencesGroup({
-                title: _('Press and Hold Cycle'),
-            });
+            const items = [
+                {name: _('ANC Off'), icon: 'bbm-anc-off-symbolic'},
+                {name: _('Transparency'), icon: 'bbm-transperancy-symbolic'},
+                {name: _('ANC On'), icon: 'bbm-anc-on-symbolic'},
+            ];
 
-            const pressCycleButtonContent = new Adw.ButtonContent({
-                label: _('Apply'),
-                icon_name: 'bbm-check-symbolic',
-            });
-
-            this._pressCycleButton = new Gtk.Button({
-                halign: Gtk.Align.START,
-                valign: Gtk.Align.CENTER,
-                margin_start: 6,
-                css_classes: ['suggested-action'],
-                child: pressCycleButtonContent,
-            });
-            this._pressCycleButton.sensitive = false;
-
-            const pressCycleRow = new Adw.ActionRow({
-                title: _('Press and hold cycles between'),
-                subtitle: _('Settings don’t reflect current state, press Apply to save'),
-            });
-            pressCycleRow.add_suffix(this._pressCycleButton);
-            pressCycleGroup.add(pressCycleRow);
-
-            const modesBox = new Gtk.Box({
-                orientation: Gtk.Orientation.HORIZONTAL,
-                spacing: 8,
-                homogeneous: true,
-                valign: Gtk.Align.CENTER,
-                margin_top: 8,
-                margin_bottom: 8,
-            });
-
-            const createModeCell = (icon, labelText, checkButtonRef) => {
-                const cell = new Gtk.Box({
-                    orientation: Gtk.Orientation.VERTICAL,
-                    spacing: 6,
-                    halign: Gtk.Align.CENTER,
-                    valign: Gtk.Align.CENTER,
-                });
-
-                const iconWidget = new Gtk.Image({
-                    icon_name: icon,
-                    halign: Gtk.Align.CENTER,
-                });
-
-                const label = new Gtk.Label({
-                    label: labelText,
-                    halign: Gtk.Align.CENTER,
-                });
-                label.add_css_class('caption-heading');
-
-                const checkButton = new Gtk.CheckButton({halign: Gtk.Align.CENTER});
-                if (checkButtonRef)
-                    this[checkButtonRef] = checkButton;
-
-                cell.append(iconWidget);
-                cell.append(label);
-                cell.append(checkButton);
-
-                return cell;
-            };
-
-            modesBox.append(createModeCell('bbm-anc-off-symbolic',
-                _('ANC Off'), '_cycleAncOffCheckButton'));
-
-            modesBox.append(createModeCell('bbm-transperancy-symbolic',
-                _('Transparency'), '_cycleAmbientCheckButton'));
-
-            if (modelData.adaptiveSupported) {
-                modesBox.append(createModeCell('bbm-adaptive-symbolic',
-                    _('Adaptive'), '_cycleAdaptiveCheckButton'));
-            }
-
-            modesBox.append(createModeCell('bbm-anc-on-symbolic',
-                _('ANC On'), '_cycleAncOnCheckButton'));
-
-            const pressCycleButtonRow = new Adw.ActionRow();
-            pressCycleButtonRow.set_child(modesBox);
-            pressCycleGroup.add(pressCycleButtonRow);
-
-            const updateApplySensitive = () => {
-                let count = 0;
-                if (this._cycleAncOffCheckButton.active)
-                    count++;
-                if (this._cycleAncOnCheckButton.active)
-                    count++;
-                if (this._cycleAmbientCheckButton.active)
-                    count++;
-                if (modelData.adaptiveSupported && this._cycleAdaptiveCheckButton.active)
-                    count++;
-                this._pressCycleButton.sensitive = count >= 2;
-            };
-
-            this._cycleAncOffCheckButton.connect('toggled', updateApplySensitive);
-            this._cycleAncOnCheckButton.connect('toggled', updateApplySensitive);
-            this._cycleAmbientCheckButton.connect('toggled', updateApplySensitive);
             if (modelData.adaptiveSupported)
-                this._cycleAdaptiveCheckButton.connect('toggled', updateApplySensitive);
+                items.push({name: _('Adaptive'), icon: 'bbm-adaptive-symbolic'});
 
-            this._pressCycleButton.connect('clicked', () => {
-                let finalSumValue = 0;
-                if (this._cycleAncOffCheckButton.active)
-                    finalSumValue += 1;
-                if (this._cycleAncOnCheckButton.active)
-                    finalSumValue += 2;
-                if (this._cycleAmbientCheckButton.active)
-                    finalSumValue += 4;
-                if (modelData.adaptiveSupported && this._cycleAdaptiveCheckButton.active)
-                    finalSumValue += 8;
-
-                this._updateGsettings('lp-value', finalSumValue);
-                this._updateGsettings('lp-applied', !this._pathInfo['lp-applied']);
-
-                this._cycleAncOffCheckButton.active = false;
-                this._cycleAncOnCheckButton.active = false;
-                this._cycleAmbientCheckButton.active = false;
-                if (modelData.adaptiveSupported)
-                    this._cycleAdaptiveCheckButton.active = false;
-
-                updateApplySensitive();
+            this._longPressCycleWidget = new PrefsWidget.CheckBoxesGroupWidget({
+                groupTitle: _('Press and Hold Cycle'),
+                rowTitle: _('Press and hold cycles between'),
+                rowSubtitle: _('Settings don’t reflect current state, press Apply to save'),
+                items,
+                applyBtnName: _('Apply'),
+                initialValue: 0,
             });
 
-            page.add(pressCycleGroup);
+            this._longPressCycleWidget.connect('notify::toggled-value', () => {
+                this._updateGsettings('lp-value', this._longPressCycleWidget.toggled_value);
+            });
+
+            page.add(this._longPressCycleWidget);
         }
 
         if (modelData.toneVolumeSupported) {
-            const toneVolGroup = new Adw.PreferencesGroup({
-                title: _('Notification Volume'),
+            this._toneWidget = new PrefsWidget.SliderGroupWidget({
+                groupTitle: _('Notification Volume'),
+                rowTitle: _('Tone Volume'),
+                rowSubtitle: _('Adjust the tone volume of sound effects played by AirPods'),
+                marks: [
+                    {mark: 0, label: _('15%')},
+                    {mark: 77, label: _('100%')},
+                    {mark: 100, label: _('125%')},
+                ],
+                initialValue: this._pathInfo['noti-vol'],
             });
 
-            const toneVolRow = new Adw.ActionRow({
-                title: _('Tone Volume'),
-                subtitle: _('Adjust the tone volume of sound effects played by Airpods'),
+            this._toneWidget.connect('notify::value', () => {
+                this._updateGsettings('noti-vol', this._toneWidget.value);
             });
 
-            this._toneVolSlider = Gtk.Scale.new_with_range(Gtk.Orientation.HORIZONTAL, 0, 100, 1);
-            this._toneVolSlider.margin_start = 50;
-            this._toneVolSlider.margin_end = 50;
-            this._toneVolSlider.margin_top = 4;
-            this._toneVolSlider.margin_bottom = 4;
-            this._toneVolSlider.add_mark(0, Gtk.PositionType.BOTTOM, _('15%'));
-            this._toneVolSlider.add_mark(77, Gtk.PositionType.BOTTOM, _('100%'));
-            this._toneVolSlider.add_mark(100, Gtk.PositionType.BOTTOM, _('125%'));
-
-            this._toneVolSlider.set_value(this._pathInfo['noti-vol']);
-            this._toneVolSlider.connect('value-changed', () => {
-                this._updateGsettings('noti-vol', this._toneVolSlider.get_value());
-            });
-
-            const toneVolSliderRow = new Adw.ActionRow({child: this._toneVolSlider});
-
-            toneVolGroup.add(toneVolRow);
-            toneVolGroup.add(toneVolSliderRow);
-
-            page.add(toneVolGroup);
+            page.add(this._toneWidget);
         }
 
         if (modelData.volumeSwipeSupported) {
@@ -260,90 +142,83 @@ export const  ConfigureWindow = GObject.registerClass({
                 title: _('Volume Control'),
             });
 
-            const volumeSwipeMode = new Adw.ActionRow({
+            this._volumeSwipeSwitchRow = new Adw.SwitchRow({
                 title: _('Volume Swipe'),
                 subtitle: _('Enable or disable volume adjustment by swiping on earbud stems'),
             });
 
-            this._volumeSwipeSwitch = new Gtk.Switch({
-                valign: Gtk.Align.CENTER,
+            this._volumeSwipeSwitchRow.active = this._pathInfo['swipe-mode'];
+            this._volumeSwipeSwitchRow.connect('notify::active', () => {
+                this._updateGsettings('swipe-mode', this._volumeSwipeSwitchRow.active);
             });
+            volumeControlGroup.add(this._volumeSwipeSwitchRow);
 
-            this._volumeSwipeSwitch.active = this._pathInfo['swipe-mode'];
-            volumeSwipeMode.add_suffix(this._volumeSwipeSwitch);
-            this._volumeSwipeSwitch.connect('notify::active', () => {
-                this._updateGsettings('swipe-mode', this._volumeSwipeSwitch.active);
-            });
-            volumeControlGroup.add(volumeSwipeMode);
+            const volumeSwipeDurOptions = [_('Default'), _('Longer'), _('Longest')];
+            const volumeSwipeDurValues = [0, 1, 2];
 
-            const volumeSwipeDurRow = new Adw.ActionRow({
+            this._volumeSwipeDurDropdown = new PrefsWidget.DropDownRowWidget({
                 title: _('Swipe Duration'),
                 subtitle: _('To prevent unintended adjustments,' +
-                        ' select the preferred wait time between swipes'),
+                    'select the preferred wait time between swipes'),
+                options: volumeSwipeDurOptions,
+                values: volumeSwipeDurValues,
+                initialValue: this._pathInfo['swipe-len'],
             });
 
-            const swipeDurationOptions = [_('Default'), _('Longer'), _('Longest')];
-            this._volumeSwipeDurDropdown = Gtk.DropDown.new_from_strings(swipeDurationOptions);
-            this._volumeSwipeDurDropdown.valign = Gtk.Align.CENTER;
-            this._volumeSwipeDurDropdown.selected = this._pathInfo['swipe-len'];
-
-            this._volumeSwipeDurDropdown.connect('notify::selected', () => {
-                this._updateGsettings('swipe-len', this._volumeSwipeDurDropdown.selected);
+            this._volumeSwipeDurDropdown.connect('notify::selected-item', () => {
+                this._updateGsettings('swipe-len', this._volumeSwipeDurDropdown.selected_item);
             });
 
-            this._volumeSwipeSwitch.bind_property(
+            this._volumeSwipeSwitchRow.bind_property(
                 'active',
-                volumeSwipeDurRow,
+                this._volumeSwipeDurDropdown,
                 'sensitive',
                 GObject.BindingFlags.SYNC_CREATE
             );
 
-            volumeSwipeDurRow.add_suffix(this._volumeSwipeDurDropdown);
-            volumeControlGroup.add(volumeSwipeDurRow);
+            volumeControlGroup.add(this._volumeSwipeDurDropdown);
 
             page.add(volumeControlGroup);
         }
-
 
         if (modelData.pressSpeedDurationSupported) {
             const pressHoldGroup = new Adw.PreferencesGroup({
                 title: _('Stem and Crown Response'),
             });
 
-            const pressSpeedRow = new Adw.ActionRow({
+            const speedOptions = [_('Default'), _('Longer'), _('Longest')];
+            const speedValues = [0, 1, 2];
+
+            this._pressSpeedDropdown = new PrefsWidget.DropDownRowWidget({
                 title: _('Press Speed'),
                 subtitle: _('Adjust how quickly you must double or ' +
                         'triple-press the stem or Digital Crown before an action occurs'),
+                options: speedOptions,
+                values: speedValues,
+                initialValue: this._pathInfo['press-speed'],
             });
 
-            const speedOptions = [_('Default'), _('Slower'), _('Slowest')];
-            this._pressSpeedDropdown = Gtk.DropDown.new_from_strings(speedOptions);
-            this._pressSpeedDropdown.valign = Gtk.Align.CENTER;
-            this._pressSpeedDropdown.selected = this._pathInfo['press-speed'];
-
-            this._pressSpeedDropdown.connect('notify::selected', () => {
-                this._updateGsettings('press-speed', this._pressSpeedDropdown.selected);
+            this._pressSpeedDropdown.connect('notify::selected-item', () => {
+                this._updateGsettings('press-speed', this._pressSpeedDropdown.selected_item);
             });
 
-            pressSpeedRow.add_suffix(this._pressSpeedDropdown);
-            pressHoldGroup.add(pressSpeedRow);
-
-            const pressDurationRow = new Adw.ActionRow({
-                title: _('Press and Hold Duration'),
-                subtitle: _('Set how long you need to press and hold before an action occurs'),
-            });
+            pressHoldGroup.add(this._pressSpeedDropdown);
 
             const durationOptions = [_('Default'), _('Shorter'), _('Shortest')];
-            this._pressDurationDropdown = Gtk.DropDown.new_from_strings(durationOptions);
-            this._pressDurationDropdown.valign = Gtk.Align.CENTER;
-            this._pressDurationDropdown.selected = this._pathInfo['press-dur'];
-
-            this._pressDurationDropdown.connect('notify::selected', () => {
-                this._updateGsettings('press-dur', this._pressDurationDropdown.selected);
+            const durationValues = [0, 1, 2];
+            this._pressDurationDropdown = new PrefsWidget.DropDownRowWidget({
+                title: _('Press and Hold Duration'),
+                subtitle: _('Set how long you need to press and hold before an action occurs'),
+                options: durationOptions,
+                values: durationValues,
+                initialValue: this._pathInfo['press-dur'],
             });
 
-            pressDurationRow.add_suffix(this._pressDurationDropdown);
-            pressHoldGroup.add(pressDurationRow);
+            this._pressDurationDropdown.connect('notify::selected-item', () => {
+                this._updateGsettings('press-dur', this._pressDurationDropdown.selected_item);
+            });
+
+            pressHoldGroup.add(this._pressDurationDropdown);
 
             page.add(pressHoldGroup);
         }
@@ -353,21 +228,21 @@ export const  ConfigureWindow = GObject.registerClass({
             this._pathInfo = updatedList.find(info => info.path === devicePath);
 
             this.title = this._pathInfo.alias;
-            inEarSettingsSwitch.active = this._pathInfo['in-ear-control-enabled'];
+            inEarSettingsSwitchRow.active = this._pathInfo['in-ear-control-enabled'];
 
             if (modelData.awarenessSupported)
                 this._adjustment.value = this._pathInfo['ca-volume'];
 
             if (modelData.toneVolumeSupported)
-                this._toneVolSlider?.set_value(this._pathInfo['noti-vol']);
+                this._toneWidget.value = this._pathInfo['noti-vol'];
 
             if (modelData.volumeSwipeSupported) {
-                this._volumeSwipeSwitch.active = this._pathInfo['swipe-mode'];
-                this._volumeSwipeDurDropdown.selected = this._pathInfo['swipe-len'];
+                this._volumeSwipeSwitchRow.active = this._pathInfo['swipe-mode'];
+                this._volumeSwipeDurDropdown.selected_item = this._pathInfo['swipe-len'];
             }
             if (modelData.pressSpeedDurationSupported) {
-                this._pressSpeedDropdown.selected = this._pathInfo['press-speed'];
-                this._pressDurationDropdown.selected = this._pathInfo['press-dur'];
+                this._pressSpeedDropdown.selected_item = this._pathInfo['press-speed'];
+                this._pressDurationDropdown.selected_item = this._pathInfo['press-dur'];
             }
         });
     }

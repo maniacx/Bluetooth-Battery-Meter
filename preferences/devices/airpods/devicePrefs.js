@@ -86,7 +86,6 @@ export const  Airpods = GObject.registerClass({
         import.meta.url, '../../../ui/devices/airpods.ui', GLib.UriFlags.NONE
     ),
     InternalChildren: [
-        'row_airpods_device',
         'enable_airpods_device',
         'airpods_group',
         'no_airpods_paired_row',

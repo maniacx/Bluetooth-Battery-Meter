@@ -8,15 +8,9 @@
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Enable UPower Devices</property>
         <child>
-          <object class="AdwActionRow">
+          <object class="AdwSwitchRow" id="enable_upower_level_icon">
             <property name="title" translatable="yes">Enable indicator for UPower devices</property>
             <property name="subtitle" translatable="yes">Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can report battery levels if supported by the kernel or third-party drivers. Enable this option to display their battery status in the GNOME system tray.</property>
-            <property name="activatable-widget">enable_upower_level_icon</property>
-            <child>
-              <object class="GtkSwitch" id="enable_upower_level_icon">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
       </object>

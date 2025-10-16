@@ -13,27 +13,15 @@
           </object>
         </child>
         <child>
-          <object class="AdwActionRow" id="disable_level_in_icon_row">
+          <object class="AdwSwitchRow" id="disable_level_in_icon">
             <property name="title" translatable="yes">Show icon only (Hide Bar/Dots)</property>
             <property name="subtitle" translatable="yes">Hides the battery level indicator on the icon. Pair with text percentage for battery information</property>
-            <property name="activatable-widget">disable_level_in_icon</property>
-            <child>
-              <object class="GtkSwitch" id="disable_level_in_icon">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
         <child>
-          <object class="AdwActionRow" id="enable_battery_indicator_text_row">
+          <object class="AdwSwitchRow" id="enable_battery_indicator_text">
             <property name="title" translatable="yes">Display battery percentage as text</property>
             <property name="subtitle" translatable="yes">Displays battery percentage beside the Bluetooth device icon</property>
-            <property name="activatable-widget">enable_battery_indicator_text</property>
-            <child>
-              <object class="GtkSwitch" id="enable_battery_indicator_text">
-                <property name="valign">center</property>
-              </object>
-            </child>
           </object>
         </child>
         <child>

@@ -98,9 +98,7 @@ export const  BatteryWidgetSettings = GObject.registerClass({
     ),
     InternalChildren: [
         'indicator_widget_note_row',
-        'disable_level_in_icon_row',
         'disable_level_in_icon',
-        'enable_battery_indicator_text_row',
         'enable_battery_indicator_text',
         'level_indicator_type_row',
         'level_indicator_type',
@@ -229,8 +227,8 @@ export const  BatteryWidgetSettings = GObject.registerClass({
 
         if (settingsVisible) {
             this._indicator_widget_note_row.visible = false;
-            this._disable_level_in_icon_row.visible = true;
-            this._enable_battery_indicator_text_row.visible = true;
+            this._disable_level_in_icon.visible = true;
+            this._enable_battery_indicator_text.visible = true;
             this._level_indicator_type_row.visible = true;
 
             this._level_bar_position_row.visible =
@@ -247,8 +245,8 @@ export const  BatteryWidgetSettings = GObject.registerClass({
                 this._settings.get_int('level-indicator-color') === 2;
         } else {
             this._indicator_widget_note_row.visible = true;
-            this._disable_level_in_icon_row.visible = false;
-            this._enable_battery_indicator_text_row.visible = false;
+            this._disable_level_in_icon.visible = false;
+            this._enable_battery_indicator_text.visible = false;
             this._level_indicator_type_row.visible = false;
             this._level_bar_position_row.visible = false;
             this._indicator_size.visible = false;
