@@ -45,6 +45,10 @@
             <default>1000</default>
             <summary>"onhover delay time in milliseconds"</summary>
         </key>
+        <key name="enable-tooltip" type="b">
+            <default>true</default>
+            <summary>"Enable Tooltips"</summary>
+        </key>
         <key name="default-selected-path" type="s">
             <default>''</default>
             <summary>"Store path if activated"</summary>

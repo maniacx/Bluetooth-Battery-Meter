@@ -90,6 +90,17 @@
         </child>
       </object>
     </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Tooltips</property>
+        <child>
+          <object class="AdwSwitchRow" id="enable_tooltips">
+            <property name="title" translatable="yes">Enable tooltips</property>
+            <property name="subtitle" translatable="yes">Show tooltips when hovering over unlabeled buttons</property>
+          </object>
+        </child>
+      </object>
+    </child>
   </template>
   <object class="GtkStringList" id="hide_bluetooth_indicator_model">
     <items>

@@ -20,6 +20,7 @@ export const  Indicator = GObject.registerClass({
         'on_hover_group',
         'enable_hover_on_mode',
         'hover_delay_spinrow',
+        'enable_tooltips',
     ],
 }, class Indicator extends Adw.PreferencesPage {
     constructor(settings) {
@@ -53,6 +54,12 @@ export const  Indicator = GObject.registerClass({
         settings.bind(
             'enable-on-hover-mode',
             this._enable_hover_on_mode,
+            'active',
+            Gio.SettingsBindFlags.DEFAULT
+        );
+        settings.bind(
+            'enable-tooltip',
+            this._enable_tooltips,
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );

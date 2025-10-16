@@ -245,4 +245,14 @@
   padding: 1px;
   margin: 0;
 }
+.bbm-tooltip {
+  font-weight: bold;
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 0.6em;
+}
 
