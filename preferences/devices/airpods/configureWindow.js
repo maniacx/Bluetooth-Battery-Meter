@@ -4,15 +4,17 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 
 import {AirpodsModelList} from '../../../lib/devices/airpods/airpodsConfig.js';
-import * as PrefsWidget from './../../prefsWidget.js';
+import {CheckBoxesGroupWidget} from './../../widgets/checkBoxesGroupWidget.js';
+import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
+import {DropDownRowWidget} from './../../widgets/dropDownRowWidget.js';
 
 export const  ConfigureWindow = GObject.registerClass({
     GTypeName: 'BluetoothBatteryMeter_AirpodsConfigureWindow',
 }, class ConfigureWindow extends Adw.Window {
     _init(settings, mac, devicePath, parentWindow, _) {
         super._init({
-            default_width: 580,
-            default_height: 600,
+            default_width: 650,
+            default_height: 650,
             modal: true,
             transient_for: parentWindow ?? null,
         });
@@ -93,15 +95,15 @@ export const  ConfigureWindow = GObject.registerClass({
 
         if (modelData.longPressCycleSupported) {
             const items = [
-                {name: _('ANC Off'), icon: 'bbm-anc-off-symbolic'},
+                {name: _('Off'), icon: 'bbm-anc-off-symbolic'},
                 {name: _('Transparency'), icon: 'bbm-transperancy-symbolic'},
-                {name: _('ANC On'), icon: 'bbm-anc-on-symbolic'},
+                {name: _('Noise Cancellation'), icon: 'bbm-anc-on-symbolic'},
             ];
 
             if (modelData.adaptiveSupported)
                 items.push({name: _('Adaptive'), icon: 'bbm-adaptive-symbolic'});
 
-            this._longPressCycleWidget = new PrefsWidget.CheckBoxesGroupWidget({
+            this._longPressCycleWidget = new CheckBoxesGroupWidget({
                 groupTitle: _('Press and Hold Cycle'),
                 rowTitle: _('Press and hold cycles between'),
                 rowSubtitle: _('Settings don’t reflect current state, press Apply to save'),
@@ -118,8 +120,12 @@ export const  ConfigureWindow = GObject.registerClass({
         }
 
         if (modelData.toneVolumeSupported) {
-            this._toneWidget = new PrefsWidget.SliderGroupWidget({
-                groupTitle: _('Notification Volume'),
+            const toneGroup = new Adw.PreferencesGroup({
+                title: _('Notification Volume'),
+            });
+
+
+            this._toneWidget = new SliderRowWidget({
                 rowTitle: _('Tone Volume'),
                 rowSubtitle: _('Adjust the tone volume of sound effects played by AirPods'),
                 marks: [
@@ -134,7 +140,8 @@ export const  ConfigureWindow = GObject.registerClass({
                 this._updateGsettings('noti-vol', this._toneWidget.value);
             });
 
-            page.add(this._toneWidget);
+            toneGroup.add(this._toneWidget);
+            page.add(toneGroup);
         }
 
         if (modelData.volumeSwipeSupported) {
@@ -156,7 +163,7 @@ export const  ConfigureWindow = GObject.registerClass({
             const volumeSwipeDurOptions = [_('Default'), _('Longer'), _('Longest')];
             const volumeSwipeDurValues = [0, 1, 2];
 
-            this._volumeSwipeDurDropdown = new PrefsWidget.DropDownRowWidget({
+            this._volumeSwipeDurDropdown = new DropDownRowWidget({
                 title: _('Swipe Duration'),
                 subtitle: _('To prevent unintended adjustments,' +
                     'select the preferred wait time between swipes'),
@@ -189,7 +196,7 @@ export const  ConfigureWindow = GObject.registerClass({
             const speedOptions = [_('Default'), _('Longer'), _('Longest')];
             const speedValues = [0, 1, 2];
 
-            this._pressSpeedDropdown = new PrefsWidget.DropDownRowWidget({
+            this._pressSpeedDropdown = new DropDownRowWidget({
                 title: _('Press Speed'),
                 subtitle: _('Adjust how quickly you must double or ' +
                         'triple-press the stem or Digital Crown before an action occurs'),
@@ -206,7 +213,7 @@ export const  ConfigureWindow = GObject.registerClass({
 
             const durationOptions = [_('Default'), _('Shorter'), _('Shortest')];
             const durationValues = [0, 1, 2];
-            this._pressDurationDropdown = new PrefsWidget.DropDownRowWidget({
+            this._pressDurationDropdown = new DropDownRowWidget({
                 title: _('Press and Hold Duration'),
                 subtitle: _('Set how long you need to press and hold before an action occurs'),
                 options: durationOptions,
