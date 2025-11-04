@@ -13,6 +13,9 @@
   background-color: rgba(128, 128, 128, 0.2) !important;
   color: inherit !important;
 }
+.bbm-panel-popupmenuitem {
+  width: 16em;
+}
 .bbm-bt-widget {
   margin-left: 4px;
   margin-right: 4px;
@@ -27,7 +30,6 @@
   font-weight: bold;
   text-align: center;
   padding: 4px;
-  min-width: 16.2em;
 }
 .bbm-popup-menu {
   background-color: transparent;
@@ -144,21 +146,18 @@
   margin-bottom: 2px;
   border-radius: 4px;
 }
+.bbm-box-checkbtn {
+  margin-top: 8px;
+  border-radius: 4px;
+}
 .bbm-toggle-button-separator {
   min-width: 0.5px;
   margin-top: 3px;
   margin-bottom: 3px;
 }
-.bbm-option-menu-separator {
-  min-width: 13em;
-  min-height: 1px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  background-color: rgba(128, 128, 128, 0.4);
-}
 .bbm-subtitle-label {
+  text-align: center;
   font-weight: bold;
-  padding-top: 4px;
   padding-bottom: 4px;
   font-size: 0.75em;
   max-width: 14.6em;
@@ -175,35 +174,29 @@
   background-color: transparent;
   margin: 0;
   padding-top: 2px;
-  padding-bottom: 4px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 10px;
+  margin-right:10px;
 }
 .bbm-checkbtn-bin:focus {
   background-color: rgba(128, 128, 128, 0.3);
 }
-.bbm-checkbtn-boxLayout {
-  width: 7em;
-}
 .bbm-checkbtn {
-  margin: 4px;
+  margin-top: 6px;
+  margin-bottom: 2px;
 }
 .bbm-checkbtn-box {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 .bbm-checkbtn-icon {
   icon-size: 12px;
   padding: 0.5px;
 }
-.bbm-button-separator {
-  min-width: 1px;
-  margin-left: 3px;
-  margin-right: 3px;
-  background-color: rgba(128, 128, 128, 0.4);
-}
 .bbm-radiobtn-label {
+  text-align: center;
   font-weight: bold;
-  padding-top: 4px;
   padding-bottom: 4px;
   font-size: 0.75em;
   max-width: 4.5em;
@@ -211,7 +204,7 @@
 .bbm-radiobtn-bin {
   min-width: 4px;
   min-height: 4px;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: transparent;
   margin: 0;
   padding-top: 2px;
@@ -255,4 +248,23 @@
   padding-right: 0.5em;
   border-radius: 0.6em;
 }
-
+.bbm-label-indicator-label {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 0.75em;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.bbm-label-indicator-bin {
+  border-radius: 4px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.bbm-label-indicator-box {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
