@@ -17,6 +17,7 @@ import GLib from 'gi://GLib';
 import Gettext from 'gettext';
 
 import * as Airpods from '../preferences/devices/airpods/configureWindow.js';
+import * as Sony from '../preferences/devices/sony/configureWindow.js';
 
 Gio._promisify(Gio.DBusProxy, 'new');
 Gio._promisify(Gio.DBusProxy.prototype, 'call');
@@ -56,6 +57,9 @@ class MoreSettingsLauncher {
         if (this._deviceType === 'airpods') {
             this._prefsType = Airpods;
             this._schemaKey = 'airpods-list';
+        } else if (this._deviceType === 'sony') {
+            this._prefsType = Sony;
+            this._schemaKey = 'sony-list';
         }
     }
 

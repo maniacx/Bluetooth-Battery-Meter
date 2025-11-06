@@ -115,6 +115,14 @@
             <default>[]</default>
             <summary>List of airpods devices</summary>
         </key>
+        <key name="enable-sony-device" type="b">
+            <default>false</default>
+            <summary>"enable Sony devices"</summary>
+        </key>
+        <key name="sony-list" type="as">
+            <default>[]</default>
+            <summary>List of sony devices</summary>
+        </key>
         <key name="enable-gattbas-device" type="b">
             <default>false</default>
             <summary>"enable gattbas devices"</summary>
