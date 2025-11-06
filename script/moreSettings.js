@@ -164,6 +164,12 @@ class MoreSettingsLauncher {
         return new Gio.Settings({settings_schema: schemaObj});
     }
 
+    _pathToMacAddress(path) {
+        const indexMacAddress = path.indexOf('dev_') + 4;
+        const macAddress = path.substring(indexMacAddress);
+        return macAddress.replace(/_/g, ':');
+    }
+
     _onActivate() {
         const scriptDir = GLib.path_get_dirname(import.meta.url.replace('file://', ''));
         const extDir = GLib.path_get_dirname(scriptDir);
@@ -171,8 +177,7 @@ class MoreSettingsLauncher {
         this._loadIconDir(extDir);
         const _ = this._setupGettext(extDir);
 
-        const indexMacAddress = this._devicePath.indexOf('dev_') + 4;
-        const macAddress = this._devicePath.substring(indexMacAddress);
+        const macAddress = this._pathToMacAddress(this._devicePath);
         this._win = new this._prefsType.ConfigureWindow(this._settings, macAddress,
             this._devicePath, null, _);
         this._win.set_application(this._app);
