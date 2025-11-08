@@ -106,10 +106,10 @@ export const  ConfigureWindow = GObject.registerClass({
             this._longPressCycleWidget = new CheckBoxesGroupWidget({
                 groupTitle: _('Press and Hold Cycle'),
                 rowTitle: _('Press and hold cycles between'),
-                rowSubtitle: _('Settings don’t reflect current state, press Apply to save'),
+                rowSubtitle: _('Settings don’t reflect current state'),
                 items,
                 applyBtnName: _('Apply'),
-                initialValue: 0,
+                resetOnApply: true,
             });
 
             this._longPressCycleWidget.connect('notify::toggled-value', () => {

@@ -16,12 +16,14 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
 }, class CheckBoxesGroupWidget extends Adw.PreferencesGroup {
     constructor(params = {}) {
         const {
-            groupTitle = '',        // Adw Preference Group Title
-            rowTitle = '',          // Adw Preference Row Title
-            rowSubtitle = '',       // Adw Preference Row Subtitle
-            items,                  // Array of CheckBox name/icon_name object minimum 3 required
-            applyBtnName = '',      // Name for Gtk.Button if defined adds Apply button
-            initialValue = 0,       // Initial checkbox state bitwise
+            groupTitle = '',
+            rowTitle = '',
+            rowSubtitle = '',
+            items,
+            applyBtnName = '',
+            initialValue = 0,
+            resetOnApply = false,
+            minRequired = 2,
         } = params;
 
         super({title: groupTitle ?? ''});
@@ -29,29 +31,27 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
         if (!items || items.length !== 3 && items.length !== 4)
             return;
 
-        this._useApplyButton = !!applyBtnName;
         this._checkButtons = [];
         this._toggledValue = initialValue;
         this._suspendToggleHandlers = false;
+        this._resetOnApply = !!resetOnApply;
+        this._minRequired = minRequired;
 
         const headerRow = new Adw.ActionRow({title: rowTitle, subtitle: rowSubtitle});
 
-        if (this._useApplyButton) {
-            const btnContent = new Adw.ButtonContent({
-                label: applyBtnName,
-                icon_name: 'bbm-check-symbolic',
-            });
-            this._applyButton = new Gtk.Button({
-                halign: Gtk.Align.START,
-                valign: Gtk.Align.CENTER,
-                margin_start: 6,
-                css_classes: ['suggested-action'],
-                child: btnContent,
-            });
-            this._applyButton.sensitive = false;
-            headerRow.add_suffix(this._applyButton);
-        }
-
+        const btnContent = new Adw.ButtonContent({
+            label: applyBtnName,
+            icon_name: 'bbm-check-symbolic',
+        });
+        this._applyButton = new Gtk.Button({
+            halign: Gtk.Align.START,
+            valign: Gtk.Align.CENTER,
+            margin_start: 6,
+            css_classes: ['suggested-action'],
+            child: btnContent,
+        });
+        this._applyButton.sensitive = false;
+        headerRow.add_suffix(this._applyButton);
         this.add(headerRow);
 
         const boxRow = new Adw.ActionRow();
@@ -81,11 +81,7 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
             check.connect('toggled', () => {
                 if (this._suspendToggleHandlers)
                     return;
-
-                if (this._useApplyButton)
-                    this._updateApplySensitivity();
-                else
-                    this._updateValueImmediate();
+                this._updateApplySensitivity();
             });
 
             this._checkButtons.push(check);
@@ -98,18 +94,16 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
         boxRow.set_child(hbox);
         this.add(boxRow);
 
-        if (this._useApplyButton)
-            this._applyButton.connect('clicked', () => this._applyChanges());
+        this._applyButton.connect('clicked', () => this._applyChanges());
 
         this._suspendToggleHandlers = true;
-        if (!this._useApplyButton)
-            this._updateCheckStates(this._toggledValue);
-        else
+        if (this._resetOnApply)
             this._updateCheckStates(0);
+        else
+            this._updateCheckStates(this._toggledValue);
         this._suspendToggleHandlers = false;
 
-        if (this._useApplyButton)
-            this._updateApplySensitivity();
+        this._updateApplySensitivity();
     }
 
     _updateCheckStates(value) {
@@ -121,7 +115,7 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
 
     _updateApplySensitivity() {
         const count = this._checkButtons.filter(b => b.active).length;
-        this._applyButton.sensitive = count >= 2;
+        this._applyButton.sensitive = count >= this._minRequired;
     }
 
     _applyChanges() {
@@ -132,17 +126,10 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
         });
         this.toggled_value = val;
 
-        this._checkButtons.forEach(b => (b.active = false));
-        this._applyButton.sensitive = false;
-    }
-
-    _updateValueImmediate() {
-        let val = 0;
-        this._checkButtons.forEach((b, i) => {
-            if (b.active)
-                val |= 1 << i;
-        });
-        this.toggled_value = val;
+        if (this._resetOnApply) {
+            this._checkButtons.forEach(b => (b.active = false));
+            this._applyButton.sensitive = false;
+        }
     }
 
     get toggled_value() {
@@ -152,10 +139,8 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
     set toggled_value(v) {
         if (this._toggledValue === v)
             return;
-
         this._toggledValue = v;
         this.notify('toggled-value');
-
         this._suspendToggleHandlers = true;
         this._updateCheckStates(v);
         this._suspendToggleHandlers = false;
