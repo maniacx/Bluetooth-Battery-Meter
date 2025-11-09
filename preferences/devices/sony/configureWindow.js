@@ -368,6 +368,8 @@ export const ConfigureWindow = GObject.registerClass({
                 this._updateGsettings('pause-takeoff', this._pauseWhenTakenOff.active);
             });
 
+            this._pauseWhenTakenOff.active = this._pathInfo['pause-takeoff'];
+
             this._headsetTakenOffGroup.add(this._pauseWhenTakenOff);
         }
 
@@ -380,6 +382,8 @@ export const ConfigureWindow = GObject.registerClass({
             this._autoPowerOffSwitch.connect('notify::active', () => {
                 this._updateGsettings('auto-power', this._autoPowerOffSwitch.active);
             });
+
+            this._autoPowerOffSwitch.active = this._pathInfo['auto-power'];
 
             this._headsetTakenOffGroup.add(this._autoPowerOffSwitch);
         }
