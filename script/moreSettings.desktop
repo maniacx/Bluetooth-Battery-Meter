@@ -1,3 +1,8 @@
+# This file belongs to the GNOME extension "Bluetooth Battery Meter".
+# If the extension is removed or no longer used, you can safely delete
+# this file and its icon from:
+#   ~/.local/share/icons/bluetooth-battery-meter-maniacx-github-logo.svg
+
 [Desktop Entry]
 Name=Bluetooth Battery Meter
 Icon=bluetooth-battery-meter-maniacx-github-logo
