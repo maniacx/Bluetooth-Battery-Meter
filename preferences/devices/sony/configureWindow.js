@@ -241,6 +241,7 @@ export const ConfigureWindow = GObject.registerClass({
                 ambqa: [_('Ambient Sound Control / Quick Access'),
                     ButtonModes.AMBIENT_SOUND_CONTROL_QA],
                 pb: [_('Playback Control'), ButtonModes.PLAYBACK_CONTROL],
+                pbwl: [_('Playback Control'), ButtonModes.PLAYBACK_CONTROL_W_LIMITATION],
                 vol: [_('Volume Control'), ButtonModes.VOLUME_CONTROL],
                 na: [_('Not Assigned'), ButtonModes.NO_FUNCTION],
             };
