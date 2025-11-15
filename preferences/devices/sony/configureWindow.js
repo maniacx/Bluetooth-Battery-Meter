@@ -387,41 +387,45 @@ export const ConfigureWindow = GObject.registerClass({
 
             this._autoPowerOffSwitch.connect('notify::active', () => {
                 this._updateGsettings('auto-power', this._autoPowerOffSwitch.active);
+                if (this._autoPowerOffDropdown)
+                    this._autoPowerOffDropdown.sensitive = this._autoPowerOffSwitch.active;
             });
 
             this._autoPowerOffSwitch.active = this._pathInfo['auto-power'];
 
             this._headsetTakenOffGroup.add(this._autoPowerOffSwitch);
-        }
-        if (modelData.automaticPowerOffByTime) {
-            this._autoPowerOffLabels = [
-                _('After 5 minutes'),
-                _('After 15 minutes'),
-                _('After 30 minutes'),
-                _('After 1 hour'),
-                _('After 3 hours'),
-            ];
 
-            this._autoPowerOffValues = [
-                AutoPowerOffTime.AFTER_5_MIN,
-                AutoPowerOffTime.AFTER_15_MIN,
-                AutoPowerOffTime.AFTER_30_MIN,
-                AutoPowerOffTime.AFTER_1_HOUR,
-                AutoPowerOffTime.AFTER_3_HOUR,
-            ];
+            if (modelData.automaticPowerOffByTime) {
+                this._autoPowerOffLabels = [
+                    _('After 5 minutes'),
+                    _('After 15 minutes'),
+                    _('After 30 minutes'),
+                    _('After 1 hour'),
+                    _('After 3 hours'),
+                ];
 
-            this._autoPowerOffDropdown = new DropDownRowWidget({
-                title: _('Auto Power Off'),
-                options: this._autoPowerOffLabels,
-                values: this._autoPowerOffValues,
-                initialValue: AutoPowerOffTime.AFTER_5_MIN,
-            });
+                this._autoPowerOffValues = [
+                    AutoPowerOffTime.AFTER_5_MIN,
+                    AutoPowerOffTime.AFTER_15_MIN,
+                    AutoPowerOffTime.AFTER_30_MIN,
+                    AutoPowerOffTime.AFTER_1_HOUR,
+                    AutoPowerOffTime.AFTER_3_HOUR,
+                ];
 
-            this._autoPowerOffDropdown.connect('notify::selected-item', () => {
-                const selectedVal = this._autoPowerOffDropdown.selected_item;
-                this._updateGsettings('auto-power-time', selectedVal);
-            });
-            this._headsetTakenOffGroup.add(this._autoPowerOffDropdown);
+                this._autoPowerOffDropdown = new DropDownRowWidget({
+                    title: _('Auto Power Off'),
+                    options: this._autoPowerOffLabels,
+                    values: this._autoPowerOffValues,
+                    initialValue: AutoPowerOffTime.AFTER_5_MIN,
+                });
+
+                this._autoPowerOffDropdown.sensitive = this._autoPowerOffSwitch.active;
+                this._autoPowerOffDropdown.connect('notify::selected-item', () => {
+                    const selectedVal = this._autoPowerOffDropdown.selected_item;
+                    this._updateGsettings('auto-power-time', selectedVal);
+                });
+                this._headsetTakenOffGroup.add(this._autoPowerOffDropdown);
+            }
         }
 
         settings.connect('changed::sony-list', () => {
