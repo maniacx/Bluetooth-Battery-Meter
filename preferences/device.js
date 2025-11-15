@@ -102,6 +102,9 @@ const  ConfigureWindow = GObject.registerClass({
                 const pairedDevice = settings.get_strv('device-list');
                 const existingPathIndex =
                     pairedDevice.findIndex(item => JSON.parse(item).path === pathInfo.path);
+                if (existingPathIndex === -1)
+                    return;
+
                 const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
                 existingItem['icon'] = deviceType;
                 pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
