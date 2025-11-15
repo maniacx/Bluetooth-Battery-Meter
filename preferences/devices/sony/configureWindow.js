@@ -326,6 +326,10 @@ export const ConfigureWindow = GObject.registerClass({
 
             this._voiceNotificationsSwitchRow.connect('notify::active', () => {
                 this._updateGsettings('voice-noti', this._voiceNotificationsSwitchRow.active);
+                if (this._voiceNotificationsVolume) {
+                    this._voiceNotificationsVolume.sensitive =
+                        this._voiceNotificationsSwitchRow.active;
+                }
             });
 
             voiceNotificationsGroup.add(this._voiceNotificationsSwitchRow);
@@ -346,6 +350,7 @@ export const ConfigureWindow = GObject.registerClass({
                     snapOnStep: true,
                 });
 
+                this._voiceNotificationsVolume.sensitive = this._voiceNotificationsSwitchRow.active;
                 this._voiceNotificationsVolume.connect('notify::value', () => {
                     this._updateGsettings('voice-vol', this._voiceNotificationsVolume.value);
                 });
