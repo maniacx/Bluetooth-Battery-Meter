@@ -262,7 +262,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Left Bud'),
                 options,
                 values,
-                initialValue: 0,
+                initialValue: this._pathInfo['btn-left'],
             });
 
             this._leftBtnTchDropdown.connect('notify::selected-item', () => {
@@ -276,7 +276,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Right Bud'),
                 options,
                 values,
-                initialValue: 0,
+                initialValue: this._pathInfo['btn-right'],
             });
 
             this._rightBtnTchDropdown.connect('notify::selected-item', () => {
