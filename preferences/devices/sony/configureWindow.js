@@ -26,10 +26,10 @@ export const ConfigureWindow = GObject.registerClass({
         this._devicePath = devicePath;
 
         const pathsString = settings.get_strv('sony-list').map(JSON.parse);
-        this._pathInfo = pathsString.find(info => info.path === devicePath);
-        this.title = this._pathInfo.alias;
+        this._settingsItem = pathsString.find(info => info.path === devicePath);
+        this.title = this._settingsItem.alias;
 
-        const modelData = SonyConfiguration.find(cfg => cfg.pattern.test(this._pathInfo.name));
+        const modelData = SonyConfiguration.find(cfg => cfg.pattern.test(this._settingsItem.name));
 
         const toolViewBar = new Adw.ToolbarView();
         const headerBar = new Adw.HeaderBar({
@@ -54,7 +54,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Voice Detection Sensitivity'),
                 options: sensitivityOptions,
                 values: sensitivityValues,
-                initialValue: this._pathInfo['s2c-sensitivity'],
+                initialValue: this._settingsItem['s2c-sensitivity'],
             });
 
             this._sensitivityDropdown.connect('notify::selected-item', () => {
@@ -70,7 +70,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Duration'),
                 options: durationOptions,
                 values: durationValues,
-                initialValue: this._pathInfo['s2c-duration'],
+                initialValue: this._settingsItem['s2c-duration'],
             });
 
             this._durationDropdown.connect('notify::selected-item', () => {
@@ -181,7 +181,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Equalizer Preset'),
                 options: eqPresets,
                 values: this._eqPresetValues,
-                initialValue: this._pathInfo['eq-preset'],
+                initialValue: this._settingsItem['eq-preset'],
             });
 
             this._eqPresetDropdown.connect('notify::selected-item', () => {
@@ -198,7 +198,7 @@ export const ConfigureWindow = GObject.registerClass({
                 _('1k'), _('2k'), _('4k'), _('8k'), _('16k')];
             const freqs = modelData.equalizerTenBands ? tenBandFreqs : sixBandFreqs;
             const range = modelData.equalizerTenBands ? 6 : 10;
-            const initialValues = this._pathInfo['eq-custom'];
+            const initialValues = this._settingsItem['eq-custom'];
 
             this._eq = new EqualizerWidget(freqs, initialValues, range);
 
@@ -220,7 +220,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Enable DSEE enhancement'),
                 options: [_('Auto'), _('Off')],
                 values: [1, 0],
-                initialValue: this._pathInfo['dsee'],
+                initialValue: this._settingsItem['dsee'],
             });
 
             this._upscalingSwitchRow.connect('notify::selected-item', () => {
@@ -262,7 +262,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Left Bud'),
                 options,
                 values,
-                initialValue: this._pathInfo['btn-left'],
+                initialValue: this._settingsItem['btn-left'],
             });
 
             this._leftBtnTchDropdown.connect('notify::selected-item', () => {
@@ -276,7 +276,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Right Bud'),
                 options,
                 values,
-                initialValue: this._pathInfo['btn-right'],
+                initialValue: this._settingsItem['btn-right'],
             });
 
             this._rightBtnTchDropdown.connect('notify::selected-item', () => {
@@ -301,7 +301,7 @@ export const ConfigureWindow = GObject.registerClass({
                 rowSubtitle: _('Select the modes to toggle when the button is pressed'),
                 items,
                 applyBtnName: _('Apply'),
-                initialValue: this._pathInfo['amb-btn-mode'],
+                initialValue: this._settingsItem['amb-btn-mode'],
             });
 
             this._ancToggleButtonWidget.connect('notify::toggled-value', () => {
@@ -322,7 +322,7 @@ export const ConfigureWindow = GObject.registerClass({
                 subtitle: _('Enable voice notification'),
             });
 
-            this._voiceNotificationsSwitchRow.active = this._pathInfo['voice-noti'];
+            this._voiceNotificationsSwitchRow.active = this._settingsItem['voice-noti'];
 
             this._voiceNotificationsSwitchRow.connect('notify::active', () => {
                 this._updateGsettings('voice-noti', this._voiceNotificationsSwitchRow.active);
@@ -374,7 +374,7 @@ export const ConfigureWindow = GObject.registerClass({
                 this._updateGsettings('pause-takeoff', this._pauseWhenTakenOff.active);
             });
 
-            this._pauseWhenTakenOff.active = this._pathInfo['pause-takeoff'];
+            this._pauseWhenTakenOff.active = this._settingsItem['pause-takeoff'];
 
             this._headsetTakenOffGroup.add(this._pauseWhenTakenOff);
         }
@@ -391,7 +391,7 @@ export const ConfigureWindow = GObject.registerClass({
                     this._autoPowerOffDropdown.sensitive = this._autoPowerOffSwitch.active;
             });
 
-            this._autoPowerOffSwitch.active = this._pathInfo['auto-power'];
+            this._autoPowerOffSwitch.active = this._settingsItem['auto-power'];
 
             this._headsetTakenOffGroup.add(this._autoPowerOffSwitch);
 
@@ -430,52 +430,52 @@ export const ConfigureWindow = GObject.registerClass({
 
         settings.connect('changed::sony-list', () => {
             const updatedList = settings.get_strv('sony-list').map(JSON.parse);
-            this._pathInfo = updatedList.find(info => info.path === devicePath);
-            this.title = this._pathInfo.alias;
+            this._settingsItem = updatedList.find(info => info.path === devicePath);
+            this.title = this._settingsItem.alias;
 
             if (modelData.speakToChatConfig) {
-                this._sensitivityDropdown.selected_item = this._pathInfo['s2c-sensitivity'];
-                this._durationDropdown.selected_item = this._pathInfo['s2c-duration'];
+                this._sensitivityDropdown.selected_item = this._settingsItem['s2c-sensitivity'];
+                this._durationDropdown.selected_item = this._settingsItem['s2c-duration'];
             }
 
             if (modelData.listeningMode) {
-                this._bgmModeDropdown.selected_item = this._pathInfo['bgm-mode'];
-                this._bgmDistanceDropdown.selected_item = this._pathInfo['bgm-distance'];
+                this._bgmModeDropdown.selected_item = this._settingsItem['bgm-mode'];
+                this._bgmDistanceDropdown.selected_item = this._settingsItem['bgm-distance'];
                 this._updateMenuSensitivity();
             }
 
             if (modelData.equalizerSixBands || modelData.equalizerTenBands)  {
-                this._eqPresetDropdown.selected_item = this._pathInfo['eq-preset'];
-                this._eq.setValues(this._pathInfo['eq-custom']);
+                this._eqPresetDropdown.selected_item = this._settingsItem['eq-preset'];
+                this._eq.setValues(this._settingsItem['eq-custom']);
                 this._updateEqCustomRowVisibility();
             }
 
             if (modelData.audioUpsampling)
-                this._upscalingSwitchRow.selected_item = this._pathInfo['dsee'];
+                this._upscalingSwitchRow.selected_item = this._settingsItem['dsee'];
 
 
             if (modelData.buttonModesLeftRight) {
-                this._leftBtnTchDropdown.selected_item = this._pathInfo['btn-left'];
-                this._rightBtnTchDropdown.selected_item = this._pathInfo['btn-right'];
+                this._leftBtnTchDropdown.selected_item = this._settingsItem['btn-left'];
+                this._rightBtnTchDropdown.selected_item = this._settingsItem['btn-right'];
             }
 
             if (modelData.ambientSoundControlButtonMode)
-                this._ancToggleButtonWidget.toggled_value = this._pathInfo['amb-btn-mode'];
+                this._ancToggleButtonWidget.toggled_value = this._settingsItem['amb-btn-mode'];
 
             if (modelData.voiceNotifications)
-                this._voiceNotificationsSwitchRow.active = this._pathInfo['voice-noti'];
+                this._voiceNotificationsSwitchRow.active = this._settingsItem['voice-noti'];
 
             if (modelData.voiceNotificationsVolume)
-                this._voiceNotificationsVolume.value = this._pathInfo['voice-vol'];
+                this._voiceNotificationsVolume.value = this._settingsItem['voice-vol'];
 
             if (modelData.pauseWhenTakenOff)
-                this._pauseWhenTakenOff.active = this._pathInfo['pause-takeoff'];
+                this._pauseWhenTakenOff.active = this._settingsItem['pause-takeoff'];
 
             if (modelData.automaticPowerOffWhenTakenOff)
-                this._autoPowerOffSwitch.active = this._pathInfo['auto-power'];
+                this._autoPowerOffSwitch.active = this._settingsItem['auto-power'];
 
             if (modelData.automaticPowerOffByTime)
-                this._autoPowerOffDropdown.selected_item = this._pathInfo['auto-power-time'];
+                this._autoPowerOffDropdown.selected_item = this._settingsItem['auto-power-time'];
         });
     }
 
