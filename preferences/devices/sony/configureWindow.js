@@ -103,7 +103,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Listening Mode'),
                 options: listeningModes,
                 values: this._listeningModesValues,
-                initialValue: ListeningMode.STANDARD,
+                initialValue: this._settingsItem['bgm-mode'],
             });
 
             this._bgmModeDropdown.connect('notify::selected-item', () => {
@@ -130,7 +130,7 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Background Music Effects'),
                 options: bgmDistance,
                 values: this._bgmDistanceValues,
-                initialValue: BgmDistance.MY_ROOM,
+                initialValue: this._settingsItem['bgm-distance'],
             });
 
             this._updateMenuSensitivity();
@@ -345,7 +345,7 @@ export const ConfigureWindow = GObject.registerClass({
                         {mark: 1, label: _('+1')},
                         {mark: 2, label: _('+2')},
                     ],
-                    initialValue: 50,
+                    initialValue: this._settingsItem['voice-vol'],
                     range: [-2, 2, 1],
                     snapOnStep: true,
                 });
@@ -416,7 +416,7 @@ export const ConfigureWindow = GObject.registerClass({
                     title: _('Auto Power Off'),
                     options: this._autoPowerOffLabels,
                     values: this._autoPowerOffValues,
-                    initialValue: AutoPowerOffTime.AFTER_5_MIN,
+                    initialValue: this._settingsItem['auto-power-time'],
                 });
 
                 this._autoPowerOffDropdown.sensitive = this._autoPowerOffSwitch.active;
