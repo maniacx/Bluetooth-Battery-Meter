@@ -2,10 +2,14 @@
 import Adw from 'gi://Adw';
 import GObject from 'gi://GObject';
 
+import {
+    supportedAudioSingleIcons, supportedAudioDualIcons
+} from '../../../lib/widgets/iconGroups.js';
 import {DropDownRowWidget} from './../../widgets/dropDownRowWidget.js';
 import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
 import {EqualizerWidget} from './../../widgets/equalizerWidget.js';
 import {CheckBoxesGroupWidget} from './../../widgets/checkBoxesGroupWidget.js';
+import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
 import {
     SonyConfiguration, EqualizerPreset, ListeningMode, BgmDistance, ButtonModes, AutoPowerOffTime
 
@@ -44,6 +48,23 @@ export const ConfigureWindow = GObject.registerClass({
 
         const aliasGroup = new Adw.PreferencesGroup({title: `MAC: ${mac}`});
         page.add(aliasGroup);
+
+        const supportedIcons = modelData.batteryDual ? supportedAudioDualIcons
+            : supportedAudioSingleIcons;
+
+        const iconSelector = new IconSelectorWidget({
+            grpTitle: _('Icon'),
+            rowTitle: _('Select Icon'),
+            rowSubtitle: _('Select the icon used for the indicator and quick menu'),
+            supportedIcons,
+            initialIcon: this._settingsItems.icon,
+        });
+
+        iconSelector.connect('notify::selected-icon', () => {
+            this._updateGsettings('icon', iconSelector.selected_icon);
+        });
+
+        page.add(iconSelector);
 
         if (modelData.speakToChatConfig) {
             const speak2ChatGroup = new Adw.PreferencesGroup({title: _('Speak To Chat')});
