@@ -83,6 +83,18 @@ export const  ConfigureWindow = GObject.registerClass({
                 title: _('Volume Level'),
             });
 
+            this._awarenessSwitchRow = new Adw.SwitchRow({
+                title: _('Pause when device is not worn'),
+                subtitle: _('Pause playback when the device is removed,' +
+                    'resume when it is put back on'),
+            });
+
+            this._awarenessSwitchRow.active = this._pathInfo['ca-volume-enabled'];
+            this._awarenessSwitchRow.connect('notify::active', () => {
+                this._updateGsettings('ca-volume-enabled', this._awarenessSwitchRow.active);
+            });
+            awarnessVolumeGroup.add(this._awarenessSwitchRow);
+
             this._adjustment = new Gtk.Adjustment({
                 lower: 0,
                 upper: 50,
@@ -103,6 +115,13 @@ export const  ConfigureWindow = GObject.registerClass({
                 this._updateGsettings('ca-volume', awarnessVolumeRow.value);
             });
             awarnessVolumeGroup.add(awarnessVolumeRow);
+
+            this._awarenessSwitchRow.bind_property(
+                'active',
+                awarnessVolumeRow,
+                'sensitive',
+                GObject.BindingFlags.SYNC_CREATE
+            );
 
             page.add(awarnessVolumeGroup);
         }
@@ -251,8 +270,10 @@ export const  ConfigureWindow = GObject.registerClass({
             this.title = this._pathInfo.alias;
             this._inEarDropdown.selected_item = this._pathInfo['wear-detection-mode'];
 
-            if (modelData.awarenessSupported)
+            if (modelData.awarenessSupported) {
+                this._awarenessSwitchRow.active = this._pathInfo['ca-volume-enabled'];
                 this._adjustment.value = this._pathInfo['ca-volume'];
+            }
 
             if (modelData.toneVolumeSupported)
                 this._toneWidget.value = this._pathInfo['noti-vol'];
