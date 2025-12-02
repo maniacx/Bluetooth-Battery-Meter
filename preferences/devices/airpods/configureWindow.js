@@ -3,10 +3,14 @@ import Adw from 'gi://Adw';
 import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 
+import {
+    supportedAudioSingleIcons, supportedAudioDualIcons
+} from '../../../lib/widgets/iconGroups.js';
 import {AirpodsModelList} from '../../../lib/devices/airpods/airpodsConfig.js';
 import {CheckBoxesGroupWidget} from './../../widgets/checkBoxesGroupWidget.js';
 import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
 import {DropDownRowWidget} from './../../widgets/dropDownRowWidget.js';
+import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
 
 export const  ConfigureWindow = GObject.registerClass({
     GTypeName: 'BluetoothBatteryMeter_AirpodsConfigureWindow',
@@ -45,6 +49,23 @@ export const  ConfigureWindow = GObject.registerClass({
         });
 
         page.add(aliasGroup);
+
+        const supportedIcons = modelData.batteryType === 1 ? supportedAudioSingleIcons
+            : supportedAudioDualIcons;
+
+        const iconSelector = new IconSelectorWidget({
+            grpTitle: _('Icon'),
+            rowTitle: _('Select Icon'),
+            rowSubtitle: _('Select the icon used for the indicator and quick menu'),
+            supportedIcons,
+            initialIcon: this._pathInfo.icon,
+        });
+
+        iconSelector.connect('notify::selected-icon', () => {
+            this._updateGsettings('icon', iconSelector.selected_icon);
+        });
+
+        page.add(iconSelector);
 
         const inEarSettingsGroup = new Adw.PreferencesGroup({
             title: _('Playback Behavior'),
