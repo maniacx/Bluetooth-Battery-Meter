@@ -50,17 +50,31 @@ export const  ConfigureWindow = GObject.registerClass({
             title: _('Playback Behavior'),
         });
 
-        const inEarSettingsSwitchRow = new Adw.SwitchRow({
-            title: _('Pause when device is not worn'),
-            subtitle: _('Pause playback when the device is removed,' +
-                    'resume when it is put back on'),
+        const inEarOptions = modelData.batteryType === 1 ? [
+            _('Default behavior'),
+            _('Resume when worn'),
+        ] : [
+            _('Default behavior'),
+            _('Resume with both earbuds'),
+            _('Resume with any earbud'),
+        ];
+
+        const inEarValues = modelData.batteryType === 1 ? [0, 1] : [0, 1, 2];
+
+        this._inEarDropdown = new DropDownRowWidget({
+            title: _('Choose playback behaviour for Ear detection'),
+            subtitle: _('Automatically pause or resume playback ' +
+                'based on wearing detection.'),
+            options: inEarOptions,
+            values: inEarValues,
+            initialValue: this._pathInfo['wear-detection-mode'],
         });
 
-        inEarSettingsSwitchRow.active = this._pathInfo['in-ear-control-enabled'];
-        inEarSettingsSwitchRow.connect('notify::active', () => {
-            this._updateGsettings('in-ear-control-enabled', inEarSettingsSwitchRow.active);
+        this._inEarDropdown.connect('notify::selected-item', () => {
+            this._updateGsettings('wear-detection-mode', this._inEarDropdown.selected_item);
         });
-        inEarSettingsGroup.add(inEarSettingsSwitchRow);
+
+        inEarSettingsGroup.add(this._inEarDropdown);
 
         page.add(inEarSettingsGroup);
 
@@ -235,7 +249,7 @@ export const  ConfigureWindow = GObject.registerClass({
             this._pathInfo = updatedList.find(info => info.path === devicePath);
 
             this.title = this._pathInfo.alias;
-            inEarSettingsSwitchRow.active = this._pathInfo['in-ear-control-enabled'];
+            this._inEarDropdown.selected_item = this._pathInfo['wear-detection-mode'];
 
             if (modelData.awarenessSupported)
                 this._adjustment.value = this._pathInfo['ca-volume'];
