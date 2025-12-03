@@ -4,7 +4,7 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 
 import {
-    supportedAudioSingleIcons, supportedAudioDualIcons
+    supportedAudioSingleIcons, supportedAudioDualIcons, supportedCaseIcons
 } from '../../../lib/widgets/iconGroups.js';
 import {AirpodsModelList} from '../../../lib/devices/airpods/airpodsConfig.js';
 import {CheckBoxesGroupWidget} from './../../widgets/checkBoxesGroupWidget.js';
@@ -50,20 +50,35 @@ export const  ConfigureWindow = GObject.registerClass({
 
         page.add(aliasGroup);
 
-        const supportedIcons = modelData.batteryType === 1 ? supportedAudioSingleIcons
+        const iconList = modelData.batteryType === 1 ? supportedAudioSingleIcons
             : supportedAudioDualIcons;
+
+        let caseIconList = [];
+        let initialCaseIcon = '';
+        if (modelData.batteryType === 3) {
+            caseIconList = supportedCaseIcons;
+            initialCaseIcon = this._settingsItems['case'];
+        }
 
         const iconSelector = new IconSelectorWidget({
             grpTitle: _('Icon'),
             rowTitle: _('Select Icon'),
             rowSubtitle: _('Select the icon used for the indicator and quick menu'),
-            supportedIcons,
-            initialIcon: this._settingsItems.icon,
+            iconList,
+            initialIcon: this._settingsItems['icon'],
+            caseIconList,
+            initialCaseIcon,
         });
 
         iconSelector.connect('notify::selected-icon', () => {
             this._updateGsettings('icon', iconSelector.selected_icon);
         });
+
+        if (modelData.batteryType === 3) {
+            iconSelector.connect('notify::selected-case-icon', () => {
+                this._updateGsettings('case', iconSelector.selected_case_icon);
+            });
+        }
 
         page.add(iconSelector);
 
