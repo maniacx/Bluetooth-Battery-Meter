@@ -6,7 +6,7 @@ import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
 import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
-import {supportedIcons} from '../lib/widgets/indicatorVectorImages.js';
+import {supportedIcons} from '../lib/widgets/iconGroups.js';
 import * as Helper from '../lib/upower/upowerHelper.js';
 
 const  ConfigureWindow = GObject.registerClass({
