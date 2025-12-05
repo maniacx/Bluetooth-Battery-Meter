@@ -3,7 +3,7 @@
   <template class="BluetoothBatteryMeter_SonyUI" parent="AdwPreferencesPage">
     <property name="name">Sony</property>
     <property name="title" translatable="yes">Sony Bluetooth Audio</property>
-    <property name="icon-name">bbm-earbuds-stem-symbolic</property>
+    <property name="icon-name">bbm-headphone1-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Note!</property>
@@ -20,16 +20,6 @@
         <child>
           <object class="AdwActionRow">
             <property name="subtitle" translatable="yes">Some models/features are not fully tested. Please share feedback on GitHub.</property>
-          </object>
-        </child>
-        <child>
-          <object class="AdwActionRow">
-            <property name="subtitle" translatable="yes">Conversation Awareness (if supported) works only with the A2DP profile.</property>
-          </object>
-        </child>
-        <child>
-          <object class="AdwActionRow">
-            <property name="subtitle" translatable="yes">ANC and Conversation Awareness buttons are hidden when the earbuds are not in-ear.</property>
           </object>
         </child>
       </object>
