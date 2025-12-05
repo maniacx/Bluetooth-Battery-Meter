@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unnamed project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-14 15:05-0700\n"
+"POT-Creation-Date: 2025-12-05 13:27-0600\n"
 "PO-Revision-Date: 2020-10-11 12:33+0530\n"
 "Last-Translator: Akarshan Biswas <akarshan.biswas@hotmail.com>\n"
 "Language-Team: Bengali <anubad@lists.ankur.org.in>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-DamnedLies-Scope: partial\n"
 "X-Generator: Gtranslator 3.38.0\n"
 
-#: lib/bluetoothToggle.js:511
+#: lib/bluetoothToggle.js:521
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -95,65 +95,65 @@ msgstr ""
 msgid "Icon selection if available are in Enhanced device per device settings"
 msgstr ""
 
-#: preferences/device.js:121 ui/quickSettings.ui:5
+#: preferences/device.js:124 ui/quickSettings.ui:5
 msgid "Quick Menu"
 msgstr ""
 
-#: preferences/device.js:125
+#: preferences/device.js:128
 msgid "Display Battery Level"
 msgstr ""
 
-#: preferences/device.js:126
+#: preferences/device.js:129
 msgid "Display battery level in the Bluetooth panel quick menu"
 msgstr ""
 
-#: preferences/device.js:151 preferences/upowerDevices.js:129 ui/indicator.ui:5
+#: preferences/device.js:149 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
 msgstr ""
 
-#: preferences/device.js:155 preferences/upowerDevices.js:133
+#: preferences/device.js:153 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
 msgstr ""
 
-#: preferences/device.js:156 preferences/upowerDevices.js:134
+#: preferences/device.js:154 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
 msgstr ""
 
-#: preferences/device.js:160
+#: preferences/device.js:158
 msgid "Do not show Icon"
 msgstr ""
 
-#: preferences/device.js:161
+#: preferences/device.js:159
 msgid "Show Icon without Battery level"
 msgstr ""
 
-#: preferences/device.js:162
+#: preferences/device.js:160
 msgid "Show Icon with Battery Level"
 msgstr ""
 
-#: preferences/device.js:165 preferences/upowerDevices.js:138
+#: preferences/device.js:163 preferences/upowerDevices.js:138
 msgid "Hide Icon"
 msgstr ""
 
-#: preferences/device.js:166 preferences/upowerDevices.js:139
+#: preferences/device.js:164 preferences/upowerDevices.js:139
 msgid "Show Icon"
 msgstr ""
 
-#: preferences/device.js:214 preferences/gattBas.js:173
+#: preferences/device.js:212 preferences/gattBas.js:173
 #: preferences/upowerDevices.js:186
 msgid "Configure device."
 msgstr ""
 
-#: preferences/device.js:228
+#: preferences/device.js:226
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
 
-#: preferences/device.js:260
+#: preferences/device.js:258
 msgid "(Removed)"
 msgstr ""
 
-#: preferences/device.js:261
+#: preferences/device.js:259
 msgid "(Paired)"
 msgstr ""
 
@@ -190,7 +190,7 @@ msgstr ""
 msgid "The button is available after disabling %s mode"
 msgstr ""
 
-#: preferences/quickSettings.js:66
+#: preferences/quickSettings.js:63
 #, javascript-format
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
@@ -276,89 +276,89 @@ msgid ""
 "battery information"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:29
+#: ui/batteryWidgetSettings.ui:23
 msgid "Display battery percentage as text"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:30
+#: ui/batteryWidgetSettings.ui:24
 msgid "Displays battery percentage beside the Bluetooth device icon"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:41
+#: ui/batteryWidgetSettings.ui:29
 msgid "Battery Level Indicator Type"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:42
+#: ui/batteryWidgetSettings.ui:30
 msgid "Dots offer better visibility"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:54
+#: ui/batteryWidgetSettings.ui:42
 msgid "Battery Bar Position"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:55
+#: ui/batteryWidgetSettings.ui:43
 msgid "Choose where to display the battery bar relative to the device icon"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:67
+#: ui/batteryWidgetSettings.ui:55
 msgid "Device Icon Size"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:68
+#: ui/batteryWidgetSettings.ui:56
 msgid ""
 "Adjust the size of the device icon displayed above the battery level "
 "indicator"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:83
+#: ui/batteryWidgetSettings.ui:71
 msgid "Battery Indicator Color Scheme"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:84
+#: ui/batteryWidgetSettings.ui:72
 msgid "Choose color scheme for level bar/dots"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:101
+#: ui/batteryWidgetSettings.ui:89
 msgid "Circle Widget Settings"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:104
+#: ui/batteryWidgetSettings.ui:92
 msgid "Circle Widget Color Scheme"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:105
+#: ui/batteryWidgetSettings.ui:93
 msgid "Choose color scheme for battery circle widget"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:123
+#: ui/batteryWidgetSettings.ui:111
 msgid "Battery Level Bar"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:124
+#: ui/batteryWidgetSettings.ui:112
 msgid "Battery Level Dot"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:129
+#: ui/batteryWidgetSettings.ui:117
 msgid "Left"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:130
+#: ui/batteryWidgetSettings.ui:118
 msgid "Right"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:131
+#: ui/batteryWidgetSettings.ui:119
 msgid "Below"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:136 ui/batteryWidgetSettings.ui:143
+#: ui/batteryWidgetSettings.ui:124 ui/batteryWidgetSettings.ui:131
 msgid "Symbolic"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:137 ui/batteryWidgetSettings.ui:144
+#: ui/batteryWidgetSettings.ui:125 ui/batteryWidgetSettings.ui:132
 msgid "Colored"
 msgstr ""
 
-#: ui/batteryWidgetSettings.ui:138 ui/batteryWidgetSettings.ui:145
+#: ui/batteryWidgetSettings.ui:126 ui/batteryWidgetSettings.ui:133
 msgid "Customized"
 msgstr ""
 
@@ -366,11 +366,11 @@ msgstr ""
 msgid "Device"
 msgstr ""
 
-#: ui/device.ui:9 ui/gattBas.ui:35 ui/upowerDevices.ui:26
+#: ui/device.ui:9 ui/gattBas.ui:30 ui/upowerDevices.ui:20
 msgid "Configuration by Device"
 msgstr ""
 
-#: ui/device.ui:10 ui/upowerDevices.ui:27
+#: ui/device.ui:10 ui/upowerDevices.ui:21
 msgid "Note: General settings override device-specific settings"
 msgstr ""
 
@@ -378,25 +378,25 @@ msgstr ""
 msgid "No Bluetooth device paired!"
 msgstr ""
 
-#: ui/gattBas.ui:15
+#: ui/gattBas.ui:16
 msgid "Experimental"
 msgstr ""
 
-#: ui/gattBas.ui:18
+#: ui/gattBas.ui:19
 msgid "Battery Service (BAS) Settings"
 msgstr ""
 
-#: ui/gattBas.ui:21
+#: ui/gattBas.ui:22
 msgid "Enable GATT Battery Service Reporting"
 msgstr ""
 
-#: ui/gattBas.ui:22
+#: ui/gattBas.ui:23
 msgid ""
 "Display battery levels for Bluetooth devices using the GATT Battery Service "
 "(BAS)."
 msgstr ""
 
-#: ui/gattBas.ui:38
+#: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr ""
 
@@ -441,65 +441,78 @@ msgstr ""
 msgid "On: Show one selected device. Off: Show all devices"
 msgstr ""
 
-#: ui/indicator.ui:62
+#: ui/indicator.ui:56
 msgid "Indicator Settings"
 msgstr ""
 
-#: ui/indicator.ui:65
-msgid "Show Separate Battery Indicators"
+#: ui/indicator.ui:59
+msgid "Show Multiple Battery Indicators per Device"
 msgstr ""
 
-#: ui/indicator.ui:66
+#: ui/indicator.ui:60
 msgid ""
-"When enabled, display one indicator per battery. When disabled, show a "
-"single indicator with the most critical (lowest) battery level."
+"For devices with multiple batteries, when enabled, shows a separate "
+"indicator for each battery. When disabled, shows a single indicator "
+"representing the most critical (lowest) battery level of the device."
 msgstr ""
 
-#: ui/indicator.ui:79
+#: ui/indicator.ui:67
 msgid "Show Popup on Hover"
 msgstr ""
 
-#: ui/indicator.ui:82
+#: ui/indicator.ui:70
 msgid "Show Detailed Info on Hover"
 msgstr ""
 
-#: ui/indicator.ui:83
+#: ui/indicator.ui:71
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
 msgstr ""
 
-#: ui/indicator.ui:94
+#: ui/indicator.ui:76
 msgid "Hover Activation Delay"
 msgstr ""
 
-#: ui/indicator.ui:95
+#: ui/indicator.ui:77
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
 
-#: ui/indicator.ui:114
+#: ui/indicator.ui:95
+msgid "Tooltips"
+msgstr ""
+
+#: ui/indicator.ui:98
+msgid "Enable tooltips"
+msgstr ""
+
+#: ui/indicator.ui:99
+msgid "Show tooltips when hovering over unlabeled buttons"
+msgstr ""
+
+#: ui/indicator.ui:107
 msgid "Default Behaviour"
 msgstr ""
 
-#: ui/indicator.ui:115
+#: ui/indicator.ui:108
 msgid "Hide Always"
 msgstr ""
 
-#: ui/indicator.ui:116
+#: ui/indicator.ui:109
 msgid "Hide Conditionally"
 msgstr ""
 
-#: ui/indicator.ui:121
+#: ui/indicator.ui:114
 msgid "Off"
 msgstr ""
 
-#: ui/indicator.ui:122
+#: ui/indicator.ui:115
 msgid "System Tray"
 msgstr ""
 
-#: ui/indicator.ui:123
+#: ui/indicator.ui:116
 msgid "Panel Button"
 msgstr ""
 
@@ -521,39 +534,39 @@ msgid ""
 "available"
 msgstr ""
 
-#: ui/quickSettings.ui:32
+#: ui/quickSettings.ui:26
 msgid "Show battery icon for Bluetooth devices"
 msgstr ""
 
-#: ui/quickSettings.ui:33
+#: ui/quickSettings.ui:27
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
 
-#: ui/quickSettings.ui:44
+#: ui/quickSettings.ui:32
 msgid "Show Bluetooth device battery percentage"
 msgstr ""
 
-#: ui/quickSettings.ui:45
+#: ui/quickSettings.ui:33
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr ""
 
-#: ui/quickSettings.ui:56
+#: ui/quickSettings.ui:38
 msgid "Display battery level icon before text"
 msgstr ""
 
-#: ui/quickSettings.ui:57
+#: ui/quickSettings.ui:39
 msgid "Swaps position of battery level icon and percentage text"
 msgstr ""
 
-#: ui/quickSettings.ui:70
+#: ui/quickSettings.ui:46
 msgid "Sort By History"
 msgstr ""
 
-#: ui/quickSettings.ui:73
+#: ui/quickSettings.ui:49
 msgid "Sort devices by connection history"
 msgstr ""
 
-#: ui/quickSettings.ui:74
+#: ui/quickSettings.ui:50
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"
@@ -578,7 +591,7 @@ msgid ""
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
 
-#: ui/upowerDevices.ui:30
+#: ui/upowerDevices.ui:24
 msgid "No compatible device found!"
 msgstr ""
 
