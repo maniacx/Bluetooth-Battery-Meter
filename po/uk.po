@@ -3,16 +3,14 @@ msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-14 15:05-0700\n"
-"PO-Revision-Date: 2025-08-30 07:29\n"
+"PO-Revision-Date: 2025-12-05 19:22\n"
 "Last-Translator: \n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 "
-"&& n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 "
-"&& n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: bluetooth-battery-meter\n"
 "X-Crowdin-Project-ID: 639464\n"
 "X-Crowdin-Language: uk\n"
@@ -35,8 +33,7 @@ msgstr "Рівень заряду Bluetooth"
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
-msgstr ""
-"Загальна громадська ліцензія GNU\n"
+msgstr "Загальна громадська ліцензія GNU\n"
 "версія 3 або новіша"
 
 #: preferences/about.js:49
@@ -46,12 +43,8 @@ msgstr "©️ %s %s"
 
 #: preferences/about.js:50
 #, javascript-format
-msgid ""
-"This application comes with absolutely no warranty. See the <a "
-"href=\"%s\">%s</a> for details."
-msgstr ""
-"Ця програма постачається БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ. Щоб дізнатися більше, "
-"відвідайте <a href=\"%s\">%s</a>."
+msgid "This application comes with absolutely no warranty. See the <a href=\"%s\">%s</a> for details."
+msgstr "Ця програма постачається БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ. Щоб дізнатися більше, відвідайте <a href=\"%s\">%s</a>."
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
@@ -98,9 +91,7 @@ msgstr "Цей покращений пристрій"
 
 #: preferences/device.js:69
 msgid "Icon selection if available are in Enhanced device per device settings"
-msgstr ""
-"Вибір іконки, якщо вони доступні, знаходиться в налаштуваннях покращеного "
-"пристрою для кожного пристрою"
+msgstr "Вибір іконки, якщо вони доступні, знаходиться в налаштуваннях покращеного пристрою для кожного пристрою"
 
 #: preferences/device.js:121 ui/quickSettings.ui:5
 msgid "Quick Menu"
@@ -152,10 +143,8 @@ msgid "Configure device."
 msgstr "Налаштування пристрою."
 
 #: preferences/device.js:228
-msgid ""
-"Delete device information: The button is available after unpairing device"
-msgstr ""
-"Видалити інформацію про пристрій: кнопка доступна після від'єднання пристрою"
+msgid "Delete device information: The button is available after unpairing device"
+msgstr "Видалити інформацію про пристрій: кнопка доступна після від'єднання пристрою"
 
 #: preferences/device.js:260
 msgid "(Removed)"
@@ -200,38 +189,28 @@ msgstr "Кнопка буде доступна після вимкнення р�
 
 #: preferences/quickSettings.js:66
 #, javascript-format
-msgid ""
-"Certain Bluetooth devices do not report battery level until Bluez's "
-"experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
-"for details."
-msgstr ""
-"Деякі пристрої Bluetooth не повідомляють про рівень заряду батареї, доки "
-"експериментальні функції Bluez не будуть увімкнені в системі. Перегляньте <a "
-"href=\"%s\">Readme</a> для отримання детальної інформації."
+msgid "Certain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check <a href=\"%s\">Readme</a> for details."
+msgstr "Деякі пристрої Bluetooth не повідомляють про рівень заряду батареї, доки експериментальні функції Bluez не будуть увімкнені в системі. Перегляньте <a href=\"%s\">Readme</a> для отримання детальної інформації."
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
-msgstr ""
+msgstr "Ім'я"
 
 #: preferences/upowerDevices.js:105
 msgid "Device Alias"
-msgstr ""
+msgstr "Ім'я пристрою"
 
 #: preferences/upowerDevices.js:199
-msgid ""
-"Delete device information: The button is available after upower device are "
-"removed"
-msgstr ""
-"Видалити інформацію про пристрій: кнопка доступна після від'єднання upower "
-"пристрою"
+msgid "Delete device information: The button is available after upower device are removed"
+msgstr "Видалити інформацію про пристрій: кнопка доступна після від'єднання upower пристрою"
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
-msgstr ""
+msgstr "(Офлайн)"
 
 #: preferences/upowerDevices.js:233
 msgid "(Online)"
-msgstr ""
+msgstr "(Онлайн)"
 
 #: ui/about.ui:5
 msgid "About"
@@ -267,26 +246,22 @@ msgstr "Посібники онлайн"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
-msgstr ""
+msgstr "Параметри Віджету Батареї"
 
 #: ui/batteryWidgetSettings.ui:9
 msgid "Indicator Widget Settings"
 msgstr "Параметри віджета індикатора"
 
 #: ui/batteryWidgetSettings.ui:12
-msgid ""
-"Indicator Battery Widget Settings available only for System Tray mode or "
-"Panel Button mode with multiple indicators"
+msgid "Indicator Battery Widget Settings available only for System Tray mode or Panel Button mode with multiple indicators"
 msgstr ""
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
-msgstr ""
+msgstr "Показувати тільки іконку (Сховати індикатор/крапки)"
 
 #: ui/batteryWidgetSettings.ui:18
-msgid ""
-"Hides the battery level indicator on the icon. Pair with text percentage for "
-"battery information"
+msgid "Hides the battery level indicator on the icon. Pair with text percentage for battery information"
 msgstr ""
 
 #: ui/batteryWidgetSettings.ui:29
@@ -295,8 +270,7 @@ msgstr "Показувати відсоток заряду батареї як �
 
 #: ui/batteryWidgetSettings.ui:30
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
-"Показує відсоток заряду акумулятора поруч із піктограмою Bluetooth-пристрою"
+msgstr "Показує відсоток заряду акумулятора поруч із піктограмою Bluetooth-пристрою"
 
 #: ui/batteryWidgetSettings.ui:41
 msgid "Battery Level Indicator Type"
@@ -308,23 +282,19 @@ msgstr "Точки забезпечують кращу видимість"
 
 #: ui/batteryWidgetSettings.ui:54
 msgid "Battery Bar Position"
-msgstr ""
+msgstr "Розташування індикатора батареї"
 
 #: ui/batteryWidgetSettings.ui:55
 msgid "Choose where to display the battery bar relative to the device icon"
-msgstr ""
+msgstr "Виберіть, де показувати індикатор батареї відносно іконки пристрою"
 
 #: ui/batteryWidgetSettings.ui:67
 msgid "Device Icon Size"
 msgstr "Розмір значка пристрою"
 
 #: ui/batteryWidgetSettings.ui:68
-msgid ""
-"Adjust the size of the device icon displayed above the battery level "
-"indicator"
-msgstr ""
-"Налаштуйте розмір значка пристрою, що показується над індикатором рівня "
-"заряду акумулятора"
+msgid "Adjust the size of the device icon displayed above the battery level indicator"
+msgstr "Налаштуйте розмір значка пристрою, що показується над індикатором рівня заряду акумулятора"
 
 #: ui/batteryWidgetSettings.ui:83
 msgid "Battery Indicator Color Scheme"
@@ -356,15 +326,15 @@ msgstr "Рівень заряду батареї точкою"
 
 #: ui/batteryWidgetSettings.ui:129
 msgid "Left"
-msgstr ""
+msgstr "Зліва"
 
 #: ui/batteryWidgetSettings.ui:130
 msgid "Right"
-msgstr ""
+msgstr "Справа"
 
 #: ui/batteryWidgetSettings.ui:131
 msgid "Below"
-msgstr ""
+msgstr "Знизу"
 
 #: ui/batteryWidgetSettings.ui:136 ui/batteryWidgetSettings.ui:143
 msgid "Symbolic"
@@ -388,9 +358,7 @@ msgstr "Конфігурація по пристроях"
 
 #: ui/device.ui:10 ui/upowerDevices.ui:27
 msgid "Note: General settings override device-specific settings"
-msgstr ""
-"Примітка: Загальні налаштування мають перевагу над налаштуваннями для "
-"конкретного пристрою"
+msgstr "Примітка: Загальні налаштування мають перевагу над налаштуваннями для конкретного пристрою"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
@@ -409,12 +377,8 @@ msgid "Enable GATT Battery Service Reporting"
 msgstr "Увімкнути звітування про обслуговування батареї GATT"
 
 #: ui/gattBas.ui:22
-msgid ""
-"Display battery levels for Bluetooth devices using the GATT Battery Service "
-"(BAS)."
-msgstr ""
-"Показати рівень заряду батареї для Bluetooth-пристроїв за допомогою GATT "
-"Battery Service (BAS)."
+msgid "Display battery levels for Bluetooth devices using the GATT Battery Service (BAS)."
+msgstr "Показати рівень заряду батареї для Bluetooth-пристроїв за допомогою GATT Battery Service (BAS)."
 
 #: ui/gattBas.ui:38
 msgid "No compatible device paired!"
@@ -422,38 +386,33 @@ msgstr "Сумісні пристрої не з'єднано!"
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
-msgstr ""
+msgstr "Параметри системного індикатору Bluetooth"
 
 #: ui/indicator.ui:12
 msgid "Bluetooth Connection Status Indicator"
 msgstr "Індикатор стану з'єднання Bluetooth"
 
 #: ui/indicator.ui:13
-msgid ""
-"Hide conditionally: Displayed only when no other bluetooth related "
-"indicators are present"
-msgstr ""
-"Умовно приховується: Показується лише тоді, коли немає інших індикаторів, "
-"пов'язаних з Bluetooth"
+msgid "Hide conditionally: Displayed only when no other bluetooth related indicators are present"
+msgstr "Умовно приховується: Показується лише тоді, коли немає інших індикаторів, пов'язаних з Bluetooth"
 
 #: ui/indicator.ui:27
 msgid "Battery Indicator Settings"
-msgstr ""
+msgstr "Параметри індикатора заряду"
 
 #: ui/indicator.ui:30
 msgid "Choose Indicator mode"
-msgstr ""
+msgstr "Вибрати режим індикатора"
 
 #: ui/indicator.ui:31
-msgid ""
-"Off: No battery indicator.\n"
+msgid "Off: No battery indicator.\n"
 "System Indicator: Battery icon in top bar.\n"
 "Panel Button: Battery icon with menu."
 msgstr ""
 
 #: ui/indicator.ui:45
 msgid "Panel Button Mode"
-msgstr ""
+msgstr "Режим Кнопки Панелі"
 
 #: ui/indicator.ui:48
 msgid "Panel button indicator mode."
@@ -461,7 +420,7 @@ msgstr ""
 
 #: ui/indicator.ui:49
 msgid "On: Show one selected device. Off: Show all devices"
-msgstr ""
+msgstr "Увімкнено: Показувати один обраний пристрій. Вимкнено: Показати всі пристрої"
 
 #: ui/indicator.ui:62
 msgid "Indicator Settings"
@@ -472,13 +431,8 @@ msgid "Show Separate Battery Indicators"
 msgstr "Показати індикатори окремих батарей"
 
 #: ui/indicator.ui:66
-msgid ""
-"When enabled, display one indicator per battery. When disabled, show a "
-"single indicator with the most critical (lowest) battery level."
-msgstr ""
-"Якщо увімкнено, показувати по одному індикатору для кожної батареї. Якщо "
-"вимкнено, показується один індикатор з найбільш критичним (найнижчим) рівнем "
-"заряду батареї."
+msgid "When enabled, display one indicator per battery. When disabled, show a single indicator with the most critical (lowest) battery level."
+msgstr "Якщо увімкнено, показувати по одному індикатору для кожної батареї. Якщо вимкнено, показується один індикатор з найбільш критичним (найнижчим) рівнем заряду батареї."
 
 #: ui/indicator.ui:79
 msgid "Show Popup on Hover"
@@ -489,24 +443,16 @@ msgid "Show Detailed Info on Hover"
 msgstr "Показати детальну інформацію при наведенні"
 
 #: ui/indicator.ui:83
-msgid ""
-"Displays a popup with battery info and controls when the mouse pointer "
-"hovers over the indicator for a custom delay"
-msgstr ""
-"Показує спливаюче вікно з інформацією про батарею та елементами керування, "
-"коли вказівник миші наводиться на індикатор для налаштування затримки"
+msgid "Displays a popup with battery info and controls when the mouse pointer hovers over the indicator for a custom delay"
+msgstr "Показує спливаюче вікно з інформацією про батарею та елементами керування, коли вказівник миші наводиться на індикатор для налаштування затримки"
 
 #: ui/indicator.ui:94
 msgid "Hover Activation Delay"
 msgstr "Затримка активації при наведенні"
 
 #: ui/indicator.ui:95
-msgid ""
-"Specify the number of seconds the mouse must hover over the indicator before "
-"detailed information is displayed."
-msgstr ""
-"Вкажіть кількість секунд, протягом яких миша має бути наведена на індикатор, "
-"перш ніж відобразиться детальна інформація."
+msgid "Specify the number of seconds the mouse must hover over the indicator before detailed information is displayed."
+msgstr "Вкажіть кількість секунд, протягом яких миша має бути наведена на індикатор, перш ніж відобразиться детальна інформація."
 
 #: ui/indicator.ui:114
 msgid "Default Behaviour"
@@ -522,15 +468,15 @@ msgstr "Приховати умовно"
 
 #: ui/indicator.ui:121
 msgid "Off"
-msgstr ""
+msgstr "Вимкнено"
 
 #: ui/indicator.ui:122
 msgid "System Tray"
-msgstr ""
+msgstr "Системний Трей"
 
 #: ui/indicator.ui:123
 msgid "Panel Button"
-msgstr ""
+msgstr "Кнопка Панелі"
 
 #: ui/quickSettings.ui:9
 msgid "Note!"
@@ -542,13 +488,11 @@ msgstr "Налаштування швидкого меню"
 
 #: ui/quickSettings.ui:20
 msgid "Enable popup submenu widget mode"
-msgstr ""
+msgstr "Увімкнути спливаюче підменю віджета"
 
 #: ui/quickSettings.ui:21
-msgid ""
-"Adds a submenu that displays battery levels and other controls (ANC) if "
-"available"
-msgstr ""
+msgid "Adds a submenu that displays battery levels and other controls (ANC) if available"
+msgstr "Додає підменю, яке показує рівень заряду батареї та інші налаштування активного шумогасіння (ANC), якщо доступно"
 
 #: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
@@ -556,9 +500,7 @@ msgstr "Показати значок акумулятора для Bluetooth-п
 
 #: ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
-msgstr ""
-"Показує піктограму у спливаючому меню рівня заряду акумулятора Bluetooth-"
-"пристрою"
+msgstr "Показує піктограму у спливаючому меню рівня заряду акумулятора Bluetooth-пристрою"
 
 #: ui/quickSettings.ui:44
 msgid "Show Bluetooth device battery percentage"
@@ -578,19 +520,15 @@ msgstr "Міняє положення піктограми заряду бата
 
 #: ui/quickSettings.ui:70
 msgid "Sort By History"
-msgstr ""
+msgstr "Сортувати за історією"
 
 #: ui/quickSettings.ui:73
 msgid "Sort devices by connection history"
 msgstr "Сортування пристроїв за історією з'єднань"
 
 #: ui/quickSettings.ui:74
-msgid ""
-"Enable to sort devices by connection history, or disable to sort by "
-"connection status and alias"
-msgstr ""
-"Увімкнути сортування пристроїв за історією з'єднань або вимкнути сортування "
-"за статусом з'єднання та псевдонімом"
+msgid "Enable to sort devices by connection history, or disable to sort by connection status and alias"
+msgstr "Увімкнути сортування пристроїв за історією з'єднань або вимкнути сортування за статусом з'єднання та псевдонімом"
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
@@ -605,133 +543,10 @@ msgid "Enable indicator for UPower devices"
 msgstr "Увімкнути індикатор для UPower пристроїв"
 
 #: ui/upowerDevices.ui:13
-msgid ""
-"Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
-"report battery levels if supported by the kernel or third-party drivers. "
-"Enable this option to display their battery status in the GNOME system tray."
-msgstr ""
-"Деякі пристрої UPower, такі як бездротова миша 2.4 ГГц, клавіатура тощо, "
-"можуть повідомляти про рівень заряду акумулятора, якщо це підтримується "
-"ядром або сторонніми драйверами. Увімкніть цей параметр, щоб показувати стан "
-"заряду акумулятора у системному треї GNOME."
+msgid "Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can report battery levels if supported by the kernel or third-party drivers. Enable this option to display their battery status in the GNOME system tray."
+msgstr "Деякі пристрої UPower, такі як бездротова миша 2.4 ГГц, клавіатура тощо, можуть повідомляти про рівень заряду акумулятора, якщо це підтримується ядром або сторонніми драйверами. Увімкніть цей параметр, щоб показувати стан заряду акумулятора у системному треї GNOME."
 
 #: ui/upowerDevices.ui:30
 msgid "No compatible device found!"
 msgstr "Сумісний пристрій не знайдено!"
 
-#~ msgid "Playback Behavior"
-#~ msgstr "Поведінка відтворення"
-
-#~ msgid "Pause when device is not worn"
-#~ msgstr "Пауза, коли пристрій не одягнено"
-
-#~ msgid ""
-#~ "Pause playback when the device is removed,resume when it is put back on"
-#~ msgstr ""
-#~ "Призупинити відтворення, коли пристрій видалено, відновити, коли його "
-#~ "знову ввімкнено"
-
-#~ msgid "Volume Level"
-#~ msgstr "Рівень гучності"
-
-#~ msgid "Conversation awareness volume limit"
-#~ msgstr "Обмеження гучності сповіщень про розмови"
-
-#~ msgid ""
-#~ "Limits media volume to this percentage during conversation. Note: No "
-#~ "change if current volume is below this level."
-#~ msgstr ""
-#~ "Обмежує гучність медіа до цього відсотка під час розмови. Примітка: Якщо "
-#~ "поточна гучність нижче цього рівня, зміни не відбудуться."
-
-#~ msgid "Default"
-#~ msgstr "Типово"
-
-#~ msgid "AirPods/Beats"
-#~ msgstr "AirPods/Beats"
-
-#~ msgid ""
-#~ "Some models/features are not fully tested. Please share feedback on "
-#~ "GitHub."
-#~ msgstr ""
-#~ "Деякі моделі/функції не повністю протестовані. Будь ласка, поділіться "
-#~ "відгуком на GitHub."
-
-#~ msgid ""
-#~ "Conversation Awareness (if supported) works only with the A2DP profile."
-#~ msgstr ""
-#~ "Функція Conversation Awareness (якщо підтримується) працює лише з "
-#~ "профілем A2DP."
-
-#~ msgid ""
-#~ "ANC and Conversation Awareness buttons are hidden when the earbuds are "
-#~ "not in-ear."
-#~ msgstr ""
-#~ "Кнопки ANC і Conversation Awareness приховані, коли навушники не "
-#~ "вставлені у вуха."
-
-#~ msgid "AirPods/Beats Settings"
-#~ msgstr "Налаштування AirPods/Beats"
-
-#~ msgid "Enable AirPods/Beats Support"
-#~ msgstr "Увімкнути підтримку AirPods/Beats"
-
-#~ msgid ""
-#~ "Enables battery status monitoring and, if supported, control of Noise "
-#~ "Cancellation and Conversation Awareness modes."
-#~ msgstr ""
-#~ "Дозволяє відстежувати стан акумулятора і, якщо підтримується, керувати "
-#~ "режимами зменшення шуму та розмови."
-
-#~ msgid "Customize Adaptive Audio"
-#~ msgstr "Налаштування адаптивного звуку"
-
-#~ msgid "Customize Adaptive Audio to allow more or less noise"
-#~ msgstr "Налаштуйте адаптивне аудіо, щоб зробити його більш або менш шумним"
-
-#~ msgid "Less"
-#~ msgstr "Менше"
-
-#~ msgid "More"
-#~ msgstr "Більше"
-
-#~ msgid "Enables advanced features and custom UI elements:"
-#~ msgstr ""
-#~ "Дозволяє розширені функції та налаштовувані елементи інтерфейсу "
-#~ "користувача:"
-
-#~ msgid "(Added)"
-#~ msgstr "(Додано)"
-
-#~ msgid "Enhanced Device Support"
-#~ msgstr "Розширена підтримка пристроїв"
-
-#~ msgid "Enable Enhanced Device Support"
-#~ msgstr "Увімкнути розширену підтримку пристрою"
-
-#~ msgid "Panel button with Menu"
-#~ msgstr "Кнопка панелі з меню"
-
-#~ msgid "Displays Panel Button"
-#~ msgstr "Показує кнопки панелі"
-
-#~ msgid "Adds a button to the panel with battery info and controls"
-#~ msgstr ""
-#~ "Додає на панель кнопку з інформацією про батарею та елементами керування"
-
-#~ msgid "Multiple Battery Indicator"
-#~ msgstr "Індикатор декількох батарей"
-
-#~ msgid "Color Scheme"
-#~ msgstr "Схема кольорів"
-
-#~ msgid "Battery Circle Widget Color Scheme"
-#~ msgstr "Колірна схема віджету кола батареї"
-
-#~ msgid "Enable battery indicators for Bluetooth devices"
-#~ msgstr "Увімкнути індикатори заряду для Bluetooth-пристроїв"
-
-#~ msgid "Displays Bluetooth device icon with battery level in system tray"
-#~ msgstr ""
-#~ "Показує піктограму Bluetooth-пристрою із зазначенням рівня заряду батареї "
-#~ "в системному треї"
