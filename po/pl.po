@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-05 22:31-0600\n"
-"PO-Revision-Date: 2025-09-15 18:57+0200\n"
+"PO-Revision-Date: 2025-12-06 10:45+0100\n"
 "Last-Translator: Adam Lewicki <a.lewicki95@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.8\n"
 
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
@@ -38,7 +38,7 @@ msgstr[2] "Połączono z %d"
 
 #: lib/devices/sony/sonyDevice.js:164 lib/devices/airpods/airpodsDevice.js:122
 msgid "Noise Control"
-msgstr ""
+msgstr "Kontrola szumów"
 
 #: lib/devices/sony/sonyDevice.js:166 lib/devices/sony/sonyDevice.js:199
 #: lib/devices/airpods/airpodsDevice.js:124
@@ -54,56 +54,56 @@ msgstr "Wył"
 #: lib/devices/sony/sonyDevice.js:168
 #: preferences/devices/sony/configureWindow.js:330
 msgid "Ambient"
-msgstr ""
+msgstr "Otoczenie"
 
 #: lib/devices/sony/sonyDevice.js:171 lib/devices/airpods/airpodsDevice.js:135
 #: lib/devices/airpods/airpodsDevice.js:138
 #: preferences/devices/sony/configureWindow.js:329
 #: preferences/devices/airpods/configureWindow.js:169
 msgid "Noise Cancellation"
-msgstr ""
+msgstr "Redukcja szumów"
 
 #: lib/devices/sony/sonyDevice.js:174 lib/devices/airpods/airpodsDevice.js:133
 msgid "Ambient Level"
-msgstr ""
+msgstr "Poziom otoczenia"
 
 #: lib/devices/sony/sonyDevice.js:177 lib/devices/sony/sonyDevice.js:179
 msgid "Auto Ambient"
-msgstr ""
+msgstr "Automatyczny tryb otoczenia"
 
 #: lib/devices/sony/sonyDevice.js:177 lib/devices/sony/sonyDevice.js:179
 #: lib/devices/sony/sonyDevice.js:183
 msgid "Focus on Voice"
-msgstr ""
+msgstr "Skupienie na głosie"
 
 #: lib/devices/sony/sonyDevice.js:180
 msgid "Auto Ambient Sensitivity"
-msgstr ""
+msgstr "Czułość automatycznego trybu otoczenia"
 
 #: lib/devices/sony/sonyDevice.js:181
 #: preferences/devices/sony/configureWindow.js:103
 #: preferences/devices/sony/configureWindow.js:127
 msgid "Standard"
-msgstr ""
+msgstr "Standardowa"
 
 #: lib/devices/sony/sonyDevice.js:181
 #: preferences/devices/sony/configureWindow.js:87
 msgid "High"
-msgstr ""
+msgstr "Wysoka"
 
 #: lib/devices/sony/sonyDevice.js:181
 #: preferences/devices/sony/configureWindow.js:87
 msgid "Low"
-msgstr ""
+msgstr "Niska"
 
 #: lib/devices/sony/sonyDevice.js:195 lib/devices/airpods/airpodsDevice.js:143
 #: preferences/devices/sony/configureWindow.js:85
 msgid "Conversation Awareness"
-msgstr ""
+msgstr "Świadomość rozmowy"
 
 #: lib/devices/sony/sonyDevice.js:197 lib/devices/airpods/airpodsDevice.js:145
 msgid "On"
-msgstr ""
+msgstr "Wł"
 
 #: lib/devices/airpods/airpodsDevice.js:127
 #: preferences/devices/airpods/configureWindow.js:168
@@ -117,7 +117,7 @@ msgstr "Adaptacyjny"
 
 #: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:109
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Zwiń podmenu"
 
 #: lib/widgets/bluetoothPopupSubMenu.js:305
 #: lib/widgets/bluetoothPopupMenu.js:82 lib/widgets/popupMenuWidget.js:115
@@ -131,15 +131,15 @@ msgstr "Połącz"
 
 #: lib/widgets/popupMenuWidget.js:79
 msgid "Pin to panel"
-msgstr ""
+msgstr "Przypnij do panelu"
 
 #: lib/widgets/popupMenuWidget.js:99
 msgid "Device settings"
-msgstr ""
+msgstr "Ustawienia urządzenia"
 
 #: lib/widgets/panelPopupMenu.js:130
 msgid "Expand submenu"
-msgstr ""
+msgstr "Rozwiń podmenu"
 
 #: preferences/upowerDevices.js:41 preferences/device.js:51
 msgid "Battery Status:"
@@ -297,183 +297,183 @@ msgstr "Ustaw kolor dla zakresu poziomu baterii %d – %d%%"
 #: preferences/devices/sony/configureWindow.js:87
 #: preferences/devices/sony/configureWindow.js:257
 msgid "Auto"
-msgstr ""
+msgstr "Auto"
 
 #: preferences/devices/sony/configureWindow.js:90
 msgid "Voice Detection Sensitivity"
-msgstr ""
+msgstr "Czułość wykrywania głosu"
 
 #: preferences/devices/sony/configureWindow.js:103
 msgid "Short"
-msgstr ""
+msgstr "Z bliska"
 
 #: preferences/devices/sony/configureWindow.js:103
 msgid "Long"
-msgstr ""
+msgstr "Z daleka"
 
 #: preferences/devices/sony/configureWindow.js:106
 msgid "Duration"
-msgstr ""
+msgstr "Czas trwania"
 
 #: preferences/devices/sony/configureWindow.js:123
 #: preferences/devices/sony/configureWindow.js:139
 msgid "Listening Mode"
-msgstr ""
+msgstr "Tryb nasłuchiwania"
 
 #: preferences/devices/sony/configureWindow.js:128
 msgid "Background Music"
-msgstr ""
+msgstr "Muzyka w tle"
 
 #: preferences/devices/sony/configureWindow.js:129
 msgid "Cinema"
-msgstr ""
+msgstr "Kino"
 
 #: preferences/devices/sony/configureWindow.js:154
 msgid "My Room"
-msgstr ""
+msgstr "Pokój"
 
 #: preferences/devices/sony/configureWindow.js:155
 msgid "Living Room"
-msgstr ""
+msgstr "Salon"
 
 #: preferences/devices/sony/configureWindow.js:156
 msgid "Cafe"
-msgstr ""
+msgstr "Kawiarnia"
 
 #: preferences/devices/sony/configureWindow.js:166
 msgid "Background Music Effects"
-msgstr ""
+msgstr "Efekty muzyki w tle"
 
 #: preferences/devices/sony/configureWindow.js:184
 msgid "Equalizer"
-msgstr ""
+msgstr "Korektor graficzny"
 
 #: preferences/devices/sony/configureWindow.js:188
 msgid "Bright"
-msgstr ""
+msgstr "Jaskrawy"
 
 #: preferences/devices/sony/configureWindow.js:189
 msgid "Excited"
-msgstr ""
+msgstr "Dynamiczny"
 
 #: preferences/devices/sony/configureWindow.js:190
 msgid "Mellow"
-msgstr ""
+msgstr "Łagodny"
 
 #: preferences/devices/sony/configureWindow.js:191
 msgid "Relaxed"
-msgstr ""
+msgstr "Zrelaksowany"
 
 #: preferences/devices/sony/configureWindow.js:192
 msgid "Vocal"
-msgstr ""
+msgstr "Wokalny"
 
 #: preferences/devices/sony/configureWindow.js:193
 msgid "Treble Boost"
-msgstr ""
+msgstr "Podbicie tonów wysokich"
 
 #: preferences/devices/sony/configureWindow.js:194
 msgid "Bass Boost"
-msgstr ""
+msgstr "Podbicie tonów niskich"
 
 #: preferences/devices/sony/configureWindow.js:195
 msgid "Speech"
-msgstr ""
+msgstr "Mowa"
 
 #: preferences/devices/sony/configureWindow.js:196
 msgid "Manual"
-msgstr ""
+msgstr "Ręcznie"
 
 #: preferences/devices/sony/configureWindow.js:197
 msgid "Custom 1"
-msgstr ""
+msgstr "Własne 1"
 
 #: preferences/devices/sony/configureWindow.js:198
 msgid "Custom 2"
-msgstr ""
+msgstr "Własne 2"
 
 #: preferences/devices/sony/configureWindow.js:217
 msgid "Equalizer Preset"
-msgstr ""
+msgstr "Preset korektora graficznego"
 
 #: preferences/devices/sony/configureWindow.js:230
 msgid "Custom Equalizer"
-msgstr ""
+msgstr "Niestandardowy korektor graficzny"
 
 #: preferences/devices/sony/configureWindow.js:232
 msgid "Bass"
-msgstr ""
+msgstr "Tony niskie"
 
 #: preferences/devices/sony/configureWindow.js:232
 msgid "400"
-msgstr ""
+msgstr "400"
 
 #: preferences/devices/sony/configureWindow.js:232
 #: preferences/devices/sony/configureWindow.js:234
 msgid "1k"
-msgstr ""
+msgstr "1k"
 
 #: preferences/devices/sony/configureWindow.js:232
 msgid "2.5k"
-msgstr ""
+msgstr "2.5k"
 
 #: preferences/devices/sony/configureWindow.js:232
 msgid "6.3k"
-msgstr ""
+msgstr "6.3k"
 
 #: preferences/devices/sony/configureWindow.js:232
 #: preferences/devices/sony/configureWindow.js:234
 msgid "16k"
-msgstr ""
+msgstr "16k"
 
 #: preferences/devices/sony/configureWindow.js:233
 msgid "31"
-msgstr ""
+msgstr "31"
 
 #: preferences/devices/sony/configureWindow.js:233
 msgid "63"
-msgstr ""
+msgstr "63"
 
 #: preferences/devices/sony/configureWindow.js:233
 msgid "125"
-msgstr ""
+msgstr "125"
 
 #: preferences/devices/sony/configureWindow.js:233
 msgid "250"
-msgstr ""
+msgstr "250"
 
 #: preferences/devices/sony/configureWindow.js:233
 msgid "500"
-msgstr ""
+msgstr "500"
 
 #: preferences/devices/sony/configureWindow.js:234
 msgid "2k"
-msgstr ""
+msgstr "2k"
 
 #: preferences/devices/sony/configureWindow.js:234
 msgid "4k"
-msgstr ""
+msgstr "4k"
 
 #: preferences/devices/sony/configureWindow.js:234
 msgid "8k"
-msgstr ""
+msgstr "8k"
 
 #: preferences/devices/sony/configureWindow.js:256
 msgid "Enable DSEE enhancement"
-msgstr ""
+msgstr "Włącz ulepszenie DSEE"
 
 #: preferences/devices/sony/configureWindow.js:276
 msgid "Ambient Sound Control"
-msgstr ""
+msgstr "Kontrola dźwięków otoczenia"
 
 #: preferences/devices/sony/configureWindow.js:277
 msgid "Ambient Sound Control / Quick Access"
-msgstr ""
+msgstr "Kontrola dźwięków otoczenia / Szybki dostęp"
 
 #: preferences/devices/sony/configureWindow.js:279
 #: preferences/devices/sony/configureWindow.js:280
 msgid "Playback Control"
-msgstr ""
+msgstr "Sterowanie odtwarzaniem"
 
 #: preferences/devices/sony/configureWindow.js:281
 #: preferences/devices/airpods/configureWindow.js:218
@@ -482,27 +482,27 @@ msgstr "Regulacja głośności"
 
 #: preferences/devices/sony/configureWindow.js:282
 msgid "Not Assigned"
-msgstr ""
+msgstr "Nieprzypisane"
 
 #: preferences/devices/sony/configureWindow.js:298
 msgid "Left Bud"
-msgstr ""
+msgstr "Lewa słuchawka"
 
 #: preferences/devices/sony/configureWindow.js:312
 msgid "Right Bud"
-msgstr ""
+msgstr "Prawa słuchawka"
 
 #: preferences/devices/sony/configureWindow.js:335
 msgid "ANC Button Configuration"
-msgstr ""
+msgstr "Konfiguracja przycisku ANC"
 
 #: preferences/devices/sony/configureWindow.js:336
 msgid "[NC/AMB] Button Settings"
-msgstr ""
+msgstr "Ustawienia przycisku [Redukcja szumów/Otoczenie]"
 
 #: preferences/devices/sony/configureWindow.js:337
 msgid "Select the modes to toggle when the button is pressed"
-msgstr ""
+msgstr "Wybierz tryby do przełączania po naciśnięciu przycisku"
 
 #: preferences/devices/sony/configureWindow.js:339
 #: preferences/devices/airpods/configureWindow.js:180
@@ -511,83 +511,83 @@ msgstr "Zatwierdź"
 
 #: preferences/devices/sony/configureWindow.js:353
 msgid "Notification"
-msgstr ""
+msgstr "Powiadomienie"
 
 #: preferences/devices/sony/configureWindow.js:357
 msgid "Voice Notification"
-msgstr ""
+msgstr "Powiadomienie głosowe"
 
 #: preferences/devices/sony/configureWindow.js:358
 msgid "Enable voice notification"
-msgstr ""
+msgstr "Włącz powiadomienie głosowe"
 
 #: preferences/devices/sony/configureWindow.js:376
 msgid "Voice Notification Volume"
-msgstr ""
+msgstr "Głośność powiadomienia głosowego"
 
 #: preferences/devices/sony/configureWindow.js:378
 msgid "-2"
-msgstr ""
+msgstr "-2"
 
 #: preferences/devices/sony/configureWindow.js:379
 msgid "-1"
-msgstr ""
+msgstr "-1"
 
 #: preferences/devices/sony/configureWindow.js:380
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: preferences/devices/sony/configureWindow.js:381
 msgid "+1"
-msgstr ""
+msgstr "+1"
 
 #: preferences/devices/sony/configureWindow.js:382
 msgid "+2"
-msgstr ""
+msgstr "+2"
 
 #: preferences/devices/sony/configureWindow.js:399
 msgid "Headset Take off"
-msgstr ""
+msgstr "Zdejmowanie zestawu słuchawkowego"
 
 #: preferences/devices/sony/configureWindow.js:406
 msgid "Pause when taken off"
-msgstr ""
+msgstr "Wstrzymaj po zdjęciu"
 
 #: preferences/devices/sony/configureWindow.js:420
 msgid "Automatically Power Off"
-msgstr ""
+msgstr "Automatyczne wyłączanie zasilania"
 
 #: preferences/devices/sony/configureWindow.js:421
 msgid "Automatically power off when not worn."
-msgstr ""
+msgstr "Automatyczne wyłączanie zasilania, gdy nie są noszone."
 
 #: preferences/devices/sony/configureWindow.js:436
 msgid "After 5 minutes"
-msgstr ""
+msgstr "Po 5 minutach"
 
 #: preferences/devices/sony/configureWindow.js:437
 msgid "After 15 minutes"
-msgstr ""
+msgstr "Po 10 minutach"
 
 #: preferences/devices/sony/configureWindow.js:438
 msgid "After 30 minutes"
-msgstr ""
+msgstr "Po 30 minutach"
 
 #: preferences/devices/sony/configureWindow.js:439
 msgid "After 1 hour"
-msgstr ""
+msgstr "Po godzinie"
 
 #: preferences/devices/sony/configureWindow.js:440
 msgid "After 3 hours"
-msgstr ""
+msgstr "Po 3 godzinach"
 
 #: preferences/devices/sony/configureWindow.js:452
 msgid "Auto Power Off"
-msgstr ""
+msgstr "Automatyczne wyłączanie zasilania"
 
 #: preferences/devices/sony/devicePrefs.js:37
 msgid "Sony audio devices"
-msgstr ""
+msgstr "Urządzenia audio firmy Sony"
 
 #: preferences/devices/airpods/configureWindow.js:86
 msgid "Playback Behavior"
@@ -596,27 +596,28 @@ msgstr "Zachowanie odtwarzania"
 #: preferences/devices/airpods/configureWindow.js:90
 #: preferences/devices/airpods/configureWindow.js:93
 msgid "Default behavior"
-msgstr ""
+msgstr "Domyślne zachowanie"
 
 #: preferences/devices/airpods/configureWindow.js:91
 msgid "Resume when worn"
-msgstr ""
+msgstr "Wznów po założeniu"
 
 #: preferences/devices/airpods/configureWindow.js:94
 msgid "Resume with both earbuds"
-msgstr ""
+msgstr "Wznów przy obu słuchawkach"
 
 #: preferences/devices/airpods/configureWindow.js:95
 msgid "Resume with any earbud"
-msgstr ""
+msgstr "Wznów przy dowolnej słuchawce"
 
 #: preferences/devices/airpods/configureWindow.js:101
 msgid "Choose playback behaviour for Ear detection"
-msgstr ""
+msgstr "Wybierz zachowanie odtwarzania dla detekcji ucha"
 
 #: preferences/devices/airpods/configureWindow.js:102
 msgid "Automatically pause or resume playback based on wearing detection."
 msgstr ""
+"Automatycznie pauzuj lub wznawiaj odtwarzanie na podstawie wykrycia noszenia."
 
 #: preferences/devices/airpods/configureWindow.js:119
 msgid "Volume Level"
@@ -654,7 +655,7 @@ msgstr "Przytrzymanie przełącza między"
 
 #: preferences/devices/airpods/configureWindow.js:178
 msgid "Settings don’t reflect current state"
-msgstr ""
+msgstr "Ustawienia nie odzwierciedlają bieżącego stanu"
 
 #: preferences/devices/airpods/configureWindow.js:193
 msgid "Notification Volume"
@@ -666,7 +667,7 @@ msgstr "Ton głośności"
 
 #: preferences/devices/airpods/configureWindow.js:199
 msgid "Adjust the tone volume of sound effects played by AirPods"
-msgstr ""
+msgstr "Dostosuj głośność tonu efektów dźwiękowych odtwarzanych przez AirPods"
 
 #: preferences/devices/airpods/configureWindow.js:201
 msgid "15%"
@@ -715,6 +716,8 @@ msgid ""
 "To prevent unintended adjustments,select the preferred wait time between "
 "swipes"
 msgstr ""
+"Aby zapobiec niezamierzonym dostosowaniom, wybierz preferowany czas "
+"oczekiwania między przesunięciami"
 
 #: preferences/devices/airpods/configureWindow.js:262
 msgid "Stem and Crown Response"
@@ -859,7 +862,7 @@ msgstr "Ustawienia wskaźnika"
 
 #: ui/indicator.ui:59
 msgid "Show Multiple Battery Indicators per Device"
-msgstr ""
+msgstr "Pokaż wiele wskaźników baterii na urządzenie"
 
 #: ui/indicator.ui:60
 msgid ""
@@ -867,6 +870,9 @@ msgid ""
 "indicator for each battery. When disabled, shows a single indicator "
 "representing the most critical (lowest) battery level of the device."
 msgstr ""
+"W przypadku urządzeń z wieloma bateriami, gdy włączone, wyświetla oddzielny "
+"wskaźnik dla każdej baterii. Gdy wyłączone, wyświetla pojedynczy wskaźnik "
+"reprezentujący najbardziej krytyczny (najniższy) poziom baterii urządzenia."
 
 #: ui/indicator.ui:67
 msgid "Show Popup on Hover"
@@ -898,15 +904,16 @@ msgstr ""
 
 #: ui/indicator.ui:95
 msgid "Tooltips"
-msgstr ""
+msgstr "Wskazówki"
 
 #: ui/indicator.ui:98
 msgid "Enable tooltips"
-msgstr ""
+msgstr "Włącz wskazówki"
 
 #: ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
 msgstr ""
+"Pokaż etykiety narzędzi po najechaniu kursorem na nieoznaczone przyciski"
 
 #: ui/indicator.ui:107
 msgid "Default Behaviour"
@@ -1076,7 +1083,7 @@ msgstr "Spersonalizowana"
 
 #: ui/devices/sony.ui:5
 msgid "Sony Bluetooth Audio"
-msgstr ""
+msgstr "Urządzenia audio Sony Bluetooth"
 
 #: ui/devices/sony.ui:9 ui/devices/airpods.ui:9 ui/quickSettings.ui:9
 msgid "Note!"
@@ -1091,11 +1098,11 @@ msgstr ""
 
 #: ui/devices/sony.ui:29
 msgid "Sony Bluetooth Audio Settings"
-msgstr ""
+msgstr "Ustawienia audio Sony Bluetooth"
 
 #: ui/devices/sony.ui:32
 msgid "Enable Sony Bluetooth Audio Support"
-msgstr ""
+msgstr "Włącz obsługę audio Sony Bluetooth"
 
 #: ui/devices/sony.ui:33 ui/devices/airpods.ui:43
 msgid ""
