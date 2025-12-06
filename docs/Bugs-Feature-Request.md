@@ -40,20 +40,50 @@ gsettings --schemadir /home/$USER/.local/share/gnome-shell/extensions/Bluetooth-
    * Operating system (e.g., Ubuntu 23.10)
    * Bluetooth device make, model and type
    
-Although there are no logs included in this extension, you can still monitor for any errors in the log by using the following commands in the `terminal`:
+Although this extension does not include built-in logs, you can still monitor errors and activity using system logs and its own log file.
 
-For Gnome Shell - logs related to the extension:
-```bash
+---
+
+### Gnome Shell Logs (Extension Runtime)
+
+View logs related to the extension running in GNOME Shell:
+
+```
 journalctl -f -o cat /usr/bin/gnome-shell
 ```
+---
 
-Enhanced Device Socket Handler logs are logged in a seperate file.
-```bash
+### Enhanced Device Socket Handler Logs
+
+Low-level device socket activity is logged separately:
+
+```
 tail -f /tmp/bluetooth_battery_meter/service.log
 ```
 
-For GJS - logs related to extension preferences:
-```bash
+For detailed packet-level debugging, edit:
+
+```
+~/.local/share/gnome-shell/extensions/Bluetooth-Battery-Meter@maniacx.github.com/lib/devices/logger.js
+```
+
+Set these flags to true:
+
+```
+const LOG_INFO = true;
+const LOG_BYTES = true;
+```
+
+This enables verbose socket logging including raw bytes.
+Logout and Relogin and monitor using `tail -f`
+
+---
+
+### GJS Logs (Extension Preferences)
+
+Monitor logs related to extension preferences:
+
+```
 journalctl -f -o cat /usr/bin/gjs
 ```
 

@@ -8,6 +8,20 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-45_Version 41 &emsp;&emsp; Dec 07, 2025
+> * Added support for Sony. Thanks to everyone who supported in testing. Credits mentioned on Credit page.
+> * BugFix: Gaurds to avoid potential crash when displaying Indicators/PanelButton
+> * BugFix: Avoid use of symlinks for ConfigureWindow Desktop File and its Icon.
+> * Improvements in ProfileManager using retry ConnectProfile
+> * Airpods: BugFix: In-Ear Pause/Resume feature doesn't work first time when enabled.
+> * Airpods: BugFix: In-ear Resume does not work on some players.
+> * Airpods: Add properties only if feature supported
+> * Airpods: Removed Airpods/Beats Album arts png in favor of Generic png.
+> * Option to set change earbuds, headphone, case icons for Enhanced device (Airpods, Sony)
+> * Ukranian translations: credit Bohdan@crowdin
+> * Polish translations: credits alewicki95
+
+{: .important-title }
 > GN-45_Version 40 &emsp;&emsp; Sep 28, 2025
 > * Added support for Airpods Pro 3
 > * Fix bug, that would not display Airpods/Beats single device in GUI.

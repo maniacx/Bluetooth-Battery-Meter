@@ -11,18 +11,13 @@ permalink: /preferences/airpods
 <br>
 <br>
 
-{: .note }
->
-> This preference is available only when Enhanced Devices is enabled.
-
-
 **AirPods / Beats Popup**
 <br>
 <img src="{{ 'assets/images/preferences/airpods/airpods-popup.png' | relative_url }}" width="35%">
 
-* Popup is shown in either On-Hover Mode or Panel Button Mode.
-* Displays a circular widget indicating battery level and status for either a single battery (headset) or for Left, Right, and Case separately.
-* Case battery is displayed only when AirPods report it — typically when the case is charging or when one or more AirPods are placed inside the case.
+* The popup can appear in multiple modes: On-Hover, Panel Button, and/or Bluetooth Submenu.
+* It shows a circular battery widget, supporting either a single battery (headset) or three separate levels for Left, Right, and Case.
+* The case battery is shown only when the AirPods report it, usually when the case is charging or when at least one AirPod is inside.
 
 **AirPods / Beats ANC and Conversation Awareness**
 
@@ -58,7 +53,7 @@ Conversation Awareness
 <br>
 <img src="{{ 'assets/images/preferences/airpods/airpods-prefs.png' | relative_url }}" width="100%">
 
-When enabled, the system can detect AirPods and Beats devices among connected Bluetooth devices. It uses a built-in Python script that communicates over L2CAP sockets to support features such as:
+When enabled, the system can detect AirPods and Beats devices among connected Bluetooth devices. It communicates over L2CAP sockets to support features such as:
 
 * Battery level reporting
 * In-ear detection for automatic pause/play of media
@@ -73,14 +68,21 @@ Configure per device settings if supported
 
 <img src="{{ 'assets/images/preferences/airpods/airpods-device.png' | relative_url }}" width="80%">
 
+## Icon selection
+
+Choose which icon style to display in the panel and quick menu:
+* Device icons: Select from the available options for your headset type (single-battery or dual-battery devices).
+* Case icon: For models that report a case battery, an additional case icon can be selected.
+
+These options let you customize how your device appears in the indicator.
 
 ## Pause when device is not worn
-When this option is enabled, the system intelligently controls media playback based on whether the earbuds are being worn:
 
-* Auto-Pause: Playback is automatically paused when both earbuds are removed from the ears.
-* Auto-Resume: Playback automatically resumes when the earbuds are placed back in the ears.
+When enabled, media playback automatically pauses when the earbuds are removed and resumes based on the selected behavior:
 
-This feature relies on in-ear detection supported by compatible devices (e.g., certain AirPods or Beats models) and helps conserve battery and avoid missed content.
+* Default behavior: Uses the device’s standard in-ear detection for pausing and resuming.
+* Resume with both earbuds: Playback resumes only when both earbuds are worn.
+* Resume with any earbud: Playback resumes as soon as at least one earbud is worn.
 
 ## Conversation awareness volume Limit
 
@@ -99,5 +101,240 @@ Adjustable Range
 ## Other settings:
 Other settings are self explanatory similar to settings available in iPhone / iPads / Macs
 
+## Compatibility
 
+Currently tested and confirmed working:
+
+* **AirPods 1st Gen** ✅ — Credits: Toxblh
+* **AirPods Pro 1st Gen** ✅ — Credits: Toxblh, hazzac181
+* **AirPods 4th Gen with ANC** ✅ — Credits: Cameo007
+* **AirPods Pro 2 USB-C** ✅ — Credits: maniacx
+* **AirPods Max  USB-C** ✅ — Credits: GovanifY
+
+<style>
+table th:first-of-type {
+    width: 60%;
+}
+table th:nth-of-type(2) {
+    width: 20%;
+}
+table th:nth-of-type(3) {
+    width: 20%;
+}
+</style>
+
+### AirPods 1st Gen
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2002           | ✅     |
+| Battery Level                 | L, R, Case     | ✅     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### AirPods 2nd Gen
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 200F           | ❌     |
+| Battery Level                 | L, R, Case     | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### AirPods 3rd Gen
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2013           | ❌     |
+| Battery Level                 | L, R, Case     | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### AirPods 4th Gen
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2019           | ❌     |
+| Battery Level                 | L, R, Case     | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### AirPods 4th Gen with ANC
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 201B           | ✅     |
+| Battery Level                 | L, R, Case     | ✅     |
+| ANC                           | ✅             | ✅     |
+| Adaptive                      | ✅             | ✅     |
+| Ambient Sound Customization   | ✅             | ✅     |
+| Conversation Awareness        | ✅             | ✅     |
+| In‑Ear Play/Pause             | ✅             | ✅     |
+
+<br>
+### AirPods Pro (1st Gen)
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 200E           | ✅     |
+| Battery Level                 | L, R, Case     | ✅     |
+| ANC                           | ✅             | ✅     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### AirPods Pro 2nd Gen
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2014           | ❌     |
+| Battery Level                 | L, R, Case     | ❌     |
+| ANC                           | ✅             | ❌     |
+| Adaptive                      | ✅             | ❌     |
+| Ambient Sound Customization   | ✅             | ❌     |
+| Conversation Awareness        | ✅             | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### AirPods Pro 2 USB‑C
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2024           | ✅     |
+| Battery Level                 | L, R, Case     | ✅     |
+| ANC                           | ✅             | ✅     |
+| Adaptive                      | ✅             | ✅     |
+| Ambient Sound Customization   | ✅             | ✅     |
+| Conversation Awareness        | ✅             | ✅     |
+| In‑Ear Play/Pause             | ✅             | ✅     |
+
+<br>
+### AirPods Max
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 200A           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| ANC                           | ✅             | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### AirPods Max USB‑C
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 201F           | ✅     |
+| Battery Level                 | Single         | ✅     |
+| ANC                           | ✅             | ✅     |
+| ANC                           | ✅             | ✅     |
+| In‑Ear Play/Pause             | ✅             | ✅     |
+
+<br>
+### Beats Fit Pro
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2012           | ❌     |
+| Battery Level                 | L, R, Case     | ❌     |
+| ANC                           | ✅             | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Beats X
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2005           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Beats Flex
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2010           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Beats Solo 3
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2006           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Powerbeats 3
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2003           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Beats Studio 3
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2009           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Powerbeats Pro
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 200B           | ❌     |
+| Battery Level                 | L, R, Case     | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Beats Solo Pro
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 200C           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Powerbeats 4
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 200D           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Beats Studio Pro
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2017           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| ANC                           | ✅             | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Beats Studio Buds
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2011           | ❌     |
+| Battery Level                 | L, R, Case     | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Beats Studio Buds Plus
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2016           | ❌     |
+| Battery Level                 | L, R, Case     | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
 
