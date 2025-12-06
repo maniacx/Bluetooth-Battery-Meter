@@ -82,7 +82,7 @@ export const ConfigureWindow = GObject.registerClass({
         page.add(iconSelector);
 
         if (modelData.speakToChatConfig) {
-            const speak2ChatGroup = new Adw.PreferencesGroup({title: _('Speak To Chat')});
+            const speak2ChatGroup = new Adw.PreferencesGroup({title: _('Conversation Awareness')});
 
             const sensitivityOptions = [_('Auto'), _('High'), _('Low')];
             const sensitivityValues = [0, 1, 2];
