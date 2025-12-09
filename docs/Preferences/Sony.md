@@ -79,6 +79,7 @@ Currently tested and confirmed working:
 * **Sony WF-C510**  ✅ — Credits: G-dH
 * **Sony WH-1000XM4**  ✅ — Credits: Int-Circuit
 * **Sony WF-1000XM5**  ✅ — Credits: kilisei
+* **Sony WH-1000XM5**  ✅ — Credits: pesader
 
 <style>
 table th:first-of-type {
@@ -116,16 +117,16 @@ table th:nth-of-type(3) {
 
 | Feature                       | Supported      | Tested |
 |:-----------------------------:|:--------------:|:------:|
-| Battery Level                 | Single         | ❌     |
-| Ambient Mode                  | ✅             | ❌     |
-| Anc Mode                      | ✅             | ❌     |
-| Noise Control Button Mode     | ✅             | ❌     |
-| Speak To Chat Config          | ✅             | ❌     |
-| Voice Notifications           | ✅             | ❌     |
-| Auto Power Off When Taken Off | ✅             | ❌     |
-| Pause When Taken Off          | ✅             | ❌     |
-| Equalizer Six Bands           | ✅             | ❌     |
-| DSEE                          | ✅             | ❌     |
+| Battery Level                 | Single         | ✅     |
+| Ambient Mode                  | ✅             | ✅     |
+| Anc Mode                      | ✅             | ✅     |
+| Noise Control Button Mode     | ✅             | ✅     |
+| Speak To Chat Config          | ✅             | ✅     |
+| Voice Notifications           | ✅             | ✅     |
+| Auto Power Off When Taken Off | ✅             | ✅     |
+| Pause When Taken Off          | ✅             | ✅     |
+| Equalizer Six Bands           | ✅             | ✅     |
+| DSEE                          | ✅             | ✅     |
 
 <br>
 ### Sony WH-1000XM4
@@ -285,7 +286,6 @@ table th:nth-of-type(3) {
 | Upscaling (DSEE)              | ✅        | ❌     |
 
 <br>
-
 
 ### WF-SP800N
 
