@@ -8,6 +8,11 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-45_Version 42 &emsp;&emsp; Dec 20, 2025
+> * Bugfix: Bugfix: Hover mode not working for devices that report battery status via BlueZ 
+> * Use Gio cancelable for launching configure window script
+
+{: .important-title }
 > GN-45_Version 41 &emsp;&emsp; Dec 07, 2025
 > * Added support for Sony. Thanks to everyone who supported in testing. Credits mentioned on Credit page.
 > * BugFix: Gaurds to avoid potential crash when displaying Indicators/PanelButton
