@@ -18,11 +18,11 @@ import {
 export const ConfigureWindow = GObject.registerClass({
     GTypeName: 'BluetoothBatteryMeter_SonyConfigureWindow',
 }, class ConfigureWindow extends Adw.Window {
-    _init(settings, mac, devicePath, parentWindow, _) {
+    _init(settings, mac, devicePath, parentWindow, _, modal = false) {
         super._init({
             default_width: 650,
             default_height: 650,
-            modal: true,
+            modal,
             transient_for: parentWindow ?? null,
         });
 

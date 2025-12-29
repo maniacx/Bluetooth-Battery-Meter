@@ -29,7 +29,7 @@ const  DeviceItem = GObject.registerClass({
         this._customiseButton.connect('clicked', () => {
             const parentWindow = this._customiseButton.get_ancestor(Gtk.Window);
             const configureWindow = new ConfigureWindow(settings, this._macAddress,
-                pathInfo.path, parentWindow, _);
+                pathInfo.path, parentWindow, _, true);
 
             configureWindow.present();
         });
