@@ -55,44 +55,19 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
         this.add(headerRow);
 
         const boxRow = new Adw.ActionRow();
-        const hbox = new Gtk.Box({
+        this._hBox = new Gtk.Box({
             orientation: Gtk.Orientation.HORIZONTAL,
-            spacing: 8,
+            spacing: 4,
             homogeneous: true,
             valign: Gtk.Align.CENTER,
             margin_top: 8,
             margin_bottom: 8,
         });
 
-        for (let i = 0; i < items.length; i++) {
-            const {name, icon} = items[i];
-            const cell = new Gtk.Box({
-                orientation: Gtk.Orientation.VERTICAL,
-                spacing: 6,
-                halign: Gtk.Align.CENTER,
-                valign: Gtk.Align.CENTER,
-            });
-
-            const image = new Gtk.Image({icon_name: icon, halign: Gtk.Align.CENTER});
-            const label = new Gtk.Label({label: name, halign: Gtk.Align.CENTER});
-            label.add_css_class('caption-heading');
-
-            const check = new Gtk.CheckButton({halign: Gtk.Align.CENTER});
-            check.connect('toggled', () => {
-                if (this._suspendToggleHandlers)
-                    return;
-                this._updateApplySensitivity();
-            });
-
-            this._checkButtons.push(check);
-            cell.append(image);
-            cell.append(label);
-            cell.append(check);
-            hbox.append(cell);
-        }
-
-        boxRow.set_child(hbox);
+        boxRow.set_child(this._hBox);
         this.add(boxRow);
+
+        this.updateItems(items);
 
         this._applyButton.connect('clicked', () => this._applyChanges());
 
@@ -144,6 +119,41 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
         this._suspendToggleHandlers = true;
         this._updateCheckStates(v);
         this._suspendToggleHandlers = false;
+    }
+
+    updateItems(items) {
+        let child;
+        while ((child = this._hBox.get_first_child()))
+            this._hBox.remove(child);
+
+        this._checkButtons = [];
+
+        for (let i = 0; i < items.length; i++) {
+            const {name, icon} = items[i];
+            const cell = new Gtk.Box({
+                orientation: Gtk.Orientation.VERTICAL,
+                spacing: 6,
+                halign: Gtk.Align.CENTER,
+                valign: Gtk.Align.CENTER,
+            });
+
+            const image = new Gtk.Image({icon_name: icon, halign: Gtk.Align.CENTER});
+            const label = new Gtk.Label({label: name, halign: Gtk.Align.CENTER});
+            label.add_css_class('caption-heading');
+
+            const check = new Gtk.CheckButton({halign: Gtk.Align.CENTER});
+            check.connect('toggled', () => {
+                if (this._suspendToggleHandlers)
+                    return;
+                this._updateApplySensitivity();
+            });
+
+            this._checkButtons.push(check);
+            cell.append(image);
+            cell.append(label);
+            cell.append(check);
+            this._hBox.append(cell);
+        }
     }
 });
 
