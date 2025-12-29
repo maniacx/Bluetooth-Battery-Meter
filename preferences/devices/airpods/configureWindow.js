@@ -6,7 +6,7 @@ import Gtk from 'gi://Gtk';
 import {
     supportedAudioSingleIcons, supportedAudioDualIcons, supportedCaseIcons
 } from '../../../lib/widgets/iconGroups.js';
-import {AirpodsModelList} from '../../../lib/devices/airpods/airpodsConfig.js';
+import {AirpodsModelList, LongPressBits} from '../../../lib/devices/airpods/airpodsConfig.js';
 import {CheckBoxesGroupWidget} from './../../widgets/checkBoxesGroupWidget.js';
 import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
 import {DropDownRowWidget} from './../../widgets/dropDownRowWidget.js';
@@ -162,27 +162,94 @@ export const  ConfigureWindow = GObject.registerClass({
             page.add(awarnessVolumeGroup);
         }
 
+        if (modelData.enableTurnOffListeningMode) {
+            const listeningModeGrp = new Adw.PreferencesGroup({
+                title: _('Turn off listening modes'),
+            });
+
+            this._listeningModeRow = new Adw.SwitchRow({
+                title: _('Allows to turn off all listening mode technology'),
+                subtitle: _('Allows Noise Cancellation, Transparency, ' +
+                    'and Adaptive modes to be fully disabled. ' +
+                    'Disabling listening modes also turns off Hearing Aid features ' +
+                    'and reduces power usage.'),
+            });
+
+            this._currentListeningMode = this._settingsItems['listening-mode'];
+            this._listeningModeRow.active = this._currentListeningMode;
+            this._listeningModeRow.connect('notify::active', () => {
+                const mode = this._listeningModeRow.active;
+                this._updateGsettings('listening-mode', mode);
+                if (this._currentListeningMode !== mode) {
+                    this._currentListeningMode = mode;
+                    if (modelData.longPressCycleSupported) {
+                        this._buildLongPressItems();
+                        this._longPressCycleWidget?.updateItems(this._longPressItems);
+                    }
+                }
+            });
+
+            listeningModeGrp.add(this._listeningModeRow);
+            page.add(listeningModeGrp);
+        }
+
         if (modelData.longPressCycleSupported) {
-            const items = [
-                {name: _('Off'), icon: 'bbm-anc-off-symbolic'},
-                {name: _('Transparency'), icon: 'bbm-transperancy-symbolic'},
-                {name: _('Noise Cancellation'), icon: 'bbm-anc-on-symbolic'},
-            ];
+            this._buildLongPressItems = () => {
+                const items = [];
 
-            if (modelData.adaptiveSupported)
-                items.push({name: _('Adaptive'), icon: 'bbm-adaptive-symbolic'});
+                const allowOff = !modelData.enableTurnOffListeningMode ||
+                    modelData.enableTurnOffListeningMode && this._currentListeningMode;
 
+                if (allowOff) {
+                    items.push({
+                        mode: 'off',
+                        name: _('Off'),
+                        icon: 'bbm-anc-off-symbolic',
+                    });
+                }
+
+                items.push({
+                    mode: 'transparency',
+                    name: _('Transparency'),
+                    icon: 'bbm-transperancy-symbolic',
+                });
+
+                items.push({
+                    mode: 'anc',
+                    name: _('Noise Cancellation'),
+                    icon: 'bbm-anc-on-symbolic',
+                });
+
+                if (modelData.adaptiveSupported) {
+                    items.push({
+                        mode: 'adaptive',
+                        name: _('Adaptive'),
+                        icon: 'bbm-adaptive-symbolic',
+                    });
+                }
+                this._longPressItems = items;
+            };
+
+            this._buildLongPressItems();
             this._longPressCycleWidget = new CheckBoxesGroupWidget({
                 groupTitle: _('Press and Hold Cycle'),
                 rowTitle: _('Press and hold cycles between'),
                 rowSubtitle: _('Settings don’t reflect current state'),
-                items,
+                items: this._longPressItems,
                 applyBtnName: _('Apply'),
                 resetOnApply: true,
             });
 
             this._longPressCycleWidget.connect('notify::toggled-value', () => {
-                this._updateGsettings('lp-value', this._longPressCycleWidget.toggled_value);
+                const toggled = this._longPressCycleWidget.toggled_value;
+                let mask = 0;
+
+                this._longPressItems.forEach((item, index) => {
+                    if (toggled & 1 << index)
+                        mask |= LongPressBits[item.mode];
+                });
+
+                this._updateGsettings('lp-value', mask);
             });
 
             page.add(this._longPressCycleWidget);
@@ -192,7 +259,6 @@ export const  ConfigureWindow = GObject.registerClass({
             const toneGroup = new Adw.PreferencesGroup({
                 title: _('Notification Volume'),
             });
-
 
             this._toneWidget = new SliderRowWidget({
                 rowTitle: _('Tone Volume'),
@@ -309,6 +375,18 @@ export const  ConfigureWindow = GObject.registerClass({
             if (modelData.awarenessSupported) {
                 this._awarenessSwitchRow.active = this._settingsItems['ca-volume-enabled'];
                 this._adjustment.value = this._settingsItems['ca-volume'];
+            }
+
+            if (modelData.enableTurnOffListeningMode) {
+                const mode = this._settingsItems['listening-mode'];
+
+                if (modelData.longPressCycleSupported) {
+                    this._currentListeningMode = mode;
+                    this._buildLongPressItems();
+                    this._longPressCycleWidget?.updateItems(this._longPressItems);
+                }
+
+                this._listeningModeRow.active = mode;
             }
 
             if (modelData.toneVolumeSupported)
