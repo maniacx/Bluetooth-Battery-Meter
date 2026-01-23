@@ -37,7 +37,7 @@ export const ConfigureWindow = GObject.registerClass({
 
         const toolViewBar = new Adw.ToolbarView();
         const headerBar = new Adw.HeaderBar({
-            decoration_layout: 'icon:close',
+            decoration_layout: ':close',
             show_end_title_buttons: true,
         });
         const page = new Adw.PreferencesPage();
