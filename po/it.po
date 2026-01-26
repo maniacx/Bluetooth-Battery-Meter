@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-05 22:31-0600\n"
+"POT-Creation-Date: 2026-01-25 19:59-0700\n"
 "PO-Revision-Date: 2025-12-27 09:05+0200\n"
 "Last-Translator:  Alessandro Falappa <alex.falappa@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
@@ -21,25 +21,25 @@ msgstr ""
 msgid "Bluetooth Battery Meter"
 msgstr "Bluetooth Battery Meter"
 
-#: lib/bluetoothToggle.js:521
+#: lib/bluetoothToggle.js:518
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d Connesso"
 msgstr[1] "%d Connessi"
 
-#: lib/devices/sony/sonyDevice.js:164 lib/devices/airpods/airpodsDevice.js:122
+#: lib/devices/sony/sonyDevice.js:164 lib/devices/airpods/airpodsDevice.js:173
 msgid "Noise Control"
 msgstr "Controllo del rumore"
 
 #: lib/devices/sony/sonyDevice.js:166 lib/devices/sony/sonyDevice.js:199
-#: lib/devices/airpods/airpodsDevice.js:124
-#: lib/devices/airpods/airpodsDevice.js:147
+#: lib/devices/airpods/airpodsDevice.js:200
+#: lib/devices/airpods/airpodsDevice.js:242
 #: preferences/devices/sony/configureWindow.js:103
 #: preferences/devices/sony/configureWindow.js:187
 #: preferences/devices/sony/configureWindow.js:257
 #: preferences/devices/sony/configureWindow.js:331
-#: preferences/devices/airpods/configureWindow.js:167 ui/indicator.ui:114
+#: preferences/devices/airpods/configureWindow.js:206 ui/indicator.ui:114
 msgid "Off"
 msgstr "Disattivato"
 
@@ -48,14 +48,13 @@ msgstr "Disattivato"
 msgid "Ambient"
 msgstr "Ambiente"
 
-#: lib/devices/sony/sonyDevice.js:171 lib/devices/airpods/airpodsDevice.js:135
-#: lib/devices/airpods/airpodsDevice.js:138
+#: lib/devices/sony/sonyDevice.js:171 lib/devices/airpods/airpodsDevice.js:203
 #: preferences/devices/sony/configureWindow.js:329
-#: preferences/devices/airpods/configureWindow.js:169
+#: preferences/devices/airpods/configureWindow.js:219
 msgid "Noise Cancellation"
 msgstr "Cancellazione del rumore"
 
-#: lib/devices/sony/sonyDevice.js:174 lib/devices/airpods/airpodsDevice.js:133
+#: lib/devices/sony/sonyDevice.js:174 lib/devices/airpods/airpodsDevice.js:232
 msgid "Ambient Level"
 msgstr "Livello di ambiente"
 
@@ -88,31 +87,31 @@ msgstr "Alta"
 msgid "Low"
 msgstr "Bassa"
 
-#: lib/devices/sony/sonyDevice.js:195 lib/devices/airpods/airpodsDevice.js:143
+#: lib/devices/sony/sonyDevice.js:195 lib/devices/airpods/airpodsDevice.js:238
 #: preferences/devices/sony/configureWindow.js:85
 msgid "Conversation Awareness"
 msgstr "Consapevolezza conversazione"
 
-#: lib/devices/sony/sonyDevice.js:197 lib/devices/airpods/airpodsDevice.js:145
+#: lib/devices/sony/sonyDevice.js:197 lib/devices/airpods/airpodsDevice.js:240
 msgid "On"
 msgstr "Attivato"
 
-#: lib/devices/airpods/airpodsDevice.js:127
-#: preferences/devices/airpods/configureWindow.js:168
+#: lib/devices/airpods/airpodsDevice.js:201
+#: preferences/devices/airpods/configureWindow.js:213
 msgid "Transparency"
 msgstr "Trasparenza"
 
-#: lib/devices/airpods/airpodsDevice.js:131
-#: preferences/devices/airpods/configureWindow.js:173
+#: lib/devices/airpods/airpodsDevice.js:202
+#: preferences/devices/airpods/configureWindow.js:226
 msgid "Adaptive"
 msgstr "Adattiva"
 
-#: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:109
+#: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:105
 msgid "Collapse submenu"
 msgstr "Chiudi sottomenu"
 
 #: lib/widgets/bluetoothPopupSubMenu.js:305
-#: lib/widgets/bluetoothPopupMenu.js:82 lib/widgets/popupMenuWidget.js:115
+#: lib/widgets/bluetoothPopupMenu.js:82 lib/widgets/popupMenuWidget.js:111
 msgid "Disconnect"
 msgstr "Disconnetti"
 
@@ -121,11 +120,11 @@ msgstr "Disconnetti"
 msgid "Connect"
 msgstr "Connetti"
 
-#: lib/widgets/popupMenuWidget.js:79
+#: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
 msgstr "Fissa al pannello"
 
-#: lib/widgets/popupMenuWidget.js:99
+#: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
 msgstr "Impostazioni dispositivo"
 
@@ -442,6 +441,7 @@ msgstr "500"
 #: preferences/devices/sony/configureWindow.js:234
 msgid "2k"
 msgstr "2k"
+
 #: preferences/devices/sony/configureWindow.js:234
 msgid "4k"
 msgstr "4k"
@@ -468,7 +468,7 @@ msgid "Playback Control"
 msgstr "Controllo della riproduzione"
 
 #: preferences/devices/sony/configureWindow.js:281
-#: preferences/devices/airpods/configureWindow.js:218
+#: preferences/devices/airpods/configureWindow.js:284
 msgid "Volume Control"
 msgstr "Controllo del volume"
 
@@ -497,7 +497,7 @@ msgid "Select the modes to toggle when the button is pressed"
 msgstr "Seleziona le modalità da attivare quando il pulsante viene premuto"
 
 #: preferences/devices/sony/configureWindow.js:339
-#: preferences/devices/airpods/configureWindow.js:180
+#: preferences/devices/airpods/configureWindow.js:239
 msgid "Apply"
 msgstr "Applica"
 
@@ -604,11 +604,14 @@ msgstr "Riprendi con qualsiasi cuffia"
 
 #: preferences/devices/airpods/configureWindow.js:101
 msgid "Choose playback behaviour for Ear detection"
-msgstr "Scegli il comportamento di riproduzione per il rilevamento dell'orecchio"
+msgstr ""
+"Scegli il comportamento di riproduzione per il rilevamento dell'orecchio"
 
 #: preferences/devices/airpods/configureWindow.js:102
 msgid "Automatically pause or resume playback based on wearing detection."
-msgstr "Metti automaticamente in pausa o riprendi la riproduzione in base alla rilevazione dell'indossamento."
+msgstr ""
+"Metti automaticamente in pausa o riprendi la riproduzione in base alla "
+"rilevazione dell'indossamento."
 
 #: preferences/devices/airpods/configureWindow.js:119
 msgid "Volume Level"
@@ -636,87 +639,104 @@ msgstr ""
 "Limita il volume a questa percentuale durante la conversazione. Nota: "
 "nessuna modifica se il volume attuale è al di sotto di questo livello."
 
-#: preferences/devices/airpods/configureWindow.js:176
+#: preferences/devices/airpods/configureWindow.js:167
+msgid "Turn off listening modes"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:171
+msgid "Allows to turn off all listening mode technology"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:172
+msgid ""
+"Allows Noise Cancellation, Transparency, and Adaptive modes to be fully "
+"disabled. Disabling listening modes also turns off Hearing Aid features and "
+"reduces power usage."
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:235
 msgid "Press and Hold Cycle"
 msgstr "Ciclo del tieni-premuto"
 
-#: preferences/devices/airpods/configureWindow.js:177
+#: preferences/devices/airpods/configureWindow.js:236
 msgid "Press and hold cycles between"
 msgstr "Tieni-premuto varia tra"
 
-#: preferences/devices/airpods/configureWindow.js:178
+#: preferences/devices/airpods/configureWindow.js:237
 msgid "Settings don’t reflect current state"
 msgstr "Le impostazioni non riflettono lo stato attuale"
 
-#: preferences/devices/airpods/configureWindow.js:193
+#: preferences/devices/airpods/configureWindow.js:260
 msgid "Notification Volume"
 msgstr "Volume delle notifiche"
 
-#: preferences/devices/airpods/configureWindow.js:198
+#: preferences/devices/airpods/configureWindow.js:264
 msgid "Tone Volume"
 msgstr "Volume del tono"
 
-#: preferences/devices/airpods/configureWindow.js:199
+#: preferences/devices/airpods/configureWindow.js:265
 msgid "Adjust the tone volume of sound effects played by AirPods"
 msgstr "Regola il volume degli effetti sonori riprodotti dagli AirPods"
 
-#: preferences/devices/airpods/configureWindow.js:201
+#: preferences/devices/airpods/configureWindow.js:267
 msgid "15%"
 msgstr "15%"
 
-#: preferences/devices/airpods/configureWindow.js:202
+#: preferences/devices/airpods/configureWindow.js:268
 msgid "100%"
 msgstr "100%"
 
-#: preferences/devices/airpods/configureWindow.js:203
+#: preferences/devices/airpods/configureWindow.js:269
 msgid "125%"
 msgstr "125%"
 
-#: preferences/devices/airpods/configureWindow.js:222
+#: preferences/devices/airpods/configureWindow.js:288
 msgid "Volume Swipe"
 msgstr "Volume con scorrimento"
 
-#: preferences/devices/airpods/configureWindow.js:223
+#: preferences/devices/airpods/configureWindow.js:289
 msgid "Enable or disable volume adjustment by swiping on earbud stems"
-msgstr "Abilita o disabilita la regolazione del volume scorrendo sugli steli degli auricolari"
+msgstr ""
+"Abilita o disabilita la regolazione del volume scorrendo sugli steli degli "
+"auricolari"
 
-#: preferences/devices/airpods/configureWindow.js:232
-#: preferences/devices/airpods/configureWindow.js:265
-#: preferences/devices/airpods/configureWindow.js:283
+#: preferences/devices/airpods/configureWindow.js:298
+#: preferences/devices/airpods/configureWindow.js:331
+#: preferences/devices/airpods/configureWindow.js:349
 msgid "Default"
 msgstr "Predefinito"
 
-#: preferences/devices/airpods/configureWindow.js:232
-#: preferences/devices/airpods/configureWindow.js:265
+#: preferences/devices/airpods/configureWindow.js:298
+#: preferences/devices/airpods/configureWindow.js:331
 msgid "Longer"
 msgstr "Lungo"
 
-#: preferences/devices/airpods/configureWindow.js:232
-#: preferences/devices/airpods/configureWindow.js:265
+#: preferences/devices/airpods/configureWindow.js:298
+#: preferences/devices/airpods/configureWindow.js:331
 msgid "Longest"
 msgstr "Più lungo"
 
-#: preferences/devices/airpods/configureWindow.js:236
+#: preferences/devices/airpods/configureWindow.js:302
 msgid "Swipe Duration"
 msgstr "Durata dello scorrimento"
 
-#: preferences/devices/airpods/configureWindow.js:237
+#: preferences/devices/airpods/configureWindow.js:303
 msgid ""
 "To prevent unintended adjustments,select the preferred wait time between "
 "swipes"
 msgstr ""
-"Per evitare regolazioni involontarie, seleziona il tempo di attesa preferito tra "
-"gli scorrimenti"
+"Per evitare regolazioni involontarie, seleziona il tempo di attesa preferito "
+"tra gli scorrimenti"
 
-#: preferences/devices/airpods/configureWindow.js:262
+#: preferences/devices/airpods/configureWindow.js:328
 msgid "Stem and Crown Response"
 msgstr "Risposta dello stelo e della corona"
 
-#: preferences/devices/airpods/configureWindow.js:269
+#: preferences/devices/airpods/configureWindow.js:335
 msgid "Press Speed"
 msgstr "Velocità di pressione"
 
-#: preferences/devices/airpods/configureWindow.js:270
+#: preferences/devices/airpods/configureWindow.js:336
 msgid ""
 "Adjust how quickly you must double or triple-press the stem or Digital Crown "
 "before an action occurs"
@@ -724,21 +744,22 @@ msgstr ""
 "Regola la velocità con cui devi premere due o tre volte lo stelo o la corona "
 "digitale prima che si verifichi un'azione"
 
-#: preferences/devices/airpods/configureWindow.js:283
+#: preferences/devices/airpods/configureWindow.js:349
 msgid "Shorter"
 msgstr "Breve"
 
-#: preferences/devices/airpods/configureWindow.js:283
+#: preferences/devices/airpods/configureWindow.js:349
 msgid "Shortest"
 msgstr "Più breve"
 
-#: preferences/devices/airpods/configureWindow.js:286
+#: preferences/devices/airpods/configureWindow.js:352
 msgid "Press and Hold Duration"
 msgstr "Durata del tieni-premuto"
 
-#: preferences/devices/airpods/configureWindow.js:287
+#: preferences/devices/airpods/configureWindow.js:353
 msgid "Set how long you need to press and hold before an action occurs"
-msgstr "Imposta per quanto tempo devi tenere premuto prima che si verifichi un'azione"
+msgstr ""
+"Imposta per quanto tempo devi tenere premuto prima che si verifichi un'azione"
 
 #: preferences/devices/airpods/devicePrefs.js:37 ui/devices/airpods.ui:5
 msgid "AirPods/Beats"
@@ -862,7 +883,8 @@ msgid ""
 msgstr ""
 "Per i dispositivi con più batterie, se abilitato, mostra un indicatore "
 "separato per ogni batteria. Se disabilitato, mostra un singolo indicatore "
-"che rappresenta il livello di batteria più critico (più basso) del dispositivo."
+"che rappresenta il livello di batteria più critico (più basso) del "
+"dispositivo."
 
 #: ui/indicator.ui:67
 msgid "Show Popup on Hover"
