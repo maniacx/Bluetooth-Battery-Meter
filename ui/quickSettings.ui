@@ -16,6 +16,12 @@
       <object class="AdwPreferencesGroup">
         <property name="title" translatable="yes">Quick Menu Settings</property>
         <child>
+          <object class="AdwSwitchRow" id="modify_quicksettings">
+            <property name="title" translatable="yes">Modify Bluetooth device menu</property>
+            <property name="subtitle" translatable="yes">Add battery information and device controls to the menu</property>
+          </object>
+        </child>
+        <child>
           <object class="AdwSwitchRow" id="use_popup_in_quicksettings">
             <property name="title" translatable="yes">Enable popup submenu widget mode</property>
             <property name="subtitle" translatable="yes">Adds a submenu that displays battery levels and other controls (ANC) if available</property>

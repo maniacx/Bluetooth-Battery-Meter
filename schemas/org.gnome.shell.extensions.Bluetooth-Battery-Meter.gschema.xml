@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="gnome-shell-extensions">
     <schema path="/org/gnome/shell/extensions/Bluetooth-Battery-Meter/" id="org.gnome.shell.extensions.Bluetooth-Battery-Meter">
+        <key name="modify-quick-settings" type="b">
+            <default>true</default>
+            <summary>Modify bluetooth quickmenu</summary>
+        </key>
         <key name="popup-in-quick-settings" type="b">
             <default>true</default>
-            <summary>Displays an icon  showing bluetooth device battery level in bluetooth quickmenu</summary>
+            <summary>Adds Submenu to popupmenu</summary>
         </key>
         <key name="enable-battery-level-icon" type="b">
             <default>true</default>
