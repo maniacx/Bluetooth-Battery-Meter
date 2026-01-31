@@ -467,6 +467,9 @@ export const ConfigureWindow = GObject.registerClass({
         settings.connect('changed::sony-list', () => {
             const updatedList = settings.get_strv('sony-list').map(JSON.parse);
             this._settingsItems = updatedList.find(info => info.path === devicePath);
+            if (!this._settingsItems)
+                return;
+
             this.title = this._settingsItems.alias;
 
             if (modelData.speakToChatConfig) {

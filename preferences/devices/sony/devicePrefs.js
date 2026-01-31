@@ -70,6 +70,7 @@ const  DeviceItem = GObject.registerClass({
         this.title = pathInfo.alias;
         this.subtitle = this._macAddress;
         this._deleteButton.sensitive = !this._settings.get_boolean('enable-sony-device');
+        this._icon.icon_name = `bbm-${pathInfo.icon}-symbolic`;
     }
 
     _pathToMacAddress(path) {

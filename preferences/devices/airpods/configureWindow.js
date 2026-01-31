@@ -368,6 +368,8 @@ export const  ConfigureWindow = GObject.registerClass({
         settings.connect('changed::airpods-list', () => {
             const updatedList = settings.get_strv('airpods-list').map(JSON.parse);
             this._settingsItems = updatedList.find(info => info.path === devicePath);
+            if (!this._settingsItems)
+                return;
 
             this.title = this._settingsItems.alias;
             this._inEarDropdown.selected_item = this._settingsItems['wear-detection-mode'];
@@ -416,5 +418,4 @@ export const  ConfigureWindow = GObject.registerClass({
     }
 }
 );
-
 
