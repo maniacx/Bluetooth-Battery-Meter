@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell 3.3.90\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 19:59-0700\n"
+"POT-Creation-Date: 2026-01-30 19:14-0700\n"
 "PO-Revision-Date: 2023-10-05 15:33+0800\n"
 "Last-Translator: Cheng-Chia Tseng <zerngjia@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://darkbear.mercusysddns.com/"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Bluetooth Battery Meter"
 msgstr ""
 
-#: lib/bluetoothToggle.js:518
+#: lib/bluetoothToggle.js:524
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -110,19 +110,33 @@ msgstr ""
 msgid "Adaptive"
 msgstr ""
 
-#: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:105
-msgid "Collapse submenu"
-msgstr ""
-
+#: lib/widgets/bluetoothGnomePopupMenu.js:56
 #: lib/widgets/bluetoothPopupSubMenu.js:305
 #: lib/widgets/bluetoothPopupMenu.js:82 lib/widgets/popupMenuWidget.js:111
 msgid "Disconnect"
 msgstr "中斷連線"
 
+#: lib/widgets/bluetoothGnomePopupMenu.js:56
 #: lib/widgets/bluetoothPopupSubMenu.js:305
 #: lib/widgets/bluetoothPopupMenu.js:82
 msgid "Connect"
 msgstr "連線"
+
+#. Translators: %s is a device name like "MyPhone"
+#: lib/widgets/bluetoothGnomePopupMenu.js:77
+#, javascript-format
+msgid "Disconnect %s"
+msgstr "中斷「%s」連線"
+
+#. Translators: %s is a device name like "MyPhone"
+#: lib/widgets/bluetoothGnomePopupMenu.js:79
+#, javascript-format
+msgid "Connect to %s"
+msgstr "連線至「%s」"
+
+#: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:105
+msgid "Collapse submenu"
+msgstr ""
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
@@ -265,7 +279,7 @@ msgstr ""
 msgid "The button is available after disabling %s mode"
 msgstr ""
 
-#: preferences/quickSettings.js:63
+#: preferences/quickSettings.js:70
 #, javascript-format
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
@@ -1125,48 +1139,56 @@ msgid "Quick Menu Settings"
 msgstr "快速選單設定"
 
 #: ui/quickSettings.ui:20
-msgid "Enable popup submenu widget mode"
+msgid "Modify Bluetooth device menu"
 msgstr ""
 
 #: ui/quickSettings.ui:21
+msgid "Add battery information and device controls to the menu"
+msgstr ""
+
+#: ui/quickSettings.ui:26
+msgid "Enable popup submenu widget mode"
+msgstr ""
+
+#: ui/quickSettings.ui:27
 msgid ""
 "Adds a submenu that displays battery levels and other controls (ANC) if "
 "available"
 msgstr ""
 
-#: ui/quickSettings.ui:26
+#: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
 msgstr "顯示藍牙裝置的電池圖示"
 
-#: ui/quickSettings.ui:27
+#: ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr "在彈出式選單中顯示藍牙裝置的電池電量圖示"
 
-#: ui/quickSettings.ui:32
+#: ui/quickSettings.ui:38
 msgid "Show Bluetooth device battery percentage"
 msgstr "顯示藍牙裝置電池百分比"
 
-#: ui/quickSettings.ui:33
+#: ui/quickSettings.ui:39
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr "以文字顯示藍牙裝置電池電量百分比"
 
-#: ui/quickSettings.ui:38
+#: ui/quickSettings.ui:44
 msgid "Display battery level icon before text"
 msgstr "在文字前顯示電池電量圖示"
 
-#: ui/quickSettings.ui:39
+#: ui/quickSettings.ui:45
 msgid "Swaps position of battery level icon and percentage text"
 msgstr "交換電池電量圖示與百分比文字的位置"
 
-#: ui/quickSettings.ui:46
+#: ui/quickSettings.ui:52
 msgid "Sort By History"
 msgstr ""
 
-#: ui/quickSettings.ui:49
+#: ui/quickSettings.ui:55
 msgid "Sort devices by connection history"
 msgstr "依連線歷史記錄排序裝置"
 
-#: ui/quickSettings.ui:50
+#: ui/quickSettings.ui:56
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"

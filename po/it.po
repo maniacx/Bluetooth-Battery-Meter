@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 19:59-0700\n"
+"POT-Creation-Date: 2026-01-30 19:14-0700\n"
 "PO-Revision-Date: 2025-12-27 09:05+0200\n"
 "Last-Translator:  Alessandro Falappa <alex.falappa@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Bluetooth Battery Meter"
 msgstr "Bluetooth Battery Meter"
 
-#: lib/bluetoothToggle.js:518
+#: lib/bluetoothToggle.js:524
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -106,19 +106,33 @@ msgstr "Trasparenza"
 msgid "Adaptive"
 msgstr "Adattiva"
 
-#: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:105
-msgid "Collapse submenu"
-msgstr "Chiudi sottomenu"
-
+#: lib/widgets/bluetoothGnomePopupMenu.js:56
 #: lib/widgets/bluetoothPopupSubMenu.js:305
 #: lib/widgets/bluetoothPopupMenu.js:82 lib/widgets/popupMenuWidget.js:111
 msgid "Disconnect"
 msgstr "Disconnetti"
 
+#: lib/widgets/bluetoothGnomePopupMenu.js:56
 #: lib/widgets/bluetoothPopupSubMenu.js:305
 #: lib/widgets/bluetoothPopupMenu.js:82
 msgid "Connect"
 msgstr "Connetti"
+
+#. Translators: %s is a device name like "MyPhone"
+#: lib/widgets/bluetoothGnomePopupMenu.js:77
+#, javascript-format
+msgid "Disconnect %s"
+msgstr "Disconnetti %s"
+
+#. Translators: %s is a device name like "MyPhone"
+#: lib/widgets/bluetoothGnomePopupMenu.js:79
+#, javascript-format
+msgid "Connect to %s"
+msgstr "Connetti a %s"
+
+#: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:105
+msgid "Collapse submenu"
+msgstr "Chiudi sottomenu"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
@@ -265,7 +279,7 @@ msgstr "Servizio Batteria (BAS)"
 msgid "The button is available after disabling %s mode"
 msgstr "Il pulsante è disponibile dopo aver disabilitato la modalità %s"
 
-#: preferences/quickSettings.js:63
+#: preferences/quickSettings.js:70
 #, javascript-format
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
@@ -1187,10 +1201,18 @@ msgid "Quick Menu Settings"
 msgstr "Impostazioni del menu rapido"
 
 #: ui/quickSettings.ui:20
+msgid "Modify Bluetooth device menu"
+msgstr ""
+
+#: ui/quickSettings.ui:21
+msgid "Add battery information and device controls to the menu"
+msgstr ""
+
+#: ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
 msgstr "Abilita la modalità widget del sottomenu a comparsa"
 
-#: ui/quickSettings.ui:21
+#: ui/quickSettings.ui:27
 msgid ""
 "Adds a submenu that displays battery levels and other controls (ANC) if "
 "available"
@@ -1198,41 +1220,41 @@ msgstr ""
 "Aggiunge un sottomenu che visualizza i livelli della batteria e altri "
 "controlli (ANC) se disponibili"
 
-#: ui/quickSettings.ui:26
+#: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
 msgstr "Mostra l'icona della batteria per i dispositivi Bluetooth"
 
-#: ui/quickSettings.ui:27
+#: ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
 "Mostra un'icona nel menu a comparsa per il livello della batteria del "
 "dispositivo Bluetooth"
 
-#: ui/quickSettings.ui:32
+#: ui/quickSettings.ui:38
 msgid "Show Bluetooth device battery percentage"
 msgstr "Mostra la percentuale della batteria del dispositivo Bluetooth"
 
-#: ui/quickSettings.ui:33
+#: ui/quickSettings.ui:39
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr "Visualizza la percentuale del livello della batteria in cifre"
 
-#: ui/quickSettings.ui:38
+#: ui/quickSettings.ui:44
 msgid "Display battery level icon before text"
 msgstr "Visualizza l'icona del livello della batteria prima delle cifre"
 
-#: ui/quickSettings.ui:39
+#: ui/quickSettings.ui:45
 msgid "Swaps position of battery level icon and percentage text"
 msgstr "Scambia la posizione dell'icona del livello e delle cifre percentuali"
 
-#: ui/quickSettings.ui:46
+#: ui/quickSettings.ui:52
 msgid "Sort By History"
 msgstr "Ordina per cronologia"
 
-#: ui/quickSettings.ui:49
+#: ui/quickSettings.ui:55
 msgid "Sort devices by connection history"
 msgstr "Ordina i dispositivi per cronologia di connessione"
 
-#: ui/quickSettings.ui:50
+#: ui/quickSettings.ui:56
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"

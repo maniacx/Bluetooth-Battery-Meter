@@ -1,0 +1,2633 @@
+# Telugu translation for gnome-shell.
+# Copyright (C) 2011, 2012 Swecha telugu translations team <localization@swecha.net>
+# This file is distributed under the same license as the gnome-shell package.
+# Krishnababu Krothapalli <kkrothap@redhat.com>, 2011, 2012, 2013, 2014.
+# Hari Krishna <hari@swecha.net>, 2011.
+# Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012.
+# Praveen Illa <mail2ipn@gmail.com>, 2011, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-shell gnome-3-0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-30 20:13-0700\n"
+"PO-Revision-Date: 2014-09-23 15:55+0530\n"
+"Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Project-Style: gnome\n"
+
+#: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
+#: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
+msgid "Bluetooth Battery Meter"
+msgstr ""
+
+#: lib/bluetoothToggle.js:524
+#, javascript-format
+msgid "%d Connected"
+msgid_plural "%d Connected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/devices/sony/sonyDevice.js:164 lib/devices/airpods/airpodsDevice.js:173
+msgid "Noise Control"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:166 lib/devices/sony/sonyDevice.js:199
+#: lib/devices/airpods/airpodsDevice.js:200
+#: lib/devices/airpods/airpodsDevice.js:242
+#: preferences/devices/sony/configureWindow.js:103
+#: preferences/devices/sony/configureWindow.js:187
+#: preferences/devices/sony/configureWindow.js:257
+#: preferences/devices/sony/configureWindow.js:331
+#: preferences/devices/airpods/configureWindow.js:206 ui/indicator.ui:114
+msgid "Off"
+msgstr "అచేతనం"
+
+#: lib/devices/sony/sonyDevice.js:168
+#: preferences/devices/sony/configureWindow.js:330
+msgid "Ambient"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:171 lib/devices/airpods/airpodsDevice.js:203
+#: preferences/devices/sony/configureWindow.js:329
+#: preferences/devices/airpods/configureWindow.js:219
+msgid "Noise Cancellation"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:174 lib/devices/airpods/airpodsDevice.js:232
+msgid "Ambient Level"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:177 lib/devices/sony/sonyDevice.js:179
+msgid "Auto Ambient"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:177 lib/devices/sony/sonyDevice.js:179
+#: lib/devices/sony/sonyDevice.js:183
+msgid "Focus on Voice"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:180
+msgid "Auto Ambient Sensitivity"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:181
+#: preferences/devices/sony/configureWindow.js:103
+#: preferences/devices/sony/configureWindow.js:127
+msgid "Standard"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:181
+#: preferences/devices/sony/configureWindow.js:87
+msgid "High"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:181
+#: preferences/devices/sony/configureWindow.js:87
+msgid "Low"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:195 lib/devices/airpods/airpodsDevice.js:238
+#: preferences/devices/sony/configureWindow.js:85
+msgid "Conversation Awareness"
+msgstr ""
+
+#: lib/devices/sony/sonyDevice.js:197 lib/devices/airpods/airpodsDevice.js:240
+msgid "On"
+msgstr "చేతనం"
+
+#: lib/devices/airpods/airpodsDevice.js:201
+#: preferences/devices/airpods/configureWindow.js:213
+msgid "Transparency"
+msgstr ""
+
+#: lib/devices/airpods/airpodsDevice.js:202
+#: preferences/devices/airpods/configureWindow.js:226
+msgid "Adaptive"
+msgstr ""
+
+#: lib/widgets/bluetoothGnomePopupMenu.js:56
+#: lib/widgets/bluetoothPopupSubMenu.js:305
+#: lib/widgets/bluetoothPopupMenu.js:82 lib/widgets/popupMenuWidget.js:111
+msgid "Disconnect"
+msgstr ""
+
+#: lib/widgets/bluetoothGnomePopupMenu.js:56
+#: lib/widgets/bluetoothPopupSubMenu.js:305
+#: lib/widgets/bluetoothPopupMenu.js:82
+msgid "Connect"
+msgstr ""
+
+#. Translators: %s is a device name like "MyPhone"
+#: lib/widgets/bluetoothGnomePopupMenu.js:77
+#, javascript-format
+msgid "Disconnect %s"
+msgstr ""
+
+#. Translators: %s is a device name like "MyPhone"
+#: lib/widgets/bluetoothGnomePopupMenu.js:79
+#, javascript-format
+msgid "Connect to %s"
+msgstr ""
+
+#: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:105
+msgid "Collapse submenu"
+msgstr ""
+
+#: lib/widgets/popupMenuWidget.js:75
+msgid "Pin to panel"
+msgstr ""
+
+#: lib/widgets/popupMenuWidget.js:95
+msgid "Device settings"
+msgstr ""
+
+#: lib/widgets/panelPopupMenu.js:130
+msgid "Expand submenu"
+msgstr ""
+
+#: preferences/upowerDevices.js:41 preferences/device.js:51
+msgid "Battery Status:"
+msgstr ""
+
+#: preferences/upowerDevices.js:42 preferences/device.js:52
+msgid "Reported"
+msgstr ""
+
+#: preferences/upowerDevices.js:42 preferences/device.js:52
+msgid "Not Available"
+msgstr ""
+
+#: preferences/upowerDevices.js:47
+#: preferences/devices/sony/configureWindow.js:63
+#: preferences/devices/airpods/configureWindow.js:64 preferences/device.js:60
+msgid "Icon"
+msgstr ""
+
+#: preferences/upowerDevices.js:51 preferences/gattBas.js:46
+#: preferences/gattBas.js:51 preferences/devices/sony/configureWindow.js:64
+#: preferences/devices/airpods/configureWindow.js:65 preferences/device.js:64
+msgid "Select Icon"
+msgstr ""
+
+#: preferences/upowerDevices.js:52
+#: preferences/devices/sony/configureWindow.js:65
+#: preferences/devices/airpods/configureWindow.js:66 preferences/device.js:65
+msgid "Select the icon used for the indicator and quick menu"
+msgstr ""
+
+#: preferences/upowerDevices.js:101
+msgid "Alias"
+msgstr ""
+
+#: preferences/upowerDevices.js:105
+msgid "Device Alias"
+msgstr ""
+
+#: preferences/upowerDevices.js:129 preferences/device.js:149 ui/indicator.ui:5
+msgid "Indicator"
+msgstr ""
+
+#: preferences/upowerDevices.js:133 preferences/device.js:153
+msgid "Configure Indicator"
+msgstr ""
+
+#: preferences/upowerDevices.js:134 preferences/device.js:154
+msgid "Choose how the indicator should behave"
+msgstr ""
+
+#: preferences/upowerDevices.js:138 preferences/device.js:163
+msgid "Hide Icon"
+msgstr ""
+
+#: preferences/upowerDevices.js:139 preferences/device.js:164
+msgid "Show Icon"
+msgstr ""
+
+#: preferences/upowerDevices.js:186 preferences/gattBas.js:173
+#: preferences/devices/sony/devicePrefs.js:25
+#: preferences/devices/airpods/devicePrefs.js:25 preferences/device.js:212
+msgid "Configure device."
+msgstr ""
+
+#: preferences/upowerDevices.js:199
+msgid ""
+"Delete device information: The button is available after upower device are "
+"removed"
+msgstr ""
+
+#: preferences/upowerDevices.js:232
+msgid "(Offline)"
+msgstr ""
+
+#: preferences/upowerDevices.js:233
+msgid "(Online)"
+msgstr ""
+
+#: preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr ""
+
+#: preferences/about.js:49
+#, javascript-format
+msgid "© %s %s"
+msgstr ""
+
+#: preferences/about.js:50
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+
+#: preferences/gattBas.js:47
+msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
+msgstr ""
+
+#: preferences/gattBas.js:52
+msgid "Multiple Indicators, Circular Battery Widgets"
+msgstr ""
+
+#: preferences/gattBas.js:60
+msgid "Icon "
+msgstr ""
+
+#: preferences/gattBas.js:69
+msgid "Battery 1 Icon"
+msgstr ""
+
+#: preferences/gattBas.js:78
+msgid "Battery 2 Icon"
+msgstr ""
+
+#: preferences/gattBas.js:87
+msgid "Battery 3 Icon"
+msgstr ""
+
+#: preferences/gattBas.js:185 ui/gattBas.ui:5
+msgid "Battery Service (BAS)"
+msgstr ""
+
+#: preferences/gattBas.js:188 preferences/devices/sony/devicePrefs.js:40
+#: preferences/devices/airpods/devicePrefs.js:40
+#, javascript-format
+msgid "The button is available after disabling %s mode"
+msgstr ""
+
+#: preferences/quickSettings.js:70
+#, javascript-format
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
+"for details."
+msgstr ""
+
+#: preferences/batteryWidgetSettings.js:17
+#, javascript-format
+msgid "Assign color for %d – %d%%"
+msgstr ""
+
+#: preferences/batteryWidgetSettings.js:18
+#, javascript-format
+msgid "Set color for the battery level range of %d – %d%%"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:87
+#: preferences/devices/sony/configureWindow.js:257
+msgid "Auto"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:90
+msgid "Voice Detection Sensitivity"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:103
+msgid "Short"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:103
+msgid "Long"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:106
+msgid "Duration"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:123
+#: preferences/devices/sony/configureWindow.js:139
+msgid "Listening Mode"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:128
+msgid "Background Music"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:129
+msgid "Cinema"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:154
+msgid "My Room"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:155
+msgid "Living Room"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:156
+msgid "Cafe"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:166
+msgid "Background Music Effects"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:184
+msgid "Equalizer"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:188
+msgid "Bright"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:189
+msgid "Excited"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:190
+msgid "Mellow"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:191
+msgid "Relaxed"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:192
+msgid "Vocal"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:193
+msgid "Treble Boost"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:194
+msgid "Bass Boost"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:195
+msgid "Speech"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:196
+msgid "Manual"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:197
+msgid "Custom 1"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:198
+msgid "Custom 2"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:217
+msgid "Equalizer Preset"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:230
+msgid "Custom Equalizer"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:232
+msgid "Bass"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:232
+msgid "400"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:232
+#: preferences/devices/sony/configureWindow.js:234
+msgid "1k"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:232
+msgid "2.5k"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:232
+msgid "6.3k"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:232
+#: preferences/devices/sony/configureWindow.js:234
+msgid "16k"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:233
+msgid "31"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:233
+msgid "63"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:233
+msgid "125"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:233
+msgid "250"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:233
+msgid "500"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:234
+msgid "2k"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:234
+msgid "4k"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:234
+msgid "8k"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:256
+msgid "Enable DSEE enhancement"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:276
+msgid "Ambient Sound Control"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:277
+msgid "Ambient Sound Control / Quick Access"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:279
+#: preferences/devices/sony/configureWindow.js:280
+msgid "Playback Control"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:281
+#: preferences/devices/airpods/configureWindow.js:284
+msgid "Volume Control"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:282
+msgid "Not Assigned"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:298
+msgid "Left Bud"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:312
+msgid "Right Bud"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:335
+msgid "ANC Button Configuration"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:336
+msgid "[NC/AMB] Button Settings"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:337
+msgid "Select the modes to toggle when the button is pressed"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:339
+#: preferences/devices/airpods/configureWindow.js:239
+msgid "Apply"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:353
+msgid "Notification"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:357
+msgid "Voice Notification"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:358
+msgid "Enable voice notification"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:376
+msgid "Voice Notification Volume"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:378
+msgid "-2"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:379
+msgid "-1"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:380
+msgid "0"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:381
+msgid "+1"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:382
+msgid "+2"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:399
+msgid "Headset Take off"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:406
+msgid "Pause when taken off"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:420
+msgid "Automatically Power Off"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:421
+msgid "Automatically power off when not worn."
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:436
+msgid "After 5 minutes"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:437
+msgid "After 15 minutes"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:438
+msgid "After 30 minutes"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:439
+msgid "After 1 hour"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:440
+msgid "After 3 hours"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:452
+msgid "Auto Power Off"
+msgstr ""
+
+#: preferences/devices/sony/devicePrefs.js:37
+msgid "Sony audio devices"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:86
+msgid "Playback Behavior"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:90
+#: preferences/devices/airpods/configureWindow.js:93
+msgid "Default behavior"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:91
+msgid "Resume when worn"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:94
+msgid "Resume with both earbuds"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:95
+msgid "Resume with any earbud"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:101
+msgid "Choose playback behaviour for Ear detection"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:102
+msgid "Automatically pause or resume playback based on wearing detection."
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:119
+msgid "Volume Level"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:123
+msgid "Pause when device is not worn"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:124
+msgid "Pause playback when the device is removed,resume when it is put back on"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:143
+msgid "Conversation awareness volume limit"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:144
+msgid ""
+"Limits media volume to this percentage during conversation. Note: No change "
+"if current volume is below this level."
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:167
+msgid "Turn off listening modes"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:171
+msgid "Allows to turn off all listening mode technology"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:172
+msgid ""
+"Allows Noise Cancellation, Transparency, and Adaptive modes to be fully "
+"disabled. Disabling listening modes also turns off Hearing Aid features and "
+"reduces power usage."
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:235
+msgid "Press and Hold Cycle"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:236
+msgid "Press and hold cycles between"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:237
+msgid "Settings don’t reflect current state"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:260
+msgid "Notification Volume"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:264
+msgid "Tone Volume"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:265
+msgid "Adjust the tone volume of sound effects played by AirPods"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:267
+msgid "15%"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:268
+msgid "100%"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:269
+msgid "125%"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:288
+msgid "Volume Swipe"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:289
+msgid "Enable or disable volume adjustment by swiping on earbud stems"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:298
+#: preferences/devices/airpods/configureWindow.js:331
+#: preferences/devices/airpods/configureWindow.js:349
+msgid "Default"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:298
+#: preferences/devices/airpods/configureWindow.js:331
+msgid "Longer"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:298
+#: preferences/devices/airpods/configureWindow.js:331
+msgid "Longest"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:302
+msgid "Swipe Duration"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:303
+msgid ""
+"To prevent unintended adjustments,select the preferred wait time between "
+"swipes"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:328
+msgid "Stem and Crown Response"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:335
+msgid "Press Speed"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:336
+msgid ""
+"Adjust how quickly you must double or triple-press the stem or Digital Crown "
+"before an action occurs"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:349
+msgid "Shorter"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:349
+msgid "Shortest"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:352
+msgid "Press and Hold Duration"
+msgstr ""
+
+#: preferences/devices/airpods/configureWindow.js:353
+msgid "Set how long you need to press and hold before an action occurs"
+msgstr ""
+
+#: preferences/devices/airpods/devicePrefs.js:37 ui/devices/airpods.ui:5
+msgid "AirPods/Beats"
+msgstr ""
+
+#: preferences/device.js:53
+msgid "Reported from enhanced device service"
+msgstr ""
+
+#: preferences/device.js:68
+msgid "This is an enhanced device"
+msgstr ""
+
+#: preferences/device.js:69
+msgid "Icon selection if available are in Enhanced device per device settings"
+msgstr ""
+
+#: preferences/device.js:124 ui/quickSettings.ui:5
+msgid "Quick Menu"
+msgstr ""
+
+#: preferences/device.js:128
+msgid "Display Battery Level"
+msgstr ""
+
+#: preferences/device.js:129
+msgid "Display battery level in the Bluetooth panel quick menu"
+msgstr ""
+
+#: preferences/device.js:158
+msgid "Do not show Icon"
+msgstr ""
+
+#: preferences/device.js:159
+msgid "Show Icon without Battery level"
+msgstr ""
+
+#: preferences/device.js:160
+msgid "Show Icon with Battery Level"
+msgstr ""
+
+#: preferences/device.js:226
+msgid ""
+"Delete device information: The button is available after unpairing device"
+msgstr ""
+
+#: preferences/device.js:258
+msgid "(Removed)"
+msgstr ""
+
+#: preferences/device.js:259
+msgid "(Paired)"
+msgstr ""
+
+#: ui/indicator.ui:9
+msgid "Bluetooth System Indicator Settings"
+msgstr ""
+
+#: ui/indicator.ui:12
+msgid "Bluetooth Connection Status Indicator"
+msgstr ""
+
+#: ui/indicator.ui:13
+msgid ""
+"Hide conditionally: Displayed only when no other bluetooth related "
+"indicators are present"
+msgstr ""
+
+#: ui/indicator.ui:27
+msgid "Battery Indicator Settings"
+msgstr ""
+
+#: ui/indicator.ui:30
+msgid "Choose Indicator mode"
+msgstr ""
+
+#: ui/indicator.ui:31
+msgid ""
+"Off: No battery indicator.\n"
+"System Indicator: Battery icon in top bar.\n"
+"Panel Button: Battery icon with menu."
+msgstr ""
+
+#: ui/indicator.ui:45
+msgid "Panel Button Mode"
+msgstr ""
+
+#: ui/indicator.ui:48
+msgid "Panel button indicator mode."
+msgstr ""
+
+#: ui/indicator.ui:49
+msgid "On: Show one selected device. Off: Show all devices"
+msgstr ""
+
+#: ui/indicator.ui:56
+msgid "Indicator Settings"
+msgstr ""
+
+#: ui/indicator.ui:59
+msgid "Show Multiple Battery Indicators per Device"
+msgstr ""
+
+#: ui/indicator.ui:60
+msgid ""
+"For devices with multiple batteries, when enabled, shows a separate "
+"indicator for each battery. When disabled, shows a single indicator "
+"representing the most critical (lowest) battery level of the device."
+msgstr ""
+
+#: ui/indicator.ui:67
+msgid "Show Popup on Hover"
+msgstr ""
+
+#: ui/indicator.ui:70
+msgid "Show Detailed Info on Hover"
+msgstr ""
+
+#: ui/indicator.ui:71
+msgid ""
+"Displays a popup with battery info and controls when the mouse pointer "
+"hovers over the indicator for a custom delay"
+msgstr ""
+
+#: ui/indicator.ui:76
+msgid "Hover Activation Delay"
+msgstr ""
+
+#: ui/indicator.ui:77
+msgid ""
+"Specify the number of seconds the mouse must hover over the indicator before "
+"detailed information is displayed."
+msgstr ""
+
+#: ui/indicator.ui:95
+msgid "Tooltips"
+msgstr ""
+
+#: ui/indicator.ui:98
+msgid "Enable tooltips"
+msgstr ""
+
+#: ui/indicator.ui:99
+msgid "Show tooltips when hovering over unlabeled buttons"
+msgstr ""
+
+#: ui/indicator.ui:107
+msgid "Default Behaviour"
+msgstr ""
+
+#: ui/indicator.ui:108
+msgid "Hide Always"
+msgstr ""
+
+#: ui/indicator.ui:109
+msgid "Hide Conditionally"
+msgstr ""
+
+#: ui/indicator.ui:115
+msgid "System Tray"
+msgstr ""
+
+#: ui/indicator.ui:116
+msgid "Panel Button"
+msgstr ""
+
+#: ui/gattBas.ui:16 ui/devices/sony.ui:17 ui/devices/airpods.ui:17
+msgid "Experimental"
+msgstr ""
+
+#: ui/gattBas.ui:19
+msgid "Battery Service (BAS) Settings"
+msgstr ""
+
+#: ui/gattBas.ui:22
+msgid "Enable GATT Battery Service Reporting"
+msgstr ""
+
+#: ui/gattBas.ui:23
+msgid ""
+"Display battery levels for Bluetooth devices using the GATT Battery Service "
+"(BAS)."
+msgstr ""
+
+#: ui/gattBas.ui:30 ui/devices/sony.ui:40 ui/devices/airpods.ui:50
+#: ui/upowerDevices.ui:20 ui/device.ui:9
+msgid "Configuration by Device"
+msgstr ""
+
+#: ui/gattBas.ui:33 ui/devices/sony.ui:43 ui/devices/airpods.ui:53
+msgid "No compatible device paired!"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:5
+msgid "Battery Widget Settings"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:9
+msgid "Indicator Widget Settings"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:12
+msgid ""
+"Indicator Battery Widget Settings available only for System Tray mode or "
+"Panel Button mode with multiple indicators"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:17
+msgid "Show icon only (Hide Bar/Dots)"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:18
+msgid ""
+"Hides the battery level indicator on the icon. Pair with text percentage for "
+"battery information"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:23
+msgid "Display battery percentage as text"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:24
+msgid "Displays battery percentage beside the Bluetooth device icon"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:29
+msgid "Battery Level Indicator Type"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:30
+msgid "Dots offer better visibility"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:42
+msgid "Battery Bar Position"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:43
+msgid "Choose where to display the battery bar relative to the device icon"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:55
+msgid "Device Icon Size"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:56
+msgid ""
+"Adjust the size of the device icon displayed above the battery level "
+"indicator"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:71
+msgid "Battery Indicator Color Scheme"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:72
+msgid "Choose color scheme for level bar/dots"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:89
+msgid "Circle Widget Settings"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:92
+msgid "Circle Widget Color Scheme"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:93
+msgid "Choose color scheme for battery circle widget"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:111
+msgid "Battery Level Bar"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:112
+msgid "Battery Level Dot"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:117
+msgid "Left"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:118
+msgid "Right"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:119
+msgid "Below"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:124 ui/batteryWidgetSettings.ui:131
+msgid "Symbolic"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:125 ui/batteryWidgetSettings.ui:132
+msgid "Colored"
+msgstr ""
+
+#: ui/batteryWidgetSettings.ui:126 ui/batteryWidgetSettings.ui:133
+msgid "Customized"
+msgstr ""
+
+#: ui/devices/sony.ui:5
+msgid "Sony Bluetooth Audio"
+msgstr ""
+
+#: ui/devices/sony.ui:9 ui/devices/airpods.ui:9 ui/quickSettings.ui:9
+msgid "Note!"
+msgstr ""
+
+#: ui/devices/sony.ui:22 ui/devices/airpods.ui:22
+msgid ""
+"Some models/features are not fully tested. Please share feedback on GitHub."
+msgstr ""
+
+#: ui/devices/sony.ui:29
+msgid "Sony Bluetooth Audio Settings"
+msgstr ""
+
+#: ui/devices/sony.ui:32
+msgid "Enable Sony Bluetooth Audio Support"
+msgstr ""
+
+#: ui/devices/sony.ui:33 ui/devices/airpods.ui:43
+msgid ""
+"Enables battery status monitoring and, if supported, control of Noise "
+"Cancellation and Conversation Awareness modes."
+msgstr ""
+
+#: ui/devices/airpods.ui:27
+msgid "Conversation Awareness (if supported) works only with the A2DP profile."
+msgstr ""
+
+#: ui/devices/airpods.ui:32
+msgid ""
+"ANC and Conversation Awareness buttons are hidden when the earbuds are not "
+"in-ear."
+msgstr ""
+
+#: ui/devices/airpods.ui:39
+msgid "AirPods/Beats Settings"
+msgstr ""
+
+#: ui/devices/airpods.ui:42
+msgid "Enable AirPods/Beats Support"
+msgstr ""
+
+#: ui/upowerDevices.ui:5
+msgid "UPower"
+msgstr ""
+
+#: ui/upowerDevices.ui:9
+msgid "Enable UPower Devices"
+msgstr ""
+
+#: ui/upowerDevices.ui:12
+msgid "Enable indicator for UPower devices"
+msgstr ""
+
+#: ui/upowerDevices.ui:13
+msgid ""
+"Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
+"report battery levels if supported by the kernel or third-party drivers. "
+"Enable this option to display their battery status in the GNOME system tray."
+msgstr ""
+
+#: ui/upowerDevices.ui:21 ui/device.ui:10
+msgid "Note: General settings override device-specific settings"
+msgstr ""
+
+#: ui/upowerDevices.ui:24
+msgid "No compatible device found!"
+msgstr ""
+
+#: ui/quickSettings.ui:17
+msgid "Quick Menu Settings"
+msgstr ""
+
+#: ui/quickSettings.ui:20
+msgid "Modify Bluetooth device menu"
+msgstr ""
+
+#: ui/quickSettings.ui:21
+msgid "Add battery information and device controls to the menu"
+msgstr ""
+
+#: ui/quickSettings.ui:26
+msgid "Enable popup submenu widget mode"
+msgstr ""
+
+#: ui/quickSettings.ui:27
+msgid ""
+"Adds a submenu that displays battery levels and other controls (ANC) if "
+"available"
+msgstr ""
+
+#: ui/quickSettings.ui:32
+msgid "Show battery icon for Bluetooth devices"
+msgstr ""
+
+#: ui/quickSettings.ui:33
+msgid "Displays an icon in the popup menu for Bluetooth device battery level"
+msgstr ""
+
+#: ui/quickSettings.ui:38
+msgid "Show Bluetooth device battery percentage"
+msgstr ""
+
+#: ui/quickSettings.ui:39
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr ""
+
+#: ui/quickSettings.ui:44
+msgid "Display battery level icon before text"
+msgstr ""
+
+#: ui/quickSettings.ui:45
+msgid "Swaps position of battery level icon and percentage text"
+msgstr ""
+
+#: ui/quickSettings.ui:52
+msgid "Sort By History"
+msgstr ""
+
+#: ui/quickSettings.ui:55
+msgid "Sort devices by connection history"
+msgstr ""
+
+#: ui/quickSettings.ui:56
+msgid ""
+"Enable to sort devices by connection history, or disable to sort by "
+"connection status and alias"
+msgstr ""
+
+#: ui/device.ui:5
+msgid "Device"
+msgstr ""
+
+#: ui/device.ui:13
+msgid "No Bluetooth device paired!"
+msgstr ""
+
+#: ui/about.ui:5
+msgid "About"
+msgstr ""
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr ""
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr ""
+
+#: ui/about.ui:114 ui/about.ui:197
+msgid "Translations"
+msgstr ""
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr ""
+
+#: ui/about.ui:153 ui/about.ui:271
+msgid "Legal"
+msgstr ""
+
+#: ui/about.ui:217
+msgid "Crowdin"
+msgstr ""
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr ""
+
+#~ msgid "System"
+#~ msgstr "వ్యవస్థ"
+
+#~ msgid "Show the message tray"
+#~ msgstr "సందేశ పళ్ళెం చూపించు"
+
+#~ msgid "Focus the active notification"
+#~ msgstr "క్రియాశీల గమనింపుపై దృష్టివుంచు"
+
+#~ msgid "Show the overview"
+#~ msgstr "అవలోకనాన్ని చూపించు"
+
+#~ msgid "Show all applications"
+#~ msgstr "అన్ని అనువర్తనాలను చూపించు"
+
+#~ msgid "Open the application menu"
+#~ msgstr "అనువర్తనం మెనూ తెరువు"
+
+#~ msgid "GNOME Shell"
+#~ msgstr "గ్నోమ్ షెల్"
+
+#~ msgid "Window management and application launching"
+#~ msgstr "కిటికీ నిర్వాహణ మరియు అనువర్తనము ప్రారంభించుట"
+
+#~ msgid "GNOME Shell Extension Preferences"
+#~ msgstr "గ్నోమ్ షెల్ పొడిగింతల ప్రాధాన్యతలు"
+
+#~ msgid "Configure GNOME Shell Extensions"
+#~ msgstr "గ్నోమ్ షెల్ పొడిగింతలను స్వరూపించు"
+
+#~ msgid "GNOME Shell (wayland compositor)"
+#~ msgstr "గ్నోమ్ షెల్ (వేల్యాండ్ సృష్టి)"
+
+#~ msgid "Enable internal tools useful for developers and testers from Alt-F2"
+#~ msgstr "అభివృద్ధికారులకు మరియు పరీక్షకులకు ఉపయోగపడే సాధనాలను Alt-F2 నుండి చేతనపరుచు"
+
+#~ msgid ""
+#~ "Allows access to internal debugging and monitoring tools using the Alt-F2 "
+#~ "dialog."
+#~ msgstr ""
+#~ "Alt-F2 డైలాగుని వాడి అంతర్గత దోషశుద్ది మరియు సాధనాలను పర్యవేక్షించుటకు సౌలభ్యతను అనుమతిస్తుంది."
+
+#~ msgid "UUIDs of extensions to enable"
+#~ msgstr "చేతనించాల్సిన పొడిగింతలు యొక్క UUIDs"
+
+#~ msgid ""
+#~ "GNOME Shell extensions have a UUID property; this key lists extensions "
+#~ "which should be loaded. Any extension that wants to be loaded needs to be "
+#~ "in this list. You can also manipulate this list with the EnableExtension "
+#~ "and DisableExtension D-Bus methods on org.gnome.Shell."
+#~ msgstr ""
+#~ "గ్నోమ్ షెల్ పొడిగింతలు ఒక UUID లక్షణాన్ని కలిగివున్నాయి; ఏ పొడిగింతలు లోడుచేయదగినవి కాదో ఈ కీ "
+#~ "జాబితాచేయును. ఏ పొడిగింత లోడవ్వాలో అది ఈ జాబితా నందు ఉండాలి. అంతేకాకుండా మీరు ఈ జాబితాను పాడిగింతను "
+#~ "చేతనపరుచు లేదా పొడిగింతను అచేతనపరుచు డిబస్ పద్ధతులలో గ్నోమ్ షెల్ నందు మార్చవచ్చును."
+
+#~ msgid "Disables the validation of extension version compatibility"
+#~ msgstr "పొడిగింత రూపాంతర అనుగుణ్యత యొక్క చెల్లుబాటును అచేతనిస్తుంది"
+
+#~ msgid ""
+#~ "GNOME Shell will only load extensions that claim to support the current "
+#~ "running version. Enabling this option will disable this check and try to "
+#~ "load all extensions regardless of the versions they claim to support."
+#~ msgstr ""
+#~ "ప్రస్తుతం నడుస్తున్న రూపాంతరం తోడ్పాటుందని పేర్కొంటేనే గ్నోమ్ షెల్ పొడిగింతలను లోడు చేస్తుంది. ఈ "
+#~ "ఐచ్ఛికాన్ని చేతనం చేస్తే ఈ తనిఖీని అచేనించి, తోడ్పాటు ఉన్నాదా లేదా అనే విషయంతో సంబంధం లేకుండా అన్ని "
+#~ "పొడిగింతలను నింపుటకు ప్రయత్నిస్తుంది"
+
+#~ msgid "List of desktop file IDs for favorite applications"
+#~ msgstr "ప్రియమైన అనువర్తనాల కోసం డెస్క్‌టాప్‌ దస్త్ర ఐడీల యొక్క జాబితా"
+
+#~ msgid ""
+#~ "The applications corresponding to these identifiers will be displayed in "
+#~ "the favorites area."
+#~ msgstr "ఈ గుర్తింపకాలకు అనుగుణమైన అనువర్తనాలు ప్రియమైన ప్రదేశములో ప్రదర్శించబడతాయి."
+
+#~ msgid "App Picker View"
+#~ msgstr "అనువర్తన ఎంపికరి వీక్షణం"
+
+#~ msgid "Index of the currently selected view in the application picker."
+#~ msgstr "అనువర్తన ఎంపికరిలో ప్రస్తుతం ఎంపికచేసిన వీక్షణ సూచిక"
+
+#~ msgid "History for command (Alt-F2) dialog"
+#~ msgstr "ఆదేశ (Alt-F2) సంవాదం కోసం చరిత్ర"
+
+#~ msgid "History for the looking glass dialog"
+#~ msgstr "చూస్తున్న గ్లాసు సంవాదం కొరకు చరిత్ర"
+
+#~ msgid "Always show the 'Log out' menu item in the user menu."
+#~ msgstr "వాడుకరి మెనూ నందు ఎల్లప్పుడూ 'నిష్క్రమించు' మెనూ అంశాన్ని చూపించు."
+
+#~ msgid ""
+#~ "This key overrides the automatic hiding of the 'Log out' menu item in "
+#~ "single-user, single-session situations."
+#~ msgstr ""
+#~ "ఏక-వాడుకరి, ఏక-ఘట్టం పరిస్థితులలో 'నిష్క్రమించు' మెనూ అంశము స్వయంచాలకంగా దాగుటను ఈ మీట భర్తీ "
+#~ "చేస్తుంది."
+
+#~ msgid ""
+#~ "Whether to remember password for mounting encrypted or remote filesystems"
+#~ msgstr "ఎన్క్రిప్టెడ్ లేదా రిమోట్ దస్త్రవ్యవస్థల మౌంటు చేయుటకు సంకేతపదాలను గుర్తుంచుకోవాలా"
+
+#~ msgid ""
+#~ "The shell will request a password when an encrypted device or a remote "
+#~ "filesystem is mounted. If the password can be saved for future use a "
+#~ "'Remember Password' checkbox will be present. This key sets the default "
+#~ "state of the checkbox."
+#~ msgstr ""
+#~ "ఎన్క్రిప్టెడ్ పరికరం లేదా రిమోట్ దస్త్రవ్యవస్థ మౌంటవునప్పుడు షెల్ సంకేతపదం కొరకు అభ్యర్ధించును. "
+#~ "భవిష్య వినియోగం కొరకు సంకేతపదం దాయగలిగితే 'సంకేతపదం గుర్తుంచు' చెక్‌బాక్స్ వస్తుంది. ఈ కీ చెక్‌బాక్స్ "
+#~ "యొక్క అప్రమేయ స్థితిని అమర్చును."
+
+#~ msgid "Show the week date in the calendar"
+#~ msgstr "క్యాలెండరులో వారపు తేదీని చూపించు"
+
+#~ msgid "If true, display the ISO week date in the calendar."
+#~ msgstr "ఒకవేళ నిజమైతే, క్యాలెండరులో ISO వారము తేదీని ప్రదర్శిస్తుంది."
+
+#~ msgid "Keybinding to open the application menu"
+#~ msgstr "అనువర్తనం మెనూ తెరవడానికి  కీ బైండింగ్ "
+
+#~ msgid "Keybinding to open the application menu."
+#~ msgstr "అనువర్తనం మెనూ తెరవడానికి  కీ బైండింగ్ "
+
+#~ msgid "Keybinding to open the \"Show Applications\" view"
+#~ msgstr "\"అనువర్తనములు చూపు\" దర్శనంను తెరువుటకు కీబందనం"
+
+#~ msgid ""
+#~ "Keybinding to open the \"Show Applications\" view of the Activities "
+#~ "Overview."
+#~ msgstr "కార్యకలాపాల అవలోకనం యొక్క \"అనువర్తనములు చూపించు\" వీక్షణం తెరువుటకు కీ బందనం."
+
+#~ msgid "Keybinding to open the overview"
+#~ msgstr "అవలోకనాన్ని తెరుచుటకు కీబంధనం"
+
+#~ msgid "Keybinding to open the Activities Overview."
+#~ msgstr "కార్యకలాపాల అవలోకనాన్ని తెరుచుటకు కీబంధనం"
+
+#~ msgid "Keybinding to toggle the visibility of the message tray"
+#~ msgstr "సందేశ పళ్ళెం యొక్క దృగ్గోచరతను మార్చుటకు అడ్డదారి"
+
+#~ msgid "Keybinding to toggle the visibility of the message tray."
+#~ msgstr "సందేశ పళ్ళెం యొక్క దృగ్గోచరతను మార్చుటకు అడ్డదారి"
+
+#~ msgid "Keybinding to focus the active notification"
+#~ msgstr "క్రియాశీల ప్రకటన ఫోకస్‌కు కీబందనం"
+
+#~ msgid "Keybinding to focus the active notification."
+#~ msgstr "క్రియాశీల ప్రకటన ఫోకస్‌కు కీబందనం."
+
+#~ msgid ""
+#~ "Keybinding that pauses and resumes all running tweens, for debugging "
+#~ "purposes"
+#~ msgstr ""
+#~ "దోషవిశ్లేషణ కోసం, కీబైండింగు నడుస్తున్న అన్ని ట్వీన్లను తిరిగి కొనసాగిస్తుంది మరియు నిలిపివేస్తుంది."
+
+#~ msgid "Which keyboard to use"
+#~ msgstr "ఏ కీబోర్డ్ ఉపయోగించాలి"
+
+#~ msgid "The type of keyboard to use."
+#~ msgstr "ఉపయోగించుటకు కీబోర్డ్ రకము."
+
+#~ msgid "Limit switcher to current workspace."
+#~ msgstr "మార్పకాన్ని ప్రస్తుత కార్యక్షేత్రానికి పరిమితించు"
+
+#~ msgid ""
+#~ "If true, only applications that have windows on the current workspace are "
+#~ "shown in the switcher. Otherwise, all applications are included."
+#~ msgstr ""
+#~ "ఒకవేళ నిజమైతే, ప్రస్తుత కార్యక్షేత్రంలో ఉన్న అనువర్తనాల కిటికీలు మాత్రమే మార్పకంలో చూపించబడతాయి. "
+#~ "లేదంటే, అన్ని అనువర్తనాలు ఉంచబడతాయి."
+
+#~ msgid "The application icon mode."
+#~ msgstr "అనువర్తనం ప్రతిమ రీతి."
+
+#~ msgid ""
+#~ "Configures how the windows are shown in the switcher. Valid possibilities "
+#~ "are 'thumbnail-only' (shows a thumbnail of the window), 'app-icon-only' "
+#~ "(shows only the application icon) or 'both'."
+#~ msgstr ""
+#~ "స్విచర్ నందు కిటికీలు ఎలా చూపునో ఆకృతీకరించును. చెల్లునటువంటి సాధ్యాలు 'thumbnail-only' "
+#~ "(విండో థంబ్‌నెయిల్ చూపును), 'app-icon-only' (అనువర్తన ప్రతిమ మాత్రమే చూపును) లేదా 'both'."
+
+#~ msgid ""
+#~ "If true, only windows from the current workspace are shown in the "
+#~ "switcher. Otherwise, all windows are included."
+#~ msgstr ""
+#~ "ఒకవేళ నిజమైతే, ప్రస్తుత కార్యక్షేత్రంలో ఉన్న కిటికీలు మాత్రమే మార్పకంలో చూపించబడతాయి. లేదంటే, అన్ని "
+#~ "కిటికీలు ఉంచబడతాయి."
+
+#~ msgid "Attach modal dialog to the parent window"
+#~ msgstr "పేరెంట్ కిటికీకు మోడల్ డైలాగ్ జోడించు"
+
+#~ msgid ""
+#~ "This key overrides the key in org.gnome.mutter when running GNOME Shell."
+#~ msgstr "గ్నోమ్ షెల్ నందు నడుచునప్పుడు ఈ కీ org.gnome.mutter నందలి కీను వోవర్‌రైడ్ చేయును."
+
+#~ msgid "Enable edge tiling when dropping windows on screen edges"
+#~ msgstr "తెర అంచులనందు విండోలను విడువునప్పుడు ఎడ్జ్ టైటిలింగ్ చేతనం చేయి"
+
+#~ msgid "Workspaces are managed dynamically"
+#~ msgstr "కార్యక్షేత్రాలు గతికంగా నిర్వహించబడును"
+
+#~ msgid "Workspaces only on primary monitor"
+#~ msgstr "ప్రాధమిక మానిటర్ పైని కార్యక్షేత్రాలు మాత్రమే"
+
+#~ msgid "Delay focus changes in mouse mode until the pointer stops moving"
+#~ msgstr "మౌసు రీతిలో కేంద్రీకరణ మార్పులను పాయింటరు కదలిక ఆగే వరకూ ఆలస్యం చేయి"
+
+#~ msgid "Captive Portal"
+#~ msgstr "కాప్టివ్ పోర్టల్"
+
+#, javascript-format
+#~ msgid "There was an error loading the preferences dialog for %s:"
+#~ msgstr "%s కొరకు ప్రాధాన్యతల సంభాషణను నింపుటలో అక్కడ ఒక దోషం ఉన్నది:"
+
+#~ msgid "GNOME Shell Extensions"
+#~ msgstr "గ్నోమ్ షెల్ పొడిగింతలు"
+
+#~ msgid "Cancel"
+#~ msgstr "రద్దుచేయి"
+
+#~ msgid "Next"
+#~ msgstr "తరువాత"
+
+#~ msgid "Unlock"
+#~ msgstr "తాళంతీయి"
+
+#~ msgctxt "button"
+#~ msgid "Sign In"
+#~ msgstr "ప్రవేశించండి"
+
+#~ msgid "Choose Session"
+#~ msgstr "ఘట్టాన్ని ఎంచుకోండి"
+
+#~ msgid "Not listed?"
+#~ msgstr "జాబితా చేయలేదా?"
+
+#, javascript-format
+#~ msgid "(e.g., user or %s)"
+#~ msgstr "(ఉదా., వాడుకరి లేదా %s)"
+
+#~ msgid "Username: "
+#~ msgstr "వాడుకరిపేరు: "
+
+#~ msgid "Login Window"
+#~ msgstr "ప్రవేశ కిటికీ"
+
+#~ msgid "Authentication error"
+#~ msgstr "ధృవీకరణ దోషం"
+
+#~ msgid "(or swipe finger)"
+#~ msgstr "(లేదా వేలుతో స్వైప్‌చేయి)"
+
+#~ msgid "Command not found"
+#~ msgstr "ఆదేశము కనపడలేదు"
+
+#~ msgid "Could not parse command:"
+#~ msgstr "ఆదేశము పదనిరూపణ వీలుకాదు:"
+
+#, javascript-format
+#~ msgid "Execution of “%s” failed:"
+#~ msgstr "“%s” అమలు విఫలమైంది:"
+
+#~ msgid "Web Authentication Redirect"
+#~ msgstr "జాల ధృవీకరణ దారిమార్పు"
+
+#~ msgid "Frequently used applications will appear here"
+#~ msgstr "తరచూ వాడే అనువర్తనాలు ఇక్కడ కనిపిస్తాయి"
+
+#~ msgid "Frequent"
+#~ msgstr "తరచు"
+
+#~ msgid "All"
+#~ msgstr "అన్ని"
+
+#~ msgid "New Window"
+#~ msgstr "కొత్త కిటికీ"
+
+#~ msgid "Remove from Favorites"
+#~ msgstr "ఇష్టాంశాల నుండి తొలగించు"
+
+#~ msgid "Add to Favorites"
+#~ msgstr "ఇష్టాంశాలకు జతచేయి"
+
+#~ msgid "Show Details"
+#~ msgstr "వివరాలను చూపించు"
+
+#, javascript-format
+#~ msgid "%s has been added to your favorites."
+#~ msgstr "%s మీ ఇష్టాంశాలకు జతచేయబడింది."
+
+#, javascript-format
+#~ msgid "%s has been removed from your favorites."
+#~ msgstr "%s మీ ఇష్టాంశాల నుండి తీసివేయబడింది."
+
+#~ msgid "Settings"
+#~ msgstr "అమరికలు"
+
+#~ msgid "Change Background…"
+#~ msgstr "నేపథ్యాన్ని మార్చు..."
+
+#~ msgctxt "event list time"
+#~ msgid "All Day"
+#~ msgstr "రోజు మొత్తం"
+
+#~ msgctxt "event list time"
+#~ msgid "%H∶%M"
+#~ msgstr "%H∶%M"
+
+#~ msgctxt "event list time"
+#~ msgid "%l∶%M %p"
+#~ msgstr "%l∶%M %p"
+
+#~ msgctxt "grid sunday"
+#~ msgid "S"
+#~ msgstr "ఆ"
+
+#~ msgctxt "grid monday"
+#~ msgid "M"
+#~ msgstr "సో"
+
+#~ msgctxt "grid tuesday"
+#~ msgid "T"
+#~ msgstr "మ"
+
+#~ msgctxt "grid wednesday"
+#~ msgid "W"
+#~ msgstr "బు"
+
+#~ msgctxt "grid thursday"
+#~ msgid "T"
+#~ msgstr "గు"
+
+#~ msgctxt "grid friday"
+#~ msgid "F"
+#~ msgstr "శు"
+
+#~ msgctxt "grid saturday"
+#~ msgid "S"
+#~ msgstr "శ"
+
+#~ msgctxt "list sunday"
+#~ msgid "Su"
+#~ msgstr "ఆది"
+
+#~ msgctxt "list monday"
+#~ msgid "M"
+#~ msgstr "సోమ"
+
+#~ msgctxt "list tuesday"
+#~ msgid "T"
+#~ msgstr "మం"
+
+#~ msgctxt "list wednesday"
+#~ msgid "W"
+#~ msgstr "బుధ"
+
+#~ msgctxt "list thursday"
+#~ msgid "Th"
+#~ msgstr "గురు"
+
+#~ msgctxt "list friday"
+#~ msgid "F"
+#~ msgstr "శుక్ర"
+
+#~ msgctxt "list saturday"
+#~ msgid "S"
+#~ msgstr "శని"
+
+#~ msgid "Previous month"
+#~ msgstr "మునుపటి నెల"
+
+#~ msgid "Next month"
+#~ msgstr "తదుపరి నెల"
+
+#~ msgid "Nothing Scheduled"
+#~ msgstr "ఏ ప్రణాళిక లేదు"
+
+#~ msgctxt "calendar heading"
+#~ msgid "%A, %B %d"
+#~ msgstr "%A, %B %d"
+
+#~ msgctxt "calendar heading"
+#~ msgid "%A, %B %d, %Y"
+#~ msgstr "%A, %B %d, %Y"
+
+#~ msgid "Today"
+#~ msgstr "నేడు"
+
+#~ msgid "Tomorrow"
+#~ msgstr "రేపు"
+
+#~ msgid "This week"
+#~ msgstr "ఈ వారం"
+
+#~ msgid "Next week"
+#~ msgstr "తరువాత వారం"
+
+#~ msgid "External drive connected"
+#~ msgstr "బాహ్య డ్రైవు అనుసంధానమైంది"
+
+#~ msgid "External drive disconnected"
+#~ msgstr "బాహ్య డ్రైవ్ నిరనుసంధానించబడింది"
+
+#~ msgid "Removable Devices"
+#~ msgstr "తీసివేయదగు పరికరాలు"
+
+#, javascript-format
+#~ msgid "Open with %s"
+#~ msgstr "%s‍తో తెరువు"
+
+#~ msgid "Eject"
+#~ msgstr "బయటకునెట్టు"
+
+#~ msgid "Password:"
+#~ msgstr "సంకేతపదం:"
+
+#~ msgid "Type again:"
+#~ msgstr "మళ్ళీ టంకించండి:"
+
+#~ msgid "Password: "
+#~ msgstr "సంకేతపదం:"
+
+#~ msgid "Key: "
+#~ msgstr "మీట: "
+
+#~ msgid "Identity: "
+#~ msgstr "గుర్తింపు: "
+
+#~ msgid "Private key password: "
+#~ msgstr "వ్యక్తిగత కీ సంకేతపదం: "
+
+#~ msgid "Service: "
+#~ msgstr "సేవ: "
+
+#~ msgid "Authentication required by wireless network"
+#~ msgstr "వైర్‌లెస్ నెట్‌వర్క్ చేత ధృవీకరణ అవసరమైంది"
+
+#, javascript-format
+#~ msgid ""
+#~ "Passwords or encryption keys are required to access the wireless network "
+#~ "“%s”."
+#~ msgstr "నిస్తంత్రి నెట్‌వర్కు “%s” ప్రాప్యించుటకు సంకేతపదాలు లేదా ఎన్క్రిప్షన్ మీటలు అవసరం."
+
+#~ msgid "Wired 802.1X authentication"
+#~ msgstr "వైర్డ్ 802.1X ధృవీకరణ"
+
+#~ msgid "Network name: "
+#~ msgstr "నెట్‍‌వర్క్ పేరు: "
+
+#~ msgid "DSL authentication"
+#~ msgstr "DSL ధృవీకరణ"
+
+#~ msgid "PIN code required"
+#~ msgstr "PIN కోడ్ అవసరమైంది"
+
+#~ msgid "PIN code is needed for the mobile broadband device"
+#~ msgstr "మొబైల్ బ్రాడ్‌బాండ్ పరికరం కొరకు PIN కోడ్ అవసరమైంది"
+
+#~ msgid "PIN: "
+#~ msgstr "PIN: "
+
+#~ msgid "Mobile broadband network password"
+#~ msgstr "మొబైల్ బ్రాడ్‌బాండ్ నెట్వర్క్ సంకేతపదం"
+
+#, javascript-format
+#~ msgid "A password is required to connect to “%s”."
+#~ msgstr "“%s”కు అనుసంధానమగుటకు సంకేతపదం అవసరం."
+
+#~ msgid "Authentication Required"
+#~ msgstr "ధృవీకరణ అవసరం"
+
+#~ msgid "Administrator"
+#~ msgstr "నిర్వాహకుడు"
+
+#~ msgid "Authenticate"
+#~ msgstr "ధృవీకరించు"
+
+#~ msgid "Sorry, that didn't work. Please try again."
+#~ msgstr "క్షమించండి, అది పనిచేయలేదు. దయచేసి మరలా ప్రయత్నించండి."
+
+#~ msgid "Invitation"
+#~ msgstr "ఆహ్వానం"
+
+#~ msgid "Call"
+#~ msgstr "కాల్"
+
+#~ msgid "File Transfer"
+#~ msgstr "దస్త్ర బదిలీ"
+
+#~ msgid "Chat"
+#~ msgstr "సంభాషణ"
+
+#~ msgid "Unmute"
+#~ msgstr "శబ్దం"
+
+#~ msgid "Mute"
+#~ msgstr "నిశబ్దం"
+
+#~ msgid "%H∶%M"
+#~ msgstr "%H∶%M"
+
+#~ msgid "Yesterday, %H∶%M"
+#~ msgstr "నిన్న, %H∶%M"
+
+#~ msgid "%A, %H∶%M"
+#~ msgstr "%A, %H∶%M"
+
+#~ msgid "%B %d, %H∶%M"
+#~ msgstr "%B %d, %H∶%M"
+
+#~ msgid "%B %d %Y, %H∶%M"
+#~ msgstr "%B %d %Y, %H∶%M"
+
+#~ msgid "%l∶%M %p"
+#~ msgstr "%l∶%M %p"
+
+#~ msgid "Yesterday, %l∶%M %p"
+#~ msgstr "నిన్న, %l∶%M %p"
+
+#~ msgid "%A, %l∶%M %p"
+#~ msgstr "%A, %l∶%M %p"
+
+#~ msgid "%B %d, %l∶%M %p"
+#~ msgstr "%B %d, %l∶%M %p"
+
+#~ msgid "%B %d %Y, %l∶%M %p"
+#~ msgstr "%B %d %Y, %l∶%M %p"
+
+#, javascript-format
+#~ msgid "%s is now known as %s"
+#~ msgstr "%s ఇప్పుడు %s గా తెలుసు"
+
+#, javascript-format
+#~ msgid "Invitation to %s"
+#~ msgstr "%sకు ఆహ్వానం"
+
+#, javascript-format
+#~ msgid "%s is inviting you to join %s"
+#~ msgstr "%s మిమ్ములను %s పై చేరుటకు ఆహ్వానిస్తోంది"
+
+#~ msgid "Decline"
+#~ msgstr "తిరస్కరించు"
+
+#~ msgid "Accept"
+#~ msgstr "ఆమోదించు"
+
+#, javascript-format
+#~ msgid "Video call from %s"
+#~ msgstr "%s నుండి వీడియో కాల్"
+
+#, javascript-format
+#~ msgid "Call from %s"
+#~ msgstr "%s నుండి కాల్"
+
+#~ msgid "Answer"
+#~ msgstr "సమాధానమివ్వండి"
+
+#, javascript-format
+#~ msgid "%s is sending you %s"
+#~ msgstr "%s మీకు %s పంపుచున్నది"
+
+#, javascript-format
+#~ msgid "%s would like permission to see when you are online"
+#~ msgstr "మీరు ఆన్‌లైన్‌లో వున్నప్పుడు చూడుటకు %s అనుమతి కోరుతున్నారు"
+
+#~ msgid "Network error"
+#~ msgstr "నెట్‍‌వర్క్ దోషం"
+
+#~ msgid "Authentication failed"
+#~ msgstr "ధృవీకరణ వైఫల్యం"
+
+#~ msgid "Encryption error"
+#~ msgstr "ఎన్క్రిప్షన్ దోషం"
+
+#~ msgid "Certificate not provided"
+#~ msgstr "ధృవీకరణపత్రం అందించబడలేదు"
+
+#~ msgid "Certificate untrusted"
+#~ msgstr "ధృవీకరణపత్రం నమ్మలేనిది"
+
+#~ msgid "Certificate expired"
+#~ msgstr "ధృవీకరణపత్రం గడువుతీరెను"
+
+#~ msgid "Certificate not activated"
+#~ msgstr "ధృవీకరణపత్రం క్రియాశీలపరచబడిలేదు"
+
+#~ msgid "Certificate hostname mismatch"
+#~ msgstr "ధృవీకరణపత్రం హోస్టుపేరు సరిపోలలేదు"
+
+#~ msgid "Certificate fingerprint mismatch"
+#~ msgstr "ధృవీకరణపత్రం వ్రేలిముద్ర సరిపోలలేదు"
+
+#~ msgid "Certificate self-signed"
+#~ msgstr "ధృవీకరణపత్రం స్వతహాగా-సంతకంచేయబడెను"
+
+#~ msgid "Status is set to offline"
+#~ msgstr "స్థితి ఆఫ్‌లైన్‌కు అమర్చబడెను"
+
+#~ msgid "Encryption is not available"
+#~ msgstr "ఎన్క్రిప్షన్ అందుబాటులో లేదు"
+
+#~ msgid "Certificate is invalid"
+#~ msgstr "ధృవీకరణపత్రం చెల్లనిది"
+
+#~ msgid "Connection has been refused"
+#~ msgstr "అనుసంధానము తిరస్కరించబడెను"
+
+#~ msgid "Connection can't be established"
+#~ msgstr "అనుసంధానం ఏర్పరచలేము"
+
+#~ msgid "Connection has been lost"
+#~ msgstr "అనుసంధానము కోల్పోయాము"
+
+#~ msgid "This account is already connected to the server"
+#~ msgstr "ఈ ఖాతా ఇదివరకే సేవకానికి అనుసంధానమైంది"
+
+#~ msgid ""
+#~ "Connection has been replaced by a new connection using the same resource"
+#~ msgstr "అనుసంధానం అదే వనరు ఉపయోగించి కొత్త అనుసంధానంచే పునఃస్థాపించబడెను"
+
+#~ msgid "The account already exists on the server"
+#~ msgstr "ఖాతా ఇప్పటికే సేవికపైన ఉన్నది"
+
+#~ msgid "Server is currently too busy to handle the connection"
+#~ msgstr "అనుసంధానంను సంభాలించుటకు సేవిక మరీ వత్తిడిలో వుంది"
+
+#~ msgid "Certificate has been revoked"
+#~ msgstr "ధృవీకరణపత్రం కొట్టివేయబడింది"
+
+#~ msgid ""
+#~ "Certificate uses an insecure cipher algorithm or is cryptographically weak"
+#~ msgstr ""
+#~ "ధృవీకరణపత్రం సురక్షితం కాని సైఫర్ ఆల్గార్దెమ్ వుపయోగించుచున్నది లేదా క్రిప్టోగ్రఫీ పరంగా బలహీనంగా వుంది"
+
+#~ msgid ""
+#~ "The length of the server certificate, or the depth of the server "
+#~ "certificate chain, exceed the limits imposed by the cryptography library"
+#~ msgstr ""
+#~ "సేవిక ధృవీకరణపత్రం యొక్క పొడవు, లేదా సేవిక ధృవీకరణపత్రం చైన్ యొక్క లోతు, క్రిప్టోగ్రఫీ లైబ్రరీ చేత "
+#~ "నిర్దేశితమైన పరిమితులను మించును"
+
+#~ msgid "Internal error"
+#~ msgstr "అంతర్గత దోషం"
+
+#, javascript-format
+#~ msgid "Unable to connect to %s"
+#~ msgstr "%s కు అనుసంధానం కాలేకపోయింది"
+
+#~ msgid "View account"
+#~ msgstr "ఖాతాను చూడండి"
+
+#~ msgid "Unknown reason"
+#~ msgstr "తెలియని కారణం"
+
+#~ msgid "Windows"
+#~ msgstr "కిటికీలు"
+
+#~ msgid "Show Applications"
+#~ msgstr "అనువర్తనాలను చూపించు"
+
+#~ msgid "Dash"
+#~ msgstr "గీటు"
+
+#~ msgid "Open Calendar"
+#~ msgstr "క్యాలెండరు తెరువు"
+
+#~ msgid "Open Clocks"
+#~ msgstr "గడియారాలు తెరువు"
+
+#~ msgid "Date & Time Settings"
+#~ msgstr "తేదీ మరియు సమయం అమరికలు"
+
+#~ msgid "%A %B %e, %Y"
+#~ msgstr "%A %B %e, %Y"
+
+#, javascript-format
+#~ msgctxt "title"
+#~ msgid "Log Out %s"
+#~ msgstr "%s నిష్క్రమించు"
+
+#~ msgctxt "title"
+#~ msgid "Log Out"
+#~ msgstr "నిష్క్రమించు"
+
+#, javascript-format
+#~ msgid "%s will be logged out automatically in %d second."
+#~ msgid_plural "%s will be logged out automatically in %d seconds."
+#~ msgstr[0] "%s స్వయంచాలకంగా %d సెకనులో నిష్క్రమించును."
+#~ msgstr[1] "%s స్వయంచాలకంగా %d సెకనులలో నిష్క్రమించును."
+
+#, javascript-format
+#~ msgid "You will be logged out automatically in %d second."
+#~ msgid_plural "You will be logged out automatically in %d seconds."
+#~ msgstr[0] "మీరు %d సెకనులో స్వయంచాలకంగా నిష్క్రమిస్తారు."
+#~ msgstr[1] "మీరు %d సెకనులలో స్వయంచాలకంగా నిష్క్రమిస్తారు."
+
+#~ msgctxt "button"
+#~ msgid "Log Out"
+#~ msgstr "నిష్క్రమించు"
+
+#~ msgctxt "title"
+#~ msgid "Power Off"
+#~ msgstr "విద్యుత్ ఆపు"
+
+#~ msgctxt "title"
+#~ msgid "Install Updates & Power Off"
+#~ msgstr "నవీకరణలను స్థాపించి, విద్యుత్ ఆపు"
+
+#, javascript-format
+#~ msgid "The system will power off automatically in %d second."
+#~ msgid_plural "The system will power off automatically in %d seconds."
+#~ msgstr[0] "%d సెకన్లలో వ్యవస్థ స్వయంచాలకంగా ఆపివేయబడుతుంది."
+#~ msgstr[1] "%d సెకన్లలో వ్యవస్థ స్వయంచాలకంగా ఆపివేయబడుతుంది."
+
+#~ msgctxt "checkbox"
+#~ msgid "Install pending software updates"
+#~ msgstr "పెండింగులో ఉన్న సాఫ్ట్‌వేర్ నవీకరణలను స్థాపించు"
+
+#~ msgctxt "button"
+#~ msgid "Restart"
+#~ msgstr "పునఃప్రారంభించు"
+
+#~ msgctxt "button"
+#~ msgid "Power Off"
+#~ msgstr "విద్యుత్ ఆపు"
+
+#~ msgctxt "title"
+#~ msgid "Restart"
+#~ msgstr "పునఃప్రారంభించు"
+
+#, javascript-format
+#~ msgid "The system will restart automatically in %d second."
+#~ msgid_plural "The system will restart automatically in %d seconds."
+#~ msgstr[0] "%d సెకనులో వ్యవస్థ స్వయంచాలకంగా పునఃప్రారంభించబడుతుంది."
+#~ msgstr[1] "%d సెకనులలో వ్యవస్థ స్వయంచాలకంగా పునఃప్రారంభించబడుతుంది."
+
+#~ msgctxt "title"
+#~ msgid "Restart & Install Updates"
+#~ msgstr "నవీకరణలను స్థాపించి, పునఃప్రారంభించు"
+
+#, javascript-format
+#~ msgid ""
+#~ "The system will automatically restart and install updates in %d second."
+#~ msgid_plural ""
+#~ "The system will automatically restart and install updates in %d seconds."
+#~ msgstr[0] "%d క్షణాలలో నవీకరణలను స్థాపించి, వ్యవస్థ స్వయంచాలకంగా పునఃప్రారంభించబడుతుంది."
+#~ msgstr[1] "%d క్షణాలలో నవీకరణలను స్థాపించి, వ్యవస్థ స్వయంచాలకంగా పునఃప్రారంభించబడుతుంది."
+
+#~ msgctxt "button"
+#~ msgid "Restart &amp; Install"
+#~ msgstr "పునఃప్రారంభించి &amp; స్థాపించు"
+
+#~ msgctxt "button"
+#~ msgid "Install &amp; Power Off"
+#~ msgstr "స్థాపించి &amp; విద్యుత్ ఆపు"
+
+#~ msgctxt "checkbox"
+#~ msgid "Power off after updates are installed"
+#~ msgstr "నవీకరణలు స్థాపించిన తరువాత విద్యుత్ ఆపు"
+
+#~ msgid "Running on battery power: please plug in before installing updates."
+#~ msgstr "బ్యాటరీ శక్తితో నడుస్తూంది: దయచేసి నవీకరణలు స్థాపించే ముందు విద్యుత్ అనుసంధానించండి."
+
+#~ msgid "Some applications are busy or have unsaved work."
+#~ msgstr "కొన్ని అనువర్తనాలు బిజీగా ఉన్నాయి లేదా భద్రపరుచని పని ఉండిపోయింది."
+
+#~ msgid "Other users are logged in."
+#~ msgstr "వేరే వాడుకరులు లాగిన్ అయివున్నారు."
+
+#, javascript-format
+#~ msgid "%s (remote)"
+#~ msgstr "%s (రిమోట్)"
+
+#, javascript-format
+#~ msgid "%s (console)"
+#~ msgstr "%s (కన్సోల్)"
+
+#~ msgid "Install"
+#~ msgstr "స్థాపించు"
+
+#, javascript-format
+#~ msgid "Download and install “%s” from extensions.gnome.org?"
+#~ msgstr "extensions.gnome.org నుండి “%s” దింపుకొని, స్థాపించాలా?"
+
+#~ msgid "Keyboard"
+#~ msgstr "కీబోర్డు"
+
+#~ msgid "No extensions installed"
+#~ msgstr "ఏ పొడిగింతలు స్థాపించబడిలేవు"
+
+#, javascript-format
+#~ msgid "%s has not emitted any errors."
+#~ msgstr "%s ఎటువంటి దోషాలను ఉద్గారించలేదు."
+
+#~ msgid "Hide Errors"
+#~ msgstr "దోషాలను దాయి"
+
+#~ msgid "Show Errors"
+#~ msgstr "దోషాలను చూపించు"
+
+#~ msgid "Enabled"
+#~ msgstr "చేతనమైనది"
+
+#~ msgid "Disabled"
+#~ msgstr "అచేతనమైనది"
+
+#~ msgid "Error"
+#~ msgstr "దోషం"
+
+#~ msgid "Out of date"
+#~ msgstr "కాలం చెల్లినది"
+
+#~ msgid "Downloading"
+#~ msgstr "దింపుకుంటున్నది"
+
+#~ msgid "View Source"
+#~ msgstr "మూలాన్ని చూడు"
+
+#~ msgid "Web Page"
+#~ msgstr "జాల పుట"
+
+#~ msgid "Open"
+#~ msgstr "తెరువు"
+
+#~ msgid "Remove"
+#~ msgstr "తీసివేయి"
+
+#~ msgid "Notifications"
+#~ msgstr "ప్రకటనలు"
+
+#~ msgid "Clear Messages"
+#~ msgstr "సందేశాలు తుడిచివేయి"
+
+#~ msgid "Notification Settings"
+#~ msgstr "ప్రకటనల అమరికలు"
+
+#~ msgid "Tray Menu"
+#~ msgstr "పళ్ళెం జాబితా"
+
+#~ msgid "No Messages"
+#~ msgstr "సందేశాలు లేవు"
+
+#~ msgid "Message Tray"
+#~ msgstr "సందేశ పళ్ళెం"
+
+#~ msgid "System Information"
+#~ msgstr "వ్యవస్థ సమాచారం"
+
+#~ msgctxt "program"
+#~ msgid "Unknown"
+#~ msgstr "తెలియదు"
+
+#, javascript-format
+#~ msgid "%d new message"
+#~ msgid_plural "%d new messages"
+#~ msgstr[0] "%d కొత్త సందేశం"
+#~ msgstr[1] "%d కొత్త సందేశాలు"
+
+#~ msgid "Undo"
+#~ msgstr "రద్దుచేయి"
+
+#~ msgid "Overview"
+#~ msgstr "పర్యావలోకనం"
+
+#~ msgid "Type to search…"
+#~ msgstr "వెతకడానికి టైపు చేయండి…"
+
+#~ msgid "Quit"
+#~ msgstr "నిష్క్రమించు"
+
+#~ msgid "Activities"
+#~ msgstr "కార్యకలాపాలు"
+
+#~ msgid "Top Bar"
+#~ msgstr "పైన పట్టీ"
+
+#~ msgid "toggle-switch-us"
+#~ msgstr "టోగిల్-స్విచ్-అజ్"
+
+#~ msgid "Enter a Command"
+#~ msgstr "ఒక ఆదేశమును ప్రవేశపెట్టండి"
+
+#~ msgid "Close"
+#~ msgstr "మూసివేయి"
+
+#~ msgid "Restarting…"
+#~ msgstr "పునఃప్రారంభిస్తున్నాము…"
+
+#~ msgid "%A, %B %d"
+#~ msgstr "%A, %B %d"
+
+#, javascript-format
+#~ msgid "%d new notification"
+#~ msgid_plural "%d new notifications"
+#~ msgstr[0] "%d కొత్త గమనింపు"
+#~ msgstr[1] "%d కొత్త గమనింపులు"
+
+#~ msgid "Lock"
+#~ msgstr "తాళంవేయి"
+
+#~ msgid "GNOME needs to lock the screen"
+#~ msgstr "గ్నోమ్ తెరకు తాళం వేయవలసివుంది"
+
+#~ msgid "Unable to lock"
+#~ msgstr "తాళం వేయలేకపోతూంది"
+
+#~ msgid "Lock was blocked by an application"
+#~ msgstr "తాళం ఒక అనువర్తనం చేత నిరోధించబడింది"
+
+#~ msgid "Searching…"
+#~ msgstr "వెతుకుతోంది..."
+
+#~ msgid "No results."
+#~ msgstr "ఏ ఫలితాలు లేవు."
+
+#~ msgid "Copy"
+#~ msgstr "నకలించు"
+
+#~ msgid "Paste"
+#~ msgstr "అతికించు"
+
+#~ msgid "Show Text"
+#~ msgstr "పాఠం చూపించు"
+
+#~ msgid "Hide Text"
+#~ msgstr "పాఠ్యం దాయి"
+
+#~ msgid "Password"
+#~ msgstr "సంకేతపదం"
+
+#~ msgid "Remember Password"
+#~ msgstr "సంకేతపదాన్ని గుర్తుంచుకొను"
+
+#~ msgid "Accessibility"
+#~ msgstr "ప్రాపనీయత"
+
+#~ msgid "Zoom"
+#~ msgstr "జూమ్"
+
+#~ msgid "Screen Reader"
+#~ msgstr "తెర చదువకం"
+
+#~ msgid "Screen Keyboard"
+#~ msgstr "తెర కీబోర్డు"
+
+#~ msgid "Visual Alerts"
+#~ msgstr "దృశ్యమాన అప్రమత్తతలు"
+
+#~ msgid "Sticky Keys"
+#~ msgstr "స్టికీ కీలు"
+
+#~ msgid "Slow Keys"
+#~ msgstr "నెమ్మది కీలు"
+
+#~ msgid "Bounce Keys"
+#~ msgstr "బౌన్స్ కీలు"
+
+#~ msgid "Mouse Keys"
+#~ msgstr "మౌస్ కీలు"
+
+#~ msgid "High Contrast"
+#~ msgstr "అధిక వ్యత్యాసం"
+
+#~ msgid "Large Text"
+#~ msgstr "అతిపెద్ద పాఠ్యము"
+
+#~ msgid "Bluetooth"
+#~ msgstr "బ్లూటూత్"
+
+#~ msgid "Turn Off"
+#~ msgstr "చేతనించు"
+
+#~ msgid "Bluetooth Settings"
+#~ msgstr "బ్లూటూత్ అమరికలు"
+
+#, javascript-format
+#~ msgid "%d Connected Device"
+#~ msgid_plural "%d Connected Devices"
+#~ msgstr[0] "%d అనుసంధానించబడిన పరికరం"
+#~ msgstr[1] "%d అనుసంధానించబడిన పరికరాలు"
+
+#~ msgid "Not Connected"
+#~ msgstr "అనుసంధానించబడలేదు"
+
+#~ msgid "Brightness"
+#~ msgstr "ప్రకాశత"
+
+#~ msgid "Show Keyboard Layout"
+#~ msgstr "కీబోర్డు నమూనాను చూపించు"
+
+#~ msgid "Location"
+#~ msgstr "స్థానం"
+
+#~ msgid "Disable"
+#~ msgstr "అచేతనించు"
+
+#~| msgid "Power Settings"
+#~ msgid "Privacy Settings"
+#~ msgstr "గోప్యతా అమరికలు"
+
+#~ msgid "In Use"
+#~ msgstr "వాడుకలో వుంది"
+
+#~ msgid "Enable"
+#~ msgstr "చేతనించు"
+
+#~ msgid "<unknown>"
+#~ msgstr "<తెలియదు>"
+
+#~ msgid "Connected"
+#~ msgstr "అనుసంధానమైంది"
+
+#~ msgid "Unmanaged"
+#~ msgstr "అస్థవ్యస్థం"
+
+#~ msgid "Disconnecting"
+#~ msgstr "అననుసంధానిస్తున్నాము"
+
+#~ msgid "Connecting"
+#~ msgstr "అనుసంధానిస్తూంది"
+
+#~ msgid "Authentication required"
+#~ msgstr "ధృవీకరణ అవసరం"
+
+#~ msgid "Firmware missing"
+#~ msgstr "ఫిర్మ్​వేర్ తప్పిపోయినది"
+
+#~ msgid "Unavailable"
+#~ msgstr "అందుబాటులోలేదు"
+
+#~ msgid "Connection failed"
+#~ msgstr "అనుసంధానం విఫలమైంది"
+
+#~ msgid "Wired Settings"
+#~ msgstr "తంత్రి అమరికలు"
+
+#~ msgid "Mobile Broadband Settings"
+#~ msgstr "మొబైల్ బ్రాడ్‌బాండ్ అమరికలు"
+
+#~ msgid "Hardware Disabled"
+#~ msgstr "హార్డువేర్ అచేతనించబడింది"
+
+#~ msgid "Use as Internet connection"
+#~ msgstr "అంతర్జాల అనుసంధానం వలె ఉపయోగించు"
+
+#~ msgid "Airplane Mode is On"
+#~ msgstr "విమాన రీతి చేతనం"
+
+#~ msgid "Wi-Fi is disabled when airplane mode is on."
+#~ msgstr "విమాన రీతి ప్రారంభించబడినప్పుడు వై-ఫై అచేతనించబడుతుంది."
+
+#~ msgid "Turn Off Airplane Mode"
+#~ msgstr "విమాన రీతిని ఆపివేయి"
+
+#~ msgid "Wi-Fi is Off"
+#~ msgstr "వై-ఫై ఆపబడింది"
+
+#~ msgid "Wi-Fi needs to be turned on in order to connect to a network."
+#~ msgstr "నెట్‌వర్కుకు అనుసంధానం కావాలంటే వై-ఫై చేతనమైవుండాలి."
+
+#~ msgid "Turn On Wi-Fi"
+#~ msgstr "వై-ఫై ప్రారంభించు"
+
+#~ msgid "Wi-Fi Networks"
+#~ msgstr "వై-ఫై నెట్‍‌వర్కులు"
+
+#~ msgid "Select a network"
+#~ msgstr "ఒక నెట్‌వర్కును ఎంచుకోండి"
+
+#~ msgid "No Networks"
+#~ msgstr "ఏ నెట్‍‌వర్కులు లేవు"
+
+#~ msgid "Use hardware switch to turn off"
+#~ msgstr "ఆపివేయుటకు హార్డ్‌వేర్ మీటను వాడండి"
+
+#~ msgid "Select Network"
+#~ msgstr "నెట్‍‌వర్క్ ఎంచుకోండి"
+
+#~ msgid "Wi-Fi Settings"
+#~ msgstr "వై-ఫై అమరికలు"
+
+#~ msgid "Turn On"
+#~ msgstr "అచేతనించు"
+
+#~ msgid "Hotspot Active"
+#~ msgstr "హాట్‌స్పాట్ క్రియాశీలం"
+
+#~ msgid "connecting..."
+#~ msgstr "అనుసంధానిస్తున్నది..."
+
+#~ msgid "authentication required"
+#~ msgstr "ప్రమాణీకరణ అవసరం"
+
+#~ msgid "connection failed"
+#~ msgstr "అనుసంధానం విఫలమైంది"
+
+#~ msgid "Network Settings"
+#~ msgstr "నెట్‌వర్క్ అమరికలు"
+
+#~ msgid "VPN Settings"
+#~ msgstr "VPN అమరికలు"
+
+#~ msgid "VPN"
+#~ msgstr "VPN"
+
+#~ msgid "Network Manager"
+#~ msgstr "నెట్‍‌వర్క్ నిర్వాహకము"
+
+#~ msgid "Activation of network connection failed"
+#~ msgstr "నెట్‌వర్క్అనుసంధానం క్రియాశీలపరచుట విఫలమైంది"
+
+#~ msgid "Power Settings"
+#~ msgstr "విద్యుత్ అమరికలు"
+
+#~ msgid "Fully Charged"
+#~ msgstr "పూర్తిగా చార్జయింది"
+
+#~ msgid "Estimating…"
+#~ msgstr "అంచనావేస్తున్నది…"
+
+#, javascript-format
+#~ msgid "%d∶%02d Remaining (%d%%)"
+#~ msgstr "%d∶%02d మిగిలివున్నది (%d%%)"
+
+#, javascript-format
+#~ msgid "%d∶%02d Until Full (%d%%)"
+#~ msgstr "%d∶%02d పూర్తయ్యేవరకు (%d%%)"
+
+#~ msgid "UPS"
+#~ msgstr "UPS"
+
+#~ msgid "Battery"
+#~ msgstr "బ్యాటరీ"
+
+#~ msgid "Airplane Mode"
+#~ msgstr "విమాన రీతి"
+
+#~ msgid "Switch User"
+#~ msgstr "వాడుకరిని మార్చు"
+
+#~ msgid "Log Out"
+#~ msgstr "నిష్క్రమించు"
+
+#~ msgid "Orientation Lock"
+#~ msgstr "దిశ తాళం"
+
+#~ msgid "Suspend"
+#~ msgstr "తాత్కాలికంగా నిలిపివేయి"
+
+#~ msgid "Power Off"
+#~ msgstr "విద్యుత్ ఆపు"
+
+#~ msgid "Volume changed"
+#~ msgstr "ధ్వనిస్థాయి మార్చబడింది"
+
+#~ msgid "Volume"
+#~ msgstr "ధ్వనిస్థాయి"
+
+#~ msgid "Microphone"
+#~ msgstr "మైక్రోఫోను"
+
+#~ msgid "Log in as another user"
+#~ msgstr "వేరొక వాడుకరి వలె ప్రవేశించండి"
+
+#~ msgid "Unlock Window"
+#~ msgstr "కిటికీ తాళంతీయి"
+
+#~ msgid "Applications"
+#~ msgstr "అనువర్తనాలు"
+
+#~ msgid "Search"
+#~ msgstr "వెతుకు"
+
+#, javascript-format
+#~ msgid "“%s” is ready"
+#~ msgstr "“%s” సిద్ధం"
+
+#~ msgid "Do you want to keep these display settings?"
+#~ msgstr "ఈ ప్రదర్శనా అమరికలను ఉంచుకోవాలనుకుంటున్నారా?"
+
+#~ msgid "Revert Settings"
+#~ msgstr "అమరికలను తిరితిప్పు"
+
+#~ msgid "Keep Changes"
+#~ msgstr "మార్పులను ఉంచు"
+
+#, javascript-format
+#~ msgid "Settings changes will revert in %d second"
+#~ msgid_plural "Settings changes will revert in %d seconds"
+#~ msgstr[0] "%d క్షణంలో అమరికలు తిరితిప్పబడతాయి"
+#~ msgstr[1] "%d క్షణాలలో అమరికలు తిరితిప్పబడతాయి"
+
+#~ msgid "Minimize"
+#~ msgstr "చిన్నగించు"
+
+#~ msgid "Unmaximize"
+#~ msgstr "కాస్త చిన్నదిగాచేయి"
+
+#~ msgid "Maximize"
+#~ msgstr "పెద్దగించు"
+
+#~ msgid "Move"
+#~ msgstr "తరలించు"
+
+#~ msgid "Resize"
+#~ msgstr "పరిమాణం మార్చు"
+
+#~ msgid "Move Titlebar Onscreen"
+#~ msgstr "శీర్షికపట్టీ పైతెరను తరలించు"
+
+#~ msgid "Always on Top"
+#~ msgstr "ఎల్లప్ఫుడు పైనే"
+
+#~ msgid "Always on Visible Workspace"
+#~ msgstr "ఎల్లప్పుడూ కనిపిస్తున్న కార్యక్షేత్రం పైనే (_A)"
+
+#~ msgid "Move to Workspace Up"
+#~ msgstr "పనిచేస్తున్న చోటునుండీ పైకి వెళ్ళు"
+
+#~ msgid "Move to Workspace Down"
+#~ msgstr "పనిచేస్తున్న చోటునుండీ కిందకు వెళ్ళు"
+
+#~ msgid "Evolution Calendar"
+#~ msgstr "ఎవల్యూషన్ క్యాలెండరు"
+
+#, c-format
+#~ msgid "%u Output"
+#~ msgid_plural "%u Outputs"
+#~ msgstr[0] "%u అవుట్‌పుట్"
+#~ msgstr[1] "%u అవుట్‌పుట్‌లు"
+
+#, c-format
+#~ msgid "%u Input"
+#~ msgid_plural "%u Inputs"
+#~ msgstr[0] "%u ఇన్‌పుట్"
+#~ msgstr[1] "%u ఇన్‌పుట్‌లు"
+
+#~ msgid "System Sounds"
+#~ msgstr "వ్యవస్థ శబ్దములు"
+
+#~ msgid "Print version"
+#~ msgstr "ముద్రిత రూపాంతరం"
+
+#~ msgid "Mode used by GDM for login screen"
+#~ msgstr "ప్రవేశ తెర కొరకు GDM చే ఉపయోగించబడిన రీతి"
+
+#~ msgid "Use a specific mode, e.g. \"gdm\" for login screen"
+#~ msgstr "ఒక నిర్దిష్ట రీతిని వాడు, ఉదా. ప్రవేశ తెర కొరకు \"gdm\""
+
+#~ msgid "List possible modes"
+#~ msgstr "సాధ్యమగు రీతులను జాబితాగా చేయి"
+
+#, c-format
+#~ msgid "Failed to launch “%s”"
+#~ msgstr "“%s” ప్రారంభించుటలో విఫలమైంది"
+
+#~ msgid "Passwords do not match."
+#~ msgstr "సంకేతపదాలు సరిపోలడంలేదు."
+
+#~ msgid "Password cannot be blank"
+#~ msgstr "సంకేతపదము ఖాళీగా ఉండకూడదు"
+
+#~ msgid "Authentication dialog was dismissed by the user"
+#~ msgstr "ప్రమాణీకరణ సంవాదం వాడుకరిచే రద్దుచేయబడింది"
+
+#~ msgid "The maximum accuracy level of location."
+#~ msgstr "స్థానం యొక్క గరిష్ఠ ఖచ్ఛితత్వ స్థాయి."
+
+#~ msgid ""
+#~ "Configures the maximum level of location accuracy applications are "
+#~ "allowed to see. Valid options are 'off' (disable location tracking), "
+#~ "'country', 'city', 'neighborhood', 'street', and 'exact' (typically "
+#~ "requires GPS receiver). Please keep in mind that this only controls what "
+#~ "GeoClue will allow applications to see and they can find user's location "
+#~ "on their own using network resources (albeit with street-level accuracy "
+#~ "at best)."
+#~ msgstr ""
+#~ "గరిష్ట స్థాయిలో స్థానం ఖచ్చితత్వ అనువర్తనాలు చూడటానికి అనుమతించుటను స్వరూపిస్తుంది. చెల్లుబాటు "
+#~ "అయ్యే ఐచ్ఛికాలు 'ఆపివేయి' (స్థానం జాడ అచేతనం), 'దేశం', 'పట్టణం', 'పొరుగు', 'వీధి', 'మరియు "
+#~ "'ఖచ్చితం' (సాధారణంగా GPS రిసీవర్ అవసరం) ఉంటాయి. ఇది కేవలం జియోక్లూ అనువర్తనాలకు ఏమైతే చూడటానికి "
+#~ "అనుమతినిస్తుందో వాటిని మాత్రమే నియంత్రిస్తుంది మరియు అవి వాడుకరి స్థానాన్ని వాటి స్వంతంగా నెట్‌వర్కు "
+#~ "వనరులను ఉపయోగించి కనుక్కోగలవని గమనించగలరు (ఆల్బెట్‌తో వీధి స్థాయి కచ్చితత్వం ఉత్తమం)"
+
+#~ msgid "Arrangement of buttons on the titlebar"
+#~ msgstr "శీర్షికపట్టీ పై బటన్స్ యొక్క పేర్పు"
+
+#~ msgid ""
+#~ "This key overrides the key in org.gnome.desktop.wm.preferences when "
+#~ "running GNOME Shell."
+#~ msgstr ""
+#~ "గ్నోమ్ షెల్ నందు నడుచునప్పుడు ఈ కీ org.gnome.desktop.wm.preferences నందలి కీను "
+#~ "వోవర్‌రైడ్ చేయును."
+
+#~ msgid "Extension"
+#~ msgstr "పొడిగింత"
+
+#~ msgid "Select an extension to configure using the combobox above."
+#~ msgstr "పైన ఉన్న కోంబోపెట్టెను వాడి స్వరూపించుటకు అనువర్తనాన్ని ఎంచుకోండి."
+
+#~ msgid "calendar:MY"
+#~ msgstr "క్యాలెండరు:నా"
+
+#~ msgid "Screenshots"
+#~ msgstr "తెరపట్టులు"
+
+#~ msgid "Record a screencast"
+#~ msgstr "తెరప్రసారాన్ని రికార్డించు"
+
+#~ msgid "Whether to collect stats about applications usage"
+#~ msgstr "అనువర్తనాలు వాడుక గురించిన గణాంకాలను సేకరించాలా వద్దా"
+
+#~ msgid ""
+#~ "The shell normally monitors active applications in order to present the "
+#~ "most used ones (e.g. in launchers). While this data will be kept private, "
+#~ "you may want to disable this for privacy reasons. Please note that doing "
+#~ "so won't remove already saved data."
+#~ msgstr ""
+#~ "ఎక్కువగా వాడిన వాటిని సమర్పించడానికి షెల్ సాధారణంగా క్రియాశీల అనువర్తనాలను పర్యవేక్షిస్తుంది (ఉదా. "
+#~ "ప్రారంభకాలలో). అపుడు ఈ డేటా గోప్యంగా ఉంచబడుతుంది, గోప్యతా కారణాల వలన మీరు దీనిని "
+#~ "అచేతనపరచాలనుకోవచ్చు. దయచేసి గుర్తుంచుకోండి ఇలా చేయడం వలన ఇదివరకే దాచబడిన డేటా తీసివేయబడదు."
+
+#~ msgid "List of categories that should be displayed as folders"
+#~ msgstr "సంచయాల వలె ప్రదర్శించబడవలసిన వర్గముల జాబితా"
+
+#~ msgid ""
+#~ "Each category name in this list will be represented as folder in the "
+#~ "application view, rather than being displayed inline in the main view."
+#~ msgstr ""
+#~ "ఈ జాబితానందలి ప్రతి వర్గపు పేరు ముఖ్య దర్శనం నందు యిన్‌లైన్‌గా ప్రదర్శించబడుట కన్నా, అనువర్తన "
+#~ "దర్శనం నందు ఫోల్డర్ వలె చూపబడును."
+
+#~ msgid ""
+#~ "Internally used to store the last IM presence explicitly set by the user. "
+#~ "The value here is from the TpConnectionPresenceType enumeration."
+#~ msgstr ""
+#~ "అంతర్గతంగా స్పష్టంగా వినియోగదారుని  ద్వారా సెట్ చివరి IM ఉనికిని నిల్వ చేయడానికి ఉపయోగించారు. ఇక్కడ "
+#~ "విలువ Tp కనెక్షన్ ఉనికి పద్ధతి వయనము నుండి ఉంది."
+
+#~ msgid ""
+#~ "Internally used to store the last session presence status for the user. "
+#~ "The value here is from the GsmPresenceStatus enumeration."
+#~ msgstr ""
+#~ "అంతర్గతంగా యూజర్ కోసం చివరి సెషన్ ఉనికిని స్థితి నిల్వ చేయడానికి ఉపయోగించారు. ఇక్కడ విలువ GSM ఉనికి "
+#~ "స్థితి వయనము నుండి ఉంది."
+
+#~ msgid "Keybinding to toggle the screen recorder"
+#~ msgstr "తెర రికార్డరుని మార్చుటకు అడ్డదారి"
+
+#~ msgid "Keybinding to start/stop the builtin screen recorder."
+#~ msgstr "అప్రమేయ తెర రికార్డరుని ప్రారంభించుటకు/ఆపడానికి అడ్డదారి."
+
+#~ msgid "Framerate used for recording screencasts."
+#~ msgstr "ఫ్రేమ్‌రేట్ అను దానిని తెరప్రసారాలను రికార్డు చేయుటకు వాడతారు."
+
+#~ msgid ""
+#~ "The framerate of the resulting screencast recordered by GNOME Shell's "
+#~ "screencast recorder in frames-per-second."
+#~ msgstr ""
+#~ "ఫలితముగా వచ్చు తెర ప్రసారము యొక్క ఫ్రేమ్ రేటు గ్నోమ్ షెల్ తెరప్రసార రికార్డర్ ఫ్రేమ్ పర్ సెకనులలో "
+#~ "రికార్డుచేయబడుతుంది."
+
+#~ msgid "The gstreamer pipeline used to encode the screencast"
+#~ msgstr "తెరప్రసారాన్ని ఎన్‌కోడ్ చేయడానికి జి స్ట్రీమర్ పైప్‌లైన్ వాడబడుతుంది"
+
+#~ msgid ""
+#~ "Sets the GStreamer pipeline used to encode recordings. It follows the "
+#~ "syntax used for gst-launch. The pipeline should have an unconnected sink "
+#~ "pad where the recorded video is recorded. It will normally have a "
+#~ "unconnected source pad; output from that pad will be written into the "
+#~ "output file. However the pipeline can also take care of its own output - "
+#~ "this might be used to send the output to an icecast server via shout2send "
+#~ "or similar. When unset or set to an empty value, the default pipeline "
+#~ "will be used. This is currently 'vp8enc min_quantizer=13 max_quantizer=13 "
+#~ "cpu-used=5 deadline=1000000 threads=%T ! queue ! webmmux' and records to "
+#~ "WEBM using the VP8 codec. %T is used as a placeholder for a guess at the "
+#~ "optimal thread count on the system."
+#~ msgstr ""
+#~ "రికార్డింగులను ఎన్‌కోడ్ చేయడానికి జిస్ట్రీమర్ పైప్‌లైన్‌ను అమర్చును. ఇది gst-launch కొరకు "
+#~ "వ్యాక్యనిర్మాణాన్ని అనుసరిస్తుంది. వీడియో ఎక్కడైతే రికార్డు అవుతుందో అక్కడ ఒక అనుసంధానం కాని సింక్ "
+#~ "ప్యాడ్‌ని కలిగివుండాలి. ఇది సాధారణంగా ఒక అనుసంధానము కాని మూలము ప్యాడ్ అయివుంటుంది; ఈ ప్యాడ్ నుండి "
+#~ "వచ్చు అవుట్‌పుట్ అవుట్‌పుట్ దస్త్రంలోనికి వ్రాయబడుతుంది. ఏదిఏమైనప్పటికీ పైప్ లైన్ కూడా దాని అవుట్‌పుట్ "
+#~ "గురించి భద్రత వహిస్తుంది - ఇది అవుట్‌పుట్‌ని ఐస్‌కాస్ట్ సేవకానికి shout2send లేదా ఇటువంటి వాటి ద్వారా "
+#~ "పంపుటకు వాడబడుతుంది. అమర్చకపోయినా లేక ఒక ఖాళీ విలువకి అమర్చినా, అప్రమేయ పైప్‌లైన్ వాడబడుతుంది, "
+#~ "ఇది ప్రస్తుతం 'vp8enc min_quantizer=13 max_quantizer=13 cpu-used=5 "
+#~ "deadline=1000000 threads=%T ! queue ! webmmux' మరియు VP8 కొడెక్ వాడి WEBMకి "
+#~ "రికార్డుచేస్తుంది. %T అనేది వ్యవస్థ పై ఒక ప్లేస్‌హోల్డర్ వలె గ్వెస్ కొరకు ఆప్టిమల్ త్రెడ్ కౌంట్ "
+#~ "వాడబడుతుంది."
+
+#~ msgid "File extension used for storing the screencast"
+#~ msgstr "దస్త్ర పొడిగింతను తెరప్రసారాన్ని భద్రపరుచుటకు వాడతారు"
+
+#~ msgid ""
+#~ "The filename for recorded screencasts will be a unique filename based on "
+#~ "the current date, and use this extension. It should be changed when "
+#~ "recording to a different container format."
+#~ msgstr ""
+#~ "రికార్డుచేయబడిన తెరప్రసారాలకు దస్త్రము పేరు ప్రస్తుత తేదీ పై ఆధారపడి దస్త్రం పేరు ఒకే విధముగా "
+#~ "ఉంటుంది, మరియు ఈ పొడిగింతను వాడండి. ఇది వేరే ఇతర ఆకృతిలో రికార్డు చేస్తున్నపుడు ఇది మార్చబడాలి."
