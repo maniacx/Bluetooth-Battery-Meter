@@ -8,8 +8,25 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-45_Version 43 &emsp;&emsp; Feb 03, 2026
+> * IndicatorIconWidget: Fix TypeError from missing _batteryBounds in dot layout. credits: tmavro
+> * Bugfix: Update icon in prefs and BT quicksettings menu when changed for enhanced device
+> * Added option to keep BT quicksetting menu unmodified (default Gnome behavior)
+> * Use radial gradient in battery ring for better rendering
+> * Refactor Bluetooth profile and socket management for stability
+> * Improvement in MediaController
+> * Remove support for GNOME45
+> * Fix texture scaling on GNOME 47 for battery circle widget/indicators
+> * Drop ConfigureWindow icon from header bar layout
+> * Support dynamic updates for checkboxes and toggle buttons in prefs
+> * Prefs: allow ConfigureWindow to be modal or non-modal
+> * Italian translations: credit AlexFalappa
+> * Brazilian Portuguese translations: credits: devlulcas
+> * Polish translations: credits: alewicki95
+
+{: .important-title }
 > GN-45_Version 42 &emsp;&emsp; Dec 20, 2025
-> * Bugfix: Bugfix: Hover mode not working for devices that report battery status via BlueZ 
+> * Bugfix: Hover mode not working for devices that report battery status via BlueZ 
 > * Use Gio cancelable for launching configure window script
 
 {: .important-title }
@@ -24,13 +41,13 @@ permalink: /changelogs
 > * Airpods: Removed Airpods/Beats Album arts png in favor of Generic png.
 > * Option to set change earbuds, headphone, case icons for Enhanced device (Airpods, Sony)
 > * Ukranian translations: credit Bohdan@crowdin
-> * Polish translations: credits alewicki95
+> * Polish translations: credits: alewicki95
 
 {: .important-title }
 > GN-45_Version 40 &emsp;&emsp; Sep 28, 2025
 > * Added support for Airpods Pro 3
 > * Fix bug, that would not display Airpods/Beats single device in GUI.
-> * Italian translations: credits AlexFalappa
+> * Italian translations: credits: AlexFalappa
 
 {: .important-title }
 > GN-45_Version 39 &emsp;&emsp; Sep 15, 2025
@@ -38,11 +55,11 @@ permalink: /changelogs
 > * Add option to display indicator without Battery Level dot/bar
 > * Improved theme compatibility
 > * Corrected screen reader prompts
-> * Polish translations: credits alewicki95
+> * Polish translations: credits: alewicki95
 
 {: .important-title }
 > GN-45_Version 38 &emsp;&emsp; Sep 04, 2025
-> * WidgetManager: disconnect signal / remove timeout before initiating new ones. There could be multiple instance this is called, so disconnect previous signals or remove timeout before creating new once. :Credits JustPerfection
+> * WidgetManager: disconnect signal / remove timeout before initiating new ones. There could be multiple instance this is called, so disconnect previous signals or remove timeout before creating new once. :Credits: JustPerfection
 
 {: .important-title }
 > GN-45_Version 37 &emsp;&emsp; Aug 30, 2025
@@ -55,8 +72,8 @@ permalink: /changelogs
 > * Enhanced Preferences Menu
 > * Added Settings button to launch the AirPods Preferences window via script
 > * Added more AirPods control features: Long-press cycle configuration, press speed, long-press duration, notification tone volume, and volume swipe toggle/duration
-> * Greek translations: credits Jim Spentzos dspentzos@crowdin.com
-> * Ukrainian: Translation, credits Klymentii S (Mynt) myntus@crowdin.com
+> * Greek translations: credits: Jim Spentzos dspentzos@crowdin.com
+> * Ukrainian: Translation, credits: Klymentii S (Mynt) myntus@crowdin.com
 
 {: .important-title }
 > GN-45_Version 36 &emsp;&emsp; Jul 26, 2025

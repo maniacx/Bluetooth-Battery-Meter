@@ -133,6 +133,10 @@ permalink: /credits
 > * Svilen88
 > * Genteure
 > * alewicki95
+> * Jim Spentzos dspentzos@crowdin.com
+> * Klymentii S (Mynt) myntus@crowdin.com
+> * devlulcas
+> * tmavro
 
 ## UPower
 
