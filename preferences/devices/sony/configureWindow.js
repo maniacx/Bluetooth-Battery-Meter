@@ -249,7 +249,7 @@ export const ConfigureWindow = GObject.registerClass({
         }
 
         if (modelData.audioUpsampling) {
-            const upscalingGrp = new Adw.PreferencesGroup({title: 'Button/Touch Settings'});
+            const upscalingGrp = new Adw.PreferencesGroup({title: _('DSEE')});
             page.add(upscalingGrp);
 
             this._upscalingSwitchRow = new DropDownRowWidget({
@@ -267,7 +267,7 @@ export const ConfigureWindow = GObject.registerClass({
         }
 
         if (modelData.buttonModesLeftRight || modelData.ambientSoundControlButtonMode) {
-            this._btnTchGroup = new Adw.PreferencesGroup({title: 'Button/Touch Settings'});
+            this._btnTchGroup = new Adw.PreferencesGroup({title: _('Button/Touch Settings')});
             page.add(this._btnTchGroup);
         }
 
