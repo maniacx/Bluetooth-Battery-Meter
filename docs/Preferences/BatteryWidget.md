@@ -19,7 +19,7 @@ permalink: /preferences/batterywidget
 
 ## Show icon only (Hide Bar/Dots)
 <br>
-<img src="{{ 'assets/images/preferences/batterywidget/show-icon-only-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/batterywidget/show-icon-only-prefs.png' | relative_url }}" width="75%">
 
 **Enabled:** When enabled, the extension hides the battery level visualization (bar or dots) and displays only the Bluetooth device icon.
 This mode is best used together with the “Display battery percentage as text” option for a cleaner, minimal look while still retaining key battery information.
@@ -42,7 +42,7 @@ Best to be use this setting with **Display battery percentage as text** settings
 
 ## Display battery percentage as text
 <br>
-<img src="{{ 'assets/images/preferences/batterywidget/show-text-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/batterywidget/show-text-prefs.png' | relative_url }}" width="75%">
 
 Display battery percentage in text next to the indicator icon. 
 <br>
@@ -58,7 +58,7 @@ Display battery percentage in text next to the indicator icon.
 **Extension Preferences**
 <br>
 <br>
-<img src="{{ 'assets/images/preferences/batterywidget/level-indicator-type-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/batterywidget/level-indicator-type-prefs.png' | relative_url }}" width="75%">
 <br>
 
 Available levels types are Battery Level Bar and Battery Level Bar.
@@ -89,7 +89,7 @@ Available levels types are Battery Level Bar and Battery Level Bar.
 
 ## Level Bar Mode: Battery Bar Postion
 <br>
-<img src="{{ 'assets/images/preferences/batterywidget/bar-position-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/batterywidget/bar-position-prefs.png' | relative_url }}" width="75%">
 
 Postion of Level Bar in respect to device icon.
 
@@ -126,7 +126,7 @@ Postion of Level Bar in respect to device icon.
 
 ## Device Icon Size
 <br>
-<img src="{{ 'assets/images/preferences/batterywidget/icon-size-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/batterywidget/icon-size-prefs.png' | relative_url }}" width="75%">
 
 Allows user to change device icon size.
 
@@ -147,7 +147,7 @@ Allows user to change device icon size.
 ---
 ## **Battery Indicator Color Scheme**
 <br>
-<img src="{{ 'assets/images/preferences/batterywidget/indicator-batlevel-scheme-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/batterywidget/indicator-batlevel-scheme-prefs.png' | relative_url }}" width="75%">
 <br>
 
 This setting provides three options to customize the color scheme of indicator level bar/dots:
@@ -172,12 +172,12 @@ This setting provides three options to customize the color scheme of indicator l
 - **Customize:**
   Allows you to define custom colors for different battery level ranges.
   
-<img src="{{ 'assets/images/preferences/batterywidget/customize-indicator-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/batterywidget/customize-indicator-prefs.png' | relative_url }}" width="75%">
 
 ---
 ## **Circular Widget Color Scheme**
 <br>
-<img src="{{ 'assets/images/preferences/batterywidget/circle-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/batterywidget/circle-prefs.png' | relative_url }}" width="75%">
 <br>
 
 

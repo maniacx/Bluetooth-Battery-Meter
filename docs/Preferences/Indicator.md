@@ -17,7 +17,7 @@ permalink: /preferences/indicator
 
 ## Bluetooth Connection Status Indicator
 <br>
-<img src="{{ 'assets/images/preferences/indicator/ind-system-icon-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/indicator/ind-system-icon-prefs.png' | relative_url }}" width="75%">
 
 By default, GNOME shows the Bluetooth Connection Status Indicator whenever one or more Bluetooth devices are connected.
 This setting allows you to customize how that indicator behaves:
@@ -45,7 +45,7 @@ Bluetooth Status Icon shown when no Bluetooth device indicators are displayed
 
 ## Choose Indicator Mode
 <br>
-<img src="{{ 'assets/images/preferences/indicator/ind-type-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/indicator/ind-type-prefs.png' | relative_url }}" width="75%">
 
 
 **Mode: Off**: Disables the indicator entirely. No battery information will be shown on the panel or system tray.
@@ -67,13 +67,13 @@ Bluetooth Status Icon shown when no Bluetooth device indicators are displayed
 
 ## System Tray Preferences
 <br>
-<img src="{{ 'assets/images/preferences/indicator/system-tray-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/indicator/system-tray-prefs.png' | relative_url }}" width="75%">
 
 ---
 
 ## System Tray: Show Multiple Battery Indicators per Device
 <br>
-<img src="{{ 'assets/images/preferences/indicator/indicator-multiple-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/indicator/indicator-multiple-prefs.png' | relative_url }}" width="75%">
 
 This setting applies to Bluetooth devices that have multiple batteries — for example, Airpods that has separate left, right and charging case battery levels.
 
@@ -91,7 +91,7 @@ When disabled, only a single indicator is shown, representing the most critical 
 
 ## System Tray: Show Detailed Info on Hover
 <br>
-<img src="{{ 'assets/images/preferences/indicator/indicator-hover-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/indicator/indicator-hover-prefs.png' | relative_url }}" width="75%">
 
 
 **Show Detailed Info on Hover**
@@ -109,13 +109,13 @@ Use this setting to fine-tune responsiveness — shorter delays make the popup a
 
 ## Panel Button Preferences
 <br>
-<img src="{{ 'assets/images/preferences/indicator/panelbutton-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/indicator/panelbutton-prefs.png' | relative_url }}" width="75%">
 
 ---
 
 ## Panel Button: Panel Button Indicator Mode
 <br>
-<img src="{{ 'assets/images/preferences/indicator/panel-single-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/indicator/panel-single-prefs.png' | relative_url }}" width="75%">
 
 This preference determines the content of the panel button.
 
@@ -131,7 +131,7 @@ This preference determines the content of the panel button.
 
 ## Panel Button: Show Multiple Battery Indicators Per Device
 <br>
-<img src="{{ 'assets/images/preferences/indicator/panel-mulibatt-prefs.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/preferences/indicator/panel-mulibatt-prefs.png' | relative_url }}" width="75%">
 
 This preference determines the content of the panel button for device with multiple batteries.
 
