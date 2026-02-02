@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 19:14-0700\n"
+"POT-Creation-Date: 2026-02-02 01:40-0700\n"
 "PO-Revision-Date: 2023-10-26 23:08+0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Português <https://l10n.gnome.org/teams/pt/>\n"
@@ -472,8 +472,16 @@ msgstr ""
 msgid "8k"
 msgstr ""
 
+#: preferences/devices/sony/configureWindow.js:252
+msgid "DSEE"
+msgstr ""
+
 #: preferences/devices/sony/configureWindow.js:256
 msgid "Enable DSEE enhancement"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:270
+msgid "Button/Touch Settings"
 msgstr ""
 
 #: preferences/devices/sony/configureWindow.js:276

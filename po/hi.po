@@ -12,11 +12,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell.master.hi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 19:14-0700\n"
+"POT-Creation-Date: 2026-02-02 01:40-0700\n"
 "PO-Revision-Date: 2023-02-18 00:24+0530\n"
 "Last-Translator: Hemish <hemish04082005@gmail.com>\n"
-"Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net https://indlinux."
-"org/hindi>\n"
+"Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net https://"
+"indlinux.org/hindi>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -466,8 +466,16 @@ msgstr ""
 msgid "8k"
 msgstr ""
 
+#: preferences/devices/sony/configureWindow.js:252
+msgid "DSEE"
+msgstr ""
+
 #: preferences/devices/sony/configureWindow.js:256
 msgid "Enable DSEE enhancement"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:270
+msgid "Button/Touch Settings"
 msgstr ""
 
 #: preferences/devices/sony/configureWindow.js:276
