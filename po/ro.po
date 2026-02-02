@@ -10,12 +10,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 19:14-0700\n"
+"POT-Creation-Date: 2026-02-02 01:40-0700\n"
 "PO-Revision-Date: 2023-10-18 20:22+0200\n"
 "Last-Translator: Florentina Mușat <florentina [dot] musat [dot] 28 [at] "
 "gmail [dot] com>\n"
-"Language-Team: Gnome Romanian Translation Team <gnomero-list@lists."
-"sourceforge.net>\n"
+"Language-Team: Gnome Romanian Translation Team <gnomero-"
+"list@lists.sourceforge.net>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -470,8 +470,16 @@ msgstr ""
 msgid "8k"
 msgstr ""
 
+#: preferences/devices/sony/configureWindow.js:252
+msgid "DSEE"
+msgstr ""
+
 #: preferences/devices/sony/configureWindow.js:256
 msgid "Enable DSEE enhancement"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:270
+msgid "Button/Touch Settings"
 msgstr ""
 
 #: preferences/devices/sony/configureWindow.js:276

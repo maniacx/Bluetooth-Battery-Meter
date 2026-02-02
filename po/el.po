@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 19:14-0700\n"
+"POT-Creation-Date: 2026-02-02 01:40-0700\n"
 "PO-Revision-Date: 2025-08-30 07:36\n"
 "Last-Translator: \n"
 "Language-Team: Greek\n"
@@ -464,8 +464,16 @@ msgstr ""
 msgid "8k"
 msgstr ""
 
+#: preferences/devices/sony/configureWindow.js:252
+msgid "DSEE"
+msgstr ""
+
 #: preferences/devices/sony/configureWindow.js:256
 msgid "Enable DSEE enhancement"
+msgstr ""
+
+#: preferences/devices/sony/configureWindow.js:270
+msgid "Button/Touch Settings"
 msgstr ""
 
 #: preferences/devices/sony/configureWindow.js:276
@@ -1130,8 +1138,8 @@ msgid ""
 "report battery levels if supported by the kernel or third-party drivers. "
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
-"Ορισμένες συσκευές UPower, όπως ασύρματα ποντίκια 2.4GHz, πληκτρολόγια κ."
-"λπ., μπορούν να αναφέρουν τα επίπεδα μπαταρίας τους μόνο αν υποστηρίζονται "
+"Ορισμένες συσκευές UPower, όπως ασύρματα ποντίκια 2.4GHz, πληκτρολόγια "
+"κ.λπ., μπορούν να αναφέρουν τα επίπεδα μπαταρίας τους μόνο αν υποστηρίζονται "
 "από τον πυρήνα ή διαθέτουν τρίτα προγράμματα οδήγησης. Ενεργοποιήστε αυτήν "
 "την επιλογή για να εμφανίζεται η κατάσταση της μπαταρίας τους στην περιοχή "
 "εικονιδίων συστήματος του GNOME."

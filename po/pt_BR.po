@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-30 19:14-0700\n"
+"POT-Creation-Date: 2026-02-02 01:40-0700\n"
 "PO-Revision-Date: 2026-01-20 14:07-0300\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
@@ -465,9 +465,17 @@ msgstr "4k"
 msgid "8k"
 msgstr "8k"
 
+#: preferences/devices/sony/configureWindow.js:252
+msgid "DSEE"
+msgstr ""
+
 #: preferences/devices/sony/configureWindow.js:256
 msgid "Enable DSEE enhancement"
 msgstr "Ativar aprimoramento DSEE"
+
+#: preferences/devices/sony/configureWindow.js:270
+msgid "Button/Touch Settings"
+msgstr ""
 
 #: preferences/devices/sony/configureWindow.js:276
 msgid "Ambient Sound Control"
