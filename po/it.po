@@ -1,5 +1,5 @@
 # ITALIAN TRANSLATION.
-# Copyright (C) 2025 maniacx@github.com
+# Copyright (C) 2026 maniacx@github.com
 # This file is distributed under the same license as the Bluetooth Battery Meter package.
 #
 msgid ""
@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-02 01:40-0700\n"
-"PO-Revision-Date: 2025-12-27 09:05+0200\n"
+"PO-Revision-Date: 2026-02-03 09:09+0200\n"
 "Last-Translator:  Alessandro Falappa <alex.falappa@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
 "Language: it\n"
@@ -466,7 +466,7 @@ msgstr "8k"
 
 #: preferences/devices/sony/configureWindow.js:252
 msgid "DSEE"
-msgstr ""
+msgstr "DSEE"
 
 #: preferences/devices/sony/configureWindow.js:256
 msgid "Enable DSEE enhancement"
@@ -474,7 +474,7 @@ msgstr "Abilita miglioramento DSEE"
 
 #: preferences/devices/sony/configureWindow.js:270
 msgid "Button/Touch Settings"
-msgstr ""
+msgstr "Impostazioni pulsante/tocco"
 
 #: preferences/devices/sony/configureWindow.js:276
 msgid "Ambient Sound Control"
@@ -663,18 +663,21 @@ msgstr ""
 
 #: preferences/devices/airpods/configureWindow.js:167
 msgid "Turn off listening modes"
-msgstr ""
+msgstr "Spegni modalità di ascolto"
 
 #: preferences/devices/airpods/configureWindow.js:171
 msgid "Allows to turn off all listening mode technology"
-msgstr ""
+msgstr "Consente di disattivare tutte le tecnologie delle modalità di ascolto"
 
 #: preferences/devices/airpods/configureWindow.js:172
 msgid ""
 "Allows Noise Cancellation, Transparency, and Adaptive modes to be fully "
 "disabled. Disabling listening modes also turns off Hearing Aid features and "
 "reduces power usage."
-msgstr ""
+msgstr "Permette di disabilitare completamente la cancellazione del rumore, la "
+"trasparenza e la modalità adattiva. Disabilitare le modalità di ascolto "
+"disattiva anche le funzioni per gli apparecchi acustici e riduce il consumo "
+"di energia."
 
 #: preferences/devices/airpods/configureWindow.js:235
 msgid "Press and Hold Cycle"
@@ -1210,11 +1213,11 @@ msgstr "Impostazioni del menu rapido"
 
 #: ui/quickSettings.ui:20
 msgid "Modify Bluetooth device menu"
-msgstr ""
+msgstr "Modifica il menu del dispositivo Bluetooth"
 
 #: ui/quickSettings.ui:21
 msgid "Add battery information and device controls to the menu"
-msgstr ""
+msgstr "Aggiungi informazioni sulla batteria e controlli del dispositivo al menu"
 
 #: ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
