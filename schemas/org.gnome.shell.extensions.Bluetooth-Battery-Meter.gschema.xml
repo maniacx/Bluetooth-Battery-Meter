@@ -6,7 +6,7 @@
             <summary>Modify bluetooth quickmenu</summary>
         </key>
         <key name="popup-in-quick-settings" type="b">
-            <default>true</default>
+            <default>false</default>
             <summary>Adds Submenu to popupmenu</summary>
         </key>
         <key name="enable-battery-level-icon" type="b">
