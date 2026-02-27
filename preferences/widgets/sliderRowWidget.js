@@ -44,7 +44,7 @@ export const SliderRowWidget = GObject.registerClass({
         this._slider.set_size_request(200, -1);
 
         for (const {mark, label} of marks)
-            this._slider.add_mark(mark, Gtk.PositionType.BOTTOM, label);
+            this._slider.add_mark(mark, Gtk.PositionType.BOTTOM, label ?? null);
 
         this._slider.set_value(this._lastValue);
 
