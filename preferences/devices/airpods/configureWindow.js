@@ -7,7 +7,7 @@ import {
     supportedAudioSingleIcons, supportedAudioDualIcons, supportedCaseIcons
 } from '../../../lib/widgets/iconGroups.js';
 import {AirpodsModelList, LongPressBits} from '../../../lib/devices/airpods/airpodsConfig.js';
-import {CheckBoxesGroupWidget} from './../../widgets/checkBoxesGroupWidget.js';
+import {CheckBoxesRowWidget} from './../../widgets/checkBoxesRowWidget.js';
 import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
 import {DropDownRowWidget} from './../../widgets/dropDownRowWidget.js';
 import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
@@ -231,8 +231,10 @@ export const  ConfigureWindow = GObject.registerClass({
             };
 
             this._buildLongPressItems();
-            this._longPressCycleWidget = new CheckBoxesGroupWidget({
-                groupTitle: _('Press and Hold Cycle'),
+
+            const longPressCycleGrp = new Adw.PreferencesGroup({title: _('Press and Hold Cycle')});
+
+            this._longPressCycleWidget = new CheckBoxesRowWidget({
                 rowTitle: _('Press and hold cycles between'),
                 rowSubtitle: _('Settings don’t reflect current state'),
                 items: this._longPressItems,
@@ -252,7 +254,9 @@ export const  ConfigureWindow = GObject.registerClass({
                 this._updateGsettings('lp-value', mask);
             });
 
-            page.add(this._longPressCycleWidget);
+            longPressCycleGrp.add(this._longPressCycleWidget);
+
+            page.add(longPressCycleGrp);
         }
 
         if (modelData.toneVolumeSupported) {

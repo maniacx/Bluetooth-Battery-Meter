@@ -8,7 +8,7 @@ import {
 import {DropDownRowWidget} from './../../widgets/dropDownRowWidget.js';
 import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
 import {EqualizerWidget} from './../../widgets/equalizerWidget.js';
-import {CheckBoxesGroupWidget} from './../../widgets/checkBoxesGroupWidget.js';
+import {CheckBoxesRowWidget} from './../../widgets/checkBoxesRowWidget.js';
 import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
 import {
     SonyConfiguration, EqualizerPreset, ListeningMode, BgmDistance, ButtonModes, AutoPowerOffTime
@@ -31,6 +31,9 @@ export const ConfigureWindow = GObject.registerClass({
 
         const pathsString = settings.get_strv('sony-list').map(JSON.parse);
         this._settingsItems = pathsString.find(info => info.path === devicePath);
+        if (!this._settingsItems)
+            return;
+
         this.title = this._settingsItems.alias;
 
         const modelData = SonyConfiguration.find(cfg => cfg.pattern.test(this._settingsItems.name));
@@ -266,12 +269,10 @@ export const ConfigureWindow = GObject.registerClass({
             upscalingGrp.add(this._upscalingSwitchRow);
         }
 
-        if (modelData.buttonModesLeftRight || modelData.ambientSoundControlButtonMode) {
+        if (modelData.buttonModesLeftRight) {
             this._btnTchGroup = new Adw.PreferencesGroup({title: _('Button/Touch Settings')});
             page.add(this._btnTchGroup);
-        }
 
-        if (modelData.buttonModesLeftRight) {
             const buttonModeMap = {
                 amb: [_('Ambient Sound Control'), ButtonModes.AMBIENT_SOUND_CONTROL],
                 ambqa: [_('Ambient Sound Control / Quick Access'),
@@ -325,14 +326,18 @@ export const ConfigureWindow = GObject.registerClass({
 
 
         if (modelData.ambientSoundControlButtonMode) {
+            const ancToggleButtonGrp = new Adw.PreferencesGroup({
+                title: _('ANC Button Configuration'),
+            });
+            page.add(ancToggleButtonGrp);
+
             const items = [
                 {name: _('Noise Cancellation'), icon: 'bbm-anc-on-symbolic'},
                 {name: _('Ambient'), icon: 'bbm-transperancy-symbolic'},
                 {name: _('Off'), icon: 'bbm-anc-off-symbolic'},
             ];
 
-            this._ancToggleButtonWidget = new CheckBoxesGroupWidget({
-                groupTitle: _('ANC Button Configuration'),
+            this._ancToggleButtonWidget = new CheckBoxesRowWidget({
                 rowTitle: _('[NC/AMB] Button Settings'),
                 rowSubtitle: _('Select the modes to toggle when the button is pressed'),
                 items,
@@ -345,7 +350,7 @@ export const ConfigureWindow = GObject.registerClass({
                 this._updateGsettings('amb-btn-mode', val);
             });
 
-            this._btnTchGroup.add(this._ancToggleButtonWidget);
+            ancToggleButtonGrp.add(this._ancToggleButtonWidget);
         }
 
         if (modelData.voiceNotifications) {

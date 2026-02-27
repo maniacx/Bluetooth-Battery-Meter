@@ -2,7 +2,7 @@ import Adw from 'gi://Adw';
 import Gtk from 'gi://Gtk';
 import GObject from 'gi://GObject';
 
-export const CheckBoxesGroupWidget = GObject.registerClass({
+export const CheckBoxesRowWidget = GObject.registerClass({
     GTypeName: 'CheckBoxesGroupWidget',
     Properties: {
         'toggled-value': GObject.ParamSpec.int(
@@ -13,10 +13,9 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
             0, 255, 0
         ),
     },
-}, class CheckBoxesGroupWidget extends Adw.PreferencesGroup {
+}, class CheckBoxesRowWidget extends Adw.PreferencesRow {
     constructor(params = {}) {
         const {
-            groupTitle = '',
             rowTitle = '',
             rowSubtitle = '',
             items,
@@ -26,7 +25,7 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
             minRequired = 2,
         } = params;
 
-        super({title: groupTitle ?? ''});
+        super();
 
         if (!items || items.length !== 3 && items.length !== 4)
             return;
@@ -37,12 +36,22 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
         this._resetOnApply = !!resetOnApply;
         this._minRequired = minRequired;
 
-        const headerRow = new Adw.ActionRow({title: rowTitle, subtitle: rowSubtitle});
+        const vbox = new Gtk.Box({
+            orientation: Gtk.Orientation.VERTICAL,
+            spacing: 12,
+        });
+
+        const headerRow = new Adw.ActionRow({
+            title: rowTitle,
+            subtitle: rowSubtitle,
+            activatable: false,
+        });
 
         const btnContent = new Adw.ButtonContent({
             label: applyBtnName,
             icon_name: 'bbm-check-symbolic',
         });
+
         this._applyButton = new Gtk.Button({
             halign: Gtk.Align.START,
             valign: Gtk.Align.CENTER,
@@ -51,10 +60,16 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
             child: btnContent,
         });
         this._applyButton.sensitive = false;
-        headerRow.add_suffix(this._applyButton);
-        this.add(headerRow);
 
-        const boxRow = new Adw.ActionRow();
+        headerRow.add_suffix(this._applyButton);
+
+        const frame = new Gtk.Frame({
+            margin_bottom: 12,
+            margin_start: 12,
+            margin_end: 12,
+
+        });
+
         this._hBox = new Gtk.Box({
             orientation: Gtk.Orientation.HORIZONTAL,
             spacing: 4,
@@ -62,10 +77,15 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
             valign: Gtk.Align.CENTER,
             margin_top: 8,
             margin_bottom: 8,
+            margin_start: 8,
+            margin_end: 8,
         });
 
-        boxRow.set_child(this._hBox);
-        this.add(boxRow);
+        frame.set_child(this._hBox);
+
+        vbox.append(headerRow);
+        vbox.append(frame);
+        this.set_child(vbox);
 
         this.updateItems(items);
 
@@ -99,6 +119,7 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
             if (b.active)
                 val |= 1 << i;
         });
+
         this.toggled_value = val;
 
         if (this._resetOnApply) {
@@ -114,8 +135,10 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
     set toggled_value(v) {
         if (this._toggledValue === v)
             return;
+
         this._toggledValue = v;
         this.notify('toggled-value');
+
         this._suspendToggleHandlers = true;
         this._updateCheckStates(v);
         this._suspendToggleHandlers = false;
@@ -130,6 +153,7 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
 
         for (let i = 0; i < items.length; i++) {
             const {name, icon} = items[i];
+
             const cell = new Gtk.Box({
                 orientation: Gtk.Orientation.VERTICAL,
                 spacing: 6,
@@ -137,8 +161,15 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
                 valign: Gtk.Align.CENTER,
             });
 
-            const image = new Gtk.Image({icon_name: icon, halign: Gtk.Align.CENTER});
-            const label = new Gtk.Label({label: name, halign: Gtk.Align.CENTER});
+            const image = new Gtk.Image({
+                icon_name: icon,
+                halign: Gtk.Align.CENTER,
+            });
+
+            const label = new Gtk.Label({
+                label: name,
+                halign: Gtk.Align.CENTER,
+            });
             label.add_css_class('caption-heading');
 
             const check = new Gtk.CheckButton({halign: Gtk.Align.CENTER});
@@ -149,9 +180,11 @@ export const CheckBoxesGroupWidget = GObject.registerClass({
             });
 
             this._checkButtons.push(check);
+
             cell.append(image);
             cell.append(label);
             cell.append(check);
+
             this._hBox.append(cell);
         }
     }
