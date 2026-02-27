@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
+  <template class="BluetoothBatteryMeter_GalaxyBudsUI" parent="AdwPreferencesPage">
+    <property name="name">Galaxy</property>
+    <property name="title" translatable="yes">Samsung Galaxy Buds</property>
+    <property name="icon-name">bbm-earbuds-bean-symbolic</property>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Note!</property>
+        <property name="header-suffix">
+          <object class="GtkButton">
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="margin-start">6</property>
+            <property name="css-classes">error</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Experimental</property>
+          </object>
+        </property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="subtitle" translatable="yes">Some models/features are not fully tested. Please share feedback on GitHub.</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Samsung Galaxy Buds Settings</property>
+        <child>
+          <object class="AdwSwitchRow" id="enable_galaxy_buds_device">
+            <property name="title" translatable="yes">Enable Samsung Galaxy Buds Support</property>
+            <property name="subtitle" translatable="yes">Enables battery status monitoring and, if supported, control of Noise Cancellation and Conversation Awareness modes.</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup" id="galaxy_buds_group">
+        <property name="title" translatable="yes">Configuration by Device</property>
+        <child>
+          <object class="AdwActionRow" id="no_galaxy_buds_paired_row">
+            <property name="title" translatable="yes">No compatible device paired!</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
