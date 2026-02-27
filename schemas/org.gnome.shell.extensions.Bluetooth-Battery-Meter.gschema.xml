@@ -127,6 +127,22 @@
             <default>[]</default>
             <summary>List of Sony devices</summary>
         </key>
+        <key name="enable-galaxy-buds-device" type="b">
+            <default>false</default>
+            <summary>"enable Sony devices"</summary>
+        </key>
+        <key name="galaxy-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of Galaxy Buds devices</summary>
+        </key>
+        <key name="enable-nothing-buds-device" type="b">
+            <default>false</default>
+            <summary>"enable Sony devices"</summary>
+        </key>
+        <key name="nothing-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of Nothing / CMF devices</summary>
+        </key>
         <key name="enable-gattbas-device" type="b">
             <default>false</default>
             <summary>"enable gattbas devices"</summary>

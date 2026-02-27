@@ -18,6 +18,8 @@ import Gettext from 'gettext';
 
 import * as Airpods from '../preferences/devices/airpods/configureWindow.js';
 import * as Sony from '../preferences/devices/sony/configureWindow.js';
+import * as GalaxyBuds from '../preferences/devices/galaxyBuds/configureWindow.js';
+import * as NothingBuds from '../preferences/devices/nothingBuds/configureWindow.js';
 
 Gio._promisify(Gio.DBusProxy, 'new');
 Gio._promisify(Gio.DBusProxy.prototype, 'call');
@@ -60,6 +62,12 @@ class MoreSettingsLauncher {
         } else if (this._deviceType === 'sony') {
             this._prefsType = Sony;
             this._schemaKey = 'sony-list';
+        } else if (this._deviceType === 'galaxyBuds') {
+            this._prefsType = GalaxyBuds;
+            this._schemaKey = 'galaxy-buds-list';
+        } else if (this._deviceType === 'nothingBuds') {
+            this._prefsType = NothingBuds;
+            this._schemaKey = 'nothing-buds-list';
         }
     }
 

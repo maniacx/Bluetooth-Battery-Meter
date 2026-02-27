@@ -12,6 +12,8 @@ import {Device} from './preferences/device.js';
 import {UpowerDevices} from './preferences/upowerDevices.js';
 import {Airpods} from './preferences/devices/airpods/devicePrefs.js';
 import {Sony} from './preferences/devices/sony/devicePrefs.js';
+import {GalaxyBuds} from './preferences/devices/galaxyBuds/devicePrefs.js';
+import {NothingBuds} from './preferences/devices/nothingBuds/devicePrefs.js';
 import {GattBas} from './preferences/gattBas.js';
 import {About} from './preferences/about.js';
 
@@ -44,6 +46,8 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         this._addPage(UpowerDevices, settings);
         this._addPage(Airpods, settings);
         this._addPage(Sony, settings);
+        this._addPage(GalaxyBuds, settings);
+        this._addPage(NothingBuds, settings);
         this._addPage(GattBas, settings);
         this._addPage(About, this);
     }
