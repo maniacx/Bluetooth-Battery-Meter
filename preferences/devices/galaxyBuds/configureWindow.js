@@ -292,6 +292,8 @@ export const ConfigureWindow = GObject.registerClass({
                 ? _('Media Controls (Pinch And Swipe)') : _('Enable Touch Controls '),
         });
 
+        this._touchControlLockSwitch.active = this._settingsItems['tp-enabled'];
+
         this._touchControlGroup.add(this._touchControlLockSwitch);
 
         this._touchControlLockSwitch.connect('notify::active', () => {
@@ -307,6 +309,8 @@ export const ConfigureWindow = GObject.registerClass({
             title: _('Single Tap'),
         });
 
+        this._touchControlSingleTapSwitch.active = this._settingsItems['tp-adv-single'];
+
         this._touchControlSingleTapSwitch.connect('notify::active', () => {
             this._updateGsettings('tp-adv-single',
                 this._touchControlSingleTapSwitch.active);
@@ -317,6 +321,8 @@ export const ConfigureWindow = GObject.registerClass({
         this._touchControlDoubleTapSwitch = new Adw.SwitchRow({
             title: _('Double Tap'),
         });
+
+        this._touchControlDoubleTapSwitch.active = this._settingsItems['tp-adv-double'];
 
         this._touchControlDoubleTapSwitch.connect('notify::active', () => {
             this._updateGsettings('tp-adv-double',
@@ -329,6 +335,8 @@ export const ConfigureWindow = GObject.registerClass({
             title: _('Triple Tap'),
         });
 
+        this._touchControlTripleTapSwitch.active = this._settingsItems['tp-adv-triple'];
+
         this._touchControlTripleTapSwitch.connect('notify::active', () => {
             this._updateGsettings('tp-adv-triple',
                 this._touchControlTripleTapSwitch.active);
@@ -339,6 +347,8 @@ export const ConfigureWindow = GObject.registerClass({
         this._touchControlTouchHoldSwitch = new Adw.SwitchRow({
             title: _('Touch and Hold'),
         });
+
+        this._touchControlTouchHoldSwitch.active = this._settingsItems['tp-adv-hold'];
 
         this._touchControlTouchHoldSwitch.connect('notify::active', () => {
             this._updateGsettings('tp-adv-hold',
@@ -356,6 +366,8 @@ export const ConfigureWindow = GObject.registerClass({
             title: _('Double Tap to Answer Call or End Call'),
         });
 
+        this._touchControlDoubleCall.active = this._settingsItems['tp-adv-call-double'];
+
         this._touchControlDoubleCall.connect('notify::active', () => {
             this._updateGsettings('tp-adv-call-double',
                 this._touchControlDoubleCall.active);
@@ -366,6 +378,8 @@ export const ConfigureWindow = GObject.registerClass({
         this._touchControlHoldCall = new Adw.SwitchRow({
             title: _('Touch and Hold to Decline Call'),
         });
+
+        this._touchControlHoldCall.active = this._settingsItems['tp-adv-call-hold'];
 
         this._touchControlHoldCall.connect('notify::active', () => {
             this._updateGsettings('tp-adv-call-hold',
@@ -557,6 +571,8 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Ambient Sound During Calls'),
             });
 
+            this._sideToneSwitch.active = this._settingsItems['sidetone'];
+
             this._sideToneSwitch.connect('notify::active', () => {
                 this._updateGsettings('sidetone', this._sideToneSwitch.active);
             });
@@ -569,6 +585,8 @@ export const ConfigureWindow = GObject.registerClass({
                 title: _('Noise Controls With One Earbud'),
             });
 
+            this._noiseControlsOneEarbudSwitch.active = this._settingsItems['nc-one'];
+
             this._noiseControlsOneEarbudSwitch.connect('notify::active', () => {
                 this._updateGsettings('nc-one', this._noiseControlsOneEarbudSwitch.active);
             });
@@ -580,6 +598,8 @@ export const ConfigureWindow = GObject.registerClass({
             this._outsideDoubleTapSwitch = new Adw.SwitchRow({
                 title: _('Double Tap Outside Edge For Volume Controls'),
             });
+
+            this._outsideDoubleTapSwitch.active = this._settingsItems['2tap-vol'];
 
             this._outsideDoubleTapSwitch.connect('notify::active', () => {
                 this._updateGsettings('2tap-vol', this._outsideDoubleTapSwitch.active);
@@ -599,6 +619,9 @@ export const ConfigureWindow = GObject.registerClass({
         this._page.add(ambientCustomizeGroup);
 
         this._customAmbientSwitch = new Adw.SwitchRow({title: 'Customize Ambient Sound'});
+
+        this._customAmbientSwitch.active = this._settingsItems['amb-enable'];
+
         this._customAmbientSwitch.connect('notify::active', () => {
             this._updateGsettings('amb-enable', this._customAmbientSwitch.active);
         });
