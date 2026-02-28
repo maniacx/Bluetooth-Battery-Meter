@@ -32,7 +32,6 @@ export const CheckBoxesRowWidget = GObject.registerClass({
 
         this._checkButtons = [];
         this._toggledValue = initialValue;
-        this._suspendToggleHandlers = false;
         this._resetOnApply = !!resetOnApply;
         this._minRequired = minRequired;
 
@@ -91,12 +90,10 @@ export const CheckBoxesRowWidget = GObject.registerClass({
 
         this._applyButton.connect('clicked', () => this._applyChanges());
 
-        this._suspendToggleHandlers = true;
         if (this._resetOnApply)
             this._updateCheckStates(0);
         else
             this._updateCheckStates(this._toggledValue);
-        this._suspendToggleHandlers = false;
 
         this._updateApplySensitivity();
     }
@@ -120,10 +117,14 @@ export const CheckBoxesRowWidget = GObject.registerClass({
                 val |= 1 << i;
         });
 
-        this.toggled_value = val;
+        if (this._toggledValue === val)
+            return;
+
+        this._toggledValue = val;
+        this.notify('toggled-value');
 
         if (this._resetOnApply) {
-            this._checkButtons.forEach(b => (b.active = false));
+            this._updateCheckStates(0);
             this._applyButton.sensitive = false;
         }
     }
@@ -135,13 +136,9 @@ export const CheckBoxesRowWidget = GObject.registerClass({
     set toggled_value(v) {
         if (this._toggledValue === v)
             return;
-
         this._toggledValue = v;
-        this.notify('toggled-value');
 
-        this._suspendToggleHandlers = true;
         this._updateCheckStates(v);
-        this._suspendToggleHandlers = false;
     }
 
     updateItems(items) {
@@ -153,7 +150,6 @@ export const CheckBoxesRowWidget = GObject.registerClass({
 
         for (let i = 0; i < items.length; i++) {
             const {name, icon} = items[i];
-
             const cell = new Gtk.Box({
                 orientation: Gtk.Orientation.VERTICAL,
                 spacing: 6,
@@ -161,30 +157,19 @@ export const CheckBoxesRowWidget = GObject.registerClass({
                 valign: Gtk.Align.CENTER,
             });
 
-            const image = new Gtk.Image({
-                icon_name: icon,
-                halign: Gtk.Align.CENTER,
-            });
-
-            const label = new Gtk.Label({
-                label: name,
-                halign: Gtk.Align.CENTER,
-            });
+            const image = new Gtk.Image({icon_name: icon, halign: Gtk.Align.CENTER});
+            const label = new Gtk.Label({label: name, halign: Gtk.Align.CENTER});
             label.add_css_class('caption-heading');
 
             const check = new Gtk.CheckButton({halign: Gtk.Align.CENTER});
             check.connect('toggled', () => {
-                if (this._suspendToggleHandlers)
-                    return;
                 this._updateApplySensitivity();
             });
 
             this._checkButtons.push(check);
-
             cell.append(image);
             cell.append(label);
             cell.append(check);
-
             this._hBox.append(cell);
         }
     }
