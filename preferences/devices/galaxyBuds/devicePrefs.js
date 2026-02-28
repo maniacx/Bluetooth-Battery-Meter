@@ -37,7 +37,8 @@ const  DeviceItem = GObject.registerClass({
         const galaxyBudsLabel = _('Samsung Galaxy Buds');
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
-            tooltip_text: _('The button is available after disabling %s mode').format(galaxyBudsLabel),
+            tooltip_text: _('The button is available after disabling %s mode')
+                .format(galaxyBudsLabel),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
         });

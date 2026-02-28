@@ -37,7 +37,8 @@ const  DeviceItem = GObject.registerClass({
         const nothingBudsLabel = _('Nothing/CMF Buds');
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
-            tooltip_text: _('The button is available after disabling %s mode').format(nothingBudsLabel),
+            tooltip_text: _('The button is available after disabling %s mode')
+                .format(nothingBudsLabel),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
         });
