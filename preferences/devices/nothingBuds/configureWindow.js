@@ -254,6 +254,8 @@ export const ConfigureWindow = GObject.registerClass({
 
         this._bassEnhanceSwitch = new Adw.SwitchRow({title: _('Enable Bass Enhance')});
 
+        this._bassEnhanceSwitch.active = this._settingsItems['bass-enable'];
+
         this._bassEnhanceSwitch.connect('notify::active', () => {
             this._updateGsettings('bass-enable', this._bassEnhanceSwitch.active);
         });
@@ -302,6 +304,8 @@ export const ConfigureWindow = GObject.registerClass({
         if (this._modelData?.lowLatencyMode) {
             this._lowLatencySwitch = new Adw.SwitchRow({title: _('Enable low latency mode')});
 
+            this._lowLatencySwitch.active = this._settingsItems['lowlatency'];
+
             this._lowLatencySwitch.connect('notify::active', () => {
                 this._updateGsettings('lowlatency', this._lowLatencySwitch.active);
             });
@@ -313,6 +317,8 @@ export const ConfigureWindow = GObject.registerClass({
             this._inEarSwitch = new Adw.SwitchRow({
                 title: _('Enable in ear detection'),
             });
+
+            this._inEarSwitch.active = this._settingsItems['inear-enable'];
 
             this._inEarSwitch.connect('notify::active', () => {
                 this._updateGsettings('inear-enable', this._inEarSwitch.active);
