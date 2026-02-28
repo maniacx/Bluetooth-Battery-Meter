@@ -7,6 +7,7 @@ import {DropDownRowWidget} from './../../widgets/dropDownRowWidget.js';
 import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
 import {CheckBoxesRowWidget} from './../../widgets/checkBoxesRowWidget.js';
 import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
+import {RingMyBudsRow} from './../../widgets/ringMyBudsRow.js';
 import {
     GalaxyBudsModelList, EqPresets
 
@@ -182,6 +183,14 @@ export const ConfigureWindow = GObject.registerClass({
                 this._ambCustomRight.value = this._settingsItems['amb-right'];
                 this._ambCustomTone.active = this._settingsItems['amb-tone'];
             }
+        });
+
+        this.connect('close-request', () => {
+            const ringState = this._settingsItems?.['ring-state'];
+            if (ringState === 'playing')
+                this._updateGsettings('ring-state', 'stopped');
+
+            return false;
         });
     }
 
@@ -557,10 +566,6 @@ export const ConfigureWindow = GObject.registerClass({
     }
 
     _addAdditionalSetting(_) {
-        if (!this._features.ambientSidetone && !this._features.noiseControlsWithOneEarbud &&
-                !this._features.doubleTapVolume && !this._features.ambientCustomize)
-            return;
-
         const moreSettings = new Adw.PreferencesGroup({
             title: _('Additional Settings'),
         });
@@ -607,6 +612,14 @@ export const ConfigureWindow = GObject.registerClass({
 
             moreSettings.add(this._outsideDoubleTapSwitch);
         }
+
+        this._ringBudsRow = new RingMyBudsRow(_);
+
+        this._ringBudsRow.connect('notify::status', () => {
+            this._updateGsettings('ring-state', this._ringBudsRow.status);
+        });
+
+        moreSettings.add(this._ringBudsRow);
     }
 
     _addAmbientCustomization(_) {
