@@ -321,7 +321,7 @@ export const ConfigureWindow = GObject.registerClass({
 
         if (this._modelData?.lowLatencyMode || this._modelData?.inEarDetection ||
                 this._modelData?.ring) {
-            miscGroup = new Adw.PreferencesGroup({title: _('Features')});
+            miscGroup = new Adw.PreferencesGroup({title: _('Additional Settings')});
             this._page.add(miscGroup);
         }
 
