@@ -106,6 +106,7 @@ export const ConfigureWindow = GObject.registerClass({
 
         this._addEq();
         this._addBassEnhance();
+        this._addSpatialAudio();
         this._addMiscSetting();
         this._addGestureControls();
 
@@ -135,6 +136,9 @@ export const ConfigureWindow = GObject.registerClass({
 
             if (this._modelData?.inEarDetection)
                 this._inEarSwitch.active = this._settingsItems['inear-enable'];
+
+            if (this._modelData?.spatialAudioSwitch)
+                this._spatialAudioSwitch.active = this._settingsItems['spatial'];
         });
 
         this.connect('close-request', () => {
@@ -289,6 +293,26 @@ export const ConfigureWindow = GObject.registerClass({
             'sensitive',
             GObject.BindingFlags.SYNC_CREATE
         );
+    }
+
+    _addSpatialAudio() {
+        if (!this._modelData?.spatialAudioSwitch)
+            return;
+
+        const _ = this._gettext;
+
+        const spatialAudioGroup = new Adw.PreferencesGroup({title: _('Spatial Audio')});
+        this._page.add(spatialAudioGroup);
+
+        this._spatialAudioSwitch = new Adw.SwitchRow({title: _('Enable Spatial Audio')});
+
+        this._spatialAudioSwitch.active = this._settingsItems['spatial'];
+
+        this._spatialAudioSwitch.connect('notify::active', () => {
+            this._updateGsettings('spatial', this._spatialAudioSwitch.active);
+        });
+
+        spatialAudioGroup.add(this._spatialAudioSwitch);
     }
 
     _addMiscSetting() {
