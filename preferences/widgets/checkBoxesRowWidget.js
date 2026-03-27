@@ -3,7 +3,7 @@ import Gtk from 'gi://Gtk';
 import GObject from 'gi://GObject';
 
 export const CheckBoxesRowWidget = GObject.registerClass({
-    GTypeName: 'CheckBoxesGroupWidget',
+    GTypeName: 'BluetoothBatteryMeter_CheckBoxesGroupWidget',
     Properties: {
         'toggled-value': GObject.ParamSpec.int(
             'toggled-value',
@@ -11,6 +11,13 @@ export const CheckBoxesRowWidget = GObject.registerClass({
             '',
             GObject.ParamFlags.READWRITE,
             0, 255, 0
+        ),
+        'compact-mode': GObject.ParamSpec.boolean(
+            'compact-mode',
+            '',
+            '',
+            GObject.ParamFlags.READWRITE,
+            false
         ),
     },
 }, class CheckBoxesRowWidget extends Adw.PreferencesRow {
@@ -31,11 +38,12 @@ export const CheckBoxesRowWidget = GObject.registerClass({
             return;
 
         this._checkButtons = [];
+        this._cells = [];
         this._toggledValue = initialValue;
         this._resetOnApply = !!resetOnApply;
         this._minRequired = minRequired;
 
-        const vbox = new Gtk.Box({
+        this._vBox = new Gtk.Box({
             orientation: Gtk.Orientation.VERTICAL,
             spacing: 12,
         });
@@ -62,15 +70,7 @@ export const CheckBoxesRowWidget = GObject.registerClass({
 
         headerRow.add_suffix(this._applyButton);
 
-        const frame = new Gtk.Frame({
-            margin_bottom: 12,
-            margin_start: 12,
-            margin_end: 12,
-
-        });
-
-        this._hBox = new Gtk.Box({
-            orientation: Gtk.Orientation.HORIZONTAL,
+        this._box = new Gtk.Box({
             spacing: 4,
             homogeneous: true,
             valign: Gtk.Align.CENTER,
@@ -78,17 +78,16 @@ export const CheckBoxesRowWidget = GObject.registerClass({
             margin_bottom: 8,
             margin_start: 8,
             margin_end: 8,
+            visible: false,
         });
 
-        frame.set_child(this._hBox);
-
-        vbox.append(headerRow);
-        vbox.append(frame);
-        this.set_child(vbox);
-
+        this._vBox.append(headerRow);
+        this._vBox.append(this._box);
+        this.set_child(this._vBox);
         this.updateItems(items);
 
         this._applyButton.connect('clicked', () => this._applyChanges());
+        this.connect('notify::compact-mode', () => this._onCompactMode(this.compact_mode));
 
         if (this._resetOnApply)
             this._updateCheckStates(0);
@@ -142,36 +141,69 @@ export const CheckBoxesRowWidget = GObject.registerClass({
     }
 
     updateItems(items) {
+        this._box.visible = false;
         let child;
-        while ((child = this._hBox.get_first_child()))
-            this._hBox.remove(child);
+        while ((child = this._box.get_first_child()))
+            this._box.remove(child);
 
         this._checkButtons = [];
+        this._cells = [];
 
         for (let i = 0; i < items.length; i++) {
             const {name, icon} = items[i];
             const cell = new Gtk.Box({
-                orientation: Gtk.Orientation.VERTICAL,
                 spacing: 6,
                 halign: Gtk.Align.CENTER,
                 valign: Gtk.Align.CENTER,
+
             });
 
             const image = new Gtk.Image({icon_name: icon, halign: Gtk.Align.CENTER});
-            const label = new Gtk.Label({label: name, halign: Gtk.Align.CENTER});
-            label.add_css_class('caption-heading');
+            const label = new Gtk.Label({
+                label: name,
+                halign: Gtk.Align.CENTER,
+                css_classes: ['caption-heading'],
+            });
 
             const check = new Gtk.CheckButton({halign: Gtk.Align.CENTER});
             check.connect('toggled', () => {
                 this._updateApplySensitivity();
             });
 
-            this._checkButtons.push(check);
+            cell._label = label;
+            cell._check = check;
             cell.append(image);
             cell.append(label);
             cell.append(check);
-            this._hBox.append(cell);
+            this._cells.push(cell);
+            this._checkButtons.push(check);
+            this._box.append(cell);
         }
+        this._onCompactMode(this.compact_mode);
+    }
+
+    _onCompactMode(mode) {
+        this._box.visible = false;
+        this._vBox.spacing = mode ? 0 : 12;
+        this._box.spacing = mode ? 12 : 4;
+        this._box.orientation = mode ? Gtk.Orientation.VERTICAL : Gtk.Orientation.HORIZONTAL;
+
+        this._cells.forEach(cell => {
+            cell.orientation = mode ? Gtk.Orientation.HORIZONTAL : Gtk.Orientation.VERTICAL;
+            cell.halign = mode ? Gtk.Align.START : Gtk.Align.CENTER;
+            this._reorderCell(cell, mode);
+        });
+        this._box.visible = true;
+    }
+
+    _reorderCell(cell, mode) {
+        const label = cell._label;
+        const check = cell._check;
+
+        if (mode)
+            cell.reorder_child_after(check, null);
+        else
+            cell.reorder_child_after(check, label);
     }
 });
 

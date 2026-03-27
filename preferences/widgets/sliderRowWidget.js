@@ -4,6 +4,7 @@ import GObject from 'gi://GObject';
 import GLib from 'gi://GLib';
 
 export const SliderRowWidget = GObject.registerClass({
+    GTypeName: 'BluetoothBatteryMeter_SliderRowWidget',
     Properties: {
         value: GObject.ParamSpec.int(
             'value',
@@ -12,8 +13,15 @@ export const SliderRowWidget = GObject.registerClass({
             GObject.ParamFlags.READWRITE,
             0, 100, 0
         ),
+        'compact-mode': GObject.ParamSpec.boolean(
+            'compact-mode',
+            '',
+            '',
+            GObject.ParamFlags.READWRITE,
+            false
+        ),
     },
-}, class SliderRowWidget extends Adw.ActionRow {
+}, class SliderRowWidget extends Adw.PreferencesRow {
     _init(params = {}) {
         const {
             rowTitle = '',
@@ -24,7 +32,7 @@ export const SliderRowWidget = GObject.registerClass({
             initialValue = 0,
         } = params;
 
-        super._init({title: rowTitle, subtitle: rowSubtitle});
+        super._init();
 
         const [min, max, step] = range;
         this._step = step;
@@ -36,12 +44,37 @@ export const SliderRowWidget = GObject.registerClass({
         this._timeoutId = 0;
         this._updateDelay = 500;
 
+        this._mainBox = new Gtk.Box({
+            orientation: Gtk.Orientation.VERTICAL,
+            spacing: 6,
+        });
+
+        this._hbox = new Gtk.Box({
+            orientation: Gtk.Orientation.HORIZONTAL,
+            margin_top: 0,
+            margin_bottom: 0,
+            margin_start: 0,
+            margin_end: 0,
+            spacing: 0,
+        });
+
+        this._header = new Adw.ActionRow({
+            title: rowTitle,
+            subtitle: rowSubtitle,
+            activatable: false,
+            can_focus: false,
+            hexpand: true,
+        });
+
         this._slider = Gtk.Scale.new_with_range(Gtk.Orientation.HORIZONTAL, min, max, step);
         this._slider.valign = Gtk.Align.CENTER;
-        this._slider.hexpand = true;
+        this._slider.margin_top = 12;
+        this._slider.margin_bottom = 12;
         this._slider.margin_start = 12;
         this._slider.margin_end = 12;
-        this._slider.set_size_request(200, -1);
+
+        this._slider.set_size_request(250, -1);
+        this._slider.can_focus = false;
 
         for (const {mark, label} of marks)
             this._slider.add_mark(mark, Gtk.PositionType.BOTTOM, label ?? null);
@@ -79,8 +112,44 @@ export const SliderRowWidget = GObject.registerClass({
             });
         }
 
-        this.add_suffix(this._slider);
-        this.set_activatable_widget(this._slider);
+        this._hbox.append(this._header);
+        this._mainBox.append(this._hbox);
+        this.set_child(this._mainBox);
+
+        this.connect('notify::compact-mode', () => {
+            this._updateLayout(this.compact_mode);
+        });
+
+        this._updateLayout(this.compact_mode);
+
+        this.connect('activate', () => {
+            this._slider.focusable = true;
+            this._slider.can_focus = true;
+            this._slider.grab_focus();
+        });
+
+        this._slider.connect('notify::has-focus', () => {
+            if (!this._slider.has_focus) {
+                this._slider.focusable = false;
+                this._slider.can_focus = false;
+            }
+        });
+    }
+
+    _updateLayout(compact) {
+        const parent = this._slider.get_parent();
+        if (parent)
+            parent.remove(this._slider);
+
+        if (compact) {
+            this._slider.hexpand = true;
+            this._slider.halign = Gtk.Align.FILL;
+            this._mainBox.append(this._slider);
+        } else {
+            this._slider.hexpand = false;
+            this._slider.halign = Gtk.Align.END;
+            this._hbox.append(this._slider);
+        }
     }
 
     _scheduleValueEmit(value) {
@@ -120,4 +189,3 @@ export const SliderRowWidget = GObject.registerClass({
         this.notify('value');
     }
 });
-

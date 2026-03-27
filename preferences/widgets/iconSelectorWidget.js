@@ -4,7 +4,7 @@ import Gtk from 'gi://Gtk';
 import Adw from 'gi://Adw';
 
 export const IconSelectorWidget = GObject.registerClass({
-    GTypeName: 'BBM_IconSelectorWidget',
+    GTypeName: 'BluetoothBatteryMeter_IconSelectorWidget',
     Properties: {
         'selected-icon': GObject.ParamSpec.string(
             'selected-icon',
@@ -24,6 +24,7 @@ export const IconSelectorWidget = GObject.registerClass({
 }, class IconSelectorWidget extends Adw.PreferencesGroup {
     _init(params = {}) {
         const {
+            gtxt,
             grpTitle = '',
             rowTitle = '',
             rowSubtitle = '',
@@ -31,9 +32,90 @@ export const IconSelectorWidget = GObject.registerClass({
             initialIcon = '',
             caseIconList = [],
             initialCaseIcon = '',
+            mac = '',
+            fw = '',
         } = params;
 
         super._init({title: grpTitle});
+
+        const _ = gtxt;
+
+        const infoButton = new Gtk.MenuButton({
+            icon_name: 'bbm-info-symbolic',
+            valign: Gtk.Align.CENTER,
+            css_classes: ['flat'],
+            tooltip_text: _('Device information'),
+        });
+
+        const infoPopOver = new Gtk.Popover({
+            has_arrow: true,
+            position: Gtk.PositionType.BOTTOM,
+        });
+
+        const infoBox = new Gtk.Box({
+            orientation: Gtk.Orientation.VERTICAL,
+            spacing: 8,
+            margin_top: 8,
+            margin_bottom: 8,
+            margin_start: 10,
+            margin_end: 10,
+        });
+
+        const title = new Gtk.Label({
+            label: _('Device information'),
+            halign: Gtk.Align.START,
+            css_classes: ['heading'],
+        });
+        infoBox.append(title);
+
+        const macBox = new Gtk.Box({
+            orientation: Gtk.Orientation.HORIZONTAL,
+            spacing: 6,
+            halign: Gtk.Align.START,
+        });
+
+        const macTitle = new Gtk.Label({
+            label: _('Mac Address'),
+            halign: Gtk.Align.START,
+            css_classes: ['caption-heading'],
+        });
+        const macValue = new Gtk.Label({
+            label: mac,
+            halign: Gtk.Align.START,
+            css_classes: ['caption', 'dimmed'],
+        });
+
+        macBox.append(macTitle);
+        macBox.append(macValue);
+        infoBox.append(macBox);
+
+        if (fw) {
+            const fwBox = new Gtk.Box({
+                orientation: Gtk.Orientation.HORIZONTAL,
+                spacing: 6,
+                halign: Gtk.Align.START,
+            });
+
+            const fwTitle = new Gtk.Label({
+                label: _('Firmware Version'),
+                halign: Gtk.Align.START,
+                css_classes: ['caption-heading'],
+            });
+            const fwValue = new Gtk.Label({
+                label: fw,
+                halign: Gtk.Align.START,
+                css_classes: ['caption', 'dimmed'],
+            });
+
+            fwBox.append(fwTitle);
+            fwBox.append(fwValue);
+            infoBox.append(fwBox);
+        }
+
+        infoPopOver.set_child(infoBox);
+        infoButton.set_popover(infoPopOver);
+
+        this.set_header_suffix(infoButton);
 
         this._supportedIcons = iconList;
         this._caseIcons = caseIconList;

@@ -3,7 +3,7 @@ import Gtk from 'gi://Gtk';
 import Adw from 'gi://Adw';
 
 export const RingMyBudsRow = GObject.registerClass({
-    GTypeName: 'RingMyBudsRow',
+    GTypeName: 'BluetoothBatteryMeter_RingMyBudsRow',
     Properties: {
         'status': GObject.ParamSpec.string(
             'status', 'Status', 'Single/Right earbud status',

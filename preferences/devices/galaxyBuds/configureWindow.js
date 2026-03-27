@@ -6,6 +6,7 @@ import {supportedAudioDualIcons, supportedCaseIcons} from '../../../lib/widgets/
 import {DropDownRowWidget} from './../../widgets/dropDownRowWidget.js';
 import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
 import {CheckBoxesRowWidget} from './../../widgets/checkBoxesRowWidget.js';
+import {RadioButtonRowWidget} from './../../widgets/radioButtonRowWidget.js';
 import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
 import {RingMyBudsRow} from './../../widgets/ringMyBudsRow.js';
 import {
@@ -20,8 +21,33 @@ export const ConfigureWindow = GObject.registerClass({
         super._init({
             default_width: 650,
             default_height: 650,
+            width_request: 320,
+            height_request: 100,
             modal,
             transient_for: parentWindow ?? null,
+        });
+
+        this._isCompactMode = false;
+
+        this._breakpointCompact = new Adw.Breakpoint({
+            condition: Adw.BreakpointCondition.parse('max-width: 510px'),
+        });
+
+        this._breakpointExpanded = new Adw.Breakpoint({
+            condition: Adw.BreakpointCondition.parse('min-width: 550px'),
+        });
+
+        this.add_breakpoint(this._breakpointCompact);
+        this.add_breakpoint(this._breakpointExpanded);
+
+        this._breakpointCompact.connect('apply', () => {
+            this._isCompactMode = true;
+            this._updateCompactStatus();
+        });
+
+        this._breakpointExpanded.connect('apply', () => {
+            this._isCompactMode = false;
+            this._updateCompactStatus();
         });
 
         this._settings = settings;
@@ -51,9 +77,6 @@ export const ConfigureWindow = GObject.registerClass({
         toolViewBar.set_content(this._page);
         this.set_content(toolViewBar);
 
-        const aliasGroup = new Adw.PreferencesGroup({title: `MAC: ${mac}`});
-        this._page.add(aliasGroup);
-
         const iconList = supportedAudioDualIcons;
 
         let caseIconList = [];
@@ -64,6 +87,7 @@ export const ConfigureWindow = GObject.registerClass({
         }
 
         const iconSelector = new IconSelectorWidget({
+            gtxt: _,
             grpTitle: _('Icon'),
             rowTitle: _('Select Icon'),
             rowSubtitle: _('Select the icon used for the indicator and quick menu'),
@@ -71,6 +95,8 @@ export const ConfigureWindow = GObject.registerClass({
             initialIcon: this._settingsItems['icon'],
             caseIconList,
             initialCaseIcon,
+            mac,
+            fw: this._settingsItems['fw-version'],
         });
 
         iconSelector.connect('notify::selected-icon', () => {
@@ -91,23 +117,20 @@ export const ConfigureWindow = GObject.registerClass({
 
         const inEarOptions =  [
             _('Default behavior'),
-            _('Resume with both earbuds'),
-            _('Resume with any earbud'),
+            _('Resume with both earbuds, Pause if any removed'),
+            _('Resume with any earbud, Pause if both removed'),
         ];
 
-        const inEarValues = [0, 1, 2];
-
-        this._inEarDropdown = new DropDownRowWidget({
+        this._inEarDropdown = new RadioButtonRowWidget({
             title: _('Choose playback behaviour for Ear detection'),
             subtitle: _('Automatically pause or resume playback ' +
                 'based on wearing detection.'),
             options: inEarOptions,
-            values: inEarValues,
             initialValue: this._settingsItems['wear-detection-mode'],
         });
 
-        this._inEarDropdown.connect('notify::selected-item', () => {
-            this._updateGsettings('wear-detection-mode', this._inEarDropdown.selected_item);
+        this._inEarDropdown.connect('notify::toggled-value', () => {
+            this._updateGsettings('wear-detection-mode', this._inEarDropdown.toggled_value);
         });
 
         inEarSettingsGroup.add(this._inEarDropdown);
@@ -282,6 +305,8 @@ export const ConfigureWindow = GObject.registerClass({
             snapOnStep: true,
         });
 
+        this._stereoBal.compact_mode = this._isCompactMode;
+
         this._stereoBal.connect('notify::value', () => {
             this._updateGsettings('stereo-bal', this._stereoBal.value);
         });
@@ -372,7 +397,9 @@ export const ConfigureWindow = GObject.registerClass({
             return;
 
         this._touchControlDoubleCall = new Adw.SwitchRow({
-            title: _('Double Tap to Answer Call or End Call'),
+            title: this._features.advancedTouchIsPinch
+                ? _('Pinch to Answer Call or End Call')
+                : _('Double Tap to Answer Call or End Call'),
         });
 
         this._touchControlDoubleCall.active = this._settingsItems['tp-adv-call-double'];
@@ -385,7 +412,9 @@ export const ConfigureWindow = GObject.registerClass({
         this._touchControlGroup.add(this._touchControlDoubleCall);
 
         this._touchControlHoldCall = new Adw.SwitchRow({
-            title: _('Touch and Hold to Decline Call'),
+            title: this._features.advancedTouchIsPinch
+                ? _('Pinch and Hold to Decline Call')
+                : _('Touch and Hold to Decline Call'),
         });
 
         this._touchControlHoldCall.active = this._settingsItems['tp-adv-call-hold'];
@@ -536,6 +565,8 @@ export const ConfigureWindow = GObject.registerClass({
                 minRequired: maxRequired,
             });
 
+            this._ncCycleLeft.compact_mode = this._isCompactMode;
+
             this._ncCycleLeft.connect('notify::toggled-value', () => {
                 this._updateGsettings('nc-cycle-left',
                     this._ncCycleLeft.toggled_value);
@@ -555,6 +586,8 @@ export const ConfigureWindow = GObject.registerClass({
             initialValue: this._settingsItems['nc-cycle-right'],
             minRequired: maxRequired,
         });
+
+        this._ncCycleRight.compact_mode = this._isCompactMode;
 
         this._ncCycleRight.connect('notify::toggled-value', () => {
             this._updateGsettings('nc-cycle-right',
@@ -656,6 +689,8 @@ export const ConfigureWindow = GObject.registerClass({
             snapOnStep: true,
         });
 
+        this._ambCustomLeft.compact_mode = this._isCompactMode;
+
         this._ambCustomLeft.connect('notify::value', () => {
             this._updateGsettings('amb-left', this._ambCustomLeft.value);
         });
@@ -674,6 +709,8 @@ export const ConfigureWindow = GObject.registerClass({
             range: [0, max, 1],
             snapOnStep: true,
         });
+
+        this._ambCustomRight.compact_mode = this._isCompactMode;
 
         this._ambCustomRight.connect('notify::value', () => {
             this._updateGsettings('amb-right', this._ambCustomRight.value);
@@ -694,10 +731,21 @@ export const ConfigureWindow = GObject.registerClass({
             snapOnStep: true,
         });
 
+        this._ambCustomTone.compact_mode = this._isCompactMode;
+
         this._ambCustomTone.connect('notify::value', () => {
             this._updateGsettings('amb-tone', this._ambCustomTone.value);
         });
 
         ambientCustomizeGroup.add(this._ambCustomTone);
+    }
+
+    _updateCompactStatus() {
+        this._ncCycleLeft?.set_property('compact-mode', this._isCompactMode);
+        this._ncCycleRight?.set_property('compact-mode', this._isCompactMode);
+        this._stereoBal?.set_property('compact-mode', this._isCompactMode);
+        this._ambCustomLeft?.set_property('compact-mode', this._isCompactMode);
+        this._ambCustomRight?.set_property('compact-mode', this._isCompactMode);
+        this._ambCustomTone?.set_property('compact-mode', this._isCompactMode);
     }
 });

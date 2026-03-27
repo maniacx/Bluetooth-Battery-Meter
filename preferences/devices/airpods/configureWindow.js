@@ -8,6 +8,7 @@ import {
 } from '../../../lib/widgets/iconGroups.js';
 import {AirpodsModelList, LongPressBits} from '../../../lib/devices/airpods/airpodsConfig.js';
 import {CheckBoxesRowWidget} from './../../widgets/checkBoxesRowWidget.js';
+import {RadioButtonRowWidget} from './../../widgets/radioButtonRowWidget.js';
 import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
 import {DropDownRowWidget} from './../../widgets/dropDownRowWidget.js';
 import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
@@ -19,9 +20,35 @@ export const  ConfigureWindow = GObject.registerClass({
         super._init({
             default_width: 650,
             default_height: 650,
+            width_request: 320,
+            height_request: 100,
             modal,
             transient_for: parentWindow ?? null,
         });
+
+        this._isCompactMode = false;
+
+        this._breakpointCompact = new Adw.Breakpoint({
+            condition: Adw.BreakpointCondition.parse('max-width: 500px'),
+        });
+
+        this._breakpointExpanded = new Adw.Breakpoint({
+            condition: Adw.BreakpointCondition.parse('min-width: 550px'),
+        });
+
+        this.add_breakpoint(this._breakpointCompact);
+        this.add_breakpoint(this._breakpointExpanded);
+
+        this._breakpointCompact.connect('apply', () => {
+            this._isCompactMode = true;
+            this._updateCompactStatus();
+        });
+
+        this._breakpointExpanded.connect('apply', () => {
+            this._isCompactMode = false;
+            this._updateCompactStatus();
+        });
+
         this._settings = settings;
         this._devicePath = devicePath;
 
@@ -44,12 +71,6 @@ export const  ConfigureWindow = GObject.registerClass({
         toolViewBar.set_content(page);
         this.set_content(toolViewBar);
 
-        const aliasGroup = new Adw.PreferencesGroup({
-            title: `MAC: ${mac}`,
-        });
-
-        page.add(aliasGroup);
-
         const iconList = modelData.batteryType === 1 ? supportedAudioSingleIcons
             : supportedAudioDualIcons;
 
@@ -61,6 +82,7 @@ export const  ConfigureWindow = GObject.registerClass({
         }
 
         const iconSelector = new IconSelectorWidget({
+            gtxt: _,
             grpTitle: _('Icon'),
             rowTitle: _('Select Icon'),
             rowSubtitle: _('Select the icon used for the indicator and quick menu'),
@@ -68,6 +90,7 @@ export const  ConfigureWindow = GObject.registerClass({
             initialIcon: this._settingsItems['icon'],
             caseIconList,
             initialCaseIcon,
+            mac,
         });
 
         iconSelector.connect('notify::selected-icon', () => {
@@ -91,23 +114,20 @@ export const  ConfigureWindow = GObject.registerClass({
             _('Resume when worn'),
         ] : [
             _('Default behavior'),
-            _('Resume with both earbuds'),
-            _('Resume with any earbud'),
+            _('Resume with both earbuds, Pause if any removed'),
+            _('Resume with any earbud, Pause if both removed'),
         ];
 
-        const inEarValues = modelData.batteryType === 1 ? [0, 1] : [0, 1, 2];
-
-        this._inEarDropdown = new DropDownRowWidget({
+        this._inEarDropdown = new RadioButtonRowWidget({
             title: _('Choose playback behaviour for Ear detection'),
             subtitle: _('Automatically pause or resume playback ' +
                 'based on wearing detection.'),
             options: inEarOptions,
-            values: inEarValues,
             initialValue: this._settingsItems['wear-detection-mode'],
         });
 
-        this._inEarDropdown.connect('notify::selected-item', () => {
-            this._updateGsettings('wear-detection-mode', this._inEarDropdown.selected_item);
+        this._inEarDropdown.connect('notify::toggled-value', () => {
+            this._updateGsettings('wear-detection-mode', this._inEarDropdown.toggled_value);
         });
 
         inEarSettingsGroup.add(this._inEarDropdown);
@@ -242,6 +262,8 @@ export const  ConfigureWindow = GObject.registerClass({
                 resetOnApply: true,
             });
 
+            this._longPressCycleWidget.compact_mode = this._isCompactMode;
+
             this._longPressCycleWidget.connect('notify::toggled-value', () => {
                 const toggled = this._longPressCycleWidget.toggled_value;
                 let mask = 0;
@@ -274,6 +296,8 @@ export const  ConfigureWindow = GObject.registerClass({
                 ],
                 initialValue: this._settingsItems['noti-vol'],
             });
+
+            this._toneWidget.compact_mode = this._isCompactMode;
 
             this._toneWidget.connect('notify::value', () => {
                 this._updateGsettings('noti-vol', this._toneWidget.value);
@@ -420,6 +444,10 @@ export const  ConfigureWindow = GObject.registerClass({
             this._settings.set_strv('airpods-list', pairedDevice);
         }
     }
-}
-);
+
+    _updateCompactStatus() {
+        this._longPressCycleWidget?.set_property('compact-mode', this._isCompactMode);
+        this._toneWidget?.set_property('compact-mode', this._isCompactMode);
+    }
+});
 

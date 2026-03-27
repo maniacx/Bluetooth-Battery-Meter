@@ -3,7 +3,7 @@ import Gtk from 'gi://Gtk';
 import GObject from 'gi://GObject';
 
 export const DropDownRowWidget = GObject.registerClass({
-    GTypeName: 'DropDownRowWidget',
+    GTypeName: 'BluetoothBatteryMeter_DropDownRowWidget',
     Properties: {
         selected_item: GObject.ParamSpec.object(
             'selected-item',
@@ -16,11 +16,11 @@ export const DropDownRowWidget = GObject.registerClass({
 }, class DropDownRowWidget extends Adw.ActionRow {
     _init(params = {}) {
         const {
-            title = '',             // Adw Row Title
-            subtitle = '',          // Adw Row Subtitle
-            options = [],           // Array of Options to be Displayed in dropdown
-            values = [],            // Array of Values for the above options
-            initialValue = null,    // Initital Selection
+            title = '',
+            subtitle = '',
+            options = [],
+            values = [],
+            initialValue = null,
         } = params;
 
         super._init({title, subtitle});

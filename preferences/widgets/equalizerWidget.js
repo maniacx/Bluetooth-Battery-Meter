@@ -3,21 +3,30 @@ import GObject from 'gi://GObject';
 import GLib from 'gi://GLib';
 
 export const EqualizerWidget = GObject.registerClass({
-    GTypeName: 'EqualizerWidget',
+    GTypeName: 'BluetoothBatteryMeter_EqualizerWidget',
     Signals: {'eq-changed': {param_types: [GObject.TYPE_JSOBJECT]}},
-}, class EqualizerWidget extends Gtk.Box {
+}, class EqualizerWidget extends Gtk.ScrolledWindow {
     _init(freqs, initialValues = [], range = 6) {
         super._init({
+            hscrollbar_policy: Gtk.PolicyType.AUTOMATIC,
+            vscrollbar_policy: Gtk.PolicyType.NEVER,
+            hexpand: true,
+            vexpand: false,
+            kinetic_scrolling: true,
+            overlay_scrolling: false,
+        });
+
+        const hbox = new Gtk.Box({
             orientation: Gtk.Orientation.HORIZONTAL,
             spacing: 10,
             homogeneous: false,
-            margin_top: 6,
-            margin_bottom: 6,
+            margin_top: 20,
+            margin_bottom: 20,
             margin_start: 12,
             margin_end: 12,
         });
 
-        this.set_size_request(-1, 200);
+        this.set_size_request(-1, 240);
         this._values = freqs.map((_, i) => Math.round(initialValues[i] ?? 0));
         this._range = range;
         this._sliders = [];
@@ -82,8 +91,10 @@ export const EqualizerWidget = GObject.registerClass({
             vbox.append(freqLabel);
             vbox.append(slider);
             vbox.append(valueLabel);
-            this.append(vbox);
+            hbox.append(vbox);
         });
+
+        this.set_child(hbox);
     }
 
     _scheduleEqChanged() {
@@ -123,4 +134,3 @@ export const EqualizerWidget = GObject.registerClass({
         });
     }
 });
-

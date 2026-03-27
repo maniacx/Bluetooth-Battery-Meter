@@ -22,8 +22,33 @@ export const ConfigureWindow = GObject.registerClass({
         super._init({
             default_width: 650,
             default_height: 650,
+            width_request: 320,
+            height_request: 100,
             modal,
             transient_for: parentWindow ?? null,
+        });
+
+        this._isCompactMode = false;
+
+        this._breakpointCompact = new Adw.Breakpoint({
+            condition: Adw.BreakpointCondition.parse('max-width: 500px'),
+        });
+
+        this._breakpointExpanded = new Adw.Breakpoint({
+            condition: Adw.BreakpointCondition.parse('min-width: 550px'),
+        });
+
+        this.add_breakpoint(this._breakpointCompact);
+        this.add_breakpoint(this._breakpointExpanded);
+
+        this._breakpointCompact.connect('apply', () => {
+            this._isCompactMode = true;
+            this._updateCompactStatus();
+        });
+
+        this._breakpointExpanded.connect('apply', () => {
+            this._isCompactMode = false;
+            this._updateCompactStatus();
         });
 
         this._settings = settings;
@@ -49,9 +74,6 @@ export const ConfigureWindow = GObject.registerClass({
         toolViewBar.set_content(page);
         this.set_content(toolViewBar);
 
-        const aliasGroup = new Adw.PreferencesGroup({title: `MAC: ${mac}`});
-        page.add(aliasGroup);
-
         const iconList = modelData.batteryDual ? supportedAudioDualIcons
             : supportedAudioSingleIcons;
 
@@ -63,6 +85,7 @@ export const ConfigureWindow = GObject.registerClass({
         }
 
         const iconSelector = new IconSelectorWidget({
+            gtxt: _,
             grpTitle: _('Icon'),
             rowTitle: _('Select Icon'),
             rowSubtitle: _('Select the icon used for the indicator and quick menu'),
@@ -70,6 +93,8 @@ export const ConfigureWindow = GObject.registerClass({
             initialIcon: this._settingsItems['icon'],
             caseIconList,
             initialCaseIcon,
+            mac,
+            fw: this._settingsItems['fw-version'],
         });
 
         iconSelector.connect('notify::selected-icon', () => {
@@ -345,6 +370,8 @@ export const ConfigureWindow = GObject.registerClass({
                 initialValue: this._settingsItems['amb-btn-mode'],
             });
 
+            this._ancToggleButtonWidget.compact_mode = this._isCompactMode;
+
             this._ancToggleButtonWidget.connect('notify::toggled-value', () => {
                 const val = this._ancToggleButtonWidget.toggled_value;
                 this._updateGsettings('amb-btn-mode', val);
@@ -390,6 +417,8 @@ export const ConfigureWindow = GObject.registerClass({
                     range: [-2, 2, 1],
                     snapOnStep: true,
                 });
+
+                this._voiceNotificationsVolume.compact_mode = this._isCompactMode;
 
                 this._voiceNotificationsVolume.sensitive = this._voiceNotificationsSwitchRow.active;
                 this._voiceNotificationsVolume.connect('notify::value', () => {
@@ -563,4 +592,9 @@ export const ConfigureWindow = GObject.registerClass({
             EqualizerPreset.CUSTOM_2,
         ].includes(val);
     };
+
+    _updateCompactStatus() {
+        this._ancToggleButtonWidget?.set_property('compact-mode', this._isCompactMode);
+        this._voiceNotificationsVolume?.set_property('compact-mode', this._isCompactMode);
+    }
 });
