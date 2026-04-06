@@ -41,7 +41,7 @@ export const IconSelectorWidget = GObject.registerClass({
         const _ = gtxt;
 
         const infoButton = new Gtk.MenuButton({
-            icon_name: 'bbm-info-symbolic',
+            icon_name: 'bbm-help-about-symbolic',
             valign: Gtk.Align.CENTER,
             css_classes: ['flat'],
             tooltip_text: _('Device information'),
