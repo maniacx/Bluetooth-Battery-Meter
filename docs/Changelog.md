@@ -8,6 +8,20 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-46_Version 45 &emsp;&emsp; Apr 07, 2026
+> * Sony WH-1000XM3: Load correct default icon
+> * Added notification when the Bluetooth socket is inaccessible (e.g., in use by another application)
+> * Added support for Nothing / CMF Buds (credits: ArcticDev78, Lascar_s)
+> * Added support for Galaxy Buds (credits: kacpero1530, adlr, kerembayulgen)
+> * Improved Preferences / Configuration window, especially for portrait mode on mobile displays
+
+{: .important-title }
+> GN-46_Version 44 &emsp;&emsp; Feb 26, 2026
+> * Bluetooth Battery Meter: Add support to Gnome 50
+> * MutliIndicatorMode: Fix bug gIcon undefined
+> * QuickSettings: Disable Bluetooth Submenu by default on new installation
+
+{: .important-title }
 > GN-45_Version 43 &emsp;&emsp; Feb 03, 2026
 > * IndicatorIconWidget: Fix TypeError from missing _batteryBounds in dot layout. credits: tmavro
 > * Bugfix: Update icon in prefs and BT quicksettings menu when changed for enhanced device

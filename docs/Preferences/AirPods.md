@@ -1,8 +1,8 @@
 ---
 layout: default
-title: AirPods
+title: AirPods / Beats
 parent: Preferences
-nav_order: 6
+nav_order: 7
 permalink: /preferences/airpods
 ---
 
@@ -19,11 +19,11 @@ permalink: /preferences/airpods
 * It shows a circular battery widget, supporting either a single battery (headset) or three separate levels for Left, Right, and Case.
 * The case battery is shown only when the AirPods report it, usually when the case is charging or when at least one AirPod is inside.
 
-**AirPods / Beats ANC and Conversation Awareness**
+**AirPods / Beats Noise Control, Conversation Awareness, other features**
 
-* Only certain AirPods models support ANC mode.
-* Some models support ANC but not Ambient mode.
-* Some models also support Conversation Mode.
+* Not all features are supported on every model; availability varies depending on the selected device.
+* Features exclusive to this extension are described below.
+* Other settings are self-explanatory and mirror those available on iPhone, iPad, and Mac.
 
 ### Button Visibility
 
@@ -122,6 +122,10 @@ table th:nth-of-type(3) {
     width: 20%;
 }
 </style>
+AAA
+<span class="check"></span>
+<span class="cross"></span>
+AAA
 
 ### AirPods 1st Gen
 
@@ -225,8 +229,17 @@ table th:nth-of-type(3) {
 | Modalias                      | 201F           | ✅     |
 | Battery Level                 | Single         | ✅     |
 | ANC                           | ✅             | ✅     |
-| ANC                           | ✅             | ✅     |
 | In‑Ear Play/Pause             | ✅             | ✅     |
+
+<br>
+### AirPods Max 2
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 202D           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| ANC                           | ✅             | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
 
 <br>
 ### Beats Fit Pro
@@ -266,6 +279,15 @@ table th:nth-of-type(3) {
 | In‑Ear Play/Pause             | ✅             | ❌     |
 
 <br>
+### Beats Solo 4
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 2025           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
 ### Powerbeats 3
 
 | Feature                       | Supported      | Tested |
@@ -282,6 +304,7 @@ table th:nth-of-type(3) {
 | Modalias                      | 2009           | ❌     |
 | Battery Level                 | Single         | ❌     |
 | In‑Ear Play/Pause             | ✅             | ❌     |
+
 
 <br>
 ### Powerbeats Pro
@@ -337,4 +360,5 @@ table th:nth-of-type(3) {
 | Modalias                      | 2016           | ❌     |
 | Battery Level                 | L, R, Case     | ❌     |
 | In‑Ear Play/Pause             | ✅             | ❌     |
+
 

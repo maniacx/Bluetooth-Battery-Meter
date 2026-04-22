@@ -2,7 +2,7 @@
 layout: default
 title: Battery Service (BAS)
 parent: Preferences
-nav_order: 7
+nav_order: 6
 permalink: /preferences/gattbass
 ---
 

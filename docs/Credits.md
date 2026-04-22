@@ -192,6 +192,44 @@ permalink: /credits
 > * G-dH
 > * guiand888
 
+## Samsung Galaxy Buds
+
+> Gadgetbridge
+>
+> <https://codeberg.org/Freeyourgadget/Gadgetbridge>
+
+
+> timschneeb
+>
+> <https://github.com/timschneeb/GalaxyBudsClient>
+
+> Testing
+>
+> * kacpero1530
+> * adlr
+> * kerembayulgen
+
+## Nothing / CMF Buds
+
+> Gadgetbridge
+>
+> <https://codeberg.org/Freeyourgadget/Gadgetbridge>
+
+
+> radiance-project
+>
+> <https://github.com/radiance-project/ear-web>
+
+> DaanHessen
+>
+> <https://github.com/DaanHessen/earctl>
+
+> Testing
+>
+> * ArcticDev78
+> * Lascar_s@matrix
+
+
 
 
 

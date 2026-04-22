@@ -2,7 +2,7 @@
 layout: default
 title: Sony Bluetooth Audio
 parent: Preferences
-nav_order: 6
+nav_order: 8
 permalink: /preferences/sony
 ---
 
@@ -18,7 +18,7 @@ permalink: /preferences/sony
 * The popup can appear in multiple modes: On-Hover, Panel Button, and/or Bluetooth Submenu.
 * It shows a circular battery widget, supporting either a single battery (headset) or three separate levels for Left, Right, and Case.
 * The case battery is shown only when the Sony report it, usually when the case is charging or when at least one bud is inside.
-* **Conversation Awareness** in Sony term is **Speak to Chat**.
+* **Conversation Awareness** in buds term is **Speak to Chat**.
 
 **Sony ANC and Conversation Awareness**
 
@@ -184,6 +184,19 @@ table th:nth-of-type(3) {
 | Voice Notifications           | ✅             | ❌     |
 | Equalizer Six Bands           | ✅             | ❌     |
 | DSEE                          | ✅             | ❌     |
+
+### WF-1000XM6
+
+| Feature                       | Supported | Tested |
+|:-----------------------------:|:---------:|:------:|
+| Battery Level                 | L, R, Case| ❌     |
+| Ambient Mode                  | ✅        | ❌     |
+| Speak To Chat Config          | ✅        | ❌     |
+| Voice Notifications           | ✅        | ❌     |
+| Pause When Taken Off          | ✅        | ❌     |
+| Auto Power Off When Taken Off | ✅        | ❌     |
+| Equalizer Six Bands           | ✅        | ❌     |
+| Upscaling (DSEE)              | ✅        | ❌     |
 
 
 ### WF-1000XM5
