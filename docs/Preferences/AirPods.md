@@ -122,10 +122,6 @@ table th:nth-of-type(3) {
     width: 20%;
 }
 </style>
-AAA
-<span class="check"></span>
-<span class="cross"></span>
-AAA
 
 ### AirPods 1st Gen
 

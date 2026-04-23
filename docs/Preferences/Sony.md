@@ -51,10 +51,10 @@ Conversation Awareness (Speak to Chat)
 When enabled, the system can detect Sony headphones/earbuds among connected Bluetooth devices. It communicates over RFCOMM sockets to support features such as:
 
 * Battery level reporting
-* In-ear detection for automatic pause/play of media
-* Control of ANC (Active Noise Cancellation) mode (if supported)
+* Control of ANC (Active Noise Cancellation) / Ambient mode (if supported)
 * Conversation Awareness mode (if supported)
-* Other feature such as Equalizer, Listening Modes, etc
+* Adaptive noise level customization (if supported)
+* Configure Stem/Touch, Equalizer, Notifications etc.
 
  
 ## Configuration by Device
