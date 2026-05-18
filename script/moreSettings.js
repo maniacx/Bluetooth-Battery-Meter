@@ -20,6 +20,7 @@ import * as Airpods from '../preferences/devices/airpods/configureWindow.js';
 import * as Sony from '../preferences/devices/sony/configureWindow.js';
 import * as GalaxyBuds from '../preferences/devices/galaxyBuds/configureWindow.js';
 import * as NothingBuds from '../preferences/devices/nothingBuds/configureWindow.js';
+import * as PixelBuds from '../preferences/devices/pixelBuds/configureWindow.js';
 
 Gio._promisify(Gio.DBusProxy, 'new');
 Gio._promisify(Gio.DBusProxy.prototype, 'call');
@@ -68,6 +69,9 @@ class MoreSettingsLauncher {
         } else if (this._deviceType === 'nothingBuds') {
             this._prefsType = NothingBuds;
             this._schemaKey = 'nothing-buds-list';
+        } else if (this._deviceType === 'pixelBuds') {
+            this._prefsType = PixelBuds;
+            this._schemaKey = 'pixel-buds-list';
         }
     }
 
