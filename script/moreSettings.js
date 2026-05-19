@@ -75,7 +75,7 @@ class MoreSettingsLauncher {
             this._schemaKey = 'google-buds-list';
         } else if (this._deviceType === 'gfps') {
             this._prefsType = Gfps;
-            this._schemaKey = 'pixel-buds-list';
+            this._schemaKey = 'gfps-list';
         }
     }
 

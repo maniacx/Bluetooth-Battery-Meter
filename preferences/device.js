@@ -24,7 +24,7 @@ const  ConfigureWindow = GObject.registerClass({
         const isSonyEnabled = settings.get_boolean('enable-sony-device');
         const isGalaxyBudsEnabled = settings.get_boolean('enable-galaxy-buds-device');
         const isNothingBudsEnabled = settings.get_boolean('enable-nothing-buds-device');
-        const isGfpsEnabled = settings.get_boolean('enable-pixel-buds-device');
+        const isGfpsEnabled = settings.get_boolean('enable-gfps-device');
         const isGoogleBudsEnabled = settings.get_boolean('enable-google-buds-device');
 
         let isEnhancedDevice = false;

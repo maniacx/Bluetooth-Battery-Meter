@@ -24,7 +24,7 @@ export const ConfigureWindow = GObject.registerClass({
         this._settings = settings;
         this._devicePath = devicePath;
 
-        const pathsString = settings.get_strv('pixel-buds-list').map(JSON.parse);
+        const pathsString = settings.get_strv('gfps-list').map(JSON.parse);
         this._settingsItems = pathsString.find(info => info.path === devicePath);
 
         if (!this._settingsItems)
@@ -81,8 +81,8 @@ export const ConfigureWindow = GObject.registerClass({
 
         this._page.add(iconSelector);
 
-        settings.connect('changed::pixel-buds-list', () => {
-            const updatedList = settings.get_strv('pixel-buds-list').map(JSON.parse);
+        settings.connect('changed::gfps-list', () => {
+            const updatedList = settings.get_strv('gfps-list').map(JSON.parse);
             this._settingsItems = updatedList.find(info => info.path === devicePath);
             if (!this._settingsItems)
                 return;
@@ -92,14 +92,14 @@ export const ConfigureWindow = GObject.registerClass({
     }
 
     _updateGsettings(key, value) {
-        const pairedDevice = this._settings.get_strv('pixel-buds-list');
+        const pairedDevice = this._settings.get_strv('gfps-list');
         const existingPathIndex =
             pairedDevice.findIndex(item => JSON.parse(item).path === this._devicePath);
         if (existingPathIndex !== -1) {
             const existingItem = JSON.parse(pairedDevice[existingPathIndex]);
             existingItem[key] = value;
             pairedDevice[existingPathIndex] = JSON.stringify(existingItem);
-            this._settings.set_strv('pixel-buds-list', pairedDevice);
+            this._settings.set_strv('gfps-list', pairedDevice);
         }
     }
 });

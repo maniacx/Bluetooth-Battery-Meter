@@ -44,7 +44,7 @@ const DeviceItem = GObject.registerClass({
         });
 
         this._deleteButton.connect('clicked', () => {
-            const pairedDevices = settings.get_strv('pixel-buds-list');
+            const pairedDevices = settings.get_strv('gfps-list');
             const existingPathIndex = pairedDevices.findIndex(entry => {
                 const parsedEntry = JSON.parse(entry);
                 return parsedEntry.path === pathInfo.path;
@@ -52,7 +52,7 @@ const DeviceItem = GObject.registerClass({
 
             if (existingPathIndex !== -1) {
                 pairedDevices.splice(existingPathIndex, 1);
-                settings.set_strv('pixel-buds-list', pairedDevices);
+                settings.set_strv('gfps-list', pairedDevices);
             }
             this.get_parent().remove(this);
             deviceItem.delete(pathInfo.path);
@@ -70,7 +70,7 @@ const DeviceItem = GObject.registerClass({
     updateProperties(pathInfo) {
         this.title = pathInfo.alias;
         this.subtitle = this._macAddress;
-        this._deleteButton.sensitive = !this._settings.get_boolean('enable-pixel-buds-device');
+        this._deleteButton.sensitive = !this._settings.get_boolean('enable-gfps-device');
         this._icon.icon_name = `bbm-${pathInfo.icon}-symbolic`;
     }
 
@@ -98,19 +98,19 @@ export const Gfps = GObject.registerClass({
         this._deviceItems = new Map();
 
         settings.bind(
-            'enable-pixel-buds-device',
+            'enable-gfps-device',
             this._enable_gfps_device,
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );
 
         this._createDevices();
-        this._settings.connect('changed::enable-pixel-buds-device', () => this._createDevices());
-        this._settings.connect('changed::pixel-buds-list', () => this._createDevices());
+        this._settings.connect('changed::enable-gfps-device', () => this._createDevices());
+        this._settings.connect('changed::gfps-list', () => this._createDevices());
     }
 
     _createDevices() {
-        const pathsString = this._settings.get_strv('pixel-buds-list').map(JSON.parse);
+        const pathsString = this._settings.get_strv('gfps-list').map(JSON.parse);
         if (!pathsString || pathsString.length === 0) {
             this._no_gfps_paired_row.visible = true;
             return;
