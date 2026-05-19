@@ -159,5 +159,13 @@
             <default>[]</default>
             <summary>List of gattbas devices</summary>
         </key>
+        <key name="enable-google-buds-device" type="b">
+            <default>false</default>
+            <summary>"enable Google Pixel Buds devices"</summary>
+        </key>
+        <key name="google-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of Google Pixel Buds devices</summary>
+        </key>
     </schema>
 </schemalist>

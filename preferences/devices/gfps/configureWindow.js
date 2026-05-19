@@ -6,10 +6,10 @@ import {
     supportedAudioSingleIcons, supportedAudioDualIcons, supportedCaseIcons
 } from '../../../lib/widgets/iconGroups.js';
 import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
-import {PixelBudsModelList} from '../../../lib/devices/pixelBuds/pixelBudsConfig.js';
+import {GfpsModelList} from '../../../lib/devices/gfps/gfpsConfig.js';
 
 export const ConfigureWindow = GObject.registerClass({
-    GTypeName: 'BluetoothBatteryMeter_PixelBudsConfigureWindow',
+    GTypeName: 'BluetoothBatteryMeter_GfpsConfigureWindow',
 }, class ConfigureWindow extends Adw.Window {
     _init(settings, mac, devicePath, parentWindow, _, modal = false) {
         super._init({
@@ -33,7 +33,7 @@ export const ConfigureWindow = GObject.registerClass({
         this.title = this._settingsItems.alias;
 
         this._modelData =
-            PixelBudsModelList.find(m => m.modelId === this._settingsItems.modelid) || PixelBudsModelList[0];
+            GfpsModelList.find(m => m.modelId === this._settingsItems.modelid) || GfpsModelList[0];
 
         const toolViewBar = new Adw.ToolbarView();
         const headerBar = new Adw.HeaderBar({

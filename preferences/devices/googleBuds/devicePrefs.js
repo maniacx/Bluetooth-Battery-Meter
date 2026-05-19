@@ -9,7 +9,7 @@ import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions
 import {ConfigureWindow} from './configureWindow.js';
 
 const DeviceItem = GObject.registerClass({
-    GTypeName: 'BluetoothBatteryMeter_GfpsDeviceItem',
+    GTypeName: 'BluetoothBatteryMeter_GoogleBudsDeviceItem',
 }, class DeviceItem extends Adw.ActionRow {
     constructor(settings, deviceItem, pathInfo) {
         super({});
@@ -34,17 +34,17 @@ const DeviceItem = GObject.registerClass({
             configureWindow.present();
         });
 
-        const gfpsLabel = _('Google Fast Pair');
+        const googleBudsLabel = _('Pixel Buds');
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
             tooltip_text: _('The button is available after disabling %s mode')
-                .format(gfpsLabel),
+                .format(googleBudsLabel),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
         });
 
         this._deleteButton.connect('clicked', () => {
-            const pairedDevices = settings.get_strv('pixel-buds-list');
+            const pairedDevices = settings.get_strv('google-buds-list');
             const existingPathIndex = pairedDevices.findIndex(entry => {
                 const parsedEntry = JSON.parse(entry);
                 return parsedEntry.path === pathInfo.path;
@@ -52,7 +52,7 @@ const DeviceItem = GObject.registerClass({
 
             if (existingPathIndex !== -1) {
                 pairedDevices.splice(existingPathIndex, 1);
-                settings.set_strv('pixel-buds-list', pairedDevices);
+                settings.set_strv('google-buds-list', pairedDevices);
             }
             this.get_parent().remove(this);
             deviceItem.delete(pathInfo.path);
@@ -70,7 +70,7 @@ const DeviceItem = GObject.registerClass({
     updateProperties(pathInfo) {
         this.title = pathInfo.alias;
         this.subtitle = this._macAddress;
-        this._deleteButton.sensitive = !this._settings.get_boolean('enable-pixel-buds-device');
+        this._deleteButton.sensitive = !this._settings.get_boolean('enable-google-buds-device');
         this._icon.icon_name = `bbm-${pathInfo.icon}-symbolic`;
     }
 
@@ -81,41 +81,41 @@ const DeviceItem = GObject.registerClass({
     }
 });
 
-export const Gfps = GObject.registerClass({
-    GTypeName: 'BluetoothBatteryMeter_GfpsUI',
+export const GoogleBuds = GObject.registerClass({
+    GTypeName: 'BluetoothBatteryMeter_GoogleBudsUI',
     Template: GLib.Uri.resolve_relative(
-        import.meta.url, '../../../ui/devices/gfps.ui', GLib.UriFlags.NONE
+        import.meta.url, '../../../ui/devices/googleBuds.ui', GLib.UriFlags.NONE
     ),
     InternalChildren: [
-        'enable_gfps_device',
-        'gfps_group',
-        'no_gfps_paired_row',
+        'enable_google_buds_device',
+        'google_buds_group',
+        'no_google_buds_paired_row',
     ],
-}, class Gfps extends Adw.PreferencesPage {
+}, class GoogleBuds extends Adw.PreferencesPage {
     constructor(settings) {
         super({});
         this._settings = settings;
         this._deviceItems = new Map();
 
         settings.bind(
-            'enable-pixel-buds-device',
-            this._enable_gfps_device,
+            'enable-google-buds-device',
+            this._enable_google_buds_device,
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );
 
         this._createDevices();
-        this._settings.connect('changed::enable-pixel-buds-device', () => this._createDevices());
-        this._settings.connect('changed::pixel-buds-list', () => this._createDevices());
+        this._settings.connect('changed::enable-google-buds-device', () => this._createDevices());
+        this._settings.connect('changed::google-buds-list', () => this._createDevices());
     }
 
     _createDevices() {
-        const pathsString = this._settings.get_strv('pixel-buds-list').map(JSON.parse);
+        const pathsString = this._settings.get_strv('google-buds-list').map(JSON.parse);
         if (!pathsString || pathsString.length === 0) {
-            this._no_gfps_paired_row.visible = true;
+            this._no_google_buds_paired_row.visible = true;
             return;
         }
-        this._no_gfps_paired_row.visible = false;
+        this._no_google_buds_paired_row.visible = false;
         for (const info of pathsString) {
             const pathInfo = {
                 path: info['path'],
@@ -128,7 +128,7 @@ export const Gfps = GObject.registerClass({
             } else {
                 const deviceItem = new DeviceItem(this._settings, this._deviceItems, pathInfo);
                 this._deviceItems.set(pathInfo.path, deviceItem);
-                this._gfps_group.add(deviceItem);
+                this._google_buds_group.add(deviceItem);
             }
         }
     }
