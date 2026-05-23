@@ -21,16 +21,28 @@ const  ConfigureWindow = GObject.registerClass({
 
         const isAirpodsEnabled = settings.get_boolean('enable-airpods-device');
         const isGattBasEnabled = settings.get_boolean('enable-gattbas-device');
-        const enhandedModeEnabled = isAirpodsEnabled || isGattBasEnabled;
+        const isSonyEnabled = settings.get_boolean('enable-sony-device');
+        const isGalaxyBudsEnabled = settings.get_boolean('enable-galaxy-buds-device');
+        const isNothingBudsEnabled = settings.get_boolean('enable-nothing-buds-device');
+        const isGfpsEnabled = settings.get_boolean('enable-gfps-device');
+        const isGoogleBudsEnabled = settings.get_boolean('enable-google-buds-device');
 
         let isEnhancedDevice = false;
 
-        if (enhandedModeEnabled) {
-            if (pathInfo.isEnhancedDevice === 'airpods')
-                isEnhancedDevice = isAirpodsEnabled;
-            else if (pathInfo.isEnhancedDevice === 'gatt-bas')
-                isEnhancedDevice = isGattBasEnabled;
-        }
+        if (pathInfo.isEnhancedDevice === 'airpods')
+            isEnhancedDevice = isAirpodsEnabled;
+        else if (pathInfo.isEnhancedDevice === 'gatt-bas')
+            isEnhancedDevice = isGattBasEnabled;
+        else if (pathInfo.isEnhancedDevice === 'sony')
+            isEnhancedDevice = isSonyEnabled;
+        else if (pathInfo.isEnhancedDevice === 'galaxyBuds')
+            isEnhancedDevice = isGalaxyBudsEnabled;
+        else if (pathInfo.isEnhancedDevice === 'nothingBuds')
+            isEnhancedDevice = isNothingBudsEnabled;
+        else if (pathInfo.isEnhancedDevice === 'gfps')
+            isEnhancedDevice = isGfpsEnabled;
+        else if (pathInfo.isEnhancedDevice === 'googleBuds')
+            isEnhancedDevice = isGoogleBudsEnabled;
         const toolViewBar = new Adw.ToolbarView();
 
         const headerBar = new Adw.HeaderBar({

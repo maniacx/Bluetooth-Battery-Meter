@@ -143,6 +143,14 @@
             <default>[]</default>
             <summary>List of Nothing / CMF devices</summary>
         </key>
+        <key name="enable-gfps-device" type="b">
+            <default>false</default>
+            <summary>"enable GFPS devices"</summary>
+        </key>
+        <key name="gfps-list" type="as">
+            <default>[]</default>
+            <summary>List of GFPS devices</summary>
+        </key>
         <key name="enable-gattbas-device" type="b">
             <default>false</default>
             <summary>"enable gattbas devices"</summary>
@@ -150,6 +158,14 @@
         <key name="gattbas-list" type="as">
             <default>[]</default>
             <summary>List of gattbas devices</summary>
+        </key>
+        <key name="enable-google-buds-device" type="b">
+            <default>false</default>
+            <summary>"enable Google Pixel Buds devices"</summary>
+        </key>
+        <key name="google-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of Google Pixel Buds devices</summary>
         </key>
     </schema>
 </schemalist>
