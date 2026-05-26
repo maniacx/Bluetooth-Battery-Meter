@@ -20,6 +20,7 @@ import * as Airpods from '../preferences/devices/airpods/configureWindow.js';
 import * as Sony from '../preferences/devices/sony/configureWindow.js';
 import * as GalaxyBuds from '../preferences/devices/galaxyBuds/configureWindow.js';
 import * as NothingBuds from '../preferences/devices/nothingBuds/configureWindow.js';
+import * as RealmeBuds from '../preferences/devices/realmeBuds/configureWindow.js';
 import * as GoogleBuds from '../preferences/devices/googleBuds/configureWindow.js';
 import * as Gfps from '../preferences/devices/gfps/configureWindow.js';
 
@@ -70,6 +71,9 @@ class MoreSettingsLauncher {
         } else if (this._deviceType === 'nothingBuds') {
             this._prefsType = NothingBuds;
             this._schemaKey = 'nothing-buds-list';
+        } else if (this._deviceType === 'realmeBuds') {
+            this._prefsType = RealmeBuds;
+            this._schemaKey = 'realme-buds-list';
         } else if (this._deviceType === 'googleBuds') {
             this._prefsType = GoogleBuds;
             this._schemaKey = 'google-buds-list';
@@ -221,4 +225,3 @@ class MoreSettingsLauncher {
 
 const appInstance = new MoreSettingsLauncher(ARGV);
 appInstance.run();
-

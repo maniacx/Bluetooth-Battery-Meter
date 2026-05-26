@@ -14,6 +14,7 @@ import {Airpods} from './preferences/devices/airpods/devicePrefs.js';
 import {Sony} from './preferences/devices/sony/devicePrefs.js';
 import {GalaxyBuds} from './preferences/devices/galaxyBuds/devicePrefs.js';
 import {NothingBuds} from './preferences/devices/nothingBuds/devicePrefs.js';
+import {RealmeBuds} from './preferences/devices/realmeBuds/devicePrefs.js';
 import {GoogleBuds} from './preferences/devices/googleBuds/devicePrefs.js';
 import {Gfps} from './preferences/devices/gfps/devicePrefs.js';
 import {GattBas} from './preferences/gattBas.js';
@@ -50,6 +51,7 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         this._addPage(Sony, settings);
         this._addPage(GalaxyBuds, settings);
         this._addPage(NothingBuds, settings);
+        this._addPage(RealmeBuds, settings);
         this._addPage(GoogleBuds, settings);
         this._addPage(Gfps, settings);
         this._addPage(GattBas, settings);

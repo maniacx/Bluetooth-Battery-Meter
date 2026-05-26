@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
+  <template class="BluetoothBatteryMeter_RealmeBudsUI" parent="AdwPreferencesPage">
+    <property name="name">Realme</property>
+    <property name="title" translatable="yes">Realme Buds</property>
+    <property name="icon-name">bbm-earbuds-stem-symbolic</property>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Note!</property>
+        <property name="header-suffix">
+          <object class="GtkButton">
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="margin-start">6</property>
+            <property name="css-classes">error</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Experimental</property>
+          </object>
+        </property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="subtitle" translatable="yes">Currently supports Realme Buds T310 noise-control modes.</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Realme Buds Settings</property>
+        <child>
+          <object class="AdwSwitchRow" id="enable_realme_buds_device">
+            <property name="title" translatable="yes">Enable Realme Buds Support</property>
+            <property name="subtitle" translatable="yes">Enables control of Normal, Noise Cancellation, and Transparency modes for supported models.</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup" id="realme_buds_group">
+        <property name="title" translatable="yes">Configuration by Device</property>
+        <child>
+          <object class="AdwActionRow" id="no_realme_buds_paired_row">
+            <property name="title" translatable="yes">No compatible device paired!</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

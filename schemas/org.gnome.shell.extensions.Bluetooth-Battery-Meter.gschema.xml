@@ -143,6 +143,14 @@
             <default>[]</default>
             <summary>List of Nothing / CMF devices</summary>
         </key>
+        <key name="enable-realme-buds-device" type="b">
+            <default>false</default>
+            <summary>"enable Realme Buds devices"</summary>
+        </key>
+        <key name="realme-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of Realme Buds devices</summary>
+        </key>
         <key name="enable-gfps-device" type="b">
             <default>false</default>
             <summary>"enable GFPS devices"</summary>

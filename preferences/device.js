@@ -3,11 +3,11 @@ import Adw from 'gi://Adw';
 import GLib from 'gi://GLib';
 import GObject from 'gi://GObject';
 import Gtk from 'gi://Gtk';
-import {gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
+import { gettext as _ } from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
-import {supportedIcons} from '../lib/widgets/iconGroups.js';
+import { supportedIcons } from '../lib/widgets/iconGroups.js';
 
-const  ConfigureWindow = GObject.registerClass({
+const ConfigureWindow = GObject.registerClass({
     GTypeName: 'BluetoothBatteryMeter_DeviceConfigureWindow',
 }, class ConfigureWindow extends Adw.Window {
     _init(settings, mac, deviceItem, pathInfo, parentWindow) {
@@ -24,6 +24,7 @@ const  ConfigureWindow = GObject.registerClass({
         const isSonyEnabled = settings.get_boolean('enable-sony-device');
         const isGalaxyBudsEnabled = settings.get_boolean('enable-galaxy-buds-device');
         const isNothingBudsEnabled = settings.get_boolean('enable-nothing-buds-device');
+        const isRealmeBudsEnabled = settings.get_boolean('enable-realme-buds-device');
         const isGfpsEnabled = settings.get_boolean('enable-gfps-device');
         const isGoogleBudsEnabled = settings.get_boolean('enable-google-buds-device');
 
@@ -39,6 +40,8 @@ const  ConfigureWindow = GObject.registerClass({
             isEnhancedDevice = isGalaxyBudsEnabled;
         else if (pathInfo.isEnhancedDevice === 'nothingBuds')
             isEnhancedDevice = isNothingBudsEnabled;
+        else if (pathInfo.isEnhancedDevice === 'realmeBuds')
+            isEnhancedDevice = isRealmeBudsEnabled;
         else if (pathInfo.isEnhancedDevice === 'gfps')
             isEnhancedDevice = isGfpsEnabled;
         else if (pathInfo.isEnhancedDevice === 'googleBuds')
@@ -61,8 +64,8 @@ const  ConfigureWindow = GObject.registerClass({
         });
 
         const status = _('Battery Status:');
-        let batteryStatus = pathInfo.batteryReported  ? _('Reported') : _('Not Available');
-        batteryStatus = isEnhancedDevice ?  _('Reported from enhanced device service')
+        let batteryStatus = pathInfo.batteryReported ? _('Reported') : _('Not Available');
+        batteryStatus = isEnhancedDevice ? _('Reported from enhanced device service')
             : batteryStatus;
 
         aliasGroup.set_description(`${status} ${batteryStatus}`);
@@ -153,7 +156,7 @@ const  ConfigureWindow = GObject.registerClass({
                 settings.set_strv('device-list', pairedDevice);
             }
         });
-        quickSettingsGroup.visible =  pathInfo.batteryReported || isEnhancedDevice;
+        quickSettingsGroup.visible = pathInfo.batteryReported || isEnhancedDevice;
         quickSettingsGroup.add(quickSettingsSwitchRow);
         page.add(quickSettingsGroup);
 
@@ -167,13 +170,13 @@ const  ConfigureWindow = GObject.registerClass({
         });
         const indicatorOptions = pathInfo.batteryReported || isEnhancedDevice
             ? [
-                {id: 0, label: _('Do not show Icon')},
-                {id: 1, label: _('Show Icon without Battery level')},
-                {id: 2, label: _('Show Icon with Battery Level')},
+                { id: 0, label: _('Do not show Icon') },
+                { id: 1, label: _('Show Icon without Battery level') },
+                { id: 2, label: _('Show Icon with Battery Level') },
             ]
             : [
-                {id: 0, label: _('Hide Icon')},
-                {id: 1, label: _('Show Icon')},
+                { id: 0, label: _('Hide Icon') },
+                { id: 1, label: _('Show Icon') },
             ];
 
         const dropDown = new Gtk.DropDown({
@@ -207,7 +210,7 @@ const  ConfigureWindow = GObject.registerClass({
 }
 );
 
-const  DeviceItem = GObject.registerClass({
+const DeviceItem = GObject.registerClass({
     GTypeName: 'BluetoothBatteryMeter_DeviceItem',
 }, class DeviceItem extends Adw.ActionRow {
     constructor(settings, deviceItem, pathInfo) {
@@ -236,7 +239,7 @@ const  DeviceItem = GObject.registerClass({
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
             tooltip_text: _('Delete device information: ' +
-            'The button is available after unpairing device'),
+                'The button is available after unpairing device'),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
         });
@@ -256,7 +259,7 @@ const  DeviceItem = GObject.registerClass({
             deviceItem.delete(pathInfo.path);
         });
 
-        const box = new Gtk.Box({spacing: 16});
+        const box = new Gtk.Box({ spacing: 16 });
         box.append(this._customiseButton);
         box.append(this._deleteButton);
         this.add_prefix(this._icon);
@@ -284,7 +287,7 @@ const  DeviceItem = GObject.registerClass({
 });
 
 
-export const  Device = GObject.registerClass({
+export const Device = GObject.registerClass({
     GTypeName: 'BluetoothBatteryMeter_DeviceUI',
     Template: GLib.Uri.resolve_relative(
         import.meta.url, '../ui/device.ui', GLib.UriFlags.NONE
@@ -305,10 +308,10 @@ export const  Device = GObject.registerClass({
     _createDevices() {
         const pathsString = this._settings.get_strv('device-list').map(JSON.parse);
         if (!pathsString || pathsString.length === 0) {
-            this._no_paired_row.visible  = true;
+            this._no_paired_row.visible = true;
             return;
         }
-        this._no_paired_row.visible  = false;
+        this._no_paired_row.visible = false;
         const pairedDevices = pathsString.filter(device => device.paired);
         const unpairedDevices = pathsString.filter(device => !device.paired);
         pairedDevices.sort((a, b) => b['connected-time'] - a['connected-time']);
@@ -336,4 +339,3 @@ export const  Device = GObject.registerClass({
         }
     }
 });
-
