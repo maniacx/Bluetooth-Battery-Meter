@@ -11,8 +11,6 @@ Gio._promisify(Gio.InputStream.prototype, 'read_bytes_async');
 Gio._promisify(Gio.OutputStream.prototype, 'write_all_async');
 
 export default class BluetoothBatteryMeterExtension extends Extension {
-    // Bluetooth quicks settings menu are accessible when the session is locked.
-    // Therefore unlock-dialog session mode is used.
     enable() {
         this._settings = this.getSettings();
         this._btBatteryMeter =
@@ -20,6 +18,8 @@ export default class BluetoothBatteryMeterExtension extends Extension {
     }
 
     disable() {
+    // Bluetooth quicks settings menu are accessible when the session is locked.
+    // Therefore unlock-dialog session mode is used.
         this._btBatteryMeter.destroy();
         this._btBatteryMeter = null;
         this._settings = null;
