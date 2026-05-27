@@ -6,7 +6,6 @@ import {
     supportedAudioSingleIcons, supportedAudioDualIcons, supportedCaseIcons
 } from '../../../lib/widgets/iconGroups.js';
 import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
-import {GfpsModelList} from '../../../lib/devices/gfps/gfpsConfig.js';
 
 export const ConfigureWindow = GObject.registerClass({
     GTypeName: 'BluetoothBatteryMeter_GfpsConfigureWindow',
@@ -31,9 +30,7 @@ export const ConfigureWindow = GObject.registerClass({
             return;
 
         this.title = this._settingsItems.alias;
-
-        this._modelData =
-            GfpsModelList.find(m => m.modelId === this._settingsItems.modelid) || GfpsModelList[0];
+        this._hasMultipleBatteries = this._settingsItems['multiple-batt'];
 
         const toolViewBar = new Adw.ToolbarView();
         const headerBar = new Adw.HeaderBar({
@@ -46,12 +43,12 @@ export const ConfigureWindow = GObject.registerClass({
         toolViewBar.set_content(this._page);
         this.set_content(toolViewBar);
 
-        const iconList = this._modelData.batteryLR ? supportedAudioDualIcons
+        const iconList = this._hasMultipleBatteries ? supportedAudioDualIcons
             : supportedAudioSingleIcons;
 
         let caseIconList = [];
         let initialCaseIcon = '';
-        if (this._modelData.batteryCase) {
+        if (this._hasMultipleBatteries) {
             caseIconList = supportedCaseIcons;
             initialCaseIcon = this._settingsItems['case'];
         }
@@ -66,14 +63,13 @@ export const ConfigureWindow = GObject.registerClass({
             caseIconList,
             initialCaseIcon,
             mac,
-            fw: this._settingsItems['fw-version'],
         });
 
         iconSelector.connect('notify::selected-icon', () => {
             this._updateGsettings('icon', iconSelector.selected_icon);
         });
 
-        if (this._modelData.batteryCase) {
+        if (this._hasMultipleBatteries) {
             iconSelector.connect('notify::selected-case-icon', () => {
                 this._updateGsettings('case', iconSelector.selected_case_icon);
             });
