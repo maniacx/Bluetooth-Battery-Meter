@@ -14,7 +14,7 @@
             <property name="margin-start">6</property>
             <property name="css-classes">error</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">Generic Driver</property>
+            <property name="label" translatable="yes">Experimental</property>
           </object>
         </property>
         <child>

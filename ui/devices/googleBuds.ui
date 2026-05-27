@@ -2,7 +2,7 @@
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
   <template class="BluetoothBatteryMeter_GoogleBudsUI" parent="AdwPreferencesPage">
     <property name="name">GoogleBuds</property>
-    <property name="title" translatable="yes">Pixel Buds</property>
+    <property name="title" translatable="yes">Google Pixel Buds</property>
     <property name="icon-name">bbm-earbuds-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
@@ -12,25 +12,25 @@
             <property name="halign">start</property>
             <property name="valign">center</property>
             <property name="margin-start">6</property>
-            <property name="css-classes">success</property>
+            <property name="css-classes">error</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">libmaestro</property>
+            <property name="label" translatable="yes">Experimental</property>
           </object>
         </property>
         <child>
           <object class="AdwActionRow">
-            <property name="subtitle" translatable="yes">This uses the custom libmaestro protocol for advanced controls of Pixel Buds (Equalizer, Volume EQ, ANC).</property>
+            <property name="subtitle" translatable="yes">Some models/features are not fully tested. Please share feedback on GitHub.</property>
           </object>
         </child>
       </object>
     </child>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Pixel Buds Settings</property>
+        <property name="title" translatable="yes">Google Pixel Buds Settings</property>
         <child>
           <object class="AdwSwitchRow" id="enable_google_buds_device">
-            <property name="title" translatable="yes">Enable Pixel Buds Support</property>
-            <property name="subtitle" translatable="yes">Enables battery status monitoring, volume EQ, and customized equalizer bands for Pixel Buds.</property>
+            <property name="title" translatable="yes">Enable Google Pixel Buds Support</property>
+            <property name="subtitle" translatable="yes">Enables battery status monitoring, volume EQ, and customized equalizer bands for Google Pixel Buds.</property>
           </object>
         </child>
       </object>

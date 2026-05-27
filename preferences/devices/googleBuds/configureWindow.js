@@ -36,7 +36,10 @@ export const ConfigureWindow = GObject.registerClass({
         this.title = this._settingsItems.alias;
 
         const toolViewBar = new Adw.ToolbarView();
-        const headerBar = new Adw.HeaderBar();
+        const headerBar = new Adw.HeaderBar({
+            decoration_layout: ':close',
+            show_end_title_buttons: true,
+        });
         const page = new Adw.PreferencesPage();
 
         toolViewBar.add_top_bar(headerBar);
@@ -115,8 +118,8 @@ export const ConfigureWindow = GObject.registerClass({
             if (preset === EqPreset.CUSTOM)
                 return;
 
-            const bands = preset === EqPreset.LAST_SAVED ?
-                this._settingsItems['eq-last-saved'] : EqPresetBands[preset];
+            const bands = preset === EqPreset.LAST_SAVED
+                ? this._settingsItems['eq-last-saved'] : EqPresetBands[preset];
             this._eq.setValues(bands);
             this._updateGsettings('eq-custom', bands);
         });
@@ -189,9 +192,9 @@ export const ConfigureWindow = GObject.registerClass({
             return staticPreset;
 
         if (JSON.stringify(this._settingsItems['eq-custom']) ===
-                JSON.stringify(this._settingsItems['eq-last-saved'])) {
+                JSON.stringify(this._settingsItems['eq-last-saved']))
             return EqPreset.LAST_SAVED;
-        }
+
 
         return EqPreset.CUSTOM;
     }

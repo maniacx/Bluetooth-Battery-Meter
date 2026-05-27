@@ -34,7 +34,7 @@ const DeviceItem = GObject.registerClass({
             configureWindow.present();
         });
 
-        const googleBudsLabel = _('Pixel Buds');
+        const googleBudsLabel = _('Google Pixel Buds');
         this._deleteButton = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
             tooltip_text: _('The button is available after disabling %s mode')
