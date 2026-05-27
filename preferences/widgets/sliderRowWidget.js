@@ -188,4 +188,10 @@ export const SliderRowWidget = GObject.registerClass({
         this._lastValue = intVal;
         this.notify('value');
     }
+
+    destroy() {
+        if (this._timeoutId)
+            GLib.source_remove(this._timeoutId);
+        this._timeoutId = null;
+    }
 });

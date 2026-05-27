@@ -26,6 +26,7 @@ export const  Indicator = GObject.registerClass({
     constructor(settings) {
         super({});
         this._settings = settings;
+        this._signalIds = [];
 
         settings.bind(
             'hide-bluetooth-indicator',
@@ -64,21 +65,28 @@ export const  Indicator = GObject.registerClass({
             Gio.SettingsBindFlags.DEFAULT
         );
 
-        settings.connect('changed::indicator-type', () => {
-            this._updateVisibility();
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::indicator-type', () => {
+                this._updateVisibility();
+            })
+        );
 
-        settings.connect('changed::panel-button-single-indicator', () => {
-            this._updateVisibility();
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::panel-button-single-indicator', () => {
+                this._updateVisibility();
+            })
+        );
 
         this._hover_delay_spinrow.connect('notify::value', spinrow => {
             settings.set_int('on-hover-delay', Math.round(spinrow.value * 1000));
         });
 
-        settings.connect('changed::on-hover-delay', () => {
-            this._hover_delay_spinrow.set_value(settings.get_int('on-hover-delay') / 1000);
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::on-hover-delay', () => {
+                this._hover_delay_spinrow.set_value(settings.get_int('on-hover-delay') / 1000);
+            })
+        );
+
         this._hover_delay_spinrow.set_value(settings.get_int('on-hover-delay') / 1000);
 
         this._updateVisibility();
@@ -92,6 +100,18 @@ export const  Indicator = GObject.registerClass({
         this._panel_indicator_mode_group.visible = panelButtonEnabled;
         this._indicator_settings_group.visible = systemIndicatorEnabled ||
             panelButtonEnabled && !this._panel_button_indicator_mode.active;
+    }
+
+    destroy() {
+        if (this._settings && this._signalIds) {
+            for (const id of this._signalIds) {
+                if (id)
+                    this._settings.disconnect(id);
+            }
+        }
+
+        this._signalIds = null;
+        this._settings = null;
     }
 });
 

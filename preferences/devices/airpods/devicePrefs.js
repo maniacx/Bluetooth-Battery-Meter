@@ -106,8 +106,11 @@ export const  Airpods = GObject.registerClass({
         );
 
         this._createDevices();
-        this._settings.connect('changed::enable-airpods-device', () => this._createDevices());
-        this._settings.connect('changed::airpods-list', () => this._createDevices());
+        this._settingSignalId = this._settings.connect('changed::enable-airpods-device', () =>
+            this._createDevices());
+
+        this._settingSignalId2 = this._settings.connect('changed::airpods-list', () =>
+            this._createDevices());
     }
 
     _createDevices() {
@@ -132,6 +135,18 @@ export const  Airpods = GObject.registerClass({
                 this._airpods_group.add(deviceItem);
             }
         }
+    }
+
+    destroy() {
+        if (this._settingSignalId && this._settings)
+            this._settings.disconnect(this._settingSignalId);
+        this._settingSignalId = null;
+
+        if (this._settingSignalId2 && this._settings)
+            this._settings.disconnect(this._settingSignalId2);
+        this._settingSignalId2 = null;
+
+        this._settings = null;
     }
 });
 

@@ -264,7 +264,9 @@ export const  UpowerDevices = GObject.registerClass({
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );
-        this._settings.connect('changed::enable-upower-level-icon', () => this._upowerManager());
+        this._settingSignalId = this._settings.connect('changed::enable-upower-level-icon', () =>
+            this._upowerManager());
+
         this._upowerManager();
     }
 
@@ -358,6 +360,23 @@ export const  UpowerDevices = GObject.registerClass({
                 this._presentDevices.splice(index, 1);
             this._createDevices(path);
         }
+    }
+
+    destroy() {
+        if (this._dbusSignalId && this._dbusProxy)
+            this._dbusProxy.disconnect(this._dbusSignalId);
+        this._dbusSignalId = null;
+        this._dbusProxy = null;
+
+        if (this._settingSignalId && this._settings)
+            this._settings.disconnect(this._settingSignalId);
+        this._settingSignalId = null;
+
+        if (this._signalId && this._settings)
+            this._settings.disconnect(this._signalId);
+        this._signalId = null;
+
+        this._settings = null;
     }
 });
 

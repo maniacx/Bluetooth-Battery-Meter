@@ -43,6 +43,7 @@ const  ConfigureWindow = GObject.registerClass({
             isEnhancedDevice = isGfpsEnabled;
         else if (pathInfo.isEnhancedDevice === 'googleBuds')
             isEnhancedDevice = isGoogleBudsEnabled;
+
         const toolViewBar = new Adw.ToolbarView();
 
         const headerBar = new Adw.HeaderBar({
@@ -299,7 +300,8 @@ export const  Device = GObject.registerClass({
         this._settings = settings;
         this._deviceItems = new Map();
         this._createDevices();
-        this._settings.connect('changed::device-list', () => this._createDevices());
+        this._settingSignalId =
+            this._settings.connect('changed::device-list', () => this._createDevices());
     }
 
     _createDevices() {
@@ -334,6 +336,14 @@ export const  Device = GObject.registerClass({
                 this._device_group.add(deviceItem);
             }
         }
+    }
+
+    destroy() {
+        if (this._settingSignalId && this._settings)
+            this._settings.disconnect(this._settingSignalId);
+
+        this._settingSignalId = null;
+        this._settings = null;
     }
 });
 

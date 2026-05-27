@@ -133,4 +133,10 @@ export const EqualizerWidget = GObject.registerClass({
             valueLabel.label = `${val} dB`;
         });
     }
+
+    destroy() {
+        if (this._eqTimeoutId)
+            GLib.source_remove(this._eqTimeoutId);
+        this._eqTimeoutId = null;
+    }
 });

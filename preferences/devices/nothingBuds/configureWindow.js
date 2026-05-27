@@ -136,8 +136,8 @@ export const ConfigureWindow = GObject.registerClass({
         this._addMiscSetting();
         this._addGestureControls();
 
-        settings.connect('changed::nothing-buds-list', () => {
-            const updatedList = settings.get_strv('nothing-buds-list').map(JSON.parse);
+        const settingSignalId = this._settings.connect('changed::nothing-buds-list', () => {
+            const updatedList = this._settings.get_strv('nothing-buds-list').map(JSON.parse);
             this._settingsItems = updatedList.find(info => info.path === devicePath);
             if (!this._settingsItems)
                 return;
@@ -168,18 +168,27 @@ export const ConfigureWindow = GObject.registerClass({
         });
 
         this.connect('close-request', () => {
-            if (!this._modelData?.ring)
-                return false;
+            if (this._modelData?.ring) {
+                const ringState = this._settingsItems?.['ring-state'];
+                if (ringState === 'playing')
+                    this._updateGsettings('ring-state', 'stopped');
 
-            const ringState = this._settingsItems?.['ring-state'];
-            if (ringState === 'playing')
-                this._updateGsettings('ring-state', 'stopped');
-
-            if (!this._modelData.ringLegacy && !this._modelData.batterySingle) {
-                const ringStateLeft = this._settingsItems?.['ring-state-left'];
-                if (ringStateLeft === 'playing')
-                    this._updateGsettings('ring-state-left', 'stopped');
+                if (!this._modelData.ringLegacy && !this._modelData.batterySingle) {
+                    const ringStateLeft = this._settingsItems?.['ring-state-left'];
+                    if (ringStateLeft === 'playing')
+                        this._updateGsettings('ring-state-left', 'stopped');
+                }
             }
+
+            this._eq?.destroy();
+            this._eq = null;
+            this._baseLevel?.destroy();
+            this._baseLevel = null;
+
+            if (settingSignalId && this._settings)
+                this._settings.disconnect(settingSignalId);
+
+            this._settings = null;
 
             return false;
         });

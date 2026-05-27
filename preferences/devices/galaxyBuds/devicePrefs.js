@@ -107,8 +107,11 @@ export const  GalaxyBuds = GObject.registerClass({
         );
 
         this._createDevices();
-        this._settings.connect('changed::enable-galaxy-buds-device', () => this._createDevices());
-        this._settings.connect('changed::galaxy-buds-list', () => this._createDevices());
+        this._settingSignalId = this._settings.connect('changed::enable-galaxy-buds-device', () =>
+            this._createDevices());
+
+        this._settingSignalId2 = this._settings.connect('changed::galaxy-buds-list', () =>
+            this._createDevices());
     }
 
     _createDevices() {
@@ -133,6 +136,18 @@ export const  GalaxyBuds = GObject.registerClass({
                 this._galaxy_buds_group.add(deviceItem);
             }
         }
+    }
+
+    destroy() {
+        if (this._settingSignalId && this._settings)
+            this._settings.disconnect(this._settingSignalId);
+        this._settingSignalId = null;
+
+        if (this._settingSignalId2 && this._settings)
+            this._settings.disconnect(this._settingSignalId2);
+        this._settingSignalId2 = null;
+
+        this._settings = null;
     }
 });
 

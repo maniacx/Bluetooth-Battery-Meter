@@ -301,5 +301,17 @@ export const  GattBas = GObject.registerClass({
             }
         }
     }
+
+    destroy() {
+        if (this._settingSignalId && this._settings)
+            this._settings.disconnect(this._settingSignalId);
+        this._settingSignalId = null;
+
+        if (this._settingSignalId2 && this._settings)
+            this._settings.disconnect(this._settingSignalId2);
+        this._settingSignalId2 = null;
+
+        this._settings = null;
+    }
 });
 

@@ -106,8 +106,11 @@ export const  Sony = GObject.registerClass({
         );
 
         this._createDevices();
-        this._settings.connect('changed::enable-sony-device', () => this._createDevices());
-        this._settings.connect('changed::sony-list', () => this._createDevices());
+        this._settingSignalId = this._settings.connect('changed::enable-sony-device', () =>
+            this._createDevices());
+
+        this._settingSignalId2 = this._settings.connect('changed::sony-list', () =>
+            this._createDevices());
     }
 
     _createDevices() {
@@ -133,6 +136,18 @@ export const  Sony = GObject.registerClass({
                 this._sony_group.add(deviceItem);
             }
         }
+    }
+
+    destroy() {
+        if (this._settingSignalId && this._settings)
+            this._settings.disconnect(this._settingSignalId);
+        this._settingSignalId = null;
+
+        if (this._settingSignalId2 && this._settings)
+            this._settings.disconnect(this._settingSignalId2);
+        this._settingSignalId2 = null;
+
+        this._settings = null;
     }
 });
 

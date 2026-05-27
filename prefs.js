@@ -29,16 +29,10 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         const iconTheme = Gtk.IconTheme.get_for_display(window.get_display());
         const iconsDirectory = this.dir.get_child('icons').get_path();
         iconTheme.add_search_path(iconsDirectory);
+        this._pages = [];
 
-        const useNavigationSplitView = true;
-        if (useNavigationSplitView) {
-            window.set_default_size(900, 700);
-            this._switchToNavigationSplitViews(window);
-        } else {
-            window.set_default_size(650, 700);
-            this._toastOverlay = null;
-            this._addPage = (PreferencesPage, ...args) => window.add(new PreferencesPage(...args));
-        }
+        window.set_default_size(900, 700);
+        this._switchToNavigationSplitViews(window);
 
         const settings = this.getSettings();
         this._addPage(QuickSettings, settings);
@@ -54,6 +48,14 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         this._addPage(Gfps, settings);
         this._addPage(GattBas, settings);
         this._addPage(About, this);
+
+        window.connect('close-request', () => {
+            for (const page of this._pages)
+                page?.destroy?.();
+
+            this._pages = [];
+            return false;
+        });
     }
 
     _switchToNavigationSplitViews(window) {
@@ -61,7 +63,6 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         const dummyPrefsPage = new Adw.PreferencesPage();
         window.add(dummyPrefsPage);
 
-        // Add AdwNavigationSplitView and componenents
         const splitView = new Adw.NavigationSplitView({
             hexpand: true,
             vexpand: true,
@@ -78,7 +79,6 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         breakpointBin.set_child(splitView);
         window.set_content(breakpointBin);
 
-        // AdwNavigationSplitView Sidebar configuration
         const splitViewSidebar = new Adw.NavigationPage({
             title: _('Bluetooth Battery Meter'),
         });
@@ -93,7 +93,6 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         splitViewSidebar.set_child(sidebarToolbar);
         splitView.set_sidebar(splitViewSidebar);
 
-        // Content configuration
         const splitViewContent = new Adw.NavigationPage();
         this._contentToastOverlay = new Adw.ToastOverlay();
         const contentToolbar = new Adw.ToolbarView();
@@ -126,6 +125,7 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
                 splitViewContent.set_title(row._title);
                 this._firstPageAdded = true;
             }
+            this._pages.push(page);
         };
 
         this._sidebarListBox.connect('row-activated', (listBox, row) => {

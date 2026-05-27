@@ -77,17 +77,27 @@ const  CustomizeRow = GObject.registerClass({
             }
         });
 
-        settings.connect('changed::level-indicator-custom-colors', () => {
-            const colors = settings.get_strv(colorKey);
-            const hex = colors[this._idx] || '#000000';
-            entry.set_placeholder_text(hex);
-            colorButton.set_rgba(hexToRgba(hex));
-        });
+        this._settingSignalId = this._settings.connect(
+            'changed::level-indicator-custom-colors', () => {
+                const colors = settings.get_strv(colorKey);
+                const hex = colors[this._idx] || '#000000';
+                entry.set_placeholder_text(hex);
+                colorButton.set_rgba(hexToRgba(hex));
+            }
+        );
 
         const fallbackColor = this._idx > 1 ? '#15c931' : '#ff7800';
         const initHex = settings.get_strv(colorKey)[this._idx] || fallbackColor;
         entry.set_placeholder_text(initHex);
         colorButton.set_rgba(hexToRgba(initHex));
+    }
+
+    destroy() {
+        if (this._settingSignalId && this._settings)
+            this._settings.disconnect(this._settingSignalId);
+
+        this._settingSignalId = null;
+        this._settings = null;
     }
 });
 
@@ -115,6 +125,7 @@ export const  BatteryWidgetSettings = GObject.registerClass({
     constructor(settings) {
         super({});
         this._settings = settings;
+        this._signalIds = [];
         settings.bind(
             'disable-level-in-icon',
             this._disable_level_in_icon,
@@ -159,35 +170,50 @@ export const  BatteryWidgetSettings = GObject.registerClass({
             Gio.SettingsBindFlags.DEFAULT
         );
 
-        settings.connect('changed::indicator-type', () => {
-            this._updateIndicatorRowVisibility();
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::indicator-type', () => {
+                this._updateIndicatorRowVisibility();
+            })
+        );
 
-        settings.connect('changed::panel-button-single-indicator', () => {
-            this._updateIndicatorRowVisibility();
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::panel-button-single-indicator', () => {
+                this._updateIndicatorRowVisibility();
+            })
 
-        settings.connect('changed::disable-level-in-icon', () => {
-            this._updateIndicatorRowVisibility();
-            this._iconOnlyChanged();
-        });
+        );
 
-        settings.connect('changed::level-indicator-type', () => {
-            this._updateIndicatorRowVisibility();
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::disable-level-in-icon', () => {
+                this._updateIndicatorRowVisibility();
+                this._iconOnlyChanged();
+            })
+        );
 
-        settings.connect('changed::level-bar-position', () => {
-            this._updateIndicatorRowVisibility();
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::level-indicator-type', () => {
+                this._updateIndicatorRowVisibility();
+            })
+        );
 
-        settings.connect('changed::level-indicator-color', () => {
-            this._updateIndicatorRowVisibility();
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::level-bar-position', () => {
+                this._updateIndicatorRowVisibility();
+            })
+        );
 
-        settings.connect('changed::circle-widget-color', () => {
-            this._customize_circle_widget_color_group.visible =
+        this._signalIds.push(
+            settings.connect('changed::level-indicator-color', () => {
+                this._updateIndicatorRowVisibility();
+            })
+        );
+
+        this._signalIds.push(
+            this._settings.connect('changed::circle-widget-color', () => {
+                this._customize_circle_widget_color_group.visible =
                         settings.get_int('circle-widget-color') === 2;
-        });
+            })
+        );
 
         this._customize_circle_widget_color_group.visible =
                         settings.get_int('circle-widget-color') === 2;
@@ -253,5 +279,17 @@ export const  BatteryWidgetSettings = GObject.registerClass({
             this._level_indicator_color_row.visible = false;
             this._customize_indicator_color_group.visible = false;
         }
+    }
+
+    destroy() {
+        if (this._settings && this._signalIds) {
+            for (const id of this._signalIds) {
+                if (id)
+                    this._settings.disconnect(id);
+            }
+        }
+
+        this._signalIds = null;
+        this._settings = null;
     }
 });

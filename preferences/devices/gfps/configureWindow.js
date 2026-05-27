@@ -24,7 +24,7 @@ export const ConfigureWindow = GObject.registerClass({
         this._settings = settings;
         this._devicePath = devicePath;
 
-        const pathsString = settings.get_strv('gfps-list').map(JSON.parse);
+        const pathsString = this._settings.get_strv('gfps-list').map(JSON.parse);
         this._settingsItems = pathsString.find(info => info.path === devicePath);
 
         if (!this._settingsItems)
@@ -81,13 +81,21 @@ export const ConfigureWindow = GObject.registerClass({
 
         this._page.add(iconSelector);
 
-        settings.connect('changed::gfps-list', () => {
-            const updatedList = settings.get_strv('gfps-list').map(JSON.parse);
+        const settingSignalId = this._settings.connect('changed::gfps-list', () => {
+            const updatedList = this._settings.get_strv('gfps-list').map(JSON.parse);
             this._settingsItems = updatedList.find(info => info.path === devicePath);
             if (!this._settingsItems)
                 return;
 
             this.title = this._settingsItems.alias;
+        });
+
+        this.connect('close-request', () => {
+            if (settingSignalId && this._settings)
+                this._settings.disconnect(settingSignalId);
+
+            this._settings = null;
+            return false;
         });
     }
 

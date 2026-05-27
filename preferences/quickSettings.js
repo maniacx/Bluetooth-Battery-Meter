@@ -24,6 +24,7 @@ export const  QuickSettings = GObject.registerClass({
     constructor(settings) {
         super({});
         this._settings = settings;
+        this._signalIds = [];
         this._settings.bind(
             'modify-quick-settings',
             this._modify_quicksettings,
@@ -60,10 +61,17 @@ export const  QuickSettings = GObject.registerClass({
             'active',
             Gio.SettingsBindFlags.DEFAULT
         );
-        this._settings.connect(
-            'changed::enable-battery-level-icon', () => this._setRowSensitivity());
-        this._settings.connect(
-            'changed::enable-battery-level-text', () => this._setRowSensitivity());
+
+        this._signalIds.push(
+            this._settings.connect(
+                'changed::enable-battery-level-icon', () => this._setRowSensitivity())
+        );
+
+        this._signalIds.push(
+            this._settings.connect(
+                'changed::enable-battery-level-text', () => this._setRowSensitivity())
+        );
+
         this._setRowSensitivity();
         const link = 'https://maniacx.github.io/Bluetooth-Battery-Meter/#enable-experimental-bluez';
         this._row_note_experimental_features.set_subtitle(
@@ -74,13 +82,17 @@ export const  QuickSettings = GObject.registerClass({
 
         this._popupEnableRowVisibility();
 
-        this._settings.connect('changed::modify-quick-settings', () => {
-            this._popupEnableRowVisibility();
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::modify-quick-settings', () => {
+                this._popupEnableRowVisibility();
+            })
+        );
 
-        this._settings.connect('changed::popup-in-quick-settings', () => {
-            this._popupEnableRowVisibility();
-        });
+        this._signalIds.push(
+            this._settings.connect('changed::popup-in-quick-settings', () => {
+                this._popupEnableRowVisibility();
+            })
+        );
     }
 
     _popupEnableRowVisibility() {
@@ -110,5 +122,17 @@ export const  QuickSettings = GObject.registerClass({
         this._swap_icon_text.sensitive = status;
         if (!status)
             this._settings.set_boolean('swap-icon-text', false);
+    }
+
+    destroy() {
+        if (this._settings && this._signalIds) {
+            for (const id of this._signalIds) {
+                if (id)
+                    this._settings.disconnect(id);
+            }
+        }
+
+        this._signalIds = null;
+        this._settings = null;
     }
 });
