@@ -5,7 +5,7 @@
   "url": "https://github.com/maniacx/Bluetooth-Battery-Meter",
   "shell-version": [ "46", "47", "48", "49", "50" ],
   "session-modes": ["user", "unlock-dialog"],
-  "version": 45,
+  "version": 46,
   "settings-schema": "org.gnome.shell.extensions.Bluetooth-Battery-Meter",
   "gettext-domain": "Bluetooth-Battery-Meter@maniacx.github.com"
 }
