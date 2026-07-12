@@ -71,18 +71,18 @@ msgstr "Livello di cancellazione del rumore"
 #: lib/devices/sony/sonyDevice.js:181
 #: preferences/devices/sony/configureWindow.js:115
 msgid "High"
-msgstr "Alto"
+msgstr "Alti"
 
 #: lib/devices/nothingBuds/nothingBudsDevice.js:390
 #: preferences/devices/nothingBuds/configureWindow.js:252
 msgid "Mid"
-msgstr "Medio"
+msgstr "Medi"
 
 #: lib/devices/nothingBuds/nothingBudsDevice.js:391
 #: lib/devices/sony/sonyDevice.js:181
 #: preferences/devices/sony/configureWindow.js:115
 msgid "Low"
-msgstr "Basso"
+msgstr "Bassi"
 
 #: lib/devices/nothingBuds/nothingBudsDevice.js:392
 #: lib/devices/galaxyBuds/galaxyBudsDevice.js:611
@@ -420,7 +420,7 @@ msgstr "Rock"
 
 #: preferences/devices/nothingBuds/configureWindow.js:218
 msgid "Electronic"
-msgstr "Elettronico"
+msgstr "Elettronica"
 
 #: preferences/devices/nothingBuds/configureWindow.js:219
 msgid "Pop"
@@ -432,7 +432,7 @@ msgstr "Potenzia voci"
 
 #: preferences/devices/nothingBuds/configureWindow.js:221
 msgid "Classical"
-msgstr "Classico"
+msgstr "Classica"
 
 #: preferences/devices/nothingBuds/configureWindow.js:222
 msgid "Custom"
