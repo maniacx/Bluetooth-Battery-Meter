@@ -1,5 +1,5 @@
 'use strict';
-import {isOnePlusBuds} from '../lib/devices/oneplusBuds/oneplusBudsConfig.js';
+import {ANC_MODES, isOnePlusBuds} from '../lib/devices/oneplusBuds/oneplusBudsConfig.js';
 import {
     buildNoisePayload, decodeNoiseMode, decodeOnePlusPacket, OnePlusBatteryState,
 } from '../lib/devices/oneplusBuds/oneplusBudsProtocol.js';
@@ -48,6 +48,10 @@ export const tests = [
         assertEqual(decodeNoiseMode({payload: Uint8Array.of(0, 1, 1, 0x20)}), 5, 'decoded mode');
         assertThrows(() => decodeNoiseMode({payload: Uint8Array.of(0, 1, 1, 3)}),
             'multiple ANC modes');
+    }],
+    ['OnePlus settings expose every confirmed noise control mode', () => {
+        assertDeepEqual(ANC_MODES.map(mode => mode.index), [3, 4, 5, 6, 7, 8],
+            'all writable OnePlus ANC modes');
     }],
     ['OnePlus connection requests only capture-confirmed battery and status data', () => {
         const requests = [];

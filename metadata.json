@@ -14,7 +14,7 @@
     "user",
     "unlock-dialog"
   ],
-  "version": 51,
+  "version": 53,
   "settings-schema": "org.gnome.shell.extensions.Bluetooth-Battery-Meter",
   "gettext-domain": "Bluetooth-Battery-Meter@maniacx.github.com"
 }

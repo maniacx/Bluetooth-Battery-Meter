@@ -122,4 +122,14 @@ export const tests = [
         assert(manager.includes('this._discoverOnePlusBuds();'),
             'the confirmed profile scans BlueZ when support is enabled');
     }],
+    ['OnePlus device settings provide complete confirmed ANC control', () => {
+        const window = readText(GLib.build_filenamev([ROOT, 'preferences', 'devices',
+            'oneplusBuds', 'configureWindow.js']));
+        for (const mode of ['off', 'noise-high', 'noise-medium', 'noise-low', 'auto-medium',
+            'transparency']) {
+            assert(window.includes(mode), `OnePlus device settings include ${mode}`);
+        }
+        assert(window.includes("_update('noise-mode'"),
+            'OnePlus device settings persist the selected ANC mode');
+    }],
 ];
