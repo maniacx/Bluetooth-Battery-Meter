@@ -1,4 +1,4 @@
-Bluetooth-Battery-Meter@maniacx.github.com.shell-extension.zip
+*.zip
 .work
 .venv
 script
@@ -6,3 +6,4 @@ script
 docs
 tests
 *.md
+*.sh
