@@ -17,6 +17,7 @@ import {NothingBuds} from './preferences/devices/nothingBuds/devicePrefs.js';
 import {GoogleBuds} from './preferences/devices/googleBuds/devicePrefs.js';
 import {Gfps} from './preferences/devices/gfps/devicePrefs.js';
 import {GattBas} from './preferences/gattBas.js';
+import {OnePlusBuds} from './preferences/devices/oneplusBuds/devicePrefs.js';
 import {About} from './preferences/about.js';
 
 Gio._promisify(Gio.DBusProxy, 'new');
@@ -47,6 +48,7 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         this._addPage(GoogleBuds, settings);
         this._addPage(Gfps, settings);
         this._addPage(GattBas, settings);
+        this._addPage(OnePlusBuds, settings);
         this._addPage(About, this);
 
         window.connect('close-request', () => {

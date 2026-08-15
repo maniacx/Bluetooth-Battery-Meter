@@ -15,6 +15,14 @@ then
     exit 1
 fi
 
+echo "Running headless tests..."
+if ! tests/run-tests.sh; then
+    echo "Tests failed. Extension packaging was skipped."
+    echo "Press any key to exit..."
+    read -n1
+    exit 1
+fi
+
 echo "Packing extension..."
 gnome-extensions pack ./ \
     --extra-source=icons/ \
@@ -45,4 +53,3 @@ echo "Restart the shell (or logout) to be able to enable the extension."
 echo "Press any key to exit..."
 read -n1
 exit 0
-

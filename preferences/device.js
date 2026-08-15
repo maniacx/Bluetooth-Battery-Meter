@@ -26,6 +26,8 @@ const  ConfigureWindow = GObject.registerClass({
         const isNothingBudsEnabled = settings.get_boolean('enable-nothing-buds-device');
         const isGfpsEnabled = settings.get_boolean('enable-gfps-device');
         const isGoogleBudsEnabled = settings.get_boolean('enable-google-buds-device');
+        const isOnePlusBudsEnabled = settings.get_boolean('enable-oneplus-buds-device');
+        const isGenericOPOv1Enabled = settings.get_boolean('enable-experimental-opov1-device');
 
         let isEnhancedDevice = false;
 
@@ -43,6 +45,10 @@ const  ConfigureWindow = GObject.registerClass({
             isEnhancedDevice = isGfpsEnabled;
         else if (pathInfo.isEnhancedDevice === 'googleBuds')
             isEnhancedDevice = isGoogleBudsEnabled;
+        else if (pathInfo.isEnhancedDevice === 'oneplusBuds')
+            isEnhancedDevice = isOnePlusBudsEnabled;
+        else if (pathInfo.isEnhancedDevice === 'genericOpov1')
+            isEnhancedDevice = isGenericOPOv1Enabled;
 
         const toolViewBar = new Adw.ToolbarView();
 
@@ -346,4 +352,3 @@ export const  Device = GObject.registerClass({
         this._settings = null;
     }
 });
-
