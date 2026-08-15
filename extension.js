@@ -14,7 +14,8 @@ export default class BluetoothBatteryMeterExtension extends Extension {
     enable() {
         this._settings = this.getSettings();
         this._btBatteryMeter =
-            new BluetoothToggle.BluetoothBatteryMeter(this._settings, this.path, this.uuid);
+            new BluetoothToggle.BluetoothBatteryMeter(this._settings, this.path, this.uuid,
+                this.metadata.version);
     }
 
     disable() {
@@ -25,4 +26,3 @@ export default class BluetoothBatteryMeterExtension extends Extension {
         this._settings = null;
     }
 }
-

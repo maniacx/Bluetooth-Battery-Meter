@@ -115,6 +115,20 @@
             <default>false</default>
             <summary>"enable Airpods / Beats devices"</summary>
         </key>
+        <key name="enable-oneplus-buds-device" type="b">
+            <default>false</default>
+            <summary>Enable OnePlus/Oppo Buds support</summary>
+            <description>Connect to compatible OnePlus and Oppo OPOv1 services.</description>
+        </key>
+        <key name="oneplus-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of confirmed OnePlus Buds devices</summary>
+        </key>
+        <key name="enable-experimental-opov1-device" type="b">
+            <default>false</default>
+            <summary>Enable experimental generic OPOv1 support</summary>
+            <description>Read-only experimental profile for OPOv1 devices with UUID evidence.</description>
+        </key>
         <key name="airpods-list" type="as">
             <default>[]</default>
             <summary>List of airpods devices</summary>

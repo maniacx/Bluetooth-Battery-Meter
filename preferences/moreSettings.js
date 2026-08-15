@@ -16,12 +16,12 @@ import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
 import Gettext from 'gettext';
 
-import * as Airpods from '../preferences/devices/airpods/configureWindow.js';
-import * as Sony from '../preferences/devices/sony/configureWindow.js';
-import * as GalaxyBuds from '../preferences/devices/galaxyBuds/configureWindow.js';
-import * as NothingBuds from '../preferences/devices/nothingBuds/configureWindow.js';
-import * as GoogleBuds from '../preferences/devices/googleBuds/configureWindow.js';
-import * as Gfps from '../preferences/devices/gfps/configureWindow.js';
+import * as Airpods from './devices/airpods/configureWindow.js';
+import * as Sony from './devices/sony/configureWindow.js';
+import * as GalaxyBuds from './devices/galaxyBuds/configureWindow.js';
+import * as NothingBuds from './devices/nothingBuds/configureWindow.js';
+import * as GoogleBuds from './devices/googleBuds/configureWindow.js';
+import * as Gfps from './devices/gfps/configureWindow.js';
 
 Gio._promisify(Gio.DBusProxy, 'new');
 Gio._promisify(Gio.DBusProxy.prototype, 'call');
@@ -221,4 +221,3 @@ class MoreSettingsLauncher {
 
 const appInstance = new MoreSettingsLauncher(ARGV);
 appInstance.run();
-
