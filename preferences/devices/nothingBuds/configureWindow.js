@@ -144,10 +144,8 @@ export const ConfigureWindow = GObject.registerClass({
 
             this.title = this._settingsItems.alias;
 
-            if (this._modelData.eqPreset) {
+            if (this._modelData.eqPreset)
                 this._eqPresetDropdown.selected_item = this._settingsItems['eq-preset'];
-                this._updateEqCustomRowVisibility();
-            }
 
             if (this._modelData.eqPreset?.custom !== undefined)
                 this._eq.setValues(this._settingsItems['eq-custom']);
@@ -237,16 +235,23 @@ export const ConfigureWindow = GObject.registerClass({
         const options = descriptors.map(d => d.label);
         const presetValues  = descriptors.map(d => d.value);
 
+        const customEqButton = presetObj.custom !== undefined ? {
+            hasButton: true,
+            buttonIcon: 'bbm-eq-symbolic',
+            buttonTooltip: _('Custom Equalizer'),
+            buttonVisibleFor: [presetObj.custom],
+        } : {};
+
         this._eqPresetDropdown = new DropDownRowWidget({
             title: _('Equalizer Preset'),
             options,
             values: presetValues,
             initialValue: this._settingsItems['eq-preset'],
+            ...customEqButton,
         });
 
         this._eqPresetDropdown.connect('notify::selected-item', () => {
             this._updateGsettings('eq-preset', this._eqPresetDropdown.selected_item);
-            this._updateEqCustomRowVisibility();
         });
 
         eqGroup.add(this._eqPresetDropdown);
@@ -254,33 +259,24 @@ export const ConfigureWindow = GObject.registerClass({
         if (this._modelData.eqPreset?.custom === undefined)
             return;
 
-        this._equalizerCustomRow = new Adw.ActionRow({
-            title: _('Custom Equalizer'),
-        });
-
         const eqFreqs = [_('Bass'), _('Mid'), _('Treble')];
         const eqRange = 6;
         const initialValues = this._settingsItems['eq-custom'];
 
-        this._eq = new EqualizerWidget(eqFreqs, initialValues, eqRange);
+        this._eq = new EqualizerWidget({
+            freqs: eqFreqs,
+            initialValues,
+            range: eqRange,
+            topBarTitle: _('Band'),
+            bottomBarTitle: _('Gain (dB)'),
+        });
 
         this._eq.connect('eq-changed', (_widget, values) => {
             this._updateGsettings('eq-custom', values);
         });
 
-        this._equalizerCustomRow.set_child(this._eq);
-
-        this._updateEqCustomRowVisibility();
-
-        eqGroup.add(this._equalizerCustomRow);
+        this._eqPresetDropdown.connect('button-clicked', () => this._eq.present(this));
     }
-
-    _updateEqCustomRowVisibility() {
-        const selectedPreset = this._eqPresetDropdown.selected_item;
-        const customPresetValue = this._modelData.eqPreset.custom;
-        this._equalizerCustomRow.visible = selectedPreset === customPresetValue;
-    }
-
 
     _addBassEnhance() {
         if (!this._modelData?.bassEnhanceLevel)
@@ -288,10 +284,10 @@ export const ConfigureWindow = GObject.registerClass({
 
         const _ = this._gettext;
 
-        const bassEnhanceGroup = new Adw.PreferencesGroup({title: _('Bass Enhance')});
+        const bassEnhanceGroup = new Adw.PreferencesGroup({title: _('Bass Boost')});
         this._page.add(bassEnhanceGroup);
 
-        this._bassEnhanceSwitch = new Adw.SwitchRow({title: _('Enable Bass Enhance')});
+        this._bassEnhanceSwitch = new Adw.SwitchRow({title: _('Enable Bass Boost')});
 
         this._bassEnhanceSwitch.active = this._settingsItems['bass-enable'];
 
@@ -303,7 +299,7 @@ export const ConfigureWindow = GObject.registerClass({
 
 
         this._baseLevel = new SliderRowWidget({
-            rowTitle: _('Bass Enhance Level'),
+            rowTitle: _('Bass Boost Level'),
             range: [1, 5, 1],
             marks: [
                 {mark: 1, label: _('-')},
@@ -686,6 +682,9 @@ export const ConfigureWindow = GObject.registerClass({
 
             case 'essential-space':
                 return _('Essential Space');
+
+            case 'take-photo':
+                return _('Take Photo');
 
             default:
                 return action;

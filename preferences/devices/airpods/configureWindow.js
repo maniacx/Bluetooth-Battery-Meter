@@ -119,7 +119,7 @@ export const  ConfigureWindow = GObject.registerClass({
         ];
 
         this._inEarDropdown = new RadioButtonRowWidget({
-            title: _('Choose playback behaviour for Ear detection'),
+            title: _('Choose playback behavior for Ear detection'),
             subtitle: _('Automatically pause or resume playback ' +
                 'based on wearing detection.'),
             options: inEarOptions,

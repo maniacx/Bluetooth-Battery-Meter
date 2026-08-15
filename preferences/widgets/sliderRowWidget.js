@@ -1,7 +1,10 @@
+'use strict';
 import Adw from 'gi://Adw';
 import Gtk from 'gi://Gtk';
 import GObject from 'gi://GObject';
 import GLib from 'gi://GLib';
+
+const THROTTLE_DELAY = 100;
 
 export const SliderRowWidget = GObject.registerClass({
     GTypeName: 'BluetoothBatteryMeter_SliderRowWidget',
@@ -40,9 +43,9 @@ export const SliderRowWidget = GObject.registerClass({
         this._updatingProgrammatically = false;
         this._lastValue = Math.round(initialValue);
 
-        this._pendingValue = null;
-        this._timeoutId = 0;
-        this._updateDelay = 500;
+        this._pendingSliderValue = null;
+        this._lastSentSliderValue = null;
+        this._sliderTimeoutId = null;
 
         this._mainBox = new Gtk.Box({
             orientation: Gtk.Orientation.VERTICAL,
@@ -90,7 +93,7 @@ export const SliderRowWidget = GObject.registerClass({
 
             if (stepped !== this._lastValue) {
                 this._lastValue = stepped;
-                this._scheduleValueEmit(stepped);
+                this._throttleSliderValue(stepped);
             }
         });
 
@@ -106,7 +109,7 @@ export const SliderRowWidget = GObject.registerClass({
                     this._updatingProgrammatically = false;
 
                     this._lastValue = steppedValue;
-                    this._scheduleValueEmit(steppedValue);
+                    this._throttleSliderValue(steppedValue);
                 }
                 return true;
             });
@@ -152,24 +155,36 @@ export const SliderRowWidget = GObject.registerClass({
         }
     }
 
-    _scheduleValueEmit(value) {
-        this._pendingValue = value;
+    _throttleSliderValue(value) {
+        this._pendingSliderValue = value;
 
-        if (this._timeoutId)
+        if (this._sliderTimeoutId)
             return;
 
-        this._timeoutId = GLib.timeout_add(GLib.PRIORITY_DEFAULT, this._updateDelay, () => {
-            if (this._pendingValue !== null) {
-                const latest = this._pendingValue;
-                this._pendingValue = null;
-                this.value = latest;
-                this.notify('value');
+        this._emitPendingSliderValue();
+
+        this._sliderTimeoutId = GLib.timeout_add(GLib.PRIORITY_DEFAULT, THROTTLE_DELAY, () => {
+            if (this._pendingSliderValue !== null) {
+                this._emitPendingSliderValue();
                 return GLib.SOURCE_CONTINUE;
             }
 
-            this._timeoutId = 0;
+            this._sliderTimeoutId = null;
             return GLib.SOURCE_REMOVE;
         });
+    }
+
+    _emitPendingSliderValue() {
+        const value = this._pendingSliderValue;
+        this._pendingSliderValue = null;
+
+        if (value === this._lastSentSliderValue)
+            return;
+
+        this._lastSentSliderValue = value;
+
+        this.value = value;
+        this.notify('value');
     }
 
     get value() {
@@ -190,8 +205,9 @@ export const SliderRowWidget = GObject.registerClass({
     }
 
     destroy() {
-        if (this._timeoutId)
-            GLib.source_remove(this._timeoutId);
-        this._timeoutId = null;
+        if (this._sliderTimeoutId)
+            GLib.source_remove(this._sliderTimeoutId);
+
+        this._sliderTimeoutId = null;
     }
 });

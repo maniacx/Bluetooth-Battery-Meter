@@ -109,6 +109,9 @@ export const ConfigureWindow = GObject.registerClass({
             options: presetValues.map(preset => presetLabels[preset]),
             values: presetValues,
             initialValue: initialPreset,
+            hasButton: true,
+            buttonIcon: 'bbm-eq-symbolic',
+            buttonTooltip: _('Custom Equalizer'),
         });
 
         this._eqPresetDropdown.connect('notify::selected-item', () => {
@@ -120,15 +123,11 @@ export const ConfigureWindow = GObject.registerClass({
 
             const bands = preset === EqPreset.LAST_SAVED
                 ? this._settingsItems['eq-last-saved'] : EqPresetBands[preset];
-            this._eq.setValues(bands);
+            this._eq?.setValues(bands);
             this._updateGsettings('eq-custom', bands);
         });
 
         eqGroup.add(this._eqPresetDropdown);
-
-        this._equalizerCustomRow = new Adw.ActionRow({
-            title: _('Custom Equalizer'),
-        });
 
         const eqFreqs = [
             _('Low Bass'),
@@ -138,15 +137,21 @@ export const ConfigureWindow = GObject.registerClass({
             _('Upper Treble'),
         ];
 
-        this._eq = new EqualizerWidget(eqFreqs, this._settingsItems['eq-custom'], 6);
+        this._eq = new EqualizerWidget({
+            freqs: eqFreqs,
+            initialValues: this._settingsItems['eq-custom'],
+            range: 6,
+            topBarTitle: _('Band'),
+            bottomBarTitle: _('Gain (dB)'),
+        });
+
         this._eq.connect('eq-changed', (_widget, values) => {
             this._eqPresetDropdown.selected_item = EqPreset.CUSTOM;
             this._updateGsettings('eq-preset', EqPreset.CUSTOM);
             this._updateGsettings('eq-custom', values);
         });
 
-        this._equalizerCustomRow.set_child(this._eq);
-        eqGroup.add(this._equalizerCustomRow);
+        this._eqPresetDropdown.connect('button-clicked', () => this._eq.present(this));
 
         const settingSignalId = this._settings.connect('changed::google-buds-list', () => {
             const updatedList = this._settings.get_strv('google-buds-list').map(JSON.parse);

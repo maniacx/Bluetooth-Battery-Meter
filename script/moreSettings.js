@@ -21,6 +21,9 @@ import * as Sony from '../preferences/devices/sony/configureWindow.js';
 import * as GalaxyBuds from '../preferences/devices/galaxyBuds/configureWindow.js';
 import * as NothingBuds from '../preferences/devices/nothingBuds/configureWindow.js';
 import * as GoogleBuds from '../preferences/devices/googleBuds/configureWindow.js';
+import * as BoseBuds from '../preferences/devices/boseBuds/configureWindow.js';
+import * as RedmiBuds from '../preferences/devices/redmiBuds/configureWindow.js';
+import * as SenhBuds from '../preferences/devices/senhBuds/configureWindow.js';
 import * as Gfps from '../preferences/devices/gfps/configureWindow.js';
 
 Gio._promisify(Gio.DBusProxy, 'new');
@@ -73,6 +76,15 @@ class MoreSettingsLauncher {
         } else if (this._deviceType === 'googleBuds') {
             this._prefsType = GoogleBuds;
             this._schemaKey = 'google-buds-list';
+        } else if (this._deviceType === 'boseBuds') {
+            this._prefsType = BoseBuds;
+            this._schemaKey = 'bose-buds-list';
+        } else if (this._deviceType === 'redmiBuds') {
+            this._prefsType = RedmiBuds;
+            this._schemaKey = 'redmi-buds-list';
+        } else if (this._deviceType === 'senhBuds') {
+            this._prefsType = SenhBuds;
+            this._schemaKey = 'senh-buds-list';
         } else if (this._deviceType === 'gfps') {
             this._prefsType = Gfps;
             this._schemaKey = 'gfps-list';

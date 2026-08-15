@@ -143,6 +143,38 @@
             <default>[]</default>
             <summary>List of Nothing / CMF devices</summary>
         </key>
+        <key name="enable-google-buds-device" type="b">
+            <default>false</default>
+            <summary>"enable Google Pixel Buds devices"</summary>
+        </key>
+        <key name="google-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of Google Pixel Buds devices</summary>
+        </key>
+        <key name="enable-redmi-buds-device" type="b">
+            <default>false</default>
+            <summary>"enable Redmi Buds devices"</summary>
+        </key>
+        <key name="redmi-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of Redmi Buds devices</summary>
+        </key>
+        <key name="enable-senh-buds-device" type="b">
+            <default>false</default>
+            <summary>"enable Sennheiser devices"</summary>
+        </key>
+        <key name="senh-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of Sennheiser devices</summary>
+        </key>
+        <key name="enable-bose-buds-device" type="b">
+            <default>false</default>
+            <summary>"enable Bose devices"</summary>
+        </key>
+        <key name="bose-buds-list" type="as">
+            <default>[]</default>
+            <summary>List of Bose devices</summary>
+        </key>
         <key name="enable-gfps-device" type="b">
             <default>false</default>
             <summary>"enable GFPS devices"</summary>
@@ -158,14 +190,6 @@
         <key name="gattbas-list" type="as">
             <default>[]</default>
             <summary>List of gattbas devices</summary>
-        </key>
-        <key name="enable-google-buds-device" type="b">
-            <default>false</default>
-            <summary>"enable Google Pixel Buds devices"</summary>
-        </key>
-        <key name="google-buds-list" type="as">
-            <default>[]</default>
-            <summary>List of Google Pixel Buds devices</summary>
         </key>
     </schema>
 </schemalist>

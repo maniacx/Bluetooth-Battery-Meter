@@ -10,6 +10,7 @@ import {SliderRowWidget} from './../../widgets/sliderRowWidget.js';
 import {EqualizerWidget} from './../../widgets/equalizerWidget.js';
 import {CheckBoxesRowWidget} from './../../widgets/checkBoxesRowWidget.js';
 import {IconSelectorWidget} from './../../widgets/iconSelectorWidget.js';
+import {DeviceManagementRow} from './../../widgets/deviceMgmtRowWidget.js';
 import {
     SonyConfiguration, EqualizerPreset, ListeningMode, BgmDistance, ButtonModes, AutoPowerOffTime
 
@@ -62,6 +63,7 @@ export const ConfigureWindow = GObject.registerClass({
         this.title = this._settingsItems.alias;
 
         const modelData = SonyConfiguration.find(cfg => cfg.pattern.test(this._settingsItems.name));
+        this._modelData = modelData;
 
         const toolViewBar = new Adw.ToolbarView();
         const headerBar = new Adw.HeaderBar({
@@ -244,16 +246,18 @@ export const ConfigureWindow = GObject.registerClass({
                 options: eqPresets,
                 values: this._eqPresetValues,
                 initialValue: this._settingsItems['eq-preset'],
+                hasButton: true,
+                buttonIcon: 'bbm-eq-symbolic',
+                buttonTooltip: _('Custom Equalizer'),
+                buttonVisibleFor: [EqualizerPreset.MANUAL, EqualizerPreset.CUSTOM_1,
+                    EqualizerPreset.CUSTOM_2],
             });
 
             this._eqPresetDropdown.connect('notify::selected-item', () => {
                 this._updateGsettings('eq-preset', this._eqPresetDropdown.selected_item);
-                this._updateEqCustomRowVisibility();
             });
 
             equalizerGroup.add(this._eqPresetDropdown);
-
-            this._equalizerCustomRow = new Adw.ActionRow({title: _('Custom Equalizer')});
 
             const sixBandFreqs = [_('Bass'), _('400'), _('1k'), _('2.5k'), _('6.3k'), _('16k')];
             const tenBandFreqs = [_('31'), _('63'), _('125'), _('250'), _('500'),
@@ -262,15 +266,20 @@ export const ConfigureWindow = GObject.registerClass({
             const range = modelData.equalizerTenBands ? 6 : 10;
             const initialValues = this._settingsItems['eq-custom'];
 
-            this._eq = new EqualizerWidget(freqs, initialValues, range);
+            this._eq = new EqualizerWidget({
+                freqs,
+                initialValues,
+                range,
+                topBarTitle: _('Frequency (Hz)'),
+                bottomBarTitle: _('Gain (dB)'),
+            });
 
             this._eq.connect('eq-changed', (_w, arr) => {
                 this._updateGsettings('eq-custom', arr);
             });
 
-            this._equalizerCustomRow.set_child(this._eq);
-            this._updateEqCustomRowVisibility();
-            equalizerGroup.add(this._equalizerCustomRow);
+            this._eqPresetDropdown.connect('button-clicked', () => this._eq.present(this));
+
             page.add(equalizerGroup);
 
             if (modelData.listeningMode)
@@ -482,7 +491,7 @@ export const ConfigureWindow = GObject.registerClass({
                 ];
 
                 this._autoPowerOffDropdown = new DropDownRowWidget({
-                    title: _('Auto Power Off'),
+                    title: _('Automatically Power Off When Not Worn'),
                     options: this._autoPowerOffLabels,
                     values: this._autoPowerOffValues,
                     initialValue: this._settingsItems['auto-power-time'],
@@ -496,6 +505,8 @@ export const ConfigureWindow = GObject.registerClass({
                 this._headsetTakenOffGroup.add(this._autoPowerOffDropdown);
             }
         }
+
+        this._addDevMgmtSetting(_, page);
 
         const settingSignalId = this._settings.connect('changed::sony-list', () => {
             const updatedList = this._settings.get_strv('sony-list').map(JSON.parse);
@@ -519,7 +530,6 @@ export const ConfigureWindow = GObject.registerClass({
             if (modelData.equalizerSixBands || modelData.equalizerTenBands)  {
                 this._eqPresetDropdown.selected_item = this._settingsItems['eq-preset'];
                 this._eq.setValues(this._settingsItems['eq-custom']);
-                this._updateEqCustomRowVisibility();
             }
 
             if (modelData.audioUpsampling)
@@ -548,6 +558,15 @@ export const ConfigureWindow = GObject.registerClass({
 
             if (modelData.automaticPowerOffByTime)
                 this._autoPowerOffDropdown.selected_item = this._settingsItems['auto-power-time'];
+
+            if (this._dualConnSwitch) {
+                this._dualConnSwitch.pair_mode = this._settingsItems['pairing-mode'];
+                const deviceInfo = this._settingsItems['dev-mgmt'];
+                this._dualConnSwitch?.updateDevices(deviceInfo);
+                const routeInfo = this._settingsItems['active-dev'];
+                this._dualConnSwitch?.updateRouteDevice(routeInfo);
+                this._dualConnSwitch.active_fixed = this._settingsItems['active-fix'];
+            }
         });
 
         this.connect('close-request', () => {
@@ -588,23 +607,62 @@ export const ConfigureWindow = GObject.registerClass({
 
         if (this._eqPresetDropdown)
             this._eqPresetDropdown.sensitive = isStdMode;
-
-        if (this._equalizerCustomRow)
-            this._equalizerCustomRow.sensitive = isStdMode;
     }
 
-    _updateEqCustomRowVisibility() {
-        if (!this._equalizerCustomRow)
+    _addDevMgmtSetting(_, page) {
+        if (!this._modelData.dualConnection)
             return;
 
-        const val = this._eqPresetDropdown.selected_item;
+        const devMgmtGroup = new Adw.PreferencesGroup({title: _('Connection Management')});
+        page.add(devMgmtGroup);
 
-        this._equalizerCustomRow.visible = [
-            EqualizerPreset.MANUAL,
-            EqualizerPreset.CUSTOM_1,
-            EqualizerPreset.CUSTOM_2,
-        ].includes(val);
-    };
+        const hasRoutingIndicator = this._modelData.dualConnection?.hasRoutingIndicator ?? false;
+        const hasRoutingControl = this._modelData.dualConnection?.hasRoutingControl ?? false;
+        const hasActiveFix = this._modelData.dualConnection?.hasActiveFix ?? false;
+
+        const deviceInfo = this._settingsItems['dev-mgmt'];
+
+        const currentActiveRoute = hasRoutingIndicator || hasRoutingControl
+            ? this._settingsItems['active-dev'] : '';
+
+        const deviceManagementConfig = {
+            maxConnected: this._modelData.maxConnected ?? 2,
+            hasMultipointSwitch: false,
+            hasPairMode: true,
+            hasRoutingIndicator,
+            hasRoutingControl,
+            hasActiveFix,
+            showMac: true,
+        };
+
+        this._dualConnSwitch = new DeviceManagementRow(this, _, deviceInfo,
+            '', currentActiveRoute, deviceManagementConfig);
+
+        this._dualConnSwitch.pair_mode = this._settingsItems['pairing-mode'];
+
+        this._dualConnSwitch.connect('notify::pair-mode', () => {
+            this._updateGsettings('pairing-mode', this._dualConnSwitch.pair_mode);
+        });
+
+
+        if (hasActiveFix) {
+            this._dualConnSwitch.active_fixed = this._settingsItems['active-fix'];
+
+            this._dualConnSwitch.connect('notify::active-fixed', () => {
+                this._updateGsettings('active-fix', this._dualConnSwitch.active_fixed);
+            });
+        }
+
+        const actionData = this._settingsItems['dev-mgmt-action'];
+        this._seq = actionData?.seq ?? 0;
+
+        this._dualConnSwitch.connect('device-action', (_row, action, id) => {
+            const data = {seq: this._seq ^= 1, action, id};
+            this._updateGsettings('dev-mgmt-action', data);
+        });
+
+        devMgmtGroup.add(this._dualConnSwitch);
+    }
 
     _updateCompactStatus() {
         this._ancToggleButtonWidget?.set_property('compact-mode', this._isCompactMode);

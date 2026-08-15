@@ -15,6 +15,9 @@ import {Sony} from './preferences/devices/sony/devicePrefs.js';
 import {GalaxyBuds} from './preferences/devices/galaxyBuds/devicePrefs.js';
 import {NothingBuds} from './preferences/devices/nothingBuds/devicePrefs.js';
 import {GoogleBuds} from './preferences/devices/googleBuds/devicePrefs.js';
+import {BoseBuds} from './preferences/devices/boseBuds/devicePrefs.js';
+import {RedmiBuds} from './preferences/devices/redmiBuds/devicePrefs.js';
+import {SenhBuds} from './preferences/devices/senhBuds/devicePrefs.js';
 import {Gfps} from './preferences/devices/gfps/devicePrefs.js';
 import {GattBas} from './preferences/gattBas.js';
 import {About} from './preferences/about.js';
@@ -45,6 +48,9 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         this._addPage(GalaxyBuds, settings);
         this._addPage(NothingBuds, settings);
         this._addPage(GoogleBuds, settings);
+        this._addPage(BoseBuds, settings);
+        this._addPage(RedmiBuds, settings);
+        this._addPage(SenhBuds, settings);
         this._addPage(Gfps, settings);
         this._addPage(GattBas, settings);
         this._addPage(About, this);
@@ -73,7 +79,7 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
             height_request: 100,
         });
         const breakpoint = new Adw.Breakpoint();
-        breakpoint.set_condition(Adw.BreakpointCondition.parse('max-width: 565px'));
+        breakpoint.set_condition(Adw.BreakpointCondition.parse('max-width: 610px'));
         breakpoint.add_setter(splitView, 'collapsed', true);
         breakpointBin.add_breakpoint(breakpoint);
         breakpointBin.set_child(splitView);
@@ -87,7 +93,14 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         const sidebarBin = new Adw.Bin();
         this._sidebarListBox = new Gtk.ListBox();
         this._sidebarListBox.add_css_class('navigation-sidebar');
-        sidebarBin.set_child(this._sidebarListBox);
+        const sidebarScrolledWindow = new Gtk.ScrolledWindow({
+            hscrollbar_policy: Gtk.PolicyType.NEVER,
+            vscrollbar_policy: Gtk.PolicyType.AUTOMATIC,
+            vexpand: true,
+            hexpand: true,
+        });
+        sidebarScrolledWindow.set_child(this._sidebarListBox);
+        sidebarBin.set_child(sidebarScrolledWindow);
         sidebarToolbar.set_content(sidebarBin);
         sidebarToolbar.add_top_bar(sidebarHeader);
         splitViewSidebar.set_child(sidebarToolbar);

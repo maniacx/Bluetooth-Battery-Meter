@@ -34,6 +34,7 @@ export const IconSelectorWidget = GObject.registerClass({
             initialCaseIcon = '',
             mac = '',
             fw = '',
+            serial = '',
         } = params;
 
         super._init({title: grpTitle});
@@ -110,6 +111,30 @@ export const IconSelectorWidget = GObject.registerClass({
             fwBox.append(fwTitle);
             fwBox.append(fwValue);
             infoBox.append(fwBox);
+        }
+
+        if (serial) {
+            const serialBox = new Gtk.Box({
+                orientation: Gtk.Orientation.HORIZONTAL,
+                spacing: 6,
+                halign: Gtk.Align.START,
+            });
+
+            const serialTitle = new Gtk.Label({
+                label: _('Serial Number'),
+                halign: Gtk.Align.START,
+                css_classes: ['caption-heading'],
+            });
+
+            const serialValue = new Gtk.Label({
+                label: serial,
+                halign: Gtk.Align.START,
+                css_classes: ['caption', 'dimmed'],
+            });
+
+            serialBox.append(serialTitle);
+            serialBox.append(serialValue);
+            infoBox.append(serialBox);
         }
 
         infoPopOver.set_child(infoBox);

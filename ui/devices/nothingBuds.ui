@@ -2,7 +2,7 @@
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
   <template class="BluetoothBatteryMeter_NothingBudsUI" parent="AdwPreferencesPage">
     <property name="name">Nothing</property>
-    <property name="title" translatable="yes">Nothing/CMF Buds</property>
+    <property name="title" translatable="yes">Nothing/CMF</property>
     <property name="icon-name">bbm-earbuds-stem3-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
