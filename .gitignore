@@ -1,7 +1,6 @@
 *.zip
 .work
 .venv
-script
 .kilo
 docs
 tests
