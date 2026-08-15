@@ -1,5 +1,16 @@
 # Project History
 
+## Installation Workflow - 2026-08-15
+
+- Removed the unreliable D-Bus hot reload from `install.sh`.
+- Local installation now requires logout/login before verifying the newly loaded extension version in the diagnostic log.
+
+## Version 54 - 2026-08-15
+
+- Preserved event-driven OnePlus Buds Pro 3 state updates for every unsolicited battery or presence packet received over RFCOMM.
+- Added handling for unsolicited ANC responses: the Quick Settings control is updated immediately and a single coalesced battery/presence read follows the external device activity.
+- Kept the initial RFCOMM state synchronization and added no periodic device polling.
+
 ## Version 52 - 2026-08-15
 
 - Expanded the OnePlus Buds Pro 3 device configuration window to match the established adaptive device-settings pattern.

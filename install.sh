@@ -5,7 +5,6 @@ cd "${0%/*}"
 
 EXT_NAME="Bluetooth Battery Meter"
 EXT_UUID="Bluetooth-Battery-Meter@maniacx.github.com"
-LOG_PATH="${TMPDIR:-/tmp}/bluetooth_battery_meter/service.log"
 BUILD_VERSION=""
 
 bump_version() {
@@ -22,41 +21,6 @@ bump_version() {
     mv "$temp_metadata" metadata.json
     BUILD_VERSION="$new_version"
     echo "Building extension version $new_version..."
-}
-
-verify_running_version() {
-    local attempt
-    echo "Checking the active extension version in $LOG_PATH..."
-    for attempt in {1..10}; do
-        if [ -f "$LOG_PATH" ] && grep -Fq "Initializing Bluetooth Battery Meter version=$BUILD_VERSION" "$LOG_PATH"; then
-            echo "PASS: extension version $BUILD_VERSION started successfully."
-            return 0
-        fi
-        sleep 1
-    done
-
-    echo "FAIL: version $BUILD_VERSION was installed but did not start in GNOME Shell."
-    echo "Please log out and log back in, then verify $LOG_PATH contains version=$BUILD_VERSION."
-    return 1
-}
-
-reload_extension() {
-    echo "Restarting extension in the active GNOME Shell session..."
-    if gdbus call --session \
-        --dest org.gnome.Shell.Extensions \
-        --object-path /org/gnome/Shell/Extensions \
-        --method org.gnome.Shell.Extensions.DisableExtension "$EXT_UUID" && \
-        sleep 1 && \
-        gdbus call --session \
-        --dest org.gnome.Shell.Extensions \
-        --object-path /org/gnome/Shell/Extensions \
-            --method org.gnome.Shell.Extensions.EnableExtension "$EXT_UUID"; then
-        echo "Gnome Extension $EXT_NAME was installed and restarted."
-        verify_running_version
-    else
-        echo "Gnome Extension $EXT_NAME was installed. GNOME Shell restart is unavailable."
-        echo "Run the extension restart from an active graphical GNOME session."
-    fi
 }
 
 if ! command -v msgfmt &> /dev/null
@@ -103,5 +67,7 @@ if [ $? -ne 0 ]; then
     exit $?
 fi
 
-reload_extension
+echo "Gnome Extension $EXT_NAME version $BUILD_VERSION was installed."
+echo "Log out and log back in to load the new extension code."
+echo "Then verify ${TMPDIR:-/tmp}/bluetooth_battery_meter/service.log contains version=$BUILD_VERSION."
 exit 0

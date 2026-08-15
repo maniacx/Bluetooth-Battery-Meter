@@ -3,9 +3,8 @@
 ## Когда использовать nested GNOME Shell
 
 Расширение загружается в процесс GNOME Shell, а GJS не может выгрузить
-изменённые JavaScript-модули. Поэтому Disable/Enable через D-Bus в `install.sh`
-подходит для быстрой проверки, но после ошибки импорта или при проверке чистого
-состояния не заменяет новый процесс Shell.
+изменённые JavaScript-модули. Поэтому `install.sh` не выполняет Disable/Enable
+через D-Bus: для загрузки новой сборки нужен новый процесс Shell.
 
 Для изолированной проверки UI и Shell-кода в Wayland используйте nested Shell.
 Он запускается в отдельной D-Bus-сессии и не перезапускает основной рабочий
@@ -58,10 +57,10 @@ G_MESSAGES_DEBUG=all SHELL_DEBUG=backtrace-warnings \
 
 Для обычной локальной установки используйте `./install.sh`: он запускает
 headless-тесты, повышает `metadata.json.version`, устанавливает расширение,
-перезапускает его через GNOME Shell D-Bus и проверяет версию по service log.
-После каждого перезапуска проверьте `${TMPDIR:-/tmp}/bluetooth_battery_meter/service.log`:
+но не перезапускает активную GNOME Shell. После установки выполните logout/login,
+затем проверьте `${TMPDIR:-/tmp}/bluetooth_battery_meter/service.log`:
 он должен содержать `Initializing Bluetooth Battery Meter version=<ожидаемая версия>`.
-Если остаётся старая версия, выполните logout/login и повторите проверку лога.
+Если остаётся старая версия, GNOME Shell не загрузила новый код.
 
 ## Дополнительная диагностика
 

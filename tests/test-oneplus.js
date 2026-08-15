@@ -3,7 +3,9 @@ import {ANC_MODES, isOnePlusBuds} from '../lib/devices/oneplusBuds/oneplusBudsCo
 import {
     buildNoisePayload, decodeNoiseMode, decodeOnePlusPacket, OnePlusBatteryState,
 } from '../lib/devices/oneplusBuds/oneplusBudsProtocol.js';
-import {BATTERY_RESPONSE, STATUS_RESPONSE} from '../lib/devices/oneplusBuds/oneplusBudsConfig.js';
+import {
+    ANC_RESPONSE, BATTERY_RESPONSE, STATUS_RESPONSE,
+} from '../lib/devices/oneplusBuds/oneplusBudsConfig.js';
 import {isGenericOPOv1} from '../lib/devices/opov1/opov1Detector.js';
 import {OnePlusBudsSocket} from '../lib/devices/oneplusBuds/oneplusBudsSocket.js';
 import {assertDeepEqual, assertEqual, assertThrows} from './test-utils.js';
@@ -55,12 +57,35 @@ export const tests = [
     }],
     ['OnePlus connection requests only capture-confirmed battery and status data', () => {
         const requests = [];
-        OnePlusBudsSocket.prototype.onConnected.call({
+        OnePlusBudsSocket.prototype.refreshState.call({
             request: (...args) => requests.push(args),
         });
         assertDeepEqual(requests.map(([command, payload, response]) => [command, payload, response]), [
             [0x0106, [0x01, 0x01], BATTERY_RESPONSE],
             [0x0109, [0x01, 0x01], STATUS_RESPONSE],
         ], 'startup requests');
+    }],
+    ['OnePlus connection refreshes state without adding a polling timer', () => {
+        let refreshes = 0;
+        OnePlusBudsSocket.prototype.onConnected.call({
+            refreshState: () => refreshes++,
+        });
+        assertEqual(refreshes, 1, 'connection refresh');
+    }],
+    ['unsolicited OnePlus ANC notification refreshes state once', () => {
+        const updates = [];
+        let refreshes = 0;
+        OnePlusBudsSocket.prototype._dispatchPacket.call({
+            _pending: new Map(),
+            _callbacks: {anc: mode => updates.push(mode)},
+            _socketLog: {error: () => assertThrows(() => { throw new Error('unexpected log'); })},
+            refreshState: () => refreshes++,
+        }, {
+            command: ANC_RESPONSE,
+            sequence: 0,
+            payload: Uint8Array.of(0, 1, 1, 0x20),
+        });
+        assertDeepEqual(updates, [5], 'external ANC mode is applied');
+        assertEqual(refreshes, 1, 'one event-triggered refresh');
     }],
 ];

@@ -27,34 +27,30 @@ GSettings и не создаёт внешние подключения.
 5. Каждая новая сборка выполняется только через `./install.sh`. Скрипт увеличивает
    целочисленную версию в `metadata.json` перед упаковкой, поэтому у каждого package
    есть собственная версия.
-6. Для отладки не выполняйте logout/login: `./install.sh` устанавливает package и
-   вызывает `DisableExtension` + `EnableExtension` через session D-Bus. При
-   доступной активной GNOME Shell это немедленно перезапускает расширение.
-7. Версия активируемой сборки записывается как `version=<number>` в
+6. `./install.sh` только устанавливает package. После установки выполните
+   logout/login, чтобы GNOME Shell гарантированно загрузила новый JavaScript-код.
+7. Версия загруженной сборки записывается как `version=<number>` в
    `/tmp/bluetooth_battery_meter/service.log`. Сверяйте её перед разбором логов.
-8. После каждого горячего restart обязательно проверяйте
+8. После входа в новый GNOME-сеанс обязательно проверяйте
    `/tmp/bluetooth_battery_meter/service.log`: должна появиться строка
    `Initializing Bluetooth Battery Meter version=<новая версия>`. Отсутствие
-   строки или старая версия означает, что GNOME Shell не загрузила новый код;
-   в этом случае требуется logout/login до продолжения отладки.
+   строки или старая версия означает, что GNOME Shell не загрузила новый код.
 
 Не обходите тестовый шаг при обычной разработке. Исключение допускается только
 для отдельно зафиксированной диагностики окружения, не изменяющей production
 файлы.
 
-## Hot Reload / Горячая переустановка
+## Установка новой сборки / Installing a New Build
 
 ```sh
 ./install.sh
 ```
 
-Команда запускает tests, повышает `metadata.json.version`, собирает ZIP, выполняет
-`gnome-extensions install --force`, затем перезапускает extension через
-`DisableExtension` + `EnableExtension` в session D-Bus активной GNOME Shell. Это не
-требует logout/login. После restart скрипт ожидает в diagnostic log старт новой
-версии. При отсутствии записи script сообщает, что необходимо выполнить
-logout/login. Если session D-Bus недоступен, package останется установленным, а
-причина будет выведена скриптом.
+Команда запускает tests, повышает `metadata.json.version`, собирает ZIP и выполняет
+`gnome-extensions install --force`. Скрипт намеренно не пытается перезапустить
+расширение через D-Bus: GNOME Shell может удерживать старые GJS-модули после такого
+переключения. После успешной установки выйдите из GNOME-сеанса и войдите снова, затем
+сверьте запуск новой версии по diagnostic log.
 
 ## Покрытие / Coverage
 
