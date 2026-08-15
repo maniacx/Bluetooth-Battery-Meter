@@ -26,6 +26,16 @@ export const tests = [
         assertEqual(isGenericOPOv1({}, ['0000079A-D102-11E1-9B23-00025B00A5A5']).supported,
             'yes', 'vendor UUID');
     }],
+    ['generic OPOv1 devices use the shared battery protocol', () => {
+        const state = new OnePlusBatteryState();
+        state.apply(decodeOnePlusPacket({command: BATTERY_RESPONSE,
+            payload: Uint8Array.from([0, 3, 1, 91, 2, 82, 3, 73])}, 10));
+        assertDeepEqual(state.toProperties(), {
+            connectedSides: 'unknown', battery1Level: 91, battery1Status: 'discharging',
+            battery2Level: 82, battery2Status: 'discharging',
+            battery3Level: 73, battery3Status: 'discharging',
+        }, 'generic OPOv1 battery properties');
+    }],
     ['OnePlus packets preserve independent battery and presence state', () => {
         const state = new OnePlusBatteryState();
         state.apply(decodeOnePlusPacket({command: BATTERY_RESPONSE,

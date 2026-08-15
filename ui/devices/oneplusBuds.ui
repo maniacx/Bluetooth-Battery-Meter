@@ -2,15 +2,15 @@
 <interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
   <template class="BluetoothBatteryMeter_OnePlusBudsUI" parent="AdwPreferencesPage">
     <property name="name">OnePlusBuds</property>
-    <property name="title" translatable="yes">OnePlus Buds Pro 3</property>
+    <property name="title" translatable="yes">OnePlus/Oppo Buds</property>
     <property name="icon-name">bbm-earbuds-stem-symbolic</property>
     <child>
       <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">OnePlus Buds Pro 3 Support</property>
+        <property name="title" translatable="yes">OnePlus/Oppo Buds Support</property>
         <child>
           <object class="AdwSwitchRow" id="enable_oneplus_buds_device">
-            <property name="title" translatable="yes">Enable OnePlus Buds Pro 3 Support</property>
-            <property name="subtitle" translatable="yes">Shows individual left, right and case battery levels, plus noise control, for the confirmed OnePlus Buds Pro 3 device.</property>
+            <property name="title" translatable="yes">Enable OnePlus/Oppo Buds Support</property>
+            <property name="subtitle" translatable="yes">Shows individual left, right and case battery levels for compatible OPOv1 devices. Noise control is available for the confirmed OnePlus Buds Pro 3.</property>
           </object>
         </child>
         <child>
@@ -27,18 +27,7 @@
         <child>
           <object class="AdwActionRow" id="no_oneplus_buds_paired_row">
             <property name="title" translatable="yes">No compatible device connected yet</property>
-            <property name="subtitle" translatable="yes">Connect the confirmed OnePlus Buds Pro 3 after enabling support to add it here.</property>
-          </object>
-        </child>
-      </object>
-    </child>
-    <child>
-      <object class="AdwPreferencesGroup">
-        <property name="title" translatable="yes">Experimental OPOv1 Support</property>
-        <child>
-          <object class="AdwSwitchRow" id="enable_experimental_opov1_device">
-            <property name="title" translatable="yes">Enable Generic OPOv1 Support</property>
-            <property name="subtitle" translatable="yes">Read-only support for other devices with confirmed OPOv1 UUID evidence. It does not expose noise control or infer battery component mappings.</property>
+            <property name="subtitle" translatable="yes">Connect a compatible OnePlus or Oppo OPOv1 device after enabling support to add it here.</property>
           </object>
         </child>
       </object>

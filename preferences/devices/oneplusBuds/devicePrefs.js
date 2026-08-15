@@ -28,7 +28,7 @@ const DeviceItem = GObject.registerClass({
         ).present());
         const remove = new Gtk.Button({
             icon_name: 'user-trash-symbolic',
-            tooltip_text: _('The button is available after disabling OnePlus Buds Pro 3 support'),
+            tooltip_text: _('The button is available after disabling OnePlus/Oppo Buds support'),
             css_classes: ['destructive-action'],
             valign: Gtk.Align.CENTER,
             sensitive: !settings.get_boolean('enable-oneplus-buds-device'),
@@ -59,7 +59,7 @@ export const OnePlusBuds = GObject.registerClass({
         import.meta.url, '../../../ui/devices/oneplusBuds.ui', GLib.UriFlags.NONE
     ),
     InternalChildren: [
-        'enable_oneplus_buds_device', 'enable_experimental_opov1_device',
+        'enable_oneplus_buds_device',
         'oneplus_buds_group', 'no_oneplus_buds_paired_row',
     ],
 }, class OnePlusBuds extends Adw.PreferencesPage {
@@ -68,8 +68,6 @@ export const OnePlusBuds = GObject.registerClass({
         this._settings = settings;
         this._items = new Map();
         settings.bind('enable-oneplus-buds-device', this._enable_oneplus_buds_device,
-            'active', Gio.SettingsBindFlags.DEFAULT);
-        settings.bind('enable-experimental-opov1-device', this._enable_experimental_opov1_device,
             'active', Gio.SettingsBindFlags.DEFAULT);
         this._createDevices();
         this._signal = settings.connect('changed::oneplus-buds-list', () => this._createDevices());

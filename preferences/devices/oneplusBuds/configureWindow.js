@@ -73,6 +73,9 @@ export const ConfigureWindow = GObject.registerClass({
             this._update('case', iconSelector.selected_case_icon));
         this._page.add(iconSelector);
 
+        if (this._item.profile === 'generic-opov1')
+            return this._connectSettings();
+
         const controls = new Adw.PreferencesGroup({title: _('Device Controls')});
         const modeLabels = {
             off: _('Off'),
@@ -94,7 +97,11 @@ export const ConfigureWindow = GObject.registerClass({
         controls.add(this._noiseControl);
         this._page.add(controls);
 
-        this._settingsHandlerId = settings.connect('changed::oneplus-buds-list', () =>
+        this._connectSettings();
+    }
+
+    _connectSettings() {
+        this._settingsHandlerId = this._settings.connect('changed::oneplus-buds-list', () =>
             this._syncSettings());
         this.connect('close-request', () => {
             if (this._settingsHandlerId && this._settings)
@@ -122,6 +129,7 @@ export const ConfigureWindow = GObject.registerClass({
             return;
 
         this.title = this._item.alias;
-        this._noiseControl.selected_item = this._item['noise-mode'] ?? 5;
+        if (this._noiseControl)
+            this._noiseControl.selected_item = this._item['noise-mode'] ?? 5;
     }
 });

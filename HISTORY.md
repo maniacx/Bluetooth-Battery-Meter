@@ -1,5 +1,12 @@
 # Project History
 
+## Version 56 - 2026-08-15
+
+- Renamed the device preferences page to `OnePlus/Oppo Buds`.
+- Unified confirmed OnePlus Buds Pro 3 and UUID-confirmed OPOv1 device discovery in the OnePlus/Oppo device list.
+- Added configurable icons, individual battery levels, and Bluetooth Quick Settings battery widgets for generic OPOv1 devices.
+- Kept the OnePlus Buds Pro 3 Noise Control UI and ANC writes limited to the confirmed model.
+
 ## Installation Workflow - 2026-08-15
 
 - Removed the unreliable D-Bus hot reload from `install.sh`.

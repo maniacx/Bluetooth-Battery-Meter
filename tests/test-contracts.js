@@ -84,11 +84,11 @@ export const tests = [
             }
         }
     }],
-    ['OnePlus profiles are opt-in by default', () => {
+    ['OnePlus/Oppo support is opt-in by default', () => {
         assertEqual(schemaDefault('enable-oneplus-buds-device'), 'false',
-            'confirmed OnePlus profile default');
+            'OnePlus/Oppo profile default');
         assertEqual(schemaDefault('enable-experimental-opov1-device'), 'false',
-            'experimental generic OPOv1 profile default');
+            'legacy generic OPOv1 profile default');
     }],
     ['OnePlus detection is not globally blocked by UUIDs', () => {
         const manager = readText(GLib.build_filenamev([ROOT, 'lib',
@@ -114,13 +114,13 @@ export const tests = [
         assert(proxy.includes('value.deepUnpack()'),
             'BlueZ a{sv} values are converted from GLib.Variant before detection');
     }],
-    ['OnePlus discovery does not depend on Quick Settings items', () => {
+    ['OnePlus/Oppo discovery does not depend on Quick Settings items', () => {
         const manager = readText(GLib.build_filenamev([ROOT, 'lib',
             'enhancedDeviceSupportManager.js']));
         assert(manager.includes("'org.freedesktop.DBus.ObjectManager', 'GetManagedObjects'"),
             'confirmed OnePlus devices are scanned through BlueZ ObjectManager');
-        assert(manager.includes('this._discoverOnePlusBuds();'),
-            'the confirmed profile scans BlueZ when support is enabled');
+        assert(manager.includes('this._discoverOPOv1Devices();'),
+            'the OnePlus/Oppo profile scans BlueZ when support is enabled');
     }],
     ['OnePlus device settings provide complete confirmed ANC control', () => {
         const window = readText(GLib.build_filenamev([ROOT, 'preferences', 'devices',
@@ -131,5 +131,15 @@ export const tests = [
         }
         assert(window.includes("_update('noise-mode'"),
             'OnePlus device settings persist the selected ANC mode');
+    }],
+    ['generic OPOv1 devices receive battery widgets and icon configuration', () => {
+        const device = readText(GLib.build_filenamev([ROOT, 'lib', 'devices', 'opov1',
+            'genericOpov1Device.js']));
+        assert(device.includes('new OnePlusBudsSocket('),
+            'generic OPOv1 uses the battery-capable shared transport');
+        assert(device.includes('battery: this._updateBattery.bind(this)'),
+            'generic OPOv1 forwards battery events to its data handler');
+        assert(device.includes("profile: 'generic-opov1'"),
+            'generic OPOv1 creates a configurable device record');
     }],
 ];

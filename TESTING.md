@@ -62,9 +62,9 @@ GSettings и не создаёт внешние подключения.
   асинхронной инициализации GNOME Shell.
 - `tests/test-opov1.js`: varint, OPOv1 packet/frame codec, streamed input и
   malformed frame handling.
-- `tests/test-oneplus.js`: MAC-first confirmed detection, UUID-gated generic
-  detection, separate left/right/case battery and presence state, unknown packet
-  safety and ANC bitmap codec.
+- `tests/test-oneplus.js`: MAC-first confirmed and UUID-gated generic OPOv1
+  detection, shared left/right/case battery state, unknown packet safety and the
+  OnePlus Buds Pro 3 ANC bitmap codec.
 
 ## Adding A Device Profile / Новый профиль устройства
 
