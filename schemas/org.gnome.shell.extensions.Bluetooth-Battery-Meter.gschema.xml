@@ -117,8 +117,8 @@
         </key>
         <key name="enable-oneplus-buds-device" type="b">
             <default>false</default>
-            <summary>Enable OnePlus Buds Pro 3 support</summary>
-            <description>Connect to the confirmed OnePlus Buds Pro 3 OPOv1 service.</description>
+            <summary>Enable OnePlus/Oppo Buds support</summary>
+            <description>Connect to compatible OnePlus and Oppo OPOv1 services.</description>
         </key>
         <key name="oneplus-buds-list" type="as">
             <default>[]</default>

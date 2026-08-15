@@ -9,7 +9,7 @@
         <property name="title" translatable="yes">OnePlus/Oppo Buds Support</property>
         <child>
           <object class="AdwSwitchRow" id="enable_oneplus_buds_device">
-            <property name="title" translatable="yes">Enable OnePlus/Oppo Buds Support</property>
+            <property name="title" translatable="yes">Enable OnePlus Buds Pro 3 Support</property>
             <property name="subtitle" translatable="yes">Shows individual left, right and case battery levels for compatible OPOv1 devices. Noise control is available for the confirmed OnePlus Buds Pro 3.</property>
           </object>
         </child>
@@ -28,6 +28,17 @@
           <object class="AdwActionRow" id="no_oneplus_buds_paired_row">
             <property name="title" translatable="yes">No compatible device connected yet</property>
             <property name="subtitle" translatable="yes">Connect a compatible OnePlus or Oppo OPOv1 device after enabling support to add it here.</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Experimental OPOv1 Support</property>
+        <child>
+          <object class="AdwSwitchRow" id="enable_experimental_opov1_device">
+            <property name="title" translatable="yes">Enable Generic OPOv1 Support</property>
+            <property name="subtitle" translatable="yes">Enables battery levels, Bluetooth Quick Settings widgets, and icon configuration for other devices with OPOv1 UUID evidence. Protocol compatibility is not confirmed for these models.</property>
           </object>
         </child>
       </object>

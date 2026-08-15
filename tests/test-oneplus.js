@@ -65,7 +65,7 @@ export const tests = [
         assertDeepEqual(ANC_MODES.map(mode => mode.index), [3, 4, 5, 6, 7, 8],
             'all writable OnePlus ANC modes');
     }],
-    ['OnePlus connection requests only capture-confirmed battery and status data', () => {
+    ['OnePlus connection requests initial battery and status data', () => {
         const requests = [];
         OnePlusBudsSocket.prototype.refreshState.call({
             request: (...args) => requests.push(args),
@@ -74,6 +74,20 @@ export const tests = [
             [0x0106, [0x01, 0x01], BATTERY_RESPONSE],
             [0x0109, [0x01, 0x01], STATUS_RESPONSE],
         ], 'startup requests');
+    }],
+    ['OnePlus reads ANC after receiving initial device state', () => {
+        let reads = 0;
+        OnePlusBudsSocket.prototype._dispatchPacket.call({
+            _pending: new Map(),
+            _callbacks: {battery: () => {}},
+            _ancSynchronized: false,
+            _readNoiseMode: () => reads++,
+        }, {
+            command: BATTERY_RESPONSE,
+            sequence: 0,
+            payload: Uint8Array.of(0, 1, 1, 90),
+        });
+        assertEqual(reads, 1, 'ANC poll follows initial battery response');
     }],
     ['OnePlus connection refreshes state without adding a polling timer', () => {
         let refreshes = 0;

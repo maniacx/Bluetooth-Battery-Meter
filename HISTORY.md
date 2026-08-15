@@ -1,5 +1,29 @@
 # Project History
 
+## Version 61 - 2026-08-15
+
+- Renamed the verified-device toggle to `Enable OnePlus Buds Pro 3 Support` while retaining the generic OnePlus/Oppo preferences page and separate experimental OPOv1 support.
+
+## Version 60 - 2026-08-15
+
+- Restored the separate opt-in experimental OPOv1 switch for unconfirmed devices.
+- Kept the verified OnePlus Buds Pro 3 profile behind its own primary switch.
+
+## Build Workflow - 2026-08-15
+
+- Recorded the mandatory automatic `./install.sh` workflow after extension changes: tests, version bump, package build, and local installation are one ready-to-test operation.
+
+## Version 58 - 2026-08-15
+
+- Deferred the confirmed OnePlus Buds Pro 3 ANC read until the first battery or presence response completes the RFCOMM state exchange.
+- This ensures the earbuds answer the ANC poll and their actual mode initializes both the device settings window and Bluetooth Quick Settings.
+
+## Version 57 - 2026-08-15
+
+- Made the OnePlus/Oppo settings schema metadata use the generic device-family name.
+- Added an ANC mode read at each confirmed OnePlus Buds Pro 3 RFCOMM connection.
+- Persisted the device-confirmed ANC mode so the configuration window and Bluetooth Quick Settings selector start in the actual earbud state.
+
 ## Version 56 - 2026-08-15
 
 - Renamed the device preferences page to `OnePlus/Oppo Buds`.

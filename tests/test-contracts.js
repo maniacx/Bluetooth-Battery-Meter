@@ -122,6 +122,15 @@ export const tests = [
         assert(manager.includes('this._discoverOPOv1Devices();'),
             'the OnePlus/Oppo profile scans BlueZ when support is enabled');
     }],
+    ['generic OPOv1 support remains separately opt-in', () => {
+        const manager = readText(GLib.build_filenamev([ROOT, 'lib',
+            'enhancedDeviceSupportManager.js']));
+        const page = readText(GLib.build_filenamev([ROOT, 'ui', 'devices', 'oneplusBuds.ui']));
+        assert(manager.includes('enabled: this._toggle.experimentalOPOv1Enabled'),
+            'generic OPOv1 detection requires its experimental toggle');
+        assert(page.includes('id="enable_experimental_opov1_device"'),
+            'preferences expose the experimental OPOv1 toggle');
+    }],
     ['OnePlus device settings provide complete confirmed ANC control', () => {
         const window = readText(GLib.build_filenamev([ROOT, 'preferences', 'devices',
             'oneplusBuds', 'configureWindow.js']));
@@ -131,6 +140,16 @@ export const tests = [
         }
         assert(window.includes("_update('noise-mode'"),
             'OnePlus device settings persist the selected ANC mode');
+    }],
+    ['OnePlus ANC state is synchronized from the device on connection', () => {
+        const socket = readText(GLib.build_filenamev([ROOT, 'lib', 'devices', 'oneplusBuds',
+            'oneplusBudsSocket.js']));
+        const device = readText(GLib.build_filenamev([ROOT, 'lib', 'devices', 'oneplusBuds',
+            'oneplusBudsDevice.js']));
+        assert(socket.includes('this._ancSynchronized = true;'),
+            'initial device state triggers one current ANC mode request');
+        assert(device.includes('this._saveNoiseMode(protocolIndex);'),
+            'device-confirmed ANC mode replaces the persisted preference');
     }],
     ['generic OPOv1 devices receive battery widgets and icon configuration', () => {
         const device = readText(GLib.build_filenamev([ROOT, 'lib', 'devices', 'opov1',
