@@ -63,6 +63,8 @@ export const tests = [
         assertEqual(metadata['settings-schema'],
             'org.gnome.shell.extensions.Bluetooth-Battery-Meter', 'settings schema');
         assert(metadata['shell-version'].length > 0, 'supported Shell versions are declared');
+        assert(Number.isInteger(metadata.version) && metadata.version > 0,
+            'extension build version is a positive integer');
     }],
     ['all local JavaScript imports resolve to files', () => {
         for (const file of sourceFiles()) {
@@ -87,5 +89,37 @@ export const tests = [
             'confirmed OnePlus profile default');
         assertEqual(schemaDefault('enable-experimental-opov1-device'), 'false',
             'experimental generic OPOv1 profile default');
+    }],
+    ['OnePlus detection is not globally blocked by UUIDs', () => {
+        const manager = readText(GLib.build_filenamev([ROOT, 'lib',
+            'enhancedDeviceSupportManager.js']));
+        assert(!manager.includes('if (uuids.length === 0)'),
+            'profile detectors, not the manager, decide which BlueZ properties are required');
+    }],
+    ['BlueZ proxy exposes the OnePlus MAC address', () => {
+        const proxy = readText(GLib.build_filenamev([ROOT, 'lib', 'bluezDeviceProxy.js']));
+        assert(proxy.includes('<property name="Address" type="s" access="read"/>'),
+            'MAC-first OnePlus detection requires the BlueZ Address property');
+    }],
+    ['pending BlueZ detection handles initial property load races', () => {
+        const manager = readText(GLib.build_filenamev([ROOT, 'lib',
+            'enhancedDeviceSupportManager.js']));
+        assert(manager.includes('getBluezDevicePropertiesAsync(path,'),
+            'detection fetches initial BlueZ properties atomically');
+        assert(manager.includes('this._detectDevice(path, deviceProps, bluezDeviceProps);'),
+            'detection runs after BlueZ properties have loaded');
+    }],
+    ['BlueZ GetAll properties are unpacked for device detectors', () => {
+        const proxy = readText(GLib.build_filenamev([ROOT, 'lib', 'bluezDeviceProxy.js']));
+        assert(proxy.includes('value.deepUnpack()'),
+            'BlueZ a{sv} values are converted from GLib.Variant before detection');
+    }],
+    ['OnePlus discovery does not depend on Quick Settings items', () => {
+        const manager = readText(GLib.build_filenamev([ROOT, 'lib',
+            'enhancedDeviceSupportManager.js']));
+        assert(manager.includes("'org.freedesktop.DBus.ObjectManager', 'GetManagedObjects'"),
+            'confirmed OnePlus devices are scanned through BlueZ ObjectManager');
+        assert(manager.includes('this._discoverOnePlusBuds();'),
+            'the confirmed profile scans BlueZ when support is enabled');
     }],
 ];
