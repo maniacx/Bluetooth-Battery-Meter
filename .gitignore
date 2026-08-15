@@ -3,3 +3,6 @@ Bluetooth-Battery-Meter@maniacx.github.com.shell-extension.zip
 .venv
 script
 .kilo
+docs
+tests
+*.md
