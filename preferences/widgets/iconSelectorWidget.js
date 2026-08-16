@@ -35,6 +35,9 @@ export const IconSelectorWidget = GObject.registerClass({
             mac = '',
             fw = '',
             serial = '',
+            lSn = '',
+            rSn = '',
+            caseSn = '',
         } = params;
 
         super._init({title: grpTitle});
@@ -55,7 +58,7 @@ export const IconSelectorWidget = GObject.registerClass({
 
         const infoBox = new Gtk.Box({
             orientation: Gtk.Orientation.VERTICAL,
-            spacing: 8,
+            spacing: 16,
             margin_top: 8,
             margin_bottom: 8,
             margin_start: 10,
@@ -64,78 +67,88 @@ export const IconSelectorWidget = GObject.registerClass({
 
         const title = new Gtk.Label({
             label: _('Device information'),
-            halign: Gtk.Align.START,
+            halign: Gtk.Align.CENTER,
             css_classes: ['heading'],
         });
+
         infoBox.append(title);
 
-        const macBox = new Gtk.Box({
-            orientation: Gtk.Orientation.HORIZONTAL,
-            spacing: 6,
-            halign: Gtk.Align.START,
-        });
+        const addInfo = (label, value) => {
+            if (!value)
+                return;
 
-        const macTitle = new Gtk.Label({
-            label: _('Mac Address'),
-            halign: Gtk.Align.START,
-            css_classes: ['caption-heading'],
-        });
-        const macValue = new Gtk.Label({
-            label: mac,
-            halign: Gtk.Align.START,
-            css_classes: ['caption', 'dimmed'],
-        });
-
-        macBox.append(macTitle);
-        macBox.append(macValue);
-        infoBox.append(macBox);
-
-        if (fw) {
-            const fwBox = new Gtk.Box({
-                orientation: Gtk.Orientation.HORIZONTAL,
-                spacing: 6,
-                halign: Gtk.Align.START,
+            const box = new Gtk.Box({
+                orientation: Gtk.Orientation.VERTICAL,
+                spacing: 2,
+                halign: Gtk.Align.CENTER,
             });
 
-            const fwTitle = new Gtk.Label({
-                label: _('Firmware Version'),
-                halign: Gtk.Align.START,
+            const title = new Gtk.Label({
+                label,
+                halign: Gtk.Align.CENTER,
                 css_classes: ['caption-heading'],
             });
-            const fwValue = new Gtk.Label({
-                label: fw,
-                halign: Gtk.Align.START,
+
+            const valueLabel = new Gtk.Label({
+                label: value,
+                halign: Gtk.Align.CENTER,
                 css_classes: ['caption', 'dimmed'],
             });
 
-            fwBox.append(fwTitle);
-            fwBox.append(fwValue);
-            infoBox.append(fwBox);
-        }
+            box.append(title);
+            box.append(valueLabel);
+            infoBox.append(box);
+        };
 
-        if (serial) {
+        addInfo(_('Mac Address'), mac);
+
+        if (fw)
+            addInfo(_('Firmware Version'), fw);
+
+        if (lSn || rSn || caseSn) {
             const serialBox = new Gtk.Box({
-                orientation: Gtk.Orientation.HORIZONTAL,
-                spacing: 6,
-                halign: Gtk.Align.START,
+                orientation: Gtk.Orientation.VERTICAL,
+                spacing: 2,
+                halign: Gtk.Align.CENTER,
             });
 
             const serialTitle = new Gtk.Label({
                 label: _('Serial Number'),
-                halign: Gtk.Align.START,
+                halign: Gtk.Align.CENTER,
                 css_classes: ['caption-heading'],
             });
 
-            const serialValue = new Gtk.Label({
-                label: serial,
-                halign: Gtk.Align.START,
-                css_classes: ['caption', 'dimmed'],
-            });
-
             serialBox.append(serialTitle);
-            serialBox.append(serialValue);
+
+            if (lSn) {
+                serialBox.append(new Gtk.Label({
+                    label: `L: ${lSn}`,
+                    halign: Gtk.Align.CENTER,
+                    css_classes: ['caption', 'dimmed'],
+                }));
+            }
+
+            if (rSn) {
+                serialBox.append(new Gtk.Label({
+                    label: `R: ${rSn}`,
+                    halign: Gtk.Align.CENTER,
+                    css_classes: ['caption', 'dimmed'],
+                }));
+            }
+
+            if (caseSn) {
+                serialBox.append(new Gtk.Label({
+                    label: `Case: ${caseSn}`,
+                    halign: Gtk.Align.CENTER,
+                    css_classes: ['caption', 'dimmed'],
+                }));
+            }
+
             infoBox.append(serialBox);
+        } else if (serial) {
+            addInfo(_('Serial Number'), serial);
         }
+
 
         infoPopOver.set_child(infoBox);
         infoButton.set_popover(infoPopOver);

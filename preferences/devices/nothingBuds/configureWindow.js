@@ -116,6 +116,7 @@ export const ConfigureWindow = GObject.registerClass({
             initialCaseIcon,
             mac,
             fw: this._settingsItems['fw-version'],
+            serial: this._settingsItems['serial'],
         });
 
         iconSelector.connect('notify::selected-icon', () => {
