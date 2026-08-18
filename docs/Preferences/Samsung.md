@@ -83,20 +83,6 @@ When enabled, media playback automatically pauses when the earbuds are removed a
 * Resume with both earbuds: Playback resumes only when both earbuds are worn.
 * Resume with any earbud: Playback resumes as soon as at least one earbud is worn.
 
-## Conversation awareness volume Limit
-
-If supported by device, this setting limits media volume during active conversations to enhance awareness of your surroundings and reduce distractions.
-
-* When conversation mode is triggered (based on supported device capabilities), the system automatically reduces media volume to a user-defined percentage of the maximum volume.
-
-* This helps ensure you can still hear important external sounds while music or other media is playing.
-
-Adjustable Range
-
-* You can set the volume limit to any value between 0 and 50.
-* Values are interpreted as a percentage of the device's maximum volume.
-* Note: If the current playback volume is already below the specified limit, no adjustment will be made.
-
 ## Other settings:
 Other settings are self explanatory similar to settings available in iPhone / iPads / Macs
 

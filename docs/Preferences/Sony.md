@@ -81,7 +81,12 @@ Currently tested and confirmed working:
 * **Sony WF-1000XM5**  ✅ — Credits: kilisei
 * **Sony WH-1000XM5**  ✅ — Credits: pesader
 * **Sony WH-1000XM5**  ✅ — Credits: guiand888
-
+* **Sony WH-XB900N**  ✅ — Credits: BerenLuth
+* **Sony WF-1000XM4**  ✅ — Credits: Raycx86
+* **Sony WH-1000XM6**  ✅ — Credits: AquaCobalt
+* **Sony LinkBuds S**  ✅ — Credits: Neikon
+* **Sony WF-C700N**  ✅ — Credits: bertusw
+* **Sony WF-C500** ✅ — Credits: laughingwater
 
 <style>
 table th:first-of-type {
@@ -99,20 +104,19 @@ table th:nth-of-type(3) {
 
 | Feature                       | Supported      | Tested |
 |:-----------------------------:|:--------------:|:------:|
-| Battery Level                 | Single         | ❌     |
-| Ambient Mode                  | ✅             | ❌     |
-| Anc Mode                      | ✅             | ❌     |
-| Auto Ambient Sound Control    | ✅             | ❌     |
-| Noise Control Button Mode     | ✅             | ❌     |
-| Speak To Chat Config          | ✅             | ❌     |
-| Voice Notifications           | ✅             | ❌     |
-| Voice Notifications Volume    | ✅             | ❌     |
-| Auto Power Off When Taken Off | ✅             | ❌     |
-| Pause When Taken Off          | ✅             | ❌     |
-| Equalizer Ten Bands           | ✅             | ❌     |
-| Listening Mode                | ✅             | ❌     |
-| DSEE                          | ✅             | ❌     |
-
+| Battery Level                 | Single         | ✅     |
+| Ambient Mode                  | ✅             | ✅     |
+| ANC Mode                      | ✅             | ✅     |
+| Auto Ambient Sound Control    | ✅             | ✅     |
+| Noise Control Button Mode     | ✅             | ✅     |
+| Speak To Chat Config          | ✅             | Untested |
+| Voice Notifications           | ✅             | Untested |
+| Voice Notifications Volume    | ✅             | Untested |
+| Auto Power Off When Taken Off | ✅             | ✅     |
+| Pause When Taken Off          | ✅             | ✅     |
+| Equalizer Ten Bands           | ✅             | ✅     |
+| Listening Mode                | ✅             | ✅     |
+| DSEE                          | ✅             | ✅     |
 
 <br>
 ### Sony WH-1000XM5
@@ -121,7 +125,7 @@ table th:nth-of-type(3) {
 |:-----------------------------:|:--------------:|:------:|
 | Battery Level                 | Single         | ✅     |
 | Ambient Mode                  | ✅             | ✅     |
-| Anc Mode                      | ✅             | ✅     |
+| ANC Mode                      | ✅             | ✅     |
 | Noise Control Button Mode     | ✅             | ✅     |
 | Speak To Chat Config          | ✅             | ✅     |
 | Voice Notifications           | ✅             | ✅     |
@@ -137,7 +141,7 @@ table th:nth-of-type(3) {
 |:-----------------------------:|:--------------:|:------:|
 | Battery Level                 | Single         | ✅     |
 | Ambient Mode                  | ✅             | ✅     |
-| Anc Mode                      | ✅             | ✅     |
+| ANC Mode                      | ✅             | ✅     |
 | Speak To Chat Config          | ✅             | ✅     |
 | Voice Notifications           | ✅             | ✅     |
 | Auto Power Off When Taken Off | ✅             | ✅     |
@@ -152,10 +156,10 @@ table th:nth-of-type(3) {
 |:-----------------------------:|:--------------:|:------:|
 | Battery Level                 | Single         | ❌     |
 | Ambient Mode                  | ✅             | ❌     |
-| Anc Mode                      | ✅             | ❌     |
+| ANC Mode                      | ✅             | ❌     |
 | Voice Notifications           | ✅             | ❌     |
 | Auto Power Off When Taken Off | ✅             | ❌     |
-| Auto Power Off When Taken Time| Yes            | ❌     |
+| Auto Power Off When Taken Time| ✅            | ❌     |
 | Equalizer Six Bands           | ✅             | ❌     |
 | DSEE                          | ✅             | ❌     |
 
@@ -166,7 +170,7 @@ table th:nth-of-type(3) {
 |:-----------------------------:|:--------------:|:------:|
 | Battery Level                 | Single         | ❌     |
 | Ambient Mode                  | ✅             | ❌     |
-| Anc Mode                      | ✅             | ❌     |
+| ANC Mode                      | ✅             | ❌     |
 | Voice Notifications           | ✅             | ❌     |
 | Equalizer Six Bands           | ✅             | ❌     |
 | DSEE                          | ✅             | ❌     |
@@ -178,14 +182,14 @@ table th:nth-of-type(3) {
 |:-----------------------------:|:--------------:|:------:|
 | Battery Level                 | Single         | ❌     |
 | Ambient Mode                  | ✅             | ❌     |
-| Anc Mode                      | ✅             | ❌     |
+| ANC Mode                      | ✅             | ❌     |
 | Noise Control Button Mode     | ✅             | ❌     |
 | Auto Power Off When Taken Off | ✅             | ❌     |
 | Voice Notifications           | ✅             | ❌     |
 | Equalizer Six Bands           | ✅             | ❌     |
 | DSEE                          | ✅             | ❌     |
 
-### WF-1000XM6
+### Sony WF-1000XM6
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
@@ -199,7 +203,7 @@ table th:nth-of-type(3) {
 | Upscaling (DSEE)              | ✅        | ❌     |
 
 
-### WF-1000XM5
+### Sony WF-1000XM5
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
@@ -214,27 +218,29 @@ table th:nth-of-type(3) {
 
 <br>
 
-### WF-1000XM4
-
-| Feature                       | Supported | Tested |
-|:-----------------------------:|:---------:|:------:|
-| Battery Level                 | L, R, Case| ❌     |
-| Ambient Mode                  | ✅        | ❌     |
-| Anc Mode                      | ✅        | ❌     |
-| Pause When Taken Off          | ✅        | ❌     |
-| Auto Power Off When Taken Off | ✅        | ❌     |
-| Equalizer Six Bands           | ✅        | ❌     |
-| Upscaling (DSEE)              | ✅        | ❌     |
-
-<br>
-
-### WF-1000XM3
+### Sony WF-1000XM4
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
 | Battery Level                 | L, R, Case| ✅     |
 | Ambient Mode                  | ✅        | ✅     |
-| Anc Mode                      | ✅        | ✅     |
+| ANC Mode                      | ✅        | ✅     |
+| Button Modes Left / Right     | ✅        | ✅     |
+| Pause When Taken Off          | ✅        | ✅     |
+| Auto Power Off When Taken Off | ✅        | ✅     |
+| Equalizer Six Bands           | ✅        | ✅     |
+| Upscaling (DSEE)              | ✅        | ✅     |
+
+<br>
+
+### Sony WF-1000XM3
+
+| Feature                       | Supported | Tested |
+|:-----------------------------:|:---------:|:------:|
+| Battery Level                 | L, R, Case| ✅     |
+| Ambient Mode                  | ✅        | ✅     |
+| ANC Mode                      | ✅        | ✅     |
+| Button Modes Left / Right     | ✅        | ❌     |
 | Voice Notifications           | ✅        | ❌     |
 | Pause When Taken Off          | ✅        | ✅     |
 | Auto Power Off When Taken Off | ✅        | ✅     |
@@ -244,55 +250,57 @@ table th:nth-of-type(3) {
 
 <br>
 
-### WF-C710N
+### Sony WF-C710N
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
 | Battery Level                 | Dual2+Case | No    |
 | Ambient Mode                  | ✅        | ❌     |
-| Anc Mode                      | ✅        | ❌     |
+| ANC Mode                      | ✅        | ❌     |
 | Equalizer Six Bands           | ✅        | ❌     |
 | Upscaling (DSEE)              | ✅        | ❌     |
 
 <br>
 
-### WF-C700N
+### Sony WF-C700N
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
 | Battery Level                 | Dual2+Case | No    |
-| Ambient Mode                  | ✅        | ❌     |
-| Anc Mode                      | ✅        | ❌     |
-| Auto Power Off When Taken Off | ✅        | ❌     |
-| Equalizer Six Bands           | ✅        | ❌     |
-| Upscaling (DSEE)              | ✅        | ❌     |
+| Ambient Mode                  | ✅        | ✅     |
+| ANC Mode                      | ✅        | ✅     |
+| Button Modes Left / Right     | ✅        | ✅     |
+| Auto Power Off When Taken Off | ✅        | ✅     |
+| Equalizer Six Bands           | ✅        | ✅     |
+| Upscaling (DSEE)              | ✅        | ✅     |
 
 <br>
 
-### WF-C510
+### Sony WF-C510
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
-| Battery Level                 | L, R, Case| ❌     |
-| Ambient Mode                  | ✅        | ❌     |
-| Voice Notifications           | ✅        | ❌     |
-| Equalizer Six Bands           | ✅        | ❌     |
-| Upscaling (DSEE)              | ✅        | ❌     |
+| Battery Level                 | L, R, Case| ✅     |
+| Ambient Mode                  | ✅        | ✅     |
+| Button Modes Left / Right     | ✅        | ✅     |
+| Voice Notifications           | ✅        | ✅     |
+| Equalizer Six Bands           | ✅        | ✅     |
+| Upscaling (DSEE)              | ✅        | ✅     |
 
 <br>
 
-### WF-C500
+### Sony WF-C500
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
-| Battery Level                 | L, R,     | ❌     |
-| Voice Notifications           | ✅        | ❌     |
-| Equalizer Six Bands           | ✅        | ❌     |
-| Upscaling (DSEE)              | ✅        | ❌     |
+| Battery Level                 | L, R,     | ✅     |
+| Voice Notifications           | ✅        | ✅     |
+| Equalizer Six Bands           | ✅        | ✅     |
+| Upscaling (DSEE)              | ✅        | ✅     |
 
 <br>
 
-### WI-C100
+### Sony WI-C100
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
@@ -303,13 +311,14 @@ table th:nth-of-type(3) {
 
 <br>
 
-### WF-SP800N
+### Sony WF-SP800N
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
 | Battery Level                 | L, R, Case| ❌     |
 | Ambient Mode                  | ✅        | ❌     |
-| Anc Mode                      | ✅        | ❌     |
+| ANC Mode                      | ✅        | ❌     |
+| Button Modes Left / Right     | ✅        | ❌     |
 | Voice Notifications           | ✅        | ❌     |
 | Pause When Taken Off          | ✅        | ❌     |
 | Auto Power Off When Taken Off | ✅        | ❌     |
@@ -328,13 +337,13 @@ table th:nth-of-type(3) {
 
 <br>
 
-### WH-XB910N
+### Sony WH-XB910N
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
 | Battery Level                 | Single    | ❌     |
 | Ambient Mode                  | ✅        | ❌     |
-| Anc Mode                      | ✅        | ❌     |
+| ANC Mode                      | ✅        | ❌     |
 | Voice Notifications           | ✅        | ❌     |
 | Pause When Taken Off          | ✅        | ❌     |
 | Auto Power Off When Taken Off | ✅        | ❌     |
@@ -342,23 +351,39 @@ table th:nth-of-type(3) {
 
 <br>
 
-### WI-SP600N
+### Sony WH-XB900N
+
+| Feature                       | Supported | Tested |
+|:-----------------------------:|:---------:|:------:|
+| Battery Level                 | Single    | ✅     |
+| Ambient Mode                  | ✅        | ✅     |
+| ANC Mode                      | ✅        | ✅     |
+| Voice Notifications           | ✅        | ✅     |
+| Pause When Taken Off          | ✅        | ✅     |
+| Auto Power Off When Taken Off | ✅        | ✅     |
+| Auto Power Off When Taken Time| ✅        | ✅     |
+| Equalizer Six Bands           | ✅        | ✅     |
+
+<br>
+
+### Sony WI-SP600N
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
 | Battery Level                 | Single    | ❌     |
 | Ambient Mode                  | ✅        | ❌     |
-| Anc Mode                      | ✅        | ❌     |
+| ANC Mode                      | ✅        | ❌     |
 | Voice Notifications           | ✅        | ❌     |
 | Equalizer Six Bands           | ✅        | ❌     |
 
-### LinkBuds
+### Sony LinkBuds
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
 | Battery Level                 | L, R, Case| ❌     |
 | Speak To Chat Config          | ✅        | ❌     |
 | Voice Notifications           | ✅        | ❌     |
+| Button Modes Left / Right     | ✅        | ❌     |
 | Pause When Taken Off          | ✅        | ❌     |
 | Auto Power Off When Taken Off | ✅        | ❌     |
 | Equalizer Six Bands           | ✅        | ❌     |
@@ -366,18 +391,20 @@ table th:nth-of-type(3) {
 
 <br>
 
-### LinkBuds S
+### Sony LinkBuds S
 
 | Feature                       | Supported | Tested |
 |:-----------------------------:|:---------:|:------:|
-| Battery Level                 | L, R, Case| ❌     |
-| Ambient Mode                  | ✅        | ❌     |
-| Speak To Chat Config          | ✅        | ❌     |
+| Battery Level                 | L, R, Case| ✅     |
+| Ambient Mode                  | ✅        | ✅     |
+| ANC Mode                      | ✅        | ✅     |
+| Speak To Chat Config          | ✅        | ✅     |
+| Button Modes Left / Right     | ✅        | ❌     |
 | Voice Notifications           | ✅        | ❌     |
-| Pause When Taken Off          | ✅        | ❌     |
-| Auto Power Off When Taken Off | ✅        | ❌     |
-| Equalizer Six Bands           | ✅        | ❌     |
-| Upscaling (DSEE)              | ✅        | ❌     |
+| Pause When Taken Off          | ✅        | ✅     |
+| Auto Power Off When Taken Off | ✅        | ✅     |
+| Equalizer Six Bands           | ✅        | ✅     |
+| Upscaling (DSEE)              | ✅        | ✅     |
 
 <br>
 

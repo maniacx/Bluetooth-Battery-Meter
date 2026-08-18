@@ -8,6 +8,41 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-46_Version 47 &emsp;&emsp; Upcoming
+> * bluetoothToggle: Rebuild indicator box and UPower client on settings change. credits@k8ieone
+> * Updated Device Information UI and added serial number for several devices
+> * Added support for Beats Powerbeats Fit credits: schlagmichdoch@github.com
+> * Added support for Bose QC Ultra Earbuds credits: MobileAZN@github.com
+> * Added support for Bose QC35/QC35SE credits: amaxine@github.com 
+> * Added support for Sennheiser HDB 630 credits: TheGentleChainsaw@github.com 
+> * Added support for Sennheiser  MOMENTUM 4 credits: TheGentleChainsaw@github.com / jacostag@github.com 
+> * Added support for Redmi Buds 6 Play credits: drinkingoutofcups@github.com 
+> * Added support for Nothing Headphone (a) credits: The-Nyla@github.com
+> * Equalizer UI in Adw.dialog, to prevent accidental changes while scrolling
+> * NothingBuds: Improvement in packet decoding and init handshake
+> * GPFS: Fix missing schema key
+> * AirPods: Force adaptive controls visibility while setting ANC mode.
+> * Update Italian translations: credits: AlexFalappa
+
+
+{: .important-title }
+> GN-46_Version 46 &emsp;&emsp; Jun 07, 2026
+> * Added support for Pixel Buds. credits: bhack@github.com
+> * Added support for Google Fast Pair Devices. credits: IGS-GIT@github.com
+> * Sony: BugFix: DSEE indicator not turning off
+> * Sony 1000XM6, Fix EqPreset inaccessable / greyout
+> * NothingBuds: BugFix: Some model goes undetected.
+> * AirPods: BugFix Battery level display invalid level as 100%
+> * mediaController: match all a2dp-sink profiles, not just AAC  credits: yleshchuk@github.com
+> * Added supported Sony WH-XB900N credits: BerenLuth@github.com
+> * Sony V1 Autopower off time and ANC fixes
+> * Made UI adaptable for mobile layouts
+> * Added support for Nothing / CMF Buds
+> * Added support for Samsung Galaxy Buds
+> * Update French translations: credits: naplon74
+
+
+{: .important-title }
 > GN-46_Version 45 &emsp;&emsp; Apr 07, 2026
 > * Sony WH-1000XM3: Load correct default icon
 > * Added notification when the Bluetooth socket is inaccessible (e.g., in use by another application)

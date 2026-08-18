@@ -12,7 +12,7 @@ permalink: /
 {: .important-title }
 > Currently supported on Gnome Versions:
 > 
-> Supported: `43, 44, 45, 46, 47, 48, 49`
+> Supported: `43, 44, 45, 46, 47, 48, 49, 50`
 >
 > Deprecated: `42`
 
@@ -38,6 +38,10 @@ permalink: /
 > * For Quick settings percentage displayed in text (when enabled), might observe battery level stuck at a percentage example 100% for a while and later suddenly drop down to 80%, if designed for increment of 20%.
 
 <br>
+# Disclaimer
+**This project is an independent effort and is not affiliated with, endorsed by, or sponsored by Apple, Sony, Samsung, Nothing/CMF, Bose, Redmi, Xiaomi or Sennheiser. All product and company names are trademarks™ or registered® trademarks of their respective holders and are used for identification purposes only.**
+
+
 
 # Features:
 
@@ -56,6 +60,13 @@ permalink: /
 
 * Option to choose different icons for each Bluetooth device.
 
+* Panel Button
+
+* On-hover details
+
+* Multiple indicator mode
+
+
 ## UPower Devices (Optional Mode)
 
 * When enabled, displays battery level in the system tray for non-Bluetooth UPower devices (e.g., Logitech Lightspeed keyboard/mouse).
@@ -66,21 +77,21 @@ permalink: /
 
 * Customizable battery bar and dot colors.
 
-## Enhanced Device Mode (Optional Mode)
-
-* In Enhanced Device Mode, the extension uses additional communication methods to retrieve detailed battery information and control features such as Active Noise Cancellation (ANC):
-
-   - AirPods/Beats: Socket-based interface for devices like AirPods/Beats to fetch battery levels and control features such as ANC.
+## D-Bus GATT Battery Service (BAS) (Optional Mode)
 
    - D-Bus GATT Battery Service (BAS):  for standard Bluetooth devices that expose battery information via the GATT protocol.
 
-* Provides additional UI widgets to display battery levels and control features such as ANC:
+## Devices with Extensive Feature Support
+This extension provides extensive device-specific features, including Left/Right/Case battery monitoring, Noise Control, Equalizer, Button/Gesture customization, and other OEM-level controls for the following devices
 
-   - Panel Button
+* Airpods / Beats
+* Sony
+* Samsung Galaxy Buds
+* Nothing / CMF
+* Bose
+* Redmi / Xiaomi
+* Sennheiser
 
-   - On-hover details
-
-   - Multiple indicator mode
 
 
 

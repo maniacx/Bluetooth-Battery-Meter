@@ -137,6 +137,9 @@ permalink: /credits
 > * Klymentii S (Mynt) myntus@crowdin.com
 > * devlulcas
 > * tmavro
+> * naplon74
+> * k8ieone
+
 
 ## UPower
 
@@ -146,7 +149,7 @@ permalink: /credits
 
 > * Genteure
 
-## AirPods
+## AirPods / Beats
 
 > steam3d for MagicCore core for reverse battery reporting , ANC control and docs which made this project possible.
 >
@@ -191,6 +194,12 @@ permalink: /credits
 > * kilisei
 > * G-dH
 > * guiand888
+> * pesader
+> * Raycx86
+> * AquaCobalt
+> * Neikon
+> * bertusw
+> * laughingwater
 
 ## Samsung Galaxy Buds
 
@@ -210,7 +219,7 @@ permalink: /credits
 > * adlr
 > * kerembayulgen
 
-## Nothing / CMF Buds
+## Nothing / CMF
 
 > Gadgetbridge
 >
@@ -229,7 +238,76 @@ permalink: /credits
 >
 > * ArcticDev78
 > * Lascar_s@matrix
+> * khaledkhamis26
+> * duckeydev
+> * shakasan
+> * iamxnfa
+> * The-Nyla
 
 
+## Google Pixel Buds
 
+> Contribution / Testing
+>
+> * bhack
+> * IGS-GIT
+
+## Google Fast Pair Devices
+
+> Contribution / Testing
+>
+> * IGS-GIT
+
+## Redmi / Xiaomi 
+
+> Gadgetbridge
+>
+> <https://codeberg.org/Freeyourgadget/Gadgetbridge>
+
+
+> web1n/android_packages_apps_XiaomiTWS
+>
+> <https://github.com/web1n/android_packages_apps_XiaomiTWS/tree/main>
+
+> Contribution / Testing
+>
+> * drinkingoutofcups **Special thanks for testing and helping bring up the Redmi protocol.**
+> * iamirayman
+
+## Sennheiser 
+
+> hatemosphere/hdb630-control-macos
+>
+> <https://github.com/hatemosphere/hdb630-control-macos>
+
+
+> nikita36078/sennheiser-desktop-client
+>
+> <https://github.com/nikita36078/sennheiser-desktop-client>
+
+> Contribution / Testing
+>
+> * TheGentleChainsaw **Special thanks for testing and helping bring up the Sennheiser protocol.**
+> * jacostag
+
+## Bose
+
+> aaronsb/bosectl
+>
+> <https://github.com/aaronsb/bosectl/blob/main/docs/architecture.md>
+
+> Denton-L/based-connect
+>
+> <https://github.com/Denton-L/based-connect/tree/master>
+
+> myNameArnav/libreqc
+>
+> <https://github.com/myNameArnav/libreqc/tree/main>
+
+> Contribution / Testing
+>
+> * MobileAZN **Special thanks for testing and helping bring up the Bose protocol.**
+> * amaxine **Special thanks for testing and helping bring up the Bose legacy protocol.**
+> * SMaiz
+> * RupertMichaelBear
 

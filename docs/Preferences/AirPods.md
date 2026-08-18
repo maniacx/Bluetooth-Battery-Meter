@@ -60,6 +60,7 @@ When enabled, the system can detect AirPods and Beats devices among connected Bl
 * Control of ANC (Active Noise Cancellation) mode (if supported)
 * Conversation Awareness mode (if supported)
 * Adaptive noise level customization (if supported)
+* Configure Stem/Touch  Equalizer, Notifications etc.
 
  
 ## Configuration by Device
@@ -111,6 +112,7 @@ Currently tested and confirmed working:
 * **AirPods 4th Gen with ANC** ✅ — Credits: Cameo007
 * **AirPods Pro 2 USB-C** ✅ — Credits: maniacx
 * **AirPods Max  USB-C** ✅ — Credits: GovanifY
+* **Beats Powerbeats Fit** ✅ — Credits: schlagmichdoch
 
 <style>
 table th:first-of-type {
@@ -302,7 +304,6 @@ table th:nth-of-type(3) {
 | Battery Level                 | Single         | ❌     |
 | In‑Ear Play/Pause             | ✅             | ❌     |
 
-
 <br>
 ### Powerbeats Pro
 
@@ -313,13 +314,14 @@ table th:nth-of-type(3) {
 | In‑Ear Play/Pause             | ✅             | ❌     |
 
 <br>
-### Beats Solo Pro
+### Beats Fit Pro
 
 | Feature                       | Supported      | Tested |
 |:-----------------------------:|:--------------:|:------:|
-| Modalias                      | 200C           | ❌     |
-| Battery Level                 | Single         | ❌     |
-| In‑Ear Play/Pause             | ✅             | ❌     |
+| Modalias                      | 202F           | ✅     |
+| Battery Level                 | L, R, Case     | ✅     |
+| ANC                           | ✅             | ✅     |
+| In‑Ear Play/Pause             | ✅             | ✅     |
 
 <br>
 ### Powerbeats 4
@@ -327,6 +329,15 @@ table th:nth-of-type(3) {
 | Feature                       | Supported      | Tested |
 |:-----------------------------:|:--------------:|:------:|
 | Modalias                      | 200D           | ❌     |
+| Battery Level                 | Single         | ❌     |
+| In‑Ear Play/Pause             | ✅             | ❌     |
+
+<br>
+### Beats Solo Pro
+
+| Feature                       | Supported      | Tested |
+|:-----------------------------:|:--------------:|:------:|
+| Modalias                      | 200C           | ❌     |
 | Battery Level                 | Single         | ❌     |
 | In‑Ear Play/Pause             | ✅             | ❌     |
 
