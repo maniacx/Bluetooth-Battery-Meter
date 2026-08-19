@@ -200,6 +200,7 @@ const ModeEditDialog = GObject.registerClass({
     }
 
     showToast(message) {
+        this._toastOverlay.dismiss_all();
         this._toastOverlay.add_toast(new Adw.Toast({title: message, timeout: 1}));
     }
 
