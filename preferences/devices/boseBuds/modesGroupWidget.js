@@ -363,7 +363,7 @@ const ModeRow = GObject.registerClass({
         this._mode = mode;
         this._modes = modes;
         this.updatingProgrammatically = false;
-        this._dialogPresented = false;
+        this.dialogPresented = false;
 
         const iconMode = AudioModes[this._mode.id];
         const modeIcon = new Gtk.Image({
@@ -450,12 +450,12 @@ const ModeRow = GObject.registerClass({
         });
 
         editButton.connect('clicked', () => {
-            this._dialogPresented = true;
+            this.dialogPresented = true;
             this.dialog.present(window);
         });
 
         this.dialog.connect('closed', () => {
-            this._dialogPresented = false;
+            this.dialogPresented = false;
         });
 
         box.append(this.addToggleButton);
@@ -495,7 +495,7 @@ const ModeRow = GObject.registerClass({
                     this.updatingProgrammatically = false;
                     const txt = _('Maximum 4 modes can be selected');
 
-                    if (this._dialogPresented)
+                    if (this.dialogPresented)
                         this.dialog.showToast(txt);
                     else
                         this._window.showToast(txt);
@@ -509,7 +509,7 @@ const ModeRow = GObject.registerClass({
                 this.updatingProgrammatically = false;
                 const txt = _('At least 2 modes must be selected.');
 
-                if (this._dialogPresented)
+                if (this.dialogPresented)
                     this.dialog.showToast(txt);
                 else
                     this._window.showToast(txt);
@@ -550,7 +550,7 @@ const ModeRow = GObject.registerClass({
 
                     const txt = _('Maximum favorites limit reached.');
 
-                    if (this._dialogPresented)
+                    if (this.dialogPresented)
                         this.dialog.showToast(txt);
                     else
                         this._window.showToast(txt);
@@ -565,7 +565,7 @@ const ModeRow = GObject.registerClass({
 
                 const txt = _('At least 2 favorites are required.');
 
-                if (this._dialogPresented)
+                if (this.dialogPresented)
                     this.dialog.showToast(txt);
                 else
                     this._window.showToast(txt);
@@ -749,6 +749,7 @@ export const ModesGroupWidget = GObject.registerClass({
             const row = this._addModeRow(mode);
             this.emit('modes-changed', this._modes);
             this._setCurrentMode(mode.index, true);
+            row.dialogPresented = true;
             row.dialog.present(this._window);
             this._addButton.refresh();
         });
