@@ -27,11 +27,11 @@ permalink: /preferences/sennheiser
 
 ## Icons:
 
-Anti-Noise Cancellation (ANC)
+Active Noise Cancellation (ANC)
 
 |:-:|:-:|
-| <img src="{{ 'assets/images/preferences/airpods/anc-off.png' | relative_url }}" width="15%"> | Anti-Noise Cancellation Off  |
-| <img src="{{ 'assets/images/preferences/airpods/anc-on.png' | relative_url }}" width="15%"> | Anti-Noise Cancellation On |
+| <img src="{{ 'assets/images/preferences/airpods/anc-off.png' | relative_url }}" width="15%"> | Active Noise Cancellation Off  |
+| <img src="{{ 'assets/images/preferences/airpods/anc-on.png' | relative_url }}" width="15%"> | Active Noise Cancellation On |
 | <img src="{{ 'assets/images/preferences/airpods/adaptive.png' | relative_url }}" width="15%"> | Adaptive |
 
 

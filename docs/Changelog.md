@@ -8,9 +8,10 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
-> GN-46_Version 47 &emsp;&emsp; Upcoming
+> GN-46_Version 47 &emsp;&emsp; Aug 23, 2026
 > * bluetoothToggle: Rebuild indicator box and UPower client on settings change. credits@k8ieone
 > * Updated Device Information UI and added serial number for several devices
+> * Added support for Redmi Buds 8 Lite credits: myemirhan@github.com
 > * Added support for Beats Powerbeats Fit credits: schlagmichdoch@github.com
 > * Added support for Bose QC Ultra Earbuds credits: MobileAZN@github.com
 > * Added support for Bose QC35/QC35SE credits: amaxine@github.com 
