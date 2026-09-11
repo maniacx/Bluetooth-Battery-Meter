@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="Bluetooth-Battery-Meter@maniacx.github.com">
+  <template class="BluetoothBatteryMeter_BudsLinkCompanion" parent="AdwPreferencesPage">
+    <property name="name">BudsLinkCompanion</property>
+    <property name="title" translatable="yes">BudsLink Companion</property>
+    <property name="icon-name">bbm-earbuds-stem-symbolic</property>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">BudsLink Companion</property>
+        <child>
+          <object class="AdwActionRow" id="intro">
+            <property name="subtitle" translatable="yes">Install BudsLink from Flathub to monitor multiple batteries and access advanced controls such as noise control, equalizer, and gestures, when supported by your device.
+
+Currently supported devices:
+• AirPods
+• Beats headphones and earbuds
+• Sony headphones and earbuds
+• Samsung Galaxy Buds
+• Nothing / CMF headphones and earbuds
+• Bose headphones and earbuds
+• Sennheiser headphones and earbuds
+• Redmi / Xiaomi earbuds</property>
+          </object>
+        </child>
+        <child>
+          <object class="AdwSwitchRow" id="enable_companion">
+            <property name="title" translatable="yes">Enable BudsLink integration</property>
+            <property name="subtitle" translatable="yes">Acts as a Companion with the BudsLink app, which runs in the background to provide additional features for supported headphones and earbuds</property>
+          </object>
+        </child>
+        <child>
+          <object class="AdwSwitchRow" id="hide_background">
+            <property name="title" translatable="yes">Hide from Background Apps</property>
+            <property name="subtitle" translatable="yes">Hide BudsLink from the GNOME Background Apps list</property>
+            <property name="sensitive" bind-source="enable_companion" bind-property="active" bind-flags="sync-create" />
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Installation Status</property>
+        <child>
+          <object class="AdwActionRow" id="install_status">
+            <child type="prefix">
+              <object class="GtkImage">
+                <property name="icon-name">budslink-logo</property>
+                <property name="pixel-size">32</property>
+              </object>
+            </child>
+            <property name="title" translatable="yes">BudsLink Installation Status</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <child>
+          <object class="AdwActionRow" id="flathub_link">
+            <property name="title" translatable="yes">BudsLink on Flathub</property>
+            <property name="activatable">true</property>
+            <child type="suffix">
+              <object class="GtkImage">
+                <property name="icon-name">adw-external-link-symbolic</property>
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="documentation_link">
+            <property name="title" translatable="yes">BudsLink Documentation</property>
+            <property name="activatable">true</property>
+            <child type="suffix">
+              <object class="GtkImage">
+                <property name="icon-name">adw-external-link-symbolic</property>
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

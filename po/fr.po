@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 18:41-0600\n"
+"POT-Creation-Date: 2026-09-11 08:09-0600\n"
 "PO-Revision-Date: 2026-06-29 10:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
@@ -18,123 +18,31 @@ msgstr ""
 "X-Crowdin-File-ID: 78\n"
 "X-Generator: Poedit 3.9\n"
 
-#: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20 lib/devices/notifier.js:37 lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
+#: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
+#: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
 msgstr "Compteur de batterie Bluetooth"
 
-#: lib/bluetoothToggle.js:536
+#: lib/bluetoothToggle.js:544
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
 msgstr[0] "%d connecté"
 msgstr[1] "%d connectés"
 
-#: lib/devices/nothingBuds/nothingBudsDevice.js:356 lib/devices/galaxyBuds/galaxyBudsDevice.js:574 lib/devices/sony/sonyDevice.js:164 lib/devices/airpods/airpodsDevice.js:173 preferences/devices/nothingBuds/configureWindow.js:640 preferences/devices/galaxyBuds/configureWindow.js:457
-msgid "Noise Control"
-msgstr "Contrôle du bruit"
+#: lib/widgets/panelPopupMenu.js:130
+msgid "Expand submenu"
+msgstr "Développer le sous-menu"
 
-#: lib/devices/nothingBuds/nothingBudsDevice.js:366 lib/devices/galaxyBuds/galaxyBudsDevice.js:609 lib/devices/galaxyBuds/galaxyBudsDevice.js:675 lib/devices/sony/sonyDevice.js:166 lib/devices/sony/sonyDevice.js:199 lib/devices/airpods/airpodsDevice.js:200
-#: lib/devices/airpods/airpodsDevice.js:242 preferences/devices/nothingBuds/configureWindow.js:405 preferences/devices/galaxyBuds/configureWindow.js:261 preferences/devices/galaxyBuds/configureWindow.js:513 preferences/devices/sony/configureWindow.js:131
-#: preferences/devices/sony/configureWindow.js:215 preferences/devices/sony/configureWindow.js:285 preferences/devices/sony/configureWindow.js:362 preferences/devices/airpods/configureWindow.js:226 ui/indicator.ui:114
-msgid "Off"
-msgstr "Désactivé"
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:370 lib/devices/galaxyBuds/galaxyBudsDevice.js:610 lib/devices/airpods/airpodsDevice.js:201 preferences/devices/airpods/configureWindow.js:233
-msgid "Transparency"
-msgstr "Transparence"
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:386 lib/devices/galaxyBuds/galaxyBudsDevice.js:649 lib/devices/galaxyBuds/galaxyBudsDevice.js:660
-msgid "Noise Cancellation Level"
-msgstr "Niveau d’annulation du bruit"
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:389 lib/devices/sony/sonyDevice.js:181 preferences/devices/sony/configureWindow.js:115
-msgid "High"
-msgstr "Élevé"
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:390 preferences/devices/nothingBuds/configureWindow.js:252
-msgid "Mid"
-msgstr "Moyen"
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:391 lib/devices/sony/sonyDevice.js:181 preferences/devices/sony/configureWindow.js:115
-msgid "Low"
-msgstr "Faible"
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:392 lib/devices/galaxyBuds/galaxyBudsDevice.js:611 lib/devices/airpods/airpodsDevice.js:202 preferences/devices/galaxyBuds/configureWindow.js:519 preferences/devices/airpods/configureWindow.js:246
-msgid "Adaptive"
-msgstr "Adaptatif"
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:414 lib/devices/galaxyBuds/galaxyBudsDevice.js:612 lib/devices/sony/sonyDevice.js:171 lib/devices/airpods/airpodsDevice.js:203 preferences/devices/nothingBuds/configureWindow.js:407 preferences/devices/galaxyBuds/configureWindow.js:515
-#: preferences/devices/sony/configureWindow.js:360 preferences/devices/airpods/configureWindow.js:239
-msgid "Noise Cancellation"
-msgstr "Annulation du bruit"
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:422
-msgid "Personalised ANC"
-msgstr "ANC personnalisé"
-
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:647 lib/devices/galaxyBuds/galaxyBudsDevice.js:657 lib/devices/sony/sonyDevice.js:174 lib/devices/airpods/airpodsDevice.js:232
-msgid "Ambient Level"
-msgstr "Niveau ambiant"
-
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:653 lib/devices/sony/sonyDevice.js:177 lib/devices/sony/sonyDevice.js:179 lib/devices/sony/sonyDevice.js:183
-msgid "Focus on Voice"
-msgstr "Accent sur la voix"
-
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:671 lib/devices/sony/sonyDevice.js:195 lib/devices/airpods/airpodsDevice.js:238 preferences/devices/sony/configureWindow.js:113
-msgid "Conversation Awareness"
-msgstr "Prise de conscience de la conversation"
-
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:673 lib/devices/sony/sonyDevice.js:197 lib/devices/airpods/airpodsDevice.js:240
-msgid "On"
-msgstr "Activé"
-
-#: lib/devices/sony/sonyDevice.js:168 preferences/devices/nothingBuds/configureWindow.js:406 preferences/devices/galaxyBuds/configureWindow.js:514 preferences/devices/sony/configureWindow.js:361
-msgid "Ambient"
-msgstr "Ambiant"
-
-#: lib/devices/sony/sonyDevice.js:177 lib/devices/sony/sonyDevice.js:179
-msgid "Auto Ambient"
-msgstr "Ambiance automatique"
-
-#: lib/devices/sony/sonyDevice.js:180
-msgid "Auto Ambient Sensitivity"
-msgstr "Sensibilité de l’ambiance automatique"
-
-#: lib/devices/sony/sonyDevice.js:181 preferences/devices/sony/configureWindow.js:131 preferences/devices/sony/configureWindow.js:155
-msgid "Standard"
-msgstr "Standard"
-
-#: lib/devices/notifier.js:21
-msgid "AirPods / Beats"
-msgstr "AirPods / Beats"
-
-#: lib/devices/notifier.js:23 preferences/devices/sony/devicePrefs.js:37
-msgid "Sony audio devices"
-msgstr "Appareils audio Sony"
-
-#: lib/devices/notifier.js:25 preferences/devices/galaxyBuds/devicePrefs.js:37 ui/devices/galaxyBuds.ui:5
-msgid "Samsung Galaxy Buds"
-msgstr "Samsung Galaxy Buds"
-
-#: lib/devices/notifier.js:27
-msgid "Nothing / CMF Buds"
-msgstr "Nothing / CMF Buds"
-
-#: lib/devices/notifier.js:48
-#, javascript-format
-msgid "Could not access advanced features for %s."
-msgstr "Impossible d’accéder aux fonctions avancées pour %s."
-
-#: lib/devices/notifier.js:50
-#, javascript-format
-msgid "Another app or session is already using the Bluetooth socket/profile on %s. Close any other apps using this device, then disable and re-enable it in the extension settings."
-msgstr "Une autre application ou session utilise déjà la prise ou le profil Bluetooth sur %s. Fermez toutes les autres applications utilisant cet appareil, puis désactivez et réactivez-le dans les paramètres de l’extension."
-
-#: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/bluetoothPopupSubMenu.js:305 lib/widgets/bluetoothPopupMenu.js:82 lib/widgets/popupMenuWidget.js:111
+#: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
+#: lib/widgets/bluetoothPopupMenu.js:82
+#: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Disconnect"
 msgstr "Déconnecter"
 
-#: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/bluetoothPopupSubMenu.js:305 lib/widgets/bluetoothPopupMenu.js:82
+#: lib/widgets/bluetoothGnomePopupMenu.js:56
+#: lib/widgets/bluetoothPopupMenu.js:82
+#: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Connect"
 msgstr "Connecter"
 
@@ -150,10 +58,6 @@ msgstr "Se déconnecter de %s"
 msgid "Connect to %s"
 msgstr "Se connecter à %s"
 
-#: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:105
-msgid "Collapse submenu"
-msgstr "Réduire le sous-menu"
-
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
 msgstr "Épingler au panneau"
@@ -162,34 +66,200 @@ msgstr "Épingler au panneau"
 msgid "Device settings"
 msgstr "Paramètres de l’appareil"
 
-#: lib/widgets/panelPopupMenu.js:130
-msgid "Expand submenu"
-msgstr "Développer le sous-menu"
+#: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
+msgid "Collapse submenu"
+msgstr "Réduire le sous-menu"
 
-#: preferences/upowerDevices.js:41 preferences/device.js:51
+#: preferences/device.js:64 preferences/upowerDevices.js:41
 msgid "Battery Status:"
 msgstr "Statut de la batterie :"
 
-#: preferences/upowerDevices.js:42 preferences/device.js:52
+#: preferences/device.js:65 preferences/upowerDevices.js:42
 msgid "Reported"
 msgstr "Signalé"
 
-#: preferences/upowerDevices.js:42 preferences/device.js:52
+#: preferences/device.js:65 preferences/upowerDevices.js:42
 msgid "Not Available"
 msgstr "Indisponible"
 
-#: preferences/upowerDevices.js:47 preferences/devices/nothingBuds/configureWindow.js:110 preferences/devices/galaxyBuds/configureWindow.js:91 preferences/devices/sony/configureWindow.js:89 preferences/devices/airpods/configureWindow.js:86 preferences/device.js:60
+#: preferences/device.js:66
+msgid "Reported from enhanced device service"
+msgstr "Signalé par le service de périphérique amélioré"
+
+#: preferences/device.js:73 preferences/upowerDevices.js:47
 msgid "Icon"
 msgstr "Icône"
 
-#: preferences/upowerDevices.js:51 preferences/gattBas.js:46 preferences/gattBas.js:51 preferences/devices/nothingBuds/configureWindow.js:111 preferences/devices/galaxyBuds/configureWindow.js:92 preferences/devices/sony/configureWindow.js:90
-#: preferences/devices/airpods/configureWindow.js:87 preferences/device.js:64
+#: preferences/device.js:77 preferences/upowerDevices.js:51
+#: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
 msgstr "Sélectionnez l'icône"
 
-#: preferences/upowerDevices.js:52 preferences/devices/nothingBuds/configureWindow.js:112 preferences/devices/galaxyBuds/configureWindow.js:93 preferences/devices/sony/configureWindow.js:91 preferences/devices/airpods/configureWindow.js:88 preferences/device.js:65
+#: preferences/device.js:78 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
 msgstr "Sélectionnez l'icône utilisée pour l'indicateur et le menu rapide"
+
+#: preferences/device.js:81
+msgid "This is an enhanced device"
+msgstr "Il s’agit d’un appareil amélioré"
+
+#: preferences/device.js:82
+msgid "Icon selection if available are in Enhanced device per device settings"
+msgstr ""
+"La sélection d’icônes, si disponible, se trouve dans les paramètres avancés "
+"par appareil"
+
+#: preferences/device.js:137 ui/quickSettings.ui:5
+msgid "Quick Menu"
+msgstr "Menu rapide"
+
+#: preferences/device.js:141
+msgid "Display Battery Level"
+msgstr "Afficher le niveau de la batterie"
+
+#: preferences/device.js:142
+msgid "Display battery level in the Bluetooth panel quick menu"
+msgstr ""
+"Afficher le niveau de batterie dans le menu rapide du panneau "
+"BluetoothAfficher le niveau de la batterie dans le menu rapide du panneau "
+"Bluetooth"
+
+#: preferences/device.js:162 preferences/upowerDevices.js:129 ui/indicator.ui:5
+msgid "Indicator"
+msgstr "Témoin"
+
+#: preferences/device.js:166 preferences/upowerDevices.js:133
+msgid "Configure Indicator"
+msgstr "Configurer le témoin"
+
+#: preferences/device.js:167 preferences/upowerDevices.js:134
+msgid "Choose how the indicator should behave"
+msgstr "Choisir le comportement du témoin"
+
+#: preferences/device.js:171
+msgid "Do not show Icon"
+msgstr "Ne pas afficher l'icône"
+
+#: preferences/device.js:172
+msgid "Show Icon without Battery level"
+msgstr "Afficher l'icône sans niveau de batterie"
+
+#: preferences/device.js:173
+msgid "Show Icon with Battery Level"
+msgstr "Afficher l'icône sans niveau de batterie"
+
+#: preferences/device.js:176 preferences/upowerDevices.js:138
+msgid "Hide Icon"
+msgstr "Masquer l'icône"
+
+#: preferences/device.js:177 preferences/upowerDevices.js:139
+msgid "Show Icon"
+msgstr "Montrer icône"
+
+#: preferences/device.js:225 preferences/upowerDevices.js:186
+#: preferences/gattBas.js:173
+msgid "Configure device."
+msgstr "Configurer l'appareil."
+
+#: preferences/device.js:239
+msgid ""
+"Delete device information: The button is available after unpairing device"
+msgstr ""
+"Delete appareil information: The bouton is disponible après unpairing "
+"appareilSupprimer les informations du périphérique : le bouton est "
+"disponible après avoir désappairé l'appareil"
+
+#: preferences/device.js:271
+msgid "(Removed)"
+msgstr "(Supprimé)"
+
+#: preferences/device.js:272
+msgid "(Paired)"
+msgstr "(Appairé)"
+
+#: preferences/budslinkCompanion.js:50
+msgid ""
+"Install BudsLink from Flathub to monitor battery levels for multiple devices "
+"and access advanced controls such as noise control, equalizer, and gestures, "
+"when supported by the device"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:54
+msgid "Currently supported earbuds and headbands are:"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:57
+msgid "AirPods"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:58
+msgid "Beats"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:59
+msgid "Sony"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:60
+msgid "Samsung Galaxy Buds"
+msgstr "Samsung Galaxy Buds"
+
+#: preferences/budslinkCompanion.js:61
+msgid "Nothing / CMF"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:62
+msgid "Bose"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:63
+msgid "Sennheiser"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:64
+msgid "Redmi / Xiaomi"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:70
+msgid "Installed"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:72
+msgid "Update Extension"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:74
+msgid "Update BudsLink"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:76
+msgid "Not Installed"
+msgstr ""
+
+#: preferences/budslinkCompanion.js:80
+msgid "Refresh"
+msgstr ""
+
+#: preferences/batteryWidgetSettings.js:17
+#, javascript-format
+msgid "Assign color for %d – %d%%"
+msgstr "Assigner la couleur pour %d – %d%%"
+
+#: preferences/batteryWidgetSettings.js:18
+#, javascript-format
+msgid "Set color for the battery level range of %d – %d%%"
+msgstr "Définir la couleur pour la plage de niveau de batterie de %d – %d%%"
+
+#: preferences/quickSettings.js:78
+#, javascript-format
+msgid ""
+"Certain Bluetooth devices do not report battery level until Bluez's "
+"experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
+"for details."
+msgstr ""
+"Certains appareils Bluetooth ne signalent pas leur niveau de batterie tant "
+"que les fonctionnalités expérimentales de BlueZ ne sont pas activées sur le "
+"système. Consultez le fichier <a href=\"%s\">Readme</a> pour plus de détails."
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
@@ -199,33 +269,14 @@ msgstr "Alias"
 msgid "Device Alias"
 msgstr "Alias de l’appareil"
 
-#: preferences/upowerDevices.js:129 preferences/device.js:149 ui/indicator.ui:5
-msgid "Indicator"
-msgstr "Témoin"
-
-#: preferences/upowerDevices.js:133 preferences/device.js:153
-msgid "Configure Indicator"
-msgstr "Configurer le témoin"
-
-#: preferences/upowerDevices.js:134 preferences/device.js:154
-msgid "Choose how the indicator should behave"
-msgstr "Choisir le comportement du témoin"
-
-#: preferences/upowerDevices.js:138 preferences/device.js:163
-msgid "Hide Icon"
-msgstr "Masquer l'icône"
-
-#: preferences/upowerDevices.js:139 preferences/device.js:164
-msgid "Show Icon"
-msgstr "Montrer icône"
-
-#: preferences/upowerDevices.js:186 preferences/gattBas.js:173 preferences/devices/nothingBuds/devicePrefs.js:25 preferences/devices/galaxyBuds/devicePrefs.js:25 preferences/devices/sony/devicePrefs.js:25 preferences/devices/airpods/devicePrefs.js:25 preferences/device.js:212
-msgid "Configure device."
-msgstr "Configurer l'appareil."
-
 #: preferences/upowerDevices.js:199
-msgid "Delete device information: The button is available after upower device are removed"
-msgstr "Delete appareil information: The bouton is disponible après upower appareil are retiréSupprimer les informations du périphérique : le bouton est disponible après avoir désappairé l'appareil"
+msgid ""
+"Delete device information: The button is available after upower device are "
+"removed"
+msgstr ""
+"Delete appareil information: The bouton is disponible après upower appareil "
+"are retiréSupprimer les informations du périphérique : le bouton est "
+"disponible après avoir désappairé l'appareil"
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
@@ -246,8 +297,12 @@ msgstr "© %s %s"
 
 #: preferences/about.js:50
 #, javascript-format
-msgid "This application comes with absolutely no warranty. See the <a href=\"%s\">%s</a> for details."
-msgstr "Cette application est fournie sans aucune garantie. Consultez la page <a href=\"%s\">%s</a> pour plus de détails."
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Cette application est fournie sans aucune garantie. Consultez la page <a "
+"href=\"%s\">%s</a> pour plus de détails."
 
 #: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
@@ -277,1123 +332,52 @@ msgstr "Icône de la batterie 3"
 msgid "Battery Service (BAS)"
 msgstr "Service de batterie (BAS)"
 
-#: preferences/gattBas.js:188 preferences/devices/nothingBuds/devicePrefs.js:40 preferences/devices/galaxyBuds/devicePrefs.js:40 preferences/devices/sony/devicePrefs.js:40 preferences/devices/airpods/devicePrefs.js:40
+#: preferences/gattBas.js:188
 #, javascript-format
 msgid "The button is available after disabling %s mode"
 msgstr "The bouton is disponible après disabling %s mode"
 
-#: preferences/quickSettings.js:70
-#, javascript-format
-msgid "Certain Bluetooth devices do not report battery level until Bluez's experimental features are enabled in system. Check <a href=\"%s\">Readme</a> for details."
-msgstr "Certains appareils Bluetooth ne signalent pas leur niveau de batterie tant que les fonctionnalités expérimentales de BlueZ ne sont pas activées sur le système. Consultez le fichier <a href=\"%s\">Readme</a> pour plus de détails."
-
-#: preferences/batteryWidgetSettings.js:17
-#, javascript-format
-msgid "Assign color for %d – %d%%"
-msgstr "Assigner la couleur pour %d – %d%%"
-
-#: preferences/batteryWidgetSettings.js:18
-#, javascript-format
-msgid "Set color for the battery level range of %d – %d%%"
-msgstr "Définir la couleur pour la plage de niveau de batterie de %d – %d%%"
-
-#: preferences/devices/nothingBuds/configureWindow.js:206 preferences/devices/galaxyBuds/configureWindow.js:257 preferences/devices/sony/configureWindow.js:212
-msgid "Equalizer"
-msgstr "Égaliseur"
-
-#: preferences/devices/nothingBuds/configureWindow.js:212
-msgid "Balanced"
-msgstr "Équilibré"
-
-#: preferences/devices/nothingBuds/configureWindow.js:213
-msgid "Voice"
-msgstr "Voix"
-
-#: preferences/devices/nothingBuds/configureWindow.js:214
-msgid "More Treble"
-msgstr "Plus d’aigus"
-
-#: preferences/devices/nothingBuds/configureWindow.js:215
-msgid "More Bass"
-msgstr "Plus de basses"
-
-#: preferences/devices/nothingBuds/configureWindow.js:216
-msgid "Dirac"
-msgstr "Dirac"
-
-#: preferences/devices/nothingBuds/configureWindow.js:217
-msgid "Rock"
-msgstr "Rock"
-
-#: preferences/devices/nothingBuds/configureWindow.js:218
-msgid "Electronic"
-msgstr "Électronique"
-
-#: preferences/devices/nothingBuds/configureWindow.js:219
-msgid "Pop"
-msgstr "Pop"
-
-#: preferences/devices/nothingBuds/configureWindow.js:220
-msgid "Enhance Vocals"
-msgstr "Améliorer les voix"
-
-#: preferences/devices/nothingBuds/configureWindow.js:221
-msgid "Classical"
-msgstr "Classique"
-
-#: preferences/devices/nothingBuds/configureWindow.js:222
-msgid "Custom"
-msgstr "Personnalisé"
-
-#: preferences/devices/nothingBuds/configureWindow.js:232 preferences/devices/nothingBuds/configureWindow.js:664 preferences/devices/galaxyBuds/configureWindow.js:280 preferences/devices/sony/configureWindow.js:245
-msgid "Equalizer Preset"
-msgstr "Préréglage de l’égaliseur"
-
-#: preferences/devices/nothingBuds/configureWindow.js:249 preferences/devices/sony/configureWindow.js:258
-msgid "Custom Equalizer"
-msgstr "Égaliseur personnalisé"
-
-#: preferences/devices/nothingBuds/configureWindow.js:252 preferences/devices/nothingBuds/configureWindow.js:670 preferences/devices/sony/configureWindow.js:260
-msgid "Bass"
-msgstr "Basses"
-
-#: preferences/devices/nothingBuds/configureWindow.js:252 preferences/devices/nothingBuds/configureWindow.js:673
-msgid "Treble"
-msgstr "Aigus"
-
-#: preferences/devices/nothingBuds/configureWindow.js:282
-msgid "Bass Enhance"
-msgstr "Amélioration des basses"
-
-#: preferences/devices/nothingBuds/configureWindow.js:285
-msgid "Enable Bass Enhance"
-msgstr "Activer l’amélioration des basses"
-
-#: preferences/devices/nothingBuds/configureWindow.js:297
-msgid "Bass Enhance Level"
-msgstr "Niveau d’amélioration des basses"
-
-#: preferences/devices/nothingBuds/configureWindow.js:300
-msgid "-"
-msgstr "-"
-
-#: preferences/devices/nothingBuds/configureWindow.js:304
-msgid "+"
-msgstr "+"
-
-#: preferences/devices/nothingBuds/configureWindow.js:332 preferences/devices/nothingBuds/configureWindow.js:658
-msgid "Spatial Audio"
-msgstr "Audio spatial"
-
-#: preferences/devices/nothingBuds/configureWindow.js:335
-msgid "Enable Spatial Audio"
-msgstr "Activer l’audio spatial"
-
-#: preferences/devices/nothingBuds/configureWindow.js:352 preferences/devices/galaxyBuds/configureWindow.js:603
-msgid "Additional Settings"
-msgstr "Paramètres supplémentaires"
-
-#: preferences/devices/nothingBuds/configureWindow.js:357
-msgid "Enable low latency mode"
-msgstr "Activer le mode basse latence"
-
-#: preferences/devices/nothingBuds/configureWindow.js:370
-msgid "Enable in ear detection"
-msgstr "Activer la détection dans l’oreille"
-
-#: preferences/devices/nothingBuds/configureWindow.js:416
-msgid "Noise Control Cycle: "
-msgstr "Cycle de contrôle du bruit : "
-
-#: preferences/devices/nothingBuds/configureWindow.js:418 preferences/devices/galaxyBuds/configureWindow.js:563 preferences/devices/galaxyBuds/configureWindow.js:585 preferences/devices/sony/configureWindow.js:369 preferences/devices/airpods/configureWindow.js:261
-msgid "Apply"
-msgstr "Appliquer"
-
-#: preferences/devices/nothingBuds/configureWindow.js:438 preferences/devices/galaxyBuds/configureWindow.js:343
-msgid "Single Tap"
-msgstr "Appui simple"
-
-#: preferences/devices/nothingBuds/configureWindow.js:439 preferences/devices/galaxyBuds/configureWindow.js:356
-msgid "Double Tap"
-msgstr "Double appui"
-
-#: preferences/devices/nothingBuds/configureWindow.js:440 preferences/devices/galaxyBuds/configureWindow.js:369
-msgid "Triple Tap"
-msgstr "Triple appui"
-
-#: preferences/devices/nothingBuds/configureWindow.js:441
-msgid "Tap and Hold"
-msgstr "Appui prolongé"
-
-#: preferences/devices/nothingBuds/configureWindow.js:442
-msgid "Double Tap and Hold"
-msgstr "Double appui prolongé"
-
-#: preferences/devices/nothingBuds/configureWindow.js:444 preferences/devices/nothingBuds/configureWindow.js:459
-msgid "Single Press"
-msgstr "Appui simple"
-
-#: preferences/devices/nothingBuds/configureWindow.js:445 preferences/devices/nothingBuds/configureWindow.js:460
-msgid "Double Press"
-msgstr "Double appui"
-
-#: preferences/devices/nothingBuds/configureWindow.js:446 preferences/devices/nothingBuds/configureWindow.js:461
-msgid "Triple Press"
-msgstr "Triple appui"
-
-#: preferences/devices/nothingBuds/configureWindow.js:447 preferences/devices/nothingBuds/configureWindow.js:456 preferences/devices/nothingBuds/configureWindow.js:462
-msgid "Press and Hold"
-msgstr "Appui prolongé"
-
-#: preferences/devices/nothingBuds/configureWindow.js:448 preferences/devices/nothingBuds/configureWindow.js:463
-msgid "Double Press and Hold"
-msgstr "Double appui prolongé"
-
-#: preferences/devices/nothingBuds/configureWindow.js:450
-msgid "Single Pinch"
-msgstr "Pincement simple"
-
-#: preferences/devices/nothingBuds/configureWindow.js:451
-msgid "Double Pinch"
-msgstr "Double pincement"
-
-#: preferences/devices/nothingBuds/configureWindow.js:452
-msgid "Triple Pinch"
-msgstr "Triple pincement"
-
-#: preferences/devices/nothingBuds/configureWindow.js:453
-msgid "Pinch and Hold"
-msgstr "Pincement prolongé"
-
-#: preferences/devices/nothingBuds/configureWindow.js:454
-msgid "Double Pinch and Hold"
-msgstr "Double pincement prolongé"
-
-#: preferences/devices/nothingBuds/configureWindow.js:457
-msgid "Slide to Adjust"
-msgstr "Glisser pour ajuster"
-
-#: preferences/devices/nothingBuds/configureWindow.js:464
-msgid "Rotate"
-msgstr "Rotation"
-
-#: preferences/devices/nothingBuds/configureWindow.js:487
-msgid "Unknown Gesture"
-msgstr "Geste inconnu"
-
-#: preferences/devices/nothingBuds/configureWindow.js:594 preferences/devices/nothingBuds/configureWindow.js:612
-msgid "Gesture Controls"
-msgstr "Contrôles gestuels"
-
-#: preferences/devices/nothingBuds/configureWindow.js:597
-msgid "Left Buds Gesture Control"
-msgstr "Contrôle gestuel de l’oreillette gauche"
-
-#: preferences/devices/nothingBuds/configureWindow.js:600
-msgid "Right Buds Gesture Control"
-msgstr "Contrôle gestuel de l’oreillette droite"
-
-#: preferences/devices/nothingBuds/configureWindow.js:603
-msgid "Roller Gesture Control"
-msgstr "Contrôle gestuel du rouleau"
-
-#: preferences/devices/nothingBuds/configureWindow.js:606
-msgid "Case Gesture Control"
-msgstr "Contrôle gestuel du boîtier"
-
-#: preferences/devices/nothingBuds/configureWindow.js:609
-msgid "Slider Gesture Control"
-msgstr "Contrôle gestuel du curseur"
-
-#: preferences/devices/nothingBuds/configureWindow.js:619
-msgid "Play / Pause"
-msgstr "Lire / Pause"
-
-#: preferences/devices/nothingBuds/configureWindow.js:622
-msgid "Previous Track"
-msgstr "Piste précédente"
-
-#: preferences/devices/nothingBuds/configureWindow.js:625
-msgid "Next Track"
-msgstr "Piste suivante"
-
-#: preferences/devices/nothingBuds/configureWindow.js:628 preferences/devices/galaxyBuds/configureWindow.js:452
-msgid "Voice Assistant"
-msgstr "Assistant vocal"
-
-#: preferences/devices/nothingBuds/configureWindow.js:631
-msgid "Volume Up"
-msgstr "Augmenter le volume"
-
-#: preferences/devices/nothingBuds/configureWindow.js:634
-msgid "Volume Down"
-msgstr "Baisser le volume"
-
-#: preferences/devices/nothingBuds/configureWindow.js:637 preferences/devices/galaxyBuds/configureWindow.js:454 preferences/devices/sony/configureWindow.js:307 preferences/devices/airpods/configureWindow.js:312
-msgid "Volume Control"
-msgstr "Contrôle du volume"
-
-#: preferences/devices/nothingBuds/configureWindow.js:643
-msgid "ANC Type"
-msgstr "Type d’ANC"
-
-#: preferences/devices/nothingBuds/configureWindow.js:646
-msgid "No Action"
-msgstr "Aucune action"
-
-#: preferences/devices/nothingBuds/configureWindow.js:649
-msgid "Change Volume"
-msgstr "Modifier le volume"
-
-#: preferences/devices/nothingBuds/configureWindow.js:652
-msgid "Channel Hop"
-msgstr "Changement de chaîne"
-
-#: preferences/devices/nothingBuds/configureWindow.js:655
-msgid "New Reporter"
-msgstr "Nouveau rapporteur"
-
-#: preferences/devices/nothingBuds/configureWindow.js:661
-msgid "Mic On/Off"
-msgstr "Micro activé / désactivé"
-
-#: preferences/devices/nothingBuds/configureWindow.js:667
-msgid "Walkie Takie"
-msgstr "Talkie-walkie"
-
-#: preferences/devices/nothingBuds/configureWindow.js:676
-msgid "Toggle Low Latency"
-msgstr "Basculer en basse latence"
-
-#: preferences/devices/nothingBuds/configureWindow.js:679
-msgid "Essential Space"
-msgstr "Espace essentiel"
-
-#: preferences/devices/nothingBuds/devicePrefs.js:37 ui/devices/nothingBuds.ui:5
-msgid "Nothing/CMF Buds"
-msgstr "Buds Nothing/CMF"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:115 preferences/devices/airpods/configureWindow.js:109
-msgid "Playback Behavior"
-msgstr "Comportement de lecture"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:119 preferences/devices/airpods/configureWindow.js:113 preferences/devices/airpods/configureWindow.js:116
-msgid "Default behavior"
-msgstr "Comportement par défaut"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:120 preferences/devices/airpods/configureWindow.js:117
-msgid "Resume with both earbuds, Pause if any removed"
-msgstr "Reprendre avec les deux écouteurs, mettre en pause si l’un est retiré"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:121 preferences/devices/airpods/configureWindow.js:118
-msgid "Resume with any earbud, Pause if both removed"
-msgstr "Reprendre avec l’un des écouteurs, mettre en pause si les deux sont retirés"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:125 preferences/devices/airpods/configureWindow.js:122
-msgid "Choose playback behaviour for Ear detection"
-msgstr "Choisir le comportement de lecture pour la détection d’oreille"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:126 preferences/devices/airpods/configureWindow.js:123
-msgid "Automatically pause or resume playback based on wearing detection."
-msgstr "Mettre en pause ou reprendre la lecture automatiquement selon la détection de port."
-
-#: preferences/devices/galaxyBuds/configureWindow.js:236
-msgid "Voice detection"
-msgstr "Détection vocale"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:239
-msgid "5 seconds"
-msgstr "5 secondes"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:239
-msgid "10 seconds"
-msgstr "10 secondes"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:239
-msgid "15 seconds"
-msgstr "15 secondes"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:242 preferences/devices/sony/configureWindow.js:134
-msgid "Duration"
-msgstr "Durée"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:262 preferences/devices/sony/configureWindow.js:222
-msgid "Bass Boost"
-msgstr "Boost des basses"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:263
-msgid "Soft"
-msgstr "Doux"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:264
-msgid "Dynamic"
-msgstr "Dynamique"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:265
-msgid "Clear"
-msgstr "Clair"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:266 preferences/devices/sony/configureWindow.js:221
-msgid "Treble Boost"
-msgstr "Boost des aigus"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:296
-msgid "Balance"
-msgstr "Balance"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:300 ui/batteryWidgetSettings.ui:117
-msgid "Left"
-msgstr "Gauche"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:301
-msgid "Center"
-msgstr "Centre"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:302 ui/batteryWidgetSettings.ui:118
-msgid "Right"
-msgstr "Droite"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:320
-msgid "Earbuds Controls"
-msgstr "Contrôles des écouteurs"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:326
-msgid "Media Controls (Pinch And Swipe)"
-msgstr "Contrôles multimédia (pincer et glisser)"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:326
-msgid "Enable Touch Controls "
-msgstr "Activer les commandes tactiles "
-
-#: preferences/devices/galaxyBuds/configureWindow.js:382
-msgid "Touch and Hold"
-msgstr "Toucher et maintenir"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:401
-msgid "Pinch to Answer Call or End Call"
-msgstr "Pincer pour répondre ou raccrocher"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:402
-msgid "Double Tap to Answer Call or End Call"
-msgstr "Double appui pour répondre ou raccrocher"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:416
-msgid "Pinch and Hold to Decline Call"
-msgstr "Pincer et maintenir pour refuser l’appel"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:417
-msgid "Touch and Hold to Decline Call"
-msgstr "Toucher et maintenir pour refuser l’appel"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:453
-msgid "Quick Ambient Sound"
-msgstr "Son ambiant rapide"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:455
-msgid "Ambient Sound"
-msgstr "Son ambiant"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:456
-msgid "Spotify Spot On"
-msgstr "Spotify Spot On"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:458
-msgid "ANC"
-msgstr "ANC"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:474
-msgid "Left Earbud Pinch and Hold Function"
-msgstr "Fonction Pincer et maintenir de l’oreillette gauche"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:475
-msgid "Left Earbud Touch and Hold Function"
-msgstr "Fonction Toucher et maintenir de l’oreillette gauche"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:478
-msgid "Right Earbud Pinch and Hold Function"
-msgstr "Fonction Pincer et maintenir de l’oreillette droite"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:479
-msgid "Right Earbud Touch and Hold Function"
-msgstr "Fonction Toucher et maintenir de l’oreillette droite"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:532
-msgid "Select any two toggles"
-msgstr "Sélectionnez deux interrupteurs"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:538
-msgid "Pinch and Hold Cycle for Left Earbud"
-msgstr "Cycle pincement et maintien pour l’oreillette gauche"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:539
-msgid "Pinch and hold cycles between modes (Left)"
-msgstr "Les cycles de pincement et maintien alternent entre les modes (gauche)"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:540
-msgid "Pinch and Hold Cycle for Right Earbud"
-msgstr "Cycle pincement et maintien pour l’oreillette droite"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:541
-msgid "Pinch and hold cycles between modes (Right)"
-msgstr "Les cycles de pincement et maintien alternent entre les modes (droite)"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:543
-msgid "Touch and Hold Cycle for Left Earbud"
-msgstr "Cycle toucher et maintien pour l’oreillette gauche"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:544
-msgid "Touch and hold cycles between modes (Left)"
-msgstr "Les cycles de toucher et maintien alternent entre les modes (gauche)"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:545
-msgid "Touch and Hold Cycle for Right Earbud"
-msgstr "Cycle toucher et maintien pour l’oreillette droite"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:546
-msgid "Touch and hold cycles between modes (Right)"
-msgstr "Les cycles de toucher et maintien alternent entre les modes (droite)"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:549
-msgid "Pinch and Hold Cycle"
-msgstr "Cycle pincement et maintien"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:550
-msgid "Pinch and hold cycles between modes"
-msgstr "Les cycles de pincement et maintien alternent entre les modes"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:552
-msgid "Touch and Hold Cycle"
-msgstr "Cycle toucher et maintien"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:553
-msgid "Touch and hold cycles between modes"
-msgstr "Les cycles de toucher et maintien alternent entre les modes"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:609
-msgid "Ambient Sound During Calls"
-msgstr "Son ambiant pendant les appels"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:623
-msgid "Noise Controls With One Earbud"
-msgstr "Contrôles du bruit avec une seule oreillette"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:637
-msgid "Double Tap Outside Edge For Volume Controls"
-msgstr "Double appui sur le bord extérieur pour les commandes de volume"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:680
-msgid "Left Ambient Sound Volume"
-msgstr "Volume du son ambiant à gauche"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:701
-msgid "Right Ambient Sound Volume"
-msgstr "Volume du son ambiant à droite"
-
-#: preferences/devices/galaxyBuds/configureWindow.js:722
-msgid "Ambient Sound Tone"
-msgstr "Ton du son ambiant"
-
-#: preferences/devices/sony/configureWindow.js:115 preferences/devices/sony/configureWindow.js:285
-msgid "Auto"
-msgstr "Auto"
-
-#: preferences/devices/sony/configureWindow.js:118
-msgid "Voice Detection Sensitivity"
-msgstr "Sensibilité de détection vocale"
-
-#: preferences/devices/sony/configureWindow.js:131
-msgid "Short"
-msgstr "Court"
-
-#: preferences/devices/sony/configureWindow.js:131
-msgid "Long"
-msgstr "Long"
-
-#: preferences/devices/sony/configureWindow.js:151 preferences/devices/sony/configureWindow.js:167
-msgid "Listening Mode"
-msgstr "Mode d’écoute"
-
-#: preferences/devices/sony/configureWindow.js:156
-msgid "Background Music"
-msgstr "Musique de fond"
-
-#: preferences/devices/sony/configureWindow.js:157
-msgid "Cinema"
-msgstr "Cinéma"
-
-#: preferences/devices/sony/configureWindow.js:182
-msgid "My Room"
-msgstr "Ma chambre"
-
-#: preferences/devices/sony/configureWindow.js:183
-msgid "Living Room"
-msgstr "Salon"
-
-#: preferences/devices/sony/configureWindow.js:184
-msgid "Cafe"
-msgstr "Café"
-
-#: preferences/devices/sony/configureWindow.js:194
-msgid "Background Music Effects"
-msgstr "Effets de musique de fond"
-
-#: preferences/devices/sony/configureWindow.js:216
-msgid "Bright"
-msgstr "Vif"
-
-#: preferences/devices/sony/configureWindow.js:217
-msgid "Excited"
-msgstr "Excité"
-
-#: preferences/devices/sony/configureWindow.js:218
-msgid "Mellow"
-msgstr "Doux"
-
-#: preferences/devices/sony/configureWindow.js:219
-msgid "Relaxed"
-msgstr "Détendu"
-
-#: preferences/devices/sony/configureWindow.js:220
-msgid "Vocal"
-msgstr "Vocal"
-
-#: preferences/devices/sony/configureWindow.js:223
-msgid "Speech"
-msgstr "Parole"
-
-#: preferences/devices/sony/configureWindow.js:224
-msgid "Manual"
-msgstr "Manuel"
-
-#: preferences/devices/sony/configureWindow.js:225
-msgid "Custom 1"
-msgstr "Personnalisé 1"
-
-#: preferences/devices/sony/configureWindow.js:226
-msgid "Custom 2"
-msgstr "Personnalisé 2"
-
-#: preferences/devices/sony/configureWindow.js:260
-msgid "400"
-msgstr "400"
-
-#: preferences/devices/sony/configureWindow.js:260 preferences/devices/sony/configureWindow.js:262
-msgid "1k"
-msgstr "1k"
-
-#: preferences/devices/sony/configureWindow.js:260
-msgid "2.5k"
-msgstr "2.5k"
-
-#: preferences/devices/sony/configureWindow.js:260
-msgid "6.3k"
-msgstr "6.3k"
-
-#: preferences/devices/sony/configureWindow.js:260 preferences/devices/sony/configureWindow.js:262
-msgid "16k"
-msgstr "16k"
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "31"
-msgstr "31"
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "63"
-msgstr "63"
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "125"
-msgstr "125"
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "250"
-msgstr "250"
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "500"
-msgstr "500"
-
-#: preferences/devices/sony/configureWindow.js:262
-msgid "2k"
-msgstr "2k"
-
-#: preferences/devices/sony/configureWindow.js:262
-msgid "4k"
-msgstr "4k"
-
-#: preferences/devices/sony/configureWindow.js:262
-msgid "8k"
-msgstr "8k"
-
-#: preferences/devices/sony/configureWindow.js:280
-msgid "DSEE"
-msgstr "DSEE"
-
-#: preferences/devices/sony/configureWindow.js:284
-msgid "Enable DSEE enhancement"
-msgstr "Activer l’amélioration DSEE"
-
-#: preferences/devices/sony/configureWindow.js:298
-msgid "Button/Touch Settings"
-msgstr "Paramètres des boutons/touches"
-
-#: preferences/devices/sony/configureWindow.js:302
-msgid "Ambient Sound Control"
-msgstr "Contrôle du son ambiant"
-
-#: preferences/devices/sony/configureWindow.js:303
-msgid "Ambient Sound Control / Quick Access"
-msgstr "Contrôle du son ambiant / accès rapide"
-
-#: preferences/devices/sony/configureWindow.js:305 preferences/devices/sony/configureWindow.js:306
-msgid "Playback Control"
-msgstr "Contrôle de lecture"
-
-#: preferences/devices/sony/configureWindow.js:308
-msgid "Not Assigned"
-msgstr "Non attribué"
-
-#: preferences/devices/sony/configureWindow.js:324
-msgid "Left Bud"
-msgstr "Oreillette gauche"
-
-#: preferences/devices/sony/configureWindow.js:338
-msgid "Right Bud"
-msgstr "Oreillette droite"
-
-#: preferences/devices/sony/configureWindow.js:355
-msgid "ANC Button Configuration"
-msgstr "Configuration du bouton ANC"
-
-#: preferences/devices/sony/configureWindow.js:366
-msgid "[NC/AMB] Button Settings"
-msgstr "Paramètres du bouton [NC/AMB]"
-
-#: preferences/devices/sony/configureWindow.js:367
-msgid "Select the modes to toggle when the button is pressed"
-msgstr "Sélectionnez les modes à basculer lorsque le bouton est pressé"
-
-#: preferences/devices/sony/configureWindow.js:385
-msgid "Notification"
-msgstr "Notification"
-
-#: preferences/devices/sony/configureWindow.js:389
-msgid "Voice Notification"
-msgstr "Notification vocale"
-
-#: preferences/devices/sony/configureWindow.js:390
-msgid "Enable voice notification"
-msgstr "Activer la notification vocale"
-
-#: preferences/devices/sony/configureWindow.js:408
-msgid "Voice Notification Volume"
-msgstr "Volume de notification vocale"
-
-#: preferences/devices/sony/configureWindow.js:410
-msgid "-2"
-msgstr "-2"
-
-#: preferences/devices/sony/configureWindow.js:411
-msgid "-1"
-msgstr "-1"
-
-#: preferences/devices/sony/configureWindow.js:412
-msgid "0"
-msgstr "0"
-
-#: preferences/devices/sony/configureWindow.js:413
-msgid "+1"
-msgstr "+1"
-
-#: preferences/devices/sony/configureWindow.js:414
-msgid "+2"
-msgstr "+2"
-
-#: preferences/devices/sony/configureWindow.js:433
-msgid "Headset Take off"
-msgstr "Retrait du casque"
-
-#: preferences/devices/sony/configureWindow.js:440
-msgid "Pause when taken off"
-msgstr "Mettre en pause lorsqu’il est retiré"
-
-#: preferences/devices/sony/configureWindow.js:454
-msgid "Automatically Power Off"
-msgstr "Mise hors tension automatique"
-
-#: preferences/devices/sony/configureWindow.js:455
-msgid "Automatically power off when not worn."
-msgstr "S’éteindre automatiquement lorsqu’il n’est pas porté."
-
-#: preferences/devices/sony/configureWindow.js:470
-msgid "After 5 minutes"
-msgstr "Après 5 minutes"
-
-#: preferences/devices/sony/configureWindow.js:471
-msgid "After 15 minutes"
-msgstr "Après 15 minutes"
-
-#: preferences/devices/sony/configureWindow.js:472
-msgid "After 30 minutes"
-msgstr "Après 30 minutes"
-
-#: preferences/devices/sony/configureWindow.js:473
-msgid "After 1 hour"
-msgstr "Après 1 heure"
-
-#: preferences/devices/sony/configureWindow.js:474
-msgid "After 3 hours"
-msgstr "Après 3 heures"
-
-#: preferences/devices/sony/configureWindow.js:486
-msgid "Auto Power Off"
-msgstr "Mise hors tension automatique"
-
-#: preferences/devices/airpods/configureWindow.js:114
-msgid "Resume when worn"
-msgstr "Reprendre lorsqu’il est porté"
-
-#: preferences/devices/airpods/configureWindow.js:139
-msgid "Volume Level"
-msgstr "Niveau du volume"
-
-#: preferences/devices/airpods/configureWindow.js:143
-msgid "Pause when device is not worn"
-msgstr "Mettre en pause lorsque l’appareil n’est pas porté"
-
-#: preferences/devices/airpods/configureWindow.js:144
-msgid "Pause playback when the device is removed,resume when it is put back on"
-msgstr "Mettre la lecture en pause lorsque l’appareil est retiré, reprendre lorsqu’il est remis"
-
-#: preferences/devices/airpods/configureWindow.js:163
-msgid "Conversation awareness volume limit"
-msgstr "Limite de volume de la conscience de conversation"
-
-#: preferences/devices/airpods/configureWindow.js:164
-msgid "Limits media volume to this percentage during conversation. Note: No change if current volume is below this level."
-msgstr "Limite le volume multimédia à ce pourcentage pendant la conversation. Remarque : aucun changement si le volume actuel est inférieur à ce niveau."
-
-#: preferences/devices/airpods/configureWindow.js:187
-msgid "Turn off listening modes"
-msgstr "Désactiver les modes d’écoute"
-
-#: preferences/devices/airpods/configureWindow.js:191
-msgid "Allows to turn off all listening mode technology"
-msgstr "Permet de désactiver toute la technologie des modes d’écoute"
-
-#: preferences/devices/airpods/configureWindow.js:192
-msgid "Allows Noise Cancellation, Transparency, and Adaptive modes to be fully disabled. Disabling listening modes also turns off Hearing Aid features and reduces power usage."
-msgstr "Permet de désactiver complètement les modes d’annulation du bruit, de transparence et adaptatifs. Désactiver les modes d’écoute désactive également les fonctions d’aide auditive et réduit la consommation d’énergie."
-
-#: preferences/devices/airpods/configureWindow.js:255
-msgid "Press and Hold Cycle"
-msgstr "Cycle Appui prolongé"
-
-#: preferences/devices/airpods/configureWindow.js:258
-msgid "Press and hold cycles between"
-msgstr "Les cycles d’appui prolongé alternent entre"
-
-#: preferences/devices/airpods/configureWindow.js:259
-msgid "Settings don’t reflect current state"
-msgstr "Les paramètres ne reflètent pas l'état actuel"
-
-#: preferences/devices/airpods/configureWindow.js:286
-msgid "Notification Volume"
-msgstr "Volume des notifications"
-
-#: preferences/devices/airpods/configureWindow.js:290
-msgid "Tone Volume"
-msgstr "Volume du ton"
-
-#: preferences/devices/airpods/configureWindow.js:291
-msgid "Adjust the tone volume of sound effects played by AirPods"
-msgstr "Ajuster le volume des effets sonores diffusés par les AirPods"
-
-#: preferences/devices/airpods/configureWindow.js:293
-msgid "15%"
-msgstr "15%"
-
-#: preferences/devices/airpods/configureWindow.js:294
-msgid "100%"
-msgstr "100%"
-
-#: preferences/devices/airpods/configureWindow.js:295
-msgid "125%"
-msgstr "125%"
-
-#: preferences/devices/airpods/configureWindow.js:316
-msgid "Volume Swipe"
-msgstr "Glisser pour le volume"
-
-#: preferences/devices/airpods/configureWindow.js:317
-msgid "Enable or disable volume adjustment by swiping on earbud stems"
-msgstr "Activer ou désactiver le réglage du volume en glissant sur les tiges des écouteurs"
-
-#: preferences/devices/airpods/configureWindow.js:326 preferences/devices/airpods/configureWindow.js:359 preferences/devices/airpods/configureWindow.js:377
-msgid "Default"
-msgstr "Par défaut"
-
-#: preferences/devices/airpods/configureWindow.js:326 preferences/devices/airpods/configureWindow.js:359
-msgid "Longer"
-msgstr "Plus long"
-
-#: preferences/devices/airpods/configureWindow.js:326 preferences/devices/airpods/configureWindow.js:359
-msgid "Longest"
-msgstr "Le plus long"
-
-#: preferences/devices/airpods/configureWindow.js:330
-msgid "Swipe Duration"
-msgstr "Durée du glissement"
-
-#: preferences/devices/airpods/configureWindow.js:331
-msgid "To prevent unintended adjustments,select the preferred wait time between swipes"
-msgstr "Pour éviter les réglages involontaires, sélectionnez le temps d’attente préféré entre les glissements"
-
-#: preferences/devices/airpods/configureWindow.js:356
-msgid "Stem and Crown Response"
-msgstr "Réponse de la tige et de la couronne"
-
-#: preferences/devices/airpods/configureWindow.js:363
-msgid "Press Speed"
-msgstr "Vitesse d’appui"
-
-#: preferences/devices/airpods/configureWindow.js:364
-msgid "Adjust how quickly you must double or triple-press the stem or Digital Crown before an action occurs"
-msgstr "Ajuste la rapidité à laquelle vous devez effectuer un double ou triple appui sur la tige ou la couronne numérique avant qu’une action ne se produise"
-
-#: preferences/devices/airpods/configureWindow.js:377
-msgid "Shorter"
-msgstr "Plus court"
-
-#: preferences/devices/airpods/configureWindow.js:377
-msgid "Shortest"
-msgstr "Le plus court"
-
-#: preferences/devices/airpods/configureWindow.js:380
-msgid "Press and Hold Duration"
-msgstr "Durée d’appui prolongé"
-
-#: preferences/devices/airpods/configureWindow.js:381
-msgid "Set how long you need to press and hold before an action occurs"
-msgstr "Définissez la durée pendant laquelle vous devez maintenir l’appui avant qu’une action ne se produise"
-
-#: preferences/devices/airpods/devicePrefs.js:37 ui/devices/airpods.ui:5
-msgid "AirPods/Beats"
-msgstr "AirPods/Beats"
-
-#: preferences/widgets/ringMyBudsRow.js:21
-msgid "Find my earbuds"
-msgstr "Retrouver mes écouteurs"
-
-#: preferences/widgets/ringMyBudsRow.js:32 preferences/widgets/ringMyBudsRow.js:53 preferences/widgets/ringMyBudsRow.js:97 preferences/widgets/ringMyBudsRow.js:142
-msgid "Play"
-msgstr "Lire"
-
-#: preferences/widgets/ringMyBudsRow.js:94
-msgid "Stop"
-msgstr "Arrêter"
-
-#: preferences/widgets/ringMyBudsRow.js:133
-msgid "Continue?"
-msgstr "Continuer ?"
-
-#: preferences/widgets/ringMyBudsRow.js:135
-msgid "Your earbuds/headset may be in use. Be sure to remove them from your ears before you continue. A loud sound will be played which could be uncomfortable for anyone wearing them."
-msgstr "Vos écouteurs/casque peuvent être utilisés. Assurez-vous de les retirer de vos oreilles avant de continuer. Un son fort sera joué, ce qui peut être inconfortable pour toute personne qui les porte."
-
-#: preferences/widgets/ringMyBudsRow.js:141
-msgid "Cancel"
-msgstr "Annuler"
-
-#: preferences/widgets/iconSelectorWidget.js:47 preferences/widgets/iconSelectorWidget.js:65
-msgid "Device information"
-msgstr "Informations sur l’appareil"
-
-#: preferences/widgets/iconSelectorWidget.js:78
-msgid "Mac Address"
-msgstr "Adresse MAC"
-
-#: preferences/widgets/iconSelectorWidget.js:100
-msgid "Firmware Version"
-msgstr "Version du firmware"
-
-#: preferences/device.js:53
-msgid "Reported from enhanced device service"
-msgstr "Signalé par le service de périphérique amélioré"
-
-#: preferences/device.js:68
-msgid "This is an enhanced device"
-msgstr "Il s’agit d’un appareil amélioré"
-
-#: preferences/device.js:69
-msgid "Icon selection if available are in Enhanced device per device settings"
-msgstr "La sélection d’icônes, si disponible, se trouve dans les paramètres avancés par appareil"
-
-#: preferences/device.js:124 ui/quickSettings.ui:5
-msgid "Quick Menu"
-msgstr "Menu rapide"
-
-#: preferences/device.js:128
-msgid "Display Battery Level"
-msgstr "Afficher le niveau de la batterie"
-
-#: preferences/device.js:129
-msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr "Afficher le niveau de batterie dans le menu rapide du panneau BluetoothAfficher le niveau de la batterie dans le menu rapide du panneau Bluetooth"
-
-#: preferences/device.js:158
-msgid "Do not show Icon"
-msgstr "Ne pas afficher l'icône"
-
-#: preferences/device.js:159
-msgid "Show Icon without Battery level"
-msgstr "Afficher l'icône sans niveau de batterie"
-
-#: preferences/device.js:160
-msgid "Show Icon with Battery Level"
-msgstr "Afficher l'icône sans niveau de batterie"
-
-#: preferences/device.js:226
-msgid "Delete device information: The button is available after unpairing device"
-msgstr "Delete appareil information: The bouton is disponible après unpairing appareilSupprimer les informations du périphérique : le bouton est disponible après avoir désappairé l'appareil"
-
-#: preferences/device.js:258
-msgid "(Removed)"
-msgstr "(Supprimé)"
-
-#: preferences/device.js:259
-msgid "(Paired)"
-msgstr "(Appairé)"
-
-#: ui/indicator.ui:9
-msgid "Bluetooth System Indicator Settings"
-msgstr "Paramètres de l’indicateur système Bluetooth"
-
-#: ui/indicator.ui:12
-msgid "Bluetooth Connection Status Indicator"
-msgstr "Indicateur d'état de la connexion Bluetooth"
-
-#: ui/indicator.ui:13
-msgid "Hide conditionally: Displayed only when no other bluetooth related indicators are present"
-msgstr "Masquer conditionnellement : affiché uniquement lorsqu’aucun autre indicateur lié au Bluetooth n’est présentMasquer conditionnellement: Affiché uniquement quand aucun autre indicateur Bluetooth n'est présent"
-
-#: ui/indicator.ui:27
-msgid "Battery Indicator Settings"
-msgstr "Paramètres de l’indicateur de batterie"
-
-#: ui/indicator.ui:30
-msgid "Choose Indicator mode"
-msgstr "Choisir le mode d’indicateur"
-
-#: ui/indicator.ui:31
+#: ui/upowerDevices.ui:5
+msgid "UPower"
+msgstr "Alimentation"
+
+#: ui/upowerDevices.ui:9
+msgid "Enable UPower Devices"
+msgstr "Activer les appareils UPower"
+
+#: ui/upowerDevices.ui:12
+msgid "Enable indicator for UPower devices"
+msgstr "Activer l’indicateur pour les appareils UPower"
+
+#: ui/upowerDevices.ui:13
 msgid ""
-"Off: No battery indicator.\n"
-"System Indicator: Battery icon in top bar.\n"
-"Panel Button: Battery icon with menu."
+"Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
+"report battery levels if supported by the kernel or third-party drivers. "
+"Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
-"Désactivé : Aucun indicateur de batterie.\n"
-"Indicateur système : Icône de batterie dans la barre supérieure.\n"
-"Bouton du panneau : Icône de batterie avec menu."
+"Certains appareils UPower, tels que la souris sans fil 2,4 GHz, le clavier, "
+"etc., peuvent signaler les niveaux de batterie s’ils sont pris en charge par "
+"le noyau ou des pilotes tiers. Activez cette option pour afficher leur état "
+"de batterie dans la barre d’état système GNOME.Certains périphériques "
+"UPower, tels que la souris sans fil 2.4GHz, le clavier, etc, peuvent "
+"signaler les niveaux de batterie si pris en charge par le noyau ou par des "
+"pilotes tiers. Activez cette option pour afficher leur état de batterie dans "
+"la barre d'état système GNOME."
 
-#: ui/indicator.ui:45
-msgid "Panel Button Mode"
-msgstr "Mode bouton du panneau"
-
-#: ui/indicator.ui:48
-msgid "Panel button indicator mode."
-msgstr "Mode d’indicateur du bouton du panneau."
-
-#: ui/indicator.ui:49
-msgid "On: Show one selected device. Off: Show all devices"
-msgstr "Activé : montrer un seul appareil sélectionné. Désactivé : montrer tous les appareils"
-
-#: ui/indicator.ui:56
-msgid "Indicator Settings"
-msgstr "Paramètres de l'indicateur"
-
-#: ui/indicator.ui:59
-msgid "Show Multiple Battery Indicators per Device"
-msgstr "Afficher plusieurs indicateurs de batterie par appareil"
-
-#: ui/indicator.ui:60
-msgid "For devices with multiple batteries, when enabled, shows a separate indicator for each battery. When disabled, shows a single indicator representing the most critical (lowest) battery level of the device."
-msgstr "Pour les appareils avec plusieurs batteries, lorsqu’il est activé, affiche un indicateur séparé pour chaque batterie. Lorsqu’il est désactivé, affiche un seul indicateur représentant le niveau de batterie le plus critique (le plus bas) de l’appareil."
-
-#: ui/indicator.ui:67
-msgid "Show Popup on Hover"
-msgstr "Afficher une fenêtre contextuelle au survol"
-
-#: ui/indicator.ui:70
-msgid "Show Detailed Info on Hover"
-msgstr "Afficher des informations détaillées au survol"
-
-#: ui/indicator.ui:71
-msgid "Displays a popup with battery info and controls when the mouse pointer hovers over the indicator for a custom delay"
-msgstr "Affiche une fenêtre contextuelle contenant des informations et des contrôles sur la batterie lorsque le pointeur de la souris survole l’indicateur pendant un délai personnalisé"
-
-#: ui/indicator.ui:76
-msgid "Hover Activation Delay"
-msgstr "Délai d’activation au survol"
-
-#: ui/indicator.ui:77
-msgid "Specify the number of seconds the mouse must hover over the indicator before detailed information is displayed."
-msgstr "Spécifiez le nombre de secondes pendant lesquelles la souris doit survoler l’indicateur avant que des informations détaillées ne soient affichées."
-
-#: ui/indicator.ui:95
-msgid "Tooltips"
-msgstr "Info-bulles"
-
-#: ui/indicator.ui:98
-msgid "Enable tooltips"
-msgstr "Activer les info-bulles"
-
-#: ui/indicator.ui:99
-msgid "Show tooltips when hovering over unlabeled buttons"
-msgstr "Afficher des info-bulles au survol des boutons sans étiquette"
-
-#: ui/indicator.ui:107
-msgid "Default Behaviour"
-msgstr "Comportement par défaut"
-
-#: ui/indicator.ui:108
-msgid "Hide Always"
-msgstr "Toujours masquer"
-
-#: ui/indicator.ui:109
-msgid "Hide Conditionally"
-msgstr "Cacher sous condition"
-
-#: ui/indicator.ui:115
-msgid "System Tray"
-msgstr "Barre d’état système"
-
-#: ui/indicator.ui:116
-msgid "Panel Button"
-msgstr "Bouton du panneau"
-
-#: ui/gattBas.ui:16 ui/devices/nothingBuds.ui:17 ui/devices/sony.ui:17 ui/devices/airpods.ui:17 ui/devices/galaxyBuds.ui:17
-msgid "Experimental"
-msgstr "Expérimental"
-
-#: ui/gattBas.ui:19
-msgid "Battery Service (BAS) Settings"
-msgstr "Paramètres du service de batterie (BAS)"
-
-#: ui/gattBas.ui:22
-msgid "Enable GATT Battery Service Reporting"
-msgstr "Activer la signalisation du service de batterie GATT"
-
-#: ui/gattBas.ui:23
-msgid "Display battery levels for Bluetooth devices using the GATT Battery Service (BAS)."
-msgstr "Afficher les niveaux de batterie des appareils Bluetooth utilisant le service de batterie GATT (BAS)."
-
-#: ui/gattBas.ui:30 ui/devices/nothingBuds.ui:40 ui/devices/sony.ui:40 ui/devices/airpods.ui:50 ui/devices/galaxyBuds.ui:40 ui/upowerDevices.ui:20 ui/device.ui:9
+#: ui/upowerDevices.ui:20 ui/device.ui:9 ui/gattBas.ui:30
 msgid "Configuration by Device"
 msgstr "Configuration par appareil"
 
-#: ui/gattBas.ui:33 ui/devices/nothingBuds.ui:43 ui/devices/sony.ui:43 ui/devices/airpods.ui:53 ui/devices/galaxyBuds.ui:43
-msgid "No compatible device paired!"
-msgstr "Aucun appareil compatible appairé !"
+#: ui/upowerDevices.ui:21 ui/device.ui:10
+msgid "Note: General settings override device-specific settings"
+msgstr ""
+"Remarque : les paramètres généraux remplacent les paramètres spécifiques à "
+"l’appareilNote: Les paramètres généraux remplacent les paramètres "
+"spécifiques à l'appareil"
+
+#: ui/upowerDevices.ui:24
+msgid "No compatible device found!"
+msgstr "Aucun appareil compatible détecté!"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
@@ -1404,16 +388,25 @@ msgid "Indicator Widget Settings"
 msgstr "Paramètres de l'indicateur"
 
 #: ui/batteryWidgetSettings.ui:12
-msgid "Indicator Battery Widget Settings available only for System Tray mode or Panel Button mode with multiple indicators"
-msgstr "Les paramètres du widget de batterie de l’indicateur ne sont disponibles que pour le mode barre d’état système ou le mode bouton du panneau avec plusieurs indicateurs"
+msgid ""
+"Indicator Battery Widget Settings available only for System Tray mode or "
+"Panel Button mode with multiple indicators"
+msgstr ""
+"Les paramètres du widget de batterie de l’indicateur ne sont disponibles que "
+"pour le mode barre d’état système ou le mode bouton du panneau avec "
+"plusieurs indicateurs"
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
 msgstr "Afficher uniquement l’icône (masquer la barre/les points)"
 
 #: ui/batteryWidgetSettings.ui:18
-msgid "Hides the battery level indicator on the icon. Pair with text percentage for battery information"
-msgstr "Masque l’indicateur de niveau de batterie sur l’icône. À associer au pourcentage textuel pour obtenir des informations sur la batterie"
+msgid ""
+"Hides the battery level indicator on the icon. Pair with text percentage for "
+"battery information"
+msgstr ""
+"Masque l’indicateur de niveau de batterie sur l’icône. À associer au "
+"pourcentage textuel pour obtenir des informations sur la batterie"
 
 #: ui/batteryWidgetSettings.ui:23
 msgid "Display battery percentage as text"
@@ -1421,7 +414,10 @@ msgstr "Afficher le pourcentage de batterie sous forme de texte"
 
 #: ui/batteryWidgetSettings.ui:24
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr "Affiche le pourcentage de batterie à côté de l’icône de l’appareil BluetoothAffiche le pourcentage de la batterie à côté de l'icône du périphérique Bluetooth"
+msgstr ""
+"Affiche le pourcentage de batterie à côté de l’icône de l’appareil "
+"BluetoothAffiche le pourcentage de la batterie à côté de l'icône du "
+"périphérique Bluetooth"
 
 #: ui/batteryWidgetSettings.ui:29
 msgid "Battery Level Indicator Type"
@@ -1437,15 +433,21 @@ msgstr "Position de la barre de batterie"
 
 #: ui/batteryWidgetSettings.ui:43
 msgid "Choose where to display the battery bar relative to the device icon"
-msgstr "Choisissez où afficher la barre de batterie par rapport à l’icône de l’appareil"
+msgstr ""
+"Choisissez où afficher la barre de batterie par rapport à l’icône de "
+"l’appareil"
 
 #: ui/batteryWidgetSettings.ui:55
 msgid "Device Icon Size"
 msgstr "Taille de l’icône de l’appareil"
 
 #: ui/batteryWidgetSettings.ui:56
-msgid "Adjust the size of the device icon displayed above the battery level indicator"
-msgstr "Ajustez la taille de l’icône de l’appareil affichée au-dessus de l’indicateur de niveau de batterie"
+msgid ""
+"Adjust the size of the device icon displayed above the battery level "
+"indicator"
+msgstr ""
+"Ajustez la taille de l’icône de l’appareil affichée au-dessus de "
+"l’indicateur de niveau de batterie"
 
 #: ui/batteryWidgetSettings.ui:71
 msgid "Battery Indicator Color Scheme"
@@ -1475,6 +477,14 @@ msgstr "Barre de niveau de la batterie"
 msgid "Battery Level Dot"
 msgstr "Point de niveau de la batterie"
 
+#: ui/batteryWidgetSettings.ui:117
+msgid "Left"
+msgstr "Gauche"
+
+#: ui/batteryWidgetSettings.ui:118
+msgid "Right"
+msgstr "Droite"
+
 #: ui/batteryWidgetSettings.ui:119
 msgid "Below"
 msgstr "En dessous"
@@ -1490,148 +500,6 @@ msgstr "Coloré"
 #: ui/batteryWidgetSettings.ui:126 ui/batteryWidgetSettings.ui:133
 msgid "Customized"
 msgstr "Personnalisé"
-
-#: ui/devices/nothingBuds.ui:9 ui/devices/sony.ui:9 ui/devices/airpods.ui:9 ui/devices/galaxyBuds.ui:9 ui/quickSettings.ui:9
-msgid "Note!"
-msgstr "Remarque !"
-
-#: ui/devices/nothingBuds.ui:22 ui/devices/sony.ui:22 ui/devices/airpods.ui:22 ui/devices/galaxyBuds.ui:22
-msgid "Some models/features are not fully tested. Please share feedback on GitHub."
-msgstr "Certains modèles/fonctionnalités ne sont pas entièrement testés. Veuillez partager vos commentaires sur GitHub."
-
-#: ui/devices/nothingBuds.ui:29
-msgid "Nothing/CMF Buds Settings"
-msgstr "Paramètres des Nothing/CMF Buds"
-
-#: ui/devices/nothingBuds.ui:32
-msgid "Enable Nothing/CMF Buds Support"
-msgstr "Activer la prise en charge des Nothing/CMF Buds"
-
-#: ui/devices/nothingBuds.ui:33
-msgid "Enables battery status monitoring and, if supported, control of Noise Cancellation."
-msgstr "Active la surveillance de l’état de batterie et, si elle est prise en charge, le contrôle de l’annulation du bruit."
-
-#: ui/devices/sony.ui:5
-msgid "Sony Bluetooth Audio"
-msgstr "Audio Bluetooth Sony"
-
-#: ui/devices/sony.ui:29
-msgid "Sony Bluetooth Audio Settings"
-msgstr "Paramètres audio Bluetooth Sony"
-
-#: ui/devices/sony.ui:32
-msgid "Enable Sony Bluetooth Audio Support"
-msgstr "Activer la prise en charge de l’audio Bluetooth Sony"
-
-#: ui/devices/sony.ui:33 ui/devices/airpods.ui:43 ui/devices/galaxyBuds.ui:33
-msgid "Enables battery status monitoring and, if supported, control of Noise Cancellation and Conversation Awareness modes."
-msgstr "Active la surveillance de l’état de batterie et, si elle est prise en charge, le contrôle des modes d’annulation du bruit et de conscience de conversation."
-
-#: ui/devices/airpods.ui:27
-msgid "Conversation Awareness (if supported) works only with the A2DP profile."
-msgstr "La conscience de conversation (si prise en charge) ne fonctionne qu’avec le profil A2DP."
-
-#: ui/devices/airpods.ui:32
-msgid "ANC and Conversation Awareness buttons are hidden when the earbuds are not in-ear."
-msgstr "Les boutons ANC et de conscience de conversation sont masqués lorsque les écouteurs ne sont pas en place."
-
-#: ui/devices/airpods.ui:39
-msgid "AirPods/Beats Settings"
-msgstr "Paramètres AirPods/Beats"
-
-#: ui/devices/airpods.ui:42
-msgid "Enable AirPods/Beats Support"
-msgstr "Activer la prise en charge des AirPods/Beats"
-
-#: ui/devices/galaxyBuds.ui:29
-msgid "Samsung Galaxy Buds Settings"
-msgstr "Paramètres des Samsung Galaxy Buds"
-
-#: ui/devices/galaxyBuds.ui:32
-msgid "Enable Samsung Galaxy Buds Support"
-msgstr "Activer la prise en charge des Samsung Galaxy Buds"
-
-#: ui/upowerDevices.ui:5
-msgid "UPower"
-msgstr "Alimentation"
-
-#: ui/upowerDevices.ui:9
-msgid "Enable UPower Devices"
-msgstr "Activer les appareils UPower"
-
-#: ui/upowerDevices.ui:12
-msgid "Enable indicator for UPower devices"
-msgstr "Activer l’indicateur pour les appareils UPower"
-
-#: ui/upowerDevices.ui:13
-msgid "Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can report battery levels if supported by the kernel or third-party drivers. Enable this option to display their battery status in the GNOME system tray."
-msgstr ""
-"Certains appareils UPower, tels que la souris sans fil 2,4 GHz, le clavier, etc., peuvent signaler les niveaux de batterie s’ils sont pris en charge par le noyau ou des pilotes tiers. Activez cette option pour afficher leur état de batterie dans la barre d’état système "
-"GNOME.Certains périphériques UPower, tels que la souris sans fil 2.4GHz, le clavier, etc, peuvent signaler les niveaux de batterie si pris en charge par le noyau ou par des pilotes tiers. Activez cette option pour afficher leur état de batterie dans la barre d'état système GNOME."
-
-#: ui/upowerDevices.ui:21 ui/device.ui:10
-msgid "Note: General settings override device-specific settings"
-msgstr "Remarque : les paramètres généraux remplacent les paramètres spécifiques à l’appareilNote: Les paramètres généraux remplacent les paramètres spécifiques à l'appareil"
-
-#: ui/upowerDevices.ui:24
-msgid "No compatible device found!"
-msgstr "Aucun appareil compatible détecté!"
-
-#: ui/quickSettings.ui:17
-msgid "Quick Menu Settings"
-msgstr "Paramètres du menu rapide"
-
-#: ui/quickSettings.ui:20
-msgid "Modify Bluetooth device menu"
-msgstr "Modifier le menu des appareils Bluetooth"
-
-#: ui/quickSettings.ui:21
-msgid "Add battery information and device controls to the menu"
-msgstr "Ajouter des informations de batterie et des commandes d’appareil au menu"
-
-#: ui/quickSettings.ui:26
-msgid "Enable popup submenu widget mode"
-msgstr "Activer le mode de sous-menu contextuel"
-
-#: ui/quickSettings.ui:27
-msgid "Adds a submenu that displays battery levels and other controls (ANC) if available"
-msgstr "Ajoute un sous-menu affichant les niveaux de batterie et d’autres commandes (ANC) si disponibles"
-
-#: ui/quickSettings.ui:32
-msgid "Show battery icon for Bluetooth devices"
-msgstr "Activer les indicateurs de batterie pour les appareils Bluetooth"
-
-#: ui/quickSettings.ui:33
-msgid "Displays an icon in the popup menu for Bluetooth device battery level"
-msgstr "Affiche une icône dans le menu contextuel pour le niveau de batterie de l’appareil BluetoothAffiche une icône dans le menu contextuel pour le niveau de batterie de l'appareil Bluetooth"
-
-#: ui/quickSettings.ui:38
-msgid "Show Bluetooth device battery percentage"
-msgstr "Afficher le pourcentage de batterie du périphérique Bluetooth"
-
-#: ui/quickSettings.ui:39
-msgid "Displays Bluetooth device battery level percentage in text"
-msgstr "Affiche le niveau de charge du périphérique Bluetooth en pourcentage"
-
-#: ui/quickSettings.ui:44
-msgid "Display battery level icon before text"
-msgstr "Afficher l'icône du niveau de batterie avant le texte"
-
-#: ui/quickSettings.ui:45
-msgid "Swaps position of battery level icon and percentage text"
-msgstr "Interverti la position de l’icône du niveau de batterie et du texte en pourcentageInterverti la position de l'icône du niveau de batterie et du texte en pourcentage"
-
-#: ui/quickSettings.ui:52
-msgid "Sort By History"
-msgstr "Trier par historique"
-
-#: ui/quickSettings.ui:55
-msgid "Sort devices by connection history"
-msgstr "Trier les périphériques par historique de connexion"
-
-#: ui/quickSettings.ui:56
-msgid "Enable to sort devices by connection history, or disable to sort by connection status and alias"
-msgstr "Activez pour trier les appareils par historique de connexion, ou désactivez pour trier par statut de connexion et aliasActiver pour trier les appareils par historique de connexion, ou désactiver pour trier par statut de connexion et alias"
 
 #: ui/device.ui:5
 msgid "Device"
@@ -1673,6 +541,1158 @@ msgstr "Crowdin"
 msgid "Online Tutorials"
 msgstr "Tutoriels en ligne"
 
+#: ui/quickSettings.ui:9
+msgid "Note!"
+msgstr "Remarque !"
+
+#: ui/quickSettings.ui:17
+msgid "Quick Menu Settings"
+msgstr "Paramètres du menu rapide"
+
+#: ui/quickSettings.ui:20
+msgid "Modify Bluetooth device menu"
+msgstr "Modifier le menu des appareils Bluetooth"
+
+#: ui/quickSettings.ui:21
+msgid "Add battery information and device controls to the menu"
+msgstr ""
+"Ajouter des informations de batterie et des commandes d’appareil au menu"
+
+#: ui/quickSettings.ui:26
+msgid "Enable popup submenu widget mode"
+msgstr "Activer le mode de sous-menu contextuel"
+
+#: ui/quickSettings.ui:27
+msgid ""
+"Adds a submenu that displays battery levels and other controls (ANC) if "
+"available"
+msgstr ""
+"Ajoute un sous-menu affichant les niveaux de batterie et d’autres commandes "
+"(ANC) si disponibles"
+
+#: ui/quickSettings.ui:32
+msgid "Show battery icon for Bluetooth devices"
+msgstr "Activer les indicateurs de batterie pour les appareils Bluetooth"
+
+#: ui/quickSettings.ui:33
+msgid "Displays an icon in the popup menu for Bluetooth device battery level"
+msgstr ""
+"Affiche une icône dans le menu contextuel pour le niveau de batterie de "
+"l’appareil BluetoothAffiche une icône dans le menu contextuel pour le niveau "
+"de batterie de l'appareil Bluetooth"
+
+#: ui/quickSettings.ui:38
+msgid "Show Bluetooth device battery percentage"
+msgstr "Afficher le pourcentage de batterie du périphérique Bluetooth"
+
+#: ui/quickSettings.ui:39
+msgid "Displays Bluetooth device battery level percentage in text"
+msgstr "Affiche le niveau de charge du périphérique Bluetooth en pourcentage"
+
+#: ui/quickSettings.ui:44
+msgid "Display battery level icon before text"
+msgstr "Afficher l'icône du niveau de batterie avant le texte"
+
+#: ui/quickSettings.ui:45
+msgid "Swaps position of battery level icon and percentage text"
+msgstr ""
+"Interverti la position de l’icône du niveau de batterie et du texte en "
+"pourcentageInterverti la position de l'icône du niveau de batterie et du "
+"texte en pourcentage"
+
+#: ui/quickSettings.ui:52
+msgid "Sort By History"
+msgstr "Trier par historique"
+
+#: ui/quickSettings.ui:55
+msgid "Sort devices by connection history"
+msgstr "Trier les périphériques par historique de connexion"
+
+#: ui/quickSettings.ui:56
+msgid ""
+"Enable to sort devices by connection history, or disable to sort by "
+"connection status and alias"
+msgstr ""
+"Activez pour trier les appareils par historique de connexion, ou désactivez "
+"pour trier par statut de connexion et aliasActiver pour trier les appareils "
+"par historique de connexion, ou désactiver pour trier par statut de "
+"connexion et alias"
+
+#: ui/indicator.ui:9
+msgid "Bluetooth System Indicator Settings"
+msgstr "Paramètres de l’indicateur système Bluetooth"
+
+#: ui/indicator.ui:12
+msgid "Bluetooth Connection Status Indicator"
+msgstr "Indicateur d'état de la connexion Bluetooth"
+
+#: ui/indicator.ui:13
+msgid ""
+"Hide conditionally: Displayed only when no other bluetooth related "
+"indicators are present"
+msgstr ""
+"Masquer conditionnellement : affiché uniquement lorsqu’aucun autre "
+"indicateur lié au Bluetooth n’est présentMasquer conditionnellement: Affiché "
+"uniquement quand aucun autre indicateur Bluetooth n'est présent"
+
+#: ui/indicator.ui:27
+msgid "Battery Indicator Settings"
+msgstr "Paramètres de l’indicateur de batterie"
+
+#: ui/indicator.ui:30
+msgid "Choose Indicator mode"
+msgstr "Choisir le mode d’indicateur"
+
+#: ui/indicator.ui:31
+msgid ""
+"Off: No battery indicator.\n"
+"System Indicator: Battery icon in top bar.\n"
+"Panel Button: Battery icon with menu."
+msgstr ""
+"Désactivé : Aucun indicateur de batterie.\n"
+"Indicateur système : Icône de batterie dans la barre supérieure.\n"
+"Bouton du panneau : Icône de batterie avec menu."
+
+#: ui/indicator.ui:45
+msgid "Panel Button Mode"
+msgstr "Mode bouton du panneau"
+
+#: ui/indicator.ui:48
+msgid "Panel button indicator mode."
+msgstr "Mode d’indicateur du bouton du panneau."
+
+#: ui/indicator.ui:49
+msgid "On: Show one selected device. Off: Show all devices"
+msgstr ""
+"Activé : montrer un seul appareil sélectionné. Désactivé : montrer tous les "
+"appareils"
+
+#: ui/indicator.ui:56
+msgid "Indicator Settings"
+msgstr "Paramètres de l'indicateur"
+
+#: ui/indicator.ui:59
+msgid "Show Multiple Battery Indicators per Device"
+msgstr "Afficher plusieurs indicateurs de batterie par appareil"
+
+#: ui/indicator.ui:60
+msgid ""
+"For devices with multiple batteries, when enabled, shows a separate "
+"indicator for each battery. When disabled, shows a single indicator "
+"representing the most critical (lowest) battery level of the device."
+msgstr ""
+"Pour les appareils avec plusieurs batteries, lorsqu’il est activé, affiche "
+"un indicateur séparé pour chaque batterie. Lorsqu’il est désactivé, affiche "
+"un seul indicateur représentant le niveau de batterie le plus critique (le "
+"plus bas) de l’appareil."
+
+#: ui/indicator.ui:67
+msgid "Show Popup on Hover"
+msgstr "Afficher une fenêtre contextuelle au survol"
+
+#: ui/indicator.ui:70
+msgid "Show Detailed Info on Hover"
+msgstr "Afficher des informations détaillées au survol"
+
+#: ui/indicator.ui:71
+msgid ""
+"Displays a popup with battery info and controls when the mouse pointer "
+"hovers over the indicator for a custom delay"
+msgstr ""
+"Affiche une fenêtre contextuelle contenant des informations et des contrôles "
+"sur la batterie lorsque le pointeur de la souris survole l’indicateur "
+"pendant un délai personnalisé"
+
+#: ui/indicator.ui:76
+msgid "Hover Activation Delay"
+msgstr "Délai d’activation au survol"
+
+#: ui/indicator.ui:77
+msgid ""
+"Specify the number of seconds the mouse must hover over the indicator before "
+"detailed information is displayed."
+msgstr ""
+"Spécifiez le nombre de secondes pendant lesquelles la souris doit survoler "
+"l’indicateur avant que des informations détaillées ne soient affichées."
+
+#: ui/indicator.ui:95
+msgid "Tooltips"
+msgstr "Info-bulles"
+
+#: ui/indicator.ui:98
+msgid "Enable tooltips"
+msgstr "Activer les info-bulles"
+
+#: ui/indicator.ui:99
+msgid "Show tooltips when hovering over unlabeled buttons"
+msgstr "Afficher des info-bulles au survol des boutons sans étiquette"
+
+#: ui/indicator.ui:107
+msgid "Default Behaviour"
+msgstr "Comportement par défaut"
+
+#: ui/indicator.ui:108
+msgid "Hide Always"
+msgstr "Toujours masquer"
+
+#: ui/indicator.ui:109
+msgid "Hide Conditionally"
+msgstr "Cacher sous condition"
+
+#: ui/indicator.ui:114
+msgid "Off"
+msgstr "Désactivé"
+
+#: ui/indicator.ui:115
+msgid "System Tray"
+msgstr "Barre d’état système"
+
+#: ui/indicator.ui:116
+msgid "Panel Button"
+msgstr "Bouton du panneau"
+
+#: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
+msgid "BudsLink Companion"
+msgstr ""
+
+#: ui/budslinkCompanion.ui:12
+msgid ""
+"Install BudsLink from Flathub to monitor multiple batteries and access "
+"advanced controls such as noise control, equalizer, and gestures, when "
+"supported by your device.\n"
+"\n"
+"Currently supported devices:\n"
+"• AirPods\n"
+"• Beats headphones and earbuds\n"
+"• Sony headphones and earbuds\n"
+"• Samsung Galaxy Buds\n"
+"• Nothing / CMF headphones and earbuds\n"
+"• Bose headphones and earbuds\n"
+"• Sennheiser headphones and earbuds\n"
+"• Redmi / Xiaomi earbuds"
+msgstr ""
+
+#: ui/budslinkCompanion.ui:27
+msgid "Enable BudsLink integration"
+msgstr ""
+
+#: ui/budslinkCompanion.ui:28
+msgid ""
+"Acts as a Companion with the BudsLink app, which runs in the background to "
+"provide additional features for supported headphones and earbuds"
+msgstr ""
+
+#: ui/budslinkCompanion.ui:33
+msgid "Hide from Background Apps"
+msgstr ""
+
+#: ui/budslinkCompanion.ui:34
+msgid "Hide BudsLink from the GNOME Background Apps list"
+msgstr ""
+
+#: ui/budslinkCompanion.ui:42
+msgid "Installation Status"
+msgstr ""
+
+#: ui/budslinkCompanion.ui:51
+msgid "BudsLink Installation Status"
+msgstr ""
+
+#: ui/budslinkCompanion.ui:60
+msgid "BudsLink on Flathub"
+msgstr ""
+
+#: ui/budslinkCompanion.ui:72
+msgid "BudsLink Documentation"
+msgstr ""
+
+#: ui/gattBas.ui:16
+msgid "Experimental"
+msgstr "Expérimental"
+
+#: ui/gattBas.ui:19
+msgid "Battery Service (BAS) Settings"
+msgstr "Paramètres du service de batterie (BAS)"
+
+#: ui/gattBas.ui:22
+msgid "Enable GATT Battery Service Reporting"
+msgstr "Activer la signalisation du service de batterie GATT"
+
+#: ui/gattBas.ui:23
+msgid ""
+"Display battery levels for Bluetooth devices using the GATT Battery Service "
+"(BAS)."
+msgstr ""
+"Afficher les niveaux de batterie des appareils Bluetooth utilisant le "
+"service de batterie GATT (BAS)."
+
+#: ui/gattBas.ui:33
+msgid "No compatible device paired!"
+msgstr "Aucun appareil compatible appairé !"
+
+#~ msgid "Noise Control"
+#~ msgstr "Contrôle du bruit"
+
+#~ msgid "Transparency"
+#~ msgstr "Transparence"
+
+#~ msgid "Noise Cancellation Level"
+#~ msgstr "Niveau d’annulation du bruit"
+
+#~ msgid "High"
+#~ msgstr "Élevé"
+
+#~ msgid "Mid"
+#~ msgstr "Moyen"
+
+#~ msgid "Low"
+#~ msgstr "Faible"
+
+#~ msgid "Adaptive"
+#~ msgstr "Adaptatif"
+
+#~ msgid "Noise Cancellation"
+#~ msgstr "Annulation du bruit"
+
+#~ msgid "Personalised ANC"
+#~ msgstr "ANC personnalisé"
+
+#~ msgid "Ambient Level"
+#~ msgstr "Niveau ambiant"
+
+#~ msgid "Focus on Voice"
+#~ msgstr "Accent sur la voix"
+
+#~ msgid "Conversation Awareness"
+#~ msgstr "Prise de conscience de la conversation"
+
+#~ msgid "On"
+#~ msgstr "Activé"
+
+#~ msgid "Ambient"
+#~ msgstr "Ambiant"
+
+#~ msgid "Auto Ambient"
+#~ msgstr "Ambiance automatique"
+
+#~ msgid "Auto Ambient Sensitivity"
+#~ msgstr "Sensibilité de l’ambiance automatique"
+
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#~ msgid "AirPods / Beats"
+#~ msgstr "AirPods / Beats"
+
+#~ msgid "Sony audio devices"
+#~ msgstr "Appareils audio Sony"
+
+#~ msgid "Nothing / CMF Buds"
+#~ msgstr "Nothing / CMF Buds"
+
+#, javascript-format
+#~ msgid "Could not access advanced features for %s."
+#~ msgstr "Impossible d’accéder aux fonctions avancées pour %s."
+
+#, javascript-format
+#~ msgid ""
+#~ "Another app or session is already using the Bluetooth socket/profile on "
+#~ "%s. Close any other apps using this device, then disable and re-enable it "
+#~ "in the extension settings."
+#~ msgstr ""
+#~ "Une autre application ou session utilise déjà la prise ou le profil "
+#~ "Bluetooth sur %s. Fermez toutes les autres applications utilisant cet "
+#~ "appareil, puis désactivez et réactivez-le dans les paramètres de "
+#~ "l’extension."
+
+#~ msgid "Equalizer"
+#~ msgstr "Égaliseur"
+
+#~ msgid "Balanced"
+#~ msgstr "Équilibré"
+
+#~ msgid "Voice"
+#~ msgstr "Voix"
+
+#~ msgid "More Treble"
+#~ msgstr "Plus d’aigus"
+
+#~ msgid "More Bass"
+#~ msgstr "Plus de basses"
+
+#~ msgid "Dirac"
+#~ msgstr "Dirac"
+
+#~ msgid "Rock"
+#~ msgstr "Rock"
+
+#~ msgid "Electronic"
+#~ msgstr "Électronique"
+
+#~ msgid "Pop"
+#~ msgstr "Pop"
+
+#~ msgid "Enhance Vocals"
+#~ msgstr "Améliorer les voix"
+
+#~ msgid "Classical"
+#~ msgstr "Classique"
+
+#~ msgid "Custom"
+#~ msgstr "Personnalisé"
+
+#~ msgid "Equalizer Preset"
+#~ msgstr "Préréglage de l’égaliseur"
+
+#~ msgid "Custom Equalizer"
+#~ msgstr "Égaliseur personnalisé"
+
+#~ msgid "Bass"
+#~ msgstr "Basses"
+
+#~ msgid "Treble"
+#~ msgstr "Aigus"
+
+#~ msgid "Bass Enhance"
+#~ msgstr "Amélioration des basses"
+
+#~ msgid "Enable Bass Enhance"
+#~ msgstr "Activer l’amélioration des basses"
+
+#~ msgid "Bass Enhance Level"
+#~ msgstr "Niveau d’amélioration des basses"
+
+#~ msgid "-"
+#~ msgstr "-"
+
+#~ msgid "+"
+#~ msgstr "+"
+
+#~ msgid "Spatial Audio"
+#~ msgstr "Audio spatial"
+
+#~ msgid "Enable Spatial Audio"
+#~ msgstr "Activer l’audio spatial"
+
+#~ msgid "Additional Settings"
+#~ msgstr "Paramètres supplémentaires"
+
+#~ msgid "Enable low latency mode"
+#~ msgstr "Activer le mode basse latence"
+
+#~ msgid "Enable in ear detection"
+#~ msgstr "Activer la détection dans l’oreille"
+
+#~ msgid "Noise Control Cycle: "
+#~ msgstr "Cycle de contrôle du bruit : "
+
+#~ msgid "Apply"
+#~ msgstr "Appliquer"
+
+#~ msgid "Single Tap"
+#~ msgstr "Appui simple"
+
+#~ msgid "Double Tap"
+#~ msgstr "Double appui"
+
+#~ msgid "Triple Tap"
+#~ msgstr "Triple appui"
+
+#~ msgid "Tap and Hold"
+#~ msgstr "Appui prolongé"
+
+#~ msgid "Double Tap and Hold"
+#~ msgstr "Double appui prolongé"
+
+#~ msgid "Single Press"
+#~ msgstr "Appui simple"
+
+#~ msgid "Double Press"
+#~ msgstr "Double appui"
+
+#~ msgid "Triple Press"
+#~ msgstr "Triple appui"
+
+#~ msgid "Press and Hold"
+#~ msgstr "Appui prolongé"
+
+#~ msgid "Double Press and Hold"
+#~ msgstr "Double appui prolongé"
+
+#~ msgid "Single Pinch"
+#~ msgstr "Pincement simple"
+
+#~ msgid "Double Pinch"
+#~ msgstr "Double pincement"
+
+#~ msgid "Triple Pinch"
+#~ msgstr "Triple pincement"
+
+#~ msgid "Pinch and Hold"
+#~ msgstr "Pincement prolongé"
+
+#~ msgid "Double Pinch and Hold"
+#~ msgstr "Double pincement prolongé"
+
+#~ msgid "Slide to Adjust"
+#~ msgstr "Glisser pour ajuster"
+
+#~ msgid "Rotate"
+#~ msgstr "Rotation"
+
+#~ msgid "Unknown Gesture"
+#~ msgstr "Geste inconnu"
+
+#~ msgid "Gesture Controls"
+#~ msgstr "Contrôles gestuels"
+
+#~ msgid "Left Buds Gesture Control"
+#~ msgstr "Contrôle gestuel de l’oreillette gauche"
+
+#~ msgid "Right Buds Gesture Control"
+#~ msgstr "Contrôle gestuel de l’oreillette droite"
+
+#~ msgid "Roller Gesture Control"
+#~ msgstr "Contrôle gestuel du rouleau"
+
+#~ msgid "Case Gesture Control"
+#~ msgstr "Contrôle gestuel du boîtier"
+
+#~ msgid "Slider Gesture Control"
+#~ msgstr "Contrôle gestuel du curseur"
+
+#~ msgid "Play / Pause"
+#~ msgstr "Lire / Pause"
+
+#~ msgid "Previous Track"
+#~ msgstr "Piste précédente"
+
+#~ msgid "Next Track"
+#~ msgstr "Piste suivante"
+
+#~ msgid "Voice Assistant"
+#~ msgstr "Assistant vocal"
+
+#~ msgid "Volume Up"
+#~ msgstr "Augmenter le volume"
+
+#~ msgid "Volume Down"
+#~ msgstr "Baisser le volume"
+
+#~ msgid "Volume Control"
+#~ msgstr "Contrôle du volume"
+
+#~ msgid "ANC Type"
+#~ msgstr "Type d’ANC"
+
+#~ msgid "No Action"
+#~ msgstr "Aucune action"
+
+#~ msgid "Change Volume"
+#~ msgstr "Modifier le volume"
+
+#~ msgid "Channel Hop"
+#~ msgstr "Changement de chaîne"
+
+#~ msgid "New Reporter"
+#~ msgstr "Nouveau rapporteur"
+
+#~ msgid "Mic On/Off"
+#~ msgstr "Micro activé / désactivé"
+
+#~ msgid "Walkie Takie"
+#~ msgstr "Talkie-walkie"
+
+#~ msgid "Toggle Low Latency"
+#~ msgstr "Basculer en basse latence"
+
+#~ msgid "Essential Space"
+#~ msgstr "Espace essentiel"
+
+#~ msgid "Nothing/CMF Buds"
+#~ msgstr "Buds Nothing/CMF"
+
+#~ msgid "Playback Behavior"
+#~ msgstr "Comportement de lecture"
+
+#~ msgid "Default behavior"
+#~ msgstr "Comportement par défaut"
+
+#~ msgid "Resume with both earbuds, Pause if any removed"
+#~ msgstr ""
+#~ "Reprendre avec les deux écouteurs, mettre en pause si l’un est retiré"
+
+#~ msgid "Resume with any earbud, Pause if both removed"
+#~ msgstr ""
+#~ "Reprendre avec l’un des écouteurs, mettre en pause si les deux sont "
+#~ "retirés"
+
+#~ msgid "Choose playback behaviour for Ear detection"
+#~ msgstr "Choisir le comportement de lecture pour la détection d’oreille"
+
+#~ msgid "Automatically pause or resume playback based on wearing detection."
+#~ msgstr ""
+#~ "Mettre en pause ou reprendre la lecture automatiquement selon la "
+#~ "détection de port."
+
+#~ msgid "Voice detection"
+#~ msgstr "Détection vocale"
+
+#~ msgid "5 seconds"
+#~ msgstr "5 secondes"
+
+#~ msgid "10 seconds"
+#~ msgstr "10 secondes"
+
+#~ msgid "15 seconds"
+#~ msgstr "15 secondes"
+
+#~ msgid "Duration"
+#~ msgstr "Durée"
+
+#~ msgid "Bass Boost"
+#~ msgstr "Boost des basses"
+
+#~ msgid "Soft"
+#~ msgstr "Doux"
+
+#~ msgid "Dynamic"
+#~ msgstr "Dynamique"
+
+#~ msgid "Clear"
+#~ msgstr "Clair"
+
+#~ msgid "Treble Boost"
+#~ msgstr "Boost des aigus"
+
+#~ msgid "Balance"
+#~ msgstr "Balance"
+
+#~ msgid "Center"
+#~ msgstr "Centre"
+
+#~ msgid "Earbuds Controls"
+#~ msgstr "Contrôles des écouteurs"
+
+#~ msgid "Media Controls (Pinch And Swipe)"
+#~ msgstr "Contrôles multimédia (pincer et glisser)"
+
+#~ msgid "Enable Touch Controls "
+#~ msgstr "Activer les commandes tactiles "
+
+#~ msgid "Touch and Hold"
+#~ msgstr "Toucher et maintenir"
+
+#~ msgid "Pinch to Answer Call or End Call"
+#~ msgstr "Pincer pour répondre ou raccrocher"
+
+#~ msgid "Double Tap to Answer Call or End Call"
+#~ msgstr "Double appui pour répondre ou raccrocher"
+
+#~ msgid "Pinch and Hold to Decline Call"
+#~ msgstr "Pincer et maintenir pour refuser l’appel"
+
+#~ msgid "Touch and Hold to Decline Call"
+#~ msgstr "Toucher et maintenir pour refuser l’appel"
+
+#~ msgid "Quick Ambient Sound"
+#~ msgstr "Son ambiant rapide"
+
+#~ msgid "Ambient Sound"
+#~ msgstr "Son ambiant"
+
+#~ msgid "Spotify Spot On"
+#~ msgstr "Spotify Spot On"
+
+#~ msgid "ANC"
+#~ msgstr "ANC"
+
+#~ msgid "Left Earbud Pinch and Hold Function"
+#~ msgstr "Fonction Pincer et maintenir de l’oreillette gauche"
+
+#~ msgid "Left Earbud Touch and Hold Function"
+#~ msgstr "Fonction Toucher et maintenir de l’oreillette gauche"
+
+#~ msgid "Right Earbud Pinch and Hold Function"
+#~ msgstr "Fonction Pincer et maintenir de l’oreillette droite"
+
+#~ msgid "Right Earbud Touch and Hold Function"
+#~ msgstr "Fonction Toucher et maintenir de l’oreillette droite"
+
+#~ msgid "Select any two toggles"
+#~ msgstr "Sélectionnez deux interrupteurs"
+
+#~ msgid "Pinch and Hold Cycle for Left Earbud"
+#~ msgstr "Cycle pincement et maintien pour l’oreillette gauche"
+
+#~ msgid "Pinch and hold cycles between modes (Left)"
+#~ msgstr ""
+#~ "Les cycles de pincement et maintien alternent entre les modes (gauche)"
+
+#~ msgid "Pinch and Hold Cycle for Right Earbud"
+#~ msgstr "Cycle pincement et maintien pour l’oreillette droite"
+
+#~ msgid "Pinch and hold cycles between modes (Right)"
+#~ msgstr ""
+#~ "Les cycles de pincement et maintien alternent entre les modes (droite)"
+
+#~ msgid "Touch and Hold Cycle for Left Earbud"
+#~ msgstr "Cycle toucher et maintien pour l’oreillette gauche"
+
+#~ msgid "Touch and hold cycles between modes (Left)"
+#~ msgstr ""
+#~ "Les cycles de toucher et maintien alternent entre les modes (gauche)"
+
+#~ msgid "Touch and Hold Cycle for Right Earbud"
+#~ msgstr "Cycle toucher et maintien pour l’oreillette droite"
+
+#~ msgid "Touch and hold cycles between modes (Right)"
+#~ msgstr ""
+#~ "Les cycles de toucher et maintien alternent entre les modes (droite)"
+
+#~ msgid "Pinch and Hold Cycle"
+#~ msgstr "Cycle pincement et maintien"
+
+#~ msgid "Pinch and hold cycles between modes"
+#~ msgstr "Les cycles de pincement et maintien alternent entre les modes"
+
+#~ msgid "Touch and Hold Cycle"
+#~ msgstr "Cycle toucher et maintien"
+
+#~ msgid "Touch and hold cycles between modes"
+#~ msgstr "Les cycles de toucher et maintien alternent entre les modes"
+
+#~ msgid "Ambient Sound During Calls"
+#~ msgstr "Son ambiant pendant les appels"
+
+#~ msgid "Noise Controls With One Earbud"
+#~ msgstr "Contrôles du bruit avec une seule oreillette"
+
+#~ msgid "Double Tap Outside Edge For Volume Controls"
+#~ msgstr "Double appui sur le bord extérieur pour les commandes de volume"
+
+#~ msgid "Left Ambient Sound Volume"
+#~ msgstr "Volume du son ambiant à gauche"
+
+#~ msgid "Right Ambient Sound Volume"
+#~ msgstr "Volume du son ambiant à droite"
+
+#~ msgid "Ambient Sound Tone"
+#~ msgstr "Ton du son ambiant"
+
+#~ msgid "Auto"
+#~ msgstr "Auto"
+
+#~ msgid "Voice Detection Sensitivity"
+#~ msgstr "Sensibilité de détection vocale"
+
+#~ msgid "Short"
+#~ msgstr "Court"
+
+#~ msgid "Long"
+#~ msgstr "Long"
+
+#~ msgid "Listening Mode"
+#~ msgstr "Mode d’écoute"
+
+#~ msgid "Background Music"
+#~ msgstr "Musique de fond"
+
+#~ msgid "Cinema"
+#~ msgstr "Cinéma"
+
+#~ msgid "My Room"
+#~ msgstr "Ma chambre"
+
+#~ msgid "Living Room"
+#~ msgstr "Salon"
+
+#~ msgid "Cafe"
+#~ msgstr "Café"
+
+#~ msgid "Background Music Effects"
+#~ msgstr "Effets de musique de fond"
+
+#~ msgid "Bright"
+#~ msgstr "Vif"
+
+#~ msgid "Excited"
+#~ msgstr "Excité"
+
+#~ msgid "Mellow"
+#~ msgstr "Doux"
+
+#~ msgid "Relaxed"
+#~ msgstr "Détendu"
+
+#~ msgid "Vocal"
+#~ msgstr "Vocal"
+
+#~ msgid "Speech"
+#~ msgstr "Parole"
+
+#~ msgid "Manual"
+#~ msgstr "Manuel"
+
+#~ msgid "Custom 1"
+#~ msgstr "Personnalisé 1"
+
+#~ msgid "Custom 2"
+#~ msgstr "Personnalisé 2"
+
+#~ msgid "400"
+#~ msgstr "400"
+
+#~ msgid "1k"
+#~ msgstr "1k"
+
+#~ msgid "2.5k"
+#~ msgstr "2.5k"
+
+#~ msgid "6.3k"
+#~ msgstr "6.3k"
+
+#~ msgid "16k"
+#~ msgstr "16k"
+
+#~ msgid "31"
+#~ msgstr "31"
+
+#~ msgid "63"
+#~ msgstr "63"
+
+#~ msgid "125"
+#~ msgstr "125"
+
+#~ msgid "250"
+#~ msgstr "250"
+
+#~ msgid "500"
+#~ msgstr "500"
+
+#~ msgid "2k"
+#~ msgstr "2k"
+
+#~ msgid "4k"
+#~ msgstr "4k"
+
+#~ msgid "8k"
+#~ msgstr "8k"
+
+#~ msgid "DSEE"
+#~ msgstr "DSEE"
+
+#~ msgid "Enable DSEE enhancement"
+#~ msgstr "Activer l’amélioration DSEE"
+
+#~ msgid "Button/Touch Settings"
+#~ msgstr "Paramètres des boutons/touches"
+
+#~ msgid "Ambient Sound Control"
+#~ msgstr "Contrôle du son ambiant"
+
+#~ msgid "Ambient Sound Control / Quick Access"
+#~ msgstr "Contrôle du son ambiant / accès rapide"
+
+#~ msgid "Playback Control"
+#~ msgstr "Contrôle de lecture"
+
+#~ msgid "Not Assigned"
+#~ msgstr "Non attribué"
+
+#~ msgid "Left Bud"
+#~ msgstr "Oreillette gauche"
+
+#~ msgid "Right Bud"
+#~ msgstr "Oreillette droite"
+
+#~ msgid "ANC Button Configuration"
+#~ msgstr "Configuration du bouton ANC"
+
+#~ msgid "[NC/AMB] Button Settings"
+#~ msgstr "Paramètres du bouton [NC/AMB]"
+
+#~ msgid "Select the modes to toggle when the button is pressed"
+#~ msgstr "Sélectionnez les modes à basculer lorsque le bouton est pressé"
+
+#~ msgid "Notification"
+#~ msgstr "Notification"
+
+#~ msgid "Voice Notification"
+#~ msgstr "Notification vocale"
+
+#~ msgid "Enable voice notification"
+#~ msgstr "Activer la notification vocale"
+
+#~ msgid "Voice Notification Volume"
+#~ msgstr "Volume de notification vocale"
+
+#~ msgid "-2"
+#~ msgstr "-2"
+
+#~ msgid "-1"
+#~ msgstr "-1"
+
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgid "+1"
+#~ msgstr "+1"
+
+#~ msgid "+2"
+#~ msgstr "+2"
+
+#~ msgid "Headset Take off"
+#~ msgstr "Retrait du casque"
+
+#~ msgid "Pause when taken off"
+#~ msgstr "Mettre en pause lorsqu’il est retiré"
+
+#~ msgid "Automatically Power Off"
+#~ msgstr "Mise hors tension automatique"
+
+#~ msgid "Automatically power off when not worn."
+#~ msgstr "S’éteindre automatiquement lorsqu’il n’est pas porté."
+
+#~ msgid "After 5 minutes"
+#~ msgstr "Après 5 minutes"
+
+#~ msgid "After 15 minutes"
+#~ msgstr "Après 15 minutes"
+
+#~ msgid "After 30 minutes"
+#~ msgstr "Après 30 minutes"
+
+#~ msgid "After 1 hour"
+#~ msgstr "Après 1 heure"
+
+#~ msgid "After 3 hours"
+#~ msgstr "Après 3 heures"
+
+#~ msgid "Auto Power Off"
+#~ msgstr "Mise hors tension automatique"
+
+#~ msgid "Resume when worn"
+#~ msgstr "Reprendre lorsqu’il est porté"
+
+#~ msgid "Volume Level"
+#~ msgstr "Niveau du volume"
+
+#~ msgid "Pause when device is not worn"
+#~ msgstr "Mettre en pause lorsque l’appareil n’est pas porté"
+
+#~ msgid ""
+#~ "Pause playback when the device is removed,resume when it is put back on"
+#~ msgstr ""
+#~ "Mettre la lecture en pause lorsque l’appareil est retiré, reprendre "
+#~ "lorsqu’il est remis"
+
+#~ msgid "Conversation awareness volume limit"
+#~ msgstr "Limite de volume de la conscience de conversation"
+
+#~ msgid ""
+#~ "Limits media volume to this percentage during conversation. Note: No "
+#~ "change if current volume is below this level."
+#~ msgstr ""
+#~ "Limite le volume multimédia à ce pourcentage pendant la conversation. "
+#~ "Remarque : aucun changement si le volume actuel est inférieur à ce niveau."
+
+#~ msgid "Turn off listening modes"
+#~ msgstr "Désactiver les modes d’écoute"
+
+#~ msgid "Allows to turn off all listening mode technology"
+#~ msgstr "Permet de désactiver toute la technologie des modes d’écoute"
+
+#~ msgid ""
+#~ "Allows Noise Cancellation, Transparency, and Adaptive modes to be fully "
+#~ "disabled. Disabling listening modes also turns off Hearing Aid features "
+#~ "and reduces power usage."
+#~ msgstr ""
+#~ "Permet de désactiver complètement les modes d’annulation du bruit, de "
+#~ "transparence et adaptatifs. Désactiver les modes d’écoute désactive "
+#~ "également les fonctions d’aide auditive et réduit la consommation "
+#~ "d’énergie."
+
+#~ msgid "Press and Hold Cycle"
+#~ msgstr "Cycle Appui prolongé"
+
+#~ msgid "Press and hold cycles between"
+#~ msgstr "Les cycles d’appui prolongé alternent entre"
+
+#~ msgid "Settings don’t reflect current state"
+#~ msgstr "Les paramètres ne reflètent pas l'état actuel"
+
+#~ msgid "Notification Volume"
+#~ msgstr "Volume des notifications"
+
+#~ msgid "Tone Volume"
+#~ msgstr "Volume du ton"
+
+#~ msgid "Adjust the tone volume of sound effects played by AirPods"
+#~ msgstr "Ajuster le volume des effets sonores diffusés par les AirPods"
+
+#~ msgid "15%"
+#~ msgstr "15%"
+
+#~ msgid "100%"
+#~ msgstr "100%"
+
+#~ msgid "125%"
+#~ msgstr "125%"
+
+#~ msgid "Volume Swipe"
+#~ msgstr "Glisser pour le volume"
+
+#~ msgid "Enable or disable volume adjustment by swiping on earbud stems"
+#~ msgstr ""
+#~ "Activer ou désactiver le réglage du volume en glissant sur les tiges des "
+#~ "écouteurs"
+
+#~ msgid "Default"
+#~ msgstr "Par défaut"
+
+#~ msgid "Longer"
+#~ msgstr "Plus long"
+
+#~ msgid "Longest"
+#~ msgstr "Le plus long"
+
+#~ msgid "Swipe Duration"
+#~ msgstr "Durée du glissement"
+
+#~ msgid ""
+#~ "To prevent unintended adjustments,select the preferred wait time between "
+#~ "swipes"
+#~ msgstr ""
+#~ "Pour éviter les réglages involontaires, sélectionnez le temps d’attente "
+#~ "préféré entre les glissements"
+
+#~ msgid "Stem and Crown Response"
+#~ msgstr "Réponse de la tige et de la couronne"
+
+#~ msgid "Press Speed"
+#~ msgstr "Vitesse d’appui"
+
+#~ msgid ""
+#~ "Adjust how quickly you must double or triple-press the stem or Digital "
+#~ "Crown before an action occurs"
+#~ msgstr ""
+#~ "Ajuste la rapidité à laquelle vous devez effectuer un double ou triple "
+#~ "appui sur la tige ou la couronne numérique avant qu’une action ne se "
+#~ "produise"
+
+#~ msgid "Shorter"
+#~ msgstr "Plus court"
+
+#~ msgid "Shortest"
+#~ msgstr "Le plus court"
+
+#~ msgid "Press and Hold Duration"
+#~ msgstr "Durée d’appui prolongé"
+
+#~ msgid "Set how long you need to press and hold before an action occurs"
+#~ msgstr ""
+#~ "Définissez la durée pendant laquelle vous devez maintenir l’appui avant "
+#~ "qu’une action ne se produise"
+
+#~ msgid "AirPods/Beats"
+#~ msgstr "AirPods/Beats"
+
+#~ msgid "Find my earbuds"
+#~ msgstr "Retrouver mes écouteurs"
+
+#~ msgid "Play"
+#~ msgstr "Lire"
+
+#~ msgid "Stop"
+#~ msgstr "Arrêter"
+
+#~ msgid "Continue?"
+#~ msgstr "Continuer ?"
+
+#~ msgid ""
+#~ "Your earbuds/headset may be in use. Be sure to remove them from your ears "
+#~ "before you continue. A loud sound will be played which could be "
+#~ "uncomfortable for anyone wearing them."
+#~ msgstr ""
+#~ "Vos écouteurs/casque peuvent être utilisés. Assurez-vous de les retirer "
+#~ "de vos oreilles avant de continuer. Un son fort sera joué, ce qui peut "
+#~ "être inconfortable pour toute personne qui les porte."
+
+#~ msgid "Cancel"
+#~ msgstr "Annuler"
+
+#~ msgid "Device information"
+#~ msgstr "Informations sur l’appareil"
+
+#~ msgid "Mac Address"
+#~ msgstr "Adresse MAC"
+
+#~ msgid "Firmware Version"
+#~ msgstr "Version du firmware"
+
+#~ msgid ""
+#~ "Some models/features are not fully tested. Please share feedback on "
+#~ "GitHub."
+#~ msgstr ""
+#~ "Certains modèles/fonctionnalités ne sont pas entièrement testés. Veuillez "
+#~ "partager vos commentaires sur GitHub."
+
+#~ msgid "Nothing/CMF Buds Settings"
+#~ msgstr "Paramètres des Nothing/CMF Buds"
+
+#~ msgid "Enable Nothing/CMF Buds Support"
+#~ msgstr "Activer la prise en charge des Nothing/CMF Buds"
+
+#~ msgid ""
+#~ "Enables battery status monitoring and, if supported, control of Noise "
+#~ "Cancellation."
+#~ msgstr ""
+#~ "Active la surveillance de l’état de batterie et, si elle est prise en "
+#~ "charge, le contrôle de l’annulation du bruit."
+
+#~ msgid "Sony Bluetooth Audio"
+#~ msgstr "Audio Bluetooth Sony"
+
+#~ msgid "Sony Bluetooth Audio Settings"
+#~ msgstr "Paramètres audio Bluetooth Sony"
+
+#~ msgid "Enable Sony Bluetooth Audio Support"
+#~ msgstr "Activer la prise en charge de l’audio Bluetooth Sony"
+
+#~ msgid ""
+#~ "Enables battery status monitoring and, if supported, control of Noise "
+#~ "Cancellation and Conversation Awareness modes."
+#~ msgstr ""
+#~ "Active la surveillance de l’état de batterie et, si elle est prise en "
+#~ "charge, le contrôle des modes d’annulation du bruit et de conscience de "
+#~ "conversation."
+
+#~ msgid ""
+#~ "Conversation Awareness (if supported) works only with the A2DP profile."
+#~ msgstr ""
+#~ "La conscience de conversation (si prise en charge) ne fonctionne qu’avec "
+#~ "le profil A2DP."
+
+#~ msgid ""
+#~ "ANC and Conversation Awareness buttons are hidden when the earbuds are "
+#~ "not in-ear."
+#~ msgstr ""
+#~ "Les boutons ANC et de conscience de conversation sont masqués lorsque les "
+#~ "écouteurs ne sont pas en place."
+
+#~ msgid "AirPods/Beats Settings"
+#~ msgstr "Paramètres AirPods/Beats"
+
+#~ msgid "Enable AirPods/Beats Support"
+#~ msgstr "Activer la prise en charge des AirPods/Beats"
+
+#~ msgid "Samsung Galaxy Buds Settings"
+#~ msgstr "Paramètres des Samsung Galaxy Buds"
+
+#~ msgid "Enable Samsung Galaxy Buds Support"
+#~ msgstr "Activer la prise en charge des Samsung Galaxy Buds"
+
 #~ msgid "(Added)"
 #~ msgstr "(Ajouté)"
 
@@ -1680,7 +1700,9 @@ msgstr "Tutoriels en ligne"
 #~ msgstr "Activer les indicateurs de batterie pour les appareils Bluetooth"
 
 #~ msgid "Displays Bluetooth device icon with battery level in system tray"
-#~ msgstr "Affiche l'icône du périphérique Bluetooth avec le niveau de batterie dans la barre d'état système"
+#~ msgstr ""
+#~ "Affiche l'icône du périphérique Bluetooth avec le niveau de batterie dans "
+#~ "la barre d'état système"
 
 #~ msgid "Upower"
 #~ msgstr "Alimentation"
