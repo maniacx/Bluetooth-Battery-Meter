@@ -1,1868 +1,2997 @@
-# Slovak translation for gnome-shell.
-# Copyright (C) 2011-2013 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-shell package.
-#
-# Peter Mráz <etkinator@gmail.com>, 2011.
-# Michal Štrba <faiface2202@gmail.com>, 2011.
-# Andrej Shadura <andrew@shadura.me>, 2019.
-# Matej Mrenica <matejm98mthw@gmail.com>, 2021.
-# Dušan Kazik <prescott66@gmail.com>, 2012-2022.
+# Bluetooth Battery Meter Slovak translation
+# Copyright (C) YEAR maniacx@github.com
+# This file is distributed under the same license as the Bluetooth Battery Meter package.
+# Jozef Gaal <preklady@mayday.sk>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-shell\n"
+"Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 18:41-0600\n"
-"PO-Revision-Date: 2023-11-27 14:42+0100\n"
-"Last-Translator: Dušan Kazik\n"
-"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"POT-Creation-Date: 2026-09-08 20:28+0200\n"
+"PO-Revision-Date: 2026-09-08 22:29+0200\n"
+"Last-Translator: Jozef Gaal <preklady@mayday.sk>\n"
+"Language-Team: Slovak <preklady@mayday.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 3.4.1\n"
-"X-DamnedLies-Scope: partial\n"
-"X-Project-Style: gnome\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Generator: Poedit 3.9\n"
 
-#: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
-#: lib/devices/notifier.js:37 lib/panelButtonSingleDevice.js:15
-#: lib/panelButtonSingleDevice.js:26
+#: ../prefs.js:89 ../lib/panelButtonSingleDevice.js:15
+#: ../lib/panelButtonSingleDevice.js:26 ../lib/devices/notifier.js:52
+#: ../lib/panelButtonMultiDevice.js:13 ../lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "Bluetooth Battery Meter"
 
-#: lib/bluetoothToggle.js:536
+#: ../lib/bluetoothToggle.js:569
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
-msgstr[0] "%d pripojených"
-msgstr[1] "%d pripojený"
-msgstr[2] "%d pripojené"
+msgstr[0] "%d pripojený"
+msgstr[1] "%d pripojené"
+msgstr[2] "%d pripojených"
 
-#: lib/devices/nothingBuds/nothingBudsDevice.js:356
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:574
-#: lib/devices/sony/sonyDevice.js:164 lib/devices/airpods/airpodsDevice.js:173
-#: preferences/devices/nothingBuds/configureWindow.js:640
-#: preferences/devices/galaxyBuds/configureWindow.js:457
+#: ../lib/devices/airpods/airpodsDevice.js:174
+#: ../lib/devices/senhBuds/senhBudsDevice.js:548
+#: ../lib/devices/boseBuds/boseBudsDevice.js:671
+#: ../lib/devices/boseBuds/boseBudsDevice.js:746
+#: ../lib/devices/boseBuds/boseBudsDevice.js:748
+#: ../lib/devices/gfps/gfpsDevice.js:168
+#: ../lib/devices/googleBuds/googleBudsDevice.js:199
+#: ../lib/devices/sony/sonyDevice.js:180
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:592
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:522
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:363
+#: ../preferences/devices/boseBuds/configureWindow.js:799
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:100
+#: ../preferences/devices/galaxyBuds/configureWindow.js:473
+#: ../preferences/devices/redmiBuds/configureWindow.js:510
+#: ../preferences/devices/nothingBuds/configureWindow.js:646
 msgid "Noise Control"
-msgstr ""
+msgstr "Ovládanie hluku"
 
-#: lib/devices/nothingBuds/nothingBudsDevice.js:366
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:609
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:675
-#: lib/devices/sony/sonyDevice.js:166 lib/devices/sony/sonyDevice.js:199
-#: lib/devices/airpods/airpodsDevice.js:200
-#: lib/devices/airpods/airpodsDevice.js:242
-#: preferences/devices/nothingBuds/configureWindow.js:405
-#: preferences/devices/galaxyBuds/configureWindow.js:261
-#: preferences/devices/galaxyBuds/configureWindow.js:513
-#: preferences/devices/sony/configureWindow.js:131
-#: preferences/devices/sony/configureWindow.js:215
-#: preferences/devices/sony/configureWindow.js:285
-#: preferences/devices/sony/configureWindow.js:362
-#: preferences/devices/airpods/configureWindow.js:226 ui/indicator.ui:114
+#: ../lib/devices/airpods/airpodsDevice.js:201
+#: ../lib/devices/airpods/airpodsDevice.js:243
+#: ../lib/devices/senhBuds/senhBudsDevice.js:559
+#: ../lib/devices/senhBuds/senhBudsDevice.js:589
+#: ../lib/devices/boseBuds/boseBudsDevice.js:675
+#: ../lib/devices/boseBuds/boseBudsDevice.js:758
+#: ../lib/devices/gfps/gfpsDevice.js:170 ../lib/devices/gfps/gfpsDevice.js:182
+#: ../lib/devices/googleBuds/googleBudsDevice.js:211
+#: ../lib/devices/sony/sonyDevice.js:182 ../lib/devices/sony/sonyDevice.js:215
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:627
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:693
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:541
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:373
+#: ../preferences/devices/airpods/configureWindow.js:226
+#: ../preferences/devices/senhBuds/configureWindow.js:230
+#: ../preferences/devices/senhBuds/configureWindow.js:441
+#: ../preferences/devices/senhBuds/configureWindow.js:704
+#: ../preferences/devices/boseBuds/configureWindow.js:492
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:182
+#: ../preferences/devices/sony/configureWindow.js:133
+#: ../preferences/devices/sony/configureWindow.js:215
+#: ../preferences/devices/sony/configureWindow.js:295
+#: ../preferences/devices/sony/configureWindow.js:372
+#: ../preferences/devices/galaxyBuds/configureWindow.js:277
+#: ../preferences/devices/galaxyBuds/configureWindow.js:529
+#: ../preferences/devices/redmiBuds/configureWindow.js:372
+#: ../preferences/devices/nothingBuds/configureWindow.js:411
+#: ../ui/indicator.ui:114
 msgid "Off"
-msgstr ""
+msgstr "Vypnuté"
 
-#: lib/devices/nothingBuds/nothingBudsDevice.js:370
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:610
-#: lib/devices/airpods/airpodsDevice.js:201
-#: preferences/devices/airpods/configureWindow.js:233
+#: ../lib/devices/airpods/airpodsDevice.js:202
+#: ../lib/devices/gfps/gfpsDevice.js:188
+#: ../lib/devices/googleBuds/googleBudsDevice.js:217
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:628
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:550
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:377
+#: ../preferences/devices/airpods/configureWindow.js:233
 msgid "Transparency"
-msgstr ""
+msgstr "Priehľadnosť"
 
-#: lib/devices/nothingBuds/nothingBudsDevice.js:386
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:649
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:660
-msgid "Noise Cancellation Level"
-msgstr ""
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:389
-#: lib/devices/sony/sonyDevice.js:181
-#: preferences/devices/sony/configureWindow.js:115
-msgid "High"
-msgstr ""
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:390
-#: preferences/devices/nothingBuds/configureWindow.js:252
-msgid "Mid"
-msgstr ""
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:391
-#: lib/devices/sony/sonyDevice.js:181
-#: preferences/devices/sony/configureWindow.js:115
-msgid "Low"
-msgstr ""
-
-#: lib/devices/nothingBuds/nothingBudsDevice.js:392
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:611
-#: lib/devices/airpods/airpodsDevice.js:202
-#: preferences/devices/galaxyBuds/configureWindow.js:519
-#: preferences/devices/airpods/configureWindow.js:246
+#: ../lib/devices/airpods/airpodsDevice.js:203
+#: ../lib/devices/senhBuds/senhBudsDevice.js:561
+#: ../lib/devices/gfps/gfpsDevice.js:194
+#: ../lib/devices/googleBuds/googleBudsDevice.js:229
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:629
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:574
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:578
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:591
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:399
+#: ../preferences/devices/airpods/configureWindow.js:246
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:142
+#: ../preferences/devices/galaxyBuds/configureWindow.js:535
 msgid "Adaptive"
-msgstr ""
+msgstr "Adaptívne"
 
-#: lib/devices/nothingBuds/nothingBudsDevice.js:414
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:612
-#: lib/devices/sony/sonyDevice.js:171 lib/devices/airpods/airpodsDevice.js:203
-#: preferences/devices/nothingBuds/configureWindow.js:407
-#: preferences/devices/galaxyBuds/configureWindow.js:515
-#: preferences/devices/sony/configureWindow.js:360
-#: preferences/devices/airpods/configureWindow.js:239
+#: ../lib/devices/airpods/airpodsDevice.js:204
+#: ../lib/devices/senhBuds/senhBudsDevice.js:560
+#: ../lib/devices/boseBuds/boseBudsDevice.js:749
+#: ../lib/devices/gfps/gfpsDevice.js:172 ../lib/devices/gfps/gfpsDevice.js:200
+#: ../lib/devices/googleBuds/googleBudsDevice.js:223
+#: ../lib/devices/sony/sonyDevice.js:187
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:630
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:559
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:421
+#: ../preferences/devices/airpods/configureWindow.js:239
+#: ../preferences/devices/sony/configureWindow.js:370
+#: ../preferences/devices/galaxyBuds/configureWindow.js:531
+#: ../preferences/devices/redmiBuds/configureWindow.js:374
+#: ../preferences/devices/nothingBuds/configureWindow.js:413
 msgid "Noise Cancellation"
-msgstr ""
+msgstr "Potlačenie hluku"
 
-#: lib/devices/nothingBuds/nothingBudsDevice.js:422
-msgid "Personalised ANC"
-msgstr ""
-
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:647
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:657
-#: lib/devices/sony/sonyDevice.js:174 lib/devices/airpods/airpodsDevice.js:232
+#: ../lib/devices/airpods/airpodsDevice.js:233
+#: ../lib/devices/sony/sonyDevice.js:190
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:665
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:675
 msgid "Ambient Level"
-msgstr ""
+msgstr "Úroveň okolitého prostredia"
 
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:653
-#: lib/devices/sony/sonyDevice.js:177 lib/devices/sony/sonyDevice.js:179
-#: lib/devices/sony/sonyDevice.js:183
-msgid "Focus on Voice"
-msgstr ""
-
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:671
-#: lib/devices/sony/sonyDevice.js:195 lib/devices/airpods/airpodsDevice.js:238
-#: preferences/devices/sony/configureWindow.js:113
+#: ../lib/devices/airpods/airpodsDevice.js:239
+#: ../lib/devices/sony/sonyDevice.js:211
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:689
+#: ../preferences/devices/sony/configureWindow.js:115
 msgid "Conversation Awareness"
-msgstr ""
+msgstr "Detekcia konverzácie"
 
-#: lib/devices/galaxyBuds/galaxyBudsDevice.js:673
-#: lib/devices/sony/sonyDevice.js:197 lib/devices/airpods/airpodsDevice.js:240
+#: ../lib/devices/airpods/airpodsDevice.js:241
+#: ../lib/devices/sony/sonyDevice.js:213
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:691
 msgid "On"
-msgstr ""
+msgstr "Zapnuté"
 
-#: lib/devices/sony/sonyDevice.js:168
-#: preferences/devices/nothingBuds/configureWindow.js:406
-#: preferences/devices/galaxyBuds/configureWindow.js:514
-#: preferences/devices/sony/configureWindow.js:361
+#: ../lib/devices/senhBuds/senhBudsDevice.js:582
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:624
+msgid "Noise Level"
+msgstr "Úroveň hluku"
+
+#: ../lib/devices/senhBuds/senhBudsDevice.js:590
+msgid "Max"
+msgstr "Max"
+
+#: ../lib/devices/senhBuds/senhBudsDevice.js:591
+#: ../preferences/devices/sony/configureWindow.js:117
+#: ../preferences/devices/sony/configureWindow.js:295
+msgid "Auto"
+msgstr "Automaticky"
+
+#: ../lib/devices/boseBuds/boseBudsDevice.js:676
+#: ../lib/devices/sony/sonyDevice.js:197
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:588
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:396
+#: ../preferences/devices/senhBuds/configureWindow.js:442
+#: ../preferences/devices/boseBuds/configureWindow.js:493
+#: ../preferences/devices/sony/configureWindow.js:117
+msgid "Low"
+msgstr "Nízka"
+
+#: ../lib/devices/boseBuds/boseBudsDevice.js:677
+#: ../lib/devices/sony/sonyDevice.js:197
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:590
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:398
+#: ../preferences/devices/senhBuds/configureWindow.js:443
+#: ../preferences/devices/boseBuds/configureWindow.js:495
+#: ../preferences/devices/sony/configureWindow.js:117
+msgid "High"
+msgstr "Vysoká"
+
+#: ../lib/devices/boseBuds/boseBudsDevice.js:678
+msgid "Wind"
+msgstr "Vietor"
+
+#: ../lib/devices/boseBuds/boseBudsDevice.js:706
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:736
+msgid "Modes"
+msgstr "Režimy"
+
+#: ../lib/devices/boseBuds/boseBudsDevice.js:756
+#: ../preferences/devices/boseBuds/configureWindow.js:781
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:177
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:181
+#: ../preferences/devices/nothingBuds/configureWindow.js:338
+#: ../preferences/devices/nothingBuds/configureWindow.js:664
+msgid "Spatial Audio"
+msgstr "Priestorový zvuk"
+
+#: ../lib/devices/boseBuds/boseBudsDevice.js:762
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:182
+msgid "Motion"
+msgstr "Pohyb"
+
+#: ../lib/devices/sony/sonyDevice.js:184
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:635
+#: ../preferences/devices/sony/configureWindow.js:371
+#: ../preferences/devices/galaxyBuds/configureWindow.js:530
+#: ../preferences/devices/redmiBuds/configureWindow.js:373
+#: ../preferences/devices/nothingBuds/configureWindow.js:412
 msgid "Ambient"
-msgstr ""
+msgstr "Okolité"
 
-#: lib/devices/sony/sonyDevice.js:177 lib/devices/sony/sonyDevice.js:179
+#: ../lib/devices/sony/sonyDevice.js:193 ../lib/devices/sony/sonyDevice.js:195
 msgid "Auto Ambient"
-msgstr ""
+msgstr "Automatické okolité prostredie"
 
-#: lib/devices/sony/sonyDevice.js:180
+#: ../lib/devices/sony/sonyDevice.js:193 ../lib/devices/sony/sonyDevice.js:195
+#: ../lib/devices/sony/sonyDevice.js:199
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:671
+msgid "Focus on Voice"
+msgstr "Zamerať sa na hlas"
+
+#: ../lib/devices/sony/sonyDevice.js:196
 msgid "Auto Ambient Sensitivity"
-msgstr ""
+msgstr "Automatická citlivosť na okolité prostredie"
 
-#: lib/devices/sony/sonyDevice.js:181
-#: preferences/devices/sony/configureWindow.js:131
-#: preferences/devices/sony/configureWindow.js:155
+#: ../lib/devices/sony/sonyDevice.js:197
+#: ../preferences/devices/sony/configureWindow.js:133
+#: ../preferences/devices/sony/configureWindow.js:157
+#: ../preferences/devices/redmiBuds/configureWindow.js:218
 msgid "Standard"
-msgstr ""
+msgstr "Štandardné"
 
-#: lib/devices/notifier.js:21
-msgid "AirPods / Beats"
-msgstr ""
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:667
+#: ../lib/devices/galaxyBuds/galaxyBudsDevice.js:678
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:393
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:122
+msgid "Noise Cancellation Level"
+msgstr "Úroveň potlačenia hluku"
 
-#: lib/devices/notifier.js:23 preferences/devices/sony/devicePrefs.js:37
-msgid "Sony audio devices"
-msgstr ""
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:589
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:397
+#: ../preferences/devices/boseBuds/configureWindow.js:324
+#: ../preferences/devices/googleBuds/configureWindow.js:135
+#: ../preferences/devices/nothingBuds/configureWindow.js:263
+msgid "Mid"
+msgstr "Stredná"
 
-#: lib/devices/notifier.js:25 preferences/devices/galaxyBuds/devicePrefs.js:37
-#: ui/devices/galaxyBuds.ui:5
-msgid "Samsung Galaxy Buds"
-msgstr ""
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:611
+msgid "Noise Cancellation Strength"
+msgstr "Úroveň potlačenia hluku"
 
-#: lib/devices/notifier.js:27
-msgid "Nothing / CMF Buds"
-msgstr ""
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:633
+msgid "Regular"
+msgstr "Bežný"
 
-#: lib/devices/notifier.js:48
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:634
+#: ../preferences/devices/redmiBuds/configureWindow.js:219
+#: ../preferences/devices/nothingBuds/configureWindow.js:221
+msgid "Voice"
+msgstr "Hlas"
+
+#: ../lib/devices/redmiBuds/redmiBudsDevice.js:655
+msgid "Transparency Strength"
+msgstr "Úroveň priehľadnosti"
+
+#: ../lib/devices/nothingBuds/nothingBudsDevice.js:429
+msgid "Personalised ANC"
+msgstr "Personalizované aktívne potlačenie hluku (ANC)"
+
+#: ../lib/devices/notifier.js:26
+msgid "AirPods / Beats Bluetooth audio devices"
+msgstr "AirPods / Beats Bluetooth audio zariadenia"
+
+#: ../lib/devices/notifier.js:28
+msgid "Sony Bluetooth audio devices"
+msgstr "Sony Bluetooth audio zariadenia"
+
+#: ../lib/devices/notifier.js:30
+msgid "Samsung Galaxy Bluetooth audio devices"
+msgstr "Samsung Galaxy Bluetooth audio zariadenia"
+
+#: ../lib/devices/notifier.js:32
+msgid "Nothing / CMF Bluetooth audio devices"
+msgstr "Nothing / CMF Bluetooth audio zariadenia"
+
+#: ../lib/devices/notifier.js:34
+msgid "Google Pixel Buds Bluetooth audio devices"
+msgstr "Google Pixel Buds Bluetooth audio zariadenia"
+
+#: ../lib/devices/notifier.js:36
+msgid "Redmi / Xiaomi Bluetooth audio devices"
+msgstr "Redmi / Xiaomi Bluetooth audio zariadenia"
+
+#: ../lib/devices/notifier.js:38
+msgid "Sennheiser Bluetooth audio devices"
+msgstr "Sennheiser Bluetooth audio zariadenia"
+
+#: ../lib/devices/notifier.js:40
+msgid "Bose Bluetooth audio devices"
+msgstr "Bose Bluetooth audio zariadenia"
+
+#: ../lib/devices/notifier.js:42
+msgid "Google Fast Pair Bluetooth audio devices"
+msgstr "Google Fast Pair Bluetooth audio zariadenia"
+
+#: ../lib/devices/notifier.js:63
 #, javascript-format
 msgid "Could not access advanced features for %s."
-msgstr ""
+msgstr "Nepodarilo sa získať prístup k rozšíreným funkciám pre %s."
 
-#: lib/devices/notifier.js:50
+#: ../lib/devices/notifier.js:65
 #, javascript-format
 msgid ""
 "Another app or session is already using the Bluetooth socket/profile on %s. "
 "Close any other apps using this device, then disable and re-enable it in the "
 "extension settings."
 msgstr ""
+"Bluetooth socket/profil na %s už používa iná aplikácia alebo relácia. "
+"Zatvorte všetky ostatné aplikácie, ktoré používajú toto zariadenie, a potom "
+"ho v nastaveniach rozšírenia deaktivujte a opäť aktivujte."
 
-#: lib/widgets/bluetoothGnomePopupMenu.js:56
-#: lib/widgets/bluetoothPopupSubMenu.js:305
-#: lib/widgets/bluetoothPopupMenu.js:82 lib/widgets/popupMenuWidget.js:111
+#: ../lib/widgets/bluetoothPopupSubMenu.js:296
+#: ../lib/widgets/popupMenuWidget.js:105
+msgid "Collapse submenu"
+msgstr "Zbaliť podponuku"
+
+#: ../lib/widgets/bluetoothPopupSubMenu.js:304
+#: ../lib/widgets/popupMenuWidget.js:111
+#: ../lib/widgets/bluetoothGnomePopupMenu.js:56
+#: ../lib/widgets/bluetoothPopupMenu.js:82
+#: ../preferences/widgets/deviceMgmtRowWidget.js:350
 msgid "Disconnect"
 msgstr "Odpojiť"
 
-#: lib/widgets/bluetoothGnomePopupMenu.js:56
-#: lib/widgets/bluetoothPopupSubMenu.js:305
-#: lib/widgets/bluetoothPopupMenu.js:82
+#: ../lib/widgets/bluetoothPopupSubMenu.js:304
+#: ../lib/widgets/bluetoothGnomePopupMenu.js:56
+#: ../lib/widgets/bluetoothPopupMenu.js:82
+#: ../preferences/widgets/deviceMgmtRowWidget.js:349
 msgid "Connect"
 msgstr "Pripojiť"
 
+#: ../lib/widgets/popupMenuWidget.js:75
+msgid "Pin to panel"
+msgstr "Pripnúť na panel"
+
+#: ../lib/widgets/popupMenuWidget.js:95
+msgid "Device settings"
+msgstr "Nastavenia zariadenia"
+
 #. Translators: %s is a device name like "MyPhone"
-#: lib/widgets/bluetoothGnomePopupMenu.js:77
+#: ../lib/widgets/bluetoothGnomePopupMenu.js:77
 #, javascript-format
 msgid "Disconnect %s"
-msgstr "Odpojiť zariadenie %s"
+msgstr "Odpojiť %s"
 
 #. Translators: %s is a device name like "MyPhone"
-#: lib/widgets/bluetoothGnomePopupMenu.js:79
+#: ../lib/widgets/bluetoothGnomePopupMenu.js:79
 #, javascript-format
 msgid "Connect to %s"
-msgstr "Pripojiť k zariadeniu %s"
+msgstr "Pripojiť k %s"
 
-#: lib/widgets/bluetoothPopupSubMenu.js:297 lib/widgets/popupMenuWidget.js:105
-msgid "Collapse submenu"
-msgstr ""
-
-#: lib/widgets/popupMenuWidget.js:75
-msgid "Pin to panel"
-msgstr ""
-
-#: lib/widgets/popupMenuWidget.js:95
-msgid "Device settings"
-msgstr ""
-
-#: lib/widgets/panelPopupMenu.js:130
+#: ../lib/widgets/panelPopupMenu.js:130
 msgid "Expand submenu"
-msgstr ""
+msgstr "Rozbaliť podponuku"
 
-#: preferences/upowerDevices.js:41 preferences/device.js:51
-msgid "Battery Status:"
-msgstr ""
-
-#: preferences/upowerDevices.js:42 preferences/device.js:52
-msgid "Reported"
-msgstr ""
-
-#: preferences/upowerDevices.js:42 preferences/device.js:52
-msgid "Not Available"
-msgstr ""
-
-#: preferences/upowerDevices.js:47
-#: preferences/devices/nothingBuds/configureWindow.js:110
-#: preferences/devices/galaxyBuds/configureWindow.js:91
-#: preferences/devices/sony/configureWindow.js:89
-#: preferences/devices/airpods/configureWindow.js:86 preferences/device.js:60
-msgid "Icon"
-msgstr ""
-
-#: preferences/upowerDevices.js:51 preferences/gattBas.js:46
-#: preferences/gattBas.js:51
-#: preferences/devices/nothingBuds/configureWindow.js:111
-#: preferences/devices/galaxyBuds/configureWindow.js:92
-#: preferences/devices/sony/configureWindow.js:90
-#: preferences/devices/airpods/configureWindow.js:87 preferences/device.js:64
-msgid "Select Icon"
-msgstr ""
-
-#: preferences/upowerDevices.js:52
-#: preferences/devices/nothingBuds/configureWindow.js:112
-#: preferences/devices/galaxyBuds/configureWindow.js:93
-#: preferences/devices/sony/configureWindow.js:91
-#: preferences/devices/airpods/configureWindow.js:88 preferences/device.js:65
-msgid "Select the icon used for the indicator and quick menu"
-msgstr ""
-
-#: preferences/upowerDevices.js:101
-msgid "Alias"
-msgstr ""
-
-#: preferences/upowerDevices.js:105
-msgid "Device Alias"
-msgstr ""
-
-#: preferences/upowerDevices.js:129 preferences/device.js:149 ui/indicator.ui:5
-msgid "Indicator"
-msgstr ""
-
-#: preferences/upowerDevices.js:133 preferences/device.js:153
-msgid "Configure Indicator"
-msgstr ""
-
-#: preferences/upowerDevices.js:134 preferences/device.js:154
-msgid "Choose how the indicator should behave"
-msgstr ""
-
-#: preferences/upowerDevices.js:138 preferences/device.js:163
-msgid "Hide Icon"
-msgstr ""
-
-#: preferences/upowerDevices.js:139 preferences/device.js:164
-msgid "Show Icon"
-msgstr ""
-
-#: preferences/upowerDevices.js:186 preferences/gattBas.js:173
-#: preferences/devices/nothingBuds/devicePrefs.js:25
-#: preferences/devices/galaxyBuds/devicePrefs.js:25
-#: preferences/devices/sony/devicePrefs.js:25
-#: preferences/devices/airpods/devicePrefs.js:25 preferences/device.js:212
-msgid "Configure device."
-msgstr ""
-
-#: preferences/upowerDevices.js:199
-msgid ""
-"Delete device information: The button is available after upower device are "
-"removed"
-msgstr ""
-
-#: preferences/upowerDevices.js:232
-msgid "(Offline)"
-msgstr ""
-
-#: preferences/upowerDevices.js:233
-msgid "(Online)"
-msgstr ""
-
-#: preferences/about.js:42
-msgid "GNU General Public License, version 3 or later"
-msgstr ""
-"GNU General Public License (všeobecná zverejňovacia licencia GNU), verzia 3 "
-"alebo novšia"
-
-#: preferences/about.js:49
-#, javascript-format
-msgid "© %s %s"
-msgstr ""
-
-#: preferences/about.js:50
-#, javascript-format
-msgid ""
-"This application comes with absolutely no warranty. See the <a "
-"href=\"%s\">%s</a> for details."
-msgstr ""
-"Táto aplikácia je vydaná absolútne bez záruky. Podrobnosti nájdete na <a "
-"href=\"%s\">%s</a>."
-
-#: preferences/gattBas.js:47
-msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
-msgstr ""
-
-#: preferences/gattBas.js:52
-msgid "Multiple Indicators, Circular Battery Widgets"
-msgstr ""
-
-#: preferences/gattBas.js:60
-msgid "Icon "
-msgstr ""
-
-#: preferences/gattBas.js:69
-msgid "Battery 1 Icon"
-msgstr ""
-
-#: preferences/gattBas.js:78
-msgid "Battery 2 Icon"
-msgstr ""
-
-#: preferences/gattBas.js:87
-msgid "Battery 3 Icon"
-msgstr ""
-
-#: preferences/gattBas.js:185 ui/gattBas.ui:5
-msgid "Battery Service (BAS)"
-msgstr ""
-
-#: preferences/gattBas.js:188 preferences/devices/nothingBuds/devicePrefs.js:40
-#: preferences/devices/galaxyBuds/devicePrefs.js:40
-#: preferences/devices/sony/devicePrefs.js:40
-#: preferences/devices/airpods/devicePrefs.js:40
-#, javascript-format
-msgid "The button is available after disabling %s mode"
-msgstr ""
-
-#: preferences/quickSettings.js:70
+#: ../preferences/quickSettings.js:78
 #, javascript-format
 msgid ""
 "Certain Bluetooth devices do not report battery level until Bluez's "
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"Niektoré Bluetooth zariadenia nehlásia úroveň batérie, kým nie sú v systéme "
+"povolené experimentálne funkcie Bluez. Podrobnosti nájdete v <a "
+"href=\"%s\">dokumentácii</a>."
 
-#: preferences/batteryWidgetSettings.js:17
+#: ../preferences/device.js:64 ../preferences/upowerDevices.js:41
+msgid "Battery Status:"
+msgstr "Stav batérie:"
+
+#: ../preferences/device.js:65 ../preferences/upowerDevices.js:42
+msgid "Reported"
+msgstr "Nahlásené"
+
+#: ../preferences/device.js:65 ../preferences/upowerDevices.js:42
+msgid "Not Available"
+msgstr "Nedostupné"
+
+#: ../preferences/device.js:66
+msgid "Reported from enhanced device service"
+msgstr "Nahlásené z rozšírenej služby zariadenia"
+
+#: ../preferences/device.js:73
+#: ../preferences/devices/airpods/configureWindow.js:86
+#: ../preferences/devices/senhBuds/configureWindow.js:95
+#: ../preferences/devices/boseBuds/configureWindow.js:93
+#: ../preferences/devices/gfps/configureWindow.js:58
+#: ../preferences/devices/googleBuds/configureWindow.js:51
+#: ../preferences/devices/sony/configureWindow.js:91
+#: ../preferences/devices/galaxyBuds/configureWindow.js:91
+#: ../preferences/devices/redmiBuds/configureWindow.js:96
+#: ../preferences/devices/nothingBuds/configureWindow.js:110
+#: ../preferences/upowerDevices.js:47
+msgid "Icon"
+msgstr "Ikona"
+
+#: ../preferences/device.js:77 ../preferences/gattBas.js:46
+#: ../preferences/gattBas.js:51
+#: ../preferences/devices/airpods/configureWindow.js:87
+#: ../preferences/devices/senhBuds/configureWindow.js:96
+#: ../preferences/devices/boseBuds/configureWindow.js:94
+#: ../preferences/devices/gfps/configureWindow.js:59
+#: ../preferences/devices/googleBuds/configureWindow.js:52
+#: ../preferences/devices/sony/configureWindow.js:92
+#: ../preferences/devices/galaxyBuds/configureWindow.js:92
+#: ../preferences/devices/redmiBuds/configureWindow.js:97
+#: ../preferences/devices/nothingBuds/configureWindow.js:111
+#: ../preferences/upowerDevices.js:51
+msgid "Select Icon"
+msgstr "Vybrať ikonu"
+
+#: ../preferences/device.js:78
+#: ../preferences/devices/airpods/configureWindow.js:88
+#: ../preferences/devices/senhBuds/configureWindow.js:97
+#: ../preferences/devices/boseBuds/configureWindow.js:95
+#: ../preferences/devices/gfps/configureWindow.js:60
+#: ../preferences/devices/googleBuds/configureWindow.js:53
+#: ../preferences/devices/sony/configureWindow.js:93
+#: ../preferences/devices/galaxyBuds/configureWindow.js:93
+#: ../preferences/devices/redmiBuds/configureWindow.js:98
+#: ../preferences/devices/nothingBuds/configureWindow.js:112
+#: ../preferences/upowerDevices.js:52
+msgid "Select the icon used for the indicator and quick menu"
+msgstr "Vyberte ikonu použitú pre indikátor a rýchlu ponuku"
+
+#: ../preferences/device.js:81
+msgid "This is an enhanced device"
+msgstr "Toto je rozšírené zariadenie"
+
+#: ../preferences/device.js:82
+msgid "Icon selection if available are in Enhanced device per device settings"
+msgstr ""
+"Výber ikon, ak je k dispozícii, sa nachádza v rozšírených nastaveniach "
+"jednotlivých zariadení"
+
+#: ../preferences/device.js:137 ../ui/quickSettings.ui:5
+msgid "Quick Menu"
+msgstr "Rýchla ponuka"
+
+#: ../preferences/device.js:141
+msgid "Display Battery Level"
+msgstr "Zobraziť úroveň batérie"
+
+#: ../preferences/device.js:142
+msgid "Display battery level in the Bluetooth panel quick menu"
+msgstr "Zobraziť úroveň batérie v rýchlej ponuke Bluetooth panela"
+
+#: ../preferences/device.js:162 ../preferences/upowerDevices.js:129
+#: ../ui/indicator.ui:5
+msgid "Indicator"
+msgstr "Indikátor"
+
+#: ../preferences/device.js:166 ../preferences/upowerDevices.js:133
+msgid "Configure Indicator"
+msgstr "Nastaviť indikátor"
+
+#: ../preferences/device.js:167 ../preferences/upowerDevices.js:134
+msgid "Choose how the indicator should behave"
+msgstr "Vyberte, ako sa má indikátor správať"
+
+#: ../preferences/device.js:171
+msgid "Do not show Icon"
+msgstr "Nezobrazovať ikonu"
+
+#: ../preferences/device.js:172
+msgid "Show Icon without Battery level"
+msgstr "Zobraziť ikonu bez úrovne batérie"
+
+#: ../preferences/device.js:173
+msgid "Show Icon with Battery Level"
+msgstr "Zobraziť ikonu s úrovňou batérie"
+
+#: ../preferences/device.js:176 ../preferences/upowerDevices.js:138
+msgid "Hide Icon"
+msgstr "Skryť ikonu"
+
+#: ../preferences/device.js:177 ../preferences/upowerDevices.js:139
+msgid "Show Icon"
+msgstr "Zobraziť ikonu"
+
+#: ../preferences/device.js:225 ../preferences/gattBas.js:173
+#: ../preferences/devices/airpods/devicePrefs.js:25
+#: ../preferences/devices/senhBuds/devicePrefs.js:25
+#: ../preferences/devices/boseBuds/devicePrefs.js:25
+#: ../preferences/devices/gfps/devicePrefs.js:25
+#: ../preferences/devices/googleBuds/devicePrefs.js:25
+#: ../preferences/devices/sony/devicePrefs.js:25
+#: ../preferences/devices/galaxyBuds/devicePrefs.js:25
+#: ../preferences/devices/redmiBuds/devicePrefs.js:25
+#: ../preferences/devices/nothingBuds/devicePrefs.js:25
+#: ../preferences/upowerDevices.js:186
+msgid "Configure device."
+msgstr "Nastaviť zariadenie."
+
+#: ../preferences/device.js:239
+msgid ""
+"Delete device information: The button is available after unpairing device"
+msgstr ""
+"Odstrániť informácie o zariadení: Tlačidlo je k dispozícii po zrušení "
+"spárovania zariadenia"
+
+#: ../preferences/device.js:271
+msgid "(Removed)"
+msgstr "(Odstránené)"
+
+#: ../preferences/device.js:272
+msgid "(Paired)"
+msgstr "(Spárované)"
+
+#: ../preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr "GNU General Public License, verzia 3 alebo novšia"
+
+#: ../preferences/about.js:49
 #, javascript-format
-msgid "Assign color for %d – %d%%"
-msgstr ""
+msgid "© %s %s"
+msgstr "© %s %s"
 
-#: preferences/batteryWidgetSettings.js:18
+#: ../preferences/about.js:50
 #, javascript-format
-msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:206
-#: preferences/devices/galaxyBuds/configureWindow.js:257
-#: preferences/devices/sony/configureWindow.js:212
-msgid "Equalizer"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:212
-msgid "Balanced"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:213
-msgid "Voice"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:214
-msgid "More Treble"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:215
-msgid "More Bass"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:216
-msgid "Dirac"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:217
-msgid "Rock"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:218
-msgid "Electronic"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:219
-msgid "Pop"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:220
-msgid "Enhance Vocals"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:221
-msgid "Classical"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:222
-msgid "Custom"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:232
-#: preferences/devices/nothingBuds/configureWindow.js:664
-#: preferences/devices/galaxyBuds/configureWindow.js:280
-#: preferences/devices/sony/configureWindow.js:245
-msgid "Equalizer Preset"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:249
-#: preferences/devices/sony/configureWindow.js:258
-msgid "Custom Equalizer"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:252
-#: preferences/devices/nothingBuds/configureWindow.js:670
-#: preferences/devices/sony/configureWindow.js:260
-msgid "Bass"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:252
-#: preferences/devices/nothingBuds/configureWindow.js:673
-msgid "Treble"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:282
-msgid "Bass Enhance"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:285
-msgid "Enable Bass Enhance"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:297
-msgid "Bass Enhance Level"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:300
-msgid "-"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:304
-msgid "+"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:332
-#: preferences/devices/nothingBuds/configureWindow.js:658
-msgid "Spatial Audio"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:335
-msgid "Enable Spatial Audio"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:352
-#: preferences/devices/galaxyBuds/configureWindow.js:603
-msgid "Additional Settings"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:357
-msgid "Enable low latency mode"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:370
-msgid "Enable in ear detection"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:416
-msgid "Noise Control Cycle: "
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:418
-#: preferences/devices/galaxyBuds/configureWindow.js:563
-#: preferences/devices/galaxyBuds/configureWindow.js:585
-#: preferences/devices/sony/configureWindow.js:369
-#: preferences/devices/airpods/configureWindow.js:261
-msgid "Apply"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:438
-#: preferences/devices/galaxyBuds/configureWindow.js:343
-msgid "Single Tap"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:439
-#: preferences/devices/galaxyBuds/configureWindow.js:356
-msgid "Double Tap"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:440
-#: preferences/devices/galaxyBuds/configureWindow.js:369
-msgid "Triple Tap"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:441
-msgid "Tap and Hold"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:442
-msgid "Double Tap and Hold"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:444
-#: preferences/devices/nothingBuds/configureWindow.js:459
-msgid "Single Press"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:445
-#: preferences/devices/nothingBuds/configureWindow.js:460
-msgid "Double Press"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:446
-#: preferences/devices/nothingBuds/configureWindow.js:461
-msgid "Triple Press"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:447
-#: preferences/devices/nothingBuds/configureWindow.js:456
-#: preferences/devices/nothingBuds/configureWindow.js:462
-msgid "Press and Hold"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:448
-#: preferences/devices/nothingBuds/configureWindow.js:463
-msgid "Double Press and Hold"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:450
-msgid "Single Pinch"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:451
-msgid "Double Pinch"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:452
-msgid "Triple Pinch"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:453
-msgid "Pinch and Hold"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:454
-msgid "Double Pinch and Hold"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:457
-msgid "Slide to Adjust"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:464
-msgid "Rotate"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:487
-msgid "Unknown Gesture"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:594
-#: preferences/devices/nothingBuds/configureWindow.js:612
-msgid "Gesture Controls"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:597
-msgid "Left Buds Gesture Control"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:600
-msgid "Right Buds Gesture Control"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:603
-msgid "Roller Gesture Control"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:606
-msgid "Case Gesture Control"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:609
-msgid "Slider Gesture Control"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:619
-msgid "Play / Pause"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:622
-msgid "Previous Track"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:625
-msgid "Next Track"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:628
-#: preferences/devices/galaxyBuds/configureWindow.js:452
-msgid "Voice Assistant"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:631
-msgid "Volume Up"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:634
-msgid "Volume Down"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:637
-#: preferences/devices/galaxyBuds/configureWindow.js:454
-#: preferences/devices/sony/configureWindow.js:307
-#: preferences/devices/airpods/configureWindow.js:312
-msgid "Volume Control"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:643
-msgid "ANC Type"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:646
-msgid "No Action"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:649
-msgid "Change Volume"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:652
-msgid "Channel Hop"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:655
-msgid "New Reporter"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:661
-msgid "Mic On/Off"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:667
-msgid "Walkie Takie"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:676
-msgid "Toggle Low Latency"
-msgstr ""
-
-#: preferences/devices/nothingBuds/configureWindow.js:679
-msgid "Essential Space"
-msgstr ""
-
-#: preferences/devices/nothingBuds/devicePrefs.js:37
-#: ui/devices/nothingBuds.ui:5
-msgid "Nothing/CMF Buds"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:115
-#: preferences/devices/airpods/configureWindow.js:109
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Na túto aplikáciu sa nevzťahuje žiadna záruka. Podrobnosti nájdete na "
+"stránke <a href=\"%s\">%s</a>."
+
+#: ../preferences/gattBas.js:47
+msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
+msgstr "Jeden indikátor, Tlačidlo panela, Rýchla ponuka, Obal albumu"
+
+#: ../preferences/gattBas.js:52
+msgid "Multiple Indicators, Circular Battery Widgets"
+msgstr "Viaceré indikátory, kruhové miniaplikácie batérie"
+
+#: ../preferences/gattBas.js:60
+msgid "Icon "
+msgstr "Ikona "
+
+#: ../preferences/gattBas.js:69
+msgid "Battery 1 Icon"
+msgstr "Ikona batérie 1"
+
+#: ../preferences/gattBas.js:78
+msgid "Battery 2 Icon"
+msgstr "Ikona batérie 2"
+
+#: ../preferences/gattBas.js:87
+msgid "Battery 3 Icon"
+msgstr "Ikona batérie 3"
+
+#: ../preferences/gattBas.js:185 ../ui/gattBas.ui:5
+msgid "Battery Service (BAS)"
+msgstr "Služba batérie (BAS)"
+
+#: ../preferences/gattBas.js:188
+#: ../preferences/devices/airpods/devicePrefs.js:40
+#: ../preferences/devices/senhBuds/devicePrefs.js:40
+#: ../preferences/devices/boseBuds/devicePrefs.js:40
+#: ../preferences/devices/gfps/devicePrefs.js:40
+#: ../preferences/devices/googleBuds/devicePrefs.js:40
+#: ../preferences/devices/sony/devicePrefs.js:40
+#: ../preferences/devices/galaxyBuds/devicePrefs.js:40
+#: ../preferences/devices/redmiBuds/devicePrefs.js:40
+#: ../preferences/devices/nothingBuds/devicePrefs.js:40
+#, javascript-format
+msgid "The button is available after disabling %s mode"
+msgstr "Tlačidlo je dostupné po vypnutí režimu %s"
+
+#: ../preferences/devices/airpods/devicePrefs.js:37 ../ui/devices/airpods.ui:5
+msgid "AirPods/Beats"
+msgstr "AirPods/Beats"
+
+#: ../preferences/devices/airpods/configureWindow.js:109
+#: ../preferences/devices/senhBuds/configureWindow.js:642
+#: ../preferences/devices/boseBuds/configureWindow.js:433
+#: ../preferences/devices/galaxyBuds/configureWindow.js:118
 msgid "Playback Behavior"
-msgstr ""
+msgstr "Správanie prehrávania"
 
-#: preferences/devices/galaxyBuds/configureWindow.js:119
-#: preferences/devices/airpods/configureWindow.js:113
-#: preferences/devices/airpods/configureWindow.js:116
+#: ../preferences/devices/airpods/configureWindow.js:113
+#: ../preferences/devices/airpods/configureWindow.js:116
+#: ../preferences/devices/senhBuds/configureWindow.js:647
+#: ../preferences/devices/senhBuds/configureWindow.js:651
+#: ../preferences/devices/boseBuds/configureWindow.js:438
+#: ../preferences/devices/boseBuds/configureWindow.js:442
+#: ../preferences/devices/galaxyBuds/configureWindow.js:122
 msgid "Default behavior"
-msgstr ""
+msgstr "Predvolené správanie"
 
-#: preferences/devices/galaxyBuds/configureWindow.js:120
-#: preferences/devices/airpods/configureWindow.js:117
+#: ../preferences/devices/airpods/configureWindow.js:114
+#: ../preferences/devices/senhBuds/configureWindow.js:652
+#: ../preferences/devices/boseBuds/configureWindow.js:443
+msgid "Resume when worn"
+msgstr "Pokračovať pri nasadení"
+
+#: ../preferences/devices/airpods/configureWindow.js:117
+#: ../preferences/devices/senhBuds/configureWindow.js:648
+#: ../preferences/devices/boseBuds/configureWindow.js:439
+#: ../preferences/devices/galaxyBuds/configureWindow.js:123
 msgid "Resume with both earbuds, Pause if any removed"
-msgstr ""
+msgstr "Pokračovať s oboma slúchadlami, pozastaviť ak je jedno odstránené"
 
-#: preferences/devices/galaxyBuds/configureWindow.js:121
-#: preferences/devices/airpods/configureWindow.js:118
+#: ../preferences/devices/airpods/configureWindow.js:118
+#: ../preferences/devices/senhBuds/configureWindow.js:649
+#: ../preferences/devices/boseBuds/configureWindow.js:440
+#: ../preferences/devices/galaxyBuds/configureWindow.js:124
 msgid "Resume with any earbud, Pause if both removed"
-msgstr ""
+msgstr "Pokračovať s ktorýmkoľvek slúchadlom, pozastaviť ak sú obe odstránené"
 
-#: preferences/devices/galaxyBuds/configureWindow.js:125
-#: preferences/devices/airpods/configureWindow.js:122
-msgid "Choose playback behaviour for Ear detection"
-msgstr ""
+#: ../preferences/devices/airpods/configureWindow.js:122
+#: ../preferences/devices/galaxyBuds/configureWindow.js:128
+msgid "Choose playback behavior for Ear detection"
+msgstr "Vyberte správanie prehrávania pre detekciu ucha"
 
-#: preferences/devices/galaxyBuds/configureWindow.js:126
-#: preferences/devices/airpods/configureWindow.js:123
+#: ../preferences/devices/airpods/configureWindow.js:123
+#: ../preferences/devices/senhBuds/configureWindow.js:661
+#: ../preferences/devices/boseBuds/configureWindow.js:452
+#: ../preferences/devices/galaxyBuds/configureWindow.js:129
 msgid "Automatically pause or resume playback based on wearing detection."
 msgstr ""
+"Automaticky pozastaviť alebo obnoviť prehrávanie na základe detekcie nosenia."
 
-#: preferences/devices/galaxyBuds/configureWindow.js:236
-msgid "Voice detection"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:239
-msgid "5 seconds"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:239
-msgid "10 seconds"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:239
-msgid "15 seconds"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:242
-#: preferences/devices/sony/configureWindow.js:134
-msgid "Duration"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:262
-#: preferences/devices/sony/configureWindow.js:222
-msgid "Bass Boost"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:263
-msgid "Soft"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:264
-msgid "Dynamic"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:265
-msgid "Clear"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:266
-#: preferences/devices/sony/configureWindow.js:221
-msgid "Treble Boost"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:296
-msgid "Balance"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:300
-#: ui/batteryWidgetSettings.ui:117
-msgid "Left"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:301
-msgid "Center"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:302
-#: ui/batteryWidgetSettings.ui:118
-msgid "Right"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:320
-msgid "Earbuds Controls"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:326
-msgid "Media Controls (Pinch And Swipe)"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:326
-msgid "Enable Touch Controls "
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:382
-msgid "Touch and Hold"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:401
-msgid "Pinch to Answer Call or End Call"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:402
-msgid "Double Tap to Answer Call or End Call"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:416
-msgid "Pinch and Hold to Decline Call"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:417
-msgid "Touch and Hold to Decline Call"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:453
-msgid "Quick Ambient Sound"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:455
-msgid "Ambient Sound"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:456
-msgid "Spotify Spot On"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:458
-msgid "ANC"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:474
-msgid "Left Earbud Pinch and Hold Function"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:475
-msgid "Left Earbud Touch and Hold Function"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:478
-msgid "Right Earbud Pinch and Hold Function"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:479
-msgid "Right Earbud Touch and Hold Function"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:532
-msgid "Select any two toggles"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:538
-msgid "Pinch and Hold Cycle for Left Earbud"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:539
-msgid "Pinch and hold cycles between modes (Left)"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:540
-msgid "Pinch and Hold Cycle for Right Earbud"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:541
-msgid "Pinch and hold cycles between modes (Right)"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:543
-msgid "Touch and Hold Cycle for Left Earbud"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:544
-msgid "Touch and hold cycles between modes (Left)"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:545
-msgid "Touch and Hold Cycle for Right Earbud"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:546
-msgid "Touch and hold cycles between modes (Right)"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:549
-msgid "Pinch and Hold Cycle"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:550
-msgid "Pinch and hold cycles between modes"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:552
-msgid "Touch and Hold Cycle"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:553
-msgid "Touch and hold cycles between modes"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:609
-msgid "Ambient Sound During Calls"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:623
-msgid "Noise Controls With One Earbud"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:637
-msgid "Double Tap Outside Edge For Volume Controls"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:680
-msgid "Left Ambient Sound Volume"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:701
-msgid "Right Ambient Sound Volume"
-msgstr ""
-
-#: preferences/devices/galaxyBuds/configureWindow.js:722
-msgid "Ambient Sound Tone"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:115
-#: preferences/devices/sony/configureWindow.js:285
-msgid "Auto"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:118
-msgid "Voice Detection Sensitivity"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:131
-msgid "Short"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:131
-msgid "Long"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:151
-#: preferences/devices/sony/configureWindow.js:167
-msgid "Listening Mode"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:156
-msgid "Background Music"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:157
-msgid "Cinema"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:182
-msgid "My Room"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:183
-msgid "Living Room"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:184
-msgid "Cafe"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:194
-msgid "Background Music Effects"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:216
-msgid "Bright"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:217
-msgid "Excited"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:218
-msgid "Mellow"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:219
-msgid "Relaxed"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:220
-msgid "Vocal"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:223
-msgid "Speech"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:224
-msgid "Manual"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:225
-msgid "Custom 1"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:226
-msgid "Custom 2"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:260
-msgid "400"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:260
-#: preferences/devices/sony/configureWindow.js:262
-msgid "1k"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:260
-msgid "2.5k"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:260
-msgid "6.3k"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:260
-#: preferences/devices/sony/configureWindow.js:262
-msgid "16k"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "31"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "63"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "125"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "250"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:261
-msgid "500"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:262
-msgid "2k"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:262
-msgid "4k"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:262
-msgid "8k"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:280
-msgid "DSEE"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:284
-msgid "Enable DSEE enhancement"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:298
-msgid "Button/Touch Settings"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:302
-msgid "Ambient Sound Control"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:303
-msgid "Ambient Sound Control / Quick Access"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:305
-#: preferences/devices/sony/configureWindow.js:306
-msgid "Playback Control"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:308
-msgid "Not Assigned"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:324
-msgid "Left Bud"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:338
-msgid "Right Bud"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:355
-msgid "ANC Button Configuration"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:366
-msgid "[NC/AMB] Button Settings"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:367
-msgid "Select the modes to toggle when the button is pressed"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:385
-msgid "Notification"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:389
-msgid "Voice Notification"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:390
-msgid "Enable voice notification"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:408
-msgid "Voice Notification Volume"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:410
-msgid "-2"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:411
-msgid "-1"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:412
-msgid "0"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:413
-msgid "+1"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:414
-msgid "+2"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:433
-msgid "Headset Take off"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:440
-msgid "Pause when taken off"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:454
-msgid "Automatically Power Off"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:455
-msgid "Automatically power off when not worn."
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:470
-msgid "After 5 minutes"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:471
-msgid "After 15 minutes"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:472
-msgid "After 30 minutes"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:473
-msgid "After 1 hour"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:474
-msgid "After 3 hours"
-msgstr ""
-
-#: preferences/devices/sony/configureWindow.js:486
-msgid "Auto Power Off"
-msgstr ""
-
-#: preferences/devices/airpods/configureWindow.js:114
-msgid "Resume when worn"
-msgstr ""
-
-#: preferences/devices/airpods/configureWindow.js:139
+#: ../preferences/devices/airpods/configureWindow.js:139
 msgid "Volume Level"
-msgstr ""
+msgstr "Úroveň hlasitosti"
 
-#: preferences/devices/airpods/configureWindow.js:143
+#: ../preferences/devices/airpods/configureWindow.js:143
 msgid "Pause when device is not worn"
-msgstr ""
+msgstr "Pozastaviť, keď zariadenie nie je nasadené"
 
-#: preferences/devices/airpods/configureWindow.js:144
+#: ../preferences/devices/airpods/configureWindow.js:144
 msgid "Pause playback when the device is removed,resume when it is put back on"
 msgstr ""
+"Pozastaviť prehrávanie pri odpojení zariadenia, obnoviť prehrávanie po jeho "
+"opätovnom pripojení"
 
-#: preferences/devices/airpods/configureWindow.js:163
+#: ../preferences/devices/airpods/configureWindow.js:163
 msgid "Conversation awareness volume limit"
-msgstr ""
+msgstr "Limit hlasitosti pri detekcii konverzácie"
 
-#: preferences/devices/airpods/configureWindow.js:164
+#: ../preferences/devices/airpods/configureWindow.js:164
 msgid ""
 "Limits media volume to this percentage during conversation. Note: No change "
 "if current volume is below this level."
 msgstr ""
+"Obmedzí hlasitosť médií na túto percentuálnu hodnotu počas rozhovoru. "
+"Poznámka: Ak je aktuálna hlasitosť nižšia ako táto úroveň, nedôjde k žiadnej "
+"zmene."
 
-#: preferences/devices/airpods/configureWindow.js:187
+#: ../preferences/devices/airpods/configureWindow.js:187
 msgid "Turn off listening modes"
-msgstr ""
+msgstr "Vypnúť režimy počúvania"
 
-#: preferences/devices/airpods/configureWindow.js:191
+#: ../preferences/devices/airpods/configureWindow.js:191
 msgid "Allows to turn off all listening mode technology"
-msgstr ""
+msgstr "Umožňuje vypnúť všetky technológie režimov počúvania"
 
-#: preferences/devices/airpods/configureWindow.js:192
+#: ../preferences/devices/airpods/configureWindow.js:192
 msgid ""
 "Allows Noise Cancellation, Transparency, and Adaptive modes to be fully "
 "disabled. Disabling listening modes also turns off Hearing Aid features and "
 "reduces power usage."
 msgstr ""
+"Umožňuje úplné vypnutie režimov potlačenia hluku, transparentnosti a "
+"adaptívneho režimu. Vypnutím režimov počúvania sa zároveň deaktivujú funkcie "
+"načúvacieho prístroja a zníži sa spotreba energie."
 
-#: preferences/devices/airpods/configureWindow.js:255
+#: ../preferences/devices/airpods/configureWindow.js:255
 msgid "Press and Hold Cycle"
-msgstr ""
+msgstr "Cyklus stlačenia a podržania"
 
-#: preferences/devices/airpods/configureWindow.js:258
+#: ../preferences/devices/airpods/configureWindow.js:258
 msgid "Press and hold cycles between"
-msgstr ""
+msgstr "Stlačením a podržaním prepína medzi"
 
-#: preferences/devices/airpods/configureWindow.js:259
+#: ../preferences/devices/airpods/configureWindow.js:259
 msgid "Settings don’t reflect current state"
-msgstr ""
+msgstr "Nastavenia neodrážajú aktuálny stav"
 
-#: preferences/devices/airpods/configureWindow.js:286
+#: ../preferences/devices/airpods/configureWindow.js:261
+#: ../preferences/devices/sony/configureWindow.js:379
+#: ../preferences/devices/galaxyBuds/configureWindow.js:579
+#: ../preferences/devices/galaxyBuds/configureWindow.js:601
+#: ../preferences/devices/redmiBuds/configureWindow.js:380
+#: ../preferences/devices/nothingBuds/configureWindow.js:424
+msgid "Apply"
+msgstr "Použiť"
+
+#: ../preferences/devices/airpods/configureWindow.js:286
 msgid "Notification Volume"
-msgstr ""
+msgstr "Hlasitosť upozornení"
 
-#: preferences/devices/airpods/configureWindow.js:290
+#: ../preferences/devices/airpods/configureWindow.js:290
 msgid "Tone Volume"
-msgstr ""
+msgstr "Hlasitosť tónov"
 
-#: preferences/devices/airpods/configureWindow.js:291
+#: ../preferences/devices/airpods/configureWindow.js:291
 msgid "Adjust the tone volume of sound effects played by AirPods"
-msgstr ""
+msgstr "Upravte hlasitosť tónov zvukových efektov prehrávaných AirPods"
 
-#: preferences/devices/airpods/configureWindow.js:293
+#: ../preferences/devices/airpods/configureWindow.js:293
 msgid "15%"
-msgstr ""
+msgstr "15%"
 
-#: preferences/devices/airpods/configureWindow.js:294
+#: ../preferences/devices/airpods/configureWindow.js:294
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
-#: preferences/devices/airpods/configureWindow.js:295
+#: ../preferences/devices/airpods/configureWindow.js:295
 msgid "125%"
-msgstr ""
+msgstr "125%"
 
-#: preferences/devices/airpods/configureWindow.js:316
+#: ../preferences/devices/airpods/configureWindow.js:312
+#: ../preferences/devices/sony/configureWindow.js:317
+#: ../preferences/devices/galaxyBuds/configureWindow.js:470
+#: ../preferences/devices/nothingBuds/configureWindow.js:643
+msgid "Volume Control"
+msgstr "Ovládanie hlasitosti"
+
+#: ../preferences/devices/airpods/configureWindow.js:316
 msgid "Volume Swipe"
-msgstr ""
+msgstr "Potiahnuť pre hlasitosť"
 
-#: preferences/devices/airpods/configureWindow.js:317
+#: ../preferences/devices/airpods/configureWindow.js:317
 msgid "Enable or disable volume adjustment by swiping on earbud stems"
 msgstr ""
+"Povoliť alebo zakázať nastavenie hlasitosti potiahnutím prsta po stopke "
+"slúchadiel"
 
-#: preferences/devices/airpods/configureWindow.js:326
-#: preferences/devices/airpods/configureWindow.js:359
-#: preferences/devices/airpods/configureWindow.js:377
+#: ../preferences/devices/airpods/configureWindow.js:326
+#: ../preferences/devices/airpods/configureWindow.js:359
+#: ../preferences/devices/airpods/configureWindow.js:377
+#: ../preferences/devices/googleBuds/configureWindow.js:85
 msgid "Default"
-msgstr ""
+msgstr "Predvolené"
 
-#: preferences/devices/airpods/configureWindow.js:326
-#: preferences/devices/airpods/configureWindow.js:359
+#: ../preferences/devices/airpods/configureWindow.js:326
+#: ../preferences/devices/airpods/configureWindow.js:359
 msgid "Longer"
-msgstr ""
+msgstr "Dlhšie"
 
-#: preferences/devices/airpods/configureWindow.js:326
-#: preferences/devices/airpods/configureWindow.js:359
+#: ../preferences/devices/airpods/configureWindow.js:326
+#: ../preferences/devices/airpods/configureWindow.js:359
 msgid "Longest"
-msgstr ""
+msgstr "Najdlhšie"
 
-#: preferences/devices/airpods/configureWindow.js:330
+#: ../preferences/devices/airpods/configureWindow.js:330
 msgid "Swipe Duration"
-msgstr ""
+msgstr "Doba potiahnutia"
 
-#: preferences/devices/airpods/configureWindow.js:331
+#: ../preferences/devices/airpods/configureWindow.js:331
 msgid ""
 "To prevent unintended adjustments,select the preferred wait time between "
 "swipes"
 msgstr ""
+"Aby ste predišli neúmyselným zmenám nastavení, vyberte si požadovanú dobu "
+"čakania medzi potiahnutiami"
 
-#: preferences/devices/airpods/configureWindow.js:356
+#: ../preferences/devices/airpods/configureWindow.js:356
 msgid "Stem and Crown Response"
-msgstr ""
+msgstr "Odozva stopky a korunky"
 
-#: preferences/devices/airpods/configureWindow.js:363
+#: ../preferences/devices/airpods/configureWindow.js:363
 msgid "Press Speed"
-msgstr ""
+msgstr "Rýchlosť stlačenia"
 
-#: preferences/devices/airpods/configureWindow.js:364
+#: ../preferences/devices/airpods/configureWindow.js:364
 msgid ""
 "Adjust how quickly you must double or triple-press the stem or Digital Crown "
 "before an action occurs"
 msgstr ""
+"Nastavte, ako rýchlo musíte dvakrát alebo trikrát stlačiť stopku alebo "
+"korunku Digital Crown, aby sa spustila určitá akcia"
 
-#: preferences/devices/airpods/configureWindow.js:377
+#: ../preferences/devices/airpods/configureWindow.js:377
 msgid "Shorter"
-msgstr ""
+msgstr "Kratšie"
 
-#: preferences/devices/airpods/configureWindow.js:377
+#: ../preferences/devices/airpods/configureWindow.js:377
 msgid "Shortest"
-msgstr ""
+msgstr "Najkratšie"
 
-#: preferences/devices/airpods/configureWindow.js:380
+#: ../preferences/devices/airpods/configureWindow.js:380
 msgid "Press and Hold Duration"
-msgstr ""
+msgstr "Doba stlačenia a podržania"
 
-#: preferences/devices/airpods/configureWindow.js:381
+#: ../preferences/devices/airpods/configureWindow.js:381
 msgid "Set how long you need to press and hold before an action occurs"
-msgstr ""
+msgstr "Nastavte, ako dlho musíte stlačiť a podržať, kým dôjde k akcii"
 
-#: preferences/devices/airpods/devicePrefs.js:37 ui/devices/airpods.ui:5
-msgid "AirPods/Beats"
-msgstr ""
+#: ../preferences/devices/senhBuds/devicePrefs.js:37
+#: ../ui/devices/senhBuds.ui:5
+msgid "Sennheiser"
+msgstr "Sennheiser"
 
-#: preferences/widgets/ringMyBudsRow.js:21
+#: ../preferences/devices/senhBuds/configureWindow.js:223
+#: ../preferences/devices/boseBuds/configureWindow.js:275
+msgid "Sound Settings"
+msgstr "Nastavenia zvuku"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:231
+#: ../preferences/devices/googleBuds/configureWindow.js:72
+#: ../preferences/devices/sony/configureWindow.js:212
+#: ../preferences/devices/galaxyBuds/configureWindow.js:273
+#: ../preferences/devices/redmiBuds/configureWindow.js:212
+#: ../preferences/devices/nothingBuds/configureWindow.js:214
+msgid "Equalizer"
+msgstr "Ekvalizér"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:232
+msgid "Podcast"
+msgstr "Podcast"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:233
+msgid "Sound personalization"
+msgstr "Prispôsobenie zvuku"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:234
+#: ../preferences/widgets/peqRowWidget.js:883
+#: ../preferences/widgets/peqRowWidget.js:1308
+msgid "Parametric Equalizer"
+msgstr "Parametrický ekvalizér"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:245
+msgid "Audio Mode"
+msgstr "Audio režim"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:266
+#: ../preferences/devices/nothingBuds/configureWindow.js:225
+msgid "Rock"
+msgstr "Rock"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:267
+#: ../preferences/devices/nothingBuds/configureWindow.js:227
+msgid "Pop"
+msgstr "Pop"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:268
+#| msgid "Cancel"
+msgid "Dance"
+msgstr "Dance"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:269
+msgid "Hip Hop"
+msgstr "Hip Hop"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:270
+#: ../preferences/devices/nothingBuds/configureWindow.js:229
+msgid "Classical"
+msgstr "Klasická"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:271
+msgid "Movie"
+msgstr "Film"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:272
+msgid "Jazz"
+msgstr "Jazz"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:285
+#: ../preferences/devices/boseBuds/configureWindow.js:301
+#: ../preferences/devices/googleBuds/configureWindow.js:92
+#: ../preferences/devices/redmiBuds/configureWindow.js:223
+#: ../preferences/devices/nothingBuds/configureWindow.js:230
+msgid "Custom"
+msgstr "Vlastné"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:291
+#: ../preferences/devices/boseBuds/configureWindow.js:307
+#: ../preferences/devices/googleBuds/configureWindow.js:114
+#: ../preferences/devices/sony/configureWindow.js:251
+#: ../preferences/devices/redmiBuds/configureWindow.js:244
+#: ../preferences/devices/nothingBuds/configureWindow.js:242
+msgid "Custom Equalizer"
+msgstr "Vlastný ekvalizér"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:296
+#: ../preferences/devices/boseBuds/configureWindow.js:313
+#: ../preferences/devices/googleBuds/configureWindow.js:108
+#: ../preferences/devices/sony/configureWindow.js:245
+#: ../preferences/devices/galaxyBuds/configureWindow.js:296
+#: ../preferences/devices/redmiBuds/configureWindow.js:249
+#: ../preferences/devices/nothingBuds/configureWindow.js:247
+#: ../preferences/devices/nothingBuds/configureWindow.js:670
+msgid "Equalizer Preset"
+msgstr "Predvoľba ekvalizéra"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:306
+#| msgid "250"
+msgid "50"
+msgstr "50"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:307
+#: ../preferences/devices/sony/configureWindow.js:263
+msgid "63"
+msgstr "63"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:308
+#: ../preferences/devices/sony/configureWindow.js:263
+#: ../preferences/devices/redmiBuds/configureWindow.js:265
+msgid "125"
+msgstr "125"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:309
+#: ../preferences/devices/sony/configureWindow.js:263
+#: ../preferences/devices/redmiBuds/configureWindow.js:265
+msgid "250"
+msgstr "250"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:310
+#: ../preferences/devices/sony/configureWindow.js:262
+msgid "400"
+msgstr "400"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:311
+#: ../preferences/devices/sony/configureWindow.js:263
+#: ../preferences/devices/redmiBuds/configureWindow.js:265
+msgid "500"
+msgstr "500"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:312
+#| msgid "400"
+msgid "800"
+msgstr "800"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:313
+#: ../preferences/devices/sony/configureWindow.js:262
+#: ../preferences/devices/sony/configureWindow.js:264
+#: ../preferences/devices/redmiBuds/configureWindow.js:265
+msgid "1k"
+msgstr "1k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:314
+#: ../preferences/devices/sony/configureWindow.js:264
+#: ../preferences/devices/redmiBuds/configureWindow.js:265
+msgid "2k"
+msgstr "2k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:315
+#: ../preferences/devices/sony/configureWindow.js:262
+msgid "2.5k"
+msgstr "2,5k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:316
+#| msgid "6.3k"
+msgid "3k"
+msgstr "3k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:317
+#: ../preferences/devices/sony/configureWindow.js:264
+#: ../preferences/devices/redmiBuds/configureWindow.js:265
+msgid "4k"
+msgstr "4k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:318
+#: ../preferences/devices/sony/configureWindow.js:262
+msgid "6.3k"
+msgstr "6,3k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:319
+msgid "7k"
+msgstr "7k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:320
+#: ../preferences/devices/sony/configureWindow.js:264
+#: ../preferences/devices/redmiBuds/configureWindow.js:266
+msgid "8k"
+msgstr "8k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:321
+#: ../preferences/devices/redmiBuds/configureWindow.js:266
+#| msgid "1k"
+msgid "12k"
+msgstr "12k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:322
+#: ../preferences/devices/sony/configureWindow.js:262
+#: ../preferences/devices/sony/configureWindow.js:264
+#: ../preferences/devices/redmiBuds/configureWindow.js:266
+msgid "16k"
+msgstr "16k"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:339
+#: ../preferences/devices/sony/configureWindow.js:273
+#: ../preferences/devices/redmiBuds/configureWindow.js:275
+msgid "Frequency (Hz)"
+msgstr "Frekvencia (Hz)"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:340
+#: ../preferences/devices/boseBuds/configureWindow.js:341
+#: ../preferences/devices/googleBuds/configureWindow.js:145
+#: ../preferences/devices/sony/configureWindow.js:274
+#: ../preferences/devices/redmiBuds/configureWindow.js:276
+#: ../preferences/devices/nothingBuds/configureWindow.js:272
+msgid "Gain (dB)"
+msgstr "Zosilnenie (dB)"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:367
+#: ../preferences/devices/nothingBuds/configureWindow.js:291
+msgid "Enable Bass Boost"
+msgstr "Povoliť zosilnenie basov"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:560
+#: ../preferences/devices/boseBuds/configureWindow.js:374
+msgid "In Ear Settings"
+msgstr "Nastavenia slúchadiel do uší"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:560
+#: ../preferences/devices/boseBuds/configureWindow.js:375
+msgid "On Head Settings"
+msgstr "Nastavenia režimu na hlave"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:565
+#: ../preferences/devices/boseBuds/configureWindow.js:381
+msgid "Enable In-Ear Detection"
+msgstr "Povoliť detekciu v uchu"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:566
+#: ../preferences/devices/boseBuds/configureWindow.js:382
+msgid "Enable On Head Detection"
+msgstr "Povoliť detekciu na hlave"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:579
+#: ../preferences/devices/boseBuds/configureWindow.js:396
+msgid "Pause Media When Not Worn"
+msgstr "Pozastaviť, keď zariadenie nie je nasadené"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:580
+#: ../preferences/devices/boseBuds/configureWindow.js:397
+msgid "Playback controlled by the OEM app"
+msgstr "Prehrávanie ovládané prostredníctvom aplikácie výrobcu"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:592
+#: ../preferences/devices/boseBuds/configureWindow.js:409
+msgid "Automatically Answer Calls When Worn"
+msgstr "Automaticky prijať hovory, keď nie je nosené"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:604
+msgid "Pause Media When Transparency Mode Is Enabled"
+msgstr "Pozastaviť prehrávanie médií, keď je zapnutý režim priehľadnosti"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:616
+#: ../preferences/devices/boseBuds/configureWindow.js:565
+msgid "Never"
+msgstr "Nikdy"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:617
+msgid "After 15 minutes"
+msgstr "Po 15 minútach"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:618
+#: ../preferences/devices/sony/configureWindow.js:481
+msgid "After 30 minutes"
+msgstr "Po 30 minútach"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:619
+#: ../preferences/devices/boseBuds/configureWindow.js:569
+#: ../preferences/devices/sony/configureWindow.js:482
+msgid "After 1 hour"
+msgstr "Po 1 hodine"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:627
+#: ../preferences/devices/sony/configureWindow.js:494
+msgid "Automatically Power Off When Not Worn"
+msgstr "Automaticky vypnúť, keď nie je nosené"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:643
+#: ../preferences/devices/boseBuds/configureWindow.js:434
+msgid "Playback controlled by the BudsLink"
+msgstr "Prehrávanie ovládané prostredníctvom BudsLink"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:656
+#: ../preferences/devices/boseBuds/configureWindow.js:447
+msgid "Choose playback behavior for in-ear detection"
+msgstr "Vyberte správanie prehrávania pre detekciu v uchu"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:657
+#: ../preferences/devices/boseBuds/configureWindow.js:448
+msgid "Choose playback behavior for on-head detection"
+msgstr "Vyberte správanie prehrávania pre detekciu na hlave"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:695
+#: ../preferences/devices/boseBuds/configureWindow.js:488
+msgid "Calls Settings"
+msgstr "Nastavenia hovorov"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:707
+#: ../preferences/devices/boseBuds/configureWindow.js:502
+#: ../preferences/devices/galaxyBuds/configureWindow.js:625
+msgid "Ambient Sound During Calls"
+msgstr "Okolitý zvuk počas hovorov"
+
+#: ../preferences/devices/senhBuds/configureWindow.js:739
+#: ../preferences/devices/sony/configureWindow.js:616
+msgid "Connection Management"
+msgstr "Správa pripojení"
+
+#: ../preferences/devices/boseBuds/devicePrefs.js:37
+#: ../ui/devices/boseBuds.ui:5
+msgid "Bose"
+msgstr "Bose"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:259
+msgid "Remember my mode"
+msgstr "Zapamätaj si môj režim"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:285
+#: ../preferences/devices/sony/configureWindow.js:222
+#: ../preferences/devices/galaxyBuds/configureWindow.js:278
+#: ../preferences/devices/nothingBuds/configureWindow.js:288
+msgid "Bass Boost"
+msgstr "Zosilnenie basov"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:286
+msgid "Bass Reducer"
+msgstr "Tlmič basov"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:287
+#: ../preferences/devices/sony/configureWindow.js:221
+#: ../preferences/devices/galaxyBuds/configureWindow.js:282
+msgid "Treble Boost"
+msgstr "Zosilnenie výšok"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:288
+msgid "Treble Reducer"
+msgstr "Redukcia výšok"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:323
+#: ../preferences/devices/googleBuds/configureWindow.js:134
+#: ../preferences/devices/sony/configureWindow.js:262
+#: ../preferences/devices/nothingBuds/configureWindow.js:263
+#: ../preferences/devices/nothingBuds/configureWindow.js:676
+msgid "Bass"
+msgstr "Basy"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:325
+#: ../preferences/devices/googleBuds/configureWindow.js:136
+#: ../preferences/devices/nothingBuds/configureWindow.js:263
+#: ../preferences/devices/nothingBuds/configureWindow.js:679
+msgid "Treble"
+msgstr "Výšky"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:420
+msgid "Automatically switch to Transparency mode when an earbud is removed"
+msgstr ""
+"Automaticky prepnúť do režimu „Transparency“, keď sa vyberie jedno slúchadlo"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:521
+#: ../preferences/devices/galaxyBuds/configureWindow.js:619
+#: ../preferences/devices/redmiBuds/configureWindow.js:293
+#: ../preferences/devices/nothingBuds/configureWindow.js:358
+msgid "Additional Settings"
+msgstr "Ďalšie nastavenia"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:566
+#: ../preferences/devices/sony/configureWindow.js:480
+msgid "After 5 minutes"
+msgstr "Po 5 minútach"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:567
+msgid "After 20 minutes"
+msgstr "Po 20 minútach"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:568
+msgid "After 40 minutes"
+msgstr "Po 40 minútach"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:570
+#: ../preferences/devices/sony/configureWindow.js:483
+msgid "After 3 hours"
+msgstr "Po 3 hodinách"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:578
+msgid "Automatic Power Off"
+msgstr "Automatické vypnutie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:600
+msgid "Voice Prompts"
+msgstr "Hlasové pokyny"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:615
+msgid "Enable Voice Prompts"
+msgstr "Povoliť hlasové pokyny"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:641
+msgid "Prompt Language"
+msgstr "Jazyk pokynov"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:654
+msgid "Announce Battery Level at Startup"
+msgstr "Oznámiť stav batérie pri spustení"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:677
+#: ../preferences/devices/galaxyBuds/configureWindow.js:359
+#: ../preferences/devices/redmiBuds/configureWindow.js:402
+#: ../preferences/devices/nothingBuds/configureWindow.js:444
+msgid "Single Tap"
+msgstr "Jedno ťuknutie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:678
+#: ../preferences/devices/galaxyBuds/configureWindow.js:372
+#: ../preferences/devices/redmiBuds/configureWindow.js:403
+#: ../preferences/devices/nothingBuds/configureWindow.js:445
+msgid "Double Tap"
+msgstr "Dvojité ťuknutie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:679
+#: ../preferences/devices/galaxyBuds/configureWindow.js:385
+#: ../preferences/devices/redmiBuds/configureWindow.js:404
+#: ../preferences/devices/nothingBuds/configureWindow.js:446
+msgid "Triple Tap"
+msgstr "Trojité ťuknutie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:680
+#: ../preferences/devices/galaxyBuds/configureWindow.js:398
+msgid "Touch and Hold"
+msgstr "Dotyk a podržať"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:681
+#: ../preferences/devices/nothingBuds/configureWindow.js:448
+msgid "Double Tap and Hold"
+msgstr "Dvojité ťuknutie a podržanie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:683
+#: ../preferences/devices/redmiBuds/configureWindow.js:407
+#: ../preferences/devices/nothingBuds/configureWindow.js:450
+#: ../preferences/devices/nothingBuds/configureWindow.js:465
+msgid "Single Press"
+msgstr "Jedno stlačenie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:684
+#: ../preferences/devices/redmiBuds/configureWindow.js:408
+#: ../preferences/devices/nothingBuds/configureWindow.js:451
+#: ../preferences/devices/nothingBuds/configureWindow.js:466
+msgid "Double Press"
+msgstr "Dvojité stlačenie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:685
+#: ../preferences/devices/redmiBuds/configureWindow.js:409
+#: ../preferences/devices/nothingBuds/configureWindow.js:452
+#: ../preferences/devices/nothingBuds/configureWindow.js:467
+msgid "Triple Press"
+msgstr "Trojité stlačenie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:686
+#: ../preferences/devices/redmiBuds/configureWindow.js:410
+#: ../preferences/devices/nothingBuds/configureWindow.js:453
+#: ../preferences/devices/nothingBuds/configureWindow.js:462
+#: ../preferences/devices/nothingBuds/configureWindow.js:468
+msgid "Press and Hold"
+msgstr "Stlačiť a podržať"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:687
+#: ../preferences/devices/nothingBuds/configureWindow.js:454
+#: ../preferences/devices/nothingBuds/configureWindow.js:469
+msgid "Double Press and Hold"
+msgstr "Dvojité stlačenie a podržanie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:689
+#: ../preferences/devices/redmiBuds/configureWindow.js:412
+#: ../preferences/devices/nothingBuds/configureWindow.js:456
+msgid "Single Pinch"
+msgstr "Jedno stlačenie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:690
+#: ../preferences/devices/redmiBuds/configureWindow.js:413
+#: ../preferences/devices/nothingBuds/configureWindow.js:457
+msgid "Double Pinch"
+msgstr "Dvojité stlačenie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:691
+#: ../preferences/devices/redmiBuds/configureWindow.js:414
+#: ../preferences/devices/nothingBuds/configureWindow.js:458
+msgid "Triple Pinch"
+msgstr "Trojité stlačenie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:692
+#: ../preferences/devices/redmiBuds/configureWindow.js:415
+#: ../preferences/devices/nothingBuds/configureWindow.js:459
+msgid "Pinch and Hold"
+msgstr "Stlačiť a podržať"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:693
+#: ../preferences/devices/nothingBuds/configureWindow.js:460
+msgid "Double Pinch and Hold"
+msgstr "Dvojité stlačenie a podržanie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:757
+#: ../preferences/devices/boseBuds/configureWindow.js:766
+#: ../preferences/devices/nothingBuds/configureWindow.js:600
+#: ../preferences/devices/nothingBuds/configureWindow.js:618
+msgid "Gesture Controls"
+msgstr "Ovládanie gestami"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:760
+#: ../preferences/devices/redmiBuds/configureWindow.js:421
+#: ../preferences/devices/nothingBuds/configureWindow.js:603
+msgid "Left Buds Gesture Control"
+msgstr "Ovládanie gestami ľavých slúchadiel"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:763
+#: ../preferences/devices/redmiBuds/configureWindow.js:425
+#: ../preferences/devices/nothingBuds/configureWindow.js:606
+msgid "Right Buds Gesture Control"
+msgstr "Ovládanie gestami pravých slúchadiel"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:775
+#: ../preferences/devices/redmiBuds/configureWindow.js:513
+#: ../preferences/devices/nothingBuds/configureWindow.js:652
+msgid "No Action"
+msgstr "Žiadna akcia"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:778
+msgid "Cycle Through Modes"
+msgstr "Prepínať medzi režimami"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:784
+msgid "Switch Devices"
+msgstr "Prepnúť zariadenia"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:787
+#: ../preferences/devices/galaxyBuds/configureWindow.js:472
+msgid "Spotify"
+msgstr "Spotify"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:790
+#: ../preferences/devices/boseBuds/configureWindow.js:796
+#: ../preferences/devices/galaxyBuds/configureWindow.js:468
+#: ../preferences/devices/redmiBuds/configureWindow.js:501
+#: ../preferences/devices/nothingBuds/configureWindow.js:634
+msgid "Voice Assistant"
+msgstr "Hlasový asistent"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:793
+msgid "Not Configured"
+msgstr "Nenastavené"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:805
+#: ../preferences/devices/redmiBuds/configureWindow.js:492
+#: ../preferences/devices/nothingBuds/configureWindow.js:625
+msgid "Play / Pause"
+msgstr "Prehrať / Pozastaviť"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:808
+msgid "Increase Noise Cancellation"
+msgstr "Zvýšiť potlačenie hluku"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:811
+msgid "Decrease Noise Cancellation"
+msgstr "Znížiť potlačenie hluku"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:817
+msgid "Conversation Mode"
+msgstr "Režim konverzácie"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:820
+#: ../preferences/devices/redmiBuds/configureWindow.js:495
+#: ../preferences/devices/nothingBuds/configureWindow.js:628
+msgid "Previous Track"
+msgstr "Predchádzajúca skladba"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:823
+#: ../preferences/devices/redmiBuds/configureWindow.js:498
+#: ../preferences/devices/nothingBuds/configureWindow.js:631
+msgid "Next Track"
+msgstr "Ďalšia skladba"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:835
+msgid "Audio Line-In"
+msgstr "Audio vstup"
+
+#: ../preferences/devices/boseBuds/configureWindow.js:841
+msgid "Disabled"
+msgstr "Vypnuté"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:62
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:393
+msgid "Favorite"
+msgstr "Obľúbené"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:74
+msgid "Preset modes cannot be deleted."
+msgstr "Prednastavené režimy nie je možné vymazať."
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:75
+msgid "Delete"
+msgstr "Vymazať"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:86
+msgid "Mode"
+msgstr "Režim"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:238
+msgid "Remove Mode?"
+msgstr "Odstrániť režim?"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:239
+msgid "This mode will be removed."
+msgstr "Tento režim bude odstránený."
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:242
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:287
+#: ../preferences/widgets/ringMyBudsRow.js:142
+#: ../preferences/widgets/deviceMgmtRowWidget.js:330
+#: ../preferences/widgets/peqRowWidget.js:1122
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:243
+#: ../preferences/widgets/deviceMgmtRowWidget.js:331
+#: ../preferences/widgets/deviceMgmtRowWidget.js:351
+#: ../preferences/widgets/peqRowWidget.js:1123
+msgid "Remove"
+msgstr "Odstrániť"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:283
+msgid "Rename Mode?"
+msgstr "Premenovať režim?"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:284
+#, javascript-format
+msgid "Change the mode name to \"%s\"?"
+msgstr "Zmeniť názov režimu na „%s“?"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:288
+msgid "Rename"
+msgstr "Premenovať"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:401
+msgid "Edit"
+msgstr "Upraviť"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:496
+msgid "Maximum 4 modes can be selected"
+msgstr "Je možné vybrať maximálne 4 režimy"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:510
+msgid "At least 2 modes must be selected."
+msgstr "Je potrebné vybrať aspoň 2 režimy."
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:551
+msgid "Maximum favorites limit reached."
+msgstr "Bol dosiahnutý maximálny limit obľúbených položiek."
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:566
+msgid "At least 2 favorites are required."
+msgstr "Sú potrebné aspoň 2 obľúbené položky."
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:617
+msgid "Add"
+msgstr "Pridať"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:623
+msgid "Commute"
+msgstr "Preprava"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:624
+msgid "Focus"
+msgstr "Sústredenie"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:625
+msgid "Home"
+msgstr "Domov"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:626
+msgid "Music"
+msgstr "Hudba"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:627
+#: ../preferences/devices/redmiBuds/configureWindow.js:230
+msgid "Outdoor"
+msgstr "Vonku"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:628
+msgid "Relax"
+msgstr "Uvoľnený"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:629
+msgid "Run"
+msgstr "Beh"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:630
+msgid "Walk"
+msgstr "Prechádzka"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:631
+msgid "Work"
+msgstr "Práca"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:632
+msgid "Workout"
+msgstr "Cvičenie"
+
+#: ../preferences/devices/boseBuds/modesGroupWidget.js:633
+msgid "Stereo"
+msgstr "Stereo"
+
+#: ../preferences/devices/gfps/devicePrefs.js:37 ../ui/devices/gfps.ui:5
+msgid "Google Fast Pair"
+msgstr "Google Fast Pair"
+
+#: ../preferences/devices/googleBuds/devicePrefs.js:37
+#: ../ui/devices/googleBuds.ui:5
+msgid "Google Pixel Buds"
+msgstr "Google Pixel Buds"
+
+#: ../preferences/devices/googleBuds/configureWindow.js:76
+msgid "Volume EQ"
+msgstr "Ekvalizér hlasitosti"
+
+#: ../preferences/devices/googleBuds/configureWindow.js:86
+msgid "Heavy bass"
+msgstr "Silné basy"
+
+#: ../preferences/devices/googleBuds/configureWindow.js:87
+msgid "Light bass"
+msgstr "Jemné basy"
+
+#: ../preferences/devices/googleBuds/configureWindow.js:88
+#: ../preferences/devices/redmiBuds/configureWindow.js:232
+#: ../preferences/devices/nothingBuds/configureWindow.js:220
+msgid "Balanced"
+msgstr "Vyvážené"
+
+#: ../preferences/devices/googleBuds/configureWindow.js:89
+msgid "Vocal boost"
+msgstr "Zosilnenie vokálov"
+
+#: ../preferences/devices/googleBuds/configureWindow.js:91
+msgid "Last saved"
+msgstr "Naposledy uložené"
+
+#: ../preferences/devices/googleBuds/configureWindow.js:133
+msgid "Low Bass"
+msgstr "Nízke basy"
+
+#: ../preferences/devices/googleBuds/configureWindow.js:137
+msgid "Upper Treble"
+msgstr "Vysoké tóny"
+
+#: ../preferences/devices/sony/devicePrefs.js:37
+msgid "Sony audio devices"
+msgstr "Sony audio zariadenia"
+
+#: ../preferences/devices/sony/configureWindow.js:120
+msgid "Voice Detection Sensitivity"
+msgstr "Citlivosť detekcie hlasu"
+
+#: ../preferences/devices/sony/configureWindow.js:133
+msgid "Short"
+msgstr "Krátke"
+
+#: ../preferences/devices/sony/configureWindow.js:133
+msgid "Long"
+msgstr "Dlhý"
+
+#: ../preferences/devices/sony/configureWindow.js:136
+#: ../preferences/devices/galaxyBuds/configureWindow.js:258
+msgid "Duration"
+msgstr "Dĺžka"
+
+#: ../preferences/devices/sony/configureWindow.js:153
+#: ../preferences/devices/sony/configureWindow.js:169
+msgid "Listening Mode"
+msgstr "Režim počúvania"
+
+#: ../preferences/devices/sony/configureWindow.js:158
+msgid "Background Music"
+msgstr "Hudba v pozadí"
+
+#: ../preferences/devices/sony/configureWindow.js:159
+msgid "Cinema"
+msgstr "Kino"
+
+#: ../preferences/devices/sony/configureWindow.js:184
+msgid "My Room"
+msgstr "Moja izba"
+
+#: ../preferences/devices/sony/configureWindow.js:185
+msgid "Living Room"
+msgstr "Obývačka"
+
+#: ../preferences/devices/sony/configureWindow.js:186
+msgid "Cafe"
+msgstr "Kaviareň"
+
+#: ../preferences/devices/sony/configureWindow.js:196
+msgid "Background Music Effects"
+msgstr "Hudobné efekty v pozadí"
+
+#: ../preferences/devices/sony/configureWindow.js:216
+msgid "Bright"
+msgstr "Jasný"
+
+#: ../preferences/devices/sony/configureWindow.js:217
+msgid "Excited"
+msgstr "Nadšený"
+
+#: ../preferences/devices/sony/configureWindow.js:218
+msgid "Mellow"
+msgstr "Jemný"
+
+#: ../preferences/devices/sony/configureWindow.js:219
+msgid "Relaxed"
+msgstr "Uvoľnený"
+
+#: ../preferences/devices/sony/configureWindow.js:220
+msgid "Vocal"
+msgstr "Vokály"
+
+#: ../preferences/devices/sony/configureWindow.js:223
+msgid "Speech"
+msgstr "Reč"
+
+#: ../preferences/devices/sony/configureWindow.js:224
+msgid "Manual"
+msgstr "Manuálne"
+
+#: ../preferences/devices/sony/configureWindow.js:225
+msgid "Custom 1"
+msgstr "Vlastné 1"
+
+#: ../preferences/devices/sony/configureWindow.js:226
+msgid "Custom 2"
+msgstr "Vlastné 2"
+
+#: ../preferences/devices/sony/configureWindow.js:263
+msgid "31"
+msgstr "31"
+
+#: ../preferences/devices/sony/configureWindow.js:290
+msgid "DSEE"
+msgstr "DSEE"
+
+#: ../preferences/devices/sony/configureWindow.js:294
+msgid "Enable DSEE enhancement"
+msgstr "Povoliť vylepšenie DSEE"
+
+#: ../preferences/devices/sony/configureWindow.js:308
+msgid "Button/Touch Settings"
+msgstr "Nastavenia tlačidiel/dotyku"
+
+#: ../preferences/devices/sony/configureWindow.js:312
+msgid "Ambient Sound Control"
+msgstr "Ovládanie okolitého zvuku"
+
+#: ../preferences/devices/sony/configureWindow.js:313
+msgid "Ambient Sound Control / Quick Access"
+msgstr "Ovládanie okolitého zvuku / Rýchly prístup"
+
+#: ../preferences/devices/sony/configureWindow.js:315
+#: ../preferences/devices/sony/configureWindow.js:316
+msgid "Playback Control"
+msgstr "Ovládanie prehrávania"
+
+#: ../preferences/devices/sony/configureWindow.js:318
+msgid "Not Assigned"
+msgstr "Nepriradené"
+
+#: ../preferences/devices/sony/configureWindow.js:334
+msgid "Left Bud"
+msgstr "Ľavé slúchadlo"
+
+#: ../preferences/devices/sony/configureWindow.js:348
+msgid "Right Bud"
+msgstr "Pravé slúchadlo"
+
+#: ../preferences/devices/sony/configureWindow.js:365
+msgid "ANC Button Configuration"
+msgstr "Konfigurácia tlačidla ANC"
+
+#: ../preferences/devices/sony/configureWindow.js:376
+msgid "[NC/AMB] Button Settings"
+msgstr "Nastavenia tlačidla [NC/AMB]"
+
+#: ../preferences/devices/sony/configureWindow.js:377
+msgid "Select the modes to toggle when the button is pressed"
+msgstr "Vyberte režimy, ktoré sa majú prepínať pri stlačení tlačidla"
+
+#: ../preferences/devices/sony/configureWindow.js:395
+msgid "Notification"
+msgstr "Upozornenie"
+
+#: ../preferences/devices/sony/configureWindow.js:399
+msgid "Voice Notification"
+msgstr "Hlasové upozornenie"
+
+#: ../preferences/devices/sony/configureWindow.js:400
+msgid "Enable voice notification"
+msgstr "Zapnúť hlasové upozornenia"
+
+#: ../preferences/devices/sony/configureWindow.js:418
+msgid "Voice Notification Volume"
+msgstr "Hlasitosť hlasových upozornení"
+
+#: ../preferences/devices/sony/configureWindow.js:420
+msgid "-2"
+msgstr "-2"
+
+#: ../preferences/devices/sony/configureWindow.js:421
+msgid "-1"
+msgstr "-1"
+
+#: ../preferences/devices/sony/configureWindow.js:422
+msgid "0"
+msgstr "0"
+
+#: ../preferences/devices/sony/configureWindow.js:423
+msgid "+1"
+msgstr "+1"
+
+#: ../preferences/devices/sony/configureWindow.js:424
+msgid "+2"
+msgstr "+2"
+
+#: ../preferences/devices/sony/configureWindow.js:443
+msgid "Headset Take off"
+msgstr "Odloženie slúchadiel"
+
+#: ../preferences/devices/sony/configureWindow.js:450
+msgid "Pause when taken off"
+msgstr "Pozastaviť pri odložení"
+
+#: ../preferences/devices/sony/configureWindow.js:464
+msgid "Automatically Power Off"
+msgstr "Automatické vypnutie"
+
+#: ../preferences/devices/sony/configureWindow.js:465
+msgid "Automatically power off when not worn."
+msgstr "Automaticky vypnúť, keď nie je nosené."
+
+#: ../preferences/devices/galaxyBuds/devicePrefs.js:37
+#: ../ui/devices/galaxyBuds.ui:5
+msgid "Samsung Galaxy Buds"
+msgstr "Samsung Galaxy slúchadlá"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:252
+msgid "Voice detection"
+msgstr "Detekcia hlasu"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:255
+msgid "5 seconds"
+msgstr "5 sekúnd"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:255
+msgid "10 seconds"
+msgstr "10 sekúnd"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:255
+msgid "15 seconds"
+msgstr "15 sekúnd"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:279
+msgid "Soft"
+msgstr "Jemný"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:280
+msgid "Dynamic"
+msgstr "Dynamický"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:281
+msgid "Clear"
+msgstr "Čistý"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:312
+msgid "Balance"
+msgstr "Vyváženie"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:316
+#: ../ui/batteryWidgetSettings.ui:117
+msgid "Left"
+msgstr "Ľavý"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:317
+msgid "Center"
+msgstr "Stred"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:318
+#: ../ui/batteryWidgetSettings.ui:118
+msgid "Right"
+msgstr "Pravé"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:336
+msgid "Earbuds Controls"
+msgstr "Ovládanie slúchadiel"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:342
+msgid "Media Controls (Pinch And Swipe)"
+msgstr "Ovládanie médií (stlačenie a potiahnutie)"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:342
+msgid "Enable Touch Controls "
+msgstr "Povoliť dotykové ovládanie "
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:417
+msgid "Pinch to Answer Call or End Call"
+msgstr "Stlačením prijať alebo ukončiť hovor"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:418
+msgid "Double Tap to Answer Call or End Call"
+msgstr "Dvojitým ťuknutím prijať alebo ukončiť hovor"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:432
+msgid "Pinch and Hold to Decline Call"
+msgstr "Stlačením a podržaním odmietnuť hovor"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:433
+msgid "Touch and Hold to Decline Call"
+msgstr "Dotykom a podržaním odmietnuť hovor"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:469
+msgid "Quick Ambient Sound"
+msgstr "Rýchly okolitý zvuk"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:471
+msgid "Ambient Sound"
+msgstr "Okolitý zvuk"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:474
+msgid "ANC"
+msgstr "ANC"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:490
+msgid "Left Earbud Pinch and Hold Function"
+msgstr "Funkcia stlačenia a podržania ľavého slúchadla"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:491
+msgid "Left Earbud Touch and Hold Function"
+msgstr "Funkcia dotyku a podržania ľavého slúchadla"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:494
+msgid "Right Earbud Pinch and Hold Function"
+msgstr "Funkcia stlačenia a podržania pre pravé slúchadlo"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:495
+msgid "Right Earbud Touch and Hold Function"
+msgstr "Funkcia dotyku a podržania pre pravé slúchadlo"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:548
+msgid "Select any two toggles"
+msgstr "Vyberte ľubovoľné dva prepínače"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:554
+msgid "Pinch and Hold Cycle for Left Earbud"
+msgstr "Cyklus stlačenia a podržania pre ľavé slúchadlo"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:555
+msgid "Pinch and hold cycles between modes (Left)"
+msgstr "Stlačením a podržaním prepína medzi režimami (Ľavé)"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:556
+msgid "Pinch and Hold Cycle for Right Earbud"
+msgstr "Cyklus stlačenia a podržania pre pravé slúchadlo"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:557
+msgid "Pinch and hold cycles between modes (Right)"
+msgstr "Stlačením a podržaním prepína medzi režimami (Pravé)"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:559
+msgid "Touch and Hold Cycle for Left Earbud"
+msgstr "Cyklus dotyku a podržania pre ľavé slúchadlo"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:560
+msgid "Touch and hold cycles between modes (Left)"
+msgstr "Dotyk a podržanie prepína medzi režimami (Ľavé)"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:561
+msgid "Touch and Hold Cycle for Right Earbud"
+msgstr "Cyklus dotyku a podržania pre pravé slúchadlo"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:562
+msgid "Touch and hold cycles between modes (Right)"
+msgstr "Dotyk a podržanie prepína medzi režimami (Pravé)"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:565
+msgid "Pinch and Hold Cycle"
+msgstr "Cyklus stlačenia a podržania"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:566
+msgid "Pinch and hold cycles between modes"
+msgstr "Stlačením a podržaním prepína medzi režimami"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:568
+msgid "Touch and Hold Cycle"
+msgstr "Cyklus dotyku a podržania"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:569
+msgid "Touch and hold cycles between modes"
+msgstr "Dotyk a podržanie prepína medzi režimami"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:639
+msgid "Noise Controls With One Earbud"
+msgstr "Ovládanie hluku s jedným slúchadlom"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:653
+msgid "Double Tap Outside Edge For Volume Controls"
+msgstr "Dvojité ťuknutie na vonkajší okraj pre ovládanie hlasitosti"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:696
+msgid "Left Ambient Sound Volume"
+msgstr "Hlasitosť okolitého zvuku - Ľavé"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:717
+msgid "Right Ambient Sound Volume"
+msgstr "Hlasitosť okolitého zvuku - Pravé"
+
+#: ../preferences/devices/galaxyBuds/configureWindow.js:738
+msgid "Ambient Sound Tone"
+msgstr "Tón okolitého zvuku"
+
+#: ../preferences/devices/redmiBuds/devicePrefs.js:37
+#: ../ui/devices/redmiBuds.ui:5
+msgid "Redmi/Xiaomi"
+msgstr "Redmi/Xiaomi"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:220
+#: ../preferences/devices/nothingBuds/configureWindow.js:223
+msgid "More Bass"
+msgstr "Viac basov"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:221
+#: ../preferences/devices/nothingBuds/configureWindow.js:222
+msgid "More Treble"
+msgstr "Viac výšok"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:222
+msgid "Volume Boost"
+msgstr "Zosilnenie hlasitosti"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:224
+msgid "Classic"
+msgstr "Klasická"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:225
+msgid "Audiophile"
+msgstr "Audiofil"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:226
+msgid "Decrease bass"
+msgstr "Znížiť basy"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:227
+msgid "Harman EFX"
+msgstr "Harman EFX"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:228
+msgid "Harman Master"
+msgstr "Harman Master"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:229
+msgid "Standard 2"
+msgstr "Štandard 2"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:231
+msgid "Underwater"
+msgstr "Pod vodou"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:265
+msgid "62"
+msgstr "62"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:299
+#: ../preferences/widgets/deviceMgmtRowWidget.js:459
+msgid "Allow Connections to Multiple Devices"
+msgstr "Povoliť pripojenie k viacerým zariadeniam"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:313
+msgid "Automatically answer phone calls"
+msgstr "Automaticky prijať telefónne hovory"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:327
+#| msgid "Adaptive"
+msgid "Adaptive Sound"
+msgstr "Adaptívny zvuk"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:341
+#: ../preferences/devices/nothingBuds/configureWindow.js:363
+msgid "Enable low latency mode"
+msgstr "Povoliť režim nízkej latencie"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:378
+#: ../preferences/devices/nothingBuds/configureWindow.js:422
+msgid "Noise Control Cycle: "
+msgstr "Cyklus ovládania hluku: "
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:405
+#: ../preferences/devices/nothingBuds/configureWindow.js:447
+msgid "Tap and Hold"
+msgstr "Ťuknúť a podržať"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:417
+msgid "Swipe"
+msgstr "Potiahnuť"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:504
+#: ../preferences/devices/nothingBuds/configureWindow.js:637
+msgid "Volume Up"
+msgstr "Zvýšiť hlasitosť"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:507
+#: ../preferences/devices/nothingBuds/configureWindow.js:640
+msgid "Volume Down"
+msgstr "Znížiť hlasitosť"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:516
+#: ../preferences/devices/nothingBuds/configureWindow.js:655
+msgid "Change Volume"
+msgstr "Zmeniť hlasitosť"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:519
+#: ../preferences/devices/nothingBuds/configureWindow.js:682
+msgid "Toggle Low Latency"
+msgstr "Prepnúť nízku latenciu"
+
+#: ../preferences/devices/redmiBuds/configureWindow.js:522
+#: ../preferences/devices/nothingBuds/configureWindow.js:688
+msgid "Take Photo"
+msgstr "Odfotiť"
+
+#: ../preferences/devices/nothingBuds/devicePrefs.js:37
+msgid "Nothing/CMF Buds"
+msgstr "Nothing/CMF slúchadlá"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:224
+msgid "Dirac"
+msgstr "Dirac"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:226
+msgid "Electronic"
+msgstr "Elektronická"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:228
+msgid "Enhance Vocals"
+msgstr "Vylepšiť vokály"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:303
+msgid "Bass Boost Level"
+msgstr "Úroveň zosilnenia basov"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:306
+msgid "-"
+msgstr "-"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:310
+msgid "+"
+msgstr "+"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:341
+msgid "Enable Spatial Audio"
+msgstr "Povoliť priestorový zvuk"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:376
+msgid "Enable in ear detection"
+msgstr "Povoliť detekciu v uchu"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:463
+msgid "Slide to Adjust"
+msgstr "Posuňte na nastavenie"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:470
+msgid "Rotate"
+msgstr "Otočiť"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:493
+msgid "Unknown Gesture"
+msgstr "Neznáme gesto"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:609
+msgid "Roller Gesture Control"
+msgstr "Ovládanie gestom kolieska"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:612
+msgid "Case Gesture Control"
+msgstr "Ovládanie gestom puzdra"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:615
+msgid "Slider Gesture Control"
+msgstr "Ovládanie gestom posuvníka"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:649
+msgid "ANC Type"
+msgstr "Typ ANC"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:658
+msgid "Channel Hop"
+msgstr "Prepínanie kanálov"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:661
+msgid "New Reporter"
+msgstr "Nový reportér"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:667
+msgid "Mic On/Off"
+msgstr "Mikrofón Zap/Vyp"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:673
+msgid "Walkie Takie"
+msgstr "Vysielačka"
+
+#: ../preferences/devices/nothingBuds/configureWindow.js:685
+msgid "Essential Space"
+msgstr "Essential Space"
+
+#: ../preferences/batteryWidgetSettings.js:17
+#, javascript-format
+msgid "Assign color for %d – %d%%"
+msgstr "Priradiť farbu pre %d – %d%%"
+
+#: ../preferences/batteryWidgetSettings.js:18
+#, javascript-format
+msgid "Set color for the battery level range of %d – %d%%"
+msgstr "Nastaviť farbu pre rozsah úrovne batérie %d – %d%%"
+
+#: ../preferences/widgets/iconSelectorWidget.js:51
+#: ../preferences/widgets/iconSelectorWidget.js:69
+msgid "Device information"
+msgstr "Informácie o zariadení"
+
+#: ../preferences/widgets/iconSelectorWidget.js:103
+msgid "Mac Address"
+msgstr "MAC adresa"
+
+#: ../preferences/widgets/iconSelectorWidget.js:106
+msgid "Firmware Version"
+msgstr "Verzia firmvéru"
+
+#: ../preferences/widgets/iconSelectorWidget.js:116
+#: ../preferences/widgets/iconSelectorWidget.js:149
+msgid "Serial Number"
+msgstr "Sériové číslo"
+
+#: ../preferences/widgets/ringMyBudsRow.js:22
 msgid "Find my earbuds"
-msgstr ""
+msgstr "Nájsť moje slúchadlá"
 
-#: preferences/widgets/ringMyBudsRow.js:32
-#: preferences/widgets/ringMyBudsRow.js:53
-#: preferences/widgets/ringMyBudsRow.js:97
-#: preferences/widgets/ringMyBudsRow.js:142
+#: ../preferences/widgets/ringMyBudsRow.js:33
+#: ../preferences/widgets/ringMyBudsRow.js:54
+#: ../preferences/widgets/ringMyBudsRow.js:98
+#: ../preferences/widgets/ringMyBudsRow.js:143
 msgid "Play"
-msgstr ""
+msgstr "Prehrať"
 
-#: preferences/widgets/ringMyBudsRow.js:94
+#: ../preferences/widgets/ringMyBudsRow.js:95
 msgid "Stop"
-msgstr ""
+msgstr "Zastaviť"
 
-#: preferences/widgets/ringMyBudsRow.js:133
+#: ../preferences/widgets/ringMyBudsRow.js:134
 msgid "Continue?"
-msgstr ""
+msgstr "Pokračovať?"
 
-#: preferences/widgets/ringMyBudsRow.js:135
+#: ../preferences/widgets/ringMyBudsRow.js:136
 msgid ""
 "Your earbuds/headset may be in use. Be sure to remove them from your ears "
 "before you continue. A loud sound will be played which could be "
 "uncomfortable for anyone wearing them."
 msgstr ""
+"Vaše slúchadlá do uší/náhlavná súprava sú pravdepodobne v prevádzke. Než "
+"budete pokračovať, nezabudnite si ich vybrať z uší. Ozve sa hlasný zvuk, "
+"ktorý by mohol byť nepríjemný pre každého, kto ich má nasadené."
 
-#: preferences/widgets/ringMyBudsRow.js:141
-msgid "Cancel"
-msgstr ""
+#: ../preferences/widgets/deviceMgmtRowWidget.js:30
+msgid "Connection Manager"
+msgstr "Správca pripojenia"
 
-#: preferences/widgets/iconSelectorWidget.js:47
-#: preferences/widgets/iconSelectorWidget.js:65
-msgid "Device information"
-msgstr ""
+#: ../preferences/widgets/deviceMgmtRowWidget.js:37
+msgid "Pairing Mode"
+msgstr "Režim párovania"
 
-#: preferences/widgets/iconSelectorWidget.js:78
-msgid "Mac Address"
-msgstr ""
+#: ../preferences/widgets/deviceMgmtRowWidget.js:39
+msgid "Enable Pairing Mode"
+msgstr "Povoliť režim párovania"
 
-#: preferences/widgets/iconSelectorWidget.js:100
-msgid "Firmware Version"
-msgstr ""
+#: ../preferences/widgets/deviceMgmtRowWidget.js:40
+msgid "Allow a new Bluetooth device to pair."
+msgstr "Povoliť spárovanie nového zariadenia Bluetooth."
 
-#: preferences/device.js:53
-msgid "Reported from enhanced device service"
-msgstr ""
+#: ../preferences/widgets/deviceMgmtRowWidget.js:77
+msgid "Playback Device"
+msgstr "Prehrávač"
 
-#: preferences/device.js:68
-msgid "This is an enhanced device"
-msgstr ""
+#: ../preferences/widgets/deviceMgmtRowWidget.js:78
+msgid "Lock Playback Device"
+msgstr "Zamknúť prehrávač"
 
-#: preferences/device.js:69
-msgid "Icon selection if available are in Enhanced device per device settings"
-msgstr ""
-
-#: preferences/device.js:124 ui/quickSettings.ui:5
-msgid "Quick Menu"
-msgstr ""
-
-#: preferences/device.js:128
-msgid "Display Battery Level"
-msgstr ""
-
-#: preferences/device.js:129
-msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
-
-#: preferences/device.js:158
-msgid "Do not show Icon"
-msgstr ""
-
-#: preferences/device.js:159
-msgid "Show Icon without Battery level"
-msgstr ""
-
-#: preferences/device.js:160
-msgid "Show Icon with Battery Level"
-msgstr ""
-
-#: preferences/device.js:226
+#: ../preferences/widgets/deviceMgmtRowWidget.js:79
 msgid ""
-"Delete device information: The button is available after unpairing device"
+"Prevent playback from switching to another connected device while the set "
+"playback device is streaming."
 msgstr ""
+"Zabrániť, aby sa prehrávanie prepínalo na iné pripojené zariadenie, keď "
+"nastavené prehrávacie zariadenie práve streamuje."
 
-#: preferences/device.js:258
-msgid "(Removed)"
+#: ../preferences/widgets/deviceMgmtRowWidget.js:95
+msgid "Connected"
+msgstr "Pripojené"
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:96
+msgid "Paired"
+msgstr "Spárované"
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:97
+msgid "No device connected"
+msgstr "Nie je pripojené žiadne zariadenie"
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:98
+msgid "No additional device paired"
+msgstr "Nie je spárované žiadne ďalšie zariadenie"
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:162
+#: ../preferences/widgets/deviceMgmtRowWidget.js:250
+msgid "Loading Device Information..."
+msgstr "Načítavanie informácií o zariadení..."
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:164
+#: ../preferences/widgets/deviceMgmtRowWidget.js:252
+msgid "(This Device)"
+msgstr "(Toto zariadenie)"
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:299
+msgid "Connection Limit Reached"
+msgstr "Bol dosiahnutý limit pripojení"
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:300
+msgid "Disconnect another device before connecting this device."
+msgstr "Pred pripojením tohto zariadenia odpojte iné zariadenie."
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:303
+msgid "OK"
+msgstr "OK"
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:326
+msgid "Remove Device?"
+msgstr "Odstrániť zariadenie?"
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:327
+msgid "The device will be removed from the paired devices list."
+msgstr "Zariadenie bude odstránené zo zoznamu spárovaných zariadení."
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:348
+msgid "Set as Playback Device"
+msgstr "Nastaviť ako prehrávacie zariadenie"
+
+#: ../preferences/widgets/deviceMgmtRowWidget.js:474
+msgid "Manage Devices"
+msgstr "Spravovať zariadenia"
+
+#: ../preferences/widgets/peqRowWidget.js:632
+msgid "Low Pass Filter"
+msgstr "Nízko-prechodový filter"
+
+#: ../preferences/widgets/peqRowWidget.js:633
+msgid "High Pass Filter"
+msgstr "Vysoko-prechodový filter"
+
+#: ../preferences/widgets/peqRowWidget.js:634
+msgid "Low Shelf Filter"
+msgstr "Low Shelf Filter"
+
+#: ../preferences/widgets/peqRowWidget.js:635
+msgid "High Shelf Filter"
+msgstr "High Shelf Filter"
+
+#: ../preferences/widgets/peqRowWidget.js:641
+msgid "Frequency"
+msgstr "Frekvencia"
+
+#: ../preferences/widgets/peqRowWidget.js:649
+msgid "Quality Factor"
+msgstr "Koeficient kvality"
+
+#: ../preferences/widgets/peqRowWidget.js:657
+msgid "Gain"
+msgstr "Gain"
+
+#: ../preferences/widgets/peqRowWidget.js:782
+msgid "Bypass"
+msgstr "Bypass"
+
+#: ../preferences/widgets/peqRowWidget.js:790
+#, javascript-format
+msgid "%d Hz,  %s dB,  Q: %s"
+msgstr "%d Hz,  %s dB,  Q: %s"
+
+#: ../preferences/widgets/peqRowWidget.js:931
+msgid "Pre Amp Gain"
+msgstr "Pre Amp Gain"
+
+#: ../preferences/widgets/peqRowWidget.js:1340
+msgid "Show"
+msgstr "Zobraziť"
+
+#: ../preferences/upowerDevices.js:101
+msgid "Alias"
+msgstr "Alias"
+
+#: ../preferences/upowerDevices.js:105
+msgid "Device Alias"
+msgstr "Prezývka zariadenia"
+
+#: ../preferences/upowerDevices.js:199
+msgid ""
+"Delete device information: The button is available after upower device are "
+"removed"
 msgstr ""
+"Odstrániť informácie o zariadení: Tlačidlo je k dispozícii po odstránení "
+"zariadenia upower"
 
-#: preferences/device.js:259
-msgid "(Paired)"
-msgstr ""
+#: ../preferences/upowerDevices.js:232
+msgid "(Offline)"
+msgstr "(Offline)"
 
-#: ui/indicator.ui:9
+#: ../preferences/upowerDevices.js:233
+msgid "(Online)"
+msgstr "(Online)"
+
+#: ../ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
-msgstr ""
+msgstr "Nastavenia systémového indikátora Bluetooth"
 
-#: ui/indicator.ui:12
+#: ../ui/indicator.ui:12
 msgid "Bluetooth Connection Status Indicator"
-msgstr ""
+msgstr "Indikátor stavu pripojenia Bluetooth"
 
-#: ui/indicator.ui:13
+#: ../ui/indicator.ui:13
 msgid ""
 "Hide conditionally: Displayed only when no other bluetooth related "
 "indicators are present"
 msgstr ""
+"Skryť podmienečne: Zobrazí sa len vtedy, ak nie sú prítomné žiadne iné "
+"indikátory súvisiace s Bluetooth"
 
-#: ui/indicator.ui:27
+#: ../ui/indicator.ui:27
 msgid "Battery Indicator Settings"
-msgstr ""
+msgstr "Nastavenia indikátora batérie"
 
-#: ui/indicator.ui:30
+#: ../ui/indicator.ui:30
 msgid "Choose Indicator mode"
-msgstr ""
+msgstr "Vyberte režim indikátora"
 
-#: ui/indicator.ui:31
+#: ../ui/indicator.ui:31
 msgid ""
 "Off: No battery indicator.\n"
 "System Indicator: Battery icon in top bar.\n"
 "Panel Button: Battery icon with menu."
 msgstr ""
+"Vypnuté: Žiadny indikátor batérie.\n"
+"Systémový indikátor: Ikona batérie v hornom paneli.\n"
+"Tlačidlo panela: Ikona batérie s ponukou."
 
-#: ui/indicator.ui:45
+#: ../ui/indicator.ui:45
 msgid "Panel Button Mode"
-msgstr ""
+msgstr "Režim tlačidla panela"
 
-#: ui/indicator.ui:48
+#: ../ui/indicator.ui:48
 msgid "Panel button indicator mode."
-msgstr ""
+msgstr "Režim indikátora tlačidla panela"
 
-#: ui/indicator.ui:49
+#: ../ui/indicator.ui:49
 msgid "On: Show one selected device. Off: Show all devices"
 msgstr ""
+"Zapnuté: Zobraziť jedno vybrané zariadenie. Vypnuté: Zobraziť všetky "
+"zariadenia"
 
-#: ui/indicator.ui:56
+#: ../ui/indicator.ui:56
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Nastavenia indikátora"
 
-#: ui/indicator.ui:59
+#: ../ui/indicator.ui:59
 msgid "Show Multiple Battery Indicators per Device"
-msgstr ""
+msgstr "Zobraziť viacero indikátorov stavu batérie na jedno zariadenie"
 
-#: ui/indicator.ui:60
+#: ../ui/indicator.ui:60
 msgid ""
 "For devices with multiple batteries, when enabled, shows a separate "
 "indicator for each battery. When disabled, shows a single indicator "
 "representing the most critical (lowest) battery level of the device."
 msgstr ""
+"V prípade zariadení s viacerými batériami sa pri zapnutej funkcii zobrazuje "
+"samostatný indikátor pre každú batériu. Pri vypnutej funkcii sa zobrazuje "
+"jediný indikátor, ktorý znázorňuje najkritickejšiu (najnižšiu) úroveň "
+"nabitia batérie v zariadení."
 
-#: ui/indicator.ui:67
+#: ../ui/indicator.ui:67
 msgid "Show Popup on Hover"
-msgstr ""
+msgstr "Zobraziť vyskakovacie okno pri prechode kurzorom"
 
-#: ui/indicator.ui:70
+#: ../ui/indicator.ui:70
 msgid "Show Detailed Info on Hover"
-msgstr ""
+msgstr "Zobraziť podrobné informácie po nabehnutí kurzora"
 
-#: ui/indicator.ui:71
+#: ../ui/indicator.ui:71
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
 msgstr ""
+"Po uplynutí nastaveného časového oneskorenia sa po umiestnení kurzora myši "
+"nad indikátorom zobrazí vyskakovacie okienko s informáciami o batérii a "
+"ovládacími prvkami"
 
-#: ui/indicator.ui:76
+#: ../ui/indicator.ui:76
 msgid "Hover Activation Delay"
-msgstr ""
+msgstr "Oneskorenie aktivácie pri prechode kurzorom"
 
-#: ui/indicator.ui:77
+#: ../ui/indicator.ui:77
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
+"Určte počet sekúnd, počas ktorých musí myš zostať na indikátore, než sa "
+"zobrazia podrobné informácie."
 
-#: ui/indicator.ui:95
+#: ../ui/indicator.ui:95
 msgid "Tooltips"
-msgstr ""
+msgstr "Popisky"
 
-#: ui/indicator.ui:98
+#: ../ui/indicator.ui:98
 msgid "Enable tooltips"
-msgstr ""
+msgstr "Povoliť popisky"
 
-#: ui/indicator.ui:99
+#: ../ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
 msgstr ""
+"Zobrazovať popisky pri prechádzaní kurzorom nad neoznačenými tlačidlami"
 
-#: ui/indicator.ui:107
+#: ../ui/indicator.ui:107
 msgid "Default Behaviour"
-msgstr ""
+msgstr "Predvolené správanie"
 
-#: ui/indicator.ui:108
+#: ../ui/indicator.ui:108
 msgid "Hide Always"
-msgstr ""
+msgstr "Vždy skryť"
 
-#: ui/indicator.ui:109
+#: ../ui/indicator.ui:109
 msgid "Hide Conditionally"
-msgstr ""
+msgstr "Skryť podmienečne"
 
-#: ui/indicator.ui:115
+#: ../ui/indicator.ui:115
 msgid "System Tray"
-msgstr ""
+msgstr "Systémová lišta"
 
-#: ui/indicator.ui:116
+#: ../ui/indicator.ui:116
 msgid "Panel Button"
-msgstr ""
+msgstr "Tlačidlo panela"
 
-#: ui/gattBas.ui:16 ui/devices/nothingBuds.ui:17 ui/devices/sony.ui:17
-#: ui/devices/airpods.ui:17 ui/devices/galaxyBuds.ui:17
+#: ../ui/device.ui:5
+msgid "Device"
+msgstr "Zariadenie"
+
+#: ../ui/device.ui:9 ../ui/gattBas.ui:30 ../ui/devices/galaxyBuds.ui:40
+#: ../ui/devices/gfps.ui:40 ../ui/devices/airpods.ui:50
+#: ../ui/devices/senhBuds.ui:40 ../ui/devices/nothingBuds.ui:40
+#: ../ui/devices/boseBuds.ui:40 ../ui/devices/redmiBuds.ui:40
+#: ../ui/devices/googleBuds.ui:40 ../ui/devices/sony.ui:40
+#: ../ui/upowerDevices.ui:20
+msgid "Configuration by Device"
+msgstr "Nastavenie podľa zariadenia"
+
+#: ../ui/device.ui:10 ../ui/upowerDevices.ui:21
+msgid "Note: General settings override device-specific settings"
+msgstr ""
+"Poznámka: Všeobecné nastavenia majú prednosť pred nastaveniami špecifickými "
+"pre dané zariadenie"
+
+#: ../ui/device.ui:13
+msgid "No Bluetooth device paired!"
+msgstr "Nie je spárované žiadne zariadenie Bluetooth!"
+
+#: ../ui/gattBas.ui:16 ../ui/devices/galaxyBuds.ui:17 ../ui/devices/gfps.ui:17
+#: ../ui/devices/airpods.ui:17 ../ui/devices/senhBuds.ui:17
+#: ../ui/devices/nothingBuds.ui:17 ../ui/devices/boseBuds.ui:17
+#: ../ui/devices/redmiBuds.ui:17 ../ui/devices/googleBuds.ui:17
+#: ../ui/devices/sony.ui:17
 msgid "Experimental"
-msgstr ""
+msgstr "Experimentálne"
 
-#: ui/gattBas.ui:19
+#: ../ui/gattBas.ui:19
 msgid "Battery Service (BAS) Settings"
-msgstr ""
+msgstr "Nastavenia služby batérie (BAS)"
 
-#: ui/gattBas.ui:22
+#: ../ui/gattBas.ui:22
 msgid "Enable GATT Battery Service Reporting"
-msgstr ""
+msgstr "Povoliť hlásenie stavu batérie prostredníctvom služby GATT"
 
-#: ui/gattBas.ui:23
+#: ../ui/gattBas.ui:23
 msgid ""
 "Display battery levels for Bluetooth devices using the GATT Battery Service "
 "(BAS)."
 msgstr ""
+"Zobraziť stav batérie zariadení Bluetooth pomocou služby GATT Battery "
+"Service (BAS)."
 
-#: ui/gattBas.ui:30 ui/devices/nothingBuds.ui:40 ui/devices/sony.ui:40
-#: ui/devices/airpods.ui:50 ui/devices/galaxyBuds.ui:40 ui/upowerDevices.ui:20
-#: ui/device.ui:9
-msgid "Configuration by Device"
-msgstr ""
-
-#: ui/gattBas.ui:33 ui/devices/nothingBuds.ui:43 ui/devices/sony.ui:43
-#: ui/devices/airpods.ui:53 ui/devices/galaxyBuds.ui:43
+#: ../ui/gattBas.ui:33 ../ui/devices/galaxyBuds.ui:43 ../ui/devices/gfps.ui:43
+#: ../ui/devices/airpods.ui:53 ../ui/devices/senhBuds.ui:43
+#: ../ui/devices/nothingBuds.ui:43 ../ui/devices/boseBuds.ui:43
+#: ../ui/devices/redmiBuds.ui:43 ../ui/devices/googleBuds.ui:43
+#: ../ui/devices/sony.ui:43
 msgid "No compatible device paired!"
-msgstr ""
+msgstr "Nie je spárované žiadne kompatibilné zariadenie!"
 
-#: ui/batteryWidgetSettings.ui:5
-msgid "Battery Widget Settings"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:9
-msgid "Indicator Widget Settings"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:12
-msgid ""
-"Indicator Battery Widget Settings available only for System Tray mode or "
-"Panel Button mode with multiple indicators"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:17
-msgid "Show icon only (Hide Bar/Dots)"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:18
-msgid ""
-"Hides the battery level indicator on the icon. Pair with text percentage for "
-"battery information"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:23
-msgid "Display battery percentage as text"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:24
-msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:29
-msgid "Battery Level Indicator Type"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:30
-msgid "Dots offer better visibility"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:42
-msgid "Battery Bar Position"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:43
-msgid "Choose where to display the battery bar relative to the device icon"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:55
-msgid "Device Icon Size"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:56
-msgid ""
-"Adjust the size of the device icon displayed above the battery level "
-"indicator"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:71
-msgid "Battery Indicator Color Scheme"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:72
-msgid "Choose color scheme for level bar/dots"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:89
-msgid "Circle Widget Settings"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:92
-msgid "Circle Widget Color Scheme"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:93
-msgid "Choose color scheme for battery circle widget"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:111
-msgid "Battery Level Bar"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:112
-msgid "Battery Level Dot"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:119
-msgid "Below"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:124 ui/batteryWidgetSettings.ui:131
-msgid "Symbolic"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:125 ui/batteryWidgetSettings.ui:132
-msgid "Colored"
-msgstr ""
-
-#: ui/batteryWidgetSettings.ui:126 ui/batteryWidgetSettings.ui:133
-msgid "Customized"
-msgstr ""
-
-#: ui/devices/nothingBuds.ui:9 ui/devices/sony.ui:9 ui/devices/airpods.ui:9
-#: ui/devices/galaxyBuds.ui:9 ui/quickSettings.ui:9
+#: ../ui/devices/galaxyBuds.ui:9 ../ui/devices/gfps.ui:9
+#: ../ui/devices/airpods.ui:9 ../ui/devices/senhBuds.ui:9
+#: ../ui/devices/nothingBuds.ui:9 ../ui/devices/boseBuds.ui:9
+#: ../ui/devices/redmiBuds.ui:9 ../ui/devices/googleBuds.ui:9
+#: ../ui/devices/sony.ui:9 ../ui/quickSettings.ui:9
 msgid "Note!"
-msgstr ""
+msgstr "Poznámka!"
 
-#: ui/devices/nothingBuds.ui:22 ui/devices/sony.ui:22 ui/devices/airpods.ui:22
-#: ui/devices/galaxyBuds.ui:22
+#: ../ui/devices/galaxyBuds.ui:22 ../ui/devices/airpods.ui:22
+#: ../ui/devices/senhBuds.ui:22 ../ui/devices/nothingBuds.ui:22
+#: ../ui/devices/boseBuds.ui:22 ../ui/devices/redmiBuds.ui:22
+#: ../ui/devices/googleBuds.ui:22 ../ui/devices/sony.ui:22
 msgid ""
 "Some models/features are not fully tested. Please share feedback on GitHub."
 msgstr ""
+"Niektoré modely/funkcie neboli dôkladne otestované. Prosím, zdieľajte svoje "
+"pripomienky pomocou stránky GitHub."
 
-#: ui/devices/nothingBuds.ui:29
-msgid "Nothing/CMF Buds Settings"
-msgstr ""
+#: ../ui/devices/galaxyBuds.ui:29
+msgid "Samsung Galaxy Buds Settings"
+msgstr "Nastavenia Samsung Galaxy Buds slúchadiel"
 
-#: ui/devices/nothingBuds.ui:32
-msgid "Enable Nothing/CMF Buds Support"
-msgstr ""
+#: ../ui/devices/galaxyBuds.ui:32
+msgid "Enable Samsung Galaxy Buds Support"
+msgstr "Povoliť podporu pre Samsung Galaxy slúchadlá"
 
-#: ui/devices/nothingBuds.ui:33
-msgid ""
-"Enables battery status monitoring and, if supported, control of Noise "
-"Cancellation."
-msgstr ""
-
-#: ui/devices/sony.ui:5
-msgid "Sony Bluetooth Audio"
-msgstr ""
-
-#: ui/devices/sony.ui:29
-msgid "Sony Bluetooth Audio Settings"
-msgstr ""
-
-#: ui/devices/sony.ui:32
-msgid "Enable Sony Bluetooth Audio Support"
-msgstr ""
-
-#: ui/devices/sony.ui:33 ui/devices/airpods.ui:43 ui/devices/galaxyBuds.ui:33
+#: ../ui/devices/galaxyBuds.ui:33 ../ui/devices/airpods.ui:43
+#: ../ui/devices/sony.ui:33
 msgid ""
 "Enables battery status monitoring and, if supported, control of Noise "
 "Cancellation and Conversation Awareness modes."
 msgstr ""
+"Umožňuje sledovanie stavu batérie a, ak je táto funkcia podporovaná, "
+"ovládanie režimov potlačenia hluku a rozpoznávania konverzácie."
 
-#: ui/devices/airpods.ui:27
+#: ../ui/devices/gfps.ui:22
+msgid ""
+"This provides a generic driver for other manufacturers' Fast Pair compatible "
+"earbuds. Pixel Buds are handled separately by the Pixel Buds settings."
+msgstr ""
+"Týmto sa poskytuje všeobecný ovládač pre slúchadlá iných výrobcov "
+"kompatibilné s funkciou Fast Pair. Slúchadlá Pixel Buds sa spravujú "
+"samostatne prostredníctvom nastavení Pixel Buds."
+
+#: ../ui/devices/gfps.ui:29
+msgid "Google Fast Pair Settings"
+msgstr "Nastavenia Google Fast Pair"
+
+#: ../ui/devices/gfps.ui:32
+msgid "Enable Google Fast Pair Support"
+msgstr "Povoliť podporu funkcie Google Fast Pair"
+
+#: ../ui/devices/gfps.ui:33
+msgid ""
+"Enables battery status monitoring and control of Active Noise Cancellation "
+"(ANC) for compatible Fast Pair earbuds."
+msgstr ""
+"Umožňuje sledovanie stavu batérie a ovládanie funkcie aktívneho potlačenia "
+"hluku (ANC) u kompatibilných slúchadiel s funkciou Fast Pair."
+
+#: ../ui/devices/airpods.ui:27
 msgid "Conversation Awareness (if supported) works only with the A2DP profile."
 msgstr ""
+"Funkcia detekcie konverzácie (ak je podporovaná) funguje iba s profilom A2DP."
 
-#: ui/devices/airpods.ui:32
+#: ../ui/devices/airpods.ui:32
 msgid ""
 "ANC and Conversation Awareness buttons are hidden when the earbuds are not "
 "in-ear."
 msgstr ""
+"Tlačidlá ANC a detekcie konverzácie sú skryté, keď nie sú slúchadlá zasunuté "
+"do uší."
 
-#: ui/devices/airpods.ui:39
+#: ../ui/devices/airpods.ui:39
 msgid "AirPods/Beats Settings"
-msgstr ""
+msgstr "Nastavenia AirPods/Beats"
 
-#: ui/devices/airpods.ui:42
+#: ../ui/devices/airpods.ui:42
 msgid "Enable AirPods/Beats Support"
-msgstr ""
+msgstr "Povoliť podporu pre AirPods/Beats"
 
-#: ui/devices/galaxyBuds.ui:29
-msgid "Samsung Galaxy Buds Settings"
-msgstr ""
+#: ../ui/devices/senhBuds.ui:29
+msgid "Sennheiser Settings"
+msgstr "Nastavenia Sennheiser"
 
-#: ui/devices/galaxyBuds.ui:32
-msgid "Enable Samsung Galaxy Buds Support"
-msgstr ""
+#: ../ui/devices/senhBuds.ui:32
+msgid "Enable Sennheiser Support"
+msgstr "Povoliť podporu pre Sennheiser"
 
-#: ui/upowerDevices.ui:5
+#: ../ui/devices/senhBuds.ui:33 ../ui/devices/nothingBuds.ui:33
+#: ../ui/devices/boseBuds.ui:33 ../ui/devices/redmiBuds.ui:33
+msgid ""
+"Enables battery status monitoring and, if supported, control of Noise "
+"Cancellation."
+msgstr ""
+"Umožňuje sledovanie stavu batérie a, ak je táto funkcia podporovaná, "
+"ovládanie funkcie potlačenia hluku."
+
+#: ../ui/devices/nothingBuds.ui:5
+msgid "Nothing/CMF"
+msgstr "Nothing/CMF slúchadlá"
+
+#: ../ui/devices/nothingBuds.ui:29
+msgid "Nothing/CMF Buds Settings"
+msgstr "Nastavenia pre Nothing/CMF slúchadlá"
+
+#: ../ui/devices/nothingBuds.ui:32
+msgid "Enable Nothing/CMF Buds Support"
+msgstr "Povoliť podporu pre Nothing/CMF slúchadlá"
+
+#: ../ui/devices/boseBuds.ui:29
+msgid "Bose Settings"
+msgstr "Nastavenia Bose"
+
+#: ../ui/devices/boseBuds.ui:32
+msgid "Enable Bose Support"
+msgstr "Povoliť podporu pre Bose"
+
+#: ../ui/devices/redmiBuds.ui:29
+msgid "Redmi/Xiaomi Settings"
+msgstr "Nastavenia Redmi / Xiaomi"
+
+#: ../ui/devices/redmiBuds.ui:32
+msgid "Enable Redmi/Xiaomi Support"
+msgstr "Povoliť podporu pre Redmi/Xiaomi"
+
+#: ../ui/devices/googleBuds.ui:29
+msgid "Google Pixel Buds Settings"
+msgstr "Nastavenia Google Pixel Buds"
+
+#: ../ui/devices/googleBuds.ui:32
+msgid "Enable Google Pixel Buds Support"
+msgstr "Povoliť podporu pre Google Pixel Buds"
+
+#: ../ui/devices/googleBuds.ui:33
+msgid ""
+"Enables battery status monitoring, volume EQ, and customized equalizer bands "
+"for Google Pixel Buds."
+msgstr ""
+"Umožňuje sledovanie stavu batérie, ekvalizáciu hlasitosti a prispôsobenie "
+"pásiem ekvalizéra pre slúchadlá Google Pixel Buds."
+
+#: ../ui/devices/sony.ui:5
+msgid "Sony"
+msgstr "Sony"
+
+#: ../ui/devices/sony.ui:29
+msgid "Sony Bluetooth Audio Settings"
+msgstr "Nastavenia Sony Bluetooth audio"
+
+#: ../ui/devices/sony.ui:32
+msgid "Enable Sony Bluetooth Audio Support"
+msgstr "Povoliť podporu pre Sony Bluetooth audio"
+
+#: ../ui/upowerDevices.ui:5
 msgid "UPower"
-msgstr ""
+msgstr "UPower"
 
-#: ui/upowerDevices.ui:9
+#: ../ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
-msgstr ""
+msgstr "Povoliť zariadenia UPower"
 
-#: ui/upowerDevices.ui:12
+#: ../ui/upowerDevices.ui:12
 msgid "Enable indicator for UPower devices"
-msgstr ""
+msgstr "Povoliť indikátor pre zariadenia UPower"
 
-#: ui/upowerDevices.ui:13
+#: ../ui/upowerDevices.ui:13
 msgid ""
 "Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
 "report battery levels if supported by the kernel or third-party drivers. "
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
+"Niektoré zariadenia UPower, ako napríklad bezdrôtová myš s frekvenciou 2,4 "
+"GHz, klávesnica atď., môžu hlásiť stav nabitia batérie, ak to podporuje "
+"jadro alebo ovládače tretích strán. Túto možnosť zapnite, ak chcete, aby sa "
+"stav ich batérie zobrazoval v systémovej lište GNOME."
 
-#: ui/upowerDevices.ui:21 ui/device.ui:10
-msgid "Note: General settings override device-specific settings"
-msgstr ""
-
-#: ui/upowerDevices.ui:24
+#: ../ui/upowerDevices.ui:24
 msgid "No compatible device found!"
-msgstr ""
+msgstr "Nenašlo sa žiadne kompatibilné zariadenie!"
 
-#: ui/quickSettings.ui:17
+#: ../ui/about.ui:5
+msgid "About"
+msgstr "O aplikácii"
+
+#: ../ui/about.ui:75
+msgid "Read me"
+msgstr "Dokumentácia"
+
+#: ../ui/about.ui:97
+msgid "Report an Issue"
+msgstr "Nahlásiť problém"
+
+#: ../ui/about.ui:114 ../ui/about.ui:197
+msgid "Translations"
+msgstr "Preklady"
+
+#: ../ui/about.ui:136
+msgid "View sources on Github"
+msgstr "Zobraziť zdrojové kódy na stránke GitHub"
+
+#: ../ui/about.ui:153 ../ui/about.ui:271
+msgid "Legal"
+msgstr "Právne informácie"
+
+#: ../ui/about.ui:217
+msgid "Crowdin"
+msgstr "Crowdin"
+
+#: ../ui/about.ui:229
+msgid "Online Tutorials"
+msgstr "Online návody"
+
+#: ../ui/quickSettings.ui:17
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "Nastavenia rýchlej ponuky"
 
-#: ui/quickSettings.ui:20
+#: ../ui/quickSettings.ui:20
 msgid "Modify Bluetooth device menu"
-msgstr ""
+msgstr "Upraviť ponuku Bluetooth zariadení"
 
-#: ui/quickSettings.ui:21
+#: ../ui/quickSettings.ui:21
 msgid "Add battery information and device controls to the menu"
-msgstr ""
+msgstr "Pridať do ponuky informácie o batérii a ovládacie prvky zariadenia"
 
-#: ui/quickSettings.ui:26
+#: ../ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
-msgstr ""
+msgstr "Povoliť režim miniaplikácie s výsuvnou podponukou"
 
-#: ui/quickSettings.ui:27
+#: ../ui/quickSettings.ui:27
 msgid ""
 "Adds a submenu that displays battery levels and other controls (ANC) if "
 "available"
 msgstr ""
+"Pridá podponuku, v ktorej sa zobrazujú úrovne nabitia batérie a ďalšie "
+"ovládacie prvky (ANC), ak sú k dispozícii"
 
-#: ui/quickSettings.ui:32
+#: ../ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
-msgstr ""
+msgstr "Zobraziť ikonu batérie pre zariadenia Bluetooth"
 
-#: ui/quickSettings.ui:33
+#: ../ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
+"Zobrazí ikonu v kontextovom menu, ktorá udáva stav nabitia batérie "
+"zariadenia Bluetooth"
 
-#: ui/quickSettings.ui:38
+#: ../ui/quickSettings.ui:38
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Zobraziť percentuálny stav nabitia batérie zariadenia Bluetooth"
 
-#: ui/quickSettings.ui:39
+#: ../ui/quickSettings.ui:39
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr ""
+"Zobrazuje percentuálny stav nabitia batérie zariadenia Bluetooth vo forme "
+"textu"
 
-#: ui/quickSettings.ui:44
+#: ../ui/quickSettings.ui:44
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "Zobraziť ikonu stavu batérie pred textom"
 
-#: ui/quickSettings.ui:45
+#: ../ui/quickSettings.ui:45
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "Vymení pozíciu ikony stavu batérie a textu s percentuálnym údajom"
 
-#: ui/quickSettings.ui:52
+#: ../ui/quickSettings.ui:52
 msgid "Sort By History"
-msgstr ""
+msgstr "Zoradiť podľa histórie"
 
-#: ui/quickSettings.ui:55
+#: ../ui/quickSettings.ui:55
 msgid "Sort devices by connection history"
-msgstr ""
+msgstr "Zoradiť zariadenia podľa histórie pripojení"
 
-#: ui/quickSettings.ui:56
+#: ../ui/quickSettings.ui:56
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"
 msgstr ""
+"Zapnite túto funkciu, ak chcete zariadenia zoradiť podľa histórie pripojení, "
+"alebo ju vypnite, ak chcete zariadenia zoradiť podľa stavu pripojenia a "
+"prezývky"
 
-#: ui/device.ui:5
-msgid "Device"
+#: ../ui/batteryWidgetSettings.ui:5
+msgid "Battery Widget Settings"
+msgstr "Nastavenia miniaplikácie batérie"
+
+#: ../ui/batteryWidgetSettings.ui:9
+msgid "Indicator Widget Settings"
+msgstr "Nastavenia miniaplikácie indikátora"
+
+#: ../ui/batteryWidgetSettings.ui:12
+msgid ""
+"Indicator Battery Widget Settings available only for System Tray mode or "
+"Panel Button mode with multiple indicators"
 msgstr ""
+"Nastavenia miniaplikácie indikátora batérie sú k dispozícii iba v režime "
+"systémovej lišty alebo v režime tlačidla na paneli s viacerými indikátormi"
 
-#: ui/device.ui:13
-msgid "No Bluetooth device paired!"
+#: ../ui/batteryWidgetSettings.ui:17
+msgid "Show icon only (Hide Bar/Dots)"
+msgstr "Zobraziť iba ikonu (skryť pruh/bodky)"
+
+#: ../ui/batteryWidgetSettings.ui:18
+msgid ""
+"Hides the battery level indicator on the icon. Pair with text percentage for "
+"battery information"
 msgstr ""
+"Skryje indikátor stavu batérie na ikone. V kombinácii s textovým zobrazením "
+"percenta poskytuje informácie o stave batérie"
 
-#: ui/about.ui:5
-msgid "About"
-msgstr "O aplikácii"
+#: ../ui/batteryWidgetSettings.ui:23
+msgid "Display battery percentage as text"
+msgstr "Zobraziť percento batérie ako text"
 
-#: ui/about.ui:75
-msgid "Read me"
+#: ../ui/batteryWidgetSettings.ui:24
+msgid "Displays battery percentage beside the Bluetooth device icon"
+msgstr "Zobrazí percento batérie vedľa ikony Bluetooth zariadenia"
+
+#: ../ui/batteryWidgetSettings.ui:29
+msgid "Battery Level Indicator Type"
+msgstr "Typ indikátora úrovne batérie"
+
+#: ../ui/batteryWidgetSettings.ui:30
+msgid "Dots offer better visibility"
+msgstr "Bodky ponúkajú lepšiu viditeľnosť"
+
+#: ../ui/batteryWidgetSettings.ui:42
+msgid "Battery Bar Position"
+msgstr "Pozícia nabíjacieho prúžku batérie"
+
+#: ../ui/batteryWidgetSettings.ui:43
+msgid "Choose where to display the battery bar relative to the device icon"
+msgstr "Vyberte, kde sa má zobraziť pruh batérie vzhľadom na ikonu zariadenia"
+
+#: ../ui/batteryWidgetSettings.ui:55
+msgid "Device Icon Size"
+msgstr "Veľkosť ikony zariadenia"
+
+#: ../ui/batteryWidgetSettings.ui:56
+msgid ""
+"Adjust the size of the device icon displayed above the battery level "
+"indicator"
 msgstr ""
+"Upravte veľkosť ikony zariadenia zobrazenej nad indikátorom úrovne batérie"
 
-#: ui/about.ui:97
-msgid "Report an Issue"
+#: ../ui/batteryWidgetSettings.ui:71
+msgid "Battery Indicator Color Scheme"
+msgstr "Farebná schéma indikátora batérie"
+
+#: ../ui/batteryWidgetSettings.ui:72
+msgid "Choose color scheme for level bar/dots"
+msgstr "Vyberte farebnú schému pre prúžok/bodky úrovne"
+
+#: ../ui/batteryWidgetSettings.ui:89
+msgid "Circle Widget Settings"
+msgstr "Nastavenia kruhovej miniaplikácie"
+
+#: ../ui/batteryWidgetSettings.ui:92
+msgid "Circle Widget Color Scheme"
+msgstr "Farebná schéma kruhovej miniaplikácie"
+
+#: ../ui/batteryWidgetSettings.ui:93
+msgid "Choose color scheme for battery circle widget"
 msgstr ""
+"Vyberte farebnú schému pre kruhovú miniaplikáciu s indikátorom stavu batérie"
 
-#: ui/about.ui:114 ui/about.ui:197
-msgid "Translations"
+#: ../ui/batteryWidgetSettings.ui:111
+msgid "Battery Level Bar"
+msgstr "Úroveň batérie - Pruh"
+
+#: ../ui/batteryWidgetSettings.ui:112
+msgid "Battery Level Dot"
+msgstr "Úroveň batérie - Bodka"
+
+#: ../ui/batteryWidgetSettings.ui:119
+msgid "Below"
+msgstr "Naspodu"
+
+#: ../ui/batteryWidgetSettings.ui:124 ../ui/batteryWidgetSettings.ui:131
+msgid "Symbolic"
+msgstr "Symbolická"
+
+#: ../ui/batteryWidgetSettings.ui:125 ../ui/batteryWidgetSettings.ui:132
+msgid "Colored"
+msgstr "Farebný"
+
+#: ../ui/batteryWidgetSettings.ui:126 ../ui/batteryWidgetSettings.ui:133
+msgid "Customized"
+msgstr "Prispôsobené"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:1
+msgid "Modify bluetooth quickmenu"
+msgstr "Upraviť rýchlu ponuku Bluetooth"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:2
+msgid "Adds Submenu to popupmenu"
+msgstr "Pridá podponuku do kontextového menu"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:3
+msgid ""
+"Displays an icon showing bluetooth device battery level in bluetooth "
+"quickmenu"
 msgstr ""
+"Zobrazí ikonu znázorňujúcu stav nabitia batérie zariadenia Bluetooth v "
+"rýchlom menu Bluetooth"
 
-#: ui/about.ui:136
-msgid "View sources on Github"
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:4
+msgid ""
+"Displays a text the percentage of bluetooth device battery level in "
+"bluetooth quickmenu"
 msgstr ""
+"Zobrazí text s percentuálnym stavom nabitia batérie zariadenia Bluetooth v "
+"rýchlom menu Bluetooth"
 
-#: ui/about.ui:153 ui/about.ui:271
-msgid "Legal"
-msgstr "Právne informácie"
-
-#: ui/about.ui:217
-msgid "Crowdin"
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:5
+msgid "Display battery level icon before level percentage text in quick menu"
 msgstr ""
+"Zobraziť ikonu stavu batérie pred textom s percentuálnym údajom o stave v "
+"rýchlom menu"
 
-#: ui/about.ui:229
-msgid "Online Tutorials"
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:7
+msgid "Hide bluetooth indicator when device indicators are displayed"
+msgstr "Skryť indikátor Bluetooth, keď sa zobrazujú indikátory zariadenia"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:15
+msgid "Removes level indicator from icon"
+msgstr "Odstráni indikátor úrovne z ikony"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:16
+msgid "Show text next to icon in system tray with device battery level"
 msgstr ""
+"Zobraziť text vedľa ikony v systémovej lište s informáciou o stave batérie "
+"zariadenia"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:17
+msgid "Change size of icon widget"
+msgstr "Zmeniť veľkosť miniaplikácie s ikonami"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:24
+msgid "List of paired devices that reports battery level"
+msgstr "Zoznam spárovaných zariadení, ktoré hlásia stav batérie"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:26
+msgid "List of upower devices that reports battery level"
+msgstr "Zoznam zariadení upower, ktoré hlásia stav nabitia batérie"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:29
+msgid "List of airpods devices"
+msgstr "Zoznam zariadení AirPods"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:31
+msgid "List of Sony devices"
+msgstr "Zoznam Sony zariadení"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:32
+msgid "List of Galaxy Buds devices"
+msgstr "Zoznam zariadení Galaxy Buds"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:33
+msgid "List of Nothing / CMF devices"
+msgstr "Zoznam Nothing / CMF zariadení"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:35
+msgid "List of Google Pixel Buds devices"
+msgstr "Zoznam zariadení Google Pixel Buds"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:37
+msgid "List of Redmi Buds devices"
+msgstr "Zoznam zariadení Redmi Buds"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:39
+msgid "List of Sennheiser devices"
+msgstr "Zoznam zariadení Sennheiser"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:41
+msgid "List of Bose devices"
+msgstr "Zoznam zariadení Bose"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:43
+msgid "List of GFPS devices"
+msgstr "Zoznam zariadení GFPS"
+
+#: ../schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml.h:45
+msgid "List of gattbas devices"
+msgstr "Zoznam zariadení gattbas"
