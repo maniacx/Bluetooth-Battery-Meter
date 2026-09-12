@@ -9,17 +9,6 @@
         <property name="title" translatable="yes">BudsLink Companion</property>
         <child>
           <object class="AdwActionRow" id="intro">
-            <property name="subtitle" translatable="yes">Install BudsLink from Flathub to monitor multiple batteries and access advanced controls such as noise control, equalizer, and gestures, when supported by your device.
-
-Currently supported devices:
-• AirPods
-• Beats headphones and earbuds
-• Sony headphones and earbuds
-• Samsung Galaxy Buds
-• Nothing / CMF headphones and earbuds
-• Bose headphones and earbuds
-• Sennheiser headphones and earbuds
-• Redmi / Xiaomi earbuds</property>
           </object>
         </child>
         <child>

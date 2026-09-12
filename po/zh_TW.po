@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell 3.3.90\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 08:09-0600\n"
+"POT-Creation-Date: 2026-09-11 17:53-0600\n"
 "PO-Revision-Date: 2023-10-05 15:33+0800\n"
 "Last-Translator: Cheng-Chia Tseng <zerngjia@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://darkbear.mercusysddns.com/"
@@ -691,54 +691,37 @@ msgstr ""
 msgid "BudsLink Companion"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:12
-msgid ""
-"Install BudsLink from Flathub to monitor multiple batteries and access "
-"advanced controls such as noise control, equalizer, and gestures, when "
-"supported by your device.\n"
-"\n"
-"Currently supported devices:\n"
-"• AirPods\n"
-"• Beats headphones and earbuds\n"
-"• Sony headphones and earbuds\n"
-"• Samsung Galaxy Buds\n"
-"• Nothing / CMF headphones and earbuds\n"
-"• Bose headphones and earbuds\n"
-"• Sennheiser headphones and earbuds\n"
-"• Redmi / Xiaomi earbuds"
-msgstr ""
-
-#: ui/budslinkCompanion.ui:27
+#: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:28
+#: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:33
+#: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:34
+#: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:42
+#: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:51
+#: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:60
+#: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:72
+#: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
 msgstr ""
 
@@ -764,76 +747,3 @@ msgstr ""
 msgid "No compatible device paired!"
 msgstr ""
 
-#~ msgid "Enable battery indicators for Bluetooth devices"
-#~ msgstr "啟用藍牙裝置的電池指示器"
-
-#~ msgid "Displays Bluetooth device icon with battery level in system tray"
-#~ msgstr "在系統匣中顯示藍牙裝置圖示與電池電量"
-
-#~ msgid "Configuration by device"
-#~ msgstr "依裝置設定"
-
-#~ msgid "Show all"
-#~ msgstr "顯示全部"
-
-#~ msgid "Hide all"
-#~ msgstr "隱藏全部"
-
-#~ msgid "Hide indicator"
-#~ msgstr "隱藏指示器"
-
-#~ msgid ""
-#~ "Show all:\n"
-#~ "Shows Indicator icon and battery information in QuickSetting.\n"
-#~ "\n"
-#~ "Hide all:\n"
-#~ "Hide battery information and Indicator icon in QuickSetting.\n"
-#~ "\n"
-#~ "Hide indicator:\n"
-#~ "Hide only Indicator icon, Show battery information in QuickSetting."
-#~ msgstr ""
-#~ "顯示全部：\n"
-#~ "在快速設定中顯示指示器圖示與電池資訊。\n"
-#~ "\n"
-#~ "隱藏全部：\n"
-#~ "在快速設定中隱藏電池資訊與指示器圖示。\n"
-#~ "\n"
-#~ "隱藏指示器：\n"
-#~ "僅隱藏指示器圖示，在快速設定中仍顯示電池資訊。"
-
-#~ msgid "Show / hide battery information per device"
-#~ msgstr "依裝置顯示／隱藏電池資訊"
-
-#~ msgid "Note: General Setting overrides per device settings"
-#~ msgstr "注意：一般設定會覆蓋個別裝置設定"
-
-#~ msgid "No battery reporting capable device paired!"
-#~ msgstr "尚未配對任何可回報電池資訊的裝置！"
-
-#~ msgid "General"
-#~ msgstr "一般設定"
-
-#~ msgid "Enable Bluetooth device battery indicators"
-#~ msgstr "啟用藍牙裝置電池指示器"
-
-#~ msgid "Show icon in system tray with device battery level"
-#~ msgstr "在系統工具列上顯示裝置電池電量圖示"
-
-#~ msgid "Show percentage in text"
-#~ msgstr "以文字顯示百分比"
-
-#~ msgid "Add text in percentage next to battery indicators icon"
-#~ msgstr "在電池指示器圖示旁加入百分比文字"
-
-#~ msgid "Show Bluetooth device battery level icon"
-#~ msgstr "顯示藍牙裝置電池電量圖示"
-
-#~ msgid "Displays icon in popup menu showing Bluetooth device battery level"
-#~ msgstr "在彈出選單中顯示藍牙裝置電池電量圖示"
-
-#~ msgid ""
-#~ "Certain Bluetooth devices do not report battery level until Bluez's "
-#~ "experimental features are enabled in system. Check Readme for details."
-#~ msgstr ""
-#~ "某些藍牙裝置在系統啟用 Bluez 的實驗性功能前不會回傳電池電量。詳細資訊請查"
-#~ "閱 Readme。"

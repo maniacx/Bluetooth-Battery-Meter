@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 08:09-0600\n"
+"POT-Creation-Date: 2026-09-11 17:53-0600\n"
 "PO-Revision-Date: 2025-01-02 10:37-0800\n"
 "Last-Translator: Jose Luis Tirado <joseluis.tirado@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
@@ -709,54 +709,37 @@ msgstr ""
 msgid "BudsLink Companion"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:12
-msgid ""
-"Install BudsLink from Flathub to monitor multiple batteries and access "
-"advanced controls such as noise control, equalizer, and gestures, when "
-"supported by your device.\n"
-"\n"
-"Currently supported devices:\n"
-"• AirPods\n"
-"• Beats headphones and earbuds\n"
-"• Sony headphones and earbuds\n"
-"• Samsung Galaxy Buds\n"
-"• Nothing / CMF headphones and earbuds\n"
-"• Bose headphones and earbuds\n"
-"• Sennheiser headphones and earbuds\n"
-"• Redmi / Xiaomi earbuds"
-msgstr ""
-
-#: ui/budslinkCompanion.ui:27
+#: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:28
+#: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:33
+#: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:34
+#: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:42
+#: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:51
+#: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:60
+#: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:72
+#: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
 msgstr ""
 
@@ -782,62 +765,3 @@ msgstr ""
 msgid "No compatible device paired!"
 msgstr ""
 
-#~ msgid "Enable battery indicators for Bluetooth devices"
-#~ msgstr "Activar los indicares de batería para dispositivos Bluetooth"
-
-#~ msgid "Displays Bluetooth device icon with battery level in system tray"
-#~ msgstr ""
-#~ "Muestra el icono del dispositivo Bluetooth con el nivel de batería en la "
-#~ "bandeja del sistema"
-
-#~ msgid "Configuration by device"
-#~ msgstr "Configuración por dispositivo"
-
-#~ msgid ""
-#~ "Displays an icon in the popup menu for Bluetooth device battery level\""
-#~ msgstr ""
-#~ "Muestra un icono en el menú emergente para el nivel de batería de los "
-#~ "dispositivos Bluetooth"
-
-#~ msgid "Show all"
-#~ msgstr "Mostrar todo"
-
-#~ msgid ""
-#~ "Show all:\n"
-#~ "Shows Indicator icon and battery information in QuickSetting.\n"
-#~ "\n"
-#~ "Hide all:\n"
-#~ "Hide battery information and Indicator icon in QuickSetting.\n"
-#~ "\n"
-#~ "Hide indicator:\n"
-#~ "Hide only Indicator icon, Show battery information in QuickSetting."
-#~ msgstr ""
-#~ "Mostrar todo:\n"
-#~ "Muestra el icono del indicador y la información de la batería en "
-#~ "Configuración rápida.\n"
-#~ "\n"
-#~ "Ocultar todo:\n"
-#~ "Ocultar la información de la batería y el icono del indicador en "
-#~ "Configuración rápida.\n"
-#~ "\n"
-#~ "Ocultar indicador:\n"
-#~ "Oculta solo el icono del indicador, y muestra la información de la "
-#~ "batería en Configuración rápida."
-
-#~ msgid "No battery reporting capable device paired!"
-#~ msgstr ""
-#~ "¡No hay ningún dispositivo emparejado con capacidad para reportar la "
-#~ "batería!"
-
-#~ msgid "General"
-#~ msgstr "General"
-
-#~ msgid "Show percentage in text"
-#~ msgstr "Mostrar el porcentaje como texto"
-
-#~ msgid "Add text in percentage next to battery indicators icon"
-#~ msgstr ""
-#~ "Añadir texto en el porcentaje junto al icono indicador de la batería"
-
-#~ msgid "2024"
-#~ msgstr "2024"

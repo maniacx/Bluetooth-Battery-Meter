@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 08:09-0600\n"
+"POT-Creation-Date: 2026-09-11 17:53-0600\n"
 "PO-Revision-Date: 2024-08-28 15:34+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
@@ -692,54 +692,37 @@ msgstr ""
 msgid "BudsLink Companion"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:12
-msgid ""
-"Install BudsLink from Flathub to monitor multiple batteries and access "
-"advanced controls such as noise control, equalizer, and gestures, when "
-"supported by your device.\n"
-"\n"
-"Currently supported devices:\n"
-"• AirPods\n"
-"• Beats headphones and earbuds\n"
-"• Sony headphones and earbuds\n"
-"• Samsung Galaxy Buds\n"
-"• Nothing / CMF headphones and earbuds\n"
-"• Bose headphones and earbuds\n"
-"• Sennheiser headphones and earbuds\n"
-"• Redmi / Xiaomi earbuds"
-msgstr ""
-
-#: ui/budslinkCompanion.ui:27
+#: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:28
+#: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:33
+#: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:34
+#: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:42
+#: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:51
+#: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:60
+#: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
 msgstr ""
 
-#: ui/budslinkCompanion.ui:72
+#: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
 msgstr ""
 
@@ -765,81 +748,3 @@ msgstr ""
 msgid "No compatible device paired!"
 msgstr ""
 
-#~ msgid "Show all"
-#~ msgstr "Tot afichar"
-
-#~ msgid "Hide all"
-#~ msgstr "Tot amagar"
-
-#~ msgid "Hide indicator"
-#~ msgstr "Amagar l’indicator"
-
-#~ msgid ""
-#~ "Show all:\n"
-#~ "Shows Indicator icon and battery information in QuickSetting.\n"
-#~ "\n"
-#~ "Hide all:\n"
-#~ "Hide battery information and Indicator icon in QuickSetting.\n"
-#~ "\n"
-#~ "Hide indicator:\n"
-#~ "Hide only Indicator icon, Show battery information in QuickSetting."
-#~ msgstr ""
-#~ "Tot afichar :\n"
-#~ "Afichar l'icòna de l'indicator e las informacions de la batariá dins "
-#~ "QuickSetting.\n"
-#~ "\n"
-#~ "Tot amagar :\n"
-#~ "Amagar las informacions de la batariá e l'icòna d'indicator dins "
-#~ "QuickSetting.\n"
-#~ "\n"
-#~ "Amagar l’indicator:\n"
-#~ "Amagar sonque l'icòna de l’indicator, afichar las informacions de la "
-#~ "batariá dins QuickSetting."
-
-#~ msgid "Show / hide battery information per device"
-#~ msgstr "Afichar / Amagar las informacions de batariá per periferic"
-
-#~ msgid "Note: General Setting overrides per device settings"
-#~ msgstr ""
-#~ "Nòta : los paramètres generals subrecargan los paramètres per periferic"
-
-#~ msgid "No battery reporting capable device paired!"
-#~ msgstr "Cap de periferic amb senhalament d’estat de batariá apariat !"
-
-#~ msgid "General"
-#~ msgstr "General"
-
-#~ msgid "Enable Bluetooth device battery indicators"
-#~ msgstr "Activar los indicators de batariá de periferics Bluetooth"
-
-#~ msgid "Show icon in system tray with device battery level"
-#~ msgstr ""
-#~ "Mostrar una icòna dins la barra sistèma amb lo nivèl de batariá dels "
-#~ "periferics"
-
-#~ msgid "Show percentage in text"
-#~ msgstr "Afichar lo percentatge en tèxte"
-
-#~ msgid "Add text in percentage next to battery indicators icon"
-#~ msgstr ""
-#~ "Apondre lo percentatge en tèxte a costat de l’icòna de l’indicator de "
-#~ "batariá"
-
-#~ msgid "Show Bluetooth device battery level icon"
-#~ msgstr "Mostrar l’icòna de nivèl de batariá de periferic Bluetooth"
-
-#~ msgid "Displays icon in popup menu showing Bluetooth device battery level"
-#~ msgstr ""
-#~ "Aficha una icòna dins un menú surgissent en mostrant lo nivèl de batariá "
-#~ "de periferics Bluetooth"
-
-#~ msgid ""
-#~ "Certain Bluetooth devices do not report battery level until Bluez's "
-#~ "experimental features are enabled in system. Check Readme for details."
-#~ msgstr ""
-#~ "D’unes periferics Bluetooth senhalan pas lo nivèl de batariá sens que las "
-#~ "foncionalitats experimentalas de Bluez sián activadas. Vejatz Me legir "
-#~ "per mai de detalhs."
-
-#~ msgid "2024"
-#~ msgstr "2024"
