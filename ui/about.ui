@@ -213,8 +213,8 @@
                             <property name="margin_start">12</property>
                             <property name="margin_end">12</property>
                             <child>
-                              <object class="AdwActionRow" id="row_crowdin">
-                                <property name="title" translatable="yes">Crowdin</property>
+                              <object class="AdwActionRow" id="row_weblate">
+                                <property name="title" translatable="yes">Weblate</property>
                                 <property name="activatable">true</property>
                                 <child>
                                   <object class="GtkImage">
