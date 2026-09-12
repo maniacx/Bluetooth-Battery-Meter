@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-11 23:49-0600\n"
 "PO-Revision-Date: 2023-09-02 08:55-0700\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <punjabi-users@list.sf.net>\n"
@@ -494,7 +494,7 @@ msgid "Legal"
 msgstr ""
 
 #: ui/about.ui:217
-msgid "Crowdin"
+msgid "Weblate"
 msgstr ""
 
 #: ui/about.ui:229

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bosnianuniversetranslation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-11 23:49-0600\n"
 "PO-Revision-Date: 2015-03-01 23:13+0100\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -498,7 +498,7 @@ msgid "Legal"
 msgstr ""
 
 #: ui/about.ui:217
-msgid "Crowdin"
+msgid "Weblate"
 msgstr ""
 
 #: ui/about.ui:229

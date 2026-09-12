@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-11 23:49-0600\n"
 "PO-Revision-Date: 2024-01-18 09:13+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
@@ -497,8 +497,8 @@ msgid "Legal"
 msgstr "Yasal"
 
 #: ui/about.ui:217
-msgid "Crowdin"
-msgstr "Crowdin"
+msgid "Weblate"
+msgstr ""
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
@@ -744,3 +744,5 @@ msgstr ""
 msgid "No compatible device paired!"
 msgstr ""
 
+#~ msgid "Crowdin"
+#~ msgstr "Crowdin"

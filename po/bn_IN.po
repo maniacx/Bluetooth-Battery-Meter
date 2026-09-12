@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unnamed project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-11 23:49-0600\n"
 "PO-Revision-Date: 2020-10-11 12:33+0530\n"
 "Last-Translator: Akarshan Biswas <akarshan.biswas@hotmail.com>\n"
 "Language-Team: Bengali <anubad@lists.ankur.org.in>\n"
@@ -497,7 +497,7 @@ msgid "Legal"
 msgstr ""
 
 #: ui/about.ui:217
-msgid "Crowdin"
+msgid "Weblate"
 msgstr ""
 
 #: ui/about.ui:229

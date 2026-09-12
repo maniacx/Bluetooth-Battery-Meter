@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-11 23:49-0600\n"
 "PO-Revision-Date: 2026-01-20 14:07-0300\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
@@ -519,8 +519,8 @@ msgid "Legal"
 msgstr "Aviso legal"
 
 #: ui/about.ui:217
-msgid "Crowdin"
-msgstr "Crowdin"
+msgid "Weblate"
+msgstr ""
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
@@ -790,3 +790,5 @@ msgstr ""
 msgid "No compatible device paired!"
 msgstr "Não há dispositivos compatíveis pareados!"
 
+#~ msgid "Crowdin"
+#~ msgstr "Crowdin"

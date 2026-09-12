@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nepali Translation Gnome 3.26 dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-11 23:49-0600\n"
 "PO-Revision-Date: 2022-09-19 10:55+0545\n"
 "Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
 "Language-Team: Nepali Translation Team <chautari@gmail.com>\n"
@@ -496,7 +496,7 @@ msgid "Legal"
 msgstr ""
 
 #: ui/about.ui:217
-msgid "Crowdin"
+msgid "Weblate"
 msgstr ""
 
 #: ui/about.ui:229

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-11 23:49-0600\n"
 "PO-Revision-Date: 2026-04-08 21:45+0200\n"
 "Last-Translator: Adam Lewicki <a.lewicki95@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -524,8 +524,8 @@ msgid "Legal"
 msgstr "Kwestie prawne"
 
 #: ui/about.ui:217
-msgid "Crowdin"
-msgstr "Crowdin"
+msgid "Weblate"
+msgstr ""
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
@@ -796,3 +796,5 @@ msgstr ""
 msgid "No compatible device paired!"
 msgstr "Brak sparowanego, kompatybilnego urządzenia!"
 
+#~ msgid "Crowdin"
+#~ msgstr "Crowdin"

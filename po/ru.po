@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-11 23:49-0600\n"
 "PO-Revision-Date: 2024-12-28 15:23+0300\n"
 "Last-Translator: Anton Palgunov <toxblh@gmail.com>\n"
 "Language-Team: RU\n"
@@ -522,8 +522,8 @@ msgid "Legal"
 msgstr "Правовой статус"
 
 #: ui/about.ui:217
-msgid "Crowdin"
-msgstr "Crowdin"
+msgid "Weblate"
+msgstr ""
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
@@ -777,3 +777,5 @@ msgstr ""
 msgid "No compatible device paired!"
 msgstr ""
 
+#~ msgid "Crowdin"
+#~ msgstr "Crowdin"
