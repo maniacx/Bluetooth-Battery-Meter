@@ -15,22 +15,22 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-11 17:53-0600\n"
-"PO-Revision-Date: 2023-08-31 02:08+0200\n"
-"Last-Translator: Petr Balvín <petrbalvin@petalmail.com, "
-"petrbalvin@yandex.com>\n"
-"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"PO-Revision-Date: 2026-09-13 10:51+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/budslink/bluetooth-"
+"battery-meter/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.3.2\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 "X-Project-Style: gnome\n"
 
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "Ukazatel nabití bluetooth zařízení"
 
 #: lib/bluetoothToggle.js:544
 #, javascript-format
@@ -42,7 +42,7 @@ msgstr[2] "%d připojených"
 
 #: lib/widgets/panelPopupMenu.js:130
 msgid "Expand submenu"
-msgstr ""
+msgstr "Rozbalit podnabídku"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
 #: lib/widgets/bluetoothPopupMenu.js:82
@@ -70,114 +70,118 @@ msgstr "Připojit %s"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "Připnout na panel"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr ""
+msgstr "Nastavení zařízení"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Sbalit podnabídku"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:41
 msgid "Battery Status:"
-msgstr ""
+msgstr "Stav nabití:"
 
 #: preferences/device.js:65 preferences/upowerDevices.js:42
 msgid "Reported"
-msgstr ""
+msgstr "Hlášeno"
 
 #: preferences/device.js:65 preferences/upowerDevices.js:42
 msgid "Not Available"
-msgstr ""
+msgstr "Není k dispozici"
 
 #: preferences/device.js:66
 msgid "Reported from enhanced device service"
-msgstr ""
+msgstr "Hlášeno z vylepšené služby zařízení"
 
 #: preferences/device.js:73 preferences/upowerDevices.js:47
 msgid "Icon"
-msgstr ""
+msgstr "Ikona"
 
 #: preferences/device.js:77 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
-msgstr ""
+msgstr "Vybrat ikonu"
 
 #: preferences/device.js:78 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
-msgstr ""
+msgstr "Vyberte ikonu sloužící jako indikátor a pohotová nabídka"
 
 #: preferences/device.js:81
 msgid "This is an enhanced device"
-msgstr ""
+msgstr "Toto je vylepšené zařízení"
 
 #: preferences/device.js:82
 msgid "Icon selection if available are in Enhanced device per device settings"
 msgstr ""
+"Výběr ikony (pokud je k dispozici) se nacházejí ve „Vylepšené zařízení“ v "
+"nastavení u jednotlivých zařízení"
 
 #: preferences/device.js:137 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "Pohotová nabídka"
 
 #: preferences/device.js:141
 msgid "Display Battery Level"
-msgstr ""
+msgstr "Zobrazit stupeň nabití"
 
 #: preferences/device.js:142
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
+msgstr "Zobrazit stupeň nabití v pohotové nabídce Bluetooth"
 
 #: preferences/device.js:162 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "Indikátor"
 
 #: preferences/device.js:166 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
-msgstr ""
+msgstr "Nastavit indikátor"
 
 #: preferences/device.js:167 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
-msgstr ""
+msgstr "Zvolte jak se má indikátor chovat"
 
 #: preferences/device.js:171
 msgid "Do not show Icon"
-msgstr ""
+msgstr "Nezobrazovat ikonu"
 
 #: preferences/device.js:172
 msgid "Show Icon without Battery level"
-msgstr ""
+msgstr "Zobrazovat ikonu bez stupně nabití"
 
 #: preferences/device.js:173
 msgid "Show Icon with Battery Level"
-msgstr ""
+msgstr "Zobrazovat ikonu včetně stupně nabití"
 
 #: preferences/device.js:176 preferences/upowerDevices.js:138
 msgid "Hide Icon"
-msgstr ""
+msgstr "Skrýt ikonu"
 
 #: preferences/device.js:177 preferences/upowerDevices.js:139
 msgid "Show Icon"
-msgstr ""
+msgstr "Zobrazit ikonu"
 
 #: preferences/device.js:225 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
 msgid "Configure device."
-msgstr ""
+msgstr "Nastavit zařízení."
 
 #: preferences/device.js:239
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
+"Smazat informace o zařízení: Tlačítko je k dispozici po zrušení spárování "
+"zařízení"
 
 #: preferences/device.js:271
 msgid "(Removed)"
-msgstr ""
+msgstr "(Odebráno)"
 
 #: preferences/device.js:272
 msgid "(Paired)"
-msgstr ""
+msgstr "(Spárováno)"
 
 #: preferences/budslinkCompanion.js:50
 msgid ""
@@ -185,72 +189,76 @@ msgid ""
 "and access advanced controls such as noise control, equalizer, and gestures, "
 "when supported by the device"
 msgstr ""
+"Pokud chcete sledovat nabití akumulátorů u vícero zařízení a mít přístup k "
+"pokročilým nastavením, jako například potlačování hluku, ekvalizér a gesta "
+"(pokud jsou zařízením podporována), nainstalujte (z repozitáře Flathub) "
+"aplikaci BudsLink"
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+msgstr "V tuto chvíli jsou podporována tato sluchátka:"
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
-msgstr ""
+msgstr "AirPods"
 
 #: preferences/budslinkCompanion.js:58
 msgid "Beats"
-msgstr ""
+msgstr "Beats"
 
 #: preferences/budslinkCompanion.js:59
 msgid "Sony"
-msgstr ""
+msgstr "Sony"
 
 #: preferences/budslinkCompanion.js:60
 msgid "Samsung Galaxy Buds"
-msgstr ""
+msgstr "Samsung Galaxy Buds"
 
 #: preferences/budslinkCompanion.js:61
 msgid "Nothing / CMF"
-msgstr ""
+msgstr "Nothing / CMF"
 
 #: preferences/budslinkCompanion.js:62
 msgid "Bose"
-msgstr ""
+msgstr "Bose"
 
 #: preferences/budslinkCompanion.js:63
 msgid "Sennheiser"
-msgstr ""
+msgstr "Sennheiser"
 
 #: preferences/budslinkCompanion.js:64
 msgid "Redmi / Xiaomi"
-msgstr ""
+msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "Nainstalováno"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
-msgstr ""
+msgstr "Aktualizovat rozšíření"
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "Aktualizovat BudsLink"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "Nenaistalováno"
 
 #: preferences/budslinkCompanion.js:80
 msgid "Refresh"
-msgstr ""
+msgstr "Znovu načíst"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
 msgid "Assign color for %d – %d%%"
-msgstr ""
+msgstr "Přiřadit barvu pro %d - %d%%"
 
 #: preferences/batteryWidgetSettings.js:18
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
+msgstr "Nastavit barvu pro rozsah nabití akumulátoru %d - %d%%"
 
 #: preferences/quickSettings.js:78
 #, javascript-format
@@ -259,28 +267,33 @@ msgid ""
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"Některá Bluetooth zařízení nehlásí stupeň nabití dokud v systému nejsou "
+"povoleny experimentální funkce Bluez stacku. Podrobnosti viz <a href=\"%s\">"
+"Readme</a>."
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
-msgstr ""
+msgstr "Alternativní název"
 
 #: preferences/upowerDevices.js:105
 msgid "Device Alias"
-msgstr ""
+msgstr "Alternativní název zařízení"
 
 #: preferences/upowerDevices.js:199
 msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
 msgstr ""
+"Smazat informace o zařízení: Tlačítko je k dispozici po odebrání upower "
+"zařízení"
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
-msgstr ""
+msgstr "(Offline)"
 
 #: preferences/upowerDevices.js:233
 msgid "(Online)"
-msgstr ""
+msgstr "(Online)"
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
@@ -302,48 +315,48 @@ msgstr ""
 
 #: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
-msgstr ""
+msgstr "Jediný indikátor, tlačítko panelu, pohotová nabídka, přebal alba"
 
 #: preferences/gattBas.js:52
 msgid "Multiple Indicators, Circular Battery Widgets"
-msgstr ""
+msgstr "Vícero indikátorů, kruhové prvky akumulátorů"
 
 #: preferences/gattBas.js:60
 msgid "Icon "
-msgstr ""
+msgstr "Ikona "
 
 #: preferences/gattBas.js:69
 msgid "Battery 1 Icon"
-msgstr ""
+msgstr "Ikona akumulátoru 1"
 
 #: preferences/gattBas.js:78
 msgid "Battery 2 Icon"
-msgstr ""
+msgstr "Ikona akumulátoru 2"
 
 #: preferences/gattBas.js:87
 msgid "Battery 3 Icon"
-msgstr ""
+msgstr "Ikona akumulátoru 3"
 
 #: preferences/gattBas.js:185 ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
-msgstr ""
+msgstr "Služba akumulátorů (BAS)"
 
 #: preferences/gattBas.js:188
 #, javascript-format
 msgid "The button is available after disabling %s mode"
-msgstr ""
+msgstr "Tlačítko je k dispozici po zakázání režimu %s"
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
-msgstr ""
+msgstr "UPower"
 
 #: ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
-msgstr ""
+msgstr "Povolit UPower zařízení"
 
 #: ui/upowerDevices.ui:12
 msgid "Enable indicator for UPower devices"
-msgstr ""
+msgstr "Zapnout indikátor pro UPower zařízení"
 
 #: ui/upowerDevices.ui:13
 msgid ""
@@ -351,136 +364,147 @@ msgid ""
 "report battery levels if supported by the kernel or third-party drivers. "
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
+"Určitá UPower zařízení, jako např. 2,4GHz bezdrátové myši, klávesnice, atp. "
+"mohou hlásit stav nabití (pokud podporováno) prostřednictvím ovladačů v "
+"jádře nebo dodanými třetími stranami. Povolte, pokud chcete stav jejich "
+"akumulátorů zobrazovat v systémové oznamovací oblasti prostředí GNOME."
 
 #: ui/upowerDevices.ui:20 ui/device.ui:9 ui/gattBas.ui:30
 msgid "Configuration by Device"
-msgstr ""
+msgstr "Nastavení podle zařízení"
 
 #: ui/upowerDevices.ui:21 ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
-msgstr ""
+msgstr "Pozn.: Obecná nastavení jsou přebíjena těmi pro jednotlivá zařízení"
 
 #: ui/upowerDevices.ui:24
 msgid "No compatible device found!"
-msgstr ""
+msgstr "Nenalezeno žádné kompatibilní zařízení!"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
-msgstr ""
+msgstr "Nastavení prvku pro akumulátor"
 
 #: ui/batteryWidgetSettings.ui:9
 msgid "Indicator Widget Settings"
-msgstr ""
+msgstr "Nastavení prvku pro indikátor"
 
 #: ui/batteryWidgetSettings.ui:12
 msgid ""
 "Indicator Battery Widget Settings available only for System Tray mode or "
 "Panel Button mode with multiple indicators"
 msgstr ""
+"Nastavení prvku indikátoru akumulátoru jsou k dispozici pouze pro režim "
+"oznamovací oblasti systémového panelu nebo pro režim tlačítka na panelu s "
+"vícero indikátory"
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
-msgstr ""
+msgstr "Zobrazovat pouze ikonu (skrýt pruh/tečky)"
 
 #: ui/batteryWidgetSettings.ui:18
 msgid ""
 "Hides the battery level indicator on the icon. Pair with text percentage for "
 "battery information"
 msgstr ""
+"Skryje na ikoně indikátor nabití akumulátoru. Pokud chcete vidět údaj o "
+"akumulátoru, kombinujte s textem procenta"
 
 #: ui/batteryWidgetSettings.ui:23
 msgid "Display battery percentage as text"
-msgstr ""
+msgstr "Zobrazovat procento nabití jako text"
 
 #: ui/batteryWidgetSettings.ui:24
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
+msgstr "Zobrazovat procento nabití akumulátoru vedle ikony Bluetooth zařízení"
 
 #: ui/batteryWidgetSettings.ui:29
 msgid "Battery Level Indicator Type"
-msgstr ""
+msgstr "Typ indikátoru nabití akumulátoru"
 
 #: ui/batteryWidgetSettings.ui:30
 msgid "Dots offer better visibility"
-msgstr ""
+msgstr "Tečky poskytují lepší viditelnost"
 
 #: ui/batteryWidgetSettings.ui:42
 msgid "Battery Bar Position"
-msgstr ""
+msgstr "Pozice pruhu akumulátoru"
 
 #: ui/batteryWidgetSettings.ui:43
 msgid "Choose where to display the battery bar relative to the device icon"
-msgstr ""
+msgstr "Zvolte kde zobrazovat pruh akumulátoru vůči ikoně zařízení"
 
 #: ui/batteryWidgetSettings.ui:55
 msgid "Device Icon Size"
-msgstr ""
+msgstr "Velikost ikony zařízení"
 
 #: ui/batteryWidgetSettings.ui:56
 msgid ""
 "Adjust the size of the device icon displayed above the battery level "
 "indicator"
 msgstr ""
+"Upravit velikost ikony zařízení zobrazované nad indikátorem nabití "
+"akumulátoru"
 
 #: ui/batteryWidgetSettings.ui:71
 msgid "Battery Indicator Color Scheme"
-msgstr ""
+msgstr "Schéma barev indikátoru akumulátoru"
 
 #: ui/batteryWidgetSettings.ui:72
 msgid "Choose color scheme for level bar/dots"
-msgstr ""
+msgstr "Zvolte schéma barev pro pruh/tečky nabití"
 
 #: ui/batteryWidgetSettings.ui:89
 msgid "Circle Widget Settings"
-msgstr ""
+msgstr "Nastavení prvku kruh"
 
 #: ui/batteryWidgetSettings.ui:92
 msgid "Circle Widget Color Scheme"
-msgstr ""
+msgstr "Schéma barev prvku kruh"
 
 #: ui/batteryWidgetSettings.ui:93
 msgid "Choose color scheme for battery circle widget"
-msgstr ""
+msgstr "Zvolte schéma barev pro prvek kruhu akumulátoru"
 
 #: ui/batteryWidgetSettings.ui:111
 msgid "Battery Level Bar"
-msgstr ""
+msgstr "Pruh nabití akumulátoru"
 
 #: ui/batteryWidgetSettings.ui:112
 msgid "Battery Level Dot"
-msgstr ""
+msgstr "Tečka nabití akumulátoru"
 
 #: ui/batteryWidgetSettings.ui:117
 msgid "Left"
-msgstr ""
+msgstr "Vlevo"
 
 #: ui/batteryWidgetSettings.ui:118
 msgid "Right"
-msgstr ""
+msgstr "Vpravo"
 
 #: ui/batteryWidgetSettings.ui:119
 msgid "Below"
-msgstr ""
+msgstr "Pod"
 
 #: ui/batteryWidgetSettings.ui:124 ui/batteryWidgetSettings.ui:131
 msgid "Symbolic"
-msgstr ""
+msgstr "Symbolické"
 
 #: ui/batteryWidgetSettings.ui:125 ui/batteryWidgetSettings.ui:132
 msgid "Colored"
-msgstr ""
+msgstr "Obarvené"
 
 #: ui/batteryWidgetSettings.ui:126 ui/batteryWidgetSettings.ui:133
 msgid "Customized"
-msgstr ""
+msgstr "Uživatelsky definované"
 
 #: ui/device.ui:5
 msgid "Device"
-msgstr ""
+msgstr "Zařízení"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
-msgstr ""
+msgstr "Nespárováno žádné Bluetooth zařízení!"
 
 #: ui/about.ui:5
 msgid "About"
@@ -516,7 +540,7 @@ msgstr "Online návody"
 
 #: ui/quickSettings.ui:9
 msgid "Note!"
-msgstr "Poznámka"
+msgstr "Upozornění!"
 
 #: ui/quickSettings.ui:17
 msgid "Quick Menu Settings"
@@ -524,29 +548,32 @@ msgstr "Panel rychlého nastavení"
 
 #: ui/quickSettings.ui:20
 msgid "Modify Bluetooth device menu"
-msgstr ""
+msgstr "Upravit nabídku Bluetooth zařízení"
 
 #: ui/quickSettings.ui:21
 msgid "Add battery information and device controls to the menu"
-msgstr ""
+msgstr "Přidat do nabídky informaci o akumulátoru a položky ovládání zařízení"
 
 #: ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
-msgstr ""
+msgstr "Zapnout režim prvku vyskakovací nabídky"
 
 #: ui/quickSettings.ui:27
 msgid ""
 "Adds a submenu that displays battery levels and other controls (ANC) if "
 "available"
 msgstr ""
+"Přidá podnabídku která zobrazí nabití akumulátorů a ostatní ovládací prvky – "
+"např. ANC (pokud je k dispozici)"
 
 #: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
-msgstr ""
+msgstr "Zobrazovat ikonu akumulátoru pro Bluetooth zařízení"
 
 #: ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
+"Zobrazuje ikonu ve vyskakovací nabídce pro stupeň nabití Bluetooth zařízení"
 
 #: ui/quickSettings.ui:38
 msgid "Show Bluetooth device battery percentage"
@@ -566,39 +593,43 @@ msgstr "Prohodit pozici ikony baterie a textu v procentech"
 
 #: ui/quickSettings.ui:52
 msgid "Sort By History"
-msgstr ""
+msgstr "Seřadit podle historie"
 
 #: ui/quickSettings.ui:55
 msgid "Sort devices by connection history"
-msgstr ""
+msgstr "Seřadit zařízení podle historie připojení"
 
 #: ui/quickSettings.ui:56
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"
 msgstr ""
+"Zapněte řazení zařízení podle historie připojení, nebo ho vypněte a bude "
+"řazeno podle stavu připojení (a alternativního názvu)"
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
-msgstr ""
+msgstr "Nastavení pro systémový indikátor Bluetooth"
 
 #: ui/indicator.ui:12
 msgid "Bluetooth Connection Status Indicator"
-msgstr ""
+msgstr "Indikátor stavu Bluetooth připojení"
 
 #: ui/indicator.ui:13
 msgid ""
 "Hide conditionally: Displayed only when no other bluetooth related "
 "indicators are present"
 msgstr ""
+"Skrýt podmíněně: Zobrazeno pouze tehdy, když nejsou přítomny žádné jiné "
+"ukazatele související s Bluetooth"
 
 #: ui/indicator.ui:27
 msgid "Battery Indicator Settings"
-msgstr ""
+msgstr "Nastavení indikátoru akumulátoru"
 
 #: ui/indicator.ui:30
 msgid "Choose Indicator mode"
-msgstr ""
+msgstr "Zvolte režim indikátoru"
 
 #: ui/indicator.ui:31
 msgid ""
@@ -606,18 +637,23 @@ msgid ""
 "System Indicator: Battery icon in top bar.\n"
 "Panel Button: Battery icon with menu."
 msgstr ""
+"Vypnuto: žádný indikátor akumulátoru.\n"
+"Systémový indikátor: ikona akumulátoru v horním pruhu.\n"
+"Tlačítko na panelu: ikona akumulátoru s nabídkou."
 
 #: ui/indicator.ui:45
 msgid "Panel Button Mode"
-msgstr ""
+msgstr "Režim tlačítko na panelu"
 
 #: ui/indicator.ui:48
 msgid "Panel button indicator mode."
-msgstr ""
+msgstr "Režim indikátoru tlačítka na panelu."
 
 #: ui/indicator.ui:49
 msgid "On: Show one selected device. Off: Show all devices"
 msgstr ""
+"Zapnuto: zobrazovat jedno vybrané zařízení. Vypnuto: zobrazovat všechna "
+"zařízení"
 
 #: ui/indicator.ui:56
 msgid "Indicator Settings"
@@ -625,7 +661,7 @@ msgstr "Nastavení indikátoru"
 
 #: ui/indicator.ui:59
 msgid "Show Multiple Battery Indicators per Device"
-msgstr ""
+msgstr "Pro jednotlivé zařízení zobrazovat vícero indikátorů akumulátorů"
 
 #: ui/indicator.ui:60
 msgid ""
@@ -633,124 +669,134 @@ msgid ""
 "indicator for each battery. When disabled, shows a single indicator "
 "representing the most critical (lowest) battery level of the device."
 msgstr ""
+"Když zapnuto, pak pro zařízení s vícero akumulátory zobrazuje zvlášť "
+"indikátor pro každý z akumulátorů. Když vypnuto, zobrazuje jediný indikátor "
+"představující nejkritičtější (nejvybitější) akumulátor daného zařízení."
 
 #: ui/indicator.ui:67
 msgid "Show Popup on Hover"
-msgstr ""
+msgstr "Při najetí ukazatelem zobrazit vyskakovací bublinu"
 
 #: ui/indicator.ui:70
 msgid "Show Detailed Info on Hover"
-msgstr ""
+msgstr "Při najetí ukazatelem zobrazit podrobné informace"
 
 #: ui/indicator.ui:71
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
 msgstr ""
+"Když ukazatel myši najede na indikátor, zobrazí (po uživatelsky určené "
+"prodlevě) vyskakovací dialog s informacemi o akumulátoru a ovládací prvky"
 
 #: ui/indicator.ui:76
 msgid "Hover Activation Delay"
-msgstr ""
+msgstr "Prodleva akce po najetí"
 
 #: ui/indicator.ui:77
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
+"Zadejte počet sekund po který je třeba, aby ukazatel myši zůstal na "
+"indikátoru, aby se zobrazily podrobné informace."
 
 #: ui/indicator.ui:95
 msgid "Tooltips"
-msgstr ""
+msgstr "Nástrojové tipy"
 
 #: ui/indicator.ui:98
 msgid "Enable tooltips"
-msgstr ""
+msgstr "Povolit nástrojové tipy"
 
 #: ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
-msgstr ""
+msgstr "Zobrazovat popisky při najetí na neoznačená tlačítka"
 
 #: ui/indicator.ui:107
 msgid "Default Behaviour"
-msgstr ""
+msgstr "Výchozí chování"
 
 #: ui/indicator.ui:108
 msgid "Hide Always"
-msgstr ""
+msgstr "Skrýt vždy"
 
 #: ui/indicator.ui:109
 msgid "Hide Conditionally"
-msgstr ""
+msgstr "Skrýt podmíněně"
 
 #: ui/indicator.ui:114
 msgid "Off"
-msgstr ""
+msgstr "Vypnuto"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
-msgstr ""
+msgstr "Oznamovací oblast systémového panelu"
 
 #: ui/indicator.ui:116
 msgid "Panel Button"
-msgstr ""
+msgstr "Tlačítko panelu"
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "Doprovodná aplikace BudsLink"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
-msgstr ""
+msgstr "Zapnout napojení na BudsLink"
 
 #: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
+"Chová se jako doprovodná aplikace k aplikaci BudsLink, která běží na pozadí "
+"a poskytuje další funkce pro podporovaná sluchátka"
 
 #: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
-msgstr ""
+msgstr "Skrýt z aplikací na pozadí"
 
 #: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
-msgstr ""
+msgstr "Skrýt BudsLink se seznamu aplikací na pozadí v prostředí GNOME"
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
-msgstr ""
+msgstr "Stav instalace"
 
 #: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
-msgstr ""
+msgstr "Stav instalace BudsLink"
 
 #: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
-msgstr ""
+msgstr "BudsLink na portálu Flathub"
 
 #: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
-msgstr ""
+msgstr "Dokumentace k BudsLink"
 
 #: ui/gattBas.ui:16
 msgid "Experimental"
-msgstr ""
+msgstr "Experimentální"
 
 #: ui/gattBas.ui:19
 msgid "Battery Service (BAS) Settings"
-msgstr ""
+msgstr "Nastavení pro službu akumulátorů (BAS)"
 
 #: ui/gattBas.ui:22
 msgid "Enable GATT Battery Service Reporting"
-msgstr ""
+msgstr "Zapnout hlášení GATT služby akumulátoru"
 
 #: ui/gattBas.ui:23
 msgid ""
 "Display battery levels for Bluetooth devices using the GATT Battery Service "
 "(BAS)."
 msgstr ""
+"Zobrazovat nabití akumulátorů pro Bluetooth zařízení pomocí GATT služby "
+"akumulátorů (BAS)."
 
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
-msgstr ""
-
+msgstr "Nespárováno žádné kompatibilní zařízení!"
