@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell main\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-11 17:53-0600\n"
-"PO-Revision-Date: 2026-09-12 10:37+0000\n"
+"PO-Revision-Date: 2026-09-13 10:51+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/id/>\n"
@@ -28,152 +28,156 @@ msgstr ""
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "Pengukur Baterai Bluetooth"
 
 #: lib/bluetoothToggle.js:544
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
-msgstr[0] "%d Tersambung"
+msgstr[0] "%d Terhubung"
 
 #: lib/widgets/panelPopupMenu.js:130
 msgid "Expand submenu"
-msgstr ""
+msgstr "Perluas submenu"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Disconnect"
-msgstr "Putuskan"
+msgstr "Putuskan sambungan"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Connect"
-msgstr "Sambung"
+msgstr "Sambungkan"
 
 #. Translators: %s is a device name like "MyPhone"
 #: lib/widgets/bluetoothGnomePopupMenu.js:77
 #, javascript-format
 msgid "Disconnect %s"
-msgstr "Memutus %s"
+msgstr "Putuskan sambungan %s"
 
 #. Translators: %s is a device name like "MyPhone"
 #: lib/widgets/bluetoothGnomePopupMenu.js:79
 #, javascript-format
 msgid "Connect to %s"
-msgstr "Sambung ke %s"
+msgstr "Sambungkan ke %s"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "Sematkan ke panel"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr ""
+msgstr "Pengaturan perangkat"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Ciutkan submenu"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:41
 msgid "Battery Status:"
-msgstr ""
+msgstr "Status Baterai:"
 
 #: preferences/device.js:65 preferences/upowerDevices.js:42
 msgid "Reported"
-msgstr ""
+msgstr "Dilaporkan"
 
 #: preferences/device.js:65 preferences/upowerDevices.js:42
 msgid "Not Available"
-msgstr ""
+msgstr "Tidak Tersedia"
 
 #: preferences/device.js:66
 msgid "Reported from enhanced device service"
-msgstr ""
+msgstr "Dilaporkan dari layanan perangkat yang ditingkatkan"
 
 #: preferences/device.js:73 preferences/upowerDevices.js:47
 msgid "Icon"
-msgstr ""
+msgstr "Ikon"
 
 #: preferences/device.js:77 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
-msgstr ""
+msgstr "Pilih Ikon"
 
 #: preferences/device.js:78 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
-msgstr ""
+msgstr "Pilih ikon yang digunakan untuk indikator dan menu cepat"
 
 #: preferences/device.js:81
 msgid "This is an enhanced device"
-msgstr ""
+msgstr "Ini adalah perangkat yang ditingkatkan"
 
 #: preferences/device.js:82
 msgid "Icon selection if available are in Enhanced device per device settings"
 msgstr ""
+"Pilihan ikon, jika tersedia, berada pada pengaturan per perangkat untuk "
+"perangkat yang ditingkatkan"
 
 #: preferences/device.js:137 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "Menu Cepat"
 
 #: preferences/device.js:141
 msgid "Display Battery Level"
-msgstr ""
+msgstr "Tampilkan Tingkat Baterai"
 
 #: preferences/device.js:142
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
+msgstr "Tampilkan tingkat baterai pada menu cepat panel Bluetooth"
 
 #: preferences/device.js:162 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "Indikator"
 
 #: preferences/device.js:166 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
-msgstr ""
+msgstr "Konfigurasikan Indikator"
 
 #: preferences/device.js:167 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
-msgstr ""
+msgstr "Pilih cara kerja indikator"
 
 #: preferences/device.js:171
 msgid "Do not show Icon"
-msgstr ""
+msgstr "Jangan tampilkan Ikon"
 
 #: preferences/device.js:172
 msgid "Show Icon without Battery level"
-msgstr ""
+msgstr "Tampilkan Ikon tanpa tingkat baterai"
 
 #: preferences/device.js:173
 msgid "Show Icon with Battery Level"
-msgstr ""
+msgstr "Tampilkan Ikon dengan Tingkat Baterai"
 
 #: preferences/device.js:176 preferences/upowerDevices.js:138
 msgid "Hide Icon"
-msgstr ""
+msgstr "Sembunyikan Ikon"
 
 #: preferences/device.js:177 preferences/upowerDevices.js:139
 msgid "Show Icon"
-msgstr ""
+msgstr "Tampilkan Ikon"
 
 #: preferences/device.js:225 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
 msgid "Configure device."
-msgstr ""
+msgstr "Konfigurasikan perangkat."
 
 #: preferences/device.js:239
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
+"Hapus informasi perangkat: Tombol tersedia setelah perangkat dilepas "
+"pemasangannya"
 
 #: preferences/device.js:271
 msgid "(Removed)"
-msgstr ""
+msgstr "(Dihapus)"
 
 #: preferences/device.js:272
 msgid "(Paired)"
-msgstr ""
+msgstr "(Dipasangkan)"
 
 #: preferences/budslinkCompanion.js:50
 msgid ""
@@ -181,18 +185,21 @@ msgid ""
 "and access advanced controls such as noise control, equalizer, and gestures, "
 "when supported by the device"
 msgstr ""
+"Instal BudsLink dari Flathub untuk memantau tingkat baterai beberapa "
+"perangkat dan mengakses kontrol lanjutan seperti kontrol kebisingan, "
+"ekualiser, dan gestur, jika didukung oleh perangkat"
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+msgstr "Earbud dan headphone yang saat ini didukung adalah:"
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
-msgstr ""
+msgstr "AirPods"
 
 #: preferences/budslinkCompanion.js:58
 msgid "Beats"
-msgstr ""
+msgstr "Beats"
 
 #: preferences/budslinkCompanion.js:59
 msgid "Sony"
@@ -200,7 +207,7 @@ msgstr "Sony"
 
 #: preferences/budslinkCompanion.js:60
 msgid "Samsung Galaxy Buds"
-msgstr ""
+msgstr "Samsung Galaxy Buds"
 
 #: preferences/budslinkCompanion.js:61
 msgid "Nothing / CMF"
@@ -220,33 +227,33 @@ msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "Terinstal"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
-msgstr ""
+msgstr "Perbarui Ekstensi"
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "Perbarui BudsLink"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "Belum Terinstal"
 
 #: preferences/budslinkCompanion.js:80
 msgid "Refresh"
-msgstr ""
+msgstr "Segarkan"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
 msgid "Assign color for %d – %d%%"
-msgstr ""
+msgstr "Tetapkan warna untuk %d – %d%%"
 
 #: preferences/batteryWidgetSettings.js:18
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
+msgstr "Atur warna untuk rentang tingkat baterai %d – %d%%"
 
 #: preferences/quickSettings.js:78
 #, javascript-format
@@ -255,37 +262,41 @@ msgid ""
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"Perangkat Bluetooth tertentu tidak melaporkan tingkat baterai hingga fitur "
+"eksperimental BlueZ diaktifkan pada sistem. Lihat <a href=\"%s\">Readme</a> "
+"untuk detail."
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 #: preferences/upowerDevices.js:105
 msgid "Device Alias"
-msgstr ""
+msgstr "Alias Perangkat"
 
 #: preferences/upowerDevices.js:199
 msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
 msgstr ""
+"Hapus informasi perangkat: Tombol tersedia setelah perangkat UPower dihapus"
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
-msgstr ""
+msgstr "(Offline)"
 
 #: preferences/upowerDevices.js:233
 msgid "(Online)"
-msgstr ""
+msgstr "(Online)"
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
-msgstr "GNU General Public License, versi 3 atau setelahnya"
+msgstr "GNU General Public License, versi 3 atau yang lebih baru"
 
 #: preferences/about.js:49
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "© %s %s"
 
 #: preferences/about.js:50
 #, javascript-format
@@ -293,53 +304,53 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
-"Aplikasi ini hadir tanpa jaminan sama sekali. Lihat <a href=\"%s\">%s</a> "
-"untuk detailnya ."
+"Aplikasi ini hadir tanpa jaminan apa pun. Lihat <a href=\"%s\">%s</a> untuk "
+"detail."
 
 #: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
-msgstr ""
+msgstr "Indikator Tunggal, Tombol Panel, Menu Cepat, Seni Album"
 
 #: preferences/gattBas.js:52
 msgid "Multiple Indicators, Circular Battery Widgets"
-msgstr ""
+msgstr "Beberapa Indikator, Widget Baterai Melingkar"
 
 #: preferences/gattBas.js:60
 msgid "Icon "
-msgstr ""
+msgstr "Ikon "
 
 #: preferences/gattBas.js:69
 msgid "Battery 1 Icon"
-msgstr ""
+msgstr "Ikon Baterai 1"
 
 #: preferences/gattBas.js:78
 msgid "Battery 2 Icon"
-msgstr ""
+msgstr "Ikon Baterai 2"
 
 #: preferences/gattBas.js:87
 msgid "Battery 3 Icon"
-msgstr ""
+msgstr "Ikon Baterai 3"
 
 #: preferences/gattBas.js:185 ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
-msgstr ""
+msgstr "Layanan Baterai (BAS)"
 
 #: preferences/gattBas.js:188
 #, javascript-format
 msgid "The button is available after disabling %s mode"
-msgstr ""
+msgstr "Tombol tersedia setelah menonaktifkan mode %s"
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
-msgstr ""
+msgstr "UPower"
 
 #: ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
-msgstr ""
+msgstr "Aktifkan Perangkat UPower"
 
 #: ui/upowerDevices.ui:12
 msgid "Enable indicator for UPower devices"
-msgstr ""
+msgstr "Aktifkan indikator untuk perangkat UPower"
 
 #: ui/upowerDevices.ui:13
 msgid ""
@@ -347,136 +358,146 @@ msgid ""
 "report battery levels if supported by the kernel or third-party drivers. "
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
+"Perangkat UPower tertentu, seperti mouse, papan ketik nirkabel 2,4 GHz, dan "
+"sebagainya, dapat melaporkan tingkat baterai jika didukung oleh kernel atau "
+"driver pihak ketiga. Aktifkan opsi ini untuk menampilkan status baterainya "
+"di baki sistem GNOME."
 
 #: ui/upowerDevices.ui:20 ui/device.ui:9 ui/gattBas.ui:30
 msgid "Configuration by Device"
-msgstr ""
+msgstr "Konfigurasi Berdasarkan Perangkat"
 
 #: ui/upowerDevices.ui:21 ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
-msgstr ""
+msgstr "Catatan: Pengaturan umum mengesampingkan pengaturan khusus perangkat"
 
 #: ui/upowerDevices.ui:24
 msgid "No compatible device found!"
-msgstr ""
+msgstr "Tidak ada perangkat yang kompatibel ditemukan!"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
-msgstr ""
+msgstr "Pengaturan Widget Baterai"
 
 #: ui/batteryWidgetSettings.ui:9
 msgid "Indicator Widget Settings"
-msgstr ""
+msgstr "Pengaturan Widget Indikator"
 
 #: ui/batteryWidgetSettings.ui:12
 msgid ""
 "Indicator Battery Widget Settings available only for System Tray mode or "
 "Panel Button mode with multiple indicators"
 msgstr ""
+"Pengaturan Widget Baterai Indikator hanya tersedia untuk mode Baki Sistem "
+"atau mode Tombol Panel dengan beberapa indikator"
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
-msgstr ""
+msgstr "Tampilkan ikon saja (Sembunyikan Bilah/Titik)"
 
 #: ui/batteryWidgetSettings.ui:18
 msgid ""
 "Hides the battery level indicator on the icon. Pair with text percentage for "
 "battery information"
 msgstr ""
+"Menyembunyikan indikator tingkat baterai pada ikon. Padukan dengan "
+"persentase teks untuk informasi baterai"
 
 #: ui/batteryWidgetSettings.ui:23
 msgid "Display battery percentage as text"
-msgstr ""
+msgstr "Tampilkan persentase baterai sebagai teks"
 
 #: ui/batteryWidgetSettings.ui:24
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
+msgstr "Menampilkan persentase baterai di samping ikon perangkat Bluetooth"
 
 #: ui/batteryWidgetSettings.ui:29
 msgid "Battery Level Indicator Type"
-msgstr ""
+msgstr "Jenis Indikator Tingkat Baterai"
 
 #: ui/batteryWidgetSettings.ui:30
 msgid "Dots offer better visibility"
-msgstr ""
+msgstr "Titik memberikan visibilitas yang lebih baik"
 
 #: ui/batteryWidgetSettings.ui:42
 msgid "Battery Bar Position"
-msgstr ""
+msgstr "Posisi Bilah Baterai"
 
 #: ui/batteryWidgetSettings.ui:43
 msgid "Choose where to display the battery bar relative to the device icon"
-msgstr ""
+msgstr "Pilih lokasi tampilan bilah baterai relatif terhadap ikon perangkat"
 
 #: ui/batteryWidgetSettings.ui:55
 msgid "Device Icon Size"
-msgstr ""
+msgstr "Ukuran Ikon Perangkat"
 
 #: ui/batteryWidgetSettings.ui:56
 msgid ""
 "Adjust the size of the device icon displayed above the battery level "
 "indicator"
 msgstr ""
+"Sesuaikan ukuran ikon perangkat yang ditampilkan di atas indikator tingkat "
+"baterai"
 
 #: ui/batteryWidgetSettings.ui:71
 msgid "Battery Indicator Color Scheme"
-msgstr ""
+msgstr "Skema Warna Indikator Baterai"
 
 #: ui/batteryWidgetSettings.ui:72
 msgid "Choose color scheme for level bar/dots"
-msgstr ""
+msgstr "Pilih skema warna untuk bilah/titik tingkat baterai"
 
 #: ui/batteryWidgetSettings.ui:89
 msgid "Circle Widget Settings"
-msgstr ""
+msgstr "Pengaturan Widget Lingkaran"
 
 #: ui/batteryWidgetSettings.ui:92
 msgid "Circle Widget Color Scheme"
-msgstr ""
+msgstr "Skema Warna Widget Lingkaran"
 
 #: ui/batteryWidgetSettings.ui:93
 msgid "Choose color scheme for battery circle widget"
-msgstr ""
+msgstr "Pilih skema warna untuk widget lingkaran baterai"
 
 #: ui/batteryWidgetSettings.ui:111
 msgid "Battery Level Bar"
-msgstr ""
+msgstr "Bilah Tingkat Baterai"
 
 #: ui/batteryWidgetSettings.ui:112
 msgid "Battery Level Dot"
-msgstr ""
+msgstr "Titik Tingkat Baterai"
 
 #: ui/batteryWidgetSettings.ui:117
 msgid "Left"
-msgstr ""
+msgstr "Kiri"
 
 #: ui/batteryWidgetSettings.ui:118
 msgid "Right"
-msgstr ""
+msgstr "Kanan"
 
 #: ui/batteryWidgetSettings.ui:119
 msgid "Below"
-msgstr ""
+msgstr "Di Bawah"
 
 #: ui/batteryWidgetSettings.ui:124 ui/batteryWidgetSettings.ui:131
 msgid "Symbolic"
-msgstr ""
+msgstr "Simbolik"
 
 #: ui/batteryWidgetSettings.ui:125 ui/batteryWidgetSettings.ui:132
 msgid "Colored"
-msgstr ""
+msgstr "Berwarna"
 
 #: ui/batteryWidgetSettings.ui:126 ui/batteryWidgetSettings.ui:133
 msgid "Customized"
-msgstr ""
+msgstr "Disesuaikan"
 
 #: ui/device.ui:5
 msgid "Device"
-msgstr ""
+msgstr "Perangkat"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
-msgstr ""
+msgstr "Tidak ada perangkat Bluetooth yang dipasangkan!"
 
 #: ui/about.ui:5
 msgid "About"
@@ -484,117 +505,125 @@ msgstr "Tentang"
 
 #: ui/about.ui:75
 msgid "Read me"
-msgstr ""
+msgstr "Baca Saya"
 
 #: ui/about.ui:97
 msgid "Report an Issue"
-msgstr ""
+msgstr "Laporkan Masalah"
 
 #: ui/about.ui:114 ui/about.ui:197
 msgid "Translations"
-msgstr ""
+msgstr "Terjemahan"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr ""
+msgstr "Lihat kode sumber di GitHub"
 
 #: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
-msgstr "Hukum"
+msgstr "Legal"
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "Tutorial Daring"
 
 #: ui/quickSettings.ui:9
 msgid "Note!"
-msgstr ""
+msgstr "Catatan!"
 
 #: ui/quickSettings.ui:17
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "Pengaturan Menu Cepat"
 
 #: ui/quickSettings.ui:20
 msgid "Modify Bluetooth device menu"
-msgstr ""
+msgstr "Ubah menu perangkat Bluetooth"
 
 #: ui/quickSettings.ui:21
 msgid "Add battery information and device controls to the menu"
-msgstr ""
+msgstr "Tambahkan informasi baterai dan kontrol perangkat ke menu"
 
 #: ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
-msgstr ""
+msgstr "Aktifkan mode widget submenu pop-up"
 
 #: ui/quickSettings.ui:27
 msgid ""
 "Adds a submenu that displays battery levels and other controls (ANC) if "
 "available"
 msgstr ""
+"Menambahkan submenu yang menampilkan tingkat baterai dan kontrol lainnya "
+"(ANC) jika tersedia"
 
 #: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
-msgstr ""
+msgstr "Tampilkan ikon baterai untuk perangkat Bluetooth"
 
 #: ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
+"Menampilkan ikon pada menu pop-up untuk tingkat baterai perangkat Bluetooth"
 
 #: ui/quickSettings.ui:38
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Tampilkan persentase baterai perangkat Bluetooth"
 
 #: ui/quickSettings.ui:39
 msgid "Displays Bluetooth device battery level percentage in text"
 msgstr ""
+"Menampilkan persentase tingkat baterai perangkat Bluetooth dalam bentuk teks"
 
 #: ui/quickSettings.ui:44
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "Tampilkan ikon tingkat baterai sebelum teks"
 
 #: ui/quickSettings.ui:45
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "Menukar posisi ikon tingkat baterai dan teks persentase"
 
 #: ui/quickSettings.ui:52
 msgid "Sort By History"
-msgstr ""
+msgstr "Urutkan Berdasarkan Riwayat"
 
 #: ui/quickSettings.ui:55
 msgid "Sort devices by connection history"
-msgstr ""
+msgstr "Urutkan perangkat berdasarkan riwayat koneksi"
 
 #: ui/quickSettings.ui:56
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"
 msgstr ""
+"Aktifkan untuk mengurutkan perangkat berdasarkan riwayat koneksi, atau "
+"nonaktifkan untuk mengurutkannya berdasarkan status koneksi dan alias"
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
-msgstr ""
+msgstr "Pengaturan Indikator Sistem Bluetooth"
 
 #: ui/indicator.ui:12
 msgid "Bluetooth Connection Status Indicator"
-msgstr ""
+msgstr "Indikator Status Koneksi Bluetooth"
 
 #: ui/indicator.ui:13
 msgid ""
 "Hide conditionally: Displayed only when no other bluetooth related "
 "indicators are present"
 msgstr ""
+"Sembunyikan secara kondisional: Ditampilkan hanya ketika tidak ada indikator "
+"lain yang terkait dengan Bluetooth"
 
 #: ui/indicator.ui:27
 msgid "Battery Indicator Settings"
-msgstr ""
+msgstr "Pengaturan Indikator Baterai"
 
 #: ui/indicator.ui:30
 msgid "Choose Indicator mode"
-msgstr ""
+msgstr "Pilih mode Indikator"
 
 #: ui/indicator.ui:31
 msgid ""
@@ -602,26 +631,31 @@ msgid ""
 "System Indicator: Battery icon in top bar.\n"
 "Panel Button: Battery icon with menu."
 msgstr ""
+"Nonaktif: Tidak ada indikator baterai.\n"
+"Indikator Sistem: Ikon baterai di bilah atas.\n"
+"Tombol Panel: Ikon baterai dengan menu."
 
 #: ui/indicator.ui:45
 msgid "Panel Button Mode"
-msgstr ""
+msgstr "Mode Tombol Panel"
 
 #: ui/indicator.ui:48
 msgid "Panel button indicator mode."
-msgstr ""
+msgstr "Mode indikator tombol panel."
 
 #: ui/indicator.ui:49
 msgid "On: Show one selected device. Off: Show all devices"
 msgstr ""
+"Aktif: Tampilkan satu perangkat yang dipilih. Nonaktif: Tampilkan semua "
+"perangkat"
 
 #: ui/indicator.ui:56
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Pengaturan Indikator"
 
 #: ui/indicator.ui:59
 msgid "Show Multiple Battery Indicators per Device"
-msgstr ""
+msgstr "Tampilkan Beberapa Indikator Baterai per Perangkat"
 
 #: ui/indicator.ui:60
 msgid ""
@@ -629,123 +663,136 @@ msgid ""
 "indicator for each battery. When disabled, shows a single indicator "
 "representing the most critical (lowest) battery level of the device."
 msgstr ""
+"Untuk perangkat dengan beberapa baterai, jika diaktifkan, tampilkan "
+"indikator terpisah untuk setiap baterai. Jika dinonaktifkan, tampilkan satu "
+"indikator yang mewakili tingkat baterai perangkat yang paling kritis "
+"(terendah)."
 
 #: ui/indicator.ui:67
 msgid "Show Popup on Hover"
-msgstr ""
+msgstr "Tampilkan Pop-up saat Disorot"
 
 #: ui/indicator.ui:70
 msgid "Show Detailed Info on Hover"
-msgstr ""
+msgstr "Tampilkan Informasi Rinci saat Disorot"
 
 #: ui/indicator.ui:71
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
 msgstr ""
+"Menampilkan pop-up berisi informasi dan kontrol baterai ketika penunjuk "
+"tetikus berada di atas indikator selama jeda waktu yang ditentukan"
 
 #: ui/indicator.ui:76
 msgid "Hover Activation Delay"
-msgstr ""
+msgstr "Jeda Aktivasi saat Disorot"
 
 #: ui/indicator.ui:77
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
+"Tentukan jumlah detik penunjuk tetikus harus berada di atas indikator "
+"sebelum informasi rinci ditampilkan."
 
 #: ui/indicator.ui:95
 msgid "Tooltips"
-msgstr ""
+msgstr "Tooltip"
 
 #: ui/indicator.ui:98
 msgid "Enable tooltips"
-msgstr ""
+msgstr "Aktifkan tooltip"
 
 #: ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
-msgstr ""
+msgstr "Tampilkan tooltip saat menyorot tombol tanpa label"
 
 #: ui/indicator.ui:107
 msgid "Default Behaviour"
-msgstr ""
+msgstr "Perilaku Default"
 
 #: ui/indicator.ui:108
 msgid "Hide Always"
-msgstr ""
+msgstr "Selalu Sembunyikan"
 
 #: ui/indicator.ui:109
 msgid "Hide Conditionally"
-msgstr ""
+msgstr "Sembunyikan Secara Kondisional"
 
 #: ui/indicator.ui:114
 msgid "Off"
-msgstr ""
+msgstr "Nonaktif"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
-msgstr ""
+msgstr "Baki Sistem"
 
 #: ui/indicator.ui:116
 msgid "Panel Button"
-msgstr ""
+msgstr "Tombol Panel"
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "Pendamping BudsLink"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
-msgstr ""
+msgstr "Aktifkan integrasi BudsLink"
 
 #: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
+"Berfungsi sebagai pendamping aplikasi BudsLink, yang berjalan di latar "
+"belakang untuk menyediakan fitur tambahan bagi headphone dan earbud yang "
+"didukung"
 
 #: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
-msgstr ""
+msgstr "Sembunyikan dari Aplikasi Latar Belakang"
 
 #: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
-msgstr ""
+msgstr "Sembunyikan BudsLink dari daftar Aplikasi Latar Belakang GNOME"
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
-msgstr ""
+msgstr "Status Instalasi"
 
 #: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
-msgstr ""
+msgstr "Status Instalasi BudsLink"
 
 #: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
-msgstr ""
+msgstr "BudsLink di Flathub"
 
 #: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
-msgstr ""
+msgstr "Dokumentasi BudsLink"
 
 #: ui/gattBas.ui:16
 msgid "Experimental"
-msgstr ""
+msgstr "Eksperimental"
 
 #: ui/gattBas.ui:19
 msgid "Battery Service (BAS) Settings"
-msgstr ""
+msgstr "Pengaturan Layanan Baterai (BAS)"
 
 #: ui/gattBas.ui:22
 msgid "Enable GATT Battery Service Reporting"
-msgstr ""
+msgstr "Aktifkan Pelaporan Layanan Baterai GATT"
 
 #: ui/gattBas.ui:23
 msgid ""
 "Display battery levels for Bluetooth devices using the GATT Battery Service "
 "(BAS)."
 msgstr ""
+"Tampilkan tingkat baterai untuk perangkat Bluetooth menggunakan GATT Battery "
+"Service (BAS)."
 
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
-msgstr ""
+msgstr "Tidak ada perangkat yang kompatibel dipasangkan!"
