@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-11 17:53-0600\n"
-"PO-Revision-Date: 2026-09-13 17:43+0000\n"
+"PO-Revision-Date: 2026-09-13 23:09+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/it/>\n"
@@ -187,15 +187,15 @@ msgstr ""
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
-msgstr ""
+msgstr "AirPods"
 
 #: preferences/budslinkCompanion.js:58
 msgid "Beats"
-msgstr ""
+msgstr "Beats"
 
 #: preferences/budslinkCompanion.js:59
 msgid "Sony"
-msgstr ""
+msgstr "Sony"
 
 #: preferences/budslinkCompanion.js:60
 msgid "Samsung Galaxy Buds"
@@ -203,19 +203,19 @@ msgstr "Samsung Galaxy Buds"
 
 #: preferences/budslinkCompanion.js:61
 msgid "Nothing / CMF"
-msgstr ""
+msgstr "Nothing / CMF"
 
 #: preferences/budslinkCompanion.js:62
 msgid "Bose"
-msgstr ""
+msgstr "Bose"
 
 #: preferences/budslinkCompanion.js:63
 msgid "Sennheiser"
-msgstr ""
+msgstr "Sennheiser"
 
 #: preferences/budslinkCompanion.js:64
 msgid "Redmi / Xiaomi"
-msgstr ""
+msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
