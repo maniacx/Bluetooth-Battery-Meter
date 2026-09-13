@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-11 17:53-0600\n"
-"PO-Revision-Date: 2026-09-13 10:51+0000\n"
+"PO-Revision-Date: 2026-09-13 17:43+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/ru/>\n"
@@ -66,15 +66,15 @@ msgstr "Подключить"
 
 #. Translators: %s is a device name like "MyPhone"
 #: lib/widgets/bluetoothGnomePopupMenu.js:77
-#, javascript-format
+#, fuzzy, javascript-format
 msgid "Disconnect %s"
-msgstr "Отключиться от "
+msgstr "Отключиться от %s"
 
 #. Translators: %s is a device name like "MyPhone"
 #: lib/widgets/bluetoothGnomePopupMenu.js:79
-#, javascript-format
+#, fuzzy, javascript-format
 msgid "Connect to %s"
-msgstr "Подключиться к "
+msgstr "Подключиться к %s"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
@@ -468,11 +468,11 @@ msgstr "Точка уровня заряда батареи"
 
 #: ui/batteryWidgetSettings.ui:117
 msgid "Left"
-msgstr ""
+msgstr "Левый"
 
 #: ui/batteryWidgetSettings.ui:118
 msgid "Right"
-msgstr ""
+msgstr "Правый"
 
 #: ui/batteryWidgetSettings.ui:119
 msgid "Below"
@@ -708,7 +708,7 @@ msgstr "Скрыть по условию"
 
 #: ui/indicator.ui:114
 msgid "Off"
-msgstr ""
+msgstr "Выкл"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
