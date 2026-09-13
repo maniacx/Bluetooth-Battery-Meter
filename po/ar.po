@@ -9,16 +9,17 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-11 17:53-0600\n"
-"PO-Revision-Date: 2019-03-18 14:37+0200\n"
-"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
-"Language-Team: Arabic <doc@arabeyes.org>\n"
+"PO-Revision-Date: 2026-09-13 23:09+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/budslink/"
+"bluetooth-battery-meter/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 "X-Project-Style: gnome\n"
 
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
@@ -189,35 +190,35 @@ msgstr ""
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
-msgstr ""
+msgstr "AirPods"
 
 #: preferences/budslinkCompanion.js:58
 msgid "Beats"
-msgstr ""
+msgstr "Beats"
 
 #: preferences/budslinkCompanion.js:59
 msgid "Sony"
-msgstr ""
+msgstr "Sony"
 
 #: preferences/budslinkCompanion.js:60
 msgid "Samsung Galaxy Buds"
-msgstr ""
+msgstr "Samsung Galaxy Buds"
 
 #: preferences/budslinkCompanion.js:61
 msgid "Nothing / CMF"
-msgstr ""
+msgstr "Nothing / CMF"
 
 #: preferences/budslinkCompanion.js:62
 msgid "Bose"
-msgstr ""
+msgstr "Bose"
 
 #: preferences/budslinkCompanion.js:63
 msgid "Sennheiser"
-msgstr ""
+msgstr "Sennheiser"
 
 #: preferences/budslinkCompanion.js:64
 msgid "Redmi / Xiaomi"
-msgstr ""
+msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
@@ -286,7 +287,7 @@ msgstr ""
 #: preferences/about.js:49
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "© %s %s"
 
 #: preferences/about.js:50
 #, javascript-format
@@ -330,7 +331,7 @@ msgstr ""
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
-msgstr ""
+msgstr "UPower"
 
 #: ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
@@ -503,7 +504,7 @@ msgstr ""
 
 #: ui/about.ui:217
 msgid "Crowdin"
-msgstr ""
+msgstr "Crowdin"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
