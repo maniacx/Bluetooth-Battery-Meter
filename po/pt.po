@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-14 00:45-0600\n"
 "PO-Revision-Date: 2026-09-14 00:13+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/budslink/"
@@ -510,8 +510,8 @@ msgid "Legal"
 msgstr "Aviso legal"
 
 #: ui/about.ui:217
-msgid "Crowdin"
-msgstr "Crowdin"
+msgid "Weblate"
+msgstr ""
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
@@ -756,3 +756,6 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr ""
+
+#~ msgid "Crowdin"
+#~ msgstr "Crowdin"

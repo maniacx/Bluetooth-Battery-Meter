@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11 17:53-0600\n"
+"POT-Creation-Date: 2026-09-14 00:45-0600\n"
 "PO-Revision-Date: 2026-09-13 23:09+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/budslink/"
@@ -297,8 +297,8 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
-"Esta aplicación viene sin garantía de ningún tipo. Consulte <a href=\"%s\">"
-"%s</a> para más información."
+"Esta aplicación viene sin garantía de ningún tipo. Consulte <a "
+"href=\"%s\">%s</a> para más información."
 
 #: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
@@ -510,8 +510,8 @@ msgid "Legal"
 msgstr "Legal"
 
 #: ui/about.ui:217
-msgid "Crowdin"
-msgstr "Crowdin"
+msgid "Weblate"
+msgstr ""
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
@@ -765,3 +765,6 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr ""
+
+#~ msgid "Crowdin"
+#~ msgstr "Crowdin"
