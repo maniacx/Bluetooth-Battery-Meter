@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-13 10:51+0000\n"
+"PO-Revision-Date: 2026-09-15 08:00+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/budslink/bluetooth-"
 "battery-meter/cs/>\n"
@@ -30,7 +30,7 @@ msgstr ""
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
-msgstr "Ukazatel nabití bluetooth zařízení"
+msgstr "Bluetooth Battery Meter"
 
 #: lib/bluetoothToggle.js:544
 #, javascript-format
@@ -524,7 +524,7 @@ msgstr "Překlady"
 
 #: ui/about.ui:136
 msgid "View sources on Github"
-msgstr "Zobrazit zdrojový kód"
+msgstr "Zobrazit zdrojový kód aplikace"
 
 #: ui/about.ui:153 ui/about.ui:271
 msgid "Legal"
@@ -532,7 +532,7 @@ msgstr "Právní ustanovení"
 
 #: ui/about.ui:217
 msgid "Weblate"
-msgstr ""
+msgstr "Weblate"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
@@ -581,7 +581,7 @@ msgstr "Zobrazit procento nabití baterie zařízení Bluetooth"
 
 #: ui/quickSettings.ui:39
 msgid "Displays Bluetooth device battery level percentage in text"
-msgstr "Zobrazí procento nabití baterie zařízení Bluetooth v textu"
+msgstr "Zobrazí procento nabití baterie zařízení Bluetooth formou textu"
 
 #: ui/quickSettings.ui:44
 msgid "Display battery level icon before text"
@@ -589,7 +589,7 @@ msgstr "Zobrazit ikonu stavu baterie před textem"
 
 #: ui/quickSettings.ui:45
 msgid "Swaps position of battery level icon and percentage text"
-msgstr "Prohodit pozici ikony baterie a textu v procentech"
+msgstr "Prohodit pozici ikony akumulátoru a textu procent"
 
 #: ui/quickSettings.ui:52
 msgid "Sort By History"
@@ -670,7 +670,7 @@ msgid ""
 "representing the most critical (lowest) battery level of the device."
 msgstr ""
 "Když zapnuto, pak pro zařízení s vícero akumulátory zobrazuje zvlášť "
-"indikátor pro každý z akumulátorů. Když vypnuto, zobrazuje jediný indikátor "
+"indikátor pro každý z nich. Když vypnuto, zobrazuje jediný indikátor "
 "představující nejkritičtější (nejvybitější) akumulátor daného zařízení."
 
 #: ui/indicator.ui:67
@@ -750,7 +750,7 @@ msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
-"Chová se jako doprovodná aplikace k aplikaci BudsLink, která běží na pozadí "
+"Chovat se jako doprovodná součást k aplikaci BudsLink, která běží na pozadí "
 "a poskytuje další funkce pro podporovaná sluchátka"
 
 #: ui/budslinkCompanion.ui:22
@@ -759,7 +759,7 @@ msgstr "Skrýt z aplikací na pozadí"
 
 #: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
-msgstr "Skrýt BudsLink se seznamu aplikací na pozadí v prostředí GNOME"
+msgstr "Skrýt BudsLink ze seznamu aplikací na pozadí v prostředí GNOME"
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
@@ -800,6 +800,3 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr "Nespárováno žádné kompatibilní zařízení!"
-
-#~ msgid "Crowdin"
-#~ msgstr "Crowdin"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-13 23:09+0000\n"
+"PO-Revision-Date: 2026-09-15 08:00+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/ar/>\n"
@@ -504,7 +504,7 @@ msgstr ""
 
 #: ui/about.ui:217
 msgid "Weblate"
-msgstr ""
+msgstr "Weblate"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
@@ -749,6 +749,3 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr ""
-
-#~ msgid "Crowdin"
-#~ msgstr "Crowdin"

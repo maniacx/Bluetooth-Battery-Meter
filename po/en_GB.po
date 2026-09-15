@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-14 01:53+0000\n"
+"PO-Revision-Date: 2026-09-15 08:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
 "budslink/bluetooth-battery-meter/en_GB/>\n"
@@ -507,7 +507,7 @@ msgstr ""
 
 #: ui/about.ui:217
 msgid "Weblate"
-msgstr ""
+msgstr "Weblate"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
