@@ -13,14 +13,14 @@ msgstr ""
 "Project-Id-Version: gnome-shell MASTER\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2019-03-10 18:49+0200\n"
+"PO-Revision-Date: 2026-09-15 21:23+0000\n"
 "Last-Translator: Mart Raudsepp <leio@gentoo.org>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 2.2\n"
 "X-DamnedLies-Scope: partial\n"
 
@@ -38,13 +38,13 @@ msgstr[1] "%d ühendatud"
 
 #: lib/widgets/panelPopupMenu.js:130
 msgid "Expand submenu"
-msgstr ""
+msgstr "Laienda alammenüüd"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Disconnect"
-msgstr ""
+msgstr "Katkesta ühendus"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56
 #: lib/widgets/bluetoothPopupMenu.js:82
@@ -66,15 +66,15 @@ msgstr ""
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "Tõsta ribal esile"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr ""
+msgstr "Nutiseadme seadistused"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Ahenda alammenüüd"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:41
 msgid "Battery Status:"
@@ -94,16 +94,16 @@ msgstr ""
 
 #: preferences/device.js:73 preferences/upowerDevices.js:47
 msgid "Icon"
-msgstr ""
+msgstr "Ikoon"
 
 #: preferences/device.js:77 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
-msgstr ""
+msgstr "Vali ikoon"
 
 #: preferences/device.js:78 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
-msgstr ""
+msgstr "Vali ikoon, mida kuvatakse näidikul ja kiirmenüüs"
 
 #: preferences/device.js:81
 msgid "This is an enhanced device"
@@ -188,35 +188,35 @@ msgstr ""
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
-msgstr ""
+msgstr "AirPods"
 
 #: preferences/budslinkCompanion.js:58
 msgid "Beats"
-msgstr ""
+msgstr "Beats"
 
 #: preferences/budslinkCompanion.js:59
 msgid "Sony"
-msgstr ""
+msgstr "Sony"
 
 #: preferences/budslinkCompanion.js:60
 msgid "Samsung Galaxy Buds"
-msgstr ""
+msgstr "Samsung Galaxy Buds"
 
 #: preferences/budslinkCompanion.js:61
 msgid "Nothing / CMF"
-msgstr ""
+msgstr "Nothing / CMF"
 
 #: preferences/budslinkCompanion.js:62
 msgid "Bose"
-msgstr ""
+msgstr "Bose"
 
 #: preferences/budslinkCompanion.js:63
 msgid "Sennheiser"
-msgstr ""
+msgstr "Sennheiser"
 
 #: preferences/budslinkCompanion.js:64
 msgid "Redmi / Xiaomi"
-msgstr ""
+msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
@@ -285,7 +285,7 @@ msgstr ""
 #: preferences/about.js:49
 #, javascript-format
 msgid "© %s %s"
-msgstr ""
+msgstr "© %s %s"
 
 #: preferences/about.js:50
 #, javascript-format
@@ -329,7 +329,7 @@ msgstr ""
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
-msgstr ""
+msgstr "UPower"
 
 #: ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
@@ -502,7 +502,7 @@ msgstr ""
 
 #: ui/about.ui:217
 msgid "Weblate"
-msgstr ""
+msgstr "Weblate"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
@@ -678,7 +678,7 @@ msgstr ""
 
 #: ui/indicator.ui:114
 msgid "Off"
-msgstr ""
+msgstr "Väljas"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
@@ -690,7 +690,7 @@ msgstr ""
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "BudsLinki kaasnev rakendus"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
