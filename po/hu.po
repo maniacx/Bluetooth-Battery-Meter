@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-15 08:01+0000\n"
+"PO-Revision-Date: 2026-09-17 17:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/hu/>\n"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: preferences/device.js:73 preferences/upowerDevices.js:47
 msgid "Icon"
-msgstr ""
+msgstr "Ikon"
 
 #: preferences/device.js:77 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
