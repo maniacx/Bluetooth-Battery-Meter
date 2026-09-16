@@ -53,32 +53,6 @@ journalctl -f -o cat /usr/bin/gnome-shell
 ```
 ---
 
-### Enhanced Device Socket Handler Logs
-
-Low-level device socket activity is logged separately:
-
-```
-tail -f /tmp/bluetooth_battery_meter/service.log
-```
-
-For detailed packet-level debugging, edit:
-
-```
-~/.local/share/gnome-shell/extensions/Bluetooth-Battery-Meter@maniacx.github.com/lib/devices/logger.js
-```
-
-Set these flags to true:
-
-```
-const LOG_INFO = true;
-const LOG_BYTES = true;
-```
-
-This enables verbose socket logging including raw bytes.
-Logout and Relogin and monitor using `tail -f`
-
----
-
 ### GJS Logs (Extension Preferences)
 
 Monitor logs related to extension preferences:

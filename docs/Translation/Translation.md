@@ -14,25 +14,48 @@ has_toc: false
 
 ## Translation
 
-Thank you for your interest in contributing to this project. There are two straightforward ways to create or update translations for your language:
-1. Using the `crowdin` website.
-2. Locally using the `Poedit` software.
+Thank you for your interest in contributing to this project. Use one of the following methods to create or update translations for your language:
+
+1. **Weblate:** Using the Weblate website (Recommended)
+
+   * **Pros:**
+
+     * Sign in using your GitHub account.
+     * Translation suggestions are provided.
+     * Translate the strings, and the translation will be automatically pushed to the project.
+
+2. **Poedit:** Locally using the Poedit software
+
+   * **Pros:**
+
+     * No registration required.
+   * **Cons:**
+
+     * No translation suggestions; strings must be entered manually.
+     * Requires installation of the Poedit app.
+     * Requires manually submitting a pull request.
 
 ---
 
-## Translation on Crowdin
+## Translation on Weblate (Recommended)
 
-[<img src="{{ 'assets/images/translation/crowdin-logo.png' | relative_url }}" width="40%" target="_blank">](https://accounts.crowdin.com/register)
+[<img src="{{ 'assets/images/translation/weblate-logo.png' | relative_url }}" width="40%" target="_blank">](https://hosted.weblate.org/engage/budslink/)
 
-* Registering a free account on the Crowdin website is required.
-* Once your account registration is completed, Crowdin becomes easier to use as it provides several suggestions.
+* Log in with your GitHub account (or sign up manually and sign in).
+* Navigate to the BudsLink project and start translating.
+* Translators are encouraged to translate the whole project.
+* If a translator specifically wants to translate Bluetooth Battery Meter, they will need to navigate to the corresponding component under the project.
 
-{: .note }
-> * This repository's GitHub Action automatically exports the `Bluetooth-Battery-Meter.pot` file to Crowdin as soon as the POT file is pushed to GitHub. Therefore, the source on Crowdin is always updated.
-> * This repository's GitHub cannot import translations from Crowdin. Consequently, upon completing the translation, contributors will need to manually upload files using a GitHub pull request.
-> * I do not receive notifications from Crowdin, so please communicate any queries using GitHub issues.
+{: .important-title }
+> Note
+> 
+> The project consists of 4 components:
+> * BudsLink Flatpak app
+> * Bluetooth Battery Meter GNOME extension
+> * BudsLink Companion Plasma widget
+> * BudsLink Companion Cinnamon applet
 
-<img src="{{ 'assets/images/translation/crowdin.png' | relative_url }}" width="100%">
+<img src="{{ 'assets/images/translation/weblate-langauge.png' | relative_url }}" width="100%">
 
 ---
 
@@ -49,7 +72,6 @@ Thank you for your interest in contributing to this project. There are two strai
 
 ## Get Started
 
-[Crowdin Guide](./crowdin-guide){: .btn .btn-green .button2-fixed-width}<br>
 [Poedit Guide](./poedit-guide){: .btn .btn-blue .button2-fixed-width}<br>
 [Pull Request Guide](./pull-request-guide){: .btn .btn-purple .button2-fixed-width}<br>
 

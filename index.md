@@ -12,7 +12,7 @@ permalink: /
 {: .important-title }
 > Currently supported on Gnome Versions:
 > 
-> Supported: `43, 44, 45, 46, 47, 48, 49, 50`
+> Supported: `43, 44, 45, 46, 47, 48, 49, 50, 51`
 >
 > Deprecated: `42`
 
@@ -22,6 +22,7 @@ permalink: /
 <br>
 
 <img src="{{ 'assets/images/home/main.png' | relative_url }}" width="100%">
+
 
 # Important Notes
 
@@ -40,6 +41,24 @@ permalink: /
 <br>
 # Disclaimer
 **This project is an independent effort and is not affiliated with, endorsed by, or sponsored by Apple, Sony, Samsung, Nothing/CMF, Bose, Redmi, Xiaomi or Sennheiser. All product and company names are trademarks™ or registered® trademarks of their respective holders and are used for identification purposes only.**
+
+
+
+# Major changes in Bluetooth Battery Meter v48 — BudsLink dependency
+
+Starting with **Bluetooth Battery Meter v48**, device-specific features for **AirPods, Sony, Samsung Galaxy Buds, Nothing/CMF, Bose, Redmi/Xiaomi, Sennheiser**, and other supported devices require the **BudsLink** Flatpak app, available on Flathub, as a backend.
+
+This change was made because the device-specific code had grown considerably, and socket-level Bluetooth communication and protocol handling are not ideal to run directly inside a GNOME Shell extension.
+
+**Benefits:**
+
+* Keeps the GNOME Shell extension lightweight and it can impact shell performance.
+* Translators can concentrate on the app and extension instead of maintaining duplicate translations across two projects.
+* Avoids duplicate documentation.
+* GNOME reviewers do not have to deal with large code changes every time a new device or feature is added.
+* Allows the author to focus on the app instead of maintaining two separate projects.
+* Building and testing the app is easier and safer for development.
+* Other distributions can also benefit from these features instead of being limited to GNOME-specific distributions.
 
 
 
@@ -77,14 +96,23 @@ permalink: /
 
 * Customizable battery bar and dot colors.
 
+
 ## D-Bus GATT Battery Service (BAS) (Optional Mode)
 
    - D-Bus GATT Battery Service (BAS):  for standard Bluetooth devices that expose battery information via the GATT protocol.
 
-## Devices with Extensive Feature Support
-This extension provides extensive device-specific features, including Left/Right/Case battery monitoring, Noise Control, Equalizer, Button/Gesture customization, and other OEM-level controls for the following devices
 
-* Airpods / Beats
+## BudsLink Companion — Extensive Device Support
+
+Bluetooth Battery Meter acts as a **BudsLink Companion** for supported Bluetooth devices, providing their battery information and device controls directly within the GNOME Shell interface.
+
+When the extension detects a compatible device, it automatically launches BudsLink in the background and keeps it running while the device is connected. When the device is disconnected, the extension stops BudsLink after a set delay.
+
+The **BudsLink** application handles the device communication, Bluetooth protocol processing, and packet decoding. Bluetooth Battery Meter communicates with BudsLink through **D-Bus**, receiving device information and exposing the relevant data and controls through the GNOME Shell Quick Settings interface.
+
+Supported device families include:
+
+* AirPods / Beats
 * Sony
 * Samsung Galaxy Buds
 * Nothing / CMF
@@ -92,7 +120,7 @@ This extension provides extensive device-specific features, including Left/Right
 * Redmi / Xiaomi
 * Sennheiser
 
-
+[Compatibility List](https://maniacx.github.io/BudsLink/devices)
 
 
 

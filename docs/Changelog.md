@@ -8,6 +8,13 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-46_Version 48 &emsp;&emsp; Sept 17, 2026
+> * Remove all Bluetooth Socket UI and settings  code for all devices, AirPods, Sony, Samsung, Nothing etc.
+> * Added support to above devices to use BudsLink as a backend
+> * Translations: Migrate to weblate
+
+
+{: .important-title }
 > GN-46_Version 47 &emsp;&emsp; Aug 23, 2026
 > * bluetoothToggle: Rebuild indicator box and UPower client on settings change. credits@k8ieone
 > * Updated Device Information UI and added serial number for several devices

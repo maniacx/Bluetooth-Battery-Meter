@@ -19,7 +19,7 @@ permalink: /preferences/gattbass
 <br>
 <img src="{{ 'assets/images/preferences/gattbas/gattbas-prefs.png' | relative_url }}" width="100%">
 
-When enabled, the built-in Python script retrieves one or more battery levels reported by the GATT Battery Service for each device.
+When enabled, one or more battery levels reported by the GATT Battery Service for each device.
 
 If your device supports the Battery Service (UUID = 0000180f-0000-1000-8000-00805f9b34fb), it will report its battery level, which will then be displayed by the extension.
 

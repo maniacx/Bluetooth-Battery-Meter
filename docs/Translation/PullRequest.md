@@ -69,5 +69,5 @@ Note: The pictures in this guide is for different extension **Battery Health Cha
 Congratulations! You've successfully created a pull request for your translation.
 
 [Poedit Guide](./poedit-guide){: .btn .btn-blue .button2-fixed-width}<br>
-[Crowdin Guide](./crowdin-guide){: .btn .btn-green .button2-fixed-width}
+
 

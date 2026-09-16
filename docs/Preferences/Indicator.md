@@ -144,5 +144,14 @@ This preference determines the content of the panel button for device with multi
 <img src="{{ 'assets/images/preferences/indicator/panel-multi-battery.png' | relative_url }}" width="50%">
 
 
+## Tooltips
+<br>
+<img src="{{ 'assets/images/preferences/indicator/popupmenu-tooltips-prefs.png' | relative_url }}" width="75%">
+
+**Enable/Disable** tooltips on buttons in the popup menu when hovering the pointer.
+
+<br>
+<img src="{{ 'assets/images/preferences/indicator/popupmenu-tooltips.png' | relative_url }}" width="50%">
+
 
 
