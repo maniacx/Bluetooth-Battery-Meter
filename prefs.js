@@ -10,16 +10,8 @@ import {Indicator} from './preferences/indicator.js';
 import {BatteryWidgetSettings} from './preferences/batteryWidgetSettings.js';
 import {Device} from './preferences/device.js';
 import {UpowerDevices} from './preferences/upowerDevices.js';
-import {Airpods} from './preferences/devices/airpods/devicePrefs.js';
-import {Sony} from './preferences/devices/sony/devicePrefs.js';
-import {GalaxyBuds} from './preferences/devices/galaxyBuds/devicePrefs.js';
-import {NothingBuds} from './preferences/devices/nothingBuds/devicePrefs.js';
-import {GoogleBuds} from './preferences/devices/googleBuds/devicePrefs.js';
-import {BoseBuds} from './preferences/devices/boseBuds/devicePrefs.js';
-import {RedmiBuds} from './preferences/devices/redmiBuds/devicePrefs.js';
-import {SenhBuds} from './preferences/devices/senhBuds/devicePrefs.js';
-import {Gfps} from './preferences/devices/gfps/devicePrefs.js';
 import {GattBas} from './preferences/gattBas.js';
+import {BudsLinkCompanion} from './preferences/budslinkCompanion.js';
 import {About} from './preferences/about.js';
 
 Gio._promisify(Gio.DBusProxy, 'new');
@@ -43,16 +35,8 @@ export default class BluetoothBatteryMeterPrefs extends ExtensionPreferences {
         this._addPage(BatteryWidgetSettings, settings);
         this._addPage(Device, settings);
         this._addPage(UpowerDevices, settings);
-        this._addPage(Airpods, settings);
-        this._addPage(Sony, settings);
-        this._addPage(GalaxyBuds, settings);
-        this._addPage(NothingBuds, settings);
-        this._addPage(GoogleBuds, settings);
-        this._addPage(BoseBuds, settings);
-        this._addPage(RedmiBuds, settings);
-        this._addPage(SenhBuds, settings);
-        this._addPage(Gfps, settings);
         this._addPage(GattBas, settings);
+        this._addPage(BudsLinkCompanion, settings);
         this._addPage(About, this);
 
         window.connect('close-request', () => {

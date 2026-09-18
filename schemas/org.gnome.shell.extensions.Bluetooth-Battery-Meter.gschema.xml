@@ -107,82 +107,6 @@
             <default>[]</default>
             <summary>List of upower devices that reports battery level</summary>
         </key>
-        <key name="attenuated-on-destroy-info" type="as">
-            <default>[]</default>
-            <summary>On destroy attenuated info</summary>
-        </key>
-        <key name="enable-airpods-device" type="b">
-            <default>false</default>
-            <summary>"enable Airpods / Beats devices"</summary>
-        </key>
-        <key name="airpods-list" type="as">
-            <default>[]</default>
-            <summary>List of airpods devices</summary>
-        </key>
-        <key name="enable-sony-device" type="b">
-            <default>false</default>
-            <summary>"enable Sony devices"</summary>
-        </key>
-        <key name="sony-list" type="as">
-            <default>[]</default>
-            <summary>List of Sony devices</summary>
-        </key>
-        <key name="enable-galaxy-buds-device" type="b">
-            <default>false</default>
-            <summary>"enable Sony devices"</summary>
-        </key>
-        <key name="galaxy-buds-list" type="as">
-            <default>[]</default>
-            <summary>List of Galaxy Buds devices</summary>
-        </key>
-        <key name="enable-nothing-buds-device" type="b">
-            <default>false</default>
-            <summary>"enable Sony devices"</summary>
-        </key>
-        <key name="nothing-buds-list" type="as">
-            <default>[]</default>
-            <summary>List of Nothing / CMF devices</summary>
-        </key>
-        <key name="enable-google-buds-device" type="b">
-            <default>false</default>
-            <summary>"enable Google Pixel Buds devices"</summary>
-        </key>
-        <key name="google-buds-list" type="as">
-            <default>[]</default>
-            <summary>List of Google Pixel Buds devices</summary>
-        </key>
-        <key name="enable-redmi-buds-device" type="b">
-            <default>false</default>
-            <summary>"enable Redmi Buds devices"</summary>
-        </key>
-        <key name="redmi-buds-list" type="as">
-            <default>[]</default>
-            <summary>List of Redmi Buds devices</summary>
-        </key>
-        <key name="enable-senh-buds-device" type="b">
-            <default>false</default>
-            <summary>"enable Sennheiser devices"</summary>
-        </key>
-        <key name="senh-buds-list" type="as">
-            <default>[]</default>
-            <summary>List of Sennheiser devices</summary>
-        </key>
-        <key name="enable-bose-buds-device" type="b">
-            <default>false</default>
-            <summary>"enable Bose devices"</summary>
-        </key>
-        <key name="bose-buds-list" type="as">
-            <default>[]</default>
-            <summary>List of Bose devices</summary>
-        </key>
-        <key name="enable-gfps-device" type="b">
-            <default>false</default>
-            <summary>"enable GFPS devices"</summary>
-        </key>
-        <key name="gfps-list" type="as">
-            <default>[]</default>
-            <summary>List of GFPS devices</summary>
-        </key>
         <key name="enable-gattbas-device" type="b">
             <default>false</default>
             <summary>"enable gattbas devices"</summary>
@@ -190,6 +114,14 @@
         <key name="gattbas-list" type="as">
             <default>[]</default>
             <summary>List of gattbas devices</summary>
+        </key>
+        <key name="enable-companion" type="b">
+            <default>false</default>
+            <summary>"enable budslink companion devices"</summary>
+        </key>
+        <key name="hide-budslink-background-apps" type="b">
+            <default>false</default>
+            <summary>"hides budslink from background apps"</summary>
         </key>
     </schema>
 </schemalist>
