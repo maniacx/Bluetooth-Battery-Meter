@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-17 17:51+0000\n"
+"PO-Revision-Date: 2026-09-18 20:49+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/sv/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "Bluetooth-batterimätare"
 
 #: lib/bluetoothToggle.js:544
 #, javascript-format
@@ -33,7 +33,7 @@ msgstr[1] "%d anslutna"
 
 #: lib/widgets/panelPopupMenu.js:130
 msgid "Expand submenu"
-msgstr ""
+msgstr "Expandera undermenyn"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
 #: lib/widgets/bluetoothPopupMenu.js:82
@@ -61,31 +61,31 @@ msgstr "Anslut till %s"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "Fäst på panelen"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr ""
+msgstr "Enhetsinställningar"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Fäll ihop undermenyn"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:41
 msgid "Battery Status:"
-msgstr ""
+msgstr "Batteristatus:"
 
 #: preferences/device.js:65 preferences/upowerDevices.js:42
 msgid "Reported"
-msgstr ""
+msgstr "Rapporterad"
 
 #: preferences/device.js:65 preferences/upowerDevices.js:42
 msgid "Not Available"
-msgstr ""
+msgstr "Inte tillgänglig"
 
 #: preferences/device.js:66
 msgid "Reported from enhanced device service"
-msgstr ""
+msgstr "Rapporterad av utökad enhetstjänst"
 
 #: preferences/device.js:73 preferences/upowerDevices.js:47
 msgid "Icon"
@@ -94,73 +94,77 @@ msgstr "Ikon"
 #: preferences/device.js:77 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
-msgstr ""
+msgstr "Välj ikon"
 
 #: preferences/device.js:78 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
-msgstr ""
+msgstr "Välj ikonen som används för indikatorn och snabbmenyn"
 
 #: preferences/device.js:81
 msgid "This is an enhanced device"
-msgstr ""
+msgstr "Det här är en utökad enhet"
 
 #: preferences/device.js:82
 msgid "Icon selection if available are in Enhanced device per device settings"
 msgstr ""
+"Ikonval, om det är tillgängligt, finns i inställningarna för varje utökad "
+"enhet"
 
 #: preferences/device.js:137 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "Snabbmeny"
 
 #: preferences/device.js:141
 msgid "Display Battery Level"
-msgstr ""
+msgstr "Visa batterinivå"
 
 #: preferences/device.js:142
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
+msgstr "Visa batterinivån i snabbmenyn på Bluetooth-panelen"
 
 #: preferences/device.js:162 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "Indikator"
 
 #: preferences/device.js:166 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
-msgstr ""
+msgstr "Konfigurera indikator"
 
 #: preferences/device.js:167 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
-msgstr ""
+msgstr "Välj hur indikatorn ska fungera"
 
 #: preferences/device.js:171
 msgid "Do not show Icon"
-msgstr ""
+msgstr "Visa inte ikon"
 
 #: preferences/device.js:172
 msgid "Show Icon without Battery level"
-msgstr ""
+msgstr "Visa ikon utan batterinivå"
 
 #: preferences/device.js:173
 msgid "Show Icon with Battery Level"
-msgstr ""
+msgstr "Visa ikon med batterinivå"
 
 #: preferences/device.js:176 preferences/upowerDevices.js:138
 msgid "Hide Icon"
-msgstr ""
+msgstr "Dölj ikon"
 
 #: preferences/device.js:177 preferences/upowerDevices.js:139
 msgid "Show Icon"
-msgstr ""
+msgstr "Visa ikon"
 
 #: preferences/device.js:225 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
 msgid "Configure device."
-msgstr ""
+msgstr "Konfigurera enhet."
 
 #: preferences/device.js:239
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
+"Ta bort enhetsinformation: knappen är tillgänglig när enheten har kopplats "
+"från"
 
 #: preferences/device.js:271
 msgid "(Removed)"
@@ -176,10 +180,13 @@ msgid ""
 "and access advanced controls such as noise control, equalizer, and gestures, "
 "when supported by the device"
 msgstr ""
+"Installera BudsLink från Flathub för att övervaka batterinivåer för flera "
+"enheter och få tillgång till avancerade funktioner som brusreglering, "
+"equalizer och gester när enheten har stöd för dem."
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+msgstr "Aktuellt stödda öronsnäckor och hörlurar är:"
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
@@ -215,33 +222,33 @@ msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "Installerad"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
-msgstr ""
+msgstr "Uppdatera utökningen"
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "Uppdatera BudsLink"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "Inte installerad"
 
 #: preferences/budslinkCompanion.js:80
 msgid "Refresh"
-msgstr ""
+msgstr "Uppdatera"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
 msgid "Assign color for %d – %d%%"
-msgstr ""
+msgstr "Tilldela färg för %d–%d %%"
 
 #: preferences/batteryWidgetSettings.js:18
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
+msgstr "Ange färg för batterinivåintervallet %d–%d %%"
 
 #: preferences/quickSettings.js:78
 #, javascript-format
@@ -250,28 +257,33 @@ msgid ""
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"Vissa Bluetooth-enheter rapporterar inte batterinivån förrän Bluez "
+"experimentella funktioner har aktiverats i systemet. Läs <a href=\"%s\">"
+"README</a> för mer information."
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 #: preferences/upowerDevices.js:105
 msgid "Device Alias"
-msgstr ""
+msgstr "Enhetsalias"
 
 #: preferences/upowerDevices.js:199
 msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
 msgstr ""
+"Ta bort enhetsinformation: knappen är tillgänglig när UPower-enheten har "
+"tagits bort"
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
-msgstr ""
+msgstr "(Frånkopplad)"
 
 #: preferences/upowerDevices.js:233
 msgid "(Online)"
-msgstr ""
+msgstr "(Ansluten)"
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
@@ -293,36 +305,36 @@ msgstr ""
 
 #: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
-msgstr ""
+msgstr "En indikator, panelknapp, snabbmeny, skivomslag"
 
 #: preferences/gattBas.js:52
 msgid "Multiple Indicators, Circular Battery Widgets"
-msgstr ""
+msgstr "Flera indikatorer, runda batteriwidgetar"
 
 #: preferences/gattBas.js:60
 msgid "Icon "
-msgstr ""
+msgstr "Ikon "
 
 #: preferences/gattBas.js:69
 msgid "Battery 1 Icon"
-msgstr ""
+msgstr "Ikon för batteri 1"
 
 #: preferences/gattBas.js:78
 msgid "Battery 2 Icon"
-msgstr ""
+msgstr "Ikon för batteri 2"
 
 #: preferences/gattBas.js:87
 msgid "Battery 3 Icon"
-msgstr ""
+msgstr "Ikon för batteri 3"
 
 #: preferences/gattBas.js:185 ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
-msgstr ""
+msgstr "Batteritjänst (BAS)"
 
 #: preferences/gattBas.js:188
 #, javascript-format
 msgid "The button is available after disabling %s mode"
-msgstr ""
+msgstr "Knappen är tillgänglig när läget %s har inaktiverats"
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
@@ -330,11 +342,11 @@ msgstr "UPower"
 
 #: ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
-msgstr ""
+msgstr "Aktivera UPower-enheter"
 
 #: ui/upowerDevices.ui:12
 msgid "Enable indicator for UPower devices"
-msgstr ""
+msgstr "Aktivera indikator för UPower-enheter"
 
 #: ui/upowerDevices.ui:13
 msgid ""
@@ -342,128 +354,137 @@ msgid ""
 "report battery levels if supported by the kernel or third-party drivers. "
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
+"Vissa UPower-enheter, till exempel trådlösa 2,4 GHz-möss och tangentbord, "
+"kan rapportera batterinivåer om det stöds av kärnan eller "
+"tredjepartsdrivrutiner. Aktivera detta alternativ för att visa deras "
+"batteristatus i GNOME-systemfältet."
 
 #: ui/upowerDevices.ui:20 ui/device.ui:9 ui/gattBas.ui:30
 msgid "Configuration by Device"
-msgstr ""
+msgstr "Konfiguration per enhet"
 
 #: ui/upowerDevices.ui:21 ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
-msgstr ""
+msgstr "Obs! Allmänna inställningar åsidosätter enhetsspecifika inställningar"
 
 #: ui/upowerDevices.ui:24
 msgid "No compatible device found!"
-msgstr ""
+msgstr "Ingen kompatibel enhet hittades!"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
-msgstr ""
+msgstr "Inställningar för batteriwidget"
 
 #: ui/batteryWidgetSettings.ui:9
 msgid "Indicator Widget Settings"
-msgstr ""
+msgstr "Inställningar för indikatorwidget"
 
 #: ui/batteryWidgetSettings.ui:12
 msgid ""
 "Indicator Battery Widget Settings available only for System Tray mode or "
 "Panel Button mode with multiple indicators"
 msgstr ""
+"Inställningar för indikatorbatteriwidget är endast tillgängliga för "
+"systemfältsläge eller panelknappsläge med flera indikatorer"
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
-msgstr ""
+msgstr "Visa endast ikon (dölj stapel/prickar)"
 
 #: ui/batteryWidgetSettings.ui:18
 msgid ""
 "Hides the battery level indicator on the icon. Pair with text percentage for "
 "battery information"
 msgstr ""
+"Döljer batterinivåindikatorn på ikonen. Kombinera med textprocent för "
+"batteriinformation"
 
 #: ui/batteryWidgetSettings.ui:23
 msgid "Display battery percentage as text"
-msgstr ""
+msgstr "Visa batteriprocent som text"
 
 #: ui/batteryWidgetSettings.ui:24
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
+msgstr "Visar batteriprocenten intill Bluetooth-enhetens ikon"
 
 #: ui/batteryWidgetSettings.ui:29
 msgid "Battery Level Indicator Type"
-msgstr ""
+msgstr "Typ av batterinivåindikator"
 
 #: ui/batteryWidgetSettings.ui:30
 msgid "Dots offer better visibility"
-msgstr ""
+msgstr "Prickar ger bättre synlighet"
 
 #: ui/batteryWidgetSettings.ui:42
 msgid "Battery Bar Position"
-msgstr ""
+msgstr "Batteristapelns position"
 
 #: ui/batteryWidgetSettings.ui:43
 msgid "Choose where to display the battery bar relative to the device icon"
-msgstr ""
+msgstr "Välj var batteristapeln ska visas i förhållande till enhetsikonen"
 
 #: ui/batteryWidgetSettings.ui:55
 msgid "Device Icon Size"
-msgstr ""
+msgstr "Enhetsikonens storlek"
 
 #: ui/batteryWidgetSettings.ui:56
 msgid ""
 "Adjust the size of the device icon displayed above the battery level "
 "indicator"
 msgstr ""
+"Justera storleken på enhetsikonen som visas ovanför batterinivåindikatorn"
 
 #: ui/batteryWidgetSettings.ui:71
 msgid "Battery Indicator Color Scheme"
-msgstr ""
+msgstr "Färgschema för batteriindikator"
 
 #: ui/batteryWidgetSettings.ui:72
 msgid "Choose color scheme for level bar/dots"
-msgstr ""
+msgstr "Välj färgschema för nivåstapel/prickar"
 
 #: ui/batteryWidgetSettings.ui:89
 msgid "Circle Widget Settings"
-msgstr ""
+msgstr "Inställningar för cirkelwidget"
 
 #: ui/batteryWidgetSettings.ui:92
 msgid "Circle Widget Color Scheme"
-msgstr ""
+msgstr "Färgschema för cirkelwidget"
 
 #: ui/batteryWidgetSettings.ui:93
 msgid "Choose color scheme for battery circle widget"
-msgstr ""
+msgstr "Välj färgschema för battericirkelwidgeten"
 
 #: ui/batteryWidgetSettings.ui:111
 msgid "Battery Level Bar"
-msgstr ""
+msgstr "Batterinivåstapel"
 
 #: ui/batteryWidgetSettings.ui:112
 msgid "Battery Level Dot"
-msgstr ""
+msgstr "Batterinivåprick"
 
 #: ui/batteryWidgetSettings.ui:117
 msgid "Left"
-msgstr ""
+msgstr "Vänster"
 
 #: ui/batteryWidgetSettings.ui:118
 msgid "Right"
-msgstr ""
+msgstr "Höger"
 
 #: ui/batteryWidgetSettings.ui:119
 msgid "Below"
-msgstr ""
+msgstr "Nedan"
 
 #: ui/batteryWidgetSettings.ui:124 ui/batteryWidgetSettings.ui:131
 msgid "Symbolic"
-msgstr ""
+msgstr "Symbolisk"
 
 #: ui/batteryWidgetSettings.ui:125 ui/batteryWidgetSettings.ui:132
 msgid "Colored"
-msgstr ""
+msgstr "Färgad"
 
 #: ui/batteryWidgetSettings.ui:126 ui/batteryWidgetSettings.ui:133
 msgid "Customized"
-msgstr ""
+msgstr "Anpassad"
 
 #: ui/device.ui:5
 msgid "Device"
@@ -471,7 +492,7 @@ msgstr "Enhet"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
-msgstr ""
+msgstr "Ingen Bluetooth-enhet har parkopplats!"
 
 #: ui/about.ui:5
 msgid "About"
@@ -503,7 +524,7 @@ msgstr "Weblate"
 
 #: ui/about.ui:229
 msgid "Online Tutorials"
-msgstr ""
+msgstr "Onlinehandledningar"
 
 #: ui/quickSettings.ui:9
 msgid "Note!"
@@ -515,29 +536,31 @@ msgstr "Inställningar för snabbmenyn"
 
 #: ui/quickSettings.ui:20
 msgid "Modify Bluetooth device menu"
-msgstr ""
+msgstr "Ändra menyn för Bluetooth-enhet"
 
 #: ui/quickSettings.ui:21
 msgid "Add battery information and device controls to the menu"
-msgstr ""
+msgstr "Lägg till batteriinformation och enhetskontroller i menyn"
 
 #: ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
-msgstr ""
+msgstr "Aktivera widgetläge för snabbmenyns undermeny"
 
 #: ui/quickSettings.ui:27
 msgid ""
 "Adds a submenu that displays battery levels and other controls (ANC) if "
 "available"
 msgstr ""
+"Lägger till en undermeny som visar batterinivåer och andra kontroller, till "
+"exempel ANC, när de är tillgängliga"
 
 #: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
-msgstr ""
+msgstr "Visa batteriikon för Bluetooth-enheter"
 
 #: ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
-msgstr ""
+msgstr "Visar en ikon för Bluetooth-enhetens batterinivå i snabbmenyn"
 
 #: ui/quickSettings.ui:38
 msgid "Show Bluetooth device battery percentage"
@@ -557,39 +580,43 @@ msgstr "Växlar positionen av batteriikonen och procenttexten"
 
 #: ui/quickSettings.ui:52
 msgid "Sort By History"
-msgstr ""
+msgstr "Sortera efter historik"
 
 #: ui/quickSettings.ui:55
 msgid "Sort devices by connection history"
-msgstr ""
+msgstr "Sortera enheter efter anslutningshistorik"
 
 #: ui/quickSettings.ui:56
 msgid ""
 "Enable to sort devices by connection history, or disable to sort by "
 "connection status and alias"
 msgstr ""
+"Aktivera för att sortera enheter efter anslutningshistorik, eller inaktivera "
+"för att sortera efter anslutningsstatus och alias"
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
-msgstr ""
+msgstr "Inställningar för Bluetooth-systemindikator"
 
 #: ui/indicator.ui:12
 msgid "Bluetooth Connection Status Indicator"
-msgstr ""
+msgstr "Indikator för Bluetooth-anslutningsstatus"
 
 #: ui/indicator.ui:13
 msgid ""
 "Hide conditionally: Displayed only when no other bluetooth related "
 "indicators are present"
 msgstr ""
+"Dölj villkorligt: visas endast när inga andra Bluetooth-relaterade "
+"indikatorer finns"
 
 #: ui/indicator.ui:27
 msgid "Battery Indicator Settings"
-msgstr ""
+msgstr "Inställningar för batteriindikator"
 
 #: ui/indicator.ui:30
 msgid "Choose Indicator mode"
-msgstr ""
+msgstr "Välj indikatorläge"
 
 #: ui/indicator.ui:31
 msgid ""
@@ -597,18 +624,21 @@ msgid ""
 "System Indicator: Battery icon in top bar.\n"
 "Panel Button: Battery icon with menu."
 msgstr ""
+"Av: Ingen batteriindikator.\n"
+"Systemindikator: Batteriikon i översta fältet.\n"
+"Panelknapp: Batteriikon med meny."
 
 #: ui/indicator.ui:45
 msgid "Panel Button Mode"
-msgstr ""
+msgstr "Panelknappsläge"
 
 #: ui/indicator.ui:48
 msgid "Panel button indicator mode."
-msgstr ""
+msgstr "Indikatorläge för panelknapp."
 
 #: ui/indicator.ui:49
 msgid "On: Show one selected device. Off: Show all devices"
-msgstr ""
+msgstr "På: Visa en vald enhet. Av: Visa alla enheter"
 
 #: ui/indicator.ui:56
 msgid "Indicator Settings"
@@ -616,7 +646,7 @@ msgstr "Inställningar för systemikoner"
 
 #: ui/indicator.ui:59
 msgid "Show Multiple Battery Indicators per Device"
-msgstr ""
+msgstr "Visa flera batteriindikatorer per enhet"
 
 #: ui/indicator.ui:60
 msgid ""
@@ -624,123 +654,133 @@ msgid ""
 "indicator for each battery. When disabled, shows a single indicator "
 "representing the most critical (lowest) battery level of the device."
 msgstr ""
+"För enheter med flera batterier visas en separat indikator för varje batteri "
+"när detta är aktiverat. När det är inaktiverat visas en enda indikator som "
+"representerar enhetens mest kritiska, lägsta, batterinivå."
 
 #: ui/indicator.ui:67
 msgid "Show Popup on Hover"
-msgstr ""
+msgstr "Visa snabbmeny vid muspekning"
 
 #: ui/indicator.ui:70
 msgid "Show Detailed Info on Hover"
-msgstr ""
+msgstr "Visa detaljerad information vid muspekning"
 
 #: ui/indicator.ui:71
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
 msgstr ""
+"Visar en snabbmeny med batteriinformation och kontroller när muspekaren "
+"hålls över indikatorn under en anpassad fördröjning"
 
 #: ui/indicator.ui:76
 msgid "Hover Activation Delay"
-msgstr ""
+msgstr "Fördröjning före aktivering vid muspekning"
 
 #: ui/indicator.ui:77
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
+"Ange hur många sekunder muspekaren måste hållas över indikatorn innan "
+"detaljerad information visas."
 
 #: ui/indicator.ui:95
 msgid "Tooltips"
-msgstr ""
+msgstr "Verktygstips"
 
 #: ui/indicator.ui:98
 msgid "Enable tooltips"
-msgstr ""
+msgstr "Aktivera verktygstips"
 
 #: ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
-msgstr ""
+msgstr "Visa verktygstips när muspekaren hålls över knappar utan etikett"
 
 #: ui/indicator.ui:107
 msgid "Default Behaviour"
-msgstr ""
+msgstr "Standardbeteende"
 
 #: ui/indicator.ui:108
 msgid "Hide Always"
-msgstr ""
+msgstr "Dölj alltid"
 
 #: ui/indicator.ui:109
 msgid "Hide Conditionally"
-msgstr ""
+msgstr "Dölj villkorligt"
 
 #: ui/indicator.ui:114
 msgid "Off"
-msgstr ""
+msgstr "Av"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
-msgstr ""
+msgstr "Systemfält"
 
 #: ui/indicator.ui:116
 msgid "Panel Button"
-msgstr ""
+msgstr "Panelknapp"
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "BudsLink-kompanjon"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
-msgstr ""
+msgstr "Aktivera BudsLink-integrering"
 
 #: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
+"Fungerar som en följeslagare till BudsLink-appen, som körs i bakgrunden och "
+"ger ytterligare funktioner för hörlurar och öronsnäckor som stöds"
 
 #: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
-msgstr ""
+msgstr "Dölj från bakgrundsappar"
 
 #: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
-msgstr ""
+msgstr "Dölj BudsLink från GNOME:s lista över bakgrundsappar"
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
-msgstr ""
+msgstr "Installationsstatus"
 
 #: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
-msgstr ""
+msgstr "Installationsstatus för BudsLink"
 
 #: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
-msgstr ""
+msgstr "BudsLink på Flathub"
 
 #: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
-msgstr ""
+msgstr "BudsLink-dokumentation"
 
 #: ui/gattBas.ui:16
 msgid "Experimental"
-msgstr ""
+msgstr "Experimentell"
 
 #: ui/gattBas.ui:19
 msgid "Battery Service (BAS) Settings"
-msgstr ""
+msgstr "Inställningar för batteritjänst (BAS)"
 
 #: ui/gattBas.ui:22
 msgid "Enable GATT Battery Service Reporting"
-msgstr ""
+msgstr "Aktivera rapportering via GATT-batteritjänsten"
 
 #: ui/gattBas.ui:23
 msgid ""
 "Display battery levels for Bluetooth devices using the GATT Battery Service "
 "(BAS)."
 msgstr ""
+"Visa batterinivåer för Bluetooth-enheter med GATT-batteritjänsten (BAS)."
 
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
-msgstr ""
+msgstr "Ingen kompatibel enhet har parkopplats!"
