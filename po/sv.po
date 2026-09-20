@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-18 20:49+0000\n"
+"PO-Revision-Date: 2026-09-19 20:52+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/sv/>\n"
@@ -182,7 +182,7 @@ msgid ""
 msgstr ""
 "Installera BudsLink från Flathub för att övervaka batterinivåer för flera "
 "enheter och få tillgång till avancerade funktioner som brusreglering, "
-"equalizer och gester när enheten har stöd för dem."
+"equalizer och gester när enheten har stöd för dem"
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
@@ -365,7 +365,7 @@ msgstr "Konfiguration per enhet"
 
 #: ui/upowerDevices.ui:21 ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
-msgstr "Obs! Allmänna inställningar åsidosätter enhetsspecifika inställningar"
+msgstr "Obs: Allmänna inställningar åsidosätter enhetsspecifika inställningar"
 
 #: ui/upowerDevices.ui:24
 msgid "No compatible device found!"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-17 17:51+0000\n"
+"PO-Revision-Date: 2026-09-19 20:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/ar/>\n"
@@ -306,7 +306,7 @@ msgstr ""
 
 #: preferences/gattBas.js:60
 msgid "Icon "
-msgstr ""
+msgstr "أيقونة "
 
 #: preferences/gattBas.js:69
 msgid "Battery 1 Icon"

@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: 3.14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-17 17:51+0000\n"
+"PO-Revision-Date: 2026-09-19 20:52+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/pt/>\n"
@@ -313,7 +313,7 @@ msgstr ""
 
 #: preferences/gattBas.js:60
 msgid "Icon "
-msgstr ""
+msgstr "Ícone "
 
 #: preferences/gattBas.js:69
 msgid "Battery 1 Icon"

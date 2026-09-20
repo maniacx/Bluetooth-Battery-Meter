@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell MASTER\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-15 21:23+0000\n"
+"PO-Revision-Date: 2026-09-19 20:52+0000\n"
 "Last-Translator: Mart Raudsepp <leio@gentoo.org>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
@@ -304,7 +304,7 @@ msgstr ""
 
 #: preferences/gattBas.js:60
 msgid "Icon "
-msgstr ""
+msgstr "Ikoon "
 
 #: preferences/gattBas.js:69
 msgid "Battery 1 Icon"
