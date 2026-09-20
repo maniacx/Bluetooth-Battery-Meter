@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-15 08:01+0000\n"
+"POT-Creation-Date: 2026-09-18 18:18+0200\n"
+"PO-Revision-Date: 2026-09-19 19:20+0200\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/pl/>\n"
@@ -22,14 +22,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Poedit 3.9\n"
 
-#: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
-#: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
-msgid "Bluetooth Battery Meter"
-msgstr "Miernik baterii urządzeń Bluetooth"
-
-#: lib/bluetoothToggle.js:544
+#: lib/bluetoothToggle.js:541
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -37,33 +32,41 @@ msgstr[0] "Połączono z %d"
 msgstr[1] "Połączono z %d"
 msgstr[2] "Połączono z %d"
 
-#: lib/widgets/panelPopupMenu.js:130
-msgid "Expand submenu"
-msgstr "Rozwiń podmenu"
+#: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
+#: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
+#: prefs.js:73
+msgid "Bluetooth Battery Meter"
+msgstr "Miernik baterii urządzeń Bluetooth"
 
-#: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
+#: lib/widgets/bluetoothGnomePopupMenu.js:56
 #: lib/widgets/bluetoothPopupMenu.js:82
-#: lib/widgets/bluetoothPopupSubMenu.js:304
+#: lib/widgets/bluetoothPopupSubMenu.js:304 lib/widgets/popupMenuWidget.js:111
 msgid "Disconnect"
 msgstr "Rozłącz"
 
-#: lib/widgets/bluetoothGnomePopupMenu.js:56
+#: lib/widgets/bluetoothGnomePopupMenu.js:57
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Connect"
 msgstr "Połącz"
 
-#. Translators: %s is a device name like "MyPhone"
 #: lib/widgets/bluetoothGnomePopupMenu.js:77
 #, javascript-format
 msgid "Disconnect %s"
 msgstr "Rozłącz urządzenie %s"
 
-#. Translators: %s is a device name like "MyPhone"
-#: lib/widgets/bluetoothGnomePopupMenu.js:79
+#: lib/widgets/bluetoothGnomePopupMenu.js:78
 #, javascript-format
 msgid "Connect to %s"
 msgstr "Połącz z urządzeniem %s"
+
+#: lib/widgets/bluetoothPopupSubMenu.js:296 lib/widgets/popupMenuWidget.js:105
+msgid "Collapse submenu"
+msgstr "Zwiń podmenu"
+
+#: lib/widgets/panelPopupMenu.js:130
+msgid "Expand submenu"
+msgstr "Rozwiń podmenu"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
@@ -73,9 +76,100 @@ msgstr "Przypnij do panelu"
 msgid "Device settings"
 msgstr "Ustawienia urządzenia"
 
-#: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
-msgid "Collapse submenu"
-msgstr "Zwiń podmenu"
+#: preferences/about.js:42
+msgid "GNU General Public License, version 3 or later"
+msgstr "Powszechna licencja publiczna GNU, wersja 3 lub późniejsza"
+
+#: preferences/about.js:49
+#, javascript-format
+msgid "© %s %s"
+msgstr "© %s %s"
+
+#: preferences/about.js:50
+#, javascript-format
+msgid ""
+"This application comes with absolutely no warranty. See the <a "
+"href=\"%s\">%s</a> for details."
+msgstr ""
+"Niniejszy program rozpowszechniany jest bez jakiejkolwiek gwarancji. Więcej "
+"informacji: <a href=\"%s\">%s</a>."
+
+#: preferences/batteryWidgetSettings.js:17
+#, javascript-format
+msgid "Assign color for %d – %d%%"
+msgstr "Przypisz kolor dla %d – %d%%"
+
+#: preferences/batteryWidgetSettings.js:18
+#, javascript-format
+msgid "Set color for the battery level range of %d – %d%%"
+msgstr "Ustaw kolor dla zakresu poziomu baterii %d – %d%%"
+
+#: preferences/budslinkCompanion.js:50
+msgid ""
+"Install BudsLink from Flathub to monitor battery levels for multiple devices "
+"and access advanced controls such as noise control, equalizer, and gestures, "
+"when supported by the device"
+msgstr ""
+"Zainstaluj BudsLink z Flathub, aby monitorować poziom naładowania baterii "
+"wielu urządzeń i uzyskać dostęp do zaawansowanych elementów sterujących, "
+"takich jak kontrola hałasu, korektor i gesty, jeśli są obsługiwane przez "
+"urządzenie"
+
+#: preferences/budslinkCompanion.js:54
+msgid "Currently supported earbuds and headbands are:"
+msgstr "Aktualnie wspierane słuchawki:"
+
+#: preferences/budslinkCompanion.js:57
+msgid "AirPods"
+msgstr "AirPods"
+
+#: preferences/budslinkCompanion.js:58
+msgid "Beats"
+msgstr "Beats"
+
+#: preferences/budslinkCompanion.js:59
+msgid "Sony"
+msgstr "Sony"
+
+#: preferences/budslinkCompanion.js:60
+msgid "Samsung Galaxy Buds"
+msgstr "Słuchawki Samsung Galaxy"
+
+#: preferences/budslinkCompanion.js:61
+msgid "Nothing / CMF"
+msgstr "Nothing / CMF"
+
+#: preferences/budslinkCompanion.js:62
+msgid "Bose"
+msgstr "Bose"
+
+#: preferences/budslinkCompanion.js:63
+msgid "Sennheiser"
+msgstr "Sennheiser"
+
+#: preferences/budslinkCompanion.js:64
+msgid "Redmi / Xiaomi"
+msgstr "Redmi / Xiaomi"
+
+#: preferences/budslinkCompanion.js:70
+msgid "Installed"
+msgstr "Zainstalowano"
+
+#: preferences/budslinkCompanion.js:72
+msgid "Update Extension"
+msgstr "Aktualizuj rozszerzenie"
+
+#: preferences/budslinkCompanion.js:74
+msgid "Update BudsLink"
+msgstr "Zaktualizuj BudsLink"
+
+#: preferences/budslinkCompanion.js:76
+msgid "Not Installed"
+msgstr "Nie zainstalowano"
+
+#: preferences/budslinkCompanion.js:80
+msgid "Refresh"
+msgstr "Odśwież"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:41
 msgid "Battery Status:"
@@ -97,8 +191,8 @@ msgstr "Zgłoszono z usługi ulepszonej obsługi urządzenia"
 msgid "Icon"
 msgstr "Ikona"
 
-#: preferences/device.js:77 preferences/upowerDevices.js:51
-#: preferences/gattBas.js:46 preferences/gattBas.js:51
+#: preferences/device.js:77 preferences/gattBas.js:46 preferences/gattBas.js:51
+#: preferences/upowerDevices.js:51
 msgid "Select Icon"
 msgstr "Wybierz ikonę"
 
@@ -160,8 +254,8 @@ msgstr "Ukryj ikonę"
 msgid "Show Icon"
 msgstr "Pokaż ikonę"
 
-#: preferences/device.js:225 preferences/upowerDevices.js:186
-#: preferences/gattBas.js:173
+#: preferences/device.js:225 preferences/gattBas.js:173
+#: preferences/upowerDevices.js:186
 msgid "Configure device."
 msgstr "Konfiguruj urządzenie."
 
@@ -180,78 +274,38 @@ msgstr "(Usunięto)"
 msgid "(Paired)"
 msgstr "(Sparowano)"
 
-#: preferences/budslinkCompanion.js:50
-msgid ""
-"Install BudsLink from Flathub to monitor battery levels for multiple devices "
-"and access advanced controls such as noise control, equalizer, and gestures, "
-"when supported by the device"
-msgstr ""
+#: preferences/gattBas.js:47
+msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
+msgstr "Pojedynczy wskaźnik, Przycisk panelu, Szybkie menu, Okładka albumu"
 
-#: preferences/budslinkCompanion.js:54
-msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+#: preferences/gattBas.js:52
+msgid "Multiple Indicators, Circular Battery Widgets"
+msgstr "Wiele wskaźników, Widżety baterii w kształcie koła"
 
-#: preferences/budslinkCompanion.js:57
-msgid "AirPods"
-msgstr "AirPods"
+#: preferences/gattBas.js:60
+msgid "Icon "
+msgstr "Ikona "
 
-#: preferences/budslinkCompanion.js:58
-msgid "Beats"
-msgstr "Beats"
+#: preferences/gattBas.js:69
+msgid "Battery 1 Icon"
+msgstr "1. ikona baterii"
 
-#: preferences/budslinkCompanion.js:59
-msgid "Sony"
-msgstr "Sony"
+#: preferences/gattBas.js:78
+msgid "Battery 2 Icon"
+msgstr "2. ikona baterii"
 
-#: preferences/budslinkCompanion.js:60
-msgid "Samsung Galaxy Buds"
-msgstr "Słuchawki Samsung Galaxy"
+#: preferences/gattBas.js:87
+msgid "Battery 3 Icon"
+msgstr "3. ikona baterii"
 
-#: preferences/budslinkCompanion.js:61
-msgid "Nothing / CMF"
-msgstr "Nothing / CMF"
+#: preferences/gattBas.js:185 ui/gattBas.ui:5
+msgid "Battery Service (BAS)"
+msgstr "Usługa Baterii (BAS)"
 
-#: preferences/budslinkCompanion.js:62
-msgid "Bose"
-msgstr "Bose"
-
-#: preferences/budslinkCompanion.js:63
-msgid "Sennheiser"
-msgstr "Sennheiser"
-
-#: preferences/budslinkCompanion.js:64
-msgid "Redmi / Xiaomi"
-msgstr "Redmi / Xiaomi"
-
-#: preferences/budslinkCompanion.js:70
-msgid "Installed"
-msgstr ""
-
-#: preferences/budslinkCompanion.js:72
-msgid "Update Extension"
-msgstr ""
-
-#: preferences/budslinkCompanion.js:74
-msgid "Update BudsLink"
-msgstr ""
-
-#: preferences/budslinkCompanion.js:76
-msgid "Not Installed"
-msgstr ""
-
-#: preferences/budslinkCompanion.js:80
-msgid "Refresh"
-msgstr ""
-
-#: preferences/batteryWidgetSettings.js:17
+#: preferences/gattBas.js:188
 #, javascript-format
-msgid "Assign color for %d – %d%%"
-msgstr "Przypisz kolor dla %d – %d%%"
-
-#: preferences/batteryWidgetSettings.js:18
-#, javascript-format
-msgid "Set color for the battery level range of %d – %d%%"
-msgstr "Ustaw kolor dla zakresu poziomu baterii %d – %d%%"
+msgid "The button is available after disabling %s mode"
+msgstr "Przycisk jest dostępny po wyłączeniu trybu '%s'"
 
 #: preferences/quickSettings.js:78
 #, javascript-format
@@ -288,92 +342,160 @@ msgstr "(Offline)"
 msgid "(Online)"
 msgstr "(Online)"
 
-#: preferences/about.js:42
-msgid "GNU General Public License, version 3 or later"
-msgstr "Powszechna licencja publiczna GNU, wersja 3 lub późniejsza"
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:6
+msgid "Modify bluetooth quickmenu"
+msgstr "Edytuj szybkie menu urządzenia Bluetooth"
 
-#: preferences/about.js:49
-#, javascript-format
-msgid "© %s %s"
-msgstr "© %s %s"
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:10
+msgid "Adds Submenu to popupmenu"
+msgstr "Dodaj podmenu do menu wyskakującego"
 
-#: preferences/about.js:50
-#, javascript-format
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:14
 msgid ""
-"This application comes with absolutely no warranty. See the <a "
-"href=\"%s\">%s</a> for details."
-msgstr ""
-"Niniejszy program rozpowszechniany jest bez jakiejkolwiek gwarancji. Więcej "
-"informacji: <a href=\"%s\">%s</a>."
+"Displays an icon showing bluetooth device battery level in bluetooth "
+"quickmenu"
+msgstr "Wyświetla ikonę poziomu naładowania baterii w szybkim menu Bluetooth"
 
-#: preferences/gattBas.js:47
-msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
-msgstr "Pojedynczy wskaźnik, Przycisk panelu, Szybkie menu, Okładka albumu"
-
-#: preferences/gattBas.js:52
-msgid "Multiple Indicators, Circular Battery Widgets"
-msgstr "Wiele wskaźników, Widżety baterii w kształcie koła"
-
-#: preferences/gattBas.js:60
-msgid "Icon "
-msgstr "Ikona "
-
-#: preferences/gattBas.js:69
-msgid "Battery 1 Icon"
-msgstr "1. ikona baterii"
-
-#: preferences/gattBas.js:78
-msgid "Battery 2 Icon"
-msgstr "2. ikona baterii"
-
-#: preferences/gattBas.js:87
-msgid "Battery 3 Icon"
-msgstr "3. ikona baterii"
-
-#: preferences/gattBas.js:185 ui/gattBas.ui:5
-msgid "Battery Service (BAS)"
-msgstr "Usługa Baterii (BAS)"
-
-#: preferences/gattBas.js:188
-#, javascript-format
-msgid "The button is available after disabling %s mode"
-msgstr "Przycisk jest dostępny po wyłączeniu trybu '%s'"
-
-#: ui/upowerDevices.ui:5
-msgid "UPower"
-msgstr "UPower"
-
-#: ui/upowerDevices.ui:9
-msgid "Enable UPower Devices"
-msgstr "Włącz urządzenia UPower"
-
-#: ui/upowerDevices.ui:12
-msgid "Enable indicator for UPower devices"
-msgstr "Włącz wskaźnik dla urządzeń UPower"
-
-#: ui/upowerDevices.ui:13
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:18
 msgid ""
-"Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
-"report battery levels if supported by the kernel or third-party drivers. "
-"Enable this option to display their battery status in the GNOME system tray."
+"Displays a text the percentage of bluetooth device battery level in "
+"bluetooth quickmenu"
+msgstr "Wyświetla tekst poziomu naładowania baterii w szybkim menu Bluetooth"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:22
+msgid "Display battery level icon before level percentage text in quick menu"
+msgstr "Pokaż ikonę poziomu baterii przed tekstem w szybkim menu"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:26
+msgid "\"Sort devices by connection history\""
+msgstr "\"Sortuj urządzenia według historii połączeń\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:30
+msgid "Hide bluetooth indicator when device indicators are displayed"
+msgstr "Ukryj kontrolkę bluetooth, gdy kontrolka urządzenia jest wyświetlana"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:34
+msgid "0: System Tray, 1: Panel Button"
+msgstr "0: Zasobnik systemowy, 1: Przycisk panelu"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:38
+msgid "\"enable single device indicator\""
+msgstr "\"włącz kontrolkę pojedynczej aplikacji\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:42
+msgid "\"For one device display each Bat level as seperate indicator\""
 msgstr ""
-"Niektóre urządzenia UPower, takie jak mysz bezprzewodowa 2,4 GHz, klawiatura "
-"itp., mogą raportować poziom naładowania baterii, jeśli są obsługiwane przez "
-"jądro lub sterowniki innych firm. Włącz tę opcję, aby wyświetlać stan ich "
-"baterii w zasobniku systemowym GNOME."
+"\"W przypadku jednego urządzenia każdy poziom baterii jest wyświetlany jako "
+"oddzielny wskaźnik\""
 
-#: ui/upowerDevices.ui:20 ui/device.ui:9 ui/gattBas.ui:30
-msgid "Configuration by Device"
-msgstr "Konfiguracja według urządzenia"
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:46
+msgid "\"enable use of on hover mode\""
+msgstr "\"włącz korzystanie z trybu po najechaniu myszką\""
 
-#: ui/upowerDevices.ui:21 ui/device.ui:10
-msgid "Note: General settings override device-specific settings"
-msgstr ""
-"Uwaga: Ustawienia ogólne zastępują ustawienia specyficzne dla urządzenia"
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:50
+msgid "\"onhover delay time in milliseconds\""
+msgstr "\"opóźnienie po najechaniu myszką w milisekundach\""
 
-#: ui/upowerDevices.ui:24
-msgid "No compatible device found!"
-msgstr "Nie znaleziono kompatybilnego urządzenia!"
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:54
+msgid "\"Enable Tooltips\""
+msgstr "\"Włącz wskazówki\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:58
+msgid "\"Store path if activated\""
+msgstr "\"Przechowuj ścieżkę, jeśli aktywowane\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:62
+msgid "Removes level indicator from icon"
+msgstr "Usuwa kontrolkę poziomu z ikony"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:66
+msgid "Show text next to icon in system tray with device battery level"
+msgstr "Wyświetl ikonę w zasobniku systemowym z poziomem baterii"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:70
+msgid "Change size of icon widget"
+msgstr "Zmień rozmiar ikony widżetu"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:74
+msgid "\"Level type\""
+msgstr "\"Typ poziomu\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:78
+msgid "\"Bar position\""
+msgstr "\"Pozycja paska\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:82
+msgid "\"Level Color\""
+msgstr "\"Kolor poziomu\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:87
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:96
+msgid "\"Custom colors for each 10% battery-level bucket (100→10)\""
+msgstr "\"Własny kolor dla każdego co 10% poziomu (100->10)\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:91
+msgid "\"Circle widget Color\""
+msgstr "\"Kolor widżetu koła\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:100
+msgid "List of paired devices that reports battery level"
+msgstr "Lista sparowanych urządzeń, które zgłaszają poziom baterii"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:104
+msgid "\"enable indicator for upower devices\""
+msgstr "\"Włącz wskaźnik dla urządzeń UPower\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:108
+msgid "List of upower devices that reports battery level"
+msgstr "Lista urządzeń upower, które zgłaszają poziom naładowania baterii"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:112
+msgid "\"enable gattbas devices\""
+msgstr "\"włącz urządzenia gattbas\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:116
+msgid "List of gattbas devices"
+msgstr "Lista urządzeń gattbas"
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:120
+msgid "\"enable budslink companion devices\""
+msgstr "\"włącz urządzenia towarzyszące budslink\""
+
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:124
+msgid "\"hides budslink from background apps\""
+msgstr "\"ukrywa budslink z listy aplikacji w tle\""
+
+#: ui/about.ui:5
+msgid "About"
+msgstr "O programie"
+
+#: ui/about.ui:75
+msgid "Read me"
+msgstr "Czytaj to"
+
+#: ui/about.ui:97
+msgid "Report an Issue"
+msgstr "Zgłoś błąd"
+
+#: ui/about.ui:114 ui/about.ui:197
+msgid "Translations"
+msgstr "Tłumaczenia"
+
+#: ui/about.ui:136
+msgid "View sources on Github"
+msgstr "Zobacz źródła"
+
+#: ui/about.ui:153 ui/about.ui:271
+msgid "Legal"
+msgstr "Kwestie prawne"
+
+#: ui/about.ui:217
+msgid "Weblate"
+msgstr "Weblate"
+
+#: ui/about.ui:229
+msgid "Online Tutorials"
+msgstr "Poradniki online"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
@@ -492,117 +614,86 @@ msgstr "Kolorowa"
 msgid "Customized"
 msgstr "Spersonalizowana"
 
+#: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
+msgid "BudsLink Companion"
+msgstr "Towarzyszenie BudsLink"
+
+#: ui/budslinkCompanion.ui:16
+msgid "Enable BudsLink integration"
+msgstr "Włącz integrację z BudsLink"
+
+#: ui/budslinkCompanion.ui:17
+msgid ""
+"Acts as a Companion with the BudsLink app, which runs in the background to "
+"provide additional features for supported headphones and earbuds"
+msgstr ""
+"Działa jako towarzysz z aplikacją BudsLink, która działa w tle, zapewniając "
+"dodatkowe funkcje dla obsługiwanych słuchawek"
+
+#: ui/budslinkCompanion.ui:22
+msgid "Hide from Background Apps"
+msgstr "Ukryj na liście aplikacji w tle"
+
+#: ui/budslinkCompanion.ui:23
+msgid "Hide BudsLink from the GNOME Background Apps list"
+msgstr "Ukryj BudsLink z listy aplikacji w tle GNOME"
+
+#: ui/budslinkCompanion.ui:31
+msgid "Installation Status"
+msgstr "Stan instalacji"
+
+#: ui/budslinkCompanion.ui:40
+msgid "BudsLink Installation Status"
+msgstr "Stan instalacji BudsLink"
+
+#: ui/budslinkCompanion.ui:49
+msgid "BudsLink on Flathub"
+msgstr "BudsLink na Flathub"
+
+#: ui/budslinkCompanion.ui:61
+msgid "BudsLink Documentation"
+msgstr "Dokumentacja BudsLink"
+
 #: ui/device.ui:5
 msgid "Device"
 msgstr "Urządzenie"
+
+#: ui/device.ui:9 ui/gattBas.ui:30 ui/upowerDevices.ui:20
+msgid "Configuration by Device"
+msgstr "Konfiguracja według urządzenia"
+
+#: ui/device.ui:10 ui/upowerDevices.ui:21
+msgid "Note: General settings override device-specific settings"
+msgstr ""
+"Uwaga: Ustawienia ogólne zastępują ustawienia specyficzne dla urządzenia"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
 msgstr "Brak sparowanego urządzenia!"
 
-#: ui/about.ui:5
-msgid "About"
-msgstr "O programie"
+#: ui/gattBas.ui:16
+msgid "Experimental"
+msgstr "Funkcja eksperymentalna"
 
-#: ui/about.ui:75
-msgid "Read me"
-msgstr "Czytaj to"
+#: ui/gattBas.ui:19
+msgid "Battery Service (BAS) Settings"
+msgstr "Ustawienia Usługi baterii (BAS)"
 
-#: ui/about.ui:97
-msgid "Report an Issue"
-msgstr "Zgłoś błąd"
+#: ui/gattBas.ui:22
+msgid "Enable GATT Battery Service Reporting"
+msgstr "Włącz raportowanie usługi baterii GATT"
 
-#: ui/about.ui:114 ui/about.ui:197
-msgid "Translations"
-msgstr "Tłumaczenia"
-
-#: ui/about.ui:136
-msgid "View sources on Github"
-msgstr "Zobacz źródła"
-
-#: ui/about.ui:153 ui/about.ui:271
-msgid "Legal"
-msgstr "Kwestie prawne"
-
-#: ui/about.ui:217
-msgid "Weblate"
-msgstr "Weblate"
-
-#: ui/about.ui:229
-msgid "Online Tutorials"
-msgstr "Poradniki online"
-
-#: ui/quickSettings.ui:9
-msgid "Note!"
-msgstr "Uwaga!"
-
-#: ui/quickSettings.ui:17
-msgid "Quick Menu Settings"
-msgstr "Ustawienia szybkiego menu"
-
-#: ui/quickSettings.ui:20
-msgid "Modify Bluetooth device menu"
-msgstr "Edytuj menu urządzenia Bluetooth"
-
-#: ui/quickSettings.ui:21
-msgid "Add battery information and device controls to the menu"
-msgstr "Dodaj informacje o baterii i elementy sterujące do menu"
-
-#: ui/quickSettings.ui:26
-msgid "Enable popup submenu widget mode"
-msgstr "Włącz tryb widżetu wyskakującego podmenu"
-
-#: ui/quickSettings.ui:27
+#: ui/gattBas.ui:23
 msgid ""
-"Adds a submenu that displays battery levels and other controls (ANC) if "
-"available"
+"Display battery levels for Bluetooth devices using the GATT Battery Service "
+"(BAS)."
 msgstr ""
-"Dodaje podmenu, które wyświetla poziomy naładowania baterii oraz inne opcje "
-"sterowania (ANC), jeśli są dostępne"
+"Wyświetlaj poziom naładowania baterii urządzeń Bluetooth, używając usługi "
+"baterii GATT (BAS)."
 
-#: ui/quickSettings.ui:32
-msgid "Show battery icon for Bluetooth devices"
-msgstr "Pokaż ikonę baterii dla urządzeń Bluetooth"
-
-#: ui/quickSettings.ui:33
-msgid "Displays an icon in the popup menu for Bluetooth device battery level"
-msgstr ""
-"Wyświetla ikonę w menu wyskakującym dla poziomu naładowania baterii "
-"urządzenia Bluetooth"
-
-#: ui/quickSettings.ui:38
-msgid "Show Bluetooth device battery percentage"
-msgstr "Pokaż procent baterii urządzenia Bluetooth"
-
-#: ui/quickSettings.ui:39
-msgid "Displays Bluetooth device battery level percentage in text"
-msgstr ""
-"Wyświetla procentowy poziom naładowania baterii urządzenia Bluetooth w "
-"formie tekstu"
-
-#: ui/quickSettings.ui:44
-msgid "Display battery level icon before text"
-msgstr "Pokaż ikonę poziomu baterii przed tekstem"
-
-#: ui/quickSettings.ui:45
-msgid "Swaps position of battery level icon and percentage text"
-msgstr "Zamienia miejscami ikonę poziomu baterii z tekstem procentowym"
-
-#: ui/quickSettings.ui:52
-msgid "Sort By History"
-msgstr "Sortuj według historii"
-
-#: ui/quickSettings.ui:55
-msgid "Sort devices by connection history"
-msgstr "Sortuj urządzenia według historii połączeń"
-
-#: ui/quickSettings.ui:56
-msgid ""
-"Enable to sort devices by connection history, or disable to sort by "
-"connection status and alias"
-msgstr ""
-"Włącz, aby sortować urządzenia według historii połączeń, lub wyłącz, aby "
-"sortować według stanu połączenia i pseudonimu"
+#: ui/gattBas.ui:33
+msgid "No compatible device paired!"
+msgstr "Brak sparowanego, kompatybilnego urządzenia!"
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
@@ -735,64 +826,101 @@ msgstr "Zasobnik systemowy"
 msgid "Panel Button"
 msgstr "Przycisk panelu"
 
-#: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
-msgid "BudsLink Companion"
-msgstr ""
+#: ui/quickSettings.ui:9
+msgid "Note!"
+msgstr "Uwaga!"
 
-#: ui/budslinkCompanion.ui:16
-msgid "Enable BudsLink integration"
-msgstr ""
+#: ui/quickSettings.ui:17
+msgid "Quick Menu Settings"
+msgstr "Ustawienia szybkiego menu"
 
-#: ui/budslinkCompanion.ui:17
+#: ui/quickSettings.ui:20
+msgid "Modify Bluetooth device menu"
+msgstr "Edytuj menu urządzenia Bluetooth"
+
+#: ui/quickSettings.ui:21
+msgid "Add battery information and device controls to the menu"
+msgstr "Dodaj informacje o baterii i elementy sterujące do menu"
+
+#: ui/quickSettings.ui:26
+msgid "Enable popup submenu widget mode"
+msgstr "Włącz tryb widżetu wyskakującego podmenu"
+
+#: ui/quickSettings.ui:27
 msgid ""
-"Acts as a Companion with the BudsLink app, which runs in the background to "
-"provide additional features for supported headphones and earbuds"
+"Adds a submenu that displays battery levels and other controls (ANC) if "
+"available"
 msgstr ""
+"Dodaje podmenu, które wyświetla poziomy naładowania baterii oraz inne opcje "
+"sterowania (ANC), jeśli są dostępne"
 
-#: ui/budslinkCompanion.ui:22
-msgid "Hide from Background Apps"
+#: ui/quickSettings.ui:32
+msgid "Show battery icon for Bluetooth devices"
+msgstr "Pokaż ikonę baterii dla urządzeń Bluetooth"
+
+#: ui/quickSettings.ui:33
+msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
+"Wyświetla ikonę w menu wyskakującym dla poziomu naładowania baterii "
+"urządzenia Bluetooth"
 
-#: ui/budslinkCompanion.ui:23
-msgid "Hide BudsLink from the GNOME Background Apps list"
+#: ui/quickSettings.ui:38
+msgid "Show Bluetooth device battery percentage"
+msgstr "Pokaż procent baterii urządzenia Bluetooth"
+
+#: ui/quickSettings.ui:39
+msgid "Displays Bluetooth device battery level percentage in text"
 msgstr ""
+"Wyświetla procentowy poziom naładowania baterii urządzenia Bluetooth w "
+"formie tekstu"
 
-#: ui/budslinkCompanion.ui:31
-msgid "Installation Status"
-msgstr ""
+#: ui/quickSettings.ui:44
+msgid "Display battery level icon before text"
+msgstr "Pokaż ikonę poziomu baterii przed tekstem"
 
-#: ui/budslinkCompanion.ui:40
-msgid "BudsLink Installation Status"
-msgstr ""
+#: ui/quickSettings.ui:45
+msgid "Swaps position of battery level icon and percentage text"
+msgstr "Zamienia miejscami ikonę poziomu baterii z tekstem procentowym"
 
-#: ui/budslinkCompanion.ui:49
-msgid "BudsLink on Flathub"
-msgstr ""
+#: ui/quickSettings.ui:52
+msgid "Sort By History"
+msgstr "Sortuj według historii"
 
-#: ui/budslinkCompanion.ui:61
-msgid "BudsLink Documentation"
-msgstr ""
+#: ui/quickSettings.ui:55
+msgid "Sort devices by connection history"
+msgstr "Sortuj urządzenia według historii połączeń"
 
-#: ui/gattBas.ui:16
-msgid "Experimental"
-msgstr "Funkcja eksperymentalna"
-
-#: ui/gattBas.ui:19
-msgid "Battery Service (BAS) Settings"
-msgstr "Ustawienia Usługi baterii (BAS)"
-
-#: ui/gattBas.ui:22
-msgid "Enable GATT Battery Service Reporting"
-msgstr "Włącz raportowanie usługi baterii GATT"
-
-#: ui/gattBas.ui:23
+#: ui/quickSettings.ui:56
 msgid ""
-"Display battery levels for Bluetooth devices using the GATT Battery Service "
-"(BAS)."
+"Enable to sort devices by connection history, or disable to sort by "
+"connection status and alias"
 msgstr ""
-"Wyświetlaj poziom naładowania baterii urządzeń Bluetooth, używając usługi "
-"baterii GATT (BAS)."
+"Włącz, aby sortować urządzenia według historii połączeń, lub wyłącz, aby "
+"sortować według stanu połączenia i pseudonimu"
 
-#: ui/gattBas.ui:33
-msgid "No compatible device paired!"
-msgstr "Brak sparowanego, kompatybilnego urządzenia!"
+#: ui/upowerDevices.ui:5
+msgid "UPower"
+msgstr "UPower"
+
+#: ui/upowerDevices.ui:9
+msgid "Enable UPower Devices"
+msgstr "Włącz urządzenia UPower"
+
+#: ui/upowerDevices.ui:12
+msgid "Enable indicator for UPower devices"
+msgstr "Włącz wskaźnik dla urządzeń UPower"
+
+#: ui/upowerDevices.ui:13
+msgid ""
+"Certain UPower devices, such as 2.4GHz wireless mouse, keyboard, etc, can "
+"report battery levels if supported by the kernel or third-party drivers. "
+"Enable this option to display their battery status in the GNOME system tray."
+msgstr ""
+"Niektóre urządzenia UPower, takie jak mysz bezprzewodowa 2,4 GHz, klawiatura "
+"itp., mogą raportować poziom naładowania baterii, jeśli są obsługiwane przez "
+"jądro lub sterowniki innych firm. Włącz tę opcję, aby wyświetlać stan ich "
+"baterii w zasobniku systemowym GNOME."
+
+#: ui/upowerDevices.ui:24
+msgid "No compatible device found!"
+msgstr "Nie znaleziono kompatybilnego urządzenia!"
