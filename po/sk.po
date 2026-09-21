@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-15 08:01+0000\n"
+"PO-Revision-Date: 2026-09-22 14:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/sk/>\n"
@@ -181,18 +181,21 @@ msgid ""
 "and access advanced controls such as noise control, equalizer, and gestures, "
 "when supported by the device"
 msgstr ""
+"Nainštalujte si aplikáciu BudsLink z Flathubu, aby ste mohli sledovať stav "
+"batérie viacerých zariadení a využívať pokročilé funkcie, ako je regulácia "
+"hluku, ekvalizér a gestá, ak ich dané zariadenie podporuje"
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+msgstr "Toto sú v súčasnosti podporované slúchadlá:"
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
-msgstr ""
+msgstr "AirPods"
 
 #: preferences/budslinkCompanion.js:58
 msgid "Beats"
-msgstr ""
+msgstr "Beats"
 
 #: preferences/budslinkCompanion.js:59
 msgid "Sony"
@@ -204,7 +207,7 @@ msgstr "Samsung Galaxy slúchadlá"
 
 #: preferences/budslinkCompanion.js:61
 msgid "Nothing / CMF"
-msgstr ""
+msgstr "Nothing / CMF"
 
 #: preferences/budslinkCompanion.js:62
 msgid "Bose"
@@ -216,27 +219,27 @@ msgstr "Sennheiser"
 
 #: preferences/budslinkCompanion.js:64
 msgid "Redmi / Xiaomi"
-msgstr ""
+msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "Nainštalované"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
-msgstr ""
+msgstr "Aktualizovať rozšírenie"
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "Aktualizovať BudsLink"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "Nenainštalované"
 
 #: preferences/budslinkCompanion.js:80
 msgid "Refresh"
-msgstr ""
+msgstr "Obnoviť"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
@@ -735,41 +738,44 @@ msgstr "Tlačidlo panela"
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "Doplnok BudsLink"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
-msgstr ""
+msgstr "Povoliť integráciu BudsLink"
 
 #: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
+"Funguje ako doplnok k aplikácii BudsLink, ktorá beží na pozadí a poskytuje "
+"ďalšie funkcie pre podporované slúchadlá"
 
 #: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
-msgstr ""
+msgstr "Skryť z aplikácií spustených na pozadí"
 
 #: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
 msgstr ""
+"Skryť BudsLink zo zoznamu aplikácií bežiacich na pozadí v prostredí GNOME"
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
-msgstr ""
+msgstr "Stav inštalácie"
 
 #: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
-msgstr ""
+msgstr "Stav inštalácie BudsLink"
 
 #: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
-msgstr ""
+msgstr "BudsLink na platforme Flathub"
 
 #: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
-msgstr ""
+msgstr "Dokumentácia k BudsLink"
 
 #: ui/gattBas.ui:16
 msgid "Experimental"
