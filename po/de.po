@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-19 20:51+0000\n"
+"PO-Revision-Date: 2026-09-22 14:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/de/>\n"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: preferences/device.js:65 preferences/upowerDevices.js:42
 msgid "Not Available"
-msgstr ""
+msgstr "Nicht verfügbar"
 
 #: preferences/device.js:66
 msgid "Reported from enhanced device service"
@@ -128,15 +128,15 @@ msgstr ""
 
 #: preferences/device.js:137 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "Schnellmenü"
 
 #: preferences/device.js:141
 msgid "Display Battery Level"
-msgstr ""
+msgstr "Akkustand anzeigen"
 
 #: preferences/device.js:142
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
+msgstr "Akkustand im Schnellmenü der Bluetooth-Anzeige anzeigen"
 
 #: preferences/device.js:162 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
@@ -152,7 +152,7 @@ msgstr ""
 
 #: preferences/device.js:171
 msgid "Do not show Icon"
-msgstr ""
+msgstr "Symbol nicht anzeigen"
 
 #: preferences/device.js:172
 msgid "Show Icon without Battery level"
@@ -179,14 +179,16 @@ msgstr ""
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
+"Geräteinformationen löschen: Die Schaltfläche ist nach dem Entkoppeln des "
+"Geräts verfügbar"
 
 #: preferences/device.js:271
 msgid "(Removed)"
-msgstr ""
+msgstr "(Entfernt)"
 
 #: preferences/device.js:272
 msgid "(Paired)"
-msgstr ""
+msgstr "(Verbunden)"
 
 #: preferences/budslinkCompanion.js:50
 msgid ""
@@ -368,6 +370,8 @@ msgstr ""
 #: ui/upowerDevices.ui:21 ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
 msgstr ""
+"Hinweis: Allgemeine Einstellungen überschreiben Gerätespezifische "
+"Einstellungen"
 
 #: ui/upowerDevices.ui:24
 msgid "No compatible device found!"
@@ -379,7 +383,7 @@ msgstr ""
 
 #: ui/batteryWidgetSettings.ui:9
 msgid "Indicator Widget Settings"
-msgstr ""
+msgstr "Indikator-Widget-Einstellungen"
 
 #: ui/batteryWidgetSettings.ui:12
 msgid ""
@@ -525,7 +529,7 @@ msgstr "Anleitungen im Netz"
 
 #: ui/quickSettings.ui:9
 msgid "Note!"
-msgstr ""
+msgstr "Hinweis!"
 
 #: ui/quickSettings.ui:17
 msgid "Quick Menu Settings"
@@ -567,11 +571,11 @@ msgstr ""
 
 #: ui/quickSettings.ui:44
 msgid "Display battery level icon before text"
-msgstr ""
+msgstr "Symbol für Akkustand vor Text anzeigen"
 
 #: ui/quickSettings.ui:45
 msgid "Swaps position of battery level icon and percentage text"
-msgstr ""
+msgstr "Position des Akkustandsymbols und des prozentualen Textes wechseln"
 
 #: ui/quickSettings.ui:52
 msgid "Sort By History"
