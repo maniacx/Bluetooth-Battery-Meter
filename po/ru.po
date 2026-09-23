@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-19 20:52+0000\n"
+"PO-Revision-Date: 2026-09-23 20:48+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/ru/>\n"
@@ -720,7 +720,7 @@ msgstr ""
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "BudsLink Companion"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
