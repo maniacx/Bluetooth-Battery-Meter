@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-15 08:01+0000\n"
+"PO-Revision-Date: 2026-09-23 20:49+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/uk/>\n"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Згорнути підменю"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:41
 msgid "Battery Status:"
@@ -445,11 +445,11 @@ msgstr "Виберіть колірну схему для рівня індик�
 
 #: ui/batteryWidgetSettings.ui:89
 msgid "Circle Widget Settings"
-msgstr ""
+msgstr "Налаштування кругового віджета"
 
 #: ui/batteryWidgetSettings.ui:92
 msgid "Circle Widget Color Scheme"
-msgstr ""
+msgstr "Колірна схема кругового віджета"
 
 #: ui/batteryWidgetSettings.ui:93
 msgid "Choose color scheme for battery circle widget"
@@ -686,11 +686,11 @@ msgstr ""
 
 #: ui/indicator.ui:95
 msgid "Tooltips"
-msgstr ""
+msgstr "Підказки"
 
 #: ui/indicator.ui:98
 msgid "Enable tooltips"
-msgstr ""
+msgstr "Увімкнути підказки"
 
 #: ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
