@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 00:45-0600\n"
-"PO-Revision-Date: 2026-09-23 20:48+0000\n"
+"PO-Revision-Date: 2026-09-27 00:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/de/>\n"
@@ -543,11 +543,11 @@ msgstr "Schnellmenüeinstellungen"
 
 #: ui/quickSettings.ui:20
 msgid "Modify Bluetooth device menu"
-msgstr ""
+msgstr "Bluetooth-Gerätemenü anpassen"
 
 #: ui/quickSettings.ui:21
 msgid "Add battery information and device controls to the menu"
-msgstr ""
+msgstr "Akkuinformationen und Gerätesteuerung zum Menü hinzufügen"
 
 #: ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
@@ -589,7 +589,7 @@ msgstr "Nach Verlauf sortieren"
 
 #: ui/quickSettings.ui:55
 msgid "Sort devices by connection history"
-msgstr ""
+msgstr "Geräte nach Verbindungsverlauf sortieren"
 
 #: ui/quickSettings.ui:56
 msgid ""
@@ -647,7 +647,7 @@ msgstr "Ein: Zeige ein ausgewähltes Gerät. Aus: Alle Geräte anzeigen"
 
 #: ui/indicator.ui:56
 msgid "Indicator Settings"
-msgstr ""
+msgstr "Statusanzeige-Einstellungen"
 
 #: ui/indicator.ui:59
 msgid "Show Multiple Battery Indicators per Device"
@@ -734,13 +734,15 @@ msgstr ""
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
-msgstr ""
+msgstr "BudsLink-Integration einschalten"
 
 #: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
+"Läuft als Ergänzung zur BudsLink-App im Hintergrund für erweiterte Kopfhörer-"
+"Funktionen"
 
 #: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
@@ -752,11 +754,11 @@ msgstr ""
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
-msgstr ""
+msgstr "Installationsstatus"
 
 #: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
-msgstr ""
+msgstr "BudsLink Installationsstatus"
 
 #: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
@@ -764,7 +766,7 @@ msgstr ""
 
 #: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
-msgstr ""
+msgstr "BudsLink Dokumentation"
 
 #: ui/gattBas.ui:16
 msgid "Experimental"
