@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-09-22 14:51+0000\n"
+"PO-Revision-Date: 2026-10-02 20:56+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/sk/>\n"
@@ -84,11 +84,11 @@ msgstr "Nedostupné"
 
 #: preferences/device.js:55
 msgid "Reported from Battery Service (BAS)"
-msgstr ""
+msgstr "Nahlásené zo služby Battery Service (BAS)"
 
 #: preferences/device.js:57
 msgid "Reported from BudsLink app"
-msgstr ""
+msgstr "Nahlásené z aplikácie BudsLink"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
@@ -105,19 +105,19 @@ msgstr "Vyberte ikonu použitú pre indikátor a rýchlu ponuku"
 
 #: preferences/device.js:76
 msgid "Icon can be configured in Battery Service (BAS) Settings"
-msgstr ""
+msgstr "Ikona sa dá nastaviť v nastaveniach služby Battery Service (BAS)"
 
 #: preferences/device.js:77
 msgid "Go to Battery Service (BAS) Settings to change the icon"
-msgstr ""
+msgstr "Pre zmenu ikony prejdite do nastavení služby Battery Service (BAS)"
 
 #: preferences/device.js:79
 msgid "Icon can be configured in the BudsLink app"
-msgstr ""
+msgstr "Ikona sa dá nastaviť v aplikácii BudsLink"
 
 #: preferences/device.js:80
 msgid "Open the BudsLink app to change the icon"
-msgstr ""
+msgstr "Otvorte aplikáciu BudsLink a zmeňte ikonu"
 
 #: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
@@ -808,15 +808,3 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr "Nie je spárované žiadne kompatibilné zariadenie!"
-
-#~ msgid "Reported from enhanced device service"
-#~ msgstr "Nahlásené z rozšírenej služby zariadenia"
-
-#~ msgid "This is an enhanced device"
-#~ msgstr "Toto je rozšírené zariadenie"
-
-#~ msgid ""
-#~ "Icon selection if available are in Enhanced device per device settings"
-#~ msgstr ""
-#~ "Výber ikon, ak je k dispozícii, sa nachádza v rozšírených nastaveniach "
-#~ "jednotlivých zariadení"
