@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 00:45-0600\n"
+"POT-Creation-Date: 2026-10-01 20:40-0600\n"
 "PO-Revision-Date: 2026-09-27 00:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/budslink/"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Bluetooth Battery Meter"
 msgstr ""
 
-#: lib/bluetoothToggle.js:544
+#: lib/bluetoothToggle.js:541
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -59,20 +59,18 @@ msgstr "Untermenü aufklappen"
 msgid "Disconnect"
 msgstr "Trennen"
 
-#: lib/widgets/bluetoothGnomePopupMenu.js:56
+#: lib/widgets/bluetoothGnomePopupMenu.js:57
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Connect"
 msgstr "Verbinden"
 
-#. Translators: %s is a device name like "MyPhone"
 #: lib/widgets/bluetoothGnomePopupMenu.js:77
 #, javascript-format
 msgid "Disconnect %s"
 msgstr "%s trennen"
 
-#. Translators: %s is a device name like "MyPhone"
-#: lib/widgets/bluetoothGnomePopupMenu.js:79
+#: lib/widgets/bluetoothGnomePopupMenu.js:78
 #, javascript-format
 msgid "Connect to %s"
 msgstr "Verbinden mit %s"
@@ -89,105 +87,116 @@ msgstr "Geräteeinstellungen"
 msgid "Collapse submenu"
 msgstr "Untermenü einklappen"
 
-#: preferences/device.js:64 preferences/upowerDevices.js:41
+#: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Battery Status:"
 msgstr "Batteriestatus:"
 
-#: preferences/device.js:65 preferences/upowerDevices.js:42
+#: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Reported"
 msgstr ""
 
-#: preferences/device.js:65 preferences/upowerDevices.js:42
+#: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Not Available"
 msgstr "Nicht verfügbar"
 
-#: preferences/device.js:66
-msgid "Reported from enhanced device service"
-msgstr "Vom erweiterten Gerätedienst gemeldet"
+#: preferences/device.js:55
+msgid "Reported from Battery Service (BAS)"
+msgstr ""
 
-#: preferences/device.js:73 preferences/upowerDevices.js:47
+#: preferences/device.js:57
+msgid "Reported from BudsLink app"
+msgstr ""
+
+#: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
 msgstr "Symbol"
 
-#: preferences/device.js:77 preferences/upowerDevices.js:51
+#: preferences/device.js:68 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
 msgstr "Symbol auswählen"
 
-#: preferences/device.js:78 preferences/upowerDevices.js:52
+#: preferences/device.js:69 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
 msgstr "Symbol für Anzeige und Schnellmenü auswählen"
 
-#: preferences/device.js:81
-msgid "This is an enhanced device"
-msgstr "Dies ist ein erweitertes Gerät"
-
-#: preferences/device.js:82
-msgid "Icon selection if available are in Enhanced device per device settings"
+#: preferences/device.js:76
+msgid "Icon can be configured in Battery Service (BAS) Settings"
 msgstr ""
-"Symbolauswahl, falls verfügbar in Erweiterten Geräten pro Geräteeinstellungen"
 
-#: preferences/device.js:137 ui/quickSettings.ui:5
+#: preferences/device.js:77
+msgid "Go to Battery Service (BAS) Settings to change the icon"
+msgstr ""
+
+#: preferences/device.js:79
+msgid "Icon can be configured in the BudsLink app"
+msgstr ""
+
+#: preferences/device.js:80
+msgid "Open the BudsLink app to change the icon"
+msgstr ""
+
+#: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
 msgstr "Schnellmenü"
 
-#: preferences/device.js:141
+#: preferences/device.js:145
 msgid "Display Battery Level"
 msgstr "Akkustand anzeigen"
 
-#: preferences/device.js:142
+#: preferences/device.js:146
 msgid "Display battery level in the Bluetooth panel quick menu"
 msgstr "Akkustand im Schnellmenü der Bluetooth-Anzeige anzeigen"
 
-#: preferences/device.js:162 preferences/upowerDevices.js:129 ui/indicator.ui:5
+#: preferences/device.js:166 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
 msgstr ""
 
-#: preferences/device.js:166 preferences/upowerDevices.js:133
+#: preferences/device.js:170 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
 msgstr ""
 
-#: preferences/device.js:167 preferences/upowerDevices.js:134
+#: preferences/device.js:171 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
 msgstr ""
 
-#: preferences/device.js:171
+#: preferences/device.js:175
 msgid "Do not show Icon"
 msgstr "Symbol nicht anzeigen"
 
-#: preferences/device.js:172
+#: preferences/device.js:176
 msgid "Show Icon without Battery level"
 msgstr "Symbol ohne Akkustand anzeigen"
 
-#: preferences/device.js:173
+#: preferences/device.js:177
 msgid "Show Icon with Battery Level"
 msgstr "Symbol mit Akkustand anzeigen"
 
-#: preferences/device.js:176 preferences/upowerDevices.js:138
+#: preferences/device.js:180 preferences/upowerDevices.js:138
 msgid "Hide Icon"
 msgstr ""
 
-#: preferences/device.js:177 preferences/upowerDevices.js:139
+#: preferences/device.js:181 preferences/upowerDevices.js:139
 msgid "Show Icon"
 msgstr "Symbol anzeigen"
 
-#: preferences/device.js:225 preferences/upowerDevices.js:186
+#: preferences/device.js:229 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
 msgid "Configure device."
 msgstr ""
 
-#: preferences/device.js:239
+#: preferences/device.js:243
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
 "Geräteinformationen löschen: Die Schaltfläche ist nach dem Entkoppeln des "
 "Geräts verfügbar"
 
-#: preferences/device.js:271
+#: preferences/device.js:275
 msgid "(Removed)"
 msgstr "(Entfernt)"
 
-#: preferences/device.js:272
+#: preferences/device.js:276
 msgid "(Paired)"
 msgstr "(Verbunden)"
 
@@ -791,3 +800,15 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr "Kein kompatibles Gerät gekoppelt!"
+
+#~ msgid "Reported from enhanced device service"
+#~ msgstr "Vom erweiterten Gerätedienst gemeldet"
+
+#~ msgid "This is an enhanced device"
+#~ msgstr "Dies ist ein erweitertes Gerät"
+
+#~ msgid ""
+#~ "Icon selection if available are in Enhanced device per device settings"
+#~ msgstr ""
+#~ "Symbolauswahl, falls verfügbar in Erweiterten Geräten pro "
+#~ "Geräteeinstellungen"
