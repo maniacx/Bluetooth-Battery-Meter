@@ -19,30 +19,16 @@ const  ConfigureWindow = GObject.registerClass({
             transient_for: parentWindow,
         });
 
-        const isAirpodsEnabled = settings.get_boolean('enable-airpods-device');
+
         const isGattBasEnabled = settings.get_boolean('enable-gattbas-device');
-        const isSonyEnabled = settings.get_boolean('enable-sony-device');
-        const isGalaxyBudsEnabled = settings.get_boolean('enable-galaxy-buds-device');
-        const isNothingBudsEnabled = settings.get_boolean('enable-nothing-buds-device');
-        const isGfpsEnabled = settings.get_boolean('enable-gfps-device');
-        const isGoogleBudsEnabled = settings.get_boolean('enable-google-buds-device');
+        const isBudsLinkCompanionEnabled = settings.get_boolean('enable-companion');
 
         let isEnhancedDevice = false;
 
-        if (pathInfo.isEnhancedDevice === 'airpods')
-            isEnhancedDevice = isAirpodsEnabled;
-        else if (pathInfo.isEnhancedDevice === 'gatt-bas')
+        if (pathInfo.isEnhancedDevice === 'gatt-bas')
             isEnhancedDevice = isGattBasEnabled;
-        else if (pathInfo.isEnhancedDevice === 'sony')
-            isEnhancedDevice = isSonyEnabled;
-        else if (pathInfo.isEnhancedDevice === 'galaxyBuds')
-            isEnhancedDevice = isGalaxyBudsEnabled;
-        else if (pathInfo.isEnhancedDevice === 'nothingBuds')
-            isEnhancedDevice = isNothingBudsEnabled;
-        else if (pathInfo.isEnhancedDevice === 'gfps')
-            isEnhancedDevice = isGfpsEnabled;
-        else if (pathInfo.isEnhancedDevice === 'googleBuds')
-            isEnhancedDevice = isGoogleBudsEnabled;
+        else if (pathInfo.isEnhancedDevice === 'budslink')
+            isEnhancedDevice = isBudsLinkCompanionEnabled;
 
         const toolViewBar = new Adw.ToolbarView();
 
@@ -63,8 +49,13 @@ const  ConfigureWindow = GObject.registerClass({
 
         const status = _('Battery Status:');
         let batteryStatus = pathInfo.batteryReported  ? _('Reported') : _('Not Available');
-        batteryStatus = isEnhancedDevice ?  _('Reported from enhanced device service')
-            : batteryStatus;
+
+        if (isEnhancedDevice) {
+            if (pathInfo.isEnhancedDevice === 'gatt-bas')
+                batteryStatus = _('Reported from Battery Service (BAS)');
+            else if (pathInfo.isEnhancedDevice === 'budslink')
+                batteryStatus = _('Reported from BudsLink app');
+        }
 
         aliasGroup.set_description(`${status} ${batteryStatus}`);
         page.add(aliasGroup);
@@ -77,10 +68,23 @@ const  ConfigureWindow = GObject.registerClass({
             title: _('Select Icon'),
             subtitle: _('Select the icon used for the indicator and quick menu'),
         });
+
+        let iconTitle = '';
+        let iconSubtitle = '';
+
+        if (pathInfo.isEnhancedDevice === 'gatt-bas') {
+            iconTitle = _('Icon can be configured in Battery Service (BAS) Settings');
+            iconSubtitle = _('Go to Battery Service (BAS) Settings to change the icon');
+        } else if (pathInfo.isEnhancedDevice === 'budslink') {
+            iconTitle = _('Icon can be configured in the BudsLink app');
+            iconSubtitle = _('Open the BudsLink app to change the icon');
+        }
+
         const iconRowEnhanced = new Adw.ActionRow({
-            title: _('This is an enhanced device'),
-            subtitle: _('Icon selection if available are in Enhanced device per device settings'),
+            title: iconTitle,
+            subtitle: iconSubtitle,
         });
+
         iconRow.visible = !isEnhancedDevice;
         iconRowEnhanced.visible = isEnhancedDevice;
 
