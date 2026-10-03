@@ -8,6 +8,17 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
+> GN-46_Version 50 &emsp;&emsp; Upcoming
+> * Bugfix: Update device settings for Gattbas and Budslink
+> * Weblate translations update
+
+{: .important-title }
+> GN-46_Version 49 &emsp;&emsp; Sept 18, 2026
+> * Fix null bluetooth toggle on destroy
+> * Weblate translations update
+
+
+{: .important-title }
 > GN-46_Version 48 &emsp;&emsp; Sept 17, 2026
 > * Remove all Bluetooth Socket UI and settings  code for all devices, AirPods, Sony, Samsung, Nothing etc.
 > * Added support to above devices to use BudsLink as a backend
