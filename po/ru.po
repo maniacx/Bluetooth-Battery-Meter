@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-09-23 20:48+0000\n"
+"PO-Revision-Date: 2026-10-04 10:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/ru/>\n"
@@ -37,8 +37,9 @@ msgstr ""
 
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
+#, fuzzy
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "Измеритель заряда аккумулятора блютуз устройства"
 
 #: lib/bluetoothToggle.js:541
 #, javascript-format
@@ -49,8 +50,9 @@ msgstr[1] "%d подключено"
 msgstr[2] "%d подключено"
 
 #: lib/widgets/panelPopupMenu.js:130
+#, fuzzy
 msgid "Expand submenu"
-msgstr ""
+msgstr "Расширить субменю"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
 #: lib/widgets/bluetoothPopupMenu.js:82
@@ -76,15 +78,16 @@ msgstr "Подключиться к %s"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "Закрепить на панели"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr ""
+msgstr "Настройки устройства"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
+#, fuzzy
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Уменьшить субменю"
 
 #: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Battery Status:"
@@ -99,12 +102,14 @@ msgid "Not Available"
 msgstr "Недоступно"
 
 #: preferences/device.js:55
+#, fuzzy
 msgid "Reported from Battery Service (BAS)"
-msgstr ""
+msgstr "Отчёт от сервиса батареи (BAS)"
 
 #: preferences/device.js:57
+#, fuzzy
 msgid "Reported from BudsLink app"
-msgstr ""
+msgstr "Отчёт от BudsLink app"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
@@ -121,19 +126,19 @@ msgstr "Выбрать используемую иконку для индика
 
 #: preferences/device.js:76
 msgid "Icon can be configured in Battery Service (BAS) Settings"
-msgstr ""
+msgstr "Иконка может быть сконцентрирована в настройках Сервиса батареи (BAS)"
 
 #: preferences/device.js:77
 msgid "Go to Battery Service (BAS) Settings to change the icon"
-msgstr ""
+msgstr "Перейти к настройкам Сервису батареи (BAS) чтобы выбрать иконку"
 
 #: preferences/device.js:79
 msgid "Icon can be configured in the BudsLink app"
-msgstr ""
+msgstr "Иконка может быть сконцентрирована в BudsLink app"
 
 #: preferences/device.js:80
 msgid "Open the BudsLink app to change the icon"
-msgstr ""
+msgstr "Открыть BudsLink app чтобы выбрать иконку"
 
 #: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
@@ -199,11 +204,15 @@ msgid "(Paired)"
 msgstr "(Сопряжено)"
 
 #: preferences/budslinkCompanion.js:50
+#, fuzzy
 msgid ""
 "Install BudsLink from Flathub to monitor battery levels for multiple devices "
 "and access advanced controls such as noise control, equalizer, and gestures, "
 "when supported by the device"
 msgstr ""
+"Установить BudsLink из Flathub чтобы просматривать уровень батареи для "
+"нескольких устройств и доступ к передовому управлению шумоподавлением, "
+"эквалайзера, и жестам, когда поддерживается устройство"
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
@@ -243,7 +252,7 @@ msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "Установлено"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
@@ -251,15 +260,16 @@ msgstr ""
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "Обновить BudsLink"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "Не установлено"
 
 #: preferences/budslinkCompanion.js:80
+#, fuzzy
 msgid "Refresh"
-msgstr ""
+msgstr "Перезагрузить"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
