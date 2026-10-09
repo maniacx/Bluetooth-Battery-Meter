@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-09-15 08:00+0000\n"
+"PO-Revision-Date: 2026-10-06 18:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/budslink/bluetooth-"
 "battery-meter/cs/>\n"
@@ -92,11 +92,11 @@ msgstr "Není k dispozici"
 
 #: preferences/device.js:55
 msgid "Reported from Battery Service (BAS)"
-msgstr ""
+msgstr "Hlášeno z Battery Service (BAS)"
 
 #: preferences/device.js:57
 msgid "Reported from BudsLink app"
-msgstr ""
+msgstr "Hlášeno z aplikace BudsLink"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
@@ -113,19 +113,19 @@ msgstr "Vyberte ikonu sloužící jako indikátor a pohotová nabídka"
 
 #: preferences/device.js:76
 msgid "Icon can be configured in Battery Service (BAS) Settings"
-msgstr ""
+msgstr "Ikonu je možné nastavovat v nastavení Battery Service (BAS)"
 
 #: preferences/device.js:77
 msgid "Go to Battery Service (BAS) Settings to change the icon"
-msgstr ""
+msgstr "Pro změnu ikony jděte do nastavení Battery Service (BAS)"
 
 #: preferences/device.js:79
 msgid "Icon can be configured in the BudsLink app"
-msgstr ""
+msgstr "Ikonu je možné nastavit v aplikaci BudsLink"
 
 #: preferences/device.js:80
 msgid "Open the BudsLink app to change the icon"
-msgstr ""
+msgstr "Pro změnu ikony otevřete aplikaci BudsLink"
 
 #: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
@@ -808,15 +808,3 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr "Nespárováno žádné kompatibilní zařízení!"
-
-#~ msgid "Reported from enhanced device service"
-#~ msgstr "Hlášeno z vylepšené služby zařízení"
-
-#~ msgid "This is an enhanced device"
-#~ msgstr "Toto je vylepšené zařízení"
-
-#~ msgid ""
-#~ "Icon selection if available are in Enhanced device per device settings"
-#~ msgstr ""
-#~ "Výběr ikony (pokud je k dispozici) se nacházejí ve „Vylepšené zařízení“ v "
-#~ "nastavení u jednotlivých zařízení"
