@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 00:45-0600\n"
+"POT-Creation-Date: 2026-10-01 20:40-0600\n"
 "PO-Revision-Date: 2026-09-23 20:48+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/budslink/"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Bluetooth Battery Meter"
 msgstr "Bluetooth Battery Meter"
 
-#: lib/bluetoothToggle.js:544
+#: lib/bluetoothToggle.js:541
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -40,20 +40,18 @@ msgstr "Apri sottomenu"
 msgid "Disconnect"
 msgstr "Disconnetti"
 
-#: lib/widgets/bluetoothGnomePopupMenu.js:56
+#: lib/widgets/bluetoothGnomePopupMenu.js:57
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Connect"
 msgstr "Connetti"
 
-#. Translators: %s is a device name like "MyPhone"
 #: lib/widgets/bluetoothGnomePopupMenu.js:77
 #, javascript-format
 msgid "Disconnect %s"
 msgstr "Disconnetti %s"
 
-#. Translators: %s is a device name like "MyPhone"
-#: lib/widgets/bluetoothGnomePopupMenu.js:79
+#: lib/widgets/bluetoothGnomePopupMenu.js:78
 #, javascript-format
 msgid "Connect to %s"
 msgstr "Connetti a %s"
@@ -70,107 +68,117 @@ msgstr "Impostazioni dispositivo"
 msgid "Collapse submenu"
 msgstr "Chiudi sottomenu"
 
-#: preferences/device.js:64 preferences/upowerDevices.js:41
+#: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Battery Status:"
 msgstr "Stato batteria:"
 
-#: preferences/device.js:65 preferences/upowerDevices.js:42
+#: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Reported"
 msgstr "Riportato"
 
-#: preferences/device.js:65 preferences/upowerDevices.js:42
+#: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Not Available"
 msgstr "Non disponibile"
 
-#: preferences/device.js:66
-msgid "Reported from enhanced device service"
-msgstr "Riportato dal servizio dispositivi avanzati"
+#: preferences/device.js:55
+msgid "Reported from Battery Service (BAS)"
+msgstr ""
 
-#: preferences/device.js:73 preferences/upowerDevices.js:47
+#: preferences/device.js:57
+msgid "Reported from BudsLink app"
+msgstr ""
+
+#: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
 msgstr "Icona"
 
-#: preferences/device.js:77 preferences/upowerDevices.js:51
+#: preferences/device.js:68 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
 msgstr "Seleziona icona"
 
-#: preferences/device.js:78 preferences/upowerDevices.js:52
+#: preferences/device.js:69 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
 msgstr "Seleziona l'icona utilizzata per l'indicatore e il menu rapido"
 
-#: preferences/device.js:81
-msgid "This is an enhanced device"
-msgstr "Questo è un dispositivo avanzato"
-
-#: preferences/device.js:82
-msgid "Icon selection if available are in Enhanced device per device settings"
+#: preferences/device.js:76
+msgid "Icon can be configured in Battery Service (BAS) Settings"
 msgstr ""
-"La selezione dell'icona, se disponibile, si trova nelle impostazioni "
-"avanzate del dispositivo"
 
-#: preferences/device.js:137 ui/quickSettings.ui:5
+#: preferences/device.js:77
+msgid "Go to Battery Service (BAS) Settings to change the icon"
+msgstr ""
+
+#: preferences/device.js:79
+msgid "Icon can be configured in the BudsLink app"
+msgstr ""
+
+#: preferences/device.js:80
+msgid "Open the BudsLink app to change the icon"
+msgstr ""
+
+#: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
 msgstr "Menu rapido"
 
-#: preferences/device.js:141
+#: preferences/device.js:145
 msgid "Display Battery Level"
 msgstr "Mostra livello batteria"
 
-#: preferences/device.js:142
+#: preferences/device.js:146
 msgid "Display battery level in the Bluetooth panel quick menu"
 msgstr ""
 "Mostra il livello della batteria nel menu rapido del pannello Bluetooth"
 
-#: preferences/device.js:162 preferences/upowerDevices.js:129 ui/indicator.ui:5
+#: preferences/device.js:166 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
 msgstr "Indicatore"
 
-#: preferences/device.js:166 preferences/upowerDevices.js:133
+#: preferences/device.js:170 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
 msgstr "Configura indicatore"
 
-#: preferences/device.js:167 preferences/upowerDevices.js:134
+#: preferences/device.js:171 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
 msgstr "Scegli come dovrebbe comportarsi l'indicatore"
 
-#: preferences/device.js:171
+#: preferences/device.js:175
 msgid "Do not show Icon"
 msgstr "Non mostrare icona"
 
-#: preferences/device.js:172
+#: preferences/device.js:176
 msgid "Show Icon without Battery level"
 msgstr "Mostra icona senza livello batteria"
 
-#: preferences/device.js:173
+#: preferences/device.js:177
 msgid "Show Icon with Battery Level"
 msgstr "Mostra icona con livello batteria"
 
-#: preferences/device.js:176 preferences/upowerDevices.js:138
+#: preferences/device.js:180 preferences/upowerDevices.js:138
 msgid "Hide Icon"
 msgstr "Nascondi icona"
 
-#: preferences/device.js:177 preferences/upowerDevices.js:139
+#: preferences/device.js:181 preferences/upowerDevices.js:139
 msgid "Show Icon"
 msgstr "Mostra icona"
 
-#: preferences/device.js:225 preferences/upowerDevices.js:186
+#: preferences/device.js:229 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
 msgid "Configure device."
 msgstr "Configura dispositivo."
 
-#: preferences/device.js:239
+#: preferences/device.js:243
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
 "Elimina informazioni sul dispositivo: il pulsante è disponibile dopo aver "
 "disaccoppiato il dispositivo"
 
-#: preferences/device.js:271
+#: preferences/device.js:275
 msgid "(Removed)"
 msgstr "(Rimosso)"
 
-#: preferences/device.js:272
+#: preferences/device.js:276
 msgid "(Paired)"
 msgstr "(Accoppiato)"
 
@@ -794,3 +802,15 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr "Nessun dispositivo compatibile accoppiato!"
+
+#~ msgid "Reported from enhanced device service"
+#~ msgstr "Riportato dal servizio dispositivi avanzati"
+
+#~ msgid "This is an enhanced device"
+#~ msgstr "Questo è un dispositivo avanzato"
+
+#~ msgid ""
+#~ "Icon selection if available are in Enhanced device per device settings"
+#~ msgstr ""
+#~ "La selezione dell'icona, se disponibile, si trova nelle impostazioni "
+#~ "avanzate del dispositivo"

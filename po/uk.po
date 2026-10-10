@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 00:45-0600\n"
+"POT-Creation-Date: 2026-10-01 20:40-0600\n"
 "PO-Revision-Date: 2026-09-23 20:49+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/budslink/"
@@ -11,10 +11,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 "
-"? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > "
-"14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % "
-"100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 "X-Crowdin-Project: bluetooth-battery-meter\n"
 "X-Crowdin-Project-ID: 639464\n"
 "X-Crowdin-Language: uk\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Bluetooth Battery Meter"
 msgstr "Рівень заряду Bluetooth"
 
-#: lib/bluetoothToggle.js:544
+#: lib/bluetoothToggle.js:541
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -46,20 +46,18 @@ msgstr ""
 msgid "Disconnect"
 msgstr "Від'єднатися"
 
-#: lib/widgets/bluetoothGnomePopupMenu.js:56
+#: lib/widgets/bluetoothGnomePopupMenu.js:57
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Connect"
 msgstr "З'єднатись"
 
-#. Translators: %s is a device name like "MyPhone"
 #: lib/widgets/bluetoothGnomePopupMenu.js:77
 #, javascript-format
 msgid "Disconnect %s"
 msgstr "Від'єднатися від %s"
 
-#. Translators: %s is a device name like "MyPhone"
-#: lib/widgets/bluetoothGnomePopupMenu.js:79
+#: lib/widgets/bluetoothGnomePopupMenu.js:78
 #, javascript-format
 msgid "Connect to %s"
 msgstr "З'єднатися з %s"
@@ -76,105 +74,115 @@ msgstr ""
 msgid "Collapse submenu"
 msgstr "Згорнути підменю"
 
-#: preferences/device.js:64 preferences/upowerDevices.js:41
+#: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Battery Status:"
 msgstr "Рівень заряду:"
 
-#: preferences/device.js:65 preferences/upowerDevices.js:42
+#: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Reported"
 msgstr "Повідомлено"
 
-#: preferences/device.js:65 preferences/upowerDevices.js:42
+#: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Not Available"
 msgstr "Недоступно"
 
-#: preferences/device.js:66
-msgid "Reported from enhanced device service"
-msgstr "Звітовано з розширеної служби пристрою"
+#: preferences/device.js:55
+msgid "Reported from Battery Service (BAS)"
+msgstr ""
 
-#: preferences/device.js:73 preferences/upowerDevices.js:47
+#: preferences/device.js:57
+msgid "Reported from BudsLink app"
+msgstr ""
+
+#: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
 msgstr "Іконка"
 
-#: preferences/device.js:77 preferences/upowerDevices.js:51
+#: preferences/device.js:68 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
 msgstr "Оберіть іконку"
 
-#: preferences/device.js:78 preferences/upowerDevices.js:52
+#: preferences/device.js:69 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
 msgstr "Оберіть іконку для індикатору та швидкого меню"
 
-#: preferences/device.js:81
-msgid "This is an enhanced device"
-msgstr "Цей покращений пристрій"
-
-#: preferences/device.js:82
-msgid "Icon selection if available are in Enhanced device per device settings"
+#: preferences/device.js:76
+msgid "Icon can be configured in Battery Service (BAS) Settings"
 msgstr ""
-"Вибір іконки, якщо вони доступні, знаходиться в налаштуваннях покращеного "
-"пристрою для кожного пристрою"
 
-#: preferences/device.js:137 ui/quickSettings.ui:5
+#: preferences/device.js:77
+msgid "Go to Battery Service (BAS) Settings to change the icon"
+msgstr ""
+
+#: preferences/device.js:79
+msgid "Icon can be configured in the BudsLink app"
+msgstr ""
+
+#: preferences/device.js:80
+msgid "Open the BudsLink app to change the icon"
+msgstr ""
+
+#: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
 msgstr "Швидке меню"
 
-#: preferences/device.js:141
+#: preferences/device.js:145
 msgid "Display Battery Level"
 msgstr "Показувати рівень акумулятора"
 
-#: preferences/device.js:142
+#: preferences/device.js:146
 msgid "Display battery level in the Bluetooth panel quick menu"
 msgstr "Показувати рівень заряду акумулятора в панелі швидкого меню Bluetooth"
 
-#: preferences/device.js:162 preferences/upowerDevices.js:129 ui/indicator.ui:5
+#: preferences/device.js:166 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
 msgstr "Індикатор"
 
-#: preferences/device.js:166 preferences/upowerDevices.js:133
+#: preferences/device.js:170 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
 msgstr "Налаштувати індикатор"
 
-#: preferences/device.js:167 preferences/upowerDevices.js:134
+#: preferences/device.js:171 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
 msgstr "Оберіть, як повинен поводитися індикатор"
 
-#: preferences/device.js:171
+#: preferences/device.js:175
 msgid "Do not show Icon"
 msgstr "Не показувати значок"
 
-#: preferences/device.js:172
+#: preferences/device.js:176
 msgid "Show Icon without Battery level"
 msgstr "Показувати значок без рівня заряду акумулятора"
 
-#: preferences/device.js:173
+#: preferences/device.js:177
 msgid "Show Icon with Battery Level"
 msgstr "Показувати значок з рівнем заряду акумулятора"
 
-#: preferences/device.js:176 preferences/upowerDevices.js:138
+#: preferences/device.js:180 preferences/upowerDevices.js:138
 msgid "Hide Icon"
 msgstr "Приховати іконку"
 
-#: preferences/device.js:177 preferences/upowerDevices.js:139
+#: preferences/device.js:181 preferences/upowerDevices.js:139
 msgid "Show Icon"
 msgstr "Показати іконку"
 
-#: preferences/device.js:225 preferences/upowerDevices.js:186
+#: preferences/device.js:229 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
 msgid "Configure device."
 msgstr "Налаштування пристрою."
 
-#: preferences/device.js:239
+#: preferences/device.js:243
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
 "Видалити інформацію про пристрій: кнопка доступна після від'єднання пристрою"
 
-#: preferences/device.js:271
+#: preferences/device.js:275
 msgid "(Removed)"
 msgstr "(Видалено)"
 
-#: preferences/device.js:272
+#: preferences/device.js:276
 msgid "(Paired)"
 msgstr "(З'єднано)"
 
@@ -781,3 +789,15 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr "Сумісні пристрої не з'єднано!"
+
+#~ msgid "Reported from enhanced device service"
+#~ msgstr "Звітовано з розширеної служби пристрою"
+
+#~ msgid "This is an enhanced device"
+#~ msgstr "Цей покращений пристрій"
+
+#~ msgid ""
+#~ "Icon selection if available are in Enhanced device per device settings"
+#~ msgstr ""
+#~ "Вибір іконки, якщо вони доступні, знаходиться в налаштуваннях покращеного "
+#~ "пристрою для кожного пристрою"
