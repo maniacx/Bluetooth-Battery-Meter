@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-10-04 10:51+0000\n"
+"PO-Revision-Date: 2026-10-13 05:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/budslink/bluetooth-battery-meter/zh_Hans/>\n"
@@ -682,7 +682,7 @@ msgstr ""
 
 #: ui/indicator.ui:114
 msgid "Off"
-msgstr ""
+msgstr "关闭"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
