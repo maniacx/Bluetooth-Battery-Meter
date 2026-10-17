@@ -18,6 +18,12 @@
           </object>
         </child>
         <child>
+          <object class="AdwSwitchRow" id="enable_gfps_devices">
+            <property name="title" translatable="yes">Disable Google Fast Pair Services</property>
+            <property name="subtitle" translatable="yes">Some devices support Google Fast Pair but do not report battery levels. Disable GFPS detection to use BlueZ battery reporting instead.</property>
+          </object>
+        </child>
+        <child>
           <object class="AdwSwitchRow" id="hide_background">
             <property name="title" translatable="yes">Hide from Background Apps</property>
             <property name="subtitle" translatable="yes">Hide BudsLink from the GNOME Background Apps list</property>

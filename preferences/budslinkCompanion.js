@@ -21,6 +21,7 @@ export const  BudsLinkCompanion = GObject.registerClass({
     InternalChildren: [
         'intro',
         'enable_companion',
+        'enable_gfps_devices',
         'install_status',
         'hide_background',
         'flathub_link',
@@ -36,6 +37,13 @@ export const  BudsLinkCompanion = GObject.registerClass({
             this._enable_companion,
             'active',
             Gio.SettingsBindFlags.DEFAULT
+        );
+
+        settings.bind(
+            'enable-gfps-device',
+            this._enable_gfps_devices,
+            'active',
+            Gio.SettingsBindFlags.INVERT_BOOLEAN
         );
 
         settings.bind(
