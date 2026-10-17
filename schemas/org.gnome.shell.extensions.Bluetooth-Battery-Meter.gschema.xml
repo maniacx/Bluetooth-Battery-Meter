@@ -120,7 +120,7 @@
             <summary>"enable budslink companion devices"</summary>
         </key>
         <key name="enable-gfps-device" type="b">
-            <default>false</default>
+            <default>true</default>
             <summary>"enable budslink companion devices"</summary>
         </key>
         <key name="hide-budslink-background-apps" type="b">
