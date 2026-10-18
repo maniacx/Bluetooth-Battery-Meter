@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-09-19 20:51+0000\n"
+"PO-Revision-Date: 2026-10-18 22:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/da/>\n"
@@ -106,7 +106,7 @@ msgstr "Ikon"
 #: preferences/device.js:68 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
-msgstr ""
+msgstr "vælg ikon"
 
 #: preferences/device.js:69 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
