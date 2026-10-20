@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-09-15 08:01+0000\n"
+"PO-Revision-Date: 2026-10-18 22:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/hr/>\n"
@@ -47,7 +47,7 @@ msgstr ""
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Connect"
-msgstr ""
+msgstr "poveži"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:77
 #, javascript-format
@@ -61,44 +61,44 @@ msgstr "Povežite se s %s"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "prikvači na ploču"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr ""
+msgstr "postavke uredaja"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
-msgstr ""
+msgstr "zatvori podisbornik"
 
 #: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Battery Status:"
-msgstr ""
+msgstr "status baterije"
 
 #: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Reported"
-msgstr ""
+msgstr "prijavljeno"
 
 #: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Not Available"
-msgstr ""
+msgstr "nije dostupno"
 
 #: preferences/device.js:55
 msgid "Reported from Battery Service (BAS)"
-msgstr ""
+msgstr "Izvješćeno iz servisa za baterije (BAS)"
 
 #: preferences/device.js:57
 msgid "Reported from BudsLink app"
-msgstr ""
+msgstr "Prijavljeno putem aplikacije BudsLink"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
-msgstr ""
+msgstr "ikona"
 
 #: preferences/device.js:68 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
-msgstr ""
+msgstr "odaberi ikonu"
 
 #: preferences/device.js:69 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
