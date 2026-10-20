@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-11 20:05+0200\n"
-"PO-Revision-Date: 2026-10-13 19:06+0200\n"
+"POT-Creation-Date: 2026-10-20 19:26+0200\n"
+"PO-Revision-Date: 2026-10-20 19:47+0200\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/pl/>\n"
@@ -22,9 +22,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
-#: lib/bluetoothToggle.js:541
+#: lib/bluetoothToggle.js:546
 #, javascript-format
 msgid "%d Connected"
 msgid_plural "%d Connected"
@@ -104,7 +104,7 @@ msgstr "Przypisz kolor dla %d – %d%%"
 msgid "Set color for the battery level range of %d – %d%%"
 msgstr "Ustaw kolor dla zakresu poziomu baterii %d – %d%%"
 
-#: preferences/budslinkCompanion.js:50
+#: preferences/budslinkCompanion.js:58
 msgid ""
 "Install BudsLink from Flathub to monitor battery levels for multiple devices "
 "and access advanced controls such as noise control, equalizer, and gestures, "
@@ -115,59 +115,59 @@ msgstr ""
 "takich jak kontrola hałasu, korektor i gesty, jeśli są obsługiwane przez "
 "urządzenie"
 
-#: preferences/budslinkCompanion.js:54
+#: preferences/budslinkCompanion.js:62
 msgid "Currently supported earbuds and headbands are:"
 msgstr "Aktualnie wspierane słuchawki:"
 
-#: preferences/budslinkCompanion.js:57
+#: preferences/budslinkCompanion.js:65
 msgid "AirPods"
 msgstr "AirPods"
 
-#: preferences/budslinkCompanion.js:58
+#: preferences/budslinkCompanion.js:66
 msgid "Beats"
 msgstr "Beats"
 
-#: preferences/budslinkCompanion.js:59
+#: preferences/budslinkCompanion.js:67
 msgid "Sony"
 msgstr "Sony"
 
-#: preferences/budslinkCompanion.js:60
+#: preferences/budslinkCompanion.js:68
 msgid "Samsung Galaxy Buds"
 msgstr "Słuchawki Samsung Galaxy"
 
-#: preferences/budslinkCompanion.js:61
+#: preferences/budslinkCompanion.js:69
 msgid "Nothing / CMF"
 msgstr "Nothing / CMF"
 
-#: preferences/budslinkCompanion.js:62
+#: preferences/budslinkCompanion.js:70
 msgid "Bose"
 msgstr "Bose"
 
-#: preferences/budslinkCompanion.js:63
+#: preferences/budslinkCompanion.js:71
 msgid "Sennheiser"
 msgstr "Sennheiser"
 
-#: preferences/budslinkCompanion.js:64
+#: preferences/budslinkCompanion.js:72
 msgid "Redmi / Xiaomi"
 msgstr "Redmi / Xiaomi"
 
-#: preferences/budslinkCompanion.js:70
+#: preferences/budslinkCompanion.js:78
 msgid "Installed"
 msgstr "Zainstalowano"
 
-#: preferences/budslinkCompanion.js:72
+#: preferences/budslinkCompanion.js:80
 msgid "Update Extension"
 msgstr "Aktualizuj rozszerzenie"
 
-#: preferences/budslinkCompanion.js:74
+#: preferences/budslinkCompanion.js:82
 msgid "Update BudsLink"
 msgstr "Zaktualizuj BudsLink"
 
-#: preferences/budslinkCompanion.js:76
+#: preferences/budslinkCompanion.js:84
 msgid "Not Installed"
 msgstr "Nie zainstalowano"
 
-#: preferences/budslinkCompanion.js:80
+#: preferences/budslinkCompanion.js:88
 msgid "Refresh"
 msgstr "Odśwież"
 
@@ -468,10 +468,11 @@ msgid "List of gattbas devices"
 msgstr "Lista urządzeń gattbas"
 
 #: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:120
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:124
 msgid "\"enable budslink companion devices\""
 msgstr "\"włącz urządzenia towarzyszące budslink\""
 
-#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:124
+#: schemas/org.gnome.shell.extensions.Bluetooth-Battery-Meter.gschema.xml:128
 msgid "\"hides budslink from background apps\""
 msgstr "\"ukrywa budslink z listy aplikacji w tle\""
 
@@ -641,26 +642,39 @@ msgstr ""
 "dodatkowe funkcje dla obsługiwanych słuchawek"
 
 #: ui/budslinkCompanion.ui:22
+msgid "Disable Google Fast Pair Services"
+msgstr "Wyłącz usługę Google Fast Pair"
+
+#: ui/budslinkCompanion.ui:23
+msgid ""
+"Some devices support Google Fast Pair but do not report battery levels. "
+"Disable GFPS detection to use BlueZ battery reporting instead."
+msgstr ""
+"Niektóre urządzenia wspierają usługę Google Fast pair, ale nie zgłaszają "
+"poziomu naładowania akumulatora. Wyłącz detekcję GFPS, aby używać "
+"raportowania stanu akumulatora na podstawie BlueZ."
+
+#: ui/budslinkCompanion.ui:28
 msgid "Hide from Background Apps"
 msgstr "Ukryj na liście aplikacji w tle"
 
-#: ui/budslinkCompanion.ui:23
+#: ui/budslinkCompanion.ui:29
 msgid "Hide BudsLink from the GNOME Background Apps list"
 msgstr "Ukryj BudsLink z listy aplikacji w tle GNOME"
 
-#: ui/budslinkCompanion.ui:31
+#: ui/budslinkCompanion.ui:37
 msgid "Installation Status"
 msgstr "Stan instalacji"
 
-#: ui/budslinkCompanion.ui:40
+#: ui/budslinkCompanion.ui:46
 msgid "BudsLink Installation Status"
 msgstr "Stan instalacji BudsLink"
 
-#: ui/budslinkCompanion.ui:49
+#: ui/budslinkCompanion.ui:55
 msgid "BudsLink on Flathub"
 msgstr "BudsLink na Flathub"
 
-#: ui/budslinkCompanion.ui:61
+#: ui/budslinkCompanion.ui:67
 msgid "BudsLink Documentation"
 msgstr "Dokumentacja BudsLink"
 
