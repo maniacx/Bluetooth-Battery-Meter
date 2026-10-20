@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-10-13 05:51+0000\n"
+"PO-Revision-Date: 2026-10-18 22:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/ar/>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "مؤشر بطارية البلوتوث"
 
 #: lib/bluetoothToggle.js:541
 #, javascript-format
@@ -40,45 +40,45 @@ msgstr[5] "%d مُتصل"
 
 #: lib/widgets/panelPopupMenu.js:130
 msgid "Expand submenu"
-msgstr ""
+msgstr "عرض القائمة الفرعية"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Disconnect"
-msgstr ""
+msgstr "فصل"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:57
 #: lib/widgets/bluetoothPopupMenu.js:82
 #: lib/widgets/bluetoothPopupSubMenu.js:304
 msgid "Connect"
-msgstr ""
+msgstr "توصيل"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:77
 #, javascript-format
 msgid "Disconnect %s"
-msgstr ""
+msgstr "فصل %s"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:78
 #, javascript-format
 msgid "Connect to %s"
-msgstr ""
+msgstr "ربط مع %s"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "التثبيت في اللوحة"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr ""
+msgstr "اعدادات الجهاز"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
-msgstr ""
+msgstr "اخفاء القائمة الفرعية"
 
 #: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Battery Status:"
-msgstr ""
+msgstr "حالة البطارية:"
 
 #: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Reported"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Not Available"
-msgstr ""
+msgstr "غير متوفر"
 
 #: preferences/device.js:55
 msgid "Reported from Battery Service (BAS)"
@@ -103,11 +103,11 @@ msgstr "أيقونة"
 #: preferences/device.js:68 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
-msgstr ""
+msgstr "اختر الايقونة"
 
 #: preferences/device.js:69 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
-msgstr ""
+msgstr "اختر الايقونة التي ستستخدم للمؤشر والقائمة البسيطة"
 
 #: preferences/device.js:76
 msgid "Icon can be configured in Battery Service (BAS) Settings"
@@ -119,73 +119,73 @@ msgstr ""
 
 #: preferences/device.js:79
 msgid "Icon can be configured in the BudsLink app"
-msgstr ""
+msgstr "يمكن اعداد الايقونة في تطبيق BudsLink"
 
 #: preferences/device.js:80
 msgid "Open the BudsLink app to change the icon"
-msgstr ""
+msgstr "افتح تطبيق BudsLink لتغيير الايقونة"
 
 #: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "القائمة المختزلة"
 
 #: preferences/device.js:145
 msgid "Display Battery Level"
-msgstr ""
+msgstr "اظهار نسبة البطارية"
 
 #: preferences/device.js:146
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
+msgstr "اظهار نسبة البطارية في قائمة البلوتوث المختزلة"
 
 #: preferences/device.js:166 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "مؤشر"
 
 #: preferences/device.js:170 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
-msgstr ""
+msgstr "اعداد المؤشر"
 
 #: preferences/device.js:171 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
-msgstr ""
+msgstr "اختر كيف يتصرف المؤشر"
 
 #: preferences/device.js:175
 msgid "Do not show Icon"
-msgstr ""
+msgstr "لا تظهر الايقونة"
 
 #: preferences/device.js:176
 msgid "Show Icon without Battery level"
-msgstr ""
+msgstr "اظهر الايقونة دون نسبة البطارية"
 
 #: preferences/device.js:177
 msgid "Show Icon with Battery Level"
-msgstr ""
+msgstr "اظهر الايقونة مع نسبة البطارية"
 
 #: preferences/device.js:180 preferences/upowerDevices.js:138
 msgid "Hide Icon"
-msgstr ""
+msgstr "اخفاء الايقونة"
 
 #: preferences/device.js:181 preferences/upowerDevices.js:139
 msgid "Show Icon"
-msgstr ""
+msgstr "اظهار الايقونة"
 
 #: preferences/device.js:229 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
 msgid "Configure device."
-msgstr ""
+msgstr "ضبط الجهاز."
 
 #: preferences/device.js:243
 msgid ""
 "Delete device information: The button is available after unpairing device"
-msgstr ""
+msgstr "احذف معلومات الجهاز: يتاح هذا الزر بعد فصل الجهاز"
 
 #: preferences/device.js:275
 msgid "(Removed)"
-msgstr ""
+msgstr "(محذوف)"
 
 #: preferences/device.js:276
 msgid "(Paired)"
-msgstr ""
+msgstr "(موصل)"
 
 #: preferences/budslinkCompanion.js:50
 msgid ""
@@ -196,7 +196,7 @@ msgstr ""
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+msgstr "السماعات المدعومة حاليا هي:"
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
@@ -232,33 +232,33 @@ msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "مثبت"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
-msgstr ""
+msgstr "تحديث الملحق"
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "تحديثBudsLink"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "غير مثبت"
 
 #: preferences/budslinkCompanion.js:80
 msgid "Refresh"
-msgstr ""
+msgstr "تحديث"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
 msgid "Assign color for %d – %d%%"
-msgstr ""
+msgstr "تعيين لون ل%d-%d%%"
 
 #: preferences/batteryWidgetSettings.js:18
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
+msgstr "ضبط لون لمستوى البطارية من%d-%d%%"
 
 #: preferences/quickSettings.js:78
 #, javascript-format
@@ -267,28 +267,30 @@ msgid ""
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"لا تعطي بعض اجهزة البلوتوث مستوى البطارية الا بعد تفعيل خواص Bluez's التجريبية "
+"في النظام. تفقد <a href=\"%s\">Readme</a> للتفاصيل."
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
-msgstr ""
+msgstr "اسم مستعار"
 
 #: preferences/upowerDevices.js:105
 msgid "Device Alias"
-msgstr ""
+msgstr "اسم الجهاز المستعار"
 
 #: preferences/upowerDevices.js:199
 msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
-msgstr ""
+msgstr "حذف معلومات الجهاز: يتاح الزر بعد فصل الاجهزة المشغلة"
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
-msgstr ""
+msgstr "(مفصول)"
 
 #: preferences/upowerDevices.js:233
 msgid "(Online)"
-msgstr ""
+msgstr "(متصل)"
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
@@ -304,15 +306,15 @@ msgstr "© %s %s"
 msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
-msgstr ""
+msgstr "لا يأتي مع التطبيق اي ضمان. تفقد <a href=\"%s\">%s</a> لمعرفة التفاصيل."
 
 #: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
-msgstr ""
+msgstr "مؤشر واحد. زر اللوحة. القائمة المختزلة. فن الالبوم"
 
 #: preferences/gattBas.js:52
 msgid "Multiple Indicators, Circular Battery Widgets"
-msgstr ""
+msgstr "مؤشرات متعددة, شعار البطارية الداذرية المصغر"
 
 #: preferences/gattBas.js:60
 msgid "Icon "
@@ -320,24 +322,24 @@ msgstr "أيقونة "
 
 #: preferences/gattBas.js:69
 msgid "Battery 1 Icon"
-msgstr ""
+msgstr "ايقونة البطارية 1"
 
 #: preferences/gattBas.js:78
 msgid "Battery 2 Icon"
-msgstr ""
+msgstr "ايقونة البطارية 2"
 
 #: preferences/gattBas.js:87
 msgid "Battery 3 Icon"
-msgstr ""
+msgstr "ايقونة البطارية 3"
 
 #: preferences/gattBas.js:185 ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
-msgstr ""
+msgstr "خدمات البطارية (BAS)"
 
 #: preferences/gattBas.js:188
 #, javascript-format
 msgid "The button is available after disabling %s mode"
-msgstr ""
+msgstr "يتاح الزر بعد ايقاف وضع %s"
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
@@ -345,11 +347,11 @@ msgstr "UPower"
 
 #: ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
-msgstr ""
+msgstr "تفعيل خدماتUPower"
 
 #: ui/upowerDevices.ui:12
 msgid "Enable indicator for UPower devices"
-msgstr ""
+msgstr "تفعيل المؤشر لاجهزة UPower"
 
 #: ui/upowerDevices.ui:13
 msgid ""
@@ -360,23 +362,23 @@ msgstr ""
 
 #: ui/upowerDevices.ui:20 ui/device.ui:9 ui/gattBas.ui:30
 msgid "Configuration by Device"
-msgstr ""
+msgstr "الضبط حسب الجهاز"
 
 #: ui/upowerDevices.ui:21 ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
-msgstr ""
+msgstr "ملاحظة: الاعدادت العامة تلغي اعدادت الجهاز المختصة"
 
 #: ui/upowerDevices.ui:24
 msgid "No compatible device found!"
-msgstr ""
+msgstr "لم يعثر على جهاز ملائم!"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
-msgstr ""
+msgstr "اعدادات شعار البطارية المصغر"
 
 #: ui/batteryWidgetSettings.ui:9
 msgid "Indicator Widget Settings"
-msgstr ""
+msgstr "اعدادت شعار المؤشر المصغر"
 
 #: ui/batteryWidgetSettings.ui:12
 msgid ""
@@ -396,15 +398,15 @@ msgstr ""
 
 #: ui/batteryWidgetSettings.ui:23
 msgid "Display battery percentage as text"
-msgstr ""
+msgstr "اظهار نسبة البطارية كنص"
 
 #: ui/batteryWidgetSettings.ui:24
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
+msgstr "اظهار نسبة البطارية بجانب ايقونة جهاز البلوتوث"
 
 #: ui/batteryWidgetSettings.ui:29
 msgid "Battery Level Indicator Type"
-msgstr ""
+msgstr "نوع مؤشر مستوى البطارية"
 
 #: ui/batteryWidgetSettings.ui:30
 msgid "Dots offer better visibility"
@@ -420,7 +422,7 @@ msgstr ""
 
 #: ui/batteryWidgetSettings.ui:55
 msgid "Device Icon Size"
-msgstr ""
+msgstr "حجم ايقونة الجهاز"
 
 #: ui/batteryWidgetSettings.ui:56
 msgid ""
@@ -458,11 +460,11 @@ msgstr ""
 
 #: ui/batteryWidgetSettings.ui:117
 msgid "Left"
-msgstr ""
+msgstr "يسار"
 
 #: ui/batteryWidgetSettings.ui:118
 msgid "Right"
-msgstr ""
+msgstr "يمين"
 
 #: ui/batteryWidgetSettings.ui:119
 msgid "Below"

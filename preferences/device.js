@@ -208,41 +208,6 @@ const  ConfigureWindow = GObject.registerClass({
         indicatorRow.activatable_widget = dropDown;
         indicatorGroup.add(indicatorRow);
         page.add(indicatorGroup);
-
-        if (pathInfo.isEnhancedDevice === 'gfps') {
-            const budsLinkGroup = new Adw.PreferencesGroup({
-                title: _('BudsLink Companion'),
-            });
-
-            const disableGfpsRow = new Adw.SwitchRow({
-                title: _('Disable Google Fast Pair'),
-                subtitle: _('Use BlueZ battery reporting instead for this device'),
-            });
-
-            disableGfpsRow.active = !pathInfo.gfps;
-
-            disableGfpsRow.connect('notify::active', () => {
-                const pairedDevices = settings.get_strv('device-list');
-                const existingPathIndex = pairedDevices.findIndex(
-                    item => JSON.parse(item).path === pathInfo.path
-                );
-
-                if (existingPathIndex === -1)
-                    return;
-
-                const existingItem = JSON.parse(pairedDevices[existingPathIndex]);
-
-                existingItem.gfps = !disableGfpsRow.active;
-
-                pairedDevices[existingPathIndex] = JSON.stringify(existingItem);
-
-                settings.set_strv('device-list', pairedDevices);
-                pathInfo.gfps = existingItem.gfps;
-            });
-
-            budsLinkGroup.add(disableGfpsRow);
-            page.add(budsLinkGroup);
-        }
     }
 }
 );
@@ -365,7 +330,6 @@ export const  Device = GObject.registerClass({
                 qsLevelEnabled: info['qs-level'],
                 indicatorMode: info['indicator-mode'],
                 isEnhancedDevice: info['enhanced-device'],
-                gfps: info.gfps ?? true,
             };
             if (this._deviceItems.has(pathInfo.path)) {
                 const row = this._deviceItems.get(pathInfo.path);
