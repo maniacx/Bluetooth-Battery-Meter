@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Bluetooth Battery Meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-10-02 20:56+0000\n"
+"PO-Revision-Date: 2026-10-25 01:07+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/sk/>\n"
@@ -267,8 +267,8 @@ msgid ""
 "for details."
 msgstr ""
 "Niektoré Bluetooth zariadenia nehlásia úroveň batérie, kým nie sú v systéme "
-"povolené experimentálne funkcie Bluez. Podrobnosti nájdete v <a "
-"href=\"%s\">dokumentácii</a>."
+"povolené experimentálne funkcie Bluez. Podrobnosti nájdete v <a href=\"%s\">"
+"dokumentácii</a>."
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
@@ -717,8 +717,7 @@ msgstr "Povoliť popisky"
 
 #: ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
-msgstr ""
-"Zobrazovať popisky pri prechádzaní kurzorom nad neoznačenými tlačidlami"
+msgstr "Zobrazovať popisky pri prechádzaní kurzorom nad neoznačenými tlačidlami"
 
 #: ui/indicator.ui:107
 msgid "Default Behaviour"
