@@ -40,7 +40,7 @@ permalink: /
 
 <br>
 # Disclaimer
-**This project is an independent effort and is not affiliated with, endorsed by, or sponsored by Apple, Sony, Samsung, Nothing/CMF, Bose, Redmi, Xiaomi, Sennheiser, Realme, Oppo, OnePlus,  Cambridge Audio. All product and company names are trademarks™ or registered® trademarks of their respective holders and are used for identification purposes only.**
+**This project is an independent effort and is not affiliated with, endorsed by, or sponsored by Apple, Sony, Samsung, Google, Nothing, Bose, Redmi, Xiaomi, Sennheiser, Edifier, Cambridge Audio, SoundCore, Realme, Oppo, or OnePlus. All product and company names are trademarks™ or registered® trademarks of their respective holders and are used for identification purposes only.**
 
 
 
@@ -122,6 +122,7 @@ Supported device families include:
 * Edifier
 * Realme / Oppo / OnePlus
 * Cambridge Audio Melomania
+* Soundcore
 
 [Compatibility List](https://maniacx.github.io/BudsLink/devices)
 
