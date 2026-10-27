@@ -8,7 +8,9 @@ permalink: /changelogs
 # Changelogs
 
 {: .important-title }
-> GN-46_Version 50 &emsp;&emsp; Upcoming
+> GN-46_Version 50 &emsp;&emsp; Oct 27, 2026
+> * Add soundcore Device
+> * Make onHoverMode compatible with extensions like Hide Top Nav Bar
 > * Bugfix: Update device settings for Gattbas and Budslink
 > * Weblate translations update
 
