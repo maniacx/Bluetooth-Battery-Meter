@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-09-15 08:01+0000\n"
+"PO-Revision-Date: 2026-10-31 10:35+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/fr/>\n"
@@ -96,7 +96,7 @@ msgstr "Icône"
 #: preferences/device.js:68 preferences/upowerDevices.js:51
 #: preferences/gattBas.js:46 preferences/gattBas.js:51
 msgid "Select Icon"
-msgstr "Sélectionnez l'icône"
+msgstr "Sélectionner une icône"
 
 #: preferences/device.js:69 preferences/upowerDevices.js:52
 msgid "Select the icon used for the indicator and quick menu"
@@ -512,7 +512,7 @@ msgstr "Personnalisé"
 
 #: ui/device.ui:5
 msgid "Device"
-msgstr "Périphérique"
+msgstr "Appareil"
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
@@ -750,7 +750,7 @@ msgstr "Cacher sous condition"
 
 #: ui/indicator.ui:114
 msgid "Off"
-msgstr "Désactivé"
+msgstr "Éteint"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
@@ -762,7 +762,7 @@ msgstr "Bouton du panneau"
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "Compagnon BudsLink"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
@@ -821,15 +821,3 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr "Aucun appareil compatible appairé !"
-
-#~ msgid "Reported from enhanced device service"
-#~ msgstr "Signalé par le service de périphérique amélioré"
-
-#~ msgid "This is an enhanced device"
-#~ msgstr "Il s’agit d’un appareil amélioré"
-
-#~ msgid ""
-#~ "Icon selection if available are in Enhanced device per device settings"
-#~ msgstr ""
-#~ "La sélection d’icônes, si disponible, se trouve dans les paramètres "
-#~ "avancés par appareil"
