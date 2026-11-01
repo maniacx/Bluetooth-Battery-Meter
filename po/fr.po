@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: bluetooth-battery-meter\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-10-31 10:35+0000\n"
+"PO-Revision-Date: 2026-11-01 10:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/fr/>\n"
@@ -83,11 +83,11 @@ msgstr "Indisponible"
 
 #: preferences/device.js:55
 msgid "Reported from Battery Service (BAS)"
-msgstr ""
+msgstr "Signalé par le service de batterie (BAS)"
 
 #: preferences/device.js:57
 msgid "Reported from BudsLink app"
-msgstr ""
+msgstr "Signalé par l'application BudsLink"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
@@ -105,18 +105,20 @@ msgstr "Sélectionnez l'icône utilisée pour l'indicateur et le menu rapide"
 #: preferences/device.js:76
 msgid "Icon can be configured in Battery Service (BAS) Settings"
 msgstr ""
+"L'icône peut être configurée dans les paramètres du service de batterie (BAS)"
 
 #: preferences/device.js:77
 msgid "Go to Battery Service (BAS) Settings to change the icon"
 msgstr ""
+"Accédez aux paramètres du service de batterie (BAS) pour changer l'icône"
 
 #: preferences/device.js:79
 msgid "Icon can be configured in the BudsLink app"
-msgstr ""
+msgstr "L'icône peut être configurée dans l'application BudsLink"
 
 #: preferences/device.js:80
 msgid "Open the BudsLink app to change the icon"
-msgstr ""
+msgstr "Ouvrez l'application BudsLink pour changer l'icône"
 
 #: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
@@ -128,10 +130,7 @@ msgstr "Afficher le niveau de la batterie"
 
 #: preferences/device.js:146
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
-"Afficher le niveau de batterie dans le menu rapide du panneau "
-"BluetoothAfficher le niveau de la batterie dans le menu rapide du panneau "
-"Bluetooth"
+msgstr "Afficher le niveau de batterie dans le menu rapide du panneau Bluetooth"
 
 #: preferences/device.js:166 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
@@ -155,7 +154,7 @@ msgstr "Afficher l'icône sans niveau de batterie"
 
 #: preferences/device.js:177
 msgid "Show Icon with Battery Level"
-msgstr "Afficher l'icône sans niveau de batterie"
+msgstr "Afficher l'icône avec le niveau de batterie"
 
 #: preferences/device.js:180 preferences/upowerDevices.js:138
 msgid "Hide Icon"
@@ -163,7 +162,7 @@ msgstr "Masquer l'icône"
 
 #: preferences/device.js:181 preferences/upowerDevices.js:139
 msgid "Show Icon"
-msgstr "Montrer icône"
+msgstr "Afficher l'icône"
 
 #: preferences/device.js:229 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
@@ -174,9 +173,8 @@ msgstr "Configurer l'appareil."
 msgid ""
 "Delete device information: The button is available after unpairing device"
 msgstr ""
-"Delete appareil information: The bouton is disponible après unpairing "
-"appareilSupprimer les informations du périphérique : le bouton est "
-"disponible après avoir désappairé l'appareil"
+"Supprimer les informations de l'appareil : le bouton est disponible après "
+"avoir désappairé l'appareil"
 
 #: preferences/device.js:275
 msgid "(Removed)"
@@ -192,10 +190,14 @@ msgid ""
 "and access advanced controls such as noise control, equalizer, and gestures, "
 "when supported by the device"
 msgstr ""
+"Installez BudsLink depuis Flathub pour surveiller les niveaux de batterie de "
+"plusieurs appareils et accéder à des commandes avancées telles que le "
+"contrôle du bruit, l'égaliseur et les gestes, lorsque l'appareil le prend en "
+"charge"
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+msgstr "Les écouteurs et casques actuellement pris en charge sont :"
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
@@ -231,23 +233,23 @@ msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "Installée"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
-msgstr ""
+msgstr "Mettre à jour l'extension"
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "Mettre à jour BudsLink"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "Non installée"
 
 #: preferences/budslinkCompanion.js:80
 msgid "Refresh"
-msgstr ""
+msgstr "Actualiser"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
@@ -283,9 +285,8 @@ msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
 msgstr ""
-"Delete appareil information: The bouton is disponible après upower appareil "
-"are retiréSupprimer les informations du périphérique : le bouton est "
-"disponible après avoir désappairé l'appareil"
+"Supprimer les informations de l'appareil : le bouton est disponible après la "
+"suppression de l'appareil UPower"
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
@@ -311,7 +312,7 @@ msgid ""
 "href=\"%s\">%s</a> for details."
 msgstr ""
 "Cette application est fournie sans aucune garantie. Consultez la page <a "
-"href=\"%s\">%s</a> pour plus de détails."
+"href=\"%s\">%s</a> pour plus d'informations."
 
 #: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
@@ -344,7 +345,7 @@ msgstr "Service de batterie (BAS)"
 #: preferences/gattBas.js:188
 #, javascript-format
 msgid "The button is available after disabling %s mode"
-msgstr "The bouton is disponible après disabling %s mode"
+msgstr "Le bouton est disponible après avoir désactivé le mode %s"
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
@@ -365,13 +366,9 @@ msgid ""
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
 "Certains appareils UPower, tels que la souris sans fil 2,4 GHz, le clavier, "
-"etc., peuvent signaler les niveaux de batterie s’ils sont pris en charge par "
+"etc., peuvent signaler les niveaux de batterie s'ils sont pris en charge par "
 "le noyau ou des pilotes tiers. Activez cette option pour afficher leur état "
-"de batterie dans la barre d’état système GNOME.Certains périphériques "
-"UPower, tels que la souris sans fil 2.4GHz, le clavier, etc, peuvent "
-"signaler les niveaux de batterie si pris en charge par le noyau ou par des "
-"pilotes tiers. Activez cette option pour afficher leur état de batterie dans "
-"la barre d'état système GNOME."
+"de batterie dans la barre d'état système GNOME."
 
 #: ui/upowerDevices.ui:20 ui/device.ui:9 ui/gattBas.ui:30
 msgid "Configuration by Device"
@@ -380,13 +377,12 @@ msgstr "Configuration par appareil"
 #: ui/upowerDevices.ui:21 ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
 msgstr ""
-"Remarque : les paramètres généraux remplacent les paramètres spécifiques à "
-"l’appareilNote: Les paramètres généraux remplacent les paramètres "
-"spécifiques à l'appareil"
+"Remarque : les paramètres généraux remplacent les paramètres spécifiques à "
+"l'appareil"
 
 #: ui/upowerDevices.ui:24
 msgid "No compatible device found!"
-msgstr "Aucun appareil compatible détecté!"
+msgstr "Aucun appareil compatible trouvé !"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
@@ -424,9 +420,7 @@ msgstr "Afficher le pourcentage de batterie sous forme de texte"
 #: ui/batteryWidgetSettings.ui:24
 msgid "Displays battery percentage beside the Bluetooth device icon"
 msgstr ""
-"Affiche le pourcentage de batterie à côté de l’icône de l’appareil "
-"BluetoothAffiche le pourcentage de la batterie à côté de l'icône du "
-"périphérique Bluetooth"
+"Affiche le pourcentage de batterie à côté de l'icône de l'appareil Bluetooth"
 
 #: ui/batteryWidgetSettings.ui:29
 msgid "Battery Level Indicator Type"
@@ -460,7 +454,7 @@ msgstr ""
 
 #: ui/batteryWidgetSettings.ui:71
 msgid "Battery Indicator Color Scheme"
-msgstr "Schéma de couleur indicateur de batterie"
+msgstr "Schéma de couleurs de l'indicateur de batterie"
 
 #: ui/batteryWidgetSettings.ui:72
 msgid "Choose color scheme for level bar/dots"
@@ -500,7 +494,7 @@ msgstr "En dessous"
 
 #: ui/batteryWidgetSettings.ui:124 ui/batteryWidgetSettings.ui:131
 msgid "Symbolic"
-msgstr "Symbolic"
+msgstr "Symbolique"
 
 #: ui/batteryWidgetSettings.ui:125 ui/batteryWidgetSettings.ui:132
 msgid "Colored"
@@ -581,14 +575,13 @@ msgstr ""
 
 #: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
-msgstr "Activer les indicateurs de batterie pour les appareils Bluetooth"
+msgstr "Afficher l'icône de batterie des appareils Bluetooth"
 
 #: ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
 msgstr ""
 "Affiche une icône dans le menu contextuel pour le niveau de batterie de "
-"l’appareil BluetoothAffiche une icône dans le menu contextuel pour le niveau "
-"de batterie de l'appareil Bluetooth"
+"l'appareil Bluetooth"
 
 #: ui/quickSettings.ui:38
 msgid "Show Bluetooth device battery percentage"
@@ -605,9 +598,8 @@ msgstr "Afficher l'icône du niveau de batterie avant le texte"
 #: ui/quickSettings.ui:45
 msgid "Swaps position of battery level icon and percentage text"
 msgstr ""
-"Interverti la position de l’icône du niveau de batterie et du texte en "
-"pourcentageInterverti la position de l'icône du niveau de batterie et du "
-"texte en pourcentage"
+"Intervertit la position de l'icône de niveau de batterie et du texte en "
+"pourcentage"
 
 #: ui/quickSettings.ui:52
 msgid "Sort By History"
@@ -623,9 +615,7 @@ msgid ""
 "connection status and alias"
 msgstr ""
 "Activez pour trier les appareils par historique de connexion, ou désactivez "
-"pour trier par statut de connexion et aliasActiver pour trier les appareils "
-"par historique de connexion, ou désactiver pour trier par statut de "
-"connexion et alias"
+"pour trier par statut de connexion et alias"
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
@@ -640,9 +630,8 @@ msgid ""
 "Hide conditionally: Displayed only when no other bluetooth related "
 "indicators are present"
 msgstr ""
-"Masquer conditionnellement : affiché uniquement lorsqu’aucun autre "
-"indicateur lié au Bluetooth n’est présentMasquer conditionnellement: Affiché "
-"uniquement quand aucun autre indicateur Bluetooth n'est présent"
+"Masquer conditionnellement : affiché uniquement lorsqu'aucun autre "
+"indicateur lié au Bluetooth n'est présent"
 
 #: ui/indicator.ui:27
 msgid "Battery Indicator Settings"
@@ -673,8 +662,8 @@ msgstr "Mode d’indicateur du bouton du panneau."
 #: ui/indicator.ui:49
 msgid "On: Show one selected device. Off: Show all devices"
 msgstr ""
-"Activé : montrer un seul appareil sélectionné. Désactivé : montrer tous les "
-"appareils"
+"Activé : afficher un seul appareil sélectionné. Désactivé : afficher tous "
+"les appareils"
 
 #: ui/indicator.ui:56
 msgid "Indicator Settings"
@@ -746,7 +735,7 @@ msgstr "Toujours masquer"
 
 #: ui/indicator.ui:109
 msgid "Hide Conditionally"
-msgstr "Cacher sous condition"
+msgstr "Masquer sous condition"
 
 #: ui/indicator.ui:114
 msgid "Off"
@@ -766,37 +755,40 @@ msgstr "Compagnon BudsLink"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
-msgstr ""
+msgstr "Activer l'intégration BudsLink"
 
 #: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
+"Fait office de compagnon de l'application BudsLink, qui s'exécute en arrière-"
+"plan pour fournir des fonctionnalités supplémentaires pour les casques et "
+"écouteurs pris en charge"
 
 #: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
-msgstr ""
+msgstr "Masquer des applications en arrière-plan"
 
 #: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
-msgstr ""
+msgstr "Masquer BudsLink de la liste des applications en arrière-plan de GNOME"
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
-msgstr ""
+msgstr "État de l'installation"
 
 #: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
-msgstr ""
+msgstr "État de l'installation de BudsLink"
 
 #: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
-msgstr ""
+msgstr "BudsLink sur Flathub"
 
 #: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
-msgstr ""
+msgstr "Documentation de BudsLink"
 
 #: ui/gattBas.ui:16
 msgid "Experimental"
