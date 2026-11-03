@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-09-27 00:51+0000\n"
+"PO-Revision-Date: 2026-11-03 02:41+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/de/>\n"
@@ -39,8 +39,9 @@ msgstr ""
 
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
+#, fuzzy
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "Bluetooth Battery Meter"
 
 #: lib/bluetoothToggle.js:541
 #, javascript-format
@@ -101,7 +102,7 @@ msgstr "Nicht verfügbar"
 
 #: preferences/device.js:55
 msgid "Reported from Battery Service (BAS)"
-msgstr ""
+msgstr " "
 
 #: preferences/device.js:57
 msgid "Reported from BudsLink app"
@@ -800,15 +801,3 @@ msgstr ""
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
 msgstr "Kein kompatibles Gerät gekoppelt!"
-
-#~ msgid "Reported from enhanced device service"
-#~ msgstr "Vom erweiterten Gerätedienst gemeldet"
-
-#~ msgid "This is an enhanced device"
-#~ msgstr "Dies ist ein erweitertes Gerät"
-
-#~ msgid ""
-#~ "Icon selection if available are in Enhanced device per device settings"
-#~ msgstr ""
-#~ "Symbolauswahl, falls verfügbar in Erweiterten Geräten pro "
-#~ "Geräteeinstellungen"
