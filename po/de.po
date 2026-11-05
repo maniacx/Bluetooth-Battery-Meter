@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-11-03 02:41+0000\n"
+"PO-Revision-Date: 2026-11-06 11:34+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/de/>\n"
@@ -39,9 +39,8 @@ msgstr ""
 
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
-#, fuzzy
 msgid "Bluetooth Battery Meter"
-msgstr "Bluetooth Battery Meter"
+msgstr "Bluetooth-Akkuanzeige"
 
 #: lib/bluetoothToggle.js:541
 #, javascript-format
@@ -94,7 +93,7 @@ msgstr "Batteriestatus:"
 
 #: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Reported"
-msgstr ""
+msgstr "Gemeldet"
 
 #: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Not Available"
@@ -102,11 +101,11 @@ msgstr "Nicht verfügbar"
 
 #: preferences/device.js:55
 msgid "Reported from Battery Service (BAS)"
-msgstr " "
+msgstr "Gemeldet vom Battery Service (BAS)"
 
 #: preferences/device.js:57
 msgid "Reported from BudsLink app"
-msgstr ""
+msgstr "Von der BudsLink-App gemeldet"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
@@ -124,18 +123,19 @@ msgstr "Symbol für Anzeige und Schnellmenü auswählen"
 #: preferences/device.js:76
 msgid "Icon can be configured in Battery Service (BAS) Settings"
 msgstr ""
+"Das Icon kann in den Battery-Service-Einstellungen (BAS) abgeändert werden"
 
 #: preferences/device.js:77
 msgid "Go to Battery Service (BAS) Settings to change the icon"
-msgstr ""
+msgstr "Gehe in die Battery-Service-Einstellungen (BAS), um das Icon zu ändern"
 
 #: preferences/device.js:79
 msgid "Icon can be configured in the BudsLink app"
-msgstr ""
+msgstr "Icon kann in der BudsLink-App konfiguriert werden"
 
 #: preferences/device.js:80
 msgid "Open the BudsLink app to change the icon"
-msgstr ""
+msgstr "Öffne die BudsLink-App, um das Icon zu ändern"
 
 #: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
@@ -151,11 +151,11 @@ msgstr "Akkustand im Schnellmenü der Bluetooth-Anzeige anzeigen"
 
 #: preferences/device.js:166 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "Anzeige"
 
 #: preferences/device.js:170 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
-msgstr ""
+msgstr "Konfiguriere die Anzeige"
 
 #: preferences/device.js:171 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
@@ -175,7 +175,7 @@ msgstr "Symbol mit Akkustand anzeigen"
 
 #: preferences/device.js:180 preferences/upowerDevices.js:138
 msgid "Hide Icon"
-msgstr ""
+msgstr "Verstecke das Icon"
 
 #: preferences/device.js:181 preferences/upowerDevices.js:139
 msgid "Show Icon"
@@ -184,7 +184,7 @@ msgstr "Symbol anzeigen"
 #: preferences/device.js:229 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
 msgid "Configure device."
-msgstr ""
+msgstr "Konfiguriere das Gerät."
 
 #: preferences/device.js:243
 msgid ""
@@ -207,10 +207,13 @@ msgid ""
 "and access advanced controls such as noise control, equalizer, and gestures, "
 "when supported by the device"
 msgstr ""
+"Installiere BudsLink von Flathub, um den Akkustand mehrerer Geräte zu "
+"überwachen und erweiterte Steuerungen wie Geräuschsteuerung, Equalizer und "
+"Gesten zu nutzen, wenn das Gerät es unterstützt"
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+msgstr "Zurzeit unterstützte Kopfhörer:"
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
@@ -246,33 +249,33 @@ msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "Installiert"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
-msgstr ""
+msgstr "Aktualisiere die Extension"
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "Aktualisiere BudsLink"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "Nicht installiert"
 
 #: preferences/budslinkCompanion.js:80
 msgid "Refresh"
-msgstr ""
+msgstr "Neu laden"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
 msgid "Assign color for %d – %d%%"
-msgstr ""
+msgstr "Farbe zuweisen für %d – %d%%"
 
 #: preferences/batteryWidgetSettings.js:18
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
+msgstr "Farbe für den Akkustandsbereich von %d –%d%% festlegen"
 
 #: preferences/quickSettings.js:78
 #, javascript-format
@@ -281,28 +284,33 @@ msgid ""
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"Manche Bluetooth-Geräte geben ihren Akkustand erst an, wenn die "
+"experimentellen Funktionen von BlueZ im System aktiviert sind. Die Details "
+"findest du hier <a href=\"%s\">Readme</a> ."
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 #: preferences/upowerDevices.js:105
 msgid "Device Alias"
-msgstr ""
+msgstr "Geräte-Alias"
 
 #: preferences/upowerDevices.js:199
 msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
 msgstr ""
+"Geräteinformationen löschen: Dieser Button ist verfügbar, nachdem UPower-"
+"Geräte entfernt wurden"
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
-msgstr ""
+msgstr "(Offline)"
 
 #: preferences/upowerDevices.js:233
 msgid "(Online)"
-msgstr ""
+msgstr "(Online)"
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
@@ -319,16 +327,16 @@ msgid ""
 "This application comes with absolutely no warranty. See the <a "
 "href=\"%s\">%s</a> for details."
 msgstr ""
-"Dieses Programm kommt OHNE JEDWEDE GARANTIE.\n"
-"Besuchen Sie <a href=\"%s\">%s</a> für weitere Informationen."
+"Dieses Programm kommt OHNE JEGLICHE GARANTIE. Besuchen Sie <a href=\"%s\">"
+"%s</a> für weitere Informationen."
 
 #: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
-msgstr ""
+msgstr "Einzelanzeige, Panel-Button, Schnellmenü, Albumcover"
 
 #: preferences/gattBas.js:52
 msgid "Multiple Indicators, Circular Battery Widgets"
-msgstr ""
+msgstr "Mehrfachanzeigen, Kreisförmige Batterie-Widgets"
 
 #: preferences/gattBas.js:60
 msgid "Icon "
@@ -336,24 +344,24 @@ msgstr "Symbol "
 
 #: preferences/gattBas.js:69
 msgid "Battery 1 Icon"
-msgstr ""
+msgstr "Symbol für Batterie 1"
 
 #: preferences/gattBas.js:78
 msgid "Battery 2 Icon"
-msgstr ""
+msgstr "Symbol für Batterie 2"
 
 #: preferences/gattBas.js:87
 msgid "Battery 3 Icon"
-msgstr ""
+msgstr "Symbol für Batterie 3"
 
 #: preferences/gattBas.js:185 ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
-msgstr ""
+msgstr "Battery Service (BAS)"
 
 #: preferences/gattBas.js:188
 #, javascript-format
 msgid "The button is available after disabling %s mode"
-msgstr ""
+msgstr "Der Button ist verfügbar, nachdem %s-Modus deaktiviert wurde"
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
@@ -405,6 +413,8 @@ msgid ""
 "Indicator Battery Widget Settings available only for System Tray mode or "
 "Panel Button mode with multiple indicators"
 msgstr ""
+"Batterie-Widget sind nur im Systemtray-Modus oder im Panel-Button-Modus mit "
+"Mehrfachanzeigen verfügbar"
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
@@ -450,6 +460,8 @@ msgid ""
 "Adjust the size of the device icon displayed above the battery level "
 "indicator"
 msgstr ""
+"Passe die Größe des Geräte-Icons an, das über der Batteriestandsanzeige "
+"angezeigt wird"
 
 #: ui/batteryWidgetSettings.ui:71
 msgid "Battery Indicator Color Scheme"
@@ -461,15 +473,15 @@ msgstr "Farbschema für Akkuleiste/Punkte auswählen"
 
 #: ui/batteryWidgetSettings.ui:89
 msgid "Circle Widget Settings"
-msgstr ""
+msgstr "Einstellungen für Kreis-Widget"
 
 #: ui/batteryWidgetSettings.ui:92
 msgid "Circle Widget Color Scheme"
-msgstr ""
+msgstr "Farbschema für Kreis-Widget"
 
 #: ui/batteryWidgetSettings.ui:93
 msgid "Choose color scheme for battery circle widget"
-msgstr ""
+msgstr "Wähle ein Farbschema für das Batterie-Kreis-Widget aus"
 
 #: ui/batteryWidgetSettings.ui:111
 msgid "Battery Level Bar"
@@ -561,29 +573,31 @@ msgstr "Akkuinformationen und Gerätesteuerung zum Menü hinzufügen"
 
 #: ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
-msgstr ""
+msgstr "Aktiviere Widget-Modus für Popup-Untermenü"
 
 #: ui/quickSettings.ui:27
 msgid ""
 "Adds a submenu that displays battery levels and other controls (ANC) if "
 "available"
 msgstr ""
+"Fügt ein Untermenü hinzu, das den Batteriestand und andere Einstellungen "
+"(ANC) anzeigt, wenn diese verfügbar sind"
 
 #: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
-msgstr ""
+msgstr "Zeige das Batterie-Icon für Bluetooth-Geräte an"
 
 #: ui/quickSettings.ui:33
 msgid "Displays an icon in the popup menu for Bluetooth device battery level"
-msgstr ""
+msgstr "Zeigt ein Icon im Popup-Menü für den Akkustand der Bluetooth-Geräte"
 
 #: ui/quickSettings.ui:38
 msgid "Show Bluetooth device battery percentage"
-msgstr ""
+msgstr "Akkustand von Bluetooth-Geräten in Prozent anzeigen"
 
 #: ui/quickSettings.ui:39
 msgid "Displays Bluetooth device battery level percentage in text"
-msgstr ""
+msgstr "Akkustand von Bluetooth-Geräten als Text in Prozent anzeigen"
 
 #: ui/quickSettings.ui:44
 msgid "Display battery level icon before text"
