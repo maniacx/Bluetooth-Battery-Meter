@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-11-06 11:34+0000\n"
+"PO-Revision-Date: 2026-11-06 11:46+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/es/>\n"
@@ -638,11 +638,11 @@ msgstr ""
 
 #: ui/indicator.ui:27
 msgid "Battery Indicator Settings"
-msgstr ""
+msgstr "Configuración del indicador de batería"
 
 #: ui/indicator.ui:30
 msgid "Choose Indicator mode"
-msgstr ""
+msgstr "Elegir el modo del indicador"
 
 #: ui/indicator.ui:31
 msgid ""
@@ -650,18 +650,23 @@ msgid ""
 "System Indicator: Battery icon in top bar.\n"
 "Panel Button: Battery icon with menu."
 msgstr ""
+"Desactivado: sin indicador de batería.\n"
+"Indicador del sistema: icono de batería en la barra superior.\n"
+"Botón del panel: icono de batería con menú."
 
 #: ui/indicator.ui:45
 msgid "Panel Button Mode"
-msgstr ""
+msgstr "Modo de botón del panel"
 
 #: ui/indicator.ui:48
 msgid "Panel button indicator mode."
-msgstr ""
+msgstr "Modo del indicador del botón del panel."
 
 #: ui/indicator.ui:49
 msgid "On: Show one selected device. Off: Show all devices"
 msgstr ""
+"Activado: mostrar un dispositivo seleccionado. Desactivado: mostrar todos "
+"los dispositivos"
 
 #: ui/indicator.ui:56
 msgid "Indicator Settings"
@@ -669,7 +674,7 @@ msgstr "Configuración de los indicadores"
 
 #: ui/indicator.ui:59
 msgid "Show Multiple Battery Indicators per Device"
-msgstr ""
+msgstr "Mostrar varios indicadores de batería por dispositivo"
 
 #: ui/indicator.ui:60
 msgid ""
@@ -677,42 +682,52 @@ msgid ""
 "indicator for each battery. When disabled, shows a single indicator "
 "representing the most critical (lowest) battery level of the device."
 msgstr ""
+"En los dispositivos con varias baterías, al activar esta opción se muestra "
+"un indicador independiente para cada batería. Al desactivarla, se muestra un "
+"único indicador con el nivel de batería más bajo del dispositivo."
 
 #: ui/indicator.ui:67
 msgid "Show Popup on Hover"
-msgstr ""
+msgstr "Mostrar una ventana emergente al pasar el puntero por encima"
 
 #: ui/indicator.ui:70
 msgid "Show Detailed Info on Hover"
-msgstr ""
+msgstr "Mostrar información detallada al pasar el puntero por encima"
 
 #: ui/indicator.ui:71
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
 msgstr ""
+"Muestra una ventana emergente con información de la batería y controles "
+"cuando el puntero del ratón permanece sobre el indicador durante el tiempo "
+"configurado"
 
 #: ui/indicator.ui:76
 msgid "Hover Activation Delay"
-msgstr ""
+msgstr "Tiempo de espera para la activación al pasar el puntero por encima"
 
 #: ui/indicator.ui:77
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
+"Especifica cuántos segundos debe permanecer el puntero del ratón sobre el "
+"indicador antes de mostrar la información detallada."
 
 #: ui/indicator.ui:95
 msgid "Tooltips"
-msgstr ""
+msgstr "Descripciones emergentes"
 
 #: ui/indicator.ui:98
 msgid "Enable tooltips"
-msgstr ""
+msgstr "Activar las descripciones emergentes"
 
 #: ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
 msgstr ""
+"Mostrar descripciones emergentes al pasar el puntero sobre los botones sin "
+"etiqueta"
 
 #: ui/indicator.ui:107
 msgid "Default Behaviour"
@@ -728,72 +743,77 @@ msgstr "Ocultar condicionalmente"
 
 #: ui/indicator.ui:114
 msgid "Off"
-msgstr ""
+msgstr "Desactivado"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
-msgstr ""
+msgstr "Bandeja del sistema"
 
 #: ui/indicator.ui:116
 msgid "Panel Button"
-msgstr ""
+msgstr "Botón del panel"
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "Complemento de BudsLink"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
-msgstr ""
+msgstr "Activar la integración con BudsLink"
 
 #: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
+"Funciona como complemento de la aplicación BudsLink, que se ejecuta en "
+"segundo plano para ofrecer funciones adicionales en los auriculares de "
+"diadema e intraurales compatibles"
 
 #: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
-msgstr ""
+msgstr "Ocultar de las aplicaciones en segundo plano"
 
 #: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
-msgstr ""
+msgstr "Ocultar BudsLink de la lista de aplicaciones en segundo plano de GNOME"
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
-msgstr ""
+msgstr "Estado de la instalación"
 
 #: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
-msgstr ""
+msgstr "Estado de la instalación de BudsLink"
 
 #: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
-msgstr ""
+msgstr "BudsLink en Flathub"
 
 #: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
-msgstr ""
+msgstr "Documentación de BudsLink"
 
 #: ui/gattBas.ui:16
 msgid "Experimental"
-msgstr ""
+msgstr "Experimental"
 
 #: ui/gattBas.ui:19
 msgid "Battery Service (BAS) Settings"
-msgstr ""
+msgstr "Configuración del Servicio de Batería (BAS)"
 
 #: ui/gattBas.ui:22
 msgid "Enable GATT Battery Service Reporting"
-msgstr ""
+msgstr "Activar la obtención de información del Servicio de Batería GATT"
 
 #: ui/gattBas.ui:23
 msgid ""
 "Display battery levels for Bluetooth devices using the GATT Battery Service "
 "(BAS)."
 msgstr ""
+"Mostrar los niveles de batería de los dispositivos Bluetooth mediante el "
+"Servicio de Batería GATT (BAS)."
 
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
-msgstr ""
+msgstr "¡No hay ningún dispositivo compatible emparejado!"
