@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-10-25 01:07+0000\n"
+"PO-Revision-Date: 2026-11-06 11:46+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/es/>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "Medidor de Batería Bluetooth"
 
 #: lib/bluetoothToggle.js:541
 #, javascript-format
@@ -36,7 +36,7 @@ msgstr[1] "%d conectados"
 
 #: lib/widgets/panelPopupMenu.js:130
 msgid "Expand submenu"
-msgstr ""
+msgstr "Expandir submenú"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
 #: lib/widgets/bluetoothPopupMenu.js:82
@@ -62,15 +62,15 @@ msgstr "Conectar a %s"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "Fijar al panel"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr ""
+msgstr "Configuración del dispositivo"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Colapsar submenú"
 
 #: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Battery Status:"
@@ -86,11 +86,11 @@ msgstr "No disponible"
 
 #: preferences/device.js:55
 msgid "Reported from Battery Service (BAS)"
-msgstr ""
+msgstr "Informado desde el Servicio de Batería (BAS)"
 
 #: preferences/device.js:57
 msgid "Reported from BudsLink app"
-msgstr ""
+msgstr "Informado desde BudsLink app"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
@@ -108,18 +108,21 @@ msgstr "Seleccionar el icono usado para el indicador y el menú rápido"
 #: preferences/device.js:76
 msgid "Icon can be configured in Battery Service (BAS) Settings"
 msgstr ""
+"El icono se puede configurar en la configuración del Servicio de Batería "
+"(BAS)"
 
 #: preferences/device.js:77
 msgid "Go to Battery Service (BAS) Settings to change the icon"
 msgstr ""
+"Ve a la configuración del Servicio de Batería (BAS) para cambiar el icono"
 
 #: preferences/device.js:79
 msgid "Icon can be configured in the BudsLink app"
-msgstr ""
+msgstr "El icono se puede configurar en la aplicación BudsLink"
 
 #: preferences/device.js:80
 msgid "Open the BudsLink app to change the icon"
-msgstr ""
+msgstr "Abre la aplicación BudsLink para cambiar el icono"
 
 #: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
@@ -191,14 +194,18 @@ msgid ""
 "and access advanced controls such as noise control, equalizer, and gestures, "
 "when supported by the device"
 msgstr ""
+"Instale BudsLink desde Flathub para monitorizar los niveles de batería de "
+"múltiples dispositivos y para acceder a controles avanzados como el control "
+"de la cancelación de ruido, el ecualizador y los gestos, cuando el "
+"dispositivo lo permita"
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+msgstr "Los auriculares de casco y diadema soportados actualmente son:"
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
-msgstr ""
+msgstr "AirPods"
 
 #: preferences/budslinkCompanion.js:58
 msgid "Beats"
@@ -230,23 +237,23 @@ msgstr "Redmi / Xiaomi"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "Instalado"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
-msgstr ""
+msgstr "Actualizar Extensión"
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "Actualizar BudsLink"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "No Instalado"
 
 #: preferences/budslinkCompanion.js:80
 msgid "Refresh"
-msgstr ""
+msgstr "Actualizar"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
@@ -271,25 +278,27 @@ msgstr ""
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 #: preferences/upowerDevices.js:105
 msgid "Device Alias"
-msgstr ""
+msgstr "Alias del Dispositivo"
 
 #: preferences/upowerDevices.js:199
 msgid ""
 "Delete device information: The button is available after upower device are "
 "removed"
 msgstr ""
+"Borrar información del dispositivo: El botón está disponible una vez "
+"retirado el dispositivo upower"
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
-msgstr ""
+msgstr "(Sin conexión)"
 
 #: preferences/upowerDevices.js:233
 msgid "(Online)"
-msgstr ""
+msgstr "(Conectado)"
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
@@ -311,11 +320,11 @@ msgstr ""
 
 #: preferences/gattBas.js:47
 msgid "Single Indicator, Panel Button, Quick Menu, Album Art"
-msgstr ""
+msgstr "Indicador Único, Botón del Panel, Menú Rápido, Carátula del Álbum"
 
 #: preferences/gattBas.js:52
 msgid "Multiple Indicators, Circular Battery Widgets"
-msgstr ""
+msgstr "Indicadores Múltiples, Widgets de Batería Circulares"
 
 #: preferences/gattBas.js:60
 msgid "Icon "
@@ -323,24 +332,24 @@ msgstr "Icono "
 
 #: preferences/gattBas.js:69
 msgid "Battery 1 Icon"
-msgstr ""
+msgstr "Icono de batería 1"
 
 #: preferences/gattBas.js:78
 msgid "Battery 2 Icon"
-msgstr ""
+msgstr "Icono de batería 2"
 
 #: preferences/gattBas.js:87
 msgid "Battery 3 Icon"
-msgstr ""
+msgstr "Icono de batería 3"
 
 #: preferences/gattBas.js:185 ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
-msgstr ""
+msgstr "Servicio de Batería (BAS)"
 
 #: preferences/gattBas.js:188
 #, javascript-format
 msgid "The button is available after disabling %s mode"
-msgstr ""
+msgstr "El botón está disponible después de desactivar el modo %s"
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
@@ -348,11 +357,11 @@ msgstr "UPower"
 
 #: ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
-msgstr ""
+msgstr "Habilitar Dispositivos UPower"
 
 #: ui/upowerDevices.ui:12
 msgid "Enable indicator for UPower devices"
-msgstr ""
+msgstr "Habilitar indicador para dispositivos UPower"
 
 #: ui/upowerDevices.ui:13
 msgid ""
@@ -360,10 +369,14 @@ msgid ""
 "report battery levels if supported by the kernel or third-party drivers. "
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
+"Algunos dispositivos UPower, como los ratones inalámbricos a 2.4GHz, "
+"teclados, etc, puede informar el nivel de batería si lo soporta el kernel o "
+"los drivers de terceros. Habilita esta opción para mostrar el estado de la "
+"batería en la bandeja de sistema de GNOME."
 
 #: ui/upowerDevices.ui:20 ui/device.ui:9 ui/gattBas.ui:30
 msgid "Configuration by Device"
-msgstr ""
+msgstr "Configuración por Dispositivo"
 
 #: ui/upowerDevices.ui:21 ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
@@ -373,11 +386,11 @@ msgstr ""
 
 #: ui/upowerDevices.ui:24
 msgid "No compatible device found!"
-msgstr ""
+msgstr "¡Dispositivo incompatible encontrado!"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
-msgstr ""
+msgstr "Configuración del Widget de Batería"
 
 #: ui/batteryWidgetSettings.ui:9
 msgid "Indicator Widget Settings"
@@ -388,16 +401,20 @@ msgid ""
 "Indicator Battery Widget Settings available only for System Tray mode or "
 "Panel Button mode with multiple indicators"
 msgstr ""
+"El Widget Indicador de Batería solo está disponible en modo Bandeja del "
+"Sistema o Panel de Botones con múltiples indicadores"
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
-msgstr ""
+msgstr "Mostrar solo el icono (Ocultar Barras/Puntos)"
 
 #: ui/batteryWidgetSettings.ui:18
 msgid ""
 "Hides the battery level indicator on the icon. Pair with text percentage for "
 "battery information"
 msgstr ""
+"Oculta el indicador de nivel de batería en el icono. Úsalo con el porcentaje "
+"en modo texto para mostrar la información de la batería"
 
 #: ui/batteryWidgetSettings.ui:23
 msgid "Display battery percentage as text"
@@ -418,21 +435,24 @@ msgstr "Los puntos ofrecen mejor visibilidad"
 
 #: ui/batteryWidgetSettings.ui:42
 msgid "Battery Bar Position"
-msgstr ""
+msgstr "Posición de la Barra de la Batería"
 
 #: ui/batteryWidgetSettings.ui:43
 msgid "Choose where to display the battery bar relative to the device icon"
 msgstr ""
+"Elije donde mostrar la barra de batería en relación al icono del dispositivo"
 
 #: ui/batteryWidgetSettings.ui:55
 msgid "Device Icon Size"
-msgstr ""
+msgstr "Tamaño del Icono del Dispositivo"
 
 #: ui/batteryWidgetSettings.ui:56
 msgid ""
 "Adjust the size of the device icon displayed above the battery level "
 "indicator"
 msgstr ""
+"Ajusta el tamaño del icono del dispositivo encima del indicador de nivel de "
+"batería"
 
 #: ui/batteryWidgetSettings.ui:71
 msgid "Battery Indicator Color Scheme"
@@ -444,15 +464,15 @@ msgstr "Elegir la combinación de colores para la barra/puntos de nivel"
 
 #: ui/batteryWidgetSettings.ui:89
 msgid "Circle Widget Settings"
-msgstr ""
+msgstr "Configuración del Widget Circular"
 
 #: ui/batteryWidgetSettings.ui:92
 msgid "Circle Widget Color Scheme"
-msgstr ""
+msgstr "Esquema de Color del Widget Circular"
 
 #: ui/batteryWidgetSettings.ui:93
 msgid "Choose color scheme for battery circle widget"
-msgstr ""
+msgstr "Elije el esquema de color para el widget circular de batería"
 
 #: ui/batteryWidgetSettings.ui:111
 msgid "Battery Level Bar"
@@ -464,15 +484,15 @@ msgstr "Punto de nivel de batería"
 
 #: ui/batteryWidgetSettings.ui:117
 msgid "Left"
-msgstr ""
+msgstr "Izquierda"
 
 #: ui/batteryWidgetSettings.ui:118
 msgid "Right"
-msgstr ""
+msgstr "Derecha"
 
 #: ui/batteryWidgetSettings.ui:119
 msgid "Below"
-msgstr ""
+msgstr "Debajo"
 
 #: ui/batteryWidgetSettings.ui:124 ui/batteryWidgetSettings.ui:131
 msgid "Symbolic"
@@ -536,21 +556,24 @@ msgstr "Configuración del menú rápido"
 
 #: ui/quickSettings.ui:20
 msgid "Modify Bluetooth device menu"
-msgstr ""
+msgstr "Modificar el menú de dispositivo Bluetooth"
 
 #: ui/quickSettings.ui:21
 msgid "Add battery information and device controls to the menu"
 msgstr ""
+"Añadir información de la batería y los controles del dispositivo al menú"
 
 #: ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
-msgstr ""
+msgstr "Activar el modo widget del submenú desplegable"
 
 #: ui/quickSettings.ui:27
 msgid ""
 "Adds a submenu that displays battery levels and other controls (ANC) if "
 "available"
 msgstr ""
+"Añadir un submenú que muestre los niveles de batería y otros controles (ANC) "
+"si están disponibles"
 
 #: ui/quickSettings.ui:32
 msgid "Show battery icon for Bluetooth devices"
@@ -583,7 +606,7 @@ msgstr ""
 
 #: ui/quickSettings.ui:52
 msgid "Sort By History"
-msgstr ""
+msgstr "Ordenar Por Historial"
 
 #: ui/quickSettings.ui:55
 msgid "Sort devices by connection history"
@@ -599,7 +622,7 @@ msgstr ""
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
-msgstr ""
+msgstr "Configuración del Indicador del Sistema Bluetooth"
 
 #: ui/indicator.ui:12
 msgid "Bluetooth Connection Status Indicator"
@@ -615,11 +638,11 @@ msgstr ""
 
 #: ui/indicator.ui:27
 msgid "Battery Indicator Settings"
-msgstr ""
+msgstr "Configuración del indicador de batería"
 
 #: ui/indicator.ui:30
 msgid "Choose Indicator mode"
-msgstr ""
+msgstr "Elegir el modo del indicador"
 
 #: ui/indicator.ui:31
 msgid ""
@@ -627,18 +650,23 @@ msgid ""
 "System Indicator: Battery icon in top bar.\n"
 "Panel Button: Battery icon with menu."
 msgstr ""
+"Desactivado: sin indicador de batería.\n"
+"Indicador del sistema: icono de batería en la barra superior.\n"
+"Botón del panel: icono de batería con menú."
 
 #: ui/indicator.ui:45
 msgid "Panel Button Mode"
-msgstr ""
+msgstr "Modo de botón del panel"
 
 #: ui/indicator.ui:48
 msgid "Panel button indicator mode."
-msgstr ""
+msgstr "Modo del indicador del botón del panel."
 
 #: ui/indicator.ui:49
 msgid "On: Show one selected device. Off: Show all devices"
 msgstr ""
+"Activado: mostrar un dispositivo seleccionado. Desactivado: mostrar todos "
+"los dispositivos"
 
 #: ui/indicator.ui:56
 msgid "Indicator Settings"
@@ -646,7 +674,7 @@ msgstr "Configuración de los indicadores"
 
 #: ui/indicator.ui:59
 msgid "Show Multiple Battery Indicators per Device"
-msgstr ""
+msgstr "Mostrar varios indicadores de batería por dispositivo"
 
 #: ui/indicator.ui:60
 msgid ""
@@ -654,42 +682,52 @@ msgid ""
 "indicator for each battery. When disabled, shows a single indicator "
 "representing the most critical (lowest) battery level of the device."
 msgstr ""
+"En los dispositivos con varias baterías, al activar esta opción se muestra "
+"un indicador independiente para cada batería. Al desactivarla, se muestra un "
+"único indicador con el nivel de batería más bajo del dispositivo."
 
 #: ui/indicator.ui:67
 msgid "Show Popup on Hover"
-msgstr ""
+msgstr "Mostrar una ventana emergente al pasar el puntero por encima"
 
 #: ui/indicator.ui:70
 msgid "Show Detailed Info on Hover"
-msgstr ""
+msgstr "Mostrar información detallada al pasar el puntero por encima"
 
 #: ui/indicator.ui:71
 msgid ""
 "Displays a popup with battery info and controls when the mouse pointer "
 "hovers over the indicator for a custom delay"
 msgstr ""
+"Muestra una ventana emergente con información de la batería y controles "
+"cuando el puntero del ratón permanece sobre el indicador durante el tiempo "
+"configurado"
 
 #: ui/indicator.ui:76
 msgid "Hover Activation Delay"
-msgstr ""
+msgstr "Tiempo de espera para la activación al pasar el puntero por encima"
 
 #: ui/indicator.ui:77
 msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
+"Especifica cuántos segundos debe permanecer el puntero del ratón sobre el "
+"indicador antes de mostrar la información detallada."
 
 #: ui/indicator.ui:95
 msgid "Tooltips"
-msgstr ""
+msgstr "Descripciones emergentes"
 
 #: ui/indicator.ui:98
 msgid "Enable tooltips"
-msgstr ""
+msgstr "Activar las descripciones emergentes"
 
 #: ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
 msgstr ""
+"Mostrar descripciones emergentes al pasar el puntero sobre los botones sin "
+"etiqueta"
 
 #: ui/indicator.ui:107
 msgid "Default Behaviour"
@@ -705,72 +743,77 @@ msgstr "Ocultar condicionalmente"
 
 #: ui/indicator.ui:114
 msgid "Off"
-msgstr ""
+msgstr "Desactivado"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
-msgstr ""
+msgstr "Bandeja del sistema"
 
 #: ui/indicator.ui:116
 msgid "Panel Button"
-msgstr ""
+msgstr "Botón del panel"
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "Complemento de BudsLink"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
-msgstr ""
+msgstr "Activar la integración con BudsLink"
 
 #: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
+"Funciona como complemento de la aplicación BudsLink, que se ejecuta en "
+"segundo plano para ofrecer funciones adicionales en los auriculares de "
+"diadema e intraurales compatibles"
 
 #: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
-msgstr ""
+msgstr "Ocultar de las aplicaciones en segundo plano"
 
 #: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
-msgstr ""
+msgstr "Ocultar BudsLink de la lista de aplicaciones en segundo plano de GNOME"
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
-msgstr ""
+msgstr "Estado de la instalación"
 
 #: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
-msgstr ""
+msgstr "Estado de la instalación de BudsLink"
 
 #: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
-msgstr ""
+msgstr "BudsLink en Flathub"
 
 #: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
-msgstr ""
+msgstr "Documentación de BudsLink"
 
 #: ui/gattBas.ui:16
 msgid "Experimental"
-msgstr ""
+msgstr "Experimental"
 
 #: ui/gattBas.ui:19
 msgid "Battery Service (BAS) Settings"
-msgstr ""
+msgstr "Configuración del Servicio de Batería (BAS)"
 
 #: ui/gattBas.ui:22
 msgid "Enable GATT Battery Service Reporting"
-msgstr ""
+msgstr "Activar la obtención de información del Servicio de Batería GATT"
 
 #: ui/gattBas.ui:23
 msgid ""
 "Display battery levels for Bluetooth devices using the GATT Battery Service "
 "(BAS)."
 msgstr ""
+"Mostrar los niveles de batería de los dispositivos Bluetooth mediante el "
+"Servicio de Batería GATT (BAS)."
 
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
-msgstr ""
+msgstr "¡No hay ningún dispositivo compatible emparejado!"
