@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-09-19 20:51+0000\n"
+"PO-Revision-Date: 2026-11-11 14:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/ko/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "블루투스 배터리 표시기"
 
 #: lib/bluetoothToggle.js:541
 #, javascript-format
@@ -34,7 +34,7 @@ msgstr[0] "%d개 연결"
 
 #: lib/widgets/panelPopupMenu.js:130
 msgid "Expand submenu"
-msgstr ""
+msgstr "하위 메뉴 확장"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
 #: lib/widgets/bluetoothPopupMenu.js:82
@@ -60,35 +60,35 @@ msgstr "%s 연결 해제"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "패널에 고정"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr ""
+msgstr "장치 설정"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
-msgstr ""
+msgstr "하위 메뉴 접기"
 
 #: preferences/device.js:50 preferences/upowerDevices.js:41
 msgid "Battery Status:"
-msgstr ""
+msgstr "배터리 상태:"
 
 #: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Reported"
-msgstr ""
+msgstr "기록됨"
 
 #: preferences/device.js:51 preferences/upowerDevices.js:42
 msgid "Not Available"
-msgstr ""
+msgstr "사용할 수 없음"
 
 #: preferences/device.js:55
 msgid "Reported from Battery Service (BAS)"
-msgstr ""
+msgstr "배터리 서비스 (BAS)로부터 기록됨"
 
 #: preferences/device.js:57
 msgid "Reported from BudsLink app"
-msgstr ""
+msgstr "BudsLink 앱으로부터 기록됨"
 
 #: preferences/device.js:64 preferences/upowerDevices.js:47
 msgid "Icon"
@@ -105,81 +105,81 @@ msgstr "표시기 및 빠른 메뉴에 사용할 아이콘을 선택하세요"
 
 #: preferences/device.js:76
 msgid "Icon can be configured in Battery Service (BAS) Settings"
-msgstr ""
+msgstr "아이콘은 배터리 서비스 (BAS) 설정에서 변경할 수 있습니다"
 
 #: preferences/device.js:77
 msgid "Go to Battery Service (BAS) Settings to change the icon"
-msgstr ""
+msgstr "아이콘을 바꾸기 위해 배터리 서비스 (BAS) 설정으로 이동"
 
 #: preferences/device.js:79
 msgid "Icon can be configured in the BudsLink app"
-msgstr ""
+msgstr "아이콘은 BudsLink 앱에서 설정 가능합니다"
 
 #: preferences/device.js:80
 msgid "Open the BudsLink app to change the icon"
-msgstr ""
+msgstr "BudsLink 앱을 열어서 아이콘 교체"
 
 #: preferences/device.js:141 ui/quickSettings.ui:5
 msgid "Quick Menu"
-msgstr ""
+msgstr "퀵 메뉴"
 
 #: preferences/device.js:145
 msgid "Display Battery Level"
-msgstr ""
+msgstr "배터리 잔량 표시"
 
 #: preferences/device.js:146
 msgid "Display battery level in the Bluetooth panel quick menu"
-msgstr ""
+msgstr "블루투스 패널 퀵 메뉴에서 배터리 잔량을 표시합니다"
 
 #: preferences/device.js:166 preferences/upowerDevices.js:129 ui/indicator.ui:5
 msgid "Indicator"
-msgstr ""
+msgstr "표시기"
 
 #: preferences/device.js:170 preferences/upowerDevices.js:133
 msgid "Configure Indicator"
-msgstr ""
+msgstr "표시기 설정"
 
 #: preferences/device.js:171 preferences/upowerDevices.js:134
 msgid "Choose how the indicator should behave"
-msgstr ""
+msgstr "표시기 작동 방법을 선택"
 
 #: preferences/device.js:175
 msgid "Do not show Icon"
-msgstr ""
+msgstr "아이콘 표시 안함"
 
 #: preferences/device.js:176
 msgid "Show Icon without Battery level"
-msgstr ""
+msgstr "배터리 잔량 없이 아이콘 표시"
 
 #: preferences/device.js:177
 msgid "Show Icon with Battery Level"
-msgstr ""
+msgstr "배터리 잔량과 함께 아이콘 표시"
 
 #: preferences/device.js:180 preferences/upowerDevices.js:138
 msgid "Hide Icon"
-msgstr ""
+msgstr "아이콘 숨기기"
 
 #: preferences/device.js:181 preferences/upowerDevices.js:139
 msgid "Show Icon"
-msgstr ""
+msgstr "아이콘 표시"
 
 #: preferences/device.js:229 preferences/upowerDevices.js:186
 #: preferences/gattBas.js:173
 msgid "Configure device."
-msgstr ""
+msgstr "장치를 설정합니다."
 
 #: preferences/device.js:243
 msgid ""
 "Delete device information: The button is available after unpairing device"
-msgstr ""
+msgstr "장치 정보 삭제: 이 단추는 장치 페어링을 해제한 후 사용 가능합니다"
 
 #: preferences/device.js:275
 msgid "(Removed)"
-msgstr ""
+msgstr "(삭제됨)"
 
 #: preferences/device.js:276
 msgid "(Paired)"
-msgstr ""
+msgstr "(페어링됨)"
 
 #: preferences/budslinkCompanion.js:50
 msgid ""
@@ -187,14 +187,17 @@ msgid ""
 "and access advanced controls such as noise control, equalizer, and gestures, "
 "when supported by the device"
 msgstr ""
+"Flathub에서 BudsLink를 설치하여 여러 장치의 배터리 수준을 모니터링하고 "
+"장치에서 지원하는 경우 소음 제어, 이퀄라이저 및 제스처와 같은 고급 제어에 "
+"액세스할 수 있습니다"
 
 #: preferences/budslinkCompanion.js:54
 msgid "Currently supported earbuds and headbands are:"
-msgstr ""
+msgstr "현재 지원 중인 이어폰 및 헤드폰 브랜드:"
 
 #: preferences/budslinkCompanion.js:57
 msgid "AirPods"
-msgstr ""
+msgstr "AirPods"
 
 #: preferences/budslinkCompanion.js:58
 msgid "Beats"
@@ -202,57 +205,57 @@ msgstr ""
 
 #: preferences/budslinkCompanion.js:59
 msgid "Sony"
-msgstr ""
+msgstr "소니"
 
 #: preferences/budslinkCompanion.js:60
 msgid "Samsung Galaxy Buds"
-msgstr ""
+msgstr "삼성 갤럭시 버즈"
 
 #: preferences/budslinkCompanion.js:61
 msgid "Nothing / CMF"
-msgstr ""
+msgstr "낫싱 / CMF"
 
 #: preferences/budslinkCompanion.js:62
 msgid "Bose"
-msgstr ""
+msgstr "보스"
 
 #: preferences/budslinkCompanion.js:63
 msgid "Sennheiser"
-msgstr ""
+msgstr "젠하이저"
 
 #: preferences/budslinkCompanion.js:64
 msgid "Redmi / Xiaomi"
-msgstr ""
+msgstr "레드미 / 샤오미"
 
 #: preferences/budslinkCompanion.js:70
 msgid "Installed"
-msgstr ""
+msgstr "설치됨"
 
 #: preferences/budslinkCompanion.js:72
 msgid "Update Extension"
-msgstr ""
+msgstr "확장 업데이트"
 
 #: preferences/budslinkCompanion.js:74
 msgid "Update BudsLink"
-msgstr ""
+msgstr "BudsLink 업데이트"
 
 #: preferences/budslinkCompanion.js:76
 msgid "Not Installed"
-msgstr ""
+msgstr "설치되지 않음"
 
 #: preferences/budslinkCompanion.js:80
 msgid "Refresh"
-msgstr ""
+msgstr "새로 고침"
 
 #: preferences/batteryWidgetSettings.js:17
 #, javascript-format
 msgid "Assign color for %d – %d%%"
-msgstr ""
+msgstr "%d – %d%% 에 색상 지정"
 
 #: preferences/batteryWidgetSettings.js:18
 #, javascript-format
 msgid "Set color for the battery level range of %d – %d%%"
-msgstr ""
+msgstr "%d – %d%% 의 배터리 용량별 색상을 지정합니다"
 
 #: preferences/quickSettings.js:78
 #, javascript-format
@@ -261,6 +264,9 @@ msgid ""
 "experimental features are enabled in system. Check <a href=\"%s\">Readme</a> "
 "for details."
 msgstr ""
+"몇몇 블루투스 장치는 Bluez의 실험적 기능을 시스템에서 활성화하지 않으면 "
+"배터리 잔량이 표기되지 않습니다. <a href=\"%s\">Readme</a> 에서 자세히 확인 "
+"가능합니다."
 
 #: preferences/upowerDevices.js:101
 msgid "Alias"
@@ -278,11 +284,11 @@ msgstr ""
 
 #: preferences/upowerDevices.js:232
 msgid "(Offline)"
-msgstr ""
+msgstr "(오프라인)"
 
 #: preferences/upowerDevices.js:233
 msgid "(Online)"
-msgstr ""
+msgstr "(온라인)"
 
 #: preferences/about.js:42
 msgid "GNU General Public License, version 3 or later"
@@ -328,12 +334,12 @@ msgstr ""
 
 #: preferences/gattBas.js:185 ui/gattBas.ui:5
 msgid "Battery Service (BAS)"
-msgstr ""
+msgstr "배터리 서비스 (BAS)"
 
 #: preferences/gattBas.js:188
 #, javascript-format
 msgid "The button is available after disabling %s mode"
-msgstr ""
+msgstr "이 단추는 %s 모드를 꺼야 사용 가능합니다"
 
 #: ui/upowerDevices.ui:5
 msgid "UPower"
@@ -341,11 +347,11 @@ msgstr ""
 
 #: ui/upowerDevices.ui:9
 msgid "Enable UPower Devices"
-msgstr ""
+msgstr "UPower 장치 사용"
 
 #: ui/upowerDevices.ui:12
 msgid "Enable indicator for UPower devices"
-msgstr ""
+msgstr "UPower 장치에 인디케이터 표시"
 
 #: ui/upowerDevices.ui:13
 msgid ""
@@ -353,62 +359,69 @@ msgid ""
 "report battery levels if supported by the kernel or third-party drivers. "
 "Enable this option to display their battery status in the GNOME system tray."
 msgstr ""
+"2.4GHz 무선 마우스, 키보드 등과 같은 몇몇 UPower 장치는 커널 또는 서드파티 "
+"드라이버가 지원할 시 배터리 잔량을 표시할 수 있습니다. 그놈 시스템 "
+"트레이에서 해당 장치의 배터리 잔량을 보려면 이 옵션을 활성화하십시오."
 
 #: ui/upowerDevices.ui:20 ui/device.ui:9 ui/gattBas.ui:30
 msgid "Configuration by Device"
-msgstr ""
+msgstr "장치에 의해 설정됨"
 
 #: ui/upowerDevices.ui:21 ui/device.ui:10
 msgid "Note: General settings override device-specific settings"
-msgstr ""
+msgstr "주의: 일반 설정은 장치별 설정을 덮어씌울 수 있습니다"
 
 #: ui/upowerDevices.ui:24
 msgid "No compatible device found!"
-msgstr ""
+msgstr "호환되는 장치가 없습니다!"
 
 #: ui/batteryWidgetSettings.ui:5
 msgid "Battery Widget Settings"
-msgstr ""
+msgstr "배터리 위젯 설정"
 
 #: ui/batteryWidgetSettings.ui:9
 msgid "Indicator Widget Settings"
-msgstr ""
+msgstr "표시기 위젯 설정"
 
 #: ui/batteryWidgetSettings.ui:12
 msgid ""
 "Indicator Battery Widget Settings available only for System Tray mode or "
 "Panel Button mode with multiple indicators"
 msgstr ""
+"표시기 위젯 설정은 시스템 트레이 모드나 다양한 표시기가 있는 패널 단추 "
+"모드에서만 사용 가능합니다"
 
 #: ui/batteryWidgetSettings.ui:17
 msgid "Show icon only (Hide Bar/Dots)"
-msgstr ""
+msgstr "아이콘만 보기 (바 또는 점 숨김)"
 
 #: ui/batteryWidgetSettings.ui:18
 msgid ""
 "Hides the battery level indicator on the icon. Pair with text percentage for "
 "battery information"
 msgstr ""
+"배터리 잔량 표시기를 아이콘에서 숨깁니다. 텍스트로 배터리 잔량을 표기할 수 "
+"있는 퍼센테이지가 대신 표시됩니다"
 
 #: ui/batteryWidgetSettings.ui:23
 msgid "Display battery percentage as text"
-msgstr ""
+msgstr "배터리 퍼센테이지를 텍스트로 표시"
 
 #: ui/batteryWidgetSettings.ui:24
 msgid "Displays battery percentage beside the Bluetooth device icon"
-msgstr ""
+msgstr "배터리 퍼센테이지를 블루투스 장치 아이콘 옆에 표시"
 
 #: ui/batteryWidgetSettings.ui:29
 msgid "Battery Level Indicator Type"
-msgstr ""
+msgstr "배터리 잔량 표시기 유형"
 
 #: ui/batteryWidgetSettings.ui:30
 msgid "Dots offer better visibility"
-msgstr ""
+msgstr "점 형태는 더 나은 가독성을 요구합니다"
 
 #: ui/batteryWidgetSettings.ui:42
 msgid "Battery Bar Position"
-msgstr ""
+msgstr "배터리 바 위치"
 
 #: ui/batteryWidgetSettings.ui:43
 msgid "Choose where to display the battery bar relative to the device icon"
@@ -482,7 +495,7 @@ msgstr ""
 
 #: ui/device.ui:13
 msgid "No Bluetooth device paired!"
-msgstr ""
+msgstr "페어링된 블루투스 장치 없음!"
 
 #: ui/about.ui:5
 msgid "About"
@@ -522,7 +535,7 @@ msgstr ""
 
 #: ui/quickSettings.ui:17
 msgid "Quick Menu Settings"
-msgstr ""
+msgstr "퀵 메뉴 설정"
 
 #: ui/quickSettings.ui:20
 msgid "Modify Bluetooth device menu"
@@ -534,7 +547,7 @@ msgstr ""
 
 #: ui/quickSettings.ui:26
 msgid "Enable popup submenu widget mode"
-msgstr ""
+msgstr "팝업형 하위메뉴 위젯 모드 사용"
 
 #: ui/quickSettings.ui:27
 msgid ""
@@ -582,7 +595,7 @@ msgstr ""
 
 #: ui/indicator.ui:9
 msgid "Bluetooth System Indicator Settings"
-msgstr ""
+msgstr "블루투스 시스템 표시기 설정"
 
 #: ui/indicator.ui:12
 msgid "Bluetooth Connection Status Indicator"
@@ -596,7 +609,7 @@ msgstr ""
 
 #: ui/indicator.ui:27
 msgid "Battery Indicator Settings"
-msgstr ""
+msgstr "배터리 표시기 설정"
 
 #: ui/indicator.ui:30
 msgid "Choose Indicator mode"
@@ -623,7 +636,7 @@ msgstr ""
 
 #: ui/indicator.ui:56
 msgid "Indicator Settings"
-msgstr ""
+msgstr "표시기 설정"
 
 #: ui/indicator.ui:59
 msgid "Show Multiple Battery Indicators per Device"
@@ -635,6 +648,9 @@ msgid ""
 "indicator for each battery. When disabled, shows a single indicator "
 "representing the most critical (lowest) battery level of the device."
 msgstr ""
+"여러 개의 배터리가 있는 장치의 경우 활성화되면 각 배터리에 대해 별도의 "
+"표시기가 표시됩니다. 비활성화되면 장치의 가장 위험한(최저) 배터리 수준을 "
+"나타내는 단일 표시기가 표시됩니다."
 
 #: ui/indicator.ui:67
 msgid "Show Popup on Hover"
@@ -659,14 +675,16 @@ msgid ""
 "Specify the number of seconds the mouse must hover over the indicator before "
 "detailed information is displayed."
 msgstr ""
+"자세한 정보가 표시되기 전에 마우스가 표시기 위에 있어야 하는 시간(초)을 "
+"지정합니다."
 
 #: ui/indicator.ui:95
 msgid "Tooltips"
-msgstr ""
+msgstr "툴팁"
 
 #: ui/indicator.ui:98
 msgid "Enable tooltips"
-msgstr ""
+msgstr "툴팁 활성화"
 
 #: ui/indicator.ui:99
 msgid "Show tooltips when hovering over unlabeled buttons"
@@ -674,15 +692,15 @@ msgstr ""
 
 #: ui/indicator.ui:107
 msgid "Default Behaviour"
-msgstr ""
+msgstr "기본 동작"
 
 #: ui/indicator.ui:108
 msgid "Hide Always"
-msgstr ""
+msgstr "항상 숨기기"
 
 #: ui/indicator.ui:109
 msgid "Hide Conditionally"
-msgstr ""
+msgstr "필요할 때 숨기기"
 
 #: ui/indicator.ui:114
 msgid "Off"
@@ -690,68 +708,70 @@ msgstr "끔"
 
 #: ui/indicator.ui:115
 msgid "System Tray"
-msgstr ""
+msgstr "시스템 트레이"
 
 #: ui/indicator.ui:116
 msgid "Panel Button"
-msgstr ""
+msgstr "패널 단추"
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "BudsLink 연동"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
-msgstr ""
+msgstr "BudsLink 통합 활성화"
 
 #: ui/budslinkCompanion.ui:17
 msgid ""
 "Acts as a Companion with the BudsLink app, which runs in the background to "
 "provide additional features for supported headphones and earbuds"
 msgstr ""
+"지원되는 헤드폰 및 이어버드에 대한 추가 기능을 제공하기 위해 백그라운드에서 "
+"실행되는 BudsLink 앱과 함께 작동합니다"
 
 #: ui/budslinkCompanion.ui:22
 msgid "Hide from Background Apps"
-msgstr ""
+msgstr "백그라운드 앱에서 숨기기"
 
 #: ui/budslinkCompanion.ui:23
 msgid "Hide BudsLink from the GNOME Background Apps list"
-msgstr ""
+msgstr "BudsLink를 그놈 백그라운드 앱 목록에서 숨깁니다"
 
 #: ui/budslinkCompanion.ui:31
 msgid "Installation Status"
-msgstr ""
+msgstr "설치 상태"
 
 #: ui/budslinkCompanion.ui:40
 msgid "BudsLink Installation Status"
-msgstr ""
+msgstr "BudsLink 설치 상태"
 
 #: ui/budslinkCompanion.ui:49
 msgid "BudsLink on Flathub"
-msgstr ""
+msgstr "Flathub에서 BudsLink 설치"
 
 #: ui/budslinkCompanion.ui:61
 msgid "BudsLink Documentation"
-msgstr ""
+msgstr "BudsLink 문서화"
 
 #: ui/gattBas.ui:16
 msgid "Experimental"
-msgstr ""
+msgstr "실험적"
 
 #: ui/gattBas.ui:19
 msgid "Battery Service (BAS) Settings"
-msgstr ""
+msgstr "배터리 서비스 (BAS) 설정"
 
 #: ui/gattBas.ui:22
 msgid "Enable GATT Battery Service Reporting"
-msgstr ""
+msgstr "GATT 배터리 서비스 기록 활성화"
 
 #: ui/gattBas.ui:23
 msgid ""
 "Display battery levels for Bluetooth devices using the GATT Battery Service "
 "(BAS)."
-msgstr ""
+msgstr "블루투스 장치의 배터리 잔량을 GATT 배터리 서비스 (BAS)를 통해 표시합니다."
 
 #: ui/gattBas.ui:33
 msgid "No compatible device paired!"
-msgstr ""
+msgstr "페어링된 호환되는 장치가 않음!"
