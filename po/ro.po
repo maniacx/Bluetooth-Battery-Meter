@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-10-25 01:07+0000\n"
+"PO-Revision-Date: 2026-11-16 15:41+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/ro/>\n"
@@ -29,7 +29,7 @@ msgstr ""
 #: lib/panelButtonSingleDevice.js:15 lib/panelButtonSingleDevice.js:26
 #: lib/panelButtonMultiDevice.js:13 lib/panelButtonMultiDevice.js:20
 msgid "Bluetooth Battery Meter"
-msgstr ""
+msgstr "Procentaj Baterie Bluetooth"
 
 #: lib/bluetoothToggle.js:541
 #, javascript-format
@@ -40,8 +40,9 @@ msgstr[1] "%d conectate"
 msgstr[2] "%d conectate"
 
 #: lib/widgets/panelPopupMenu.js:130
+#, fuzzy
 msgid "Expand submenu"
-msgstr ""
+msgstr "Expandează submeniul"
 
 #: lib/widgets/bluetoothGnomePopupMenu.js:56 lib/widgets/popupMenuWidget.js:111
 #: lib/widgets/bluetoothPopupMenu.js:82
@@ -67,7 +68,7 @@ msgstr "Conectează la %s"
 
 #: lib/widgets/popupMenuWidget.js:75
 msgid "Pin to panel"
-msgstr ""
+msgstr "Atașează în panou"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
