@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: gnome-shell.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-01 20:40-0600\n"
-"PO-Revision-Date: 2026-11-06 11:46+0000\n"
+"PO-Revision-Date: 2026-11-23 18:10+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/budslink/"
 "bluetooth-battery-meter/es/>\n"
@@ -66,7 +66,7 @@ msgstr "Fijar al panel"
 
 #: lib/widgets/popupMenuWidget.js:95
 msgid "Device settings"
-msgstr "Configuración del dispositivo"
+msgstr "Ajustes de dispositivo"
 
 #: lib/widgets/popupMenuWidget.js:105 lib/widgets/bluetoothPopupSubMenu.js:296
 msgid "Collapse submenu"
@@ -484,11 +484,11 @@ msgstr "Punto de nivel de batería"
 
 #: ui/batteryWidgetSettings.ui:117
 msgid "Left"
-msgstr "Izquierda"
+msgstr "Izquierdo"
 
 #: ui/batteryWidgetSettings.ui:118
 msgid "Right"
-msgstr "Derecha"
+msgstr "Derecho"
 
 #: ui/batteryWidgetSettings.ui:119
 msgid "Below"
@@ -755,7 +755,7 @@ msgstr "Botón del panel"
 
 #: ui/budslinkCompanion.ui:5 ui/budslinkCompanion.ui:9
 msgid "BudsLink Companion"
-msgstr "Complemento de BudsLink"
+msgstr "Compañero BudsLink"
 
 #: ui/budslinkCompanion.ui:16
 msgid "Enable BudsLink integration"
