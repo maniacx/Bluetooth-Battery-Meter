@@ -317,9 +317,25 @@ export const  UpowerDevices = GObject.registerClass({
         const devices = this._settings.get_strv('upower-device-list').map(JSON.parse);
         if (!devices || devices.length === 0) {
             this._no_online_row.visible  = true;
+            this._deviceItems.forEach(item => this._upower_device_group.remove(item));
+            this._deviceItems.clear();
             return;
         }
         this._no_online_row.visible  = false;
+
+        // Remove rows for paths that are no longer in the persisted list
+        // (e.g. the backend migrated a device to a new UPower object path
+        // after a reconnect). Otherwise the old row lingers here forever,
+        // showing up as a duplicate alongside the device's new row, until
+        // this page happens to get recreated.
+        const currentPaths = new Set(devices.map(info => info['path']));
+        for (const [path, item] of [...this._deviceItems]) {
+            if (!currentPaths.has(path)) {
+                this._upower_device_group.remove(item);
+                this._deviceItems.delete(path);
+            }
+        }
+
         for (const info of devices) {
             const pathInfo = {
                 path: info['path'],
